@@ -1,0 +1,64 @@
+{
+  "type": "harvestcraft:banana",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pambanana",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      " ccc ",
+      " d   ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "cbbbc",
+      "cbbbc",
+      " d   ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      " da  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "    d",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      " cccc",
+      " d   ",
+      "     "
+    ]
+  ]
+}

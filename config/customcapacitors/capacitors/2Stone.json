@@ -1,0 +1,20 @@
+{
+	"id": "stone",
+	"display_name": "Stone",
+	"description": "Doesn't like her brothers Andesite, Diorite and Granite",
+	"capacity": 4,
+	"max_input_rate": 4,
+	"max_output_rate": 4,
+	"base_color": "7f7f7f",
+	"trim_color": "424242",
+	"storage_loss_type": "constant",
+	"storage_loss_data": {
+		"loss_value": 0.6,
+		"loss_delay": 2,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

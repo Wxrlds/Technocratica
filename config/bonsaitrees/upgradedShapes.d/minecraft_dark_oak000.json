@@ -1,0 +1,124 @@
+{
+  "type": "minecraft:dark_oak",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log2",
+      "meta": 1
+    },
+    "b": {
+      "name": "minecraft:leaves2",
+      "meta": 9
+    },
+    "c": {
+      "name": "minecraft:leaves2",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      "        ",
+      "        ",
+      " ccccc  ",
+      " cccccc ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "   cc   ",
+      " bbbbbc ",
+      "cbbbbbbc",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "  cccc  ",
+      "cbbbbbbc",
+      "cbabbabc",
+      "  a  a  ",
+      "  a  a  ",
+      "     a  ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "   cc   ",
+      " cccccc ",
+      "cbbaabbc",
+      "cbbaaabc",
+      "   aaa  ",
+      "   aaa  ",
+      "   aa   ",
+      "   aa   ",
+      "   aa   ",
+      "   aa   ",
+      "   aa   "
+    ],
+    [
+      "   cc   ",
+      " cccccc ",
+      "cbbaabbc",
+      "cbaaabbc",
+      "  aaa   ",
+      "  aaa   ",
+      "  aaa   ",
+      "   aa   ",
+      "   aa   ",
+      "   aa   ",
+      "   aa   "
+    ],
+    [
+      "        ",
+      "  cccc  ",
+      "cbbbbbbc",
+      "cbaababc",
+      "  aa a  ",
+      "  aa    ",
+      "  a     ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "   cc   ",
+      "cbbbbbbc",
+      "cbbbbbbc",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "        ",
+      " ccccc  ",
+      " cccccc ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ]
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:olive",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamolive",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " cccc",
+      " cccc",
+      "   d ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "cbbbc",
+      "cbbbc",
+      "  dd ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      " ccc ",
+      "   d ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

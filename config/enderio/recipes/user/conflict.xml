@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+<!--Remove Wooden Gear-->
+    <recipe name="Gear, Wood" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item /><item name="stickWood"/><item />
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item /><item name="stickWood"/><item />
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+<!--Remove Wooden Gear-->
+  <recipe name="Gear, ae2 messes things up" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item /><item /><item />
+        <item name="stickWood"/><item /><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+<!--Remove Wooden Gear-->
+  <recipe name="Gear, just to be sure" required="true" disabled="true">
+    <crafting>
+      <grid size="3x2">
+        <item name="stickWood"/><item /><item name="stickWood"/>
+        <item name="stickWood"/><item /><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+<!--Remove Wooden Gear-->
+  <recipe name="Gear, better save than sorry" required="true" disabled="true">
+    <crafting>
+      <grid size="2x3">
+        <item name="stickWood"/><item name="stickWood"/>
+        <item /><item />
+        <item name="stickWood"/><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_WOOD"/>
+    </crafting>
+  </recipe>
+
+<!--Remove Hopper Recipe-->
+  <recipe name="Tweak: Wood Hopper" required="false" disabled="true">
+    <crafting>
+      <grid>
+        <item name="IRON"/><item name="logWood"/><item name="IRON"/>
+        <item name="IRON"/><item name="logWood"/><item name="IRON"/>
+        <item/><item name="IRON"/><item/>
+      </grid>
+      <output name="minecraft:hopper, blockHopper" />
+    </crafting>
+  </recipe>
+
+<!--Remove Stick-->
+  <recipe name="Tweak: Stick from Wood" required="false" disabled="true">
+    <crafting>
+      <grid size="1x2">
+        <item name="logWood"/>
+        <item name="logWood"/>
+      </grid>
+      <output name="minecraft:stick, stickWood" amount="16" />
+    </crafting>
+  </recipe>
+
+<!--Remove Chest-->
+  <recipe name="Tweak: Chest from Wood" required="false" disabled="true">
+    <crafting>
+      <grid>
+        <item name="logWood"/><item name="logWood"/><item name="logWood"/>
+        <item name="logWood"/><item/><item name="logWood"/>
+        <item name="logWood"/><item name="logWood"/><item name="logWood"/>
+      </grid>
+      <output name="minecraft:chest, chestWood" amount="4" />
+    </crafting>
+  </recipe>
+
+<!--Remove Preassure Liquid Conduit-->
+  <recipe name="Conduit, Liquid, Advanced" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="FUSED_QUARTZ" /><item name="FUSED_QUARTZ" /><item name="FUSED_QUARTZ" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_liquid_conduit:1" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+<!--Remove Ender Liquid Conduit-->
+  <recipe name="Conduit, Liquid, Ender" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+        <item name="VIBRANT_ALLOY" /><item name="FUSED_QUARTZ" /><item name="VIBRANT_ALLOY" />
+        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="enderio:item_liquid_conduit:2" amount="8">
+      </output>
+    </crafting>
+  </recipe>
+
+  </enderio:recipes>

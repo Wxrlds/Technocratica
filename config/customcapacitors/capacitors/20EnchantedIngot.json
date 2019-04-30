@@ -1,0 +1,20 @@
+{
+	"id": "enchanted_ingot",
+	"display_name": "Enchanted",
+	"description": "Coming soon to your Enchanting Table",
+	"capacity": 1048576,
+	"max_input_rate": 1048576,
+	"max_output_rate": 1048576,
+	"base_color": "b2f767",
+	"trim_color": "1a4c26",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

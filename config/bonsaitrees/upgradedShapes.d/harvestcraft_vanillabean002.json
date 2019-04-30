@@ -1,0 +1,69 @@
+{
+  "type": "harvestcraft:vanillabean",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "d": {
+      "name": "harvestcraft:pamvanillabean",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "aaaa ",
+      " aaaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  c  ",
+      " ccc ",
+      "accca",
+      "accca",
+      "  d  ",
+      "     ",
+      "     "
+    ],
+    [
+      " ccc ",
+      " cbc ",
+      "acbca",
+      "acbca",
+      "d b  ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  c  ",
+      " cc  ",
+      "accca",
+      "accca",
+      "d    ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " aaaa",
+      " aaa ",
+      " dd  ",
+      "     ",
+      "     "
+    ]
+  ]
+}

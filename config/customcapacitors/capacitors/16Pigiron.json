@@ -1,0 +1,20 @@
+{
+	"id": "pig_iron",
+	"display_name": "Pig Iron",
+	"description": "Oink!",
+	"capacity": 65536,
+	"max_input_rate": 65536,
+	"max_output_rate": 65536,
+	"base_color": "d08f8c",
+	"trim_color": "69363a",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

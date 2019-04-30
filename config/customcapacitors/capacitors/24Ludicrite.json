@@ -1,0 +1,20 @@
+{
+	"id": "ludicrite",
+	"display_name": "Ludicrite",
+	"description": "Is it Pink or Rose?",
+	"capacity": 16777216,
+	"max_input_rate": 16777216,
+	"max_output_rate": 16777216,
+	"base_color": "ee03cb",
+	"trim_color": "b7018c",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!--Remove Simple Chassis-->
+  <recipe name="Simple Chassis" required="true">
+    <crafting>
+      <grid>
+        <item name="barsIron"/><item name="IRON"/><item name="barsIron"/>
+        <item name="IRON"/><item name="POWDER_INFINITY"/><item name="IRON"/>
+        <item name="barsIron"/><item name="IRON"/><item name="barsIron"/>
+      </grid>
+      <output name="SIMPLE_CHASSIS"/>
+    </crafting>
+  </recipe>
+
+<!--Custom Soul Machine Chassis-->
+  <recipe name="Soul Chassis2" required="true">
+    <alloying energy="50000" exp="1">
+      <input name="enderio:item_material:1"/>
+      <input name="enderio:item_material:52" amount="64"/>
+      <output name="enderio:item_material:53"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Soul Machine Chassis-->
+  <recipe name="Soul Chassis" required="true" disabled="true">
+    <alloying energy="3600" exp="1">
+      <input name="SIMPLE_CHASSIS"/>
+      <input name="dyeSoulMachine"/>
+      <output name="SOUL_CHASSIS"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Industrial Machine Chassis-->
+  <recipe name="Chassis2" required="true">
+    <alloying energy="10000" exp="1">
+      <input name="enderio:item_material:0"/>
+      <input name="enderio:item_material:51" amount="64"/>
+      <output name="enderio:item_material:1"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Industrial Machine Chassis-->
+  <recipe name="Chassis" required="true" disabled="true">
+    <alloying energy="3600" exp="1">
+      <input name="SIMPLE_CHASSIS"/>
+      <input name="dyeMachine"/>
+      <output name="CHASSIS"/>
+    </alloying>
+  </recipe>
+  
+<!--Remove Enhanced Machine Chassis-->
+  <recipe name="Enhanced Chassis" required="true" disabled="true">
+    <alloying energy="3600" exp="1">
+      <input name="END_STEEL_CHASSIS"/>
+      <input name="dyeEnhancedMachine"/>
+      <output name="ENHANCED_CHASSIS"/>
+    </alloying>
+  </recipe>  
+
+<!--Custom Enhanced Machine Chassis-->
+  <recipe name="Enhanced Chassis2" required="true">
+    <alloying energy="150000" exp="1">
+      <input name="enderio:item_material:66"/>
+      <input name="enderio:item_material:67" amount="64"/>
+      <output name="enderio:item_material:54"/>
+    </alloying>
+  </recipe>
+
+</enderio:recipes>

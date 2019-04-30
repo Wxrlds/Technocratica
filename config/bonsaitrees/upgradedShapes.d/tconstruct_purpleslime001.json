@@ -1,0 +1,101 @@
+{
+  "type": "tconstruct:purpleslime",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "tconstruct:slime_leaves",
+      "meta": 1
+    },
+    "b": {
+      "name": "tconstruct:slime_leaves",
+      "meta": 9
+    },
+    "c": {
+      "name": "tconstruct:slime_congealed",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    a    ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    a    ",
+      "   aaa   ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    b    ",
+      "  abbba  ",
+      "  aaaaa  ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    b    ",
+      "    b    ",
+      "  bbbbb  ",
+      " aabbbaa ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   bbb   ",
+      "  bbbbb  ",
+      " abbbbba ",
+      "aaabcbaaa",
+      "    c    ",
+      "    c    ",
+      "    c    "
+    ],
+    [
+      "    b    ",
+      "    b    ",
+      "  bbbbb  ",
+      " aabbbaa ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    b    ",
+      "  abbba  ",
+      "  aaaaa  ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    a    ",
+      "   aaa   ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    a    ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

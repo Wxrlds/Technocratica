@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:dragonfruit",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamdragonfruit",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "ccccc",
+      " cccd",
+      " d   ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      " aaa ",
+      "caaac",
+      "caaac",
+      "    d",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aba ",
+      "cabac",
+      "cabac",
+      " dbd ",
+      "  b  ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      " aa  ",
+      "caaac",
+      "caaac",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      " ccc ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

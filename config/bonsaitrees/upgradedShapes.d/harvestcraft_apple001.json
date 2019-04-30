@@ -1,0 +1,64 @@
+{
+  "type": "harvestcraft:apple",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    },
+    "d": {
+      "name": "harvestcraft:pamapple",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      "cccc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bbb ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      " da  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bbb ",
+      "cbbbc",
+      "cbbbc",
+      " dd d",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " cccc",
+      "ccccd",
+      "     ",
+      "     "
+    ]
+  ]
+}

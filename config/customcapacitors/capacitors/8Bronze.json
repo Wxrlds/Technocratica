@@ -1,0 +1,20 @@
+{
+	"id": "bronze",
+	"display_name": "Bronze",
+	"description": "Just bronze",
+	"capacity": 256,
+	"max_input_rate": 256,
+	"max_output_rate": 256,
+	"base_color": "e6ae6c",
+	"trim_color": "ae7c3a",
+	"storage_loss_type": "percentage_inverted",
+	"storage_loss_data": {
+		"loss_value": 0.3,
+		"loss_delay": 94,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

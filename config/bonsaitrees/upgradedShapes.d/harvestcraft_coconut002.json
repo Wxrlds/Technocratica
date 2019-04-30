@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:coconut",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamcoconut",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      " ccc ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "d a  ",
+      "  a  ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "   d ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      "cccc ",
+      "  d  ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

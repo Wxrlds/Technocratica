@@ -1,0 +1,20 @@
+{
+	"id": "awakended_draconium",
+	"display_name": "Awakened Draconium",
+	"description": "What a nice number!",
+	"capacity": 2147483647,
+	"max_input_rate": 2147483647,
+	"max_output_rate": 2147483647,
+	"base_color": "ff6a00",
+	"trim_color": "970000",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

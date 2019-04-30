@@ -1,0 +1,64 @@
+{
+  "type": "harvestcraft:fig",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamfig",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " cccc",
+      " ccc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bbb ",
+      "cbbbc",
+      "cbbbc",
+      "dd  d",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  ad ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "d   d",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "ccccc",
+      " cccd",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!--Custom Construction Alloy-->
+<recipe name="Alloy: Construction Alloy Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotCrudeSteel"/>
+      <input name="ingotIron"/>
+      <input name="ingotAluminium"/>
+      <output name="ingotConstructionAlloy" amount="3"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Construction Alloy-->
+    <recipe name="Alloy: Construction Alloy" required="false" disabled="true">
+    <alloying energy="10000" exp="0">
+      <input name="ingotLead,ingotCopper,ingotSilver,ingotAluminium,ingotAluminum,ingotTin,ingotNickel,ingotZinc,ingotPlatinum,ingotOsmium,ingotArdite,ingotCobalt,ingotTitanium,ingotMagnesium,ingotTungsten"/>
+      <input name="ingotIron"/>
+      <input name="ingotLead,ingotCopper,ingotSilver,ingotAluminium,ingotAluminum,ingotTin,ingotNickel,ingotZinc,ingotPlatinum,ingotOsmium,ingotArdite,ingotCobalt,ingotTitanium,ingotMagnesium,ingotTungsten"/>
+      <output name="CONSTRUCTION_ALLOY" amount="3" />
+    </alloying>
+  </recipe>
+
+<!--Custom Pulsating Iron-->
+<recipe name="Alloy: Pulsating Iron Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotIron"/>
+      <input name="enderpearl"/>
+      <input name="ingotConstructionAlloy"/>
+      <output name="ingotPulsatingIron" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Pulsating Iron-->
+    <recipe name="Alloy: Pulsating Iron" required="true" disabled="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="ingotIron"/>
+      <input name="oredict:enderpearl"/>
+      <output name="ingotPulsatingIron"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Electrical Steel-->
+<recipe name="Alloy: Electrical Steel Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotPulsatingIron"/>
+      <input name="dustCoal"/>
+      <input name="itemSilicon"/>
+      <output name="ingotElectricalSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Electrical Steel-->
+    <recipe name="Alloy: Electrical Steel" required="true" disabled="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotIron"/>
+      <input name="dustCoal"/>
+      <input name="itemSilicon"/>
+      <output name="ingotElectricalSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Nethercotta-->
+    <recipe name="Alloy: Nethercotta Ingot" required="true">
+    <alloying energy="20000" exp="1">
+      <input name="ingotBrickNether"/>
+      <input name="cropNetherWart"/>
+      <input name="ingotElectricalSteel"/>
+      <output name="ingotBrickNetherGlazed" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Nethercotta-->
+    <recipe name="Alloy: Nethercotta" required="true" disabled="true">
+    <alloying energy="20000" exp="1">
+      <input name="ingotBrickNether"/>
+      <input name="cropNetherWart" amount="4" />
+      <input name="oredict:itemClay" amount="6" />
+      <output name="ingotBrickNetherGlazed"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Conductive Iron-->
+<recipe name="Alloy: Conductive Iron Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotBrickNetherGlazed"/>
+      <input name="ingotIron"/>
+      <input name="dustRedstone"/>
+      <output name="ingotConductiveIron" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Conductive Iron-->
+  <recipe name="Alloy: Conductive Iron" required="true" disabled="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="dustRedstone"/>
+      <input name="ingotIron"/>
+      <output name="ingotConductiveIron"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Energetic Alloy-->
+<recipe name="Alloy: Energetic Alloy Ingot" required="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="ingotConductiveIron"/>
+      <input name="ingotGold"/>
+      <input name="contenttweaker:glowing_redstone_dust"/>
+      <output name="ingotEnergeticAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Energetic Alloy-->
+  <recipe name="Alloy: Energetic Alloy" required="true" disabled="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="dustRedstone"/>
+      <input name="ingotGold"/>
+      <input name="dustGlowstone"/>
+      <output name="ingotEnergeticAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Energetic Silver-->
+<recipe name="Alloy: Energetic Silver Ingot" required="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="ingotEnergeticAlloy"/>
+      <input name="contenttweaker:glowing_redstone_dust"/>
+      <input name="ingotSilver"/>
+      <output name="ingotEnergeticSilver" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Energetic Silver-->
+  <recipe name="Alloy: Energetic Silver Alloy" required="false" disabled="true">
+    <!-- mirroring energetic alloy recipe -->
+    <alloying energy="10000" exp="0.7">
+      <input name="dustRedstone"/>
+      <input name="ingotSilver"/>
+      <input name="dustGlowstone"/>
+      <output name="ingotEnergeticSilver"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Vivid Alloy-->
+<recipe name="Alloy: Vivid Alloy Ingot" required="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="ingotEnergeticSilver"/>
+      <input name="enderpearl"/>
+      <input name="ingotElectrotineAlloy"/>
+      <output name="ingotVividAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Vivid Alloy-->
+  <recipe name="Alloy: Vivid Alloy" required="false" disabled="true">
+    <!-- mirroring vibrant alloy recipe -->
+    <alloying energy="10000" exp="0.7">
+      <input name="minecraft:ender_pearl"/>
+      <input name="ingotEnergeticSilver"/>
+      <output name="ingotVividAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Vibrant Alloy-->
+<recipe name="Alloy: Vibrant Alloy Ingot" required="true">
+    <alloying energy="10000" exp="1">
+      <input name="ingotVividAlloy"/>
+      <input name="enderpearl"/>
+      <input name="ingotConstantan"/>
+      <output name="ingotVibrantAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Vibrant Alloy-->
+  <recipe name="Alloy: Vibrant Alloy" required="true" disabled="true">
+    <alloying energy="10000" exp="1">
+      <input name="ingotEnergeticAlloy"/>
+      <input name="oredict:enderpearl"/>
+      <output name="ingotVibrantAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Crystalline Alloy-->
+<recipe name="Alloy: Crystalline Alloy Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotVibrantAlloy"/>
+      <input name="ingotGold"/>
+      <input name="itemPulsatingPowder"/>
+      <output name="ingotCrystallineAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Crystalline Alloy-->
+  <recipe name="Alloy: Endergy Crystalline Alloy" required="true" disabled="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="itemPulsatingPowder"/>
+      <input name="ingotGold"/>
+      <output name="ingotCrystallineAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Soularium-->
+<recipe name="Alloy: Soularium Ingot" required="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="ingotCrystallineAlloy"/>
+      <input name="ingotGold"/>
+      <input name="minecraft:soul_sand"/>
+      <output name="ingotSoularium" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Soularium-->
+  <recipe name="Alloy: Soularium" required="true" disabled="true">
+    <alloying energy="10000" exp="0.7">
+      <input name="minecraft:soul_sand"/><!-- has no oredict entry -->
+      <input name="ingotGold"/>
+      <output name="ingotSoularium"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Crystalline Pink Slime-->
+<recipe name="Alloy: Crystalline Pink Slime Ingot" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotSoularium"/>
+      <input name="itemPulsatingPowder"/>
+      <input name="industrialforegoing:pink_slime_ingot"/>
+      <output name="ingotCrystallinePinkSlime" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Crystalline Pink Slime-->
+  <recipe name="Alloy: Endergy Crystalline Pink Slime" required="false" disabled="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="itemPulsatingPowder"/>
+      <input name="industrialforegoing:pink_slime_ingot"/>
+      <output name="ingotCrystallinePinkSlime"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Dark Steel-->
+<recipe name="Alloy: Dark Steel Ingot" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="ingotCrystallinePinkSlime"/>
+      <input name="ingotSteel"/>
+      <input name="obsidian"/>
+      <output name="ingotDarkSteel" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Dark Steel-->
+  <recipe name="Alloy: Dark Steel" required="true" disabled="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="ingotIron"/>
+      <input name="dustCoal"/>
+      <input name="obsidian"/>
+      <output name="ingotDarkSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Dark Steel2-->
+  <recipe name="Alloy: Dark Steel2" required="true" disabled="true">
+    <alloying energy="10500" exp="0.5">
+      <input name="ingotSteel"/>
+      <input name="obsidian"/>
+      <output name="ingotDarkSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Custom End Steel-->
+<recipe name="Alloy: End Steel Ingot" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="ingotDarkSteel"/>
+      <input name="endstone"/>
+      <input name="obsidian"/>
+      <output name="ingotEndSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Remove End Steel-->
+  <recipe name="Alloy: End Steel" required="true" disabled="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="oredict:endstone"/>
+      <input name="ingotDarkSteel"/>
+      <input name="obsidian"/>
+      <output name="ingotEndSteel"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Melodic Alloy-->
+<recipe name="Alloy: Melodic Alloy Ingot" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="ingotEndSteel"/>
+      <input name="minecraft:chorus_fruit_popped"/>
+      <input name="ingotAlumite"/>
+      <output name="ingotMelodicAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Melodic Alloy-->
+<recipe name="Alloy: Endergy Melodic Alloy" required="true" disabled="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="minecraft:chorus_fruit_popped"/>
+      <input name="END_STEEL"/>
+      <output name="ingotMelodicAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Custom Stellar Alloy Ingot-->
+<recipe name="Alloy: Stellar Alloy Ingot" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="ingotMelodicAlloy"/>
+      <input name="netherStar"/>
+      <input name="minecraft:dragon_breath"/>
+      <output name="ingotStellarAlloy"/>
+    </alloying>
+  </recipe>
+
+<!--Remove Stellar Alloy-->
+    <recipe name="Alloy: Endergy Stellar Alloy" required="true" disabled="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="minecraft:nether_star"/>
+      <input name="ingotMelodicAlloy"/>
+      <input name="oredict:itemClay" amount="4" />
+      <output name="ingotStellarAlloy" amount="2"/>
+    </alloying>
+  </recipe>
+
+  </enderio:recipes>

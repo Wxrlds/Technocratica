@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:cashew",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "d": {
+      "name": "harvestcraft:pamcashew",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "aaaa ",
+      "aaaaa",
+      "  d d",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  c  ",
+      "  c  ",
+      "accca",
+      "accca",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " ccc ",
+      " cbc ",
+      "acbca",
+      "acbca",
+      " db  ",
+      "  b  ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  c  ",
+      " ccc ",
+      "accca",
+      "accca",
+      "dd   ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " aaa ",
+      " aaaa",
+      "   d ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

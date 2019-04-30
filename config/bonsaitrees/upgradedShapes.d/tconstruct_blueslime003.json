@@ -1,0 +1,119 @@
+{
+  "type": "tconstruct:blueslime",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "tconstruct:slime_leaves",
+      "meta": 8
+    },
+    "b": {
+      "name": "tconstruct:slime_congealed",
+      "meta": 0
+    },
+    "c": {
+      "name": "tconstruct:slime_leaves",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    c    ",
+      "   ccc   ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    a    ",
+      "  caaac  ",
+      "  ccccc  ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    a    ",
+      "    a    ",
+      "  aaaaa  ",
+      " ccaaacc ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   aaa   ",
+      "  aaaaa  ",
+      " caaaaac ",
+      "cccabaccc",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    "
+    ],
+    [
+      "    a    ",
+      "    a    ",
+      "  aaaaa  ",
+      " ccaaacc ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    a    ",
+      "  caaac  ",
+      "  ccccc  ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    c    ",
+      "   ccc   ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

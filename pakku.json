@@ -1,0 +1,6 @@
+{
+  "name": "Technocratica",
+  "version": "1.0.0",
+  "overrides": ["config", "resources", "scripts"]
+}
+

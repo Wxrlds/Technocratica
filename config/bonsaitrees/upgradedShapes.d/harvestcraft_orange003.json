@@ -1,0 +1,69 @@
+{
+  "type": "harvestcraft:orange",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamorange",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      "ccccc",
+      "dd dd",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "cbbbc",
+      "cbbbc",
+      "   d ",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "  dd ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      " cccc",
+      "  d d",
+      "     ",
+      "     "
+    ]
+  ]
+}

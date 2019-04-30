@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:oak",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      " ccc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  bb ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bbb ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "ccccc",
+      " cccc",
+      "     ",
+      "     "
+    ]
+  ]
+}

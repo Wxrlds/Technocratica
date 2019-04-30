@@ -1,0 +1,20 @@
+{
+	"id": "iron",
+	"display_name": "Iron",
+	"description": "Finally something shiny!",
+	"capacity": 16,
+	"max_input_rate": 16,
+	"max_output_rate": 16,
+	"base_color": "969696",
+	"trim_color": "353535",
+	"storage_loss_type": "constant",
+	"storage_loss_data": {
+		"loss_value": 0.5,
+		"loss_delay": 6,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

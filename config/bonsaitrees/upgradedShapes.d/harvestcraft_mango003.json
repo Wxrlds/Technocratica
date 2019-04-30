@@ -1,0 +1,64 @@
+{
+  "type": "harvestcraft:mango",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pammango",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "ccccc",
+      "cccc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      " bbb ",
+      "cbbbc",
+      "cbbbc",
+      "    d",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "cbbbc",
+      "cbbbc",
+      "  d d",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " ccc ",
+      "cccc ",
+      "d  d ",
+      "     "
+    ]
+  ]
+}

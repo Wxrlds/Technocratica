@@ -1,0 +1,69 @@
+{
+  "type": "harvestcraft:walnut",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "d": {
+      "name": "harvestcraft:pamwalnut",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "aaaaa",
+      " aaad",
+      "   d ",
+      "     ",
+      "     "
+    ],
+    [
+      "  c  ",
+      " ccc ",
+      "accca",
+      "accca",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " ccc ",
+      " cbc ",
+      "acbca",
+      "acbca",
+      " dbd ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  c  ",
+      " ccc ",
+      "accca",
+      "accca",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "aaaaa",
+      "aaaa ",
+      "dd   ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "type": "harvestcraft:avocado",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    },
+    "d": {
+      "name": "harvestcraft:pamavocado",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " cccc",
+      "ccccc",
+      "d    ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  bb ",
+      "cbbbc",
+      "cbbbc",
+      "  ddd",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "  add",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "cbbbc",
+      "cbbbc",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      "ccccc",
+      "    d",
+      "     ",
+      "     "
+    ]
+  ]
+}

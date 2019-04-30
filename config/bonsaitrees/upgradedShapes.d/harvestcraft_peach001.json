@@ -1,0 +1,64 @@
+{
+  "type": "harvestcraft:peach",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pampeach",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "cccc ",
+      "ccccc",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  bb ",
+      "cbbbc",
+      "cbbbc",
+      " d   ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bab ",
+      "cbabc",
+      "cbabc",
+      "dda  ",
+      "  a  "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "cbbbc",
+      "cbbbc",
+      "d   d",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " cccc",
+      "ccccc",
+      "     ",
+      "     "
+    ]
+  ]
+}

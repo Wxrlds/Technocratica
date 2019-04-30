@@ -1,0 +1,20 @@
+{
+	"id": "draconium",
+	"display_name": "Draconium",
+	"description": ">Stars",
+	"capacity": 1073741824,
+	"max_input_rate": 1073741824,
+	"max_output_rate": 1073741824,
+	"base_color": "7a44b0",
+	"trim_color": "070033",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}
