@@ -1,9 +1,10 @@
 Technocratica 1.0.0 to Technocratica 1.0.1
 
 Added:
-	- FTB Quests
-	- Item Filters
-	- Scannable
+
+	-FTB Quests	
+	-Item Filters
+	-Scannable
 
 Updated:
 
@@ -635,6 +636,7 @@ Updated:
 			 * Update for XNet 1.8.0+
 
 Removed:
+
 	MiscTweaks_
 	Better Questing
 	Better Questing - Standard Expansion
