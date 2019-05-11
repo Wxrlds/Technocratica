@@ -68,7 +68,7 @@ recipes.addShaped(<mysticalagriculture:mystical_machine_frame>, [[null, <mystica
 #Machine Block (Extra Util)
 recipes.removeByRecipeName("extrautils2:machine_base");
 #recipes.remove(<extrautils2:machine>);
-recipes.addShaped(<extrautils2:machine> * 3, [[<ore:compressed5xCobblestone>, <ore:blockMagicalWood>, <ore:compressed5xCobblestone>],[<ore:blockMagicalWood>, <mysticalagriculture:mystical_machine_frame>, <ore:blockMagicalWood>], [<ore:compressed5xCobblestone>, <ore:blockMagicalWood>, <ore:compressed5xCobblestone>]]);
+recipes.addShaped(<extrautils2:machine> * 3, [[<ore:compressed3xCobblestone>, <ore:blockMagicalWood>, <ore:compressed3xCobblestone>],[<ore:blockMagicalWood>, <mysticalagriculture:mystical_machine_frame>, <ore:blockMagicalWood>], [<ore:compressed3xCobblestone>, <ore:blockMagicalWood>, <ore:compressed3xCobblestone>]]);
 
 #Machine Case (Industrial Foreg)
 recipes.remove(<teslacorelib:machine_case>);

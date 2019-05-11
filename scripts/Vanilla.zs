@@ -30,3 +30,7 @@ recipes.removeByRecipeName("minecraft:bucket");
 #Cauldron
 recipes.remove(<minecraft:cauldron>);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:plateIron>, null, <ore:plateIron>],[<ore:plateIron>, null, <ore:plateIron>], [<ore:plateIron>, <ore:plateDenseIron>, <ore:plateIron>]]);
+
+#Vanilla
+recipes.remove(<minecraft:furnace>);
+recipes.addShaped(<minecraft:furnace>, [[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>],[<ore:compressed2xCobblestone>, null, <ore:compressed2xCobblestone>], [<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);

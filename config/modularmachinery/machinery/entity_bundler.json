@@ -1,6 +1,7 @@
 {
 	"registryname": "entity_bundler",
 	"localizedname": "Entity Bundler",
+	"requires-blueprint": true,
 	"parts": [{
 			"elements": ["modularmachinery:blockenergyinputhatch@7"],
 			"x": -2,

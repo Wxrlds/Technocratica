@@ -79,19 +79,9 @@ recipes.remove(<ic2:bronze_hoe>);
 #Bronze Axe (IC2)
 recipes.remove(<ic2:bronze_axe>);
 
-#Add Input/Output
-#Remove Output/Input
-#Lapis Dust
-recipes.removeShapeless(<ic2:dust:9> * 2, [<ore:oreLapis>, <ore:dustPetrotheum>]);
-recipes.remove(<actuallyadditions:item_dust:4>);
-mods.mekanism.crusher.addRecipe(<minecraft:dye:4>, <ic2:dust:9>);
-mods.mekanism.crusher.removeRecipe(<enderio:item_material:32>, <minecraft:dye:4>);
-
 #Diamond Dust
-recipes.remove(<actuallyadditions:item_dust:2>);
-mods.mekanism.crusher.addRecipe(<minecraft:diamond>, <ic2:dust:5>);
-mods.mekanism.crusher.removeRecipe(<mekanism:otherdust>, <minecraft:diamond>);
-recipes.removeShapeless(<ic2:dust:5> * 2, [<ore:oreDiamond>, <ore:dustPetrotheum>]);
+val dustdiamond = <ore:dustDiamond>;
+dustdiamond.remove(<actuallyadditions:item_dust:2>);
 
 #Resonating Redstone
 recipes.removeShapeless(<extrautils2:ingredients> * 2, [<ore:oreRedstone>, <ore:dustPetrotheum>]);
@@ -137,6 +127,10 @@ recipes.remove(<bigreactors:ingotyellorium>);
 recipes.remove(<mysticalagriculture:yellorium_seeds>);
 recipes.remove(<bigreactors:blockyellorium>);
 
+#Uranium Block
+recipes.remove(<ic2:nuclear:2>);
+recipes.addShaped(<ic2:nuclear:2> * 4, [[<mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>],[<mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>], [<mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>, <mysticalagriculture:uranium_238_essence>]]);
+
 #Pink Slimeball no oredict
 val pinkslime = <ore:slimeballPink>;
 pinkslime.remove(<industrialforegoing:pink_slime>);
@@ -170,7 +164,6 @@ recipes.remove(<randomthings:soundrecorder>);
 recipes.remove(<randomthings:sounddampener>);
 
 #Ic2 Lithium no oredict
-
 val lithium = <ore:dustLithium>;
 lithium.remove(<ic2:dust:11>);
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:lithium>, <ic2:dust:11>);

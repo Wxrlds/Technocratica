@@ -31,7 +31,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<extendedcrafting:material:36>, <mine
 
 #Black Iron
 recipes.remove(<extendedcrafting:material:0>);
-mods.actuallyadditions.Empowerer.addRecipe(<extendedcrafting:material:0>, <minecraft:iron_ingot>, <simplyjetpacks:metaitemmods:3>, <minecraft:diamond_block>, <tconstruct:large_plate>.withTag({Material: "blackquartz_plustic"}), <tconstruct:large_plate>.withTag({Material: "void_actadd_plustic"}), 100000, 60);
+mods.actuallyadditions.Empowerer.addRecipe(<extendedcrafting:material:0>, <minecraft:iron_ingot>, <extendedcrafting:material:36>, <minecraft:diamond_block>, <tconstruct:large_plate>.withTag({Material: "blackquartz_plustic"}), <tconstruct:large_plate>.withTag({Material: "void_actadd_plustic"}), 100000, 60);
 
 #Black Iron Slate
 recipes.remove(<extendedcrafting:material:2>);
@@ -65,3 +65,15 @@ recipes.addShaped(<extendedcrafting:crafting_core>, [[<ore:ingotBlackIron>, <ext
 #Quantum Compressor
 recipes.remove(<extendedcrafting:compressor>);
 recipes.addShaped(<extendedcrafting:compressor>, [[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],[<extendedcrafting:material:12>, <extendedcrafting:lamp:1>, <extendedcrafting:material:12>], [<ore:ingotBlackIron>, <extendedcrafting:trimmed:4>, <ore:ingotBlackIron>]]);
+
+#Catalyst Component
+recipes.remove(<extendedcrafting:material:15>);
+recipes.remove(<extendedcrafting:material:16>);
+recipes.remove(<extendedcrafting:material:17>);
+recipes.remove(<extendedcrafting:material:18>);
+recipes.remove(<extendedcrafting:material:19>);
+recipes.addShaped(<extendedcrafting:material:19>, [[<extendedcrafting:material:18>, <extendedcrafting:material:7>, null],[<ore:ingotUltimate>, <ore:ingotUltimate>, null], [null, null, null]]);
+recipes.addShaped(<extendedcrafting:material:18>, [[<extendedcrafting:material:17>, <extendedcrafting:material:7>, null],[<ore:ingotCrystaltine>, <ore:ingotCrystaltine>, null], [null, null, null]]);
+recipes.addShaped(<extendedcrafting:material:17>, [[<extendedcrafting:material:16>, <extendedcrafting:material:7>, null],[<ore:gemEmerald>, <ore:gemEmerald>, null], [null, null, null]]);
+recipes.addShaped(<extendedcrafting:material:16>, [[<extendedcrafting:material:15>, <extendedcrafting:material:7>, null],[<ore:gemDiamond>, <ore:gemDiamond>, null], [null, null, null]]);
+recipes.addShaped(<extendedcrafting:material:15>, [[<extendedcrafting:material:14>, <extendedcrafting:material:7>, null],[<ore:ingotGold>, <ore:ingotGold>, null], [null, null, null]]);

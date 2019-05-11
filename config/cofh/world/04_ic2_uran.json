@@ -1,0 +1,24 @@
+{
+	"populate": {
+		"uran": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {"name": "ic2:resource", "metadata": 4},
+				"material": "stone",
+				"cluster-size": 10
+			},
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 50,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

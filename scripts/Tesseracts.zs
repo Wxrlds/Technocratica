@@ -15,4 +15,4 @@ recipes.addShaped(<mekanism:machineblock3>, [[<cyclicmagic:cable_wireless_fluid>
 
 #Flux Core
 recipes.remove(<fluxnetworks:fluxcore>);
-recipes.addShaped(<fluxnetworks:fluxcore> * 4, [[<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>],[<fluxnetworks:flux>, <mekanism:machineblock3>, <fluxnetworks:flux>], [<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>]]);
+recipes.addShaped(<fluxnetworks:fluxcore> * 16, [[<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>],[<fluxnetworks:flux>, <mekanism:machineblock3>, <fluxnetworks:flux>], [<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>]]);

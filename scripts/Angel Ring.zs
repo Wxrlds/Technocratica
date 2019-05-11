@@ -4,4 +4,4 @@ recipes.addShaped(<cyclicmagic:charm_air>, [[<ore:blockNetherWart>, null, <tcons
 
 #Wing of Bat
 recipes.remove(<actuallyadditions:item_wings_of_the_bats>);
-recipes.addShaped(<actuallyadditions:item_wings_of_the_bats>, [[<actuallyadditions:item_misc:15>, <actuallyadditions:item_misc:15>, <actuallyadditions:item_misc:15>],[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:19>, <actuallyadditions:block_crystal_empowered:2>], [<actuallyadditions:block_crystal_empowered:2>, <cyclicmagic:charm_air>, <actuallyadditions:block_crystal_empowered:2>]]);
+recipes.addShaped(<actuallyadditions:item_wings_of_the_bats>, [[<actuallyadditions:item_misc:15>, <colytra:elytra_bauble>, <actuallyadditions:item_misc:15>],[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:19>, <actuallyadditions:block_crystal_empowered:2>], [<actuallyadditions:block_crystal_empowered:2>, <cyclicmagic:charm_air>, <actuallyadditions:block_crystal_empowered:2>]]);

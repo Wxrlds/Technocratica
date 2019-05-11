@@ -113,6 +113,10 @@ recipes.addShaped(<enderio:item_endergy_conduit:11> *16, [
 	[<ore:ingotStellarAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
 ]);
 
+#XNet
+recipes.remove(<xnet:netcable>);
+recipes.addShaped(<xnet:netcable> * 32, [[<minecraft:string>, <translocators:translocator_part>, <minecraft:string>],[<ore:nuggetGold>, <minecraft:redstone>, <ore:nuggetGold>], [<minecraft:string>, <translocators:translocator_part:1>, <minecraft:string>]]);
+
 #Item Conduit
 recipes.remove(<enderio:item_item_conduit>);
 recipes.addShaped(<enderio:item_item_conduit> * 8, [[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],[<ore:nuggetPulsatingIron>, <xnet:netcable>, <ore:nuggetPulsatingIron>], [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
@@ -139,3 +143,13 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:soul_sand>, <mine
 
 #Nutritious Stick
 mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>, <liquid:nutrient_distillation>, [<minecraft:stick>], false);
+
+#EnderIO Gears
+recipes.remove(<enderio:item_material:73>);
+recipes.remove(<enderio:item_material:13>);
+recipes.remove(<enderio:item_material:12>);
+recipes.remove(<enderio:item_material:11>);
+recipes.addShaped(<enderio:item_material:73>, [[<ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>],[<ore:nuggetDarkSteel>, <enderio:item_material:13>, <ore:nuggetDarkSteel>], [<ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>, <ore:nuggetDarkSteel>]]);
+recipes.addShaped(<enderio:item_material:13>, [[<ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>],[<ore:nuggetVibrantAlloy>, <enderio:item_material:12>, <ore:nuggetVibrantAlloy>], [<ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>, <ore:nuggetVibrantAlloy>]]);
+recipes.addShaped(<enderio:item_material:12>, [[<ore:nuggetEnergeticAlloy>, <ore:nuggetEnergeticAlloy>, <ore:nuggetEnergeticAlloy>],[<ore:nuggetEnergeticAlloy>, <enderio:item_material:11>, <ore:nuggetEnergeticAlloy>], [<ore:nuggetEnergeticAlloy>, <ore:nuggetEnergeticAlloy>, <ore:nuggetEnergeticAlloy>]]);
+recipes.addShaped(<enderio:item_material:11>, [[<ore:nuggetIron>, <ore:ingotIron>, <ore:nuggetIron>],[<ore:ingotIron>, <enderio:item_material:10>, <ore:ingotIron>], [<ore:nuggetIron>, <ore:ingotIron>, <ore:nuggetIron>]]);

@@ -15,7 +15,7 @@ Inscriber.addRecipe(<appliedenergistics2:material:17> *9, <ore:blockDiamond>, tr
 
 #Inscriber
 recipes.remove(<appliedenergistics2:inscriber>);
-recipes.addShaped(<appliedenergistics2:inscriber>, [[<ore:ingotIron>, <minecraft:sticky_piston>, <ore:ingotIron>],[<ore:crystalFluix>, <rftoolscontrol:program_card>, <ore:ingotIron>], [<ore:ingotIron>, <minecraft:sticky_piston>, <ore:ingotIron>]]);
+recipes.addShaped(<appliedenergistics2:inscriber>, [[<ore:ingotIron>, <minecraft:sticky_piston>, <ore:ingotIron>],[<ore:crystalFluix>, <opencomputers:card:12>, <ore:ingotIron>], [<ore:ingotIron>, <minecraft:sticky_piston>, <ore:ingotIron>]]);
 
 #Charger
 recipes.remove(<appliedenergistics2:charger>);
@@ -84,3 +84,13 @@ recipes.addShaped(<appliedenergistics2:part:260>, [[<projectred-transportation:p
 #ME Import Bus
 recipes.remove(<appliedenergistics2:part:240>);
 recipes.addShaped(<appliedenergistics2:part:240>, [[<projectred-transportation:pipe:2>, <projectred-transportation:routing_chip:4>, <projectred-transportation:pipe:3>],[<ore:ingotIron>, <appliedenergistics2:material:43>, <ore:ingotIron>], [null, <minecraft:piston>, null]]);
+
+#Grindstone
+recipes.remove(<appliedenergistics2:grindstone>);
+recipes.addShaped(<appliedenergistics2:grindstone>, [[<ore:plateDenseChargedCertusQuartz>, <ore:gearIronInfinity>, <ore:plateDenseChargedCertusQuartz>],[<extrautils2:decorativesolid:3>, <ore:plateDenseChargedCertusQuartz>, <extrautils2:decorativesolid:3>], [<ore:compressed4xCobblestone>, <actuallyadditions:block_breaker>, <ore:compressed4xCobblestone>]]);
+
+#AE2 Presses
+recipes.addShaped(<appliedenergistics2:material:13>, [[<appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>],[<appliedenergistics2:material:10>, <appliedenergistics2:material:19>, <appliedenergistics2:material:10>], [<appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>]]);
+recipes.addShaped(<appliedenergistics2:material:14>, [[<rftools:infused_diamond>, <rftools:infused_diamond>, <rftools:infused_diamond>],[<rftools:infused_diamond>, <appliedenergistics2:material:19>, <rftools:infused_diamond>], [<rftools:infused_diamond>, <rftools:infused_diamond>, <rftools:infused_diamond>]]);
+recipes.addShaped(<appliedenergistics2:material:15>, [[<ic2:casing:2>, <ic2:casing:2>, <ic2:casing:2>],[<ic2:casing:2>, <appliedenergistics2:material:19>, <ic2:casing:2>], [<ic2:casing:2>, <ic2:casing:2>, <ic2:casing:2>]]);
+recipes.addShaped(<appliedenergistics2:material:19>, [[<tconstruct:large_plate>.withTag({Material: "certus"}), <appliedenergistics2:inscriber>, <tconstruct:large_plate>.withTag({Material: "certus"})],[<tconstruct:large_plate>.withTag({Material: "certus"}), <ic2:dust:13>, <tconstruct:large_plate>.withTag({Material: "certus"})], [<tconstruct:large_plate>.withTag({Material: "certus"}), <appliedenergistics2:material:5>, <tconstruct:large_plate>.withTag({Material: "certus"})]]);
