@@ -640,4 +640,4 @@ Removed:
 	Better Questing - Standard Expansion
 	Better Questing - RF Expansion
 
-* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13)
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.13) 
