@@ -9,3 +9,5 @@ Uranium Ore + JEI
 Even more recipe changes
 
 Quest Book added "Crops" chapter
+
+Chaos Guardian has 10.000 Health instead of 2.000
