@@ -1,4 +1,4 @@
-Technocratica 1.0.0 to Technocratica 1.0.1
+**Technocratica 1.0.0 to Technocratica 1.0.1**
 
 
 Disable Tinkers Ore Duplication
