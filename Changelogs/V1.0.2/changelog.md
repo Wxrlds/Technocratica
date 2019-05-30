@@ -14,4 +14,4 @@ Chaos Guardian has 10.000 Health instead of 2.000
 
 Fixed Discord integration
 
-Rebuild Modular Machines
+Redesigned Modular Machines
