@@ -12,4 +12,4 @@ Quest Book added "Crops" chapter
 
 Chaos Guardian has 10.000 Health instead of 2.000
 
-Removed IC2 Chunk Loader Recipe
+Fixed Discord integration
