@@ -42,13 +42,13 @@ recipes.addShaped(<advgenerators:power_io>, [[<advgenerators:iron_frame>, <minec
 
 #Iron Tubing
 recipes.remove(<advgenerators:iron_tubing>);
-recipes.addShaped(<advgenerators:iron_tubing> * 8, [[null, null, <ore:ingotIron>],[null, <ore:stickCopper>, null], [<ore:ingotIron>, null, null]]);
-recipes.addShaped(<advgenerators:iron_tubing> * 8, [[<ore:ingotIron>, null, null],[null, <ore:stickCopper>, null], [null, null, <ore:ingotIron>]]);
+recipes.addShaped(<advgenerators:iron_tubing> * 8, [[null, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), <ore:ingotIron>],[<ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), <ore:stickCopper>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte})], [<ore:ingotIron>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), null]]);
+recipes.addShaped(<advgenerators:iron_tubing> * 8, [[<ore:ingotIron>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), null],[<ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), <ore:stickCopper>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte})], [null, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte}), <ore:ingotIron>]]);
 
 #Redstone-Iron-Wiring
 recipes.remove(<advgenerators:iron_wiring>);
-recipes.addShaped(<advgenerators:iron_wiring> * 4, [[null, null, <ore:ingotRedAlloy>],[null, <advgenerators:iron_tubing>, null], [<ore:ingotRedAlloy>, null, null]]);
-recipes.addShaped(<advgenerators:iron_wiring> * 4, [[<ore:ingotRedAlloy>, null, null],[null, <advgenerators:iron_tubing>, null], [null, null, <ore:ingotRedAlloy>]]);
+recipes.addShaped(<advgenerators:iron_wiring> * 4, [[null, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), <ore:ingotRedAlloy>],[<ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), <advgenerators:iron_tubing>, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte})], [<ore:ingotRedAlloy>, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), null]]);
+recipes.addShaped(<advgenerators:iron_wiring> * 4, [[<ore:ingotRedAlloy>, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), null],[<ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), <advgenerators:iron_tubing>, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte})], [null, <ic2:cable:3>.withTag({type: 3 as byte, insulation: 3 as byte}), <ore:ingotRedAlloy>]]);
 
 #Control Circuit
 recipes.remove(<advgenerators:controller>);

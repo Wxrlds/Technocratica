@@ -1,0 +1,62 @@
+{
+	"machine": "seed_infuser",
+	"registryName": "craftingseed2",
+	"recipeTime": 20,
+	"requirements": [{
+			"type": "item",
+			"io-type": "output",
+			"item": "mysticalagriculture:crafting@18",
+			"amount": 1
+		},{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 3200000
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:storage@1",
+			"amount": 4
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:crafting@17",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:dirt_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:stone_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:nature_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:wood_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:water_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:ice_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:zombie_essence",
+			"amount": 1
+			
+		}
+	]
+}

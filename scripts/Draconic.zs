@@ -2,7 +2,7 @@
 
 #Draconic Core
 recipes.remove(<draconicevolution:draconic_core>);
-mods.tconstruct.Casting.addTableRecipe(<draconicevolution:draconic_core>, <ore:ingotCrystaltine>, <liquid:draconium>, 9216, true, 1200);
+mods.tconstruct.Casting.addTableRecipe(<draconicevolution:draconic_core>, <mysticalagradditions:stuff:69>, <liquid:draconium>, 9216, true, 1200);
 
 #Wyvern Core
 recipes.remove(<draconicevolution:wyvern_core>);

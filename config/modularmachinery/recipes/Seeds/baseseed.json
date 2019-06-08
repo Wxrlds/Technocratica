@@ -1,0 +1,31 @@
+{
+	"machine": "seed_infuser",
+	"registryName": "baseseed",
+	"recipeTime": 5,
+	"requirements": [{
+			"type": "item",
+			"io-type": "output",
+			"item": "mysticalagriculture:crafting@16",
+			"amount": 1
+		},  {
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 40000
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:storage@5",
+			"amount": 4
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:wheat_seeds",
+			"amount": 1
+		},  {
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "liquid_sunshine",
+			"amount": 32000
+		}
+	]
+}

@@ -28,10 +28,13 @@ mods.extendedcrafting.TableCrafting.addShapeless(4, <extendedcrafting:material:3
 #Ender Ingot
 recipes.remove(<extendedcrafting:material:36>);
 mods.actuallyadditions.Empowerer.addRecipe(<extendedcrafting:material:36>, <minecraft:iron_ingot>, <minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>, 100000, 60);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<extendedcrafting:material:36>, 400000, 6666, <minecraft:iron_ingot>, [<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>]);
+recipes.addShaped(<extendedcrafting:material:36>, [[<extendedcrafting:material:37>, <extendedcrafting:material:37>, <extendedcrafting:material:37>],[<extendedcrafting:material:37>, <extendedcrafting:material:37>, <extendedcrafting:material:37>], [<extendedcrafting:material:37>, <extendedcrafting:material:37>, <extendedcrafting:material:37>]]);
 
 #Black Iron
 recipes.remove(<extendedcrafting:material:0>);
 mods.actuallyadditions.Empowerer.addRecipe(<extendedcrafting:material:0>, <minecraft:iron_ingot>, <extendedcrafting:material:36>, <minecraft:diamond_block>, <tconstruct:large_plate>.withTag({Material: "blackquartz_plustic"}), <tconstruct:large_plate>.withTag({Material: "void_actadd_plustic"}), 100000, 60);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<extendedcrafting:material:0>, 400000, 6666, <minecraft:iron_ingot>, [<extendedcrafting:material:36>, <minecraft:diamond_block>, <tconstruct:large_plate>.withTag({Material: "blackquartz_plustic"}), <tconstruct:large_plate>.withTag({Material: "void_actadd_plustic"})]);
 
 #Black Iron Slate
 recipes.remove(<extendedcrafting:material:2>);
@@ -77,3 +80,33 @@ recipes.addShaped(<extendedcrafting:material:18>, [[<extendedcrafting:material:1
 recipes.addShaped(<extendedcrafting:material:17>, [[<extendedcrafting:material:16>, <extendedcrafting:material:7>, null],[<ore:gemEmerald>, <ore:gemEmerald>, null], [null, null, null]]);
 recipes.addShaped(<extendedcrafting:material:16>, [[<extendedcrafting:material:15>, <extendedcrafting:material:7>, null],[<ore:gemDiamond>, <ore:gemDiamond>, null], [null, null, null]]);
 recipes.addShaped(<extendedcrafting:material:15>, [[<extendedcrafting:material:14>, <extendedcrafting:material:7>, null],[<ore:ingotGold>, <ore:ingotGold>, null], [null, null, null]]);
+
+#Tier 2 Table
+recipes.remove(<extendedcrafting:table_advanced>);
+mods.extendedcrafting.TableCrafting.addShaped(1, <extendedcrafting:table_advanced>, [
+	[<extendedcrafting:material:9>, <extendedcrafting:material:15>, <extendedcrafting:material:9>], 
+	[<extendedcrafting:table_basic>, <ore:blockGold>, <extendedcrafting:table_basic>], 
+	[<extendedcrafting:material:9>, <extendedcrafting:material:2>, <extendedcrafting:material:9>]
+]);
+
+#Tier 3 Table
+recipes.remove(<extendedcrafting:table_elite>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <extendedcrafting:table_elite>, [
+	[<extendedcrafting:material:10>, <extendedcrafting:material:10>, <extendedcrafting:material:16>, <extendedcrafting:material:10>, <extendedcrafting:material:10>], 
+	[<extendedcrafting:material:10>, <extendedcrafting:material:10>, <extendedcrafting:material:16>, <extendedcrafting:material:10>, <extendedcrafting:material:10>], 
+	[<extendedcrafting:table_advanced>, <extendedcrafting:table_advanced>, <ore:blockDiamond>, <extendedcrafting:table_advanced>, <extendedcrafting:table_advanced>], 
+	[<extendedcrafting:material:10>, <extendedcrafting:material:10>, <extendedcrafting:material:2>, <extendedcrafting:material:10>, <extendedcrafting:material:10>], 
+	[<extendedcrafting:material:10>, <extendedcrafting:material:10>, <extendedcrafting:material:2>, <extendedcrafting:material:10>, <extendedcrafting:material:10>]
+]);
+
+#Tier 4 Table
+recipes.remove(<extendedcrafting:table_ultimate>);
+mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:table_ultimate>, [
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:17>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>], 
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:17>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>], 
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:17>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>], 
+	[<extendedcrafting:table_elite>, <extendedcrafting:table_elite>, <extendedcrafting:table_elite>, <ore:blockEmerald>, <extendedcrafting:table_elite>, <extendedcrafting:table_elite>, <extendedcrafting:table_elite>], 
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:2>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>], 
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:2>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>], 
+	[<extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:2>, <extendedcrafting:material:11>, <extendedcrafting:material:11>, <extendedcrafting:material:11>]
+]);

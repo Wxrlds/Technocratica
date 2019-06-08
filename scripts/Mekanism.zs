@@ -52,10 +52,6 @@ recipes.addShaped(<mekanismgenerators:generator>, [[<ore:barsIron>, <ore:gearIro
 recipes.remove(<mekanismgenerators:generator:4>);
 recipes.addShaped(<mekanismgenerators:generator:4>, [[<ore:itemCompressedRedstone>, <ore:alloyAdvanced>, <ore:itemCompressedRedstone>],[<ore:itemBioFuel>, <mekanism:basicblock:8>, <ore:itemBioFuel>], [<ore:circuitBasic>, <ore:alloyAdvanced>, <ore:circuitBasic>]]);
 
-#Crusher
-recipes.remove(<mekanism:machineblock:3>);
-recipes.addShaped(<mekanism:machineblock:3>, [[<minecraft:redstone>, <mekanism:controlcircuit>, <minecraft:redstone>],[<minecraft:lava_bucket>, <mekanism:basicblock:8>, <minecraft:lava_bucket>], [<minecraft:redstone>, <actuallyadditions:block_grinder_double>, <minecraft:redstone>]]);
-
 #Digital Miner
 recipes.remove(<mekanism:machineblock:4>);
 recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:teleportationcore>, <actuallyadditions:block_directional_breaker>, <mekanism:atomicalloy>],[<extrautils2:quarryproxy>, <industrialforegoing:block_destroyer>, <extrautils2:quarry>], [<mekanism:robit>, <mekanism:basicblock:8>, <mekanism:machineblock:15>]]);

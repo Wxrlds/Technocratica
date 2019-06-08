@@ -31,6 +31,18 @@ recipes.removeByRecipeName("minecraft:bucket");
 recipes.remove(<minecraft:cauldron>);
 recipes.addShaped(<minecraft:cauldron>, [[<ore:plateIron>, null, <ore:plateIron>],[<ore:plateIron>, null, <ore:plateIron>], [<ore:plateIron>, <ore:plateDenseIron>, <ore:plateIron>]]);
 
-#Vanilla
+#Furnace
 recipes.remove(<minecraft:furnace>);
-recipes.addShaped(<minecraft:furnace>, [[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>],[<ore:compressed2xCobblestone>, null, <ore:compressed2xCobblestone>], [<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);
+recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>],[<ore:compressed1xCobblestone>, null, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>]]);
+
+#End Crystal
+recipes.remove(<minecraft:end_crystal>);
+recipes.addShaped(<minecraft:end_crystal>, [[<mysticalagriculture:soul_glass_pane>, <advanced_solar_panels:crafting:6>, <mysticalagriculture:soul_glass_pane>],[<mysticalagriculture:soul_glass_pane>, <actuallyadditions:item_misc:19>, <mysticalagriculture:soul_glass_pane>], [<mysticalagriculture:soul_glass_pane>, <randomthings:ingredient:1>, <mysticalagriculture:soul_glass_pane>]]);
+
+#Ender Chest
+recipes.removeByRecipeName("minecraft:ender_chest");
+recipes.addShaped(<minecraft:ender_chest>, [[<minecraft:obsidian>, <mekanism:machineblock:13>, <minecraft:obsidian>],[<minecraft:obsidian>, <minecraft:ender_eye>, <minecraft:obsidian>], [<minecraft:obsidian>, <ic2:te:66>, <minecraft:obsidian>]]);
+
+#Magma Cream
+recipes.removeByRecipeName("minecraft:magma_cream");
+mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:magma_cream>, <minecraft:slime_ball>, <liquid:pyrotheum> * 1000, 5000);

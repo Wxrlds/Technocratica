@@ -16,3 +16,7 @@ recipes.addShaped(<mekanism:machineblock3>, [[<cyclicmagic:cable_wireless_fluid>
 #Flux Core
 recipes.remove(<fluxnetworks:fluxcore>);
 recipes.addShaped(<fluxnetworks:fluxcore> * 16, [[<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>],[<fluxnetworks:flux>, <mekanism:machineblock3>, <fluxnetworks:flux>], [<ore:obsidian>, <fluxnetworks:flux>, <ore:obsidian>]]);
+
+#Flux Controller
+recipes.remove(<fluxnetworks:fluxcontroller>);
+recipes.addShaped(<fluxnetworks:fluxcontroller>, [[<fluxnetworks:fluxblock>, <fluxnetworks:fluxcore>, <fluxnetworks:fluxblock>],[<fluxnetworks:flux>, <draconicevolution:draconium_capacitor:1>, <fluxnetworks:flux>], [<fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>]]);

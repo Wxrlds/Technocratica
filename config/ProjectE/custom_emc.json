@@ -231,6 +231,18 @@
     {
       "item": "projectred-core:resource_item|301",
       "emc": 145
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|0",
+      "emc": 1
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|1",
+      "emc": 8
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|2",
+      "emc": 208
     }
   ]
 }

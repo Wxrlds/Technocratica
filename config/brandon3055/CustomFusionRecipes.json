@@ -287,6 +287,72 @@
 			"avaritia:resource,4,6",
 			"avaritia:resource,4,6"
 			]
-    }
-	
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_block",
+        "catalyst": "draconicevolution:draconium_block"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:draconic_block,4",
+        "catalyst": "draconicevolution:draconium_block,4,1",
+		"energy": 50000000,
+		"tier":1,
+		"ingredients": [
+			"draconicevolution:draconic_core,4",
+			"draconicevolution:draconic_core,4",
+            "draconicevolution:draconic_core,4",
+			"draconicevolution:draconic_core,4",
+			"draconicevolution:dragon_heart",
+			"minecraft:tnt",
+			"minecraft:tnt"
+			]
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:draconium_block,2,1",
+        "catalyst": "draconicevolution:draconium_block",
+		"energy": 200000000,
+		"tier":0,
+		"ingredients": [
+			"draconicevolution:draconium_block"
+			]
+    },
+    {
+        "mode": "ADD",
+        "result": "contenttweaker:chaotic_energy_core",
+        "catalyst": "draconicevolution:draconium_capacitor,1,1",
+		"energy": 2147483647,
+		"tier":3,
+		"ingredients": [
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:chaotic_core,5",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_energy_core,6",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:draconic_block,2",
+			"draconicevolution:dragon_heart"
+			]
+    }	
 	]

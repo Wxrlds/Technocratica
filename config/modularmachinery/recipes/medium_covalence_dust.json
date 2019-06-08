@@ -1,0 +1,233 @@
+{
+  "machine": "entity_bundler",
+  "registryName": "medium_covalence_dust",
+  "recipeTime": 600,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "energyPerTick": 20000
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "fluid": "lava",
+      "amount": 1000
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "minecraft:iron_block",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "redstonearsenal:storage@1",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "redstonearsenal:storage@1",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "contenttweaker:entity_clump",
+      "amount": 1
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "minecraft:spawn_egg",
+      "nbt": {
+        "EntityTag": {
+          "ArmorDropChances": [
+            "0.0f",
+            "0.0f",
+            "0.0f",
+            "0.0f"
+          ],
+          "Health": "1000.0f",
+          "ArmorItems": [
+            {
+              "id": "mekanismtools:glowstoneboots",
+              "Count": "1b",
+              "tag": {
+                "ench": [
+                  {
+                    "lvl": "10",
+                    "id": "0"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "1"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "2"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "3"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "4"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "7"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "9"
+                  }
+                ],
+                "Unbreakable": "1"
+              }
+            },
+            {
+              "id": "mekanismtools:glowstoneleggings",
+              "Count": "1b",
+              "tag": {
+                "ench": [
+                  {
+                    "lvl": "10",
+                    "id": "0"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "1"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "3"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "4"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "7"
+                  }
+                ],
+                "Unbreakable": "1"
+              }
+            },
+            {
+              "id": "mekanismtools:glowstonechestplate",
+              "Count": "1b",
+              "tag": {
+                "ench": [
+                  {
+                    "lvl": "10",
+                    "id": "0"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "1"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "3"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "4"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "7"
+                  }
+                ],
+                "Unbreakable": "1"
+              }
+            },
+            {
+              "id": "mekanismtools:glowstonehelmet",
+              "Count": "1b",
+              "tag": {
+                "ench": [
+                  {
+                    "lvl": "10",
+                    "id": "0"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "1"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "3"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "4"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "5"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "6"
+                  },
+                  {
+                    "lvl": "10",
+                    "id": "7"
+                  }
+                ],
+                "Unbreakable": "1"
+              }
+            }
+          ],
+          "Attributes": [
+            {
+              "Base": "1000",
+              "Name": "generic.maxHealth"
+            },
+            {
+              "Base": "100",
+              "Name": "generic.followRange"
+            }
+          ],
+          "HandDropChances": [
+            "1.0f",
+            "0.085f"
+          ],
+          "id": "specialmobs:joltblaze",
+          "ActiveEffects": [
+            {
+              "Duration": "42949672940",
+              "Id": "5",
+              "Amplifier": "5"
+            },
+            {
+              "Duration": "42949672940",
+              "Id": "12",
+              "Amplifier": "0"
+            },
+            {
+              "Duration": "42949672940",
+              "Id": "13",
+              "Amplifier": "0"
+            }
+          ],
+          "HandItems": [
+            {
+              "id": "projecte:item.pe_covalence_dust",
+              "Count": "32b",
+              "Damage": "1"
+            },
+            {}
+          ]
+        }
+      },
+      "amount": 1
+    }
+  ]
+}

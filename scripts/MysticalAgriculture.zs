@@ -12,4 +12,15 @@ recipes.addShaped(<mysticalagriculture:tier2_inferium_seeds>, [[<ore:blockPruden
 recipes.addShaped(<mysticalagriculture:tier1_inferium_seeds>, [[<ore:blockInferium>, <ore:blockInferiumCoal>, <ore:blockInferium>],[<ore:blockInferiumCoal>, <ore:seedWheat>, <ore:blockInferiumCoal>], [<ore:blockInferium>, <mysticalagriculture:coal_block>, <ore:blockInferium>]]);
 recipes.addShaped(<mysticalagradditions:tier6_inferium_seeds>, [[<ore:blockInsanium>, <ore:blockInsaniumCoal>, <ore:blockInsanium>],[<ore:blockInsaniumCoal>, <mysticalagriculture:tier5_inferium_seeds>, <ore:blockInsaniumCoal>], [<ore:blockInsanium>, <ore:blockInsaniumCoal>, <ore:blockInsanium>]]);
 
-#Modular Machiney Recipes (Seed Infuser)
+#Infusion Crystal
+recipes.remove(<mysticalagriculture:master_infusion_crystal>);
+recipes.addShaped(<mysticalagriculture:master_infusion_crystal>, [[<mysticalagradditions:awakened_draconium_seeds>, <ore:essenceInsanium>, <mysticalagradditions:dragon_egg_seeds>],[<ore:essenceInsanium>, <matc:supremiumcrystal>, <ore:essenceInsanium>], [<mysticalagradditions:neutronium_seeds>, <ore:essenceInsanium>, <mysticalagradditions:nether_star_seeds>]]);
+
+#Crafting Seeds (Modular Machinery Recipes)
+recipes.remove(<mysticalagriculture:crafting:16>);
+recipes.remove(<mysticalagriculture:crafting:17>);
+recipes.remove(<mysticalagriculture:crafting:18>);
+recipes.remove(<mysticalagriculture:crafting:19>);
+recipes.remove(<mysticalagriculture:crafting:20>);
+recipes.remove(<mysticalagriculture:crafting:21>);
+recipes.remove(<mysticalagradditions:insanium:1>);

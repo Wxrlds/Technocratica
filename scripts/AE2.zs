@@ -35,7 +35,7 @@ recipes.addShaped(<appliedenergistics2:energy_acceptor>, [[<ore:ingotIron>, <ope
 
 #ME Drive
 recipes.remove(<appliedenergistics2:drive>);
-recipes.addShaped(<appliedenergistics2:drive>, [[<ore:ingotIron>, <opencomputers:storage:1>, <ore:ingotIron>],[<appliedenergistics2:material:24>, <opencomputers:diskdrive>, <appliedenergistics2:material:24>], [<ore:ingotIron>, <appliedenergistics2:part:16>, <ore:ingotIron>]]);
+recipes.addShaped(<appliedenergistics2:drive>, [[<ore:ingotIron>, <opencomputers:storage:1>, <ore:ingotIron>],[<appliedenergistics2:material:24>, <opencomputers:diskdrive>, <appliedenergistics2:material:24>], [<ore:ingotIron>, <rftools:modular_storage>, <ore:ingotIron>]]);
 
 #Secutiry Terminal
 recipes.remove(<appliedenergistics2:security_station>);
@@ -94,3 +94,23 @@ recipes.addShaped(<appliedenergistics2:material:13>, [[<appliedenergistics2:mate
 recipes.addShaped(<appliedenergistics2:material:14>, [[<rftools:infused_diamond>, <rftools:infused_diamond>, <rftools:infused_diamond>],[<rftools:infused_diamond>, <appliedenergistics2:material:19>, <rftools:infused_diamond>], [<rftools:infused_diamond>, <rftools:infused_diamond>, <rftools:infused_diamond>]]);
 recipes.addShaped(<appliedenergistics2:material:15>, [[<ic2:casing:2>, <ic2:casing:2>, <ic2:casing:2>],[<ic2:casing:2>, <appliedenergistics2:material:19>, <ic2:casing:2>], [<ic2:casing:2>, <ic2:casing:2>, <ic2:casing:2>]]);
 recipes.addShaped(<appliedenergistics2:material:19>, [[<tconstruct:large_plate>.withTag({Material: "certus"}), <appliedenergistics2:inscriber>, <tconstruct:large_plate>.withTag({Material: "certus"})],[<tconstruct:large_plate>.withTag({Material: "certus"}), <ic2:dust:13>, <tconstruct:large_plate>.withTag({Material: "certus"})], [<tconstruct:large_plate>.withTag({Material: "certus"}), <appliedenergistics2:material:5>, <tconstruct:large_plate>.withTag({Material: "certus"})]]);
+
+#Infinity Booser Card
+recipes.remove(<ae2wtlib:infinity_booster_card>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <ae2wtlib:infinity_booster_card>, [
+	[<ore:compressed3xDustBedrock>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:compressed3xDustBedrock>],
+	[<ore:pearlFluix>, <ore:compressed3xDustBedrock>, <appliedenergistics2:material:41>, <ore:compressed3xDustBedrock>, <ore:pearlFluix>],
+	[<ore:pearlFluix>, <appliedenergistics2:material:41>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:51 as short}]}), <appliedenergistics2:material:41>, <ore:pearlFluix>],
+	[<ore:pearlFluix>, <ore:compressed3xDustBedrock>, <appliedenergistics2:material:41>, <ore:compressed3xDustBedrock>, <ore:pearlFluix>],
+	[<ore:compressed3xDustBedrock>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:compressed3xDustBedrock>]
+]);
+
+#Wireless Crafting Terminal
+recipes.remove(<wct:wct>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <wct:wct>, [
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:part:360>, <appliedenergistics2:part:360>, <appliedenergistics2:wireless_terminal>, <appliedenergistics2:part:360>, <appliedenergistics2:part:360>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
+]);

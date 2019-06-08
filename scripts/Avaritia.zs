@@ -152,7 +152,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <avaritia:endest_pearl>, [
 	[null, <minecraft:end_stone>, <minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>, <minecraft:end_stone>, null],
 	[null, <minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>, null],
 	[<minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <avaritia:resource:2>, <minecraft:ender_pearl>, <avaritia:resource:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>],
-	[<minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <projectred-expansion:infused_ender_pearl>, <minecraft:nether_star>, <cyclicmagic:ender_pearl_mounted>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>],
+	[<minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <darkutils:material:1>, <minecraft:nether_star>, <cyclicmagic:ender_pearl_mounted>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>],
 	[<minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <avaritia:resource:2>, <cyclicmagic:ender_pearl_reuse>, <avaritia:resource:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>],
 	[null, <minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>, null],
 	[null, <minecraft:end_stone>, <minecraft:end_stone>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <actuallyadditions:block_misc:6>, <minecraft:end_stone>, <minecraft:end_stone>, null],
@@ -177,8 +177,8 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <avaritiatweaks:enhancement_cry
 mods.avaritia.ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
 
 #Infinity Capacitor Part
-mods.avaritia.ExtremeCrafting.remove(<avaritiaio:infinitecapacitorassembly>);
-mods.extendedcrafting.TableCrafting.addShaped(4, <avaritiaio:infinitecapacitorassembly> *2, [
+mods.avaritia.ExtremeCrafting.remove(<avaritiaio:infinitecapacitor>);
+mods.extendedcrafting.TableCrafting.addShaped(4, <avaritiaio:infinitecapacitor> *2, [
 	[null, <ore:ingotInfinity>, <ore:ingotInfinity>, <avaritia:resource:5>, <ore:ingotInfinity>, <ore:ingotInfinity>, <ore:ingotInfinity>, <ore:ingotInfinity>, null],
 	[null, <ore:ingotInfinity>, <ore:ingotCrystalMatrix>, <avaritia:resource:5>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <ore:ingotInfinity>, null],
 	[null, <ore:ingotInfinity>, <ore:ingotCrystalMatrix>, <avaritia:resource:5>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <ore:ingotInfinity>, null],
