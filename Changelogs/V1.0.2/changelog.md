@@ -15,3 +15,5 @@ Chaos Guardian has 10.000 Health instead of 2.000
 Fixed Discord integration
 
 Redesigned Modular Machines
+
+Creative Items have recipes
