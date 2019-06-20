@@ -409,3 +409,7 @@ recipes.replaceAllOccurences(<rftools:machine_frame>, <modularmachinery:blockcon
 
 #Dimension Builder
 recipes.replaceAllOccurences(<rftools:machine_frame>, <modularmachinery:blockcontroller>, <rftoolsdim:dimension_builder>);
+
+#Sawmill
+recipes.replaceAllOccurences(<thermalexpansion:frame>, <mekanism:basicblock:8>, <thermalexpansion:machine:2>);
+recipes.replaceAllOccurences(<mekanism:basicblock:8>, <thermalexpansion:machine:2>.withTag({Level: 4 as byte}), <mekanism:machineblock2:5>);

@@ -1,6 +1,7 @@
 #Paper
 recipes.remove(<minecraft:paper>);
 recipes.addShapeless(<minecraft:paper> * 2, [<minecraft:book>]);
+recipes.addShaped(<minecraft:paper> * 10, [[null, <mysticalagriculture:nature_essence>, null],[null, null, null], [<mysticalagriculture:nature_essence>, null, <mysticalagriculture:nature_essence>]]);
 
 #Chest
 recipes.removeShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
@@ -45,4 +46,40 @@ recipes.addShaped(<minecraft:ender_chest>, [[<minecraft:obsidian>, <mekanism:mac
 
 #Magma Cream
 recipes.removeByRecipeName("minecraft:magma_cream");
-mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:magma_cream>, <minecraft:slime_ball>, <liquid:pyrotheum> * 1000, 5000);
+mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:magma_cream>, <minecraft:slime_ball>, <liquid:pyrotheum> * 250, 5000);
+
+#1 Log 1 -> 1 Plank
+recipes.removeByRecipeName("minecraft:oak_planks");
+recipes.removeByRecipeName("minecraft:spruce_planks");
+recipes.removeByRecipeName("minecraft:birch_planks");
+recipes.removeByRecipeName("minecraft:jungle_planks");
+recipes.removeByRecipeName("minecraft:acacia_planks");
+recipes.removeByRecipeName("minecraft:dark_oak_planks");
+recipes.removeByRecipeName("extrautils2:ironwood_log_to_planks_raw");
+recipes.removeByRecipeName("extrautils2:ironwood_log_to_planks_burnt");
+recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_3_x4_pamcinnamon");
+recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_1_x4_pammaple");
+recipes.removeByRecipeName("harvestcraft:minecraft_planks_meta_3_x4_pampaperbark");
+recipes.removeByRecipeName("randomthings:spectreplank");
+
+recipes.addShapeless(<randomthings:spectreplank>, [<randomthings:spectrelog>]);
+recipes.addShapeless(<minecraft:planks:3>, [<harvestcraft:pampaperbark>]);
+recipes.addShapeless(<minecraft:planks:1>, [<harvestcraft:pammaple>]);
+recipes.addShapeless(<minecraft:planks:3>, [<harvestcraft:pamcinnamon>]);
+recipes.addShapeless(<extrautils2:ironwood_planks:1>, [<extrautils2:ironwood_log:1>]);
+recipes.addShapeless(<extrautils2:ironwood_planks>, [<extrautils2:ironwood_log>]);
+recipes.addShapeless(<minecraft:planks:5>, [<minecraft:log2:1>]);
+recipes.addShapeless(<minecraft:planks:4>, [<minecraft:log2>]);
+recipes.addShapeless(<minecraft:planks:3>, [<minecraft:log:3>]);
+recipes.addShapeless(<minecraft:planks:2>, [<minecraft:log:2>]);
+recipes.addShapeless(<minecraft:planks:1>, [<minecraft:log:1>]);
+recipes.addShapeless(<minecraft:planks>, [<minecraft:log>]);
+
+#2 Planks -> 1 Stick
+recipes.removeByRecipeName("minecraft:stick");
+recipes.removeByRecipeName("extrautils2:shortcut_stick");
+recipes.addShapedMirrored(<minecraft:stick>, [[<ore:plankWood>, null, null],[<ore:plankWood>, null, null], [null, null, null]]);
+
+#Trapped Chest
+recipes.removeByRecipeName("minecraft:trapped_chest");
+recipes.addShaped(<minecraft:trapped_chest>, [[<minecraft:tripwire_hook>, <minecraft:tripwire_hook>, <minecraft:tripwire_hook>],[<minecraft:tripwire_hook>, <minecraft:chest>, <minecraft:tripwire_hook>], [<minecraft:tripwire_hook>, <minecraft:tripwire_hook>, <minecraft:tripwire_hook>]]);

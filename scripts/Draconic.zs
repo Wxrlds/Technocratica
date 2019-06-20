@@ -22,4 +22,4 @@ recipes.addShaped(<draconicevolution:particle_generator>, [[<draconicevolution:w
 
 #Energy Core Stablilizer
 recipes.remove(<draconicevolution:particle_generator:2>);
-recipes.addShaped(<draconicevolution:particle_generator:2>, [[<danknull:dank_null_panel:4>, <customcapacitors:custom_capacitor>.withTag({BlockEntityTag: {capid: "awakended_draconium"}}), <danknull:dank_null_panel:4>],[<minecraft:diamond>, <draconicevolution:particle_generator>, <minecraft:diamond>], [<ic2:crafting:19>, <mekanism:compresseddiamond>, <ic2:crafting:19>]]);
+recipes.addShaped(<draconicevolution:particle_generator:2>, [[<danknull:dank_null_panel_4>, <customcapacitors:custom_capacitor>.withTag({BlockEntityTag: {capid: "awakended_draconium"}}), <danknull:dank_null_panel_4>],[<minecraft:diamond>, <draconicevolution:particle_generator>, <minecraft:diamond>], [<ic2:crafting:19>, <mekanism:compresseddiamond>, <ic2:crafting:19>]]);
