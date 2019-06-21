@@ -5,5 +5,3 @@ Beta state reached!
 Small Recipe changes
 
 Fixed [#1 Spectator Mode not working](https://github.com/Wxrlds/Technocratica/issues/1)
-
-Created Server file
