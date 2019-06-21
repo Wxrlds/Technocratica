@@ -3652,21 +3652,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "industrialcraft-2-2.8.162-ex112.jar",
+                    "file_name": "industrialcraft-2-2.8.163-ex112.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2727/59/industrialcraft-2-2.8.162-ex112.jar",
-                    "id": "2727059",
+                    "url": "https://edge.forgecdn.net/files/2727/498/industrialcraft-2-2.8.163-ex112.jar",
+                    "id": "2727498",
                     "parent_id": "242638",
                     "hashes": {
-                        "sha1": "3ba49c0a7016f3bb5160702f0e92c3f180b8a18d",
-                        "md5": "7bd2a95e849293b21e73cd52b972895c"
+                        "sha1": "1fb6bd8aaa9f6a4652a84350651ed7342a6c476f",
+                        "md5": "4196f0398402034b872647156b7e0479"
                     },
                     "required_dependencies": [],
-                    "size": 8353886,
-                    "date_published": "2019-06-20T01:06:16.347Z"
+                    "size": 8353884,
+                    "date_published": "2019-06-21T02:05:29.917Z"
                 }
             ]
         },

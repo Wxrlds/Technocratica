@@ -78,7 +78,7 @@ recipes.addShapeless(<minecraft:planks>, [<minecraft:log>]);
 #2 Planks -> 1 Stick
 recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("extrautils2:shortcut_stick");
-recipes.addShapedMirrored(<minecraft:stick>, [[<ore:plankWood>, null, null],[<ore:plankWood>, null, null], [null, null, null]]);
+recipes.addShapedMirrored(<minecraft:stick>, [[<ore:plankWood>, null],[<ore:plankWood>, null]]);
 
 #Trapped Chest
 recipes.removeByRecipeName("minecraft:trapped_chest");
