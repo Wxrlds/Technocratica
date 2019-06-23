@@ -48,6 +48,28 @@
       <output name="GEAR_WOOD"/>
     </crafting>
   </recipe>
+  
+  <recipe name="Gear, Stone" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item name="stickWood"/><item name="oredict:cobblestone"/><item name="stickWood"/>
+        <item name="oredict:cobblestone"/><item /><item name="oredict:cobblestone"/>
+        <item name="stickWood"/><item name="oredict:cobblestone"/><item name="stickWood"/>
+      </grid>
+      <output name="GEAR_STONE"/>
+    </crafting>
+  </recipe>
+
+  <recipe name="Gear, Stone, Upgrade" required="true" disabled="true">
+    <crafting>
+      <grid>
+        <item /><item name="oredict:cobblestone"/><item />
+        <item name="oredict:cobblestone"/><item name="GEAR_WOOD"/><item name="oredict:cobblestone"/>
+        <item /><item name="oredict:cobblestone"/><item />
+      </grid>
+      <output name="GEAR_STONE"/>
+    </crafting>
+  </recipe>
 
 <!--Remove Hopper Recipe-->
   <recipe name="Tweak: Wood Hopper" required="false" disabled="true">

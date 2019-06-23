@@ -41,6 +41,12 @@ recipes.remove(<enderio:item_material:9>);
 recipes.addShaped(<enderio:item_material:9>, [[<minecraft:stick>, null, <minecraft:stick>],[null, null, null], [<minecraft:stick>, null, <minecraft:stick>]]);
 recipes.addShaped(<enderio:item_material:9>, [[null, <minecraft:stick>, null],[<minecraft:stick>, null, <minecraft:stick>], [null, <minecraft:stick>, null]]);
 
+#Stone Gear (EnderIO)
+recipes.addShaped(<enderio:item_material:10>, [[null, <ore:cobblestone>, null],[<ore:cobblestone>, <enderio:item_material:9>, <ore:cobblestone>], [null, <ore:cobblestone>, null]]);
+recipes.addShaped(<enderio:item_material:10>, [[<ore:cobblestone>, null, <ore:cobblestone>],[null, <enderio:item_material:9>, null], [<ore:cobblestone>, null, <ore:cobblestone>]]);
+recipes.addShaped(<enderio:item_material:10>, [[<ore:cobblestone>, <ore:stickWood>, <ore:cobblestone>],[<ore:stickWood>, null, <ore:stickWood>], [<ore:cobblestone>, <ore:stickWood>, <ore:cobblestone>]]);
+recipes.addShaped(<enderio:item_material:10>, [[<ore:stickWood>, <ore:cobblestone>, <ore:stickWood>],[<ore:cobblestone>, null, <ore:cobblestone>], [<ore:stickWood>, <ore:cobblestone>, <ore:stickWood>]]);
+
 #Steel Block (Mek)
 recipes.remove(<mekanism:basicblock:5>);
 

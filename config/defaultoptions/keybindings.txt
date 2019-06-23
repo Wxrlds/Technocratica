@@ -78,7 +78,6 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_customcapacitors.options.mode_change_key:0:NONE
 key_key.next_item.desc:0:NONE
 key_key.previous_item.desc:0:NONE
 key_key.open_danknull.desc:0:NONE

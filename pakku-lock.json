@@ -2157,41 +2157,6 @@
             ]
         },
         {
-            "pakku_id": "2DMyZq1Zbf3X6O7Y",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "custom-capacitors"
-            },
-            "name": {
-                "curseforge": "Custom Capacitors"
-            },
-            "id": {
-                "curseforge": "318130"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "customcapacitors-1.12.2-1.2.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/2694/279/customcapacitors-1.12.2-1.2.0.jar",
-                    "id": "2694279",
-                    "parent_id": "318130",
-                    "hashes": {
-                        "sha1": "95b4efe5d95e7bd5c51d403b4227a67379398e02",
-                        "md5": "fde8eb1541a0c04044434aab36a5cb75"
-                    },
-                    "required_dependencies": [
-                        "316901"
-                    ],
-                    "size": 88719,
-                    "date_published": "2019-04-01T09:50:45.367Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "fkuGxqv5bT82Wr2s",
             "type": "MOD",
             "slug": {
@@ -2206,21 +2171,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.11.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2720/719/Cyclic-1.12.2-1.19.11.jar",
-                    "id": "2720719",
+                    "url": "https://edge.forgecdn.net/files/2728/480/Cyclic-1.12.2-1.19.12.jar",
+                    "id": "2728480",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "27a1beaa07dae8f13732a35f5317f8a9d847a7e5",
-                        "md5": "95486cdfbcc23e932ed7a1f57f3c3965"
+                        "sha1": "1917af9df1d1f9050240e4a37d6bcd824defa7e0",
+                        "md5": "919802ec2f8e574f2788dfe32252de06"
                     },
                     "required_dependencies": [],
-                    "size": 3997797,
-                    "date_published": "2019-06-06T06:18:02.950Z"
+                    "size": 3998285,
+                    "date_published": "2019-06-23T05:14:42.367Z"
                 }
             ]
         },
@@ -2951,21 +2916,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FpsReducer-mc1.12.2-1.10.3.jar",
+                    "file_name": "FpsReducer-mc1.12.2-1.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2627/308/FpsReducer-mc1.12.2-1.10.3.jar",
-                    "id": "2627308",
+                    "url": "https://edge.forgecdn.net/files/2727/930/FpsReducer-mc1.12.2-1.12.jar",
+                    "id": "2727930",
                     "parent_id": "280294",
                     "hashes": {
-                        "sha1": "6998eefb8f2f141c092e3b52743923f097399406",
-                        "md5": "8530c573759465b1f70591b7ea9f7e48"
+                        "sha1": "674884a8013dc874cf94828fdfa7f28e5fd7ff1b",
+                        "md5": "5cd3fe726407568ecfb20fce17708138"
                     },
                     "required_dependencies": [],
-                    "size": 44033,
-                    "date_published": "2018-10-13T06:44:50.657Z"
+                    "size": 48076,
+                    "date_published": "2019-06-22T03:39:55.543Z"
                 }
             ]
         },
@@ -3017,21 +2982,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.117.jar",
+                    "file_name": "FTBLib-5.4.3.118.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2726/535/FTBLib-5.4.3.117.jar",
-                    "id": "2726535",
+                    "url": "https://edge.forgecdn.net/files/2728/357/FTBLib-5.4.3.118.jar",
+                    "id": "2728357",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "508596abde70dbaf57f7e18aa8cc2453772a425e",
-                        "md5": "ef226689ca15a8cf1eb667270800c4ef"
+                        "sha1": "a175256f15a6c8d48beec6dbdb999b8f1ccbba58",
+                        "md5": "ea7cec3f6c8214226a30eeb83767d9c7"
                     },
                     "required_dependencies": [],
-                    "size": 911658,
-                    "date_published": "2019-06-18T21:25:23.610Z"
+                    "size": 914337,
+                    "date_published": "2019-06-22T23:16:30.950Z"
                 }
             ]
         },
@@ -3089,24 +3054,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.6.1.160.jar",
+                    "file_name": "FTBQuests-1.6.1.162.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2726/502/FTBQuests-1.6.1.160.jar",
-                    "id": "2726502",
+                    "url": "https://edge.forgecdn.net/files/2728/367/FTBQuests-1.6.1.162.jar",
+                    "id": "2728367",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "8325d83cfdd0e3c5c41ee310ae10c37350b28859",
-                        "md5": "38e7e4a8e5275b72d87f121885003f6b"
+                        "sha1": "3a92f99ed8f75965df63d5d34a95470781323877",
+                        "md5": "f014017cca1224bfbea646fd27bbd835"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 912647,
-                    "date_published": "2019-06-18T20:15:06.277Z"
+                    "size": 912728,
+                    "date_published": "2019-06-22T23:21:40.120Z"
                 }
             ]
         },
@@ -6122,23 +6087,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Quark-r1.5-160.jar",
+                    "file_name": "Quark-r1.5-162.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2727/55/Quark-r1.5-160.jar",
-                    "id": "2727055",
+                    "url": "https://edge.forgecdn.net/files/2728/259/Quark-r1.5-162.jar",
+                    "id": "2728259",
                     "parent_id": "243121",
                     "hashes": {
-                        "sha1": "dcfd2821f2162797ad6b0a74a41235174acc8d15",
-                        "md5": "4812e733a04a400eb05c199a329b71d3"
+                        "sha1": "eb84fe99d8023d05a00f1ecb8fe8ea6f46beecf8",
+                        "md5": "1542a0868a88d2facf6e31f1159f6c0e"
                     },
                     "required_dependencies": [
                         "250363"
                     ],
-                    "size": 2591480,
-                    "date_published": "2019-06-20T00:52:40.523Z"
+                    "size": 2593871,
+                    "date_published": "2019-06-22T20:32:13.653Z"
                 }
             ]
         },
@@ -6338,23 +6303,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.16.1.0.jar",
+                    "file_name": "randompatches-1.12.2-1.16.2.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2722/129/randompatches-1.12.2-1.16.1.0.jar",
-                    "id": "2722129",
+                    "url": "https://edge.forgecdn.net/files/2728/466/randompatches-1.12.2-1.16.2.1.jar",
+                    "id": "2728466",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "f7136c12ae7fdee097173d6f742b3c2a7d50091e",
-                        "md5": "9019249d81c197464c3f6e0114a6d3d6"
+                        "sha1": "355aa96b3331b2ab0014bc69f68ba71419f27b4e",
+                        "md5": "e6c79017ac9225a0016f2ffbe2737b0d"
                     },
                     "required_dependencies": [],
-                    "size": 179849,
-                    "date_published": "2019-06-09T00:03:01.530Z"
+                    "size": 184930,
+                    "date_published": "2019-06-23T04:13:00.733Z"
                 }
             ]
         },
@@ -6828,24 +6793,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stellarfluidconduit-1.12.2-1.0.1.jar",
+                    "file_name": "stellarfluidconduit-1.12.2-1.0.1a.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2711/915/stellarfluidconduit-1.12.2-1.0.1.jar",
-                    "id": "2711915",
+                    "url": "https://edge.forgecdn.net/files/2727/916/stellarfluidconduit-1.12.2-1.0.1a.jar",
+                    "id": "2727916",
                     "parent_id": "321506",
                     "hashes": {
-                        "sha1": "63cc59918144358f4ad426c539b22de5d8fc9479",
-                        "md5": "6c900cec0f83a3ef20fd6bd417723611"
+                        "sha1": "66864464ee458146a761ff516e074a2d644259ec",
+                        "md5": "14820f1e2ec9a1d5724beaf798b2977d"
                     },
                     "required_dependencies": [
                         "64578",
                         "304346"
                     ],
-                    "size": 47067,
-                    "date_published": "2019-05-16T15:49:43.297Z"
+                    "size": 47076,
+                    "date_published": "2019-06-22T02:53:35.657Z"
                 }
             ]
         },
@@ -8011,23 +7976,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "YABBA-1.1.2.52.jar",
+                    "file_name": "YABBA-1.1.2.53.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2720/88/YABBA-1.1.2.52.jar",
-                    "id": "2720088",
+                    "url": "https://edge.forgecdn.net/files/2728/361/YABBA-1.1.2.53.jar",
+                    "id": "2728361",
                     "parent_id": "255177",
                     "hashes": {
-                        "sha1": "2ac759d1d759adb116049aebca378ab0294b6907",
-                        "md5": "34986c72e515f767017d09a2bacfc2b6"
+                        "sha1": "916d23ebf2a3627d0e643b017b66b52b36272048",
+                        "md5": "2fb17e3854eb47296c1f203c8c1425b2"
                     },
                     "required_dependencies": [
                         "237167"
                     ],
-                    "size": 233234,
-                    "date_published": "2019-06-04T18:03:53.253Z"
+                    "size": 233275,
+                    "date_published": "2019-06-22T23:18:11.087Z"
                 }
             ]
         },
