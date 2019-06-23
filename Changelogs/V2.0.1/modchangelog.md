@@ -6,8 +6,4 @@ Updated 1 files:
 		industrialcraft-2-2.8.163-ex112.jar:
 			* Implement surface removal Appears to all work at least (Chocohead)
 			
-Removed 1 files:
-	
-	-Custom Capacitors
-
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.14)
