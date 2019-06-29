@@ -1,0 +1,20 @@
+{
+	"id": "infinity",
+	"display_name": "Infinity",
+	"description": "Why Build a giant awesome looking Multiblock if you can make one boring Block?",
+	"capacity": 9223372036854775807,
+	"max_input_rate": 9223372036854775807,
+	"max_output_rate": 9223372036854775807,
+	"base_color": "f798e5",
+	"trim_color": "7de026",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0		
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

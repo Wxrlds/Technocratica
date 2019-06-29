@@ -323,7 +323,7 @@
         "mode": "ADD",
         "result": "contenttweaker:chaotic_energy_core",
         "catalyst": "draconicevolution:draconium_capacitor,1,1",
-		"energy": 2147483647,
+		"energy": 79536431,
 		"tier":3,
 		"ingredients": [
 			"draconicevolution:chaotic_core,5",

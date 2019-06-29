@@ -1,6 +1,6 @@
 #Dark Matter
 recipes.remove(<projecte:item.pe_matter:0>);
-recipes.addShaped(<projecte:item.pe_matter>, [[<auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>],[<auxiliumequivalence:fuel:2>, <actuallyadditions:block_crystal_empowered:2>, <auxiliumequivalence:fuel:2>], [<auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>]]);
+recipes.addShaped(<projecte:item.pe_matter>, [[<contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>],[<contenttweaker:dark_aeter>, <actuallyadditions:block_crystal_empowered:2>, <contenttweaker:dark_aeter>], [<contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>]]);
 recipes.addShapeless(<projecte:item.pe_matter> * 4, [<projecte:matter_block>]);
 
 #Red Matter
@@ -31,57 +31,54 @@ recipes.addShaped(<projectex:matter:3>, [[<projecte:item.pe_fuel:2>, <projectex:
 
 #Blue Matter
 recipes.remove(<projectex:matter:4>);
-recipes.remove(<auxiliumequivalence:matter:3>);
-recipes.addShaped(<auxiliumequivalence:matter:3>, [[<auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>],[<projectex:matter:3>, <projectex:matter:3>, <projectex:matter:3>], [<auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>]]);
-recipes.addShaped(<auxiliumequivalence:matter:3>, [[<auxiliumequivalence:fuel:14>, <projectex:matter:3>, <auxiliumequivalence:fuel:14>],[<auxiliumequivalence:fuel:14>, <projectex:matter:3>, <auxiliumequivalence:fuel:14>], [<auxiliumequivalence:fuel:14>, <projectex:matter:3>, <auxiliumequivalence:fuel:14>]]);
-recipes.addShapeless(<auxiliumequivalence:matter:3> * 4, [<auxiliumequivalence:matter_block:3>]);
+recipes.remove(<contenttweaker:blue_matter>);
+recipes.addShaped(<contenttweaker:blue_matter>, [[<contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>],[<projectex:matter:3>, <projectex:matter:3>, <projectex:matter:3>], [<contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>]]);
+recipes.addShaped(<contenttweaker:blue_matter>, [[<contenttweaker:blue_aeter>, <projectex:matter:3>, <contenttweaker:blue_aeter>],[<contenttweaker:blue_aeter>, <projectex:matter:3>, <contenttweaker:blue_aeter>], [<contenttweaker:blue_aeter>, <projectex:matter:3>, <contenttweaker:blue_aeter>]]);
 
 #Cyan Matter
 recipes.remove(<projectex:matter:5>);
-recipes.addShaped(<projectex:matter:5>, [[<auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>],[<auxiliumequivalence:matter:3>, <auxiliumequivalence:matter:3>, <auxiliumequivalence:matter:3>], [<auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>]]);
-recipes.addShaped(<projectex:matter:5>, [[<auxiliumequivalence:fuel:14>, <auxiliumequivalence:matter:3>, <auxiliumequivalence:fuel:14>],[<auxiliumequivalence:fuel:14>, <auxiliumequivalence:matter:3>, <auxiliumequivalence:fuel:14>], [<auxiliumequivalence:fuel:14>, <auxiliumequivalence:matter:3>, <auxiliumequivalence:fuel:14>]]);
+recipes.addShaped(<projectex:matter:5>, [[<contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>],[<contenttweaker:blue_matter>, <contenttweaker:blue_matter>, <contenttweaker:blue_matter>], [<contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>]]);
+recipes.addShaped(<projectex:matter:5>, [[<contenttweaker:blue_aeter>, <contenttweaker:blue_matter>, <contenttweaker:blue_aeter>],[<contenttweaker:blue_aeter>, <contenttweaker:blue_matter>, <contenttweaker:blue_aeter>], [<contenttweaker:blue_aeter>, <contenttweaker:blue_matter>, <contenttweaker:blue_aeter>]]);
 
 #Green Matter
 recipes.remove(<projectex:matter:6>);
-recipes.remove(<auxiliumequivalence:matter:2>);
-recipes.addShapeless(<auxiliumequivalence:matter:2>, [<auxiliumequivalence:matter_block:2>]);
-recipes.addShaped(<auxiliumequivalence:matter:2>, [[<auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>],[<projectex:matter:5>, <projectex:matter:5>, <projectex:matter:5>], [<auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>]]);
-recipes.addShaped(<auxiliumequivalence:matter:2>, [[<auxiliumequivalence:fuel:11>, <projectex:matter:5>, <auxiliumequivalence:fuel:11>],[<auxiliumequivalence:fuel:11>, <projectex:matter:5>, <auxiliumequivalence:fuel:11>], [<auxiliumequivalence:fuel:11>, <projectex:matter:5>, <auxiliumequivalence:fuel:11>]]);
+recipes.remove(<contenttweaker:green_matter>);
+recipes.addShapeless(<contenttweaker:green_matter>, [<contenttweaker:gm_block>]);
+recipes.addShaped(<contenttweaker:green_matter>, [[<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>],[<projectex:matter:5>, <projectex:matter:5>, <projectex:matter:5>], [<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>]]);
+recipes.addShaped(<contenttweaker:green_matter>, [[<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>],[<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>], [<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>]]);
 
 #Lime Matter
 recipes.remove(<projectex:matter:7>);
-recipes.addShaped(<projectex:matter:7>, [[<auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>],[<auxiliumequivalence:matter:2>, <auxiliumequivalence:matter:2>, <auxiliumequivalence:matter:2>], [<auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>]]);
-recipes.addShaped(<projectex:matter:7>, [[<auxiliumequivalence:fuel:11>, <auxiliumequivalence:matter:2>, <auxiliumequivalence:fuel:11>],[<auxiliumequivalence:fuel:11>, <auxiliumequivalence:matter:2>, <auxiliumequivalence:fuel:11>], [<auxiliumequivalence:fuel:11>, <auxiliumequivalence:matter:2>, <auxiliumequivalence:fuel:11>]]);
+recipes.addShaped(<projectex:matter:7>, [[<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>],[<contenttweaker:green_matter>, <contenttweaker:green_matter>, <contenttweaker:green_matter>], [<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>]]);
+recipes.addShaped(<projectex:matter:7>, [[<contenttweaker:green_aeter>, <contenttweaker:green_matter>, <contenttweaker:green_aeter>],[<contenttweaker:green_aeter>, <contenttweaker:green_matter>, <contenttweaker:green_aeter>], [<contenttweaker:green_aeter>, <contenttweaker:green_matter>, <contenttweaker:green_aeter>]]);
 
 #Yellow Matter
 recipes.remove(<projectex:matter:8>);
-recipes.remove(<auxiliumequivalence:matter:1>);
-recipes.addShapeless(<auxiliumequivalence:matter:1> * 4, [<auxiliumequivalence:matter_block:1>]);
-recipes.addShaped(<auxiliumequivalence:matter:1>, [[<auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>],[<projectex:matter:7>, <projectex:matter:7>, <projectex:matter:7>], [<auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>]]);
-recipes.addShaped(<auxiliumequivalence:matter:1>, [[<auxiliumequivalence:fuel:8>, <projectex:matter:7>, <auxiliumequivalence:fuel:8>],[<auxiliumequivalence:fuel:8>, <projectex:matter:7>, <auxiliumequivalence:fuel:8>], [<auxiliumequivalence:fuel:8>, <projectex:matter:7>, <auxiliumequivalence:fuel:8>]]);
+recipes.remove(<contenttweaker:yellow_matter>);
+recipes.addShaped(<contenttweaker:yellow_matter>, [[<contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>],[<projectex:matter:7>, <projectex:matter:7>, <projectex:matter:7>], [<contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>]]);
+recipes.addShaped(<contenttweaker:yellow_matter>, [[<contenttweaker:yellow_aeter>, <projectex:matter:7>, <contenttweaker:yellow_aeter>],[<contenttweaker:yellow_aeter>, <projectex:matter:7>, <contenttweaker:yellow_aeter>], [<contenttweaker:yellow_aeter>, <projectex:matter:7>, <contenttweaker:yellow_aeter>]]);
 
 #Orange Matter
 recipes.remove(<projectex:matter:9>);
-recipes.remove(<auxiliumequivalence:matter:0>);
-recipes.addShapeless(<auxiliumequivalence:matter> * 4, [<auxiliumequivalence:matter_block>]);
-recipes.addShaped(<auxiliumequivalence:matter>, [[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>],[<auxiliumequivalence:matter:1>, <auxiliumequivalence:matter:1>, <auxiliumequivalence:matter:1>], [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>]]);
-recipes.addShaped(<auxiliumequivalence:matter>, [[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter:1>, <auxiliumequivalence:fuel:5>],[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter:1>, <auxiliumequivalence:fuel:5>], [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter:1>, <auxiliumequivalence:fuel:5>]]);
+recipes.remove(<contenttweaker:orange_matter>);
+recipes.addShaped(<contenttweaker:orange_matter>, [[<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>],[<contenttweaker:yellow_matter>, <contenttweaker:yellow_matter>, <contenttweaker:yellow_matter>], [<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>]]);
+recipes.addShaped(<contenttweaker:orange_matter>, [[<contenttweaker:orange_aeter>, <contenttweaker:yellow_matter>, <contenttweaker:orange_aeter>],[<contenttweaker:orange_aeter>, <contenttweaker:yellow_matter>, <contenttweaker:orange_aeter>], [<contenttweaker:orange_aeter>, <contenttweaker:yellow_matter>, <contenttweaker:orange_aeter>]]);
 
 #White Matter
 recipes.remove(<projectex:matter:10>);
-recipes.addShaped(<projectex:matter:10>, [[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>],[<auxiliumequivalence:matter>, <auxiliumequivalence:matter>, <auxiliumequivalence:matter>], [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>]]);
-recipes.addShaped(<projectex:matter:10>, [[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter>, <auxiliumequivalence:fuel:5>],[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter>, <auxiliumequivalence:fuel:5>], [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:matter>, <auxiliumequivalence:fuel:5>]]);
+recipes.addShaped(<projectex:matter:10>, [[<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>],[<contenttweaker:orange_matter>, <contenttweaker:orange_matter>, <contenttweaker:orange_matter>], [<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>]]);
+recipes.addShaped(<projectex:matter:10>, [[<contenttweaker:orange_aeter>, <contenttweaker:orange_matter>, <contenttweaker:orange_aeter>],[<contenttweaker:orange_aeter>, <contenttweaker:orange_matter>, <contenttweaker:orange_aeter>], [<contenttweaker:orange_aeter>, <contenttweaker:orange_matter>, <contenttweaker:orange_aeter>]]);
 
 #Fading Matter
 recipes.remove(<projectex:matter:11>);
-recipes.addShaped(<projectex:matter:11>, [[<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>],[<projectex:matter:10>, <projectex:matter:10>, <projectex:matter:10>], [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>]]);
-recipes.addShaped(<projectex:matter:11>, [[<auxiliumequivalence:fuel:5>, <projectex:matter:10>, <auxiliumequivalence:fuel:5>],[<auxiliumequivalence:fuel:5>, <projectex:matter:10>, <auxiliumequivalence:fuel:5>], [<auxiliumequivalence:fuel:5>, <projectex:matter:10>, <auxiliumequivalence:fuel:5>]]);
+recipes.addShaped(<projectex:matter:11>, [[<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>],[<projectex:matter:10>, <projectex:matter:10>, <projectex:matter:10>], [<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>]]);
+recipes.addShaped(<projectex:matter:11>, [[<contenttweaker:orange_aeter>, <projectex:matter:10>, <contenttweaker:orange_aeter>],[<contenttweaker:orange_aeter>, <projectex:matter:10>, <contenttweaker:orange_aeter>], [<contenttweaker:orange_aeter>, <projectex:matter:10>, <contenttweaker:orange_aeter>]]);
 
 #Rainbow Matter
-recipes.remove(<auxiliumequivalence:matter:4>);
-recipes.addShapeless(<auxiliumequivalence:matter:4> * 4, [<auxiliumequivalence:matter_block:4>]);
-recipes.addShaped(<auxiliumequivalence:matter:4>, [[<auxiliumequivalence:fuel:17>, <auxiliumequivalence:fuel:17>, <auxiliumequivalence:fuel:17>],[<projectex:matter:11>, <projectex:matter:11>, <projectex:matter:11>], [<auxiliumequivalence:fuel:17>, <auxiliumequivalence:fuel:17>, <auxiliumequivalence:fuel:17>]]);
-recipes.addShaped(<auxiliumequivalence:matter:4>, [[<auxiliumequivalence:fuel:17>, <projectex:matter:11>, <auxiliumequivalence:fuel:17>],[<auxiliumequivalence:fuel:17>, <projectex:matter:11>, <auxiliumequivalence:fuel:17>], [<auxiliumequivalence:fuel:17>, <projectex:matter:11>, <auxiliumequivalence:fuel:17>]]);
+recipes.remove(<contenttweaker:rainbow_matter>);
+recipes.addShapeless(<contenttweaker:rainbow_matter> * 4, [<contenttweaker:rainbow_block>]);
+recipes.addShaped(<contenttweaker:rainbow_matter>, [[<contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>],[<projectex:matter:11>, <projectex:matter:11>, <projectex:matter:11>], [<contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>]]);
+recipes.addShaped(<contenttweaker:rainbow_matter>, [[<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>],[<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>], [<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>]]);
 
 #Clay Matter
 recipes.remove(<projectex:clay_matter>);
@@ -90,7 +87,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projectex:clay_matter>, [
 	[<minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>],
 	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
 	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
-	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>, <auxiliumequivalence:matter_block:4>, <minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
+	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>, <contenttweaker:rainbow_block>, <minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
 	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
 	[<projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>],
 	[<minecraft:clay>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <projectex:final_star>, <minecraft:clay>],
@@ -99,23 +96,23 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projectex:clay_matter>, [
 
 #Klein Star 1
 recipes.remove(<projecte:item.pe_klein_star>);
-recipes.addShaped(<projecte:item.pe_klein_star>, [[<auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>],[<auxiliumequivalence:fuel:1>, <minecraft:diamond>, <auxiliumequivalence:fuel:1>], [<auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>]]);
+recipes.addShaped(<projecte:item.pe_klein_star>, [[<contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>],[<contenttweaker:dark_mob>, <minecraft:diamond>, <contenttweaker:dark_mob>], [<contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>]]);
 
 #Ignition Ring
 recipes.remove(<projecte:item.pe_ignition>);
-recipes.addShaped(<projecte:item.pe_ignition>, [[<minecraft:flint_and_steel>, <projecte:item.pe_matter>, <minecraft:flint_and_steel>],[<auxiliumequivalence:fuel:1>, <projecte:item.pe_ring_iron_band>, <auxiliumequivalence:fuel:1>], [<minecraft:flint_and_steel>, <projecte:item.pe_matter>, <minecraft:flint_and_steel>]]);
+recipes.addShaped(<projecte:item.pe_ignition>, [[<minecraft:flint_and_steel>, <projecte:item.pe_matter>, <minecraft:flint_and_steel>],[<contenttweaker:dark_mob>, <projecte:item.pe_ring_iron_band>, <contenttweaker:dark_mob>], [<minecraft:flint_and_steel>, <projecte:item.pe_matter>, <minecraft:flint_and_steel>]]);
 
 #Nova Catalyst
 recipes.remove(<projecte:nova_catalyst>);
-recipes.addShapeless(<projecte:nova_catalyst>, [<minecraft:tnt>,<auxiliumequivalence:fuel:1>]);
+recipes.addShapeless(<projecte:nova_catalyst>, [<minecraft:tnt>,<contenttweaker:dark_mob>]);
 
 #Nova Catalysm
 recipes.remove(<projecte:nova_cataclysm>);
-recipes.addShapeless(<projecte:nova_cataclysm>, [<projecte:nova_catalyst>,<auxiliumequivalence:fuel:2>]);
+recipes.addShapeless(<projecte:nova_cataclysm>, [<projecte:nova_catalyst>,<contenttweaker:dark_aeter>]);
 
 #Destruction Catalyst
 recipes.remove(<projecte:item.pe_destruction_catalyst>);
-recipes.addShaped(<projecte:item.pe_destruction_catalyst>, [[<projecte:nova_catalyst>, <auxiliumequivalence:fuel:1>, <projecte:nova_catalyst>],[<auxiliumequivalence:fuel:1>, <minecraft:flint_and_steel>, <auxiliumequivalence:fuel:1>], [<projecte:nova_catalyst>, <auxiliumequivalence:fuel:1>, <projecte:nova_catalyst>]]);
+recipes.addShaped(<projecte:item.pe_destruction_catalyst>, [[<projecte:nova_catalyst>, <contenttweaker:dark_mob>, <projecte:nova_catalyst>],[<contenttweaker:dark_mob>, <minecraft:flint_and_steel>, <contenttweaker:dark_mob>], [<projecte:nova_catalyst>, <contenttweaker:dark_mob>, <projecte:nova_catalyst>]]);
 
 #Final Star Tooltip
 val finalstar = <projectex:final_star>;
@@ -152,7 +149,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:transmutation_table>,
 #Transmutation Tablet
 recipes.remove(<projecte:item.pe_transmutation_tablet>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:item.pe_transmutation_tablet>, [
-	[<auxiliumequivalence:matter_block:4>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:37 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:5 as short,id:16 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:0 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <auxiliumequivalence:matter_block:4>],
+	[<contenttweaker:rainbow_block>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:37 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:5 as short,id:16 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:0 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <contenttweaker:rainbow_block>],
 	[<tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:26 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:51 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:5 as short,id:11 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"})],
 	[<actuallyadditions:item_crafter_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>, <minecraft:carrot_on_a_stick>, <minecraft:purple_shulker_box>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:2 as short,id:9 as short}]}), <minecraft:purple_shulker_box>, <minecraft:carrot_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>],
 	[<minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:52 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:70 as short}]}), <minecraft:sea_lantern>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:40 as short}]}), <tconstruct:large_plate>.withTag({Material:"awakened_plustic"}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:2 as short}]}), <minecraft:sea_lantern>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:3 as short,id:8 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:5 as short,id:32 as short}]})],
@@ -160,33 +157,33 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:item.pe_transmutation
 	[<minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:3 as short,id:21 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:5 as short,id:48 as short}]}), <minecraft:sea_lantern>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:3 as short,id:7 as short}]}), <tconstruct:large_plate>.withTag({Material:"awakened_plustic"}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:3 as short,id:5 as short}]}), <minecraft:sea_lantern>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:65 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:42 as short}]})],
 	[<actuallyadditions:item_crafter_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>, <minecraft:carrot_on_a_stick>, <minecraft:purple_shulker_box>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:4 as short}]}), <minecraft:purple_shulker_box>, <minecraft:carrot_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>, <actuallyadditions:item_crafter_on_a_stick>],
 	[<tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:2 as short,id:20 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:4 as short,id:43 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:3 as short,id:22 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"})],
-	[<auxiliumequivalence:matter_block:4>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:44 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:45 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:71 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <auxiliumequivalence:matter_block:4>]
+	[<contenttweaker:rainbow_block>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <actuallyadditions:item_crafter_on_a_stick>, <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:44 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:45 as short}]}), <minecraft:enchanted_book>.withTag({StoredEnchantments:[{lvl:1 as short,id:71 as short}]}), <actuallyadditions:item_crafter_on_a_stick>, <tconstruct:large_plate>.withTag({Material:"xu_demonic_metal"}), <contenttweaker:rainbow_block>]
 ]);
 
 #Manual
-recipes.addShapeless(<projecte:item.pe_manual>, [<auxiliumequivalence:fuel:0>,<minecraft:book>]);
+recipes.addShapeless(<projecte:item.pe_manual>, [<contenttweaker:dark_alch>,<minecraft:book>]);
 
 #Dark Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:0> *1, 1, 1, <projecte:item.pe_covalence_dust>, [<ore:coal>, <ore:coal>, <ore:coal>, <ore:coal>]);
-recipes.addShapeless(<minecraft:coal> * 4, [<auxiliumequivalence:fuel:0>]);
-furnace.setFuel(<auxiliumequivalence:fuel:0>, 3132);
-recipes.removeShapeless(<auxiliumequivalence:fuel:0>, [<projecte:item.pe_philosophers_stone>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:dark_alch> *1, 1, 1, <projecte:item.pe_covalence_dust>, [<ore:coal>, <ore:coal>, <ore:coal>, <ore:coal>]);
+recipes.addShapeless(<minecraft:coal> * 4, [<contenttweaker:dark_alch>]);
+furnace.setFuel(<contenttweaker:dark_alch>, 3132);
+recipes.removeShapeless(<contenttweaker:dark_alch>, [<projecte:item.pe_philosophers_stone>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]);
 
 #Dark Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:1> *1, 2, 2, <projecte:item.pe_covalence_dust>, [<auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:0> * 4, [<auxiliumequivalence:fuel:1>]);
-furnace.setFuel(<auxiliumequivalence:fuel:1>, 6133);
-recipes.removeShapeless(<auxiliumequivalence:fuel:1>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>, <auxiliumequivalence:fuel:0>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:dark_mob> *1, 2, 2, <projecte:item.pe_covalence_dust>, [<contenttweaker:dark_alch>, <contenttweaker:dark_alch>, <contenttweaker:dark_alch>, <contenttweaker:dark_alch>]);
+recipes.addShapeless(<contenttweaker:dark_alch> * 4, [<contenttweaker:dark_mob>]);
+furnace.setFuel(<contenttweaker:dark_mob>, 6133);
+recipes.removeShapeless(<contenttweaker:dark_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:dark_alch>, <contenttweaker:dark_alch>, <contenttweaker:dark_alch>, <contenttweaker:dark_alch>]);
 
 #Dark Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:2> *1, 4, 4, <projecte:item.pe_covalence_dust>, [<auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:1> * 4, [<auxiliumequivalence:fuel:2>]);
-furnace.setFuel(<auxiliumequivalence:fuel:2>, 12009);
-recipes.removeShapeless(<auxiliumequivalence:fuel:2>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>, <auxiliumequivalence:fuel:1>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:dark_aeter> *1, 4, 4, <projecte:item.pe_covalence_dust>, [<contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>]);
+recipes.addShapeless(<contenttweaker:dark_mob> * 4, [<contenttweaker:dark_aeter>]);
+furnace.setFuel(<contenttweaker:dark_aeter>, 12009);
+recipes.removeShapeless(<contenttweaker:dark_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>, <contenttweaker:dark_mob>]);
 
 #Red Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<projecte:item.pe_fuel:0> *1, 8, 8, <projecte:item.pe_covalence_dust>, [<auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:2> * 4, [<projecte:item.pe_fuel:0>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<projecte:item.pe_fuel:0> *1, 8, 8, <projecte:item.pe_covalence_dust>, [<contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>]);
+recipes.addShapeless(<contenttweaker:dark_aeter> * 4, [<projecte:item.pe_fuel:0>]);
 furnace.setFuel(<projecte:item.pe_fuel:0>, 23513);
 furnace.setFuel(<projecte:fuel_block:0>, 235130);
 recipes.removeShapeless(<projecte:item.pe_fuel:0>, [<projecte:item.pe_philosophers_stone>, <minecraft:coal>, <minecraft:coal>, <minecraft:coal>, <minecraft:coal>]);
@@ -206,97 +203,97 @@ recipes.addShapeless(<projecte:item.pe_fuel:1> * 4, [<projecte:item.pe_fuel:2>])
 furnace.setFuel(<projecte:item.pe_fuel:2>, 90141);
 furnace.setFuel(<projecte:fuel_block:2>, 901410);
 recipes.removeShapeless(<projecte:item.pe_fuel:2>, [<projecte:item.pe_philosophers_stone>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>]);
-recipes.removeShapeless(<projecte:item.pe_fuel:2> * 4, [ <auxiliumequivalence:fuel:2>, <projecte:item.pe_philosophers_stone>]);
+recipes.removeShapeless(<projecte:item.pe_fuel:2> * 4, [ <contenttweaker:dark_aeter>, <projecte:item.pe_philosophers_stone>]);
 
 #Blue Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:12> *1, 64, 64, <projecte:item.pe_covalence_dust:1>, [<projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]);
-recipes.addShapeless(<projecte:item.pe_fuel:2> * 4, [<auxiliumequivalence:fuel:12>]);
-furnace.setFuel(<auxiliumequivalence:fuel:12>, 74632417);
-recipes.removeShapeless(<auxiliumequivalence:fuel:12>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:blue_alch> *1, 64, 64, <projecte:item.pe_covalence_dust:1>, [<projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]);
+recipes.addShapeless(<projecte:item.pe_fuel:2> * 4, [<contenttweaker:blue_alch>]);
+furnace.setFuel(<contenttweaker:blue_alch>, 74632417);
+recipes.removeShapeless(<contenttweaker:blue_alch>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>]);
 
 #Blue Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:13> *1, 65536, 65536, <projecte:item.pe_covalence_dust:1>, [<auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:12> * 4, [<auxiliumequivalence:fuel:13>]);
-furnace.setFuel(<auxiliumequivalence:fuel:13>, 146126163);
-recipes.removeShapeless(<auxiliumequivalence:fuel:13>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>, <auxiliumequivalence:fuel:12>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:blue_mob> *1, 65536, 65536, <projecte:item.pe_covalence_dust:1>, [<contenttweaker:blue_alch>, <contenttweaker:blue_alch>, <contenttweaker:blue_alch>, <contenttweaker:blue_alch>]);
+recipes.addShapeless(<contenttweaker:blue_alch> * 4, [<contenttweaker:blue_mob>]);
+furnace.setFuel(<contenttweaker:blue_mob>, 146126163);
+recipes.removeShapeless(<contenttweaker:blue_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:blue_alch>, <contenttweaker:blue_alch>, <contenttweaker:blue_alch>, <contenttweaker:blue_alch>]);
 
 #Blue Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:14> *1, 131072, 131072, <projecte:item.pe_covalence_dust:1>, [<auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:13> * 4, [<auxiliumequivalence:fuel:14>]);
-furnace.setFuel(<auxiliumequivalence:fuel:14>, 286106980);
-recipes.removeShapeless(<auxiliumequivalence:fuel:14>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:blue_aeter> *1, 131072, 131072, <projecte:item.pe_covalence_dust:1>, [<contenttweaker:blue_mob>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>]);
+recipes.addShapeless(<contenttweaker:blue_mob> * 4, [<contenttweaker:blue_aeter>]);
+furnace.setFuel(<contenttweaker:blue_aeter>, 286106980);
+recipes.removeShapeless(<contenttweaker:blue_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>]);
 
 #Green Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:9> *1, 4096, 4096, <projecte:item.pe_covalence_dust:1>, [<auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:14> * 4, [<auxiliumequivalence:fuel:9>]);
-furnace.setFuel(<auxiliumequivalence:fuel:9>, 99431914);
-recipes.removeShapeless(<auxiliumequivalence:fuel:9>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:green_alch> *1, 4096, 4096, <projecte:item.pe_covalence_dust:1>, [<contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>]);
+recipes.addShapeless(<contenttweaker:blue_aeter> * 4, [<contenttweaker:green_alch>]);
+furnace.setFuel(<contenttweaker:green_alch>, 99431914);
+recipes.removeShapeless(<contenttweaker:green_alch>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>]);
 
 #Green Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:10> *1, 8192, 8192, <projecte:item.pe_covalence_dust:1>, [<auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:9> * 4, [<auxiliumequivalence:fuel:10>]);
-furnace.setFuel(<auxiliumequivalence:fuel:10>, 19468234);
-recipes.removeShapeless(<auxiliumequivalence:fuel:10>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>, <auxiliumequivalence:fuel:9>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:green_mob> *1, 8192, 8192, <projecte:item.pe_covalence_dust:1>, [<contenttweaker:green_alch>, <contenttweaker:green_alch>, <contenttweaker:green_alch>, <contenttweaker:green_alch>]);
+recipes.addShapeless(<contenttweaker:green_alch> * 4, [<contenttweaker:green_mob>]);
+furnace.setFuel(<contenttweaker:green_mob>, 19468234);
+recipes.removeShapeless(<contenttweaker:green_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:green_alch>, <contenttweaker:green_alch>, <contenttweaker:green_alch>, <contenttweaker:green_alch>]);
 
 #Green Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:11> *1, 16384, 16384, <projecte:item.pe_covalence_dust:1>, [<auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:10> * 4, [<auxiliumequivalence:fuel:11>]);
-furnace.setFuel(<auxiliumequivalence:fuel:11>, 38117731);
-recipes.removeShapeless(<auxiliumequivalence:fuel:11>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>, <auxiliumequivalence:fuel:10>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:green_aeter> *1, 16384, 16384, <projecte:item.pe_covalence_dust:1>, [<contenttweaker:green_mob>, <contenttweaker:green_mob>, <contenttweaker:green_mob>, <contenttweaker:green_mob>]);
+recipes.addShapeless(<contenttweaker:green_mob> * 4, [<contenttweaker:green_aeter>]);
+furnace.setFuel(<contenttweaker:green_aeter>, 38117731);
+recipes.removeShapeless(<contenttweaker:green_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:green_mob>, <contenttweaker:green_mob>, <contenttweaker:green_mob>, <contenttweaker:green_mob>]);
 
 #Yellow Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:6> *1, 512, 512, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>, <auxiliumequivalence:fuel:11>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:11> * 4, [<auxiliumequivalence:fuel:6>]);
-furnace.setFuel(<auxiliumequivalence:fuel:6>, 1324721);
-recipes.removeShapeless(<auxiliumequivalence:fuel:6>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:yellow_alch> *1, 512, 512, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>]);
+recipes.addShapeless(<contenttweaker:green_aeter> * 4, [<contenttweaker:yellow_alch>]);
+furnace.setFuel(<contenttweaker:yellow_alch>, 1324721);
+recipes.removeShapeless(<contenttweaker:yellow_alch>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>]);
 
 #Yellow Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:7> *1, 1024, 1024, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:6> * 4, [<auxiliumequivalence:fuel:7>]);
-furnace.setFuel(<auxiliumequivalence:fuel:7>, 2593732);
-recipes.removeShapeless(<auxiliumequivalence:fuel:7>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>, <auxiliumequivalence:fuel:6>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:yellow_mob> *1, 1024, 1024, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>]);
+recipes.addShapeless(<contenttweaker:yellow_alch> * 4, [<contenttweaker:yellow_mob>]);
+furnace.setFuel(<contenttweaker:yellow_mob>, 2593732);
+recipes.removeShapeless(<contenttweaker:yellow_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>, <contenttweaker:yellow_alch>]);
 
 #Yellow Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:8> *1, 2048, 2048, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:7> * 4, [<auxiliumequivalence:fuel:8>]);
-furnace.setFuel(<auxiliumequivalence:fuel:8>, 5078385);
-recipes.removeShapeless(<auxiliumequivalence:fuel:8>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>, <auxiliumequivalence:fuel:7>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:yellow_aeter> *1, 2048, 2048, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>]);
+recipes.addShapeless(<contenttweaker:yellow_mob> * 4, [<contenttweaker:yellow_aeter>]);
+furnace.setFuel(<contenttweaker:yellow_aeter>, 5078385);
+recipes.removeShapeless(<contenttweaker:yellow_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>, <contenttweaker:yellow_mob>]);
 
 #Orange Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:3> *1, 64, 64, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>, <auxiliumequivalence:fuel:8>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:8> * 4, [<auxiliumequivalence:fuel:3>]);
-furnace.setFuel(<auxiliumequivalence:fuel:3>, 176491);
-recipes.removeShapeless(<auxiliumequivalence:fuel:3>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>, <auxiliumequivalence:fuel:2>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:orange_alch> *1, 64, 64, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>, <contenttweaker:yellow_aeter>]);
+recipes.addShapeless(<contenttweaker:yellow_aeter> * 4, [<contenttweaker:orange_alch>]);
+furnace.setFuel(<contenttweaker:orange_alch>, 176491);
+recipes.removeShapeless(<contenttweaker:orange_alch>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>, <contenttweaker:dark_aeter>]);
 
 #Orange Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:4> *1, 128, 128, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:3> * 4, [<auxiliumequivalence:fuel:4>]);
-furnace.setFuel(<auxiliumequivalence:fuel:4>, 345560);
-recipes.removeShapeless(<auxiliumequivalence:fuel:4>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:orange_mob> *1, 128, 128, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:orange_alch>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>]);
+recipes.addShapeless(<contenttweaker:orange_alch> * 4, [<contenttweaker:orange_mob>]);
+furnace.setFuel(<contenttweaker:orange_mob>, 345560);
+recipes.removeShapeless(<contenttweaker:orange_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>]);
 
 #Orange Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:5> *1, 256, 256, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:4> * 4, [<auxiliumequivalence:fuel:5>]);
-furnace.setFuel(<auxiliumequivalence:fuel:5>, 676587);
-recipes.removeShapeless(<auxiliumequivalence:fuel:5>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>, <auxiliumequivalence:fuel:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:orange_aeter> *1, 256, 256, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:orange_mob>, <contenttweaker:orange_mob>, <contenttweaker:orange_mob>, <contenttweaker:orange_mob>]);
+recipes.addShapeless(<contenttweaker:orange_mob> * 4, [<contenttweaker:orange_aeter>]);
+furnace.setFuel(<contenttweaker:orange_aeter>, 676587);
+recipes.removeShapeless(<contenttweaker:orange_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:orange_mob>, <contenttweaker:orange_mob>, <contenttweaker:orange_mob>, <contenttweaker:orange_mob>]);
 
 #Rainbow Alch
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:15> *1, 262144, 262144, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>, <auxiliumequivalence:fuel:5>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:5> * 4, [<auxiliumequivalence:fuel:15>]);
-furnace.setFuel(<auxiliumequivalence:fuel:15>, 560181708);
-recipes.removeShapeless(<auxiliumequivalence:fuel:15>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>, <auxiliumequivalence:fuel:14>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:rain_alch> *1, 262144, 262144, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>, <contenttweaker:orange_aeter>]);
+recipes.addShapeless(<contenttweaker:orange_aeter> * 4, [<contenttweaker:rain_alch>]);
+furnace.setFuel(<contenttweaker:rain_alch>, 560181708);
+recipes.removeShapeless(<contenttweaker:rain_alch>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>, <contenttweaker:blue_aeter>]);
 
 #Rainbow Mob
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:16> *1, 524288, 524288, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:15> * 4, [<auxiliumequivalence:fuel:16>]);
-furnace.setFuel(<auxiliumequivalence:fuel:16>, 1096804932);
-recipes.removeShapeless(<auxiliumequivalence:fuel:16>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>, <auxiliumequivalence:fuel:15>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:rain_mob> *1, 524288, 524288, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:rain_alch>, <contenttweaker:rain_alch>, <contenttweaker:rain_alch>, <contenttweaker:rain_alch>]);
+recipes.addShapeless(<contenttweaker:rain_alch> * 4, [<contenttweaker:rain_mob>]);
+furnace.setFuel(<contenttweaker:rain_mob>, 1096804932);
+recipes.removeShapeless(<contenttweaker:rain_mob>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:rain_alch>, <contenttweaker:rain_alch>, <contenttweaker:rain_alch>, <contenttweaker:rain_alch>]);
 
 #Rainbow Aeter
-mods.extendedcrafting.CombinationCrafting.addRecipe(<auxiliumequivalence:fuel:17> *1, 1048576, 1048576, <projecte:item.pe_covalence_dust:2>, [<auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>]);
-recipes.addShapeless(<auxiliumequivalence:fuel:16> * 4, [<auxiliumequivalence:fuel:17>]);
-furnace.setFuel(<auxiliumequivalence:fuel:17>, 2147483647);
-recipes.removeShapeless(<auxiliumequivalence:fuel:17>, [<projecte:item.pe_philosophers_stone>, <auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>, <auxiliumequivalence:fuel:16>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:rain_aeter> *1, 1048576, 1048576, <projecte:item.pe_covalence_dust:2>, [<contenttweaker:rain_mob>, <contenttweaker:rain_mob>, <contenttweaker:rain_mob>, <contenttweaker:rain_mob>]);
+recipes.addShapeless(<contenttweaker:rain_mob> * 4, [<contenttweaker:rain_aeter>]);
+furnace.setFuel(<contenttweaker:rain_aeter>, 2147483647);
+recipes.removeShapeless(<contenttweaker:rain_aeter>, [<projecte:item.pe_philosophers_stone>, <contenttweaker:rain_mob>, <contenttweaker:rain_mob>, <contenttweaker:rain_mob>, <contenttweaker:rain_mob>]);
 
 #Tome of Knowledge
 recipes.remove(<projecte:item.pe_tome>);
@@ -324,45 +321,29 @@ recipes.remove(<projecte:collector_mk2>);
 recipes.remove(<projecte:relay_mk3>);
 recipes.remove(<projecte:collector_mk3>);
 
-#MK4
-recipes.remove(<auxiliumequivalence:collector_mk4>);
-recipes.remove(<auxiliumequivalence:relay_mk4>);
-
-#MK5
-recipes.remove(<auxiliumequivalence:collector_mk5>);
-recipes.remove(<auxiliumequivalence:relay_mk5>);
-
-#MK6
-recipes.remove(<auxiliumequivalence:collector_mk6>);
-recipes.remove(<auxiliumequivalence:relay_mk6>);
-
-#MK7
-recipes.remove(<auxiliumequivalence:collector_mk7>);
-recipes.remove(<auxiliumequivalence:relay_mk7>);
-
 #MK8
 recipes.remove(<projectex:collector:7>);
-recipes.addShapeless(<projectex:collector:7>, [<projectex:collector:6>, <auxiliumequivalence:matter:3>]);
+recipes.addShapeless(<projectex:collector:7>, [<projectex:collector:6>, <contenttweaker:blue_matter>]);
 recipes.remove(<projectex:relay:7>);
-recipes.addShapeless(<projectex:relay:7>, [<projectex:relay:6>, <auxiliumequivalence:matter:3>]);
+recipes.addShapeless(<projectex:relay:7>, [<projectex:relay:6>, <contenttweaker:blue_matter>]);
 
 #MK10
 recipes.remove(<projectex:collector:9>);
-recipes.addShapeless(<projectex:collector:9>, [<projectex:collector:8>, <auxiliumequivalence:matter:2>]);
+recipes.addShapeless(<projectex:collector:9>, [<projectex:collector:8>, <contenttweaker:green_matter>]);
 recipes.remove(<projectex:relay:9>);
-recipes.addShapeless(<projectex:relay:9>, [<projectex:relay:8>, <auxiliumequivalence:matter:2>]);
+recipes.addShapeless(<projectex:relay:9>, [<projectex:relay:8>, <contenttweaker:green_matter>]);
 
 #MK12
 recipes.remove(<projectex:collector:11>);
-recipes.addShapeless(<projectex:collector:11>, [<projectex:collector:10>, <auxiliumequivalence:matter:1>]);
+recipes.addShapeless(<projectex:collector:11>, [<projectex:collector:10>, <contenttweaker:yellow_matter>]);
 recipes.remove(<projectex:relay:11>);
-recipes.addShapeless(<projectex:relay:11>, [<projectex:relay:10>, <auxiliumequivalence:matter:1>]);
+recipes.addShapeless(<projectex:relay:11>, [<projectex:relay:10>, <contenttweaker:yellow_matter>]);
 
 #MK13
 recipes.remove(<projectex:collector:12>);
-recipes.addShapeless(<projectex:collector:12>, [<projectex:collector:11>, <auxiliumequivalence:matter:0>]);
+recipes.addShapeless(<projectex:collector:12>, [<projectex:collector:11>, <contenttweaker:orange_matter>]);
 recipes.remove(<projectex:relay:12>);
-recipes.addShapeless(<projectex:relay:12>, [<projectex:relay:11>, <auxiliumequivalence:matter:0>]);
+recipes.addShapeless(<projectex:relay:12>, [<projectex:relay:11>, <contenttweaker:orange_matter>]);
 
 #Arcane Tablet
 recipes.remove(<projectex:arcane_tablet>);
@@ -374,11 +355,11 @@ recipes.addShaped(<projectex:compressed_refined_link>, [[<projectex:refined_link
 
 #Energy Condenser MK1
 recipes.remove(<projecte:condenser_mk1>);
-mods.actuallyadditions.Empowerer.addRecipe(<projecte:condenser_mk1>, <projecte:alchemical_chest>, <auxiliumequivalence:fuel:13>, <auxiliumequivalence:fuel:13>, <projectex:matter:1>, <projectex:matter:1>, 5000000, 2400);
+mods.actuallyadditions.Empowerer.addRecipe(<projecte:condenser_mk1>, <projecte:alchemical_chest>, <contenttweaker:blue_mob>, <contenttweaker:blue_mob>, <projectex:matter:1>, <projectex:matter:1>, 5000000, 2400);
 
 #Energy Condenser MK2
 recipes.remove(<projecte:condenser_mk2>);
-mods.actuallyadditions.Empowerer.addRecipe(<projecte:condenser_mk2>, <projecte:condenser_mk1>, <projectex:matter:7>, <projectex:magnum_star_omega>, <auxiliumequivalence:fuel:3>, <auxiliumequivalence:fuel:3>, 50000000, 12000);
+mods.actuallyadditions.Empowerer.addRecipe(<projecte:condenser_mk2>, <projecte:condenser_mk1>, <projectex:matter:7>, <projectex:magnum_star_omega>, <contenttweaker:orange_alch>, <contenttweaker:orange_alch>, 50000000, 12000);
 
 #Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust:0>);

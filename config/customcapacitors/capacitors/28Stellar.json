@@ -1,0 +1,20 @@
+{
+	"id": "stellar",
+	"display_name": "Stellar",
+	"description": "Fake Stars",
+	"capacity": 268435456,
+	"max_input_rate": 268435456,
+	"max_output_rate": 268435456,
+	"base_color": "e6e9d8",
+	"trim_color": "7d9393",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

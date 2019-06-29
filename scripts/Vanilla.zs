@@ -83,3 +83,8 @@ recipes.addShapedMirrored(<minecraft:stick>, [[<ore:plankWood>, null],[<ore:plan
 #Trapped Chest
 recipes.removeByRecipeName("minecraft:trapped_chest");
 recipes.addShaped(<minecraft:trapped_chest>, [[<minecraft:tripwire_hook>, <minecraft:tripwire_hook>, <minecraft:tripwire_hook>],[<minecraft:tripwire_hook>, <minecraft:chest>, <minecraft:tripwire_hook>], [<minecraft:tripwire_hook>, <minecraft:tripwire_hook>, <minecraft:tripwire_hook>]]);
+
+#Prismarine Shards
+recipes.remove(<minecraft:prismarine_crystals>);
+recipes.remove(<minecraft:prismarine_shard>);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:prismarine_shard>);

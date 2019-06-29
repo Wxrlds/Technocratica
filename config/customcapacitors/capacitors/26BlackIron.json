@@ -1,0 +1,20 @@
+{
+	"id": "black_iron",
+	"display_name": "Black Iron",
+	"description": "As black as the Night",
+	"capacity": 67108864,
+	"max_input_rate": 67108864,
+	"max_output_rate": 67108864,
+	"base_color": "0f0f0f",
+	"trim_color": "050505",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

@@ -1,6 +1,6 @@
 #Time in a Bottle
 recipes.remove(<randomthings:timeinabottle>);
-recipes.addShaped(<randomthings:timeinabottle>, [[<ore:plateDenseGold>, <ore:plateDenseGold>, <ore:plateDenseGold>],[<ore:plateDenseDiamond>, <geneticsreborn:overclocker>, <ore:plateDenseDiamond>], [<ore:plateDenseLapis>, <harvestcraft:coffeeconlecheitem>, <ore:plateDenseLapis>]]);
+recipes.addShaped(<randomthings:timeinabottle>, [[<ore:plateDenseGold>, <ore:plateDenseGold>, <ore:plateDenseGold>],[<ore:plateDenseDiamond>, <ic2:upgrade>, <ore:plateDenseDiamond>], [<ore:plateDenseLapis>, <harvestcraft:coffeeconlecheitem>, <ore:plateDenseLapis>]]);
 
 #Acceleration Wand
 recipes.remove(<notenoughwands:acceleration_wand>);

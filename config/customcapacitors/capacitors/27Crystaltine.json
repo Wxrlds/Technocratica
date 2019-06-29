@@ -1,0 +1,20 @@
+{
+	"id": "crystaltine",
+	"display_name": "Crystaltine",
+	"description": "Crystal clear",
+	"capacity": 134217728,
+	"max_input_rate": 134217728,
+	"max_output_rate": 134217728,
+	"base_color": "8fcde9",
+	"trim_color": "3e93b7",
+	"storage_loss_type": "none",
+	"storage_loss_data": {
+		"loss_value": 0,
+		"loss_delay": 0,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

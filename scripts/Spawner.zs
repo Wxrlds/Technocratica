@@ -1,10 +1,6 @@
-#Cloning Machine
-recipes.remove(<geneticsreborn:cloningmachine>);
-recipes.addShaped(<geneticsreborn:cloningmachine>, [[<ore:blockGold>, <ore:blockGold>, <ore:blockGold>],[<ore:gemDiamond>, <minecraft:nether_star>, <ore:gemDiamond>], [<ore:blockGold>, <industrialforegoing:mob_duplicator>, <ore:blockGold>]]);
-
 #Spawner (RFTools)
 recipes.remove(<rftools:spawner>);
-recipes.addShaped(<rftools:spawner>, [[<ore:dustRedstone>, <ore:bone>, <ore:dustRedstone>],[<ore:enderpearl>, <geneticsreborn:cloningmachine>, <ore:rodBlaze>], [<ore:dustRedstone>, <minecraft:rotten_flesh>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:spawner>, [[<ore:dustRedstone>, <ore:bone>, <ore:dustRedstone>],[<ore:enderpearl>, <industrialforegoing:mob_duplicator>, <ore:rodBlaze>], [<ore:dustRedstone>, <minecraft:rotten_flesh>, <ore:dustRedstone>]]);
 
 #Powered Spawner
 recipes.remove(<enderio:block_powered_spawner>);

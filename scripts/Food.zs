@@ -1,1 +1,0 @@
-recipes.addShapeless(<quantumflux:hamcheese>, [<harvestcraft:toastsandwichitem>,<harvestcraft:toastsandwichitem>,<harvestcraft:cheeseitem>,<harvestcraft:bakedhamitem>]);

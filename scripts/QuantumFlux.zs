@@ -9,3 +9,6 @@ recipes.addShaped(<quantumflux:imaginarytime>, [[<advanced_solar_panels:crafting
 #Amplification Crystal
 recipes.remove(<quantumflux:craftingpiece:2>);
 recipes.addShaped(<quantumflux:craftingpiece:2>, [[<minecraft:quartz>, null, <minecraft:quartz>],[null, <ore:gemDiamond>, null], [<quantumflux:darkstone>, <darkutils:wither_block>, <quantumflux:darkstone>]]);
+
+#Hamcheese
+recipes.addShapeless(<quantumflux:hamcheese>, [<harvestcraft:toastsandwichitem>,<harvestcraft:toastsandwichitem>,<harvestcraft:cheeseitem>,<harvestcraft:bakedhamitem>]);

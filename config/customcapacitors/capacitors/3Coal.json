@@ -1,0 +1,20 @@
+{
+	"id": "coal",
+	"display_name": "Coal",
+	"description": "Burns really well",
+	"capacity": 8,
+	"max_input_rate": 8,
+	"max_output_rate": 8,
+	"base_color": "2e2e2e",
+	"trim_color": "151515",
+	"storage_loss_type": "constant",
+	"storage_loss_data": {
+		"loss_value": 0.55,
+		"loss_delay": 3,
+		"min_threshold": 0,
+		"max_threshold": 0
+	},
+	"input_loss_type": "none",
+	"input_loss_value": 0,
+	"retain_energy": true
+}

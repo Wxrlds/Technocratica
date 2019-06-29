@@ -199,7 +199,7 @@
             "1.0f",
             "0.085f"
           ],
-          "id": "specialmobs:joltblaze",
+          "id": "minecraft:blaze",
           "ActiveEffects": [
             {
               "Duration": "42949672940",
