@@ -762,47 +762,6 @@
             ]
         },
         {
-            "pakku_id": "AA9Fgaa7cocplJ41",
-            "pakku_links": [
-                "iqCuXqZ2kyhFlDpp",
-                "Vmjiz65oYZbJFSHa"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "auxilium"
-            },
-            "name": {
-                "curseforge": "Auxilium"
-            },
-            "id": {
-                "curseforge": "306251"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "auxiliumequivalence-1.12.2-1.3.2.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2686/537/auxiliumequivalence-1.12.2-1.3.2.jar",
-                    "id": "2686537",
-                    "parent_id": "306251",
-                    "hashes": {
-                        "sha1": "3e1b19171d3b8b8c0af458f50aa673c3def290d6",
-                        "md5": "0117f5b032b5da1bfa688921688da0df"
-                    },
-                    "required_dependencies": [
-                        "238222",
-                        "226410"
-                    ],
-                    "size": 244238,
-                    "date_published": "2019-03-13T04:34:55.480Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "JpVwqo1RWRJLikGE",
             "type": "MOD",
             "slug": {
