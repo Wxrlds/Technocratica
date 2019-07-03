@@ -1,5 +1,7 @@
-Recipe changes for Skystone
-
 Platinum spawns in world
 
-Dimensional Shard recipe
+Recipes (Skystone, Dimensional Shard, Metallurgic Infuser)
+
+Sleeping is now actually possible
+
+Added another Creative Item (Debug Item from IC2/Creative EU Source)
