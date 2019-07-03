@@ -4,4 +4,4 @@ Recipes (Skystone, Dimensional Shard, Metallurgic Infuser)
 
 Sleeping is now actually possible
 
-Added another Creative Item (Debug Item from IC2/Creative EU Source)
+Added another Creative Item (Debug Item from IC2)
