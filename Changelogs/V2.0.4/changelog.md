@@ -1,6 +1,6 @@
 Platinum spawns in world
 
-Recipes (Skystone, Dimensional Shard, Metallurgic Infuser)
+Recipes (Skystone, Dimensional Shard, Metallurgic Infuser, Macerator, Grindstone)
 
 Sleeping is now actually possible
 
