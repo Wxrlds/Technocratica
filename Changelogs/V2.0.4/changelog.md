@@ -7,3 +7,5 @@ Sleeping is now actually possible
 Added another Creative Item (Debug Item from IC2)
 
 Changed EMC Values
+
+Signalum Tinkers Construct dupe fix
