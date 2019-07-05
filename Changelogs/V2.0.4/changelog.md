@@ -13,3 +13,5 @@ Signalum Tinkers Construct dupe fix
 Scanner holds more Energy
 
 Quark multiplayer sleep now needs 25% of players sleeping
+
+Fixed impossible recipes (again)
