@@ -2,7 +2,7 @@ import mods.appliedenergistics2.Inscriber;
 import mods.appliedenergistics2.Grinder;
 
 #Skystone Dust
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:45>, <ore:endstone>, <liquid:construction_alloy>, 1296, true, 900);
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:45>, <ore:endstone>, <liquid:heavywater>, 1000, true, 900);
 
 #Skystone
 recipes.addShaped(<appliedenergistics2:sky_stone_block>, [[<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>],[<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>], [<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>]]);
@@ -87,7 +87,7 @@ recipes.addShaped(<appliedenergistics2:part:240>, [[<projectred-transportation:p
 
 #Grindstone
 recipes.remove(<appliedenergistics2:grindstone>);
-recipes.addShaped(<appliedenergistics2:grindstone>, [[<ore:plateDenseChargedCertusQuartz>, <ore:gearIronInfinity>, <ore:plateDenseChargedCertusQuartz>],[<extrautils2:decorativesolid:3>, <ore:plateDenseChargedCertusQuartz>, <extrautils2:decorativesolid:3>], [<ore:compressed4xCobblestone>, <actuallyadditions:block_breaker>, <ore:compressed4xCobblestone>]]);
+recipes.addShaped(<appliedenergistics2:grindstone>, [[<ore:plateDenseChargedCertusQuartz>, <ore:gearIronInfinity>, <ore:plateDenseChargedCertusQuartz>],[<extrautils2:decorativesolid:3>, <ore:plateDenseChargedCertusQuartz>, <extrautils2:decorativesolid:3>], [<ore:compressed2xCobblestone>, <actuallyadditions:block_breaker>, <ore:compressed2xCobblestone>]]);
 
 #AE2 Presses
 recipes.addShaped(<appliedenergistics2:material:13>, [[<appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>],[<appliedenergistics2:material:10>, <appliedenergistics2:material:19>, <appliedenergistics2:material:10>], [<appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>]]);

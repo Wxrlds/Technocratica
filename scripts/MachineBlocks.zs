@@ -154,7 +154,7 @@ recipes.addShaped(<rftools:machine_frame>, [[<ore:plateDenseIron>, <ore:blockLap
 
 #Machine Controller (Modular Machinery)
 recipes.remove(<modularmachinery:blockcontroller>);
-recipes.addShaped(<modularmachinery:blockcontroller>, [[<extrautils2:opinium:8>, <modularmachinery:itemmodularium>, <extrautils2:opinium:8>],[<modularmachinery:itemmodularium>, <rftools:machine_frame>, <modularmachinery:itemmodularium>], [<extrautils2:opinium:8>, <enderio:block_dark_steel_anvil:2>, <extrautils2:opinium:8>]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, [[<extrautils2:opinium:8>, <modularmachinery:itemmodularium>, <extrautils2:opinium:8>],[<modularmachinery:itemmodularium>, <rftools:machine_frame>, <modularmachinery:itemmodularium>], [<extrautils2:opinium:8>, <enderio:block_dark_steel_anvil>, <extrautils2:opinium:8>]]);
 
 ##################
 #Machines Recipes#
@@ -186,6 +186,10 @@ recipes.addShaped(<actuallyadditions:block_grinder>, [[<actuallyadditions:item_c
 #Crusher Mekanism
 recipes.remove(<mekanism:machineblock:3>);
 recipes.addShaped(<mekanism:machineblock:3>, [[<minecraft:redstone>, <mekanism:controlcircuit>, <minecraft:redstone>],[<minecraft:lava_bucket>, <mekanism:basicblock:8>, <minecraft:lava_bucket>], [<minecraft:redstone>, <actuallyadditions:block_grinder_double>, <minecraft:redstone>]]);
+
+#Macerator
+recipes.remove(<ic2:te:47>);
+recipes.addShaped(<ic2:te:47>, [[<minecraft:flint>, <minecraft:flint>, <minecraft:flint>],[<ore:compressed3xCobblestone>, <ic2:resource:12>, <ore:compressed3xCobblestone>], [<ore:circuitBasic>, <appliedenergistics2:grindstone>, <ore:circuitBasic>]]);
 
 #Pump IC2
 recipes.remove(<ic2:te:32>);
@@ -373,6 +377,11 @@ recipes.replaceAllOccurences(<rftools:machine_frame>, <thermalexpansion:frame:14
 #Booster
 recipes.replaceAllOccurences(<rftools:machine_frame>, <thermalexpansion:frame:146>, <rftools:booster>);
 
+#Metallurgic Infuser
+recipes.removeByRecipeName("mekanism:machineblock_8");
+recipes.addShaped(<mekanism:machineblock:8>, [[<ore:ingotOsmium>, <minecraft:furnace>, <ore:ingotIron>],[<ore:dustRedstone>, <ic2:resource:13>, <ore:dustRedstone>], [<ore:ingotIron>, <minecraft:furnace>, <ore:ingotOsmium>]]);
+recipes.addShaped(<mekanism:machineblock:8>, [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotOsmium>],[<ore:dustRedstone>, <ic2:resource:13>, <ore:dustRedstone>], [<ore:ingotOsmium>, <minecraft:furnace>, <ore:ingotIron>]]);
+
 #Machine Infuser
 recipes.remove(<rftools:machine_infuser>);
 recipes.addShaped(<rftools:machine_infuser>, [[<ore:gemDimensionalShard>, <actuallyadditions:item_crystal_empowered>, <ore:gemDimensionalShard>],[<ore:gemDiamond>, <thermalexpansion:frame:132>, <ore:gemDiamond>], [<ore:gemDimensionalShard>, <rftools:booster>, <ore:gemDimensionalShard>]]);
@@ -413,3 +422,9 @@ recipes.replaceAllOccurences(<rftools:machine_frame>, <modularmachinery:blockcon
 #Sawmill
 recipes.replaceAllOccurences(<thermalexpansion:frame>, <mekanism:basicblock:8>, <thermalexpansion:machine:2>);
 recipes.replaceAllOccurences(<mekanism:basicblock:8>, <thermalexpansion:machine:2>.withTag({Level: 4 as byte}), <mekanism:machineblock2:5>);
+
+#Compressor
+recipes.replaceAllOccurences(<thermalexpansion:frame>, <extrautils2:machine>, <thermalexpansion:machine:5>);
+
+#Machine Case
+recipes.replaceAllOccurences(<thermalexpansion:frame>, <teslacorelib:machine_case>, <thermalexpansion:machine:6>);

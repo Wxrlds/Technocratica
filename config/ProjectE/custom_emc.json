@@ -243,6 +243,146 @@
     {
       "item": "projecte:item.pe_covalence_dust|2",
       "emc": 208
+    },
+    {
+      "item": "mekanism:enrichedalloy|0",
+      "emc": 264
+    },
+    {
+      "item": "mekanism:reinforcedalloy|0",
+      "emc": 1288
+    },
+    {
+      "item": "mekanism:atomicalloy|0",
+      "emc": 1418
+    },
+    {
+      "item": "mekanism:controlcircuit|1",
+      "emc": 1824
+    },
+    {
+      "item": "mekanism:controlcircuit|2",
+      "emc": 39744
+    },
+    {
+      "item": "mekanism:controlcircuit|3",
+      "emc": 49576
+    },
+    {
+      "item": "thermalfoundation:material|770",
+      "emc": 16
+    },
+    {
+      "item": "mekanism:otherdust|5",
+      "emc": 1040
+    },
+    {
+      "item": "thermalexpansion:frame|0",
+      "emc": 169641
+    },
+    {
+      "item": "tconstruct:large_plate|0",
+      "emc": 0
+    },
+    {
+      "item": "thermalexpansion:frame|128",
+      "emc": 46507
+    },
+    {
+      "item": "plustic:pipe_piece|0",
+      "emc": 0
+    },
+    {
+      "item": "thermalexpansion:frame|129",
+      "emc": 54703
+    },
+    {
+      "item": "tconstruct:sign_head|0",
+      "emc": 0
+    },
+    {
+      "item": "thermalexpansion:frame|130",
+      "emc": 70067
+    },
+    {
+      "item": "redstonearsenal:material|32",
+      "emc": 1440
+    },
+    {
+      "item": "thermalexpansion:frame|146",
+      "emc": 83027
+    },
+    {
+      "item": "redstonearsenal:material|128",
+      "emc": 1440
+    },
+    {
+      "item": "thermalfoundation:material|357",
+      "emc": 384
+    },
+    {
+      "item": "thermalfoundation:material|1",
+      "emc": 0
+    },
+    {
+      "item": "thermalexpansion:frame|131",
+      "emc": 100059
+    },
+    {
+      "item": "thermalexpansion:frame|147",
+      "emc": 109275
+    },
+    {
+      "item": "plustic:osgloglasingot|0",
+      "emc": 1925
+    },
+    {
+      "item": "thermalexpansion:frame|148",
+      "emc": 266623
+    },
+    {
+      "item": "advanced_solar_panels:crafting|7",
+      "emc": 0
+    },
+    {
+      "item": "enderio:item_material|0",
+      "emc": 343807
+    },
+    {
+      "item": "appliedenergistics2:material|3",
+      "emc": 0
+    },
+    {
+      "item": "ic2:dust|9",
+      "emc": 0
+    },
+    {
+      "item": "enderio:item_material|1",
+      "emc": 373887
+    },
+    {
+      "item": "enderio:item_material|74",
+      "emc": 0
+    },
+    {
+      "item": "enderio:item_material|53",
+      "emc": 430271
+    },
+    {
+      "item": "enderio:item_material|54",
+      "emc": 1045462
+    },
+    {
+      "item": "darkutils:material|0",
+      "emc": 0
+    },
+    {
+      "item": "quantumflux:craftingpiece|2",
+      "emc": 16898
+    },
+    {
+      "item": "extrautils2:ingredients|4",
+      "emc": 128
     }
   ]
 }

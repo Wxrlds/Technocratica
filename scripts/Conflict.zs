@@ -69,6 +69,7 @@ recipes.addShaped(<randomthings:soundbox>, [[<ore:plankWood>, <ore:plankWood>, <
 
 #Charcoal (Chisel)
 recipes.remove(<chisel:block_charcoal2:1>);
+recipes.remove(<thermalfoundation:storage_resource>);
 
 #Bronze Shovel (IC2)
 recipes.remove(<ic2:bronze_shovel>);
