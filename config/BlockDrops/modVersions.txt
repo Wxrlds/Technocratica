@@ -125,7 +125,6 @@
   "enderioconduitsopencomputers": "5.0.46",
   "recipehandler": "0.13",
   "inworldcrafting": "1.12.2-1.2.0",
-  "pyxislib": "1.12.2-1.2.0",
   "base": "3.13.0",
   "defaultoptions": "9.2.8",
   "tombmanygraves": "1.12-4.2.0",

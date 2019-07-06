@@ -111,13 +111,20 @@ rainmatter.register();
 #Green Matter Block
 var greenMatterBlock = VanillaFactory.createBlock("gm_block", <blockmaterial:iron>);
 greenMatterBlock.setToolClass("pickaxe");
-greenMatterBlock.setBlockResistance(2147483647.0);
+greenMatterBlock.setBlockResistance(18000000.0);
 greenMatterBlock.setToolLevel(5);
 greenMatterBlock.register();
 
 #Rainbow Matter Block
 var rainMatterBlock = VanillaFactory.createBlock("rainbow_block", <blockmaterial:iron>);
 rainMatterBlock.setToolClass("pickaxe");
-rainMatterBlock.setBlockResistance(2147483647.0);
+rainMatterBlock.setBlockResistance(18000000.0);
 rainMatterBlock.setToolLevel(5);
 rainMatterBlock.register();
+
+#Enriched Iron Block
+var enrichedIronBlock = VanillaFactory.createBlock("enriched_iron_block", <blockmaterial:iron>);
+enrichedIronBlock.setToolClass("pickaxe");
+enrichedIronBlock.setBlockResistance(35.0);
+enrichedIronBlock.setToolLevel(3);
+enrichedIronBlock.register();

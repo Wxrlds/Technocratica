@@ -56,5 +56,12 @@ recipes.addShaped(<mekanismgenerators:generator:4>, [[<ore:itemCompressedRedston
 recipes.remove(<mekanism:machineblock:4>);
 recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:teleportationcore>, <actuallyadditions:block_directional_breaker>, <mekanism:atomicalloy>],[<extrautils2:quarryproxy>, <industrialforegoing:block_destroyer>, <extrautils2:quarry>], [<mekanism:robit>, <mekanism:basicblock:8>, <mekanism:machineblock:15>]]);
 
-#Iron Block -> 9 Enriched Iron
-mods.mekanism.infuser.addRecipe("CARBON", 90, <minecraft:iron_block>, <mekanism:enrichediron> * 9);
+#Iron Block -> Enriched Iron Block
+mods.mekanism.infuser.addRecipe("CARBON", 90, <minecraft:iron_block>, <contenttweaker:enriched_iron_block>);
+
+#Enriched Iron Block -> Steel Block
+mods.mekanism.infuser.addRecipe("CARBON", 90, <contenttweaker:enriched_iron_block>, <thermalfoundation:storage_alloy>);
+
+#Mekanism Reactor Controller
+recipes.remove(<mekanismgenerators:reactor>);
+recipes.addShaped(<mekanismgenerators:reactor>, [[<ore:circuitUltimate>, <advanced_solar_panels:crafting:5>, <ore:circuitUltimate>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);

@@ -383,6 +383,10 @@
     {
       "item": "extrautils2:ingredients|4",
       "emc": 128
+    },
+    {
+      "item": "minecraft:ender_eye|0",
+      "emc": 1792
     }
   ]
 }

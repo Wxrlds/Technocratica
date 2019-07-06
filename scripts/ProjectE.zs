@@ -46,6 +46,7 @@ recipes.remove(<contenttweaker:green_matter>);
 recipes.addShapeless(<contenttweaker:green_matter>, [<contenttweaker:gm_block>]);
 recipes.addShaped(<contenttweaker:green_matter>, [[<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>],[<projectex:matter:5>, <projectex:matter:5>, <projectex:matter:5>], [<contenttweaker:green_aeter>, <contenttweaker:green_aeter>, <contenttweaker:green_aeter>]]);
 recipes.addShaped(<contenttweaker:green_matter>, [[<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>],[<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>], [<contenttweaker:green_aeter>, <projectex:matter:5>, <contenttweaker:green_aeter>]]);
+recipes.addShaped(<contenttweaker:gm_block>, [[<contenttweaker:green_matter>, <contenttweaker:green_matter>], [<contenttweaker:green_matter>, <contenttweaker:green_matter>]]);
 
 #Lime Matter
 recipes.remove(<projectex:matter:7>);
@@ -79,6 +80,7 @@ recipes.remove(<contenttweaker:rainbow_matter>);
 recipes.addShapeless(<contenttweaker:rainbow_matter> * 4, [<contenttweaker:rainbow_block>]);
 recipes.addShaped(<contenttweaker:rainbow_matter>, [[<contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>],[<projectex:matter:11>, <projectex:matter:11>, <projectex:matter:11>], [<contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>, <contenttweaker:rain_aeter>]]);
 recipes.addShaped(<contenttweaker:rainbow_matter>, [[<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>],[<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>], [<contenttweaker:rain_aeter>, <projectex:matter:11>, <contenttweaker:rain_aeter>]]);
+recipes.addShaped(<contenttweaker:rainbow_block>, [[<contenttweaker:rainbow_matter>, <contenttweaker:rainbow_matter>], [<contenttweaker:rainbow_matter>, <contenttweaker:rainbow_matter>]]);
 
 #Clay Matter
 recipes.remove(<projectex:clay_matter>);

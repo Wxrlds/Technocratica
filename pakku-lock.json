@@ -1758,21 +1758,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "colytra-1.12.2-1.2.0.jar",
+                    "file_name": "colytra-1.12.2-1.2.0.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2704/169/colytra-1.12.2-1.2.0.jar",
-                    "id": "2704169",
+                    "url": "https://edge.forgecdn.net/files/2736/311/colytra-1.12.2-1.2.0.1.jar",
+                    "id": "2736311",
                     "parent_id": "280200",
                     "hashes": {
-                        "sha1": "b0825d03717653be4ba45506ede93a45d2946092",
-                        "md5": "4acd4d3c2a273f8a362b78e348827058"
+                        "sha1": "e8990b031e1b4b8cb850016a53d47a302e9f48f9",
+                        "md5": "92bb25fb04276b41bd5cb49ae00d6a85"
                     },
                     "required_dependencies": [],
-                    "size": 86659,
-                    "date_published": "2019-04-27T05:19:32.997Z"
+                    "size": 86669,
+                    "date_published": "2019-07-06T07:40:30.763Z"
                 }
             ]
         },
@@ -2912,21 +2912,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.125.jar",
+                    "file_name": "FTBLib-5.4.3.126.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/164/FTBLib-5.4.3.125.jar",
-                    "id": "2734164",
+                    "url": "https://edge.forgecdn.net/files/2736/27/FTBLib-5.4.3.126.jar",
+                    "id": "2736027",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "f80861a10e21bc3e3eae6b2cfdb4719a938e9f75",
-                        "md5": "fd110a0c87c09cd2e81297cbd2bb0997"
+                        "sha1": "897ca804c6e598cc8b00136f055235e267b5062c",
+                        "md5": "f9369cb206226d03130e066bd04817de"
                     },
                     "required_dependencies": [],
-                    "size": 915561,
-                    "date_published": "2019-07-02T01:03:06.783Z"
+                    "size": 915533,
+                    "date_published": "2019-07-05T17:45:55.957Z"
                 }
             ]
         },
@@ -2984,24 +2984,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.7.2.181.jar",
+                    "file_name": "FTBQuests-1.7.2.183.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/824/FTBQuests-1.7.2.181.jar",
-                    "id": "2734824",
+                    "url": "https://edge.forgecdn.net/files/2736/381/FTBQuests-1.7.2.183.jar",
+                    "id": "2736381",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "e4d1612f42102c9b99e161de196d2fdbc82dc74d",
-                        "md5": "1f0fb46d7deaf63642aa1014f5920886"
+                        "sha1": "b6a0603e1aeacc3146002117a1a809244dfb6b8e",
+                        "md5": "8baa0e5ebd2648361c77a6efb83035ef"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 940419,
-                    "date_published": "2019-07-03T12:38:04.140Z"
+                    "size": 940494,
+                    "date_published": "2019-07-06T11:05:32.403Z"
                 }
             ]
         },
@@ -4461,21 +4461,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Mekanism-1.12.2-9.7.8.379.jar",
+                    "file_name": "Mekanism-1.12.2-9.7.9.380.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2724/543/Mekanism-1.12.2-9.7.8.379.jar",
-                    "id": "2724543",
+                    "url": "https://edge.forgecdn.net/files/2736/277/Mekanism-1.12.2-9.7.9.380.jar",
+                    "id": "2736277",
                     "parent_id": "268560",
                     "hashes": {
-                        "sha1": "44cdddf439dcdb4e96522fb373c403ee3680d5bc",
-                        "md5": "f75a9894b35a06b2901ad0f98413f787"
+                        "sha1": "d8de80cf6c51411d7cce83dac729110773492294",
+                        "md5": "c0418214cf545dbbaf57573d2e998a8c"
                     },
                     "required_dependencies": [],
-                    "size": 7932971,
-                    "date_published": "2019-06-14T15:29:59.077Z"
+                    "size": 7935575,
+                    "date_published": "2019-07-06T04:47:26.137Z"
                 }
             ]
         },
@@ -4494,23 +4494,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismGenerators-1.12.2-9.7.8.379.jar",
+                    "file_name": "MekanismGenerators-1.12.2-9.7.9.380.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2724/545/MekanismGenerators-1.12.2-9.7.8.379.jar",
-                    "id": "2724545",
+                    "url": "https://edge.forgecdn.net/files/2736/279/MekanismGenerators-1.12.2-9.7.9.380.jar",
+                    "id": "2736279",
                     "parent_id": "268566",
                     "hashes": {
-                        "sha1": "217da00724be2aa4ba14d0064762d8e0481d4589",
-                        "md5": "ed30f09aaa3359ad70b9d26ceeea4266"
+                        "sha1": "28a2344b4c4e3af9b6a5bec0c3e94928a50fb214",
+                        "md5": "aba36748824de417d4474f900a6f0b79"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
-                    "size": 343454,
-                    "date_published": "2019-06-14T15:30:02.967Z"
+                    "size": 343776,
+                    "date_published": "2019-07-06T04:47:28.607Z"
                 }
             ]
         },
@@ -4529,23 +4529,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismTools-1.12.2-9.7.8.379.jar",
+                    "file_name": "MekanismTools-1.12.2-9.7.9.380.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2724/546/MekanismTools-1.12.2-9.7.8.379.jar",
-                    "id": "2724546",
+                    "url": "https://edge.forgecdn.net/files/2736/280/MekanismTools-1.12.2-9.7.9.380.jar",
+                    "id": "2736280",
                     "parent_id": "268567",
                     "hashes": {
-                        "sha1": "7c839d70220a9c3f980ad4a0efbaf5144c7654d6",
-                        "md5": "e1f085cfc66580c6ca251a307a177ef0"
+                        "sha1": "35b86cab69457529c83d205696200963be4e42bc",
+                        "md5": "4184f1e09089ba285ffeae1743ace0b4"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
                     "size": 162121,
-                    "date_published": "2019-06-14T15:30:04.747Z"
+                    "date_published": "2019-07-06T04:47:29.757Z"
                 }
             ]
         },
@@ -5894,39 +5894,6 @@
                     ],
                     "size": 204325,
                     "date_published": "2019-06-29T07:15:10.760Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "gkNnKCz6sCK40zPQ",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "pyxis-lib"
-            },
-            "name": {
-                "curseforge": "Pyxis Lib"
-            },
-            "id": {
-                "curseforge": "316901"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "pyxislibmc-1.12.2-1.2.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2693/270/pyxislibmc-1.12.2-1.2.0.jar",
-                    "id": "2693270",
-                    "parent_id": "316901",
-                    "hashes": {
-                        "sha1": "798cb4b4a3e126a0a5010ba52700db5a5802ddef",
-                        "md5": "f29a06e488d663980d99ea2827e092a9"
-                    },
-                    "required_dependencies": [],
-                    "size": 29029,
-                    "date_published": "2019-03-30T08:55:21.687Z"
                 }
             ]
         },
