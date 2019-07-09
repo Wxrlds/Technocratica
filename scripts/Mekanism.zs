@@ -65,3 +65,17 @@ mods.mekanism.infuser.addRecipe("CARBON", 90, <contenttweaker:enriched_iron_bloc
 #Mekanism Reactor Controller
 recipes.remove(<mekanismgenerators:reactor>);
 recipes.addShaped(<mekanismgenerators:reactor>, [[<ore:circuitUltimate>, <advanced_solar_panels:crafting:5>, <ore:circuitUltimate>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
+
+#Crusher Compressed Blocks
+#Cobblestone to Gravel
+mods.mekanism.crusher.addRecipe(<extrautils2:compressedcobblestone>, <extrautils2:compressedgravel>);
+mods.mekanism.crusher.addRecipe(<extrautils2:compressedcobblestone:1>, <extrautils2:compressedgravel:1>);
+#Gravel to Sand
+mods.mekanism.crusher.addRecipe(<extrautils2:compressedgravel>, <extrautils2:compressedsand>);
+mods.mekanism.crusher.addRecipe(<extrautils2:compressedgravel:1>, <extrautils2:compressedsand:1>);
+#Sand to Silicon
+mods.mekanism.crusher.addRecipe(<extrautils2:compressedsand>, <appliedenergistics2:material:5> * 9);
+
+#Metallurgic Infuser Compressed Blocks
+mods.mekanism.infuser.addRecipe("BIO", 90, <extrautils2:compressedsand>, <extrautils2:compresseddirt>);
+mods.mekanism.infuser.addRecipe("BIO", 810, <extrautils2:compressedsand:1>, <extrautils2:compresseddirt:1>);

@@ -428,3 +428,9 @@ recipes.replaceAllOccurences(<thermalexpansion:frame>, <extrautils2:machine>, <t
 
 #Machine Case
 recipes.replaceAllOccurences(<thermalexpansion:frame>, <teslacorelib:machine_case>, <thermalexpansion:machine:6>);
+
+#XNet Blocks
+recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:redstone_proxy>);
+recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:wireless_router>);
+recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:router>);
+recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:controller>);

@@ -141,6 +141,8 @@ recipes.addShaped(<ic2:nuclear:2> * 4, [[<mysticalagriculture:uranium_238_essenc
 #Pink Slimeball no oredict
 val pinkslime = <ore:slimeballPink>;
 pinkslime.remove(<industrialforegoing:pink_slime>);
+val pinkslime2 = <ore:slimeball>;
+pinkslime2.remove(<industrialforegoing:pink_slime>);
 
 #Gears JAOPCA
 recipes.remove(<jaopca:item_gearardite>);
@@ -174,3 +176,31 @@ recipes.remove(<randomthings:sounddampener>);
 val lithium = <ore:dustLithium>;
 lithium.remove(<ic2:dust:11>);
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:lithium>, <ic2:dust:11>);
+
+/*
+#Sawmill Wood to Planks
+mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_planks>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:5>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:4>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:3>);
+mods.thermalexpansion.Sawmill.removeRecipe(<randomthings:spectreplank>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:2>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:1>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks>);
+mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_planks:1>);
+
+# mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+
+mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks> * 3, <extrautils2:ironwood_log>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks:1> * 3, <extrautils2:ironwood_log:1>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <minecraft:log:3>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:2> * 3, <minecraft:log:2>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <minecraft:log:1>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks> * 3, <minecraft:log>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<randomthings:spectreplank> * 3, <randomthings:spectrelog>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pampaperbark>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <harvestcraft:pammaple>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pamcinnamon>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:4> * 3, <minecraft:log2>, 1000, <thermalfoundation:material:800>, 50);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:5> * 3, <minecraft:log2:1>, 1000, <thermalfoundation:material:800>, 50);
+*/

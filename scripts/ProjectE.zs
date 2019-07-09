@@ -365,10 +365,10 @@ mods.actuallyadditions.Empowerer.addRecipe(<projecte:condenser_mk2>, <projecte:c
 
 #Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust:0>);
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Lightning Enderman (They are a little bit stronger, so be prepared)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Enderman (They are a little bit stronger, so be prepared)");
 
 recipes.remove(<projecte:item.pe_covalence_dust:1>);
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Jolt (They are a little bit stronger, so be prepared)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze (They are a little bit stronger, so be prepared)");
 
 recipes.remove(<projecte:item.pe_covalence_dust:2>);
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Sniper Wither Skeleton (They are a little bit stronger, so be prepared)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (They are a little bit stronger, so be prepared)");

@@ -387,6 +387,106 @@
     {
       "item": "minecraft:ender_eye|0",
       "emc": 1792
+    },
+    {
+      "item": "extracells:storage.fluid|4",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:storage_cell_4k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:storage_cell_16k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:storage_cell_64k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:fluid_storage_cell_1k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:fluid_storage_cell_4k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:fluid_storage_cell_64k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:fluid_storage_cell_16k|0",
+      "emc": 0
+    },
+    {
+      "item": "appliedenergistics2:storage_cell_1k|0",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|1",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|2",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|3",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|4",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|6",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|5",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.fluid.portable|0",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas.portable|0",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.gas|0",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.physical|3",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.physical|2",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.physical|4",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.physical|1",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.fluid|5",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.fluid|6",
+      "emc": 0
+    },
+    {
+      "item": "extracells:storage.physical|0",
+      "emc": 0
     }
   ]
 }
