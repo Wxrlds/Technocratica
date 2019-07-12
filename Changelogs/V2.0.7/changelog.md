@@ -1,3 +1,3 @@
-Dark Utils charm now go into more slots
+Dark Utils charm now go into every slot
 
 Recipes (to make your life easier)
