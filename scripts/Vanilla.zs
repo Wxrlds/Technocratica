@@ -88,3 +88,6 @@ recipes.addShaped(<minecraft:trapped_chest>, [[<minecraft:tripwire_hook>, <minec
 recipes.remove(<minecraft:prismarine_crystals>);
 recipes.remove(<minecraft:prismarine_shard>);
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:prismarine_shard>);
+
+#Compressed Sand to Glass
+furnace.addRecipe(<minecraft:glass> * 9, <extrautils2:compressedsand>);

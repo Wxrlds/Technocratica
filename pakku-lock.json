@@ -2912,21 +2912,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.127.jar",
+                    "file_name": "FTBLib-5.4.3.129.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2737/291/FTBLib-5.4.3.127.jar",
-                    "id": "2737291",
+                    "url": "https://edge.forgecdn.net/files/2739/267/FTBLib-5.4.3.129.jar",
+                    "id": "2739267",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "6059324ad2e3d205e2f37470e4ab6d71bfafb78e",
-                        "md5": "c00232496e0756727ec95b724ca921f6"
+                        "sha1": "b3991a8270e0f660a0ddb85e376f2e23e8559b0d",
+                        "md5": "a5a61eca81a1f662f276d24c587a1be8"
                     },
                     "required_dependencies": [],
-                    "size": 915527,
-                    "date_published": "2019-07-07T22:09:51.647Z"
+                    "size": 915634,
+                    "date_published": "2019-07-11T08:39:29.260Z"
                 }
             ]
         },
@@ -2945,23 +2945,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectEX-1.2.0.36.jar",
+                    "file_name": "ProjectEX-1.2.0.37.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2711/463/ProjectEX-1.2.0.36.jar",
-                    "id": "2711463",
+                    "url": "https://edge.forgecdn.net/files/2739/323/ProjectEX-1.2.0.37.jar",
+                    "id": "2739323",
                     "parent_id": "311378",
                     "hashes": {
-                        "sha1": "bd0c1b92d22fad5a1477e6b27e44d823eefa3882",
-                        "md5": "c5f7270daaf94a7a572f42d8c9138979"
+                        "sha1": "59c53000509c0eff10b68a735ad234368b8f1142",
+                        "md5": "f8e623e5486c1b1f82711eaa75c3dd4c"
                     },
                     "required_dependencies": [
                         "226410"
                     ],
-                    "size": 377895,
-                    "date_published": "2019-05-15T13:35:24.897Z"
+                    "size": 378073,
+                    "date_published": "2019-07-11T12:10:18.660Z"
                 }
             ]
         },
@@ -2984,24 +2984,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.7.2.186.jar",
+                    "file_name": "FTBQuests-1.7.2.187.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2737/343/FTBQuests-1.7.2.186.jar",
-                    "id": "2737343",
+                    "url": "https://edge.forgecdn.net/files/2738/432/FTBQuests-1.7.2.187.jar",
+                    "id": "2738432",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "67e7ed347435645e35683269cac097d9ab587435",
-                        "md5": "07a52d68f626af70f0af37414ca45623"
+                        "sha1": "137358492056562d11bad32d8013dec7de14d60d",
+                        "md5": "e5ad2c0e5584f1077daa1f60d13eda3d"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 951986,
-                    "date_published": "2019-07-07T23:44:17.943Z"
+                    "size": 952561,
+                    "date_published": "2019-07-10T00:19:49.963Z"
                 }
             ]
         },
@@ -3929,21 +3929,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "journeymap-1.12.2-5.5.5b8.jar",
+                    "file_name": "journeymap-1.12.2-5.5.5b9.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2736/523/journeymap-1.12.2-5.5.5b8.jar",
-                    "id": "2736523",
+                    "url": "https://edge.forgecdn.net/files/2738/211/journeymap-1.12.2-5.5.5b9.jar",
+                    "id": "2738211",
                     "parent_id": "32274",
                     "hashes": {
-                        "sha1": "e689b06fac40ccc7aa8c36bbadfd653efef13183",
-                        "md5": "30d04bc42142d924f174c82785a60909"
+                        "sha1": "244448986cace06310db3a6332c93c465b0940e5",
+                        "md5": "a98c0d1aa53d49c3001c64fb70f7b405"
                     },
                     "required_dependencies": [],
-                    "size": 1920364,
-                    "date_published": "2019-07-06T18:31:16.333Z"
+                    "size": 1920422,
+                    "date_published": "2019-07-09T16:59:21.133Z"
                 }
             ]
         },
@@ -4040,21 +4040,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jei_1.12.2-4.15.0.285.jar",
+                    "file_name": "jei_1.12.2-4.15.0.287.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2733/488/jei_1.12.2-4.15.0.285.jar",
-                    "id": "2733488",
+                    "url": "https://edge.forgecdn.net/files/2739/588/jei_1.12.2-4.15.0.287.jar",
+                    "id": "2739588",
                     "parent_id": "238222",
                     "hashes": {
-                        "sha1": "20ecf7973264bc8f5f54530cd90f1562aab43320",
-                        "md5": "6863242ea1967af9cb562be7bae4a16a"
+                        "sha1": "5a0f853c8f8738e69aa7ae520b03a41cada929fe",
+                        "md5": "20ba0763eb7d35d41f5d5e2f05a6ad21"
                     },
                     "required_dependencies": [],
-                    "size": 650309,
-                    "date_published": "2019-06-30T19:44:28.997Z"
+                    "size": 650295,
+                    "date_published": "2019-07-11T20:42:36.317Z"
                 }
             ]
         },
@@ -4303,6 +4303,39 @@
                     "required_dependencies": [],
                     "size": 45341,
                     "date_published": "2018-11-20T22:44:03.790Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NhDU7uCrkpdjOU8f",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "long-fall-boots"
+            },
+            "name": {
+                "curseforge": "Long Fall Boots"
+            },
+            "id": {
+                "curseforge": "254032"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "longfallboots-1.2.1b.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2595/728/longfallboots-1.2.1b.jar",
+                    "id": "2595728",
+                    "parent_id": "254032",
+                    "hashes": {
+                        "sha1": "b7d7627c806947e926594a64bffc1b9a09a7467e",
+                        "md5": "7c44fa1b65f8a08661187af979eeb47a"
+                    },
+                    "required_dependencies": [],
+                    "size": 6891,
+                    "date_published": "2018-07-31T21:44:58.850Z"
                 }
             ]
         },
@@ -4668,21 +4701,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modnametooltip_1.12.2-1.10.0.jar",
+                    "file_name": "modnametooltip_1.12.2-1.10.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2486/868/modnametooltip_1.12.2-1.10.0.jar",
-                    "id": "2486868",
+                    "url": "https://edge.forgecdn.net/files/2739/582/modnametooltip_1.12.2-1.10.1.jar",
+                    "id": "2739582",
                     "parent_id": "238747",
                     "hashes": {
-                        "sha1": "15c4bd9269400317a0d826c29ca96d60f9773470",
-                        "md5": "6dda75b858fc93e2d18ccd42585aec03"
+                        "sha1": "46e4e9aa1a443de953088148fdcd3c7b9255d7cf",
+                        "md5": "e36854d3c58af598ab3ce08d6cf0c760"
                     },
                     "required_dependencies": [],
-                    "size": 9698,
-                    "date_published": "2017-10-03T06:29:29.677Z"
+                    "size": 12732,
+                    "date_published": "2019-07-11T20:34:48.003Z"
                 }
             ]
         },
@@ -5947,23 +5980,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Quark-r1.5-167.jar",
+                    "file_name": "Quark-r1.5-168.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2732/987/Quark-r1.5-167.jar",
-                    "id": "2732987",
+                    "url": "https://edge.forgecdn.net/files/2739/673/Quark-r1.5-168.jar",
+                    "id": "2739673",
                     "parent_id": "243121",
                     "hashes": {
-                        "sha1": "093fdf7cf4cb7356715741bc56d7c24cabd17a69",
-                        "md5": "30cce8ebe9a1daa023f3c07810533296"
+                        "sha1": "9afa219b95e84375b0e4864fe3a7889d38b24ae3",
+                        "md5": "afc7613c76f7058b19853436954c982d"
                     },
                     "required_dependencies": [
                         "250363"
                     ],
-                    "size": 2612888,
-                    "date_published": "2019-06-29T22:25:00.337Z"
+                    "size": 2668418,
+                    "date_published": "2019-07-11T23:21:55.613Z"
                 }
             ]
         },

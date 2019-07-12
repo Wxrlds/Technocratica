@@ -83,7 +83,7 @@ recipes.addShaped(<appliedenergistics2:part:260>, [[<projectred-transportation:p
 
 #ME Import Bus
 recipes.remove(<appliedenergistics2:part:240>);
-recipes.addShaped(<appliedenergistics2:part:240>, [[<projectred-transportation:pipe:2>, <projectred-transportation:routing_chip:4>, <projectred-transportation:pipe:3>],[<ore:ingotIron>, <appliedenergistics2:material:43>, <ore:ingotIron>], [null, <minecraft:piston>, null]]);
+recipes.addShaped(<appliedenergistics2:part:240>, [[<projectred-transportation:pipe:2>, <projectred-transportation:routing_chip:4>, <projectred-transportation:pipe:3>],[<ore:ingotIron>, <appliedenergistics2:material:43>, <ore:ingotIron>], [null, <minecraft:sticky_piston>, null]]);
 
 #Grindstone
 recipes.remove(<appliedenergistics2:grindstone>);

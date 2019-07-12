@@ -1,6 +1,6 @@
 #Portality
 recipes.remove(<portality:controller>);
-recipes.addShapeless(<portality:controller>, [<actuallyadditions:item_tele_staff>,<notenoughwands:teleportation_wand>,<cyclicmagic:tool_elevate>,<portality:frame>,<enderio:item_travel_staff>,<portality:frame>,<cyclicmagic:tool_warp_spawn>,<enderio:block_travel_anchor>,<cyclicmagic:tool_warp_home>]);
+recipes.addShapeless(<portality:controller>, [<actuallyadditions:item_tele_staff>,<notenoughwands:teleportation_wand>,<cyclicmagic:tool_elevate>,<portality:frame>,<minecraft:fire_charge>,<portality:frame>,<cyclicmagic:tool_warp_spawn>,<quark:blaze_lantern>,<cyclicmagic:tool_warp_home>]);
 
 #Teleposer
 recipes.remove(<projectred-expansion:machine2:7>);
@@ -43,4 +43,4 @@ recipes.remove(<quantumflux:linkingcard>);
 
 #Dislocator (Draconic)
 recipes.remove(<draconicevolution:dislocator>);
-recipes.addShaped(<draconicevolution:dislocator>, [[<ore:dustBlaze>, <ore:dustDraconium>, <ore:dustBlaze>],[<ore:dustDraconium>, <portality:controller>, <ore:dustDraconium>], [<ore:dustBlaze>, <ore:dustDraconium>, <ore:dustBlaze>]]);
+recipes.addShaped(<draconicevolution:dislocator>, [[<enderio:block_travel_anchor>, <ore:dustDraconium>, <enderio:block_travel_anchor>],[<ore:dustDraconium>, <portality:controller>, <ore:dustDraconium>], [<enderio:block_travel_anchor>, <ore:dustDraconium>, <enderio:block_travel_anchor>]]);

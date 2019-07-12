@@ -521,3 +521,7 @@ recipes.remove(<projecte:item.pe_gem_armor_0>);
 
 #Infinity
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_boots>);
+
+#Longfall Boots
+recipes.remove(<longfallboots:longfallboots>);
+recipes.addShaped(<longfallboots:longfallboots>, [[<ore:ingotIron>, <rftools:featherfallingplus_module>, <ore:ingotIron>],[<ore:obsidian>, null, <ore:obsidian>], [<ore:gemDiamond>, null, <ore:gemDiamond>]]);
