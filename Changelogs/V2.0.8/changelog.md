@@ -7,3 +7,5 @@ Changed Ultimate Circuit crafting Fluid
 Fixed Quest rewards from ProjectE-Questline
 
 Removed duplicate recipes
+
+Reduced price of Flight totem
