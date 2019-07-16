@@ -2945,23 +2945,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectEX-1.2.0.37.jar",
+                    "file_name": "ProjectEX-1.2.0.38.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2739/323/ProjectEX-1.2.0.37.jar",
-                    "id": "2739323",
+                    "url": "https://edge.forgecdn.net/files/2740/534/ProjectEX-1.2.0.38.jar",
+                    "id": "2740534",
                     "parent_id": "311378",
                     "hashes": {
-                        "sha1": "59c53000509c0eff10b68a735ad234368b8f1142",
-                        "md5": "f8e623e5486c1b1f82711eaa75c3dd4c"
+                        "sha1": "bfc6e3115ce45aaf0a46b873dd884d6937ed90b1",
+                        "md5": "41d28acd81bc7266059a2322d2b575ef"
                     },
                     "required_dependencies": [
                         "226410"
                     ],
-                    "size": 378073,
-                    "date_published": "2019-07-11T12:10:18.660Z"
+                    "size": 382347,
+                    "date_published": "2019-07-13T12:39:24.977Z"
                 }
             ]
         },
@@ -3512,21 +3512,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "industrialcraft-2-2.8.164-ex112.jar",
+                    "file_name": "industrialcraft-2-2.8.169-ex112.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2728/635/industrialcraft-2-2.8.164-ex112.jar",
-                    "id": "2728635",
+                    "url": "https://edge.forgecdn.net/files/2742/91/industrialcraft-2-2.8.169-ex112.jar",
+                    "id": "2742091",
                     "parent_id": "242638",
                     "hashes": {
-                        "sha1": "7a1d61988eb3b34dc26c8c264158baad6a120166",
-                        "md5": "553f65df6ce7f2c47f9390a3cb7d9867"
+                        "sha1": "b16c198e990322889fd33857178960e126d7f99d",
+                        "md5": "5bc229f55b46377446802cc75bcac828"
                     },
                     "required_dependencies": [],
-                    "size": 8355087,
-                    "date_published": "2019-06-23T13:56:57.113Z"
+                    "size": 8356443,
+                    "date_published": "2019-07-16T00:13:09.033Z"
                 }
             ]
         },

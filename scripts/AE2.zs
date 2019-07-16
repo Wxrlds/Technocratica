@@ -2,7 +2,7 @@ import mods.appliedenergistics2.Inscriber;
 import mods.appliedenergistics2.Grinder;
 
 #Skystone Dust
-mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:45>, <ore:endstone>, <liquid:heavywater>, 1000, true, 900);
+mods.tconstruct.Casting.addBasinRecipe(<appliedenergistics2:material:45>, <ore:endstone>, <liquid:heavywater>, 1000, true, 900);
 
 #Skystone
 recipes.addShaped(<appliedenergistics2:sky_stone_block>, [[<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>],[<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>], [<appliedenergistics2:material:45>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>]]);

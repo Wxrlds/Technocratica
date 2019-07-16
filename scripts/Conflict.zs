@@ -50,6 +50,9 @@ recipes.addShaped(<enderio:item_material:10>, [[<ore:stickWood>, <ore:cobbleston
 #Steel Block (Mek)
 recipes.remove(<mekanism:basicblock:5>);
 
+#Steel Ingots
+recipes.removeByRecipeName("tcomplement:steelworks/steel_ingot_from_block");
+
 #Tin Block (Mek)
 recipes.remove(<mekanism:basicblock:13>);
 
@@ -70,6 +73,10 @@ recipes.addShaped(<randomthings:soundbox>, [[<ore:plankWood>, <ore:plankWood>, <
 #Charcoal (Chisel)
 recipes.remove(<chisel:block_charcoal2:1>);
 recipes.remove(<thermalfoundation:storage_resource>);
+recipes.removeByRecipeName("mekanism:coal_1");
+recipes.removeByRecipeName("tcomplement:steelworks/charcoal");
+recipes.removeByRecipeName("chisel:charcoal_uncraft");
+recipes.removeByRecipeName("actuallyadditions:recipes122");
 
 #Bronze Shovel (IC2)
 recipes.remove(<ic2:bronze_shovel>);
