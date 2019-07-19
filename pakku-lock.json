@@ -4802,21 +4802,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moreoverlays-1.14-mc1.12.2.jar",
+                    "file_name": "moreoverlays-1.15.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2589/773/moreoverlays-1.14-mc1.12.2.jar",
-                    "id": "2589773",
+                    "url": "https://edge.forgecdn.net/files/2742/464/moreoverlays-1.15.0.jar",
+                    "id": "2742464",
                     "parent_id": "243478",
                     "hashes": {
-                        "sha1": "e6a84ddb8a39e99da41aab77b671f9b30f1483ea",
-                        "md5": "299ef46b09dfe6b9c874b7607c9a1d2d"
+                        "sha1": "260048de02569c056609f3c6ced0c82b19b7fca4",
+                        "md5": "aca47fac4c5eaab3869b53d4e2f7ed9a"
                     },
                     "required_dependencies": [],
-                    "size": 39764,
-                    "date_published": "2018-07-23T16:04:10.097Z"
+                    "size": 51827,
+                    "date_published": "2019-07-16T16:23:19.040Z"
                 }
             ]
         },
@@ -5534,23 +5534,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProgressiveBosses-1.5.0-mc1.12.x.jar",
+                    "file_name": "ProgressiveBosses-1.5.1-mc1.12.x.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2719/959/ProgressiveBosses-1.5.0-mc1.12.x.jar",
-                    "id": "2719959",
+                    "url": "https://edge.forgecdn.net/files/2744/97/ProgressiveBosses-1.5.1-mc1.12.x.jar",
+                    "id": "2744097",
                     "parent_id": "289466",
                     "hashes": {
-                        "sha1": "cee32cc5b5fbce6f97edf8408546e8ba7d03516c",
-                        "md5": "45f9c7b2f6cc0a715705e317dbdbd1dd"
+                        "sha1": "c4b71129ce065526673350dae130e0b83514cbe3",
+                        "md5": "865b09d04bf16936d2ba151079df878e"
                     },
                     "required_dependencies": [],
-                    "size": 65915,
-                    "date_published": "2019-06-04T11:03:19.817Z"
+                    "size": 67439,
+                    "date_published": "2019-07-19T06:44:20.867Z"
                 }
             ]
         },
@@ -6196,23 +6196,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.17.2.0.jar",
+                    "file_name": "randompatches-1.12.2-1.17.2.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2735/698/randompatches-1.12.2-1.17.2.0.jar",
-                    "id": "2735698",
+                    "url": "https://edge.forgecdn.net/files/2742/950/randompatches-1.12.2-1.17.2.1.jar",
+                    "id": "2742950",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "20d5556e6d91aa49f4aa0a9945a1bd6ac2320965",
-                        "md5": "5d0a181bc6f2d38874ed9f1a46ed9848"
+                        "sha1": "b1f19de3bc5a7894154d931824bd3cc018e3d9a3",
+                        "md5": "07bfa9842b6109a666276d8d453bdb38"
                     },
                     "required_dependencies": [],
-                    "size": 263677,
-                    "date_published": "2019-07-05T03:21:00.933Z"
+                    "size": 264423,
+                    "date_published": "2019-07-17T12:02:45.757Z"
                 }
             ]
         },

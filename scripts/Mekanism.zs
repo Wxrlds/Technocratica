@@ -8,9 +8,12 @@ mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:1>, <liquid:
 
 recipes.remove(<mekanism:controlcircuit:2>);
 mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:2>, <liquid:aerotheum>, [<mekanism:controlcircuit:1>, <mekanism:reinforcedalloy> * 4, <mekanism:compresseddiamond> * 4]);
+recipes.remove(<ic2:crafting:2>);
+recipes.addShaped(<ic2:crafting:2> * 2, [[<ore:itemCompressedRedstone>, <ore:ingotRefinedGlowstone>, <ore:itemCompressedRedstone>],[<ore:dustTinyLapis>, <ore:circuitBasic>, <ore:dustTinyLapis>], [<ore:itemCompressedRedstone>, <ore:ingotRefinedGlowstone>, <ore:itemCompressedRedstone>]]);
+
 
 recipes.remove(<mekanism:controlcircuit:3>);
-mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:3>, <liquid:ic2hydrogen>, [<mekanism:controlcircuit:2>, <mekanism:atomicalloy> * 4, <mekanism:compressedobsidian> * 4]);
+mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:3>, <liquid:crystal>, [<mekanism:controlcircuit:2>, <mekanism:atomicalloy> * 4, <mekanism:compressedobsidian> * 4]);
 
 #Factory remove
 recipes.remove(<mekanism:machineblock:7>);
