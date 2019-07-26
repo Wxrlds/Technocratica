@@ -184,30 +184,10 @@ val lithium = <ore:dustLithium>;
 lithium.remove(<ic2:dust:11>);
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:lithium>, <ic2:dust:11>);
 
-/*
-#Sawmill Wood to Planks
-mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_planks>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:5>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:4>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:3>);
-mods.thermalexpansion.Sawmill.removeRecipe(<randomthings:spectreplank>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:2>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks:1>);
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:planks>);
-mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_planks:1>);
+#Glowstone Elevation Unit
+mods.thermalexpansion.Transposer.removeFillRecipe(<simplyjetpacks:metaitemmods:18>, <liquid:glowstone>);
+mods.thermalexpansion.Transposer.addFillRecipe(<simplyjetpacks:metaitemmods:19>, <simplyjetpacks:metaitemmods:18>, <liquid:glowstone> * 4000, 6400);
 
-# mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-
-mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks> * 3, <extrautils2:ironwood_log>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks:1> * 3, <extrautils2:ironwood_log:1>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <minecraft:log:3>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:2> * 3, <minecraft:log:2>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <minecraft:log:1>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks> * 3, <minecraft:log>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<randomthings:spectreplank> * 3, <randomthings:spectrelog>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pampaperbark>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <harvestcraft:pammaple>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pamcinnamon>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:4> * 3, <minecraft:log2>, 1000, <thermalfoundation:material:800>, 50);
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:5> * 3, <minecraft:log2:1>, 1000, <thermalfoundation:material:800>, 50);
-*/
+#Cryotheum Elevation Unit
+mods.thermalexpansion.Transposer.removeFillRecipe(<simplyjetpacks:metaitemmods:20>, <liquid:cryotheum>);
+mods.thermalexpansion.Transposer.addFillRecipe(<simplyjetpacks:metaitemmods:21>, <simplyjetpacks:metaitemmods:20>, <liquid:cryotheum> * 4000, 6400);
