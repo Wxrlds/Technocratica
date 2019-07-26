@@ -297,7 +297,7 @@
         "mode": "ADD",
         "result": "draconicevolution:draconic_block,4",
         "catalyst": "draconicevolution:draconium_block,4,1",
-		"energy": 50000000,
+		"energy": 5000000,
 		"tier":1,
 		"ingredients": [
 			"draconicevolution:draconic_core,4",
@@ -313,7 +313,7 @@
         "mode": "ADD",
         "result": "draconicevolution:draconium_block,2,1",
         "catalyst": "draconicevolution:draconium_block",
-		"energy": 200000000,
+		"energy": 20000000,
 		"tier":0,
 		"ingredients": [
 			"draconicevolution:draconium_block"
@@ -354,5 +354,29 @@
 			"draconicevolution:draconic_block,2",
 			"draconicevolution:dragon_heart"
 			]
-    }	
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:awakened_core",
+        "catalyst": "minecraft:nether_star"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:awakened_core",
+        "catalyst": "extrautils2:snowglobe,1,1",
+		"energy": 40000000,
+		"tier":1,
+		"ingredients": [
+			"draconicevolution:wyvern_core",
+			"draconicevolution:wyvern_core",
+			"draconicevolution:wyvern_core",
+			"draconicevolution:wyvern_core",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot"
+			]
+    }
 	]

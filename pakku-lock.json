@@ -81,6 +81,85 @@
             ]
         },
         {
+            "pakku_id": "9Zw15UGTAq23tbOu",
+            "pakku_links": [
+                "cn1L7jquTNIhbYbu",
+                "iLwvDTT7nI9pYAyU",
+                "S6xSKFguVRPfdLnl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "wireless-fluid-terminal"
+            },
+            "name": {
+                "curseforge": "AE2 Wireless Fluid Terminal"
+            },
+            "id": {
+                "curseforge": "304022"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "WirelessFluidTerminal-1.12.2-1.0.1.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2725/812/WirelessFluidTerminal-1.12.2-1.0.1.jar",
+                    "id": "2725812",
+                    "parent_id": "304022",
+                    "hashes": {
+                        "sha1": "6b43c3894f738278ffc2f12620ec1ec4a0faf686",
+                        "md5": "3c3325bde4e56a7ab3c125ba3027fc39"
+                    },
+                    "required_dependencies": [
+                        "255232",
+                        "304024",
+                        "223794"
+                    ],
+                    "size": 92567,
+                    "date_published": "2019-06-17T13:22:44.633Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "bP2LnxzQqWiEb7xg",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "wireless-interface-terminal"
+            },
+            "name": {
+                "curseforge": "AE2 Wireless Interface Terminal"
+            },
+            "id": {
+                "curseforge": "324508"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "WirelessInterfaceTerminal-1.12.2-1.0.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2725/813/WirelessInterfaceTerminal-1.12.2-1.0.0.jar",
+                    "id": "2725813",
+                    "parent_id": "324508",
+                    "hashes": {
+                        "sha1": "5c05278644d9b5da682bdec5f87e089a0f9eb86c",
+                        "md5": "31161b1248de2d3005b7a3cc93f2affe"
+                    },
+                    "required_dependencies": [
+                        "304024",
+                        "223794",
+                        "255232"
+                    ],
+                    "size": 82177,
+                    "date_published": "2019-06-17T13:24:25.680Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cn1L7jquTNIhbYbu",
             "pakku_links": [
                 "iLwvDTT7nI9pYAyU",
@@ -175,16 +254,16 @@
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2737/969/ActuallyAdditions-1.12.2-r149.jar",
-                    "id": "2737969",
+                    "url": "https://edge.forgecdn.net/files/2748/483/ActuallyAdditions-1.12.2-r149.jar",
+                    "id": "2748483",
                     "parent_id": "228404",
                     "hashes": {
-                        "sha1": "f5e7bd2c7ff9f122d38a0a587bd40cfb1ced4b95",
-                        "md5": "f50215ba528830eaef78e03b27dbed29"
+                        "sha1": "de3bbaca311c442a72924453dbf4024fe1655ffe",
+                        "md5": "1bfd81f4f05d9aef096a2cbd0b2f7648"
                     },
                     "required_dependencies": [],
-                    "size": 2938815,
-                    "date_published": "2019-07-09T05:43:07.160Z"
+                    "size": 2938988,
+                    "date_published": "2019-07-25T23:16:02.290Z"
                 }
             ]
         },
@@ -743,21 +822,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AutoRegLib-1.3-31.jar",
+                    "file_name": "AutoRegLib-1.3-32.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2730/480/AutoRegLib-1.3-31.jar",
-                    "id": "2730480",
+                    "url": "https://edge.forgecdn.net/files/2746/11/AutoRegLib-1.3-32.jar",
+                    "id": "2746011",
                     "parent_id": "250363",
                     "hashes": {
-                        "sha1": "0f7c4f68bb3ce575bac9d02a02a2d8961c6fa692",
-                        "md5": "bdc6ab2dd60a2562e2af5b0543e0ed27"
+                        "sha1": "267269ca7f1a71fb3bb35bdb8e61702a4da6263e",
+                        "md5": "4e5a4b881c27b1e4502a9a16c00882ad"
                     },
                     "required_dependencies": [],
-                    "size": 106200,
-                    "date_published": "2019-06-26T04:10:20.470Z"
+                    "size": 108306,
+                    "date_published": "2019-07-22T11:42:20Z"
                 }
             ]
         },
@@ -1308,24 +1387,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BrandonsCore-1.12.2-2.4.16.207-universal.jar",
+                    "file_name": "BrandonsCore-1.12.2-2.4.17.208-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2736/911/BrandonsCore-1.12.2-2.4.16.207-universal.jar",
-                    "id": "2736911",
+                    "url": "https://edge.forgecdn.net/files/2744/222/BrandonsCore-1.12.2-2.4.17.208-universal.jar",
+                    "id": "2744222",
                     "parent_id": "231382",
                     "hashes": {
-                        "sha1": "69f75de6ad6ef07f2c6444249b9d7e42bc983684",
-                        "md5": "8ad41e8cf00e6779d056194b31fcd82a"
+                        "sha1": "c6300b13fcdd0f9f137f018e97bb61d1ba112c91",
+                        "md5": "b3cc0541f4a3758b299e2200d8d00cd3"
                     },
                     "required_dependencies": [
                         "242818",
                         "270789"
                     ],
-                    "size": 905299,
-                    "date_published": "2019-07-07T12:44:09.830Z"
+                    "size": 825212,
+                    "date_published": "2019-07-19T14:04:42.893Z"
                 }
             ]
         },
@@ -2098,21 +2177,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.12.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.13.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2728/480/Cyclic-1.12.2-1.19.12.jar",
-                    "id": "2728480",
+                    "url": "https://edge.forgecdn.net/files/2748/659/Cyclic-1.12.2-1.19.13.jar",
+                    "id": "2748659",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "1917af9df1d1f9050240e4a37d6bcd824defa7e0",
-                        "md5": "919802ec2f8e574f2788dfe32252de06"
+                        "sha1": "3d9ba32eb64e667a6ce34e9116f47522ea945500",
+                        "md5": "9294b25f3465181f76fb9b966348a8ee"
                     },
                     "required_dependencies": [],
-                    "size": 3998285,
-                    "date_published": "2019-06-23T05:14:42.367Z"
+                    "size": 3998434,
+                    "date_published": "2019-07-26T06:40:36.923Z"
                 }
             ]
         },
@@ -2912,21 +2991,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.129.jar",
+                    "file_name": "FTBLib-5.4.3.130.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2739/267/FTBLib-5.4.3.129.jar",
-                    "id": "2739267",
+                    "url": "https://edge.forgecdn.net/files/2747/793/FTBLib-5.4.3.130.jar",
+                    "id": "2747793",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "b3991a8270e0f660a0ddb85e376f2e23e8559b0d",
-                        "md5": "a5a61eca81a1f662f276d24c587a1be8"
+                        "sha1": "d40f8ccea15cf94f3f434156964564db38f2a6a2",
+                        "md5": "59277aa4c2de5f38dc61c4c113beea6a"
                     },
                     "required_dependencies": [],
-                    "size": 915634,
-                    "date_published": "2019-07-11T08:39:29.260Z"
+                    "size": 915679,
+                    "date_published": "2019-07-24T21:14:37.067Z"
                 }
             ]
         },
@@ -2945,23 +3024,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectEX-1.2.0.38.jar",
+                    "file_name": "ProjectEX-1.2.0.39.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2740/534/ProjectEX-1.2.0.38.jar",
-                    "id": "2740534",
+                    "url": "https://edge.forgecdn.net/files/2748/127/ProjectEX-1.2.0.39.jar",
+                    "id": "2748127",
                     "parent_id": "311378",
                     "hashes": {
-                        "sha1": "bfc6e3115ce45aaf0a46b873dd884d6937ed90b1",
-                        "md5": "41d28acd81bc7266059a2322d2b575ef"
+                        "sha1": "a3dc78c2d6a877f6f144122cca0eaa02c6065860",
+                        "md5": "6db43fcccb1e7e57d877c5939c16da73"
                     },
                     "required_dependencies": [
                         "226410"
                     ],
-                    "size": 382347,
-                    "date_published": "2019-07-13T12:39:24.977Z"
+                    "size": 383189,
+                    "date_published": "2019-07-25T10:07:26.857Z"
                 }
             ]
         },
@@ -2984,24 +3063,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.7.2.187.jar",
+                    "file_name": "FTBQuests-1.7.2.188.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2738/432/FTBQuests-1.7.2.187.jar",
-                    "id": "2738432",
+                    "url": "https://edge.forgecdn.net/files/2747/799/FTBQuests-1.7.2.188.jar",
+                    "id": "2747799",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "137358492056562d11bad32d8013dec7de14d60d",
-                        "md5": "e5ad2c0e5584f1077daa1f60d13eda3d"
+                        "sha1": "0c01b4cc4487c2e98783a99f3c0e7dea25bbecfa",
+                        "md5": "79e4d6010e7df4c4d219886a0594c814"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 952561,
-                    "date_published": "2019-07-10T00:19:49.963Z"
+                    "size": 953897,
+                    "date_published": "2019-07-24T21:16:51.397Z"
                 }
             ]
         },
@@ -3512,21 +3591,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "industrialcraft-2-2.8.169-ex112.jar",
+                    "file_name": "industrialcraft-2-2.8.170-ex112.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2742/91/industrialcraft-2-2.8.169-ex112.jar",
-                    "id": "2742091",
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2746/892/industrialcraft-2-2.8.170-ex112.jar",
+                    "id": "2746892",
                     "parent_id": "242638",
                     "hashes": {
-                        "sha1": "b16c198e990322889fd33857178960e126d7f99d",
-                        "md5": "5bc229f55b46377446802cc75bcac828"
+                        "sha1": "2f5597fc13866f8e88fbb7359046511cac2f5371",
+                        "md5": "d4f952c94cacdd280abbb73f072b2424"
                     },
                     "required_dependencies": [],
-                    "size": 8356443,
-                    "date_published": "2019-07-16T00:13:09.033Z"
+                    "size": 8356436,
+                    "date_published": "2019-07-23T14:40:29.207Z"
                 }
             ]
         },
@@ -3548,23 +3630,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "industrialforegoing-1.12.2-1.12.12-236.jar",
+                    "file_name": "industrialforegoing-1.12.2-1.12.13-237.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2699/878/industrialforegoing-1.12.2-1.12.12-236.jar",
-                    "id": "2699878",
+                    "url": "https://edge.forgecdn.net/files/2745/321/industrialforegoing-1.12.2-1.12.13-237.jar",
+                    "id": "2745321",
                     "parent_id": "266515",
                     "hashes": {
-                        "sha1": "23720dd1b9e91e8a5d14cccf21f96cdb7d9f5778",
-                        "md5": "7726b3d8b19dd88142db381a6d25c47a"
+                        "sha1": "4f44934b392d7bf1713707a93b29006e98bd7cff",
+                        "md5": "a9330399f14295d90e4ec3b5bb93f81f"
                     },
                     "required_dependencies": [
                         "254602"
                     ],
-                    "size": 1600649,
-                    "date_published": "2019-04-16T10:23:41.820Z"
+                    "size": 1603134,
+                    "date_published": "2019-07-21T09:53:04.747Z"
                 }
             ]
         },
@@ -3715,21 +3797,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ironchest-1.12.2-7.0.69.845.jar",
+                    "file_name": "ironchest-1.12.2-7.0.72.847.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2723/143/ironchest-1.12.2-7.0.69.845.jar",
-                    "id": "2723143",
+                    "url": "https://edge.forgecdn.net/files/2747/935/ironchest-1.12.2-7.0.72.847.jar",
+                    "id": "2747935",
                     "parent_id": "228756",
                     "hashes": {
-                        "sha1": "deb07c78d804d3675524e691e57d9b49ed90f81d",
-                        "md5": "cb4ac16615839333428a9e99f9c20f0f"
+                        "sha1": "adc4c785a484c5d5a4ab9a29e1937faeed4312dd",
+                        "md5": "743179bc3a8f50751efbb019acc759a9"
                     },
                     "required_dependencies": [],
-                    "size": 956629,
-                    "date_published": "2019-06-11T02:22:49.610Z"
+                    "size": 956692,
+                    "date_published": "2019-07-25T01:20:59.067Z"
                 }
             ]
         },
@@ -4494,21 +4576,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "mcjtylib-1.12-3.5.3.jar",
+                    "file_name": "mcjtylib-1.12-3.5.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2714/365/mcjtylib-1.12-3.5.3.jar",
-                    "id": "2714365",
+                    "url": "https://edge.forgecdn.net/files/2745/846/mcjtylib-1.12-3.5.4.jar",
+                    "id": "2745846",
                     "parent_id": "233105",
                     "hashes": {
-                        "sha1": "ec1fedc015e3af9cb40112dc46d2e2afc35d01a9",
-                        "md5": "7712f1205d619e73a85b0af0bc28ad58"
+                        "sha1": "8f3e381c4aea651f55ed1cd35fd69613fcd7f9da",
+                        "md5": "45ac9983da9fd2bc7fe3446b9f4287c1"
                     },
                     "required_dependencies": [],
-                    "size": 544583,
-                    "date_published": "2019-05-22T03:47:09.550Z"
+                    "size": 544856,
+                    "date_published": "2019-07-22T03:27:04.243Z"
                 }
             ]
         },
@@ -4527,21 +4609,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Mekanism-1.12.2-9.7.9.380.jar",
+                    "file_name": "Mekanism-1.12.2-9.8.0.381.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2736/277/Mekanism-1.12.2-9.7.9.380.jar",
-                    "id": "2736277",
+                    "url": "https://edge.forgecdn.net/files/2746/197/Mekanism-1.12.2-9.8.0.381.jar",
+                    "id": "2746197",
                     "parent_id": "268560",
                     "hashes": {
-                        "sha1": "d8de80cf6c51411d7cce83dac729110773492294",
-                        "md5": "c0418214cf545dbbaf57573d2e998a8c"
+                        "sha1": "a49a815a318e1d1a84dd96b182dc7f502152e330",
+                        "md5": "c0654836901b90df3607e14ec09355db"
                     },
                     "required_dependencies": [],
-                    "size": 7935575,
-                    "date_published": "2019-07-06T04:47:26.137Z"
+                    "size": 7859453,
+                    "date_published": "2019-07-22T18:00:32.267Z"
                 }
             ]
         },
@@ -4560,23 +4642,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismGenerators-1.12.2-9.7.9.380.jar",
+                    "file_name": "MekanismGenerators-1.12.2-9.8.0.381.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2736/279/MekanismGenerators-1.12.2-9.7.9.380.jar",
-                    "id": "2736279",
+                    "url": "https://edge.forgecdn.net/files/2746/199/MekanismGenerators-1.12.2-9.8.0.381.jar",
+                    "id": "2746199",
                     "parent_id": "268566",
                     "hashes": {
-                        "sha1": "28a2344b4c4e3af9b6a5bec0c3e94928a50fb214",
-                        "md5": "aba36748824de417d4474f900a6f0b79"
+                        "sha1": "45bfee6666d790003bbb66b2808bcf95e386d32e",
+                        "md5": "f6a695a6c99d54ac14e4128c841010a6"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
-                    "size": 343776,
-                    "date_published": "2019-07-06T04:47:28.607Z"
+                    "size": 336335,
+                    "date_published": "2019-07-22T18:00:34.953Z"
                 }
             ]
         },
@@ -4595,23 +4677,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismTools-1.12.2-9.7.9.380.jar",
+                    "file_name": "MekanismTools-1.12.2-9.8.0.381.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2736/280/MekanismTools-1.12.2-9.7.9.380.jar",
-                    "id": "2736280",
+                    "url": "https://edge.forgecdn.net/files/2746/200/MekanismTools-1.12.2-9.8.0.381.jar",
+                    "id": "2746200",
                     "parent_id": "268567",
                     "hashes": {
-                        "sha1": "35b86cab69457529c83d205696200963be4e42bc",
-                        "md5": "4184f1e09089ba285ffeae1743ace0b4"
+                        "sha1": "0c2e2d91a840f781c2416c3a9b1f3bea5b991b3f",
+                        "md5": "4827428e16cb48186ccd972515eb769a"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
-                    "size": 162121,
-                    "date_published": "2019-07-06T04:47:29.757Z"
+                    "size": 162120,
+                    "date_published": "2019-07-22T18:00:36.150Z"
                 }
             ]
         },
@@ -4802,21 +4884,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moreoverlays-1.15.0.jar",
+                    "file_name": "moreoverlays-1.15.1-mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2742/464/moreoverlays-1.15.0.jar",
-                    "id": "2742464",
+                    "url": "https://edge.forgecdn.net/files/2745/657/moreoverlays-1.15.1-mc1.12.2.jar",
+                    "id": "2745657",
                     "parent_id": "243478",
                     "hashes": {
-                        "sha1": "260048de02569c056609f3c6ced0c82b19b7fca4",
-                        "md5": "aca47fac4c5eaab3869b53d4e2f7ed9a"
+                        "sha1": "b308fe363f23343d0b073d04883c5fca63b08d0b",
+                        "md5": "7b5200f51245b61ef149f7a33860e930"
                     },
                     "required_dependencies": [],
-                    "size": 51827,
-                    "date_published": "2019-07-16T16:23:19.040Z"
+                    "size": 51284,
+                    "date_published": "2019-07-21T20:16:59.573Z"
                 }
             ]
         },
@@ -5393,21 +5475,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "phosphor-1.12.2-0.2.4+build46-universal.jar",
+                    "file_name": "phosphor-1.12.2-0.2.6+build50-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2707/0/phosphor-1.12.2-0.2.4+build46-universal.jar",
-                    "id": "2707000",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2747/710/phosphor-1.12.2-0.2.6+build50-universal.jar",
+                    "id": "2747710",
                     "parent_id": "318255",
                     "hashes": {
-                        "sha1": "05bc198b836438f6a282362ab2cc500bcf87630b",
-                        "md5": "85c1218bb88ab43c3347794e19295fbf"
+                        "sha1": "d4781f46fb18f0c6ed03893465244e7ec7dc8b8c",
+                        "md5": "9892af4ac4f8ca4222138a245592227c"
                     },
                     "required_dependencies": [],
-                    "size": 1034715,
-                    "date_published": "2019-05-04T04:46:27.020Z"
+                    "size": 1082311,
+                    "date_published": "2019-07-24T18:34:13.063Z"
                 }
             ]
         },
@@ -5569,25 +5651,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectIntelligence-1.12.2-1.0.6.22-universal.jar",
+                    "file_name": "ProjectIntelligence-1.12.2-1.0.7.24-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2736/791/ProjectIntelligence-1.12.2-1.0.6.22-universal.jar",
-                    "id": "2736791",
+                    "url": "https://edge.forgecdn.net/files/2744/225/ProjectIntelligence-1.12.2-1.0.7.24-universal.jar",
+                    "id": "2744225",
                     "parent_id": "306028",
                     "hashes": {
-                        "sha1": "5be2fb7e20ff3df3cd73a5ce2ca28aae87f9ba20",
-                        "md5": "02dbfe1bbda9d1767633bac7777530b5"
+                        "sha1": "e7c674cdb0defcd960eb24414232bea645a45fb8",
+                        "md5": "66e86493ed90c8003a1b541268e68430"
                     },
                     "required_dependencies": [
                         "242818",
                         "270789",
                         "231382"
                     ],
-                    "size": 471908,
-                    "date_published": "2019-07-07T06:17:56.037Z"
+                    "size": 473891,
+                    "date_published": "2019-07-19T14:05:29.240Z"
                 }
             ]
         },
@@ -5609,24 +5691,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-compat.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-compat.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/747/ProjectRed-1.12.2-4.9.3.116-compat.jar",
-                    "id": "2734747",
+                    "url": "https://edge.forgecdn.net/files/2745/546/ProjectRed-1.12.2-4.9.4.120-compat.jar",
+                    "id": "2745546",
                     "parent_id": "229050",
                     "hashes": {
-                        "sha1": "286abafc7c27b7c7af825ae8146e343ea273e2f0",
-                        "md5": "5a8ca01087f64f3d189d6ab5867f1ef0"
+                        "sha1": "406381fafac5900cfc8a9d397ec6111c85f5efbe",
+                        "md5": "56c34f44395c918926fc5751f82d70b9"
                     },
                     "required_dependencies": [
                         "229002",
                         "228702"
                     ],
-                    "size": 65922,
-                    "date_published": "2019-07-03T09:08:08.107Z"
+                    "size": 67384,
+                    "date_published": "2019-07-21T17:56:41.797Z"
                 }
             ]
         },
@@ -5645,25 +5727,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-Base.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-Base.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/746/ProjectRed-1.12.2-4.9.3.116-Base.jar",
-                    "id": "2734746",
+                    "url": "https://edge.forgecdn.net/files/2745/545/ProjectRed-1.12.2-4.9.4.120-Base.jar",
+                    "id": "2745545",
                     "parent_id": "228702",
                     "hashes": {
-                        "sha1": "63ae354b6aa390eb14be2336c5f67089d5ac4b4a",
-                        "md5": "3fe348ffd05b5f8d53a62900f2e7d4db"
+                        "sha1": "11168221284c53b89363e93ab36110a29c26c1a2",
+                        "md5": "1380ad8d4ffbc3f1189078473f6f10f9"
                     },
                     "required_dependencies": [
                         "229002",
                         "242818",
                         "258426"
                     ],
-                    "size": 2034004,
-                    "date_published": "2019-07-03T09:08:07.007Z"
+                    "size": 2036136,
+                    "date_published": "2019-07-21T17:56:41.103Z"
                 }
             ]
         },
@@ -5685,23 +5767,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-mechanical.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-mechanical.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/751/ProjectRed-1.12.2-4.9.3.116-mechanical.jar",
-                    "id": "2734751",
+                    "url": "https://edge.forgecdn.net/files/2745/550/ProjectRed-1.12.2-4.9.4.120-mechanical.jar",
+                    "id": "2745550",
                     "parent_id": "229048",
                     "hashes": {
-                        "sha1": "cf905168e415a7ae4ef90666688b5491fb943af1",
-                        "md5": "ff8e6af197100f993879c2643068dc47"
+                        "sha1": "2b8690aefe03ea47212001fadd2b6883b5284924",
+                        "md5": "cafa40d180f86081e748d15ba5a0ffc9"
                     },
                     "required_dependencies": [
                         "228702"
                     ],
-                    "size": 2600088,
-                    "date_published": "2019-07-03T09:08:19.530Z"
+                    "size": 2596509,
+                    "date_published": "2019-07-21T17:56:55.490Z"
                 }
             ]
         },
@@ -5723,23 +5805,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-world.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-world.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/752/ProjectRed-1.12.2-4.9.3.116-world.jar",
-                    "id": "2734752",
+                    "url": "https://edge.forgecdn.net/files/2745/551/ProjectRed-1.12.2-4.9.4.120-world.jar",
+                    "id": "2745551",
                     "parent_id": "229049",
                     "hashes": {
-                        "sha1": "a1f7c7de59c14ca796fe97ad83b7f0c7771d06f9",
-                        "md5": "e6e1c349e5765519474030d362f5e930"
+                        "sha1": "7184d18c1511526f0e266ab92f4d05cd728c247f",
+                        "md5": "2ac24154b87ff4fbc97e5330c2ca11f7"
                     },
                     "required_dependencies": [
                         "228702"
                     ],
-                    "size": 501238,
-                    "date_published": "2019-07-03T09:08:21.857Z"
+                    "size": 501169,
+                    "date_published": "2019-07-21T17:56:56.223Z"
                 }
             ]
         },
@@ -5762,24 +5844,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-fabrication.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-fabrication.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/748/ProjectRed-1.12.2-4.9.3.116-fabrication.jar",
-                    "id": "2734748",
+                    "url": "https://edge.forgecdn.net/files/2745/547/ProjectRed-1.12.2-4.9.4.120-fabrication.jar",
+                    "id": "2745547",
                     "parent_id": "230111",
                     "hashes": {
-                        "sha1": "1fbb936a2d9434a08c207d7c6906766a0233ba1d",
-                        "md5": "5b175cbf01ec2b1c2c4aeb8e70437f8b"
+                        "sha1": "7766aa672bc20a2a44a6a231efdc05a7bbdf0073",
+                        "md5": "eabf2010d23f3cfc583cd809a7b0febf"
                     },
                     "required_dependencies": [
                         "228702",
                         "229045"
                     ],
-                    "size": 1888200,
-                    "date_published": "2019-07-03T09:08:11.053Z"
+                    "size": 1894139,
+                    "date_published": "2019-07-21T17:56:43.807Z"
                 }
             ]
         },
@@ -5801,23 +5883,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-lighting.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-lighting.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/750/ProjectRed-1.12.2-4.9.3.116-lighting.jar",
-                    "id": "2734750",
+                    "url": "https://edge.forgecdn.net/files/2745/549/ProjectRed-1.12.2-4.9.4.120-lighting.jar",
+                    "id": "2745549",
                     "parent_id": "229046",
                     "hashes": {
-                        "sha1": "867fadf45aa786e40bb8c7b9365a8fa913fb2262",
-                        "md5": "65c9908f887e2a0d6f02406bcf66c8a5"
+                        "sha1": "41e17cd9ad1a6a27767df0a2366972f181d9ff89",
+                        "md5": "b9ead4f7e70dd4c0f68cd8c690249753"
                     },
                     "required_dependencies": [
                         "228702"
                     ],
-                    "size": 724312,
-                    "date_published": "2019-07-03T09:08:17.560Z"
+                    "size": 724477,
+                    "date_published": "2019-07-21T17:56:53.953Z"
                 }
             ]
         },
@@ -5839,23 +5921,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectRed-1.12.2-4.9.3.116-integration.jar",
+                    "file_name": "ProjectRed-1.12.2-4.9.4.120-integration.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/749/ProjectRed-1.12.2-4.9.3.116-integration.jar",
-                    "id": "2734749",
+                    "url": "https://edge.forgecdn.net/files/2745/548/ProjectRed-1.12.2-4.9.4.120-integration.jar",
+                    "id": "2745548",
                     "parent_id": "229045",
                     "hashes": {
-                        "sha1": "d04a1b06bccce22df59acbba0073b98fb1c50224",
-                        "md5": "2c26969d25365407c39468da91365741"
+                        "sha1": "f05cda479b14d41e02120295b4bcbb0ab25738d2",
+                        "md5": "0d8259b233ab89d2171b6337167e7e6f"
                     },
                     "required_dependencies": [
                         "228702"
                     ],
                     "size": 3923751,
-                    "date_published": "2019-07-03T09:08:16.067Z"
+                    "date_published": "2019-07-21T17:56:53.117Z"
                 }
             ]
         },
@@ -5910,23 +5992,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectEIntegration-1.12.2-2.3.0.jar",
+                    "file_name": "ProjectEIntegration-1.12.2-2.3.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2732/552/ProjectEIntegration-1.12.2-2.3.0.jar",
-                    "id": "2732552",
+                    "url": "https://edge.forgecdn.net/files/2745/445/ProjectEIntegration-1.12.2-2.3.1.jar",
+                    "id": "2745445",
                     "parent_id": "313402",
                     "hashes": {
-                        "sha1": "0f33e52fae3bb4271e9a01c090d6aa1eecf758b5",
-                        "md5": "b043dc262a4b9ca856752e9c4175173d"
+                        "sha1": "b2a7cd41bd967665117baa3766818987d8f974a7",
+                        "md5": "f13c801a5568ce5ab93e5a5d337d9abb"
                     },
                     "required_dependencies": [
                         "226410"
                     ],
-                    "size": 204325,
-                    "date_published": "2019-06-29T07:15:10.760Z"
+                    "size": 222054,
+                    "date_published": "2019-07-21T14:52:22.427Z"
                 }
             ]
         },
@@ -6018,23 +6100,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "rftools-1.12-7.71.jar",
+                    "file_name": "rftools-1.12-7.72.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2707/388/rftools-1.12-7.71.jar",
-                    "id": "2707388",
+                    "url": "https://edge.forgecdn.net/files/2745/848/rftools-1.12-7.72.jar",
+                    "id": "2745848",
                     "parent_id": "224641",
                     "hashes": {
-                        "sha1": "d449db2a0894b5abdf584938c61ae1460e7df6df",
-                        "md5": "ef83816ac55bb6df097e390213f72652"
+                        "sha1": "6c75e7f774131944847bc61a119f3d4aaa33ca9d",
+                        "md5": "f05eea6ca1aea64e5742cb15d6dc79c1"
                     },
                     "required_dependencies": [
                         "233105"
                     ],
-                    "size": 2895608,
-                    "date_published": "2019-05-05T06:05:44.607Z"
+                    "size": 2895812,
+                    "date_published": "2019-07-22T03:31:12.950Z"
                 }
             ]
         },
@@ -7717,6 +7799,43 @@
             ]
         },
         {
+            "pakku_id": "STWkKr1mpvVdlLUd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "wireless-pattern-terminal"
+            },
+            "name": {
+                "curseforge": "Wireless Pattern Terminal"
+            },
+            "id": {
+                "curseforge": "324495"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "WirelessPatternTerminal-1.12.2-1.0.1.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2725/814/WirelessPatternTerminal-1.12.2-1.0.1.jar",
+                    "id": "2725814",
+                    "parent_id": "324495",
+                    "hashes": {
+                        "sha1": "b297442f9fc28a7ab831180fa6b349269c16f5bc",
+                        "md5": "a3d50d1dc43faae74ea83e65704e5920"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "304024",
+                        "255232"
+                    ],
+                    "size": 167670,
+                    "date_published": "2019-06-17T13:25:35.477Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3BnbqUGZBHEXYwH4",
             "type": "MOD",
             "slug": {
@@ -7769,23 +7888,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "xnet-1.12-1.8.1.jar",
+                    "file_name": "xnet-1.12-1.8.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2705/817/xnet-1.12-1.8.1.jar",
-                    "id": "2705817",
+                    "url": "https://edge.forgecdn.net/files/2745/852/xnet-1.12-1.8.2.jar",
+                    "id": "2745852",
                     "parent_id": "260912",
                     "hashes": {
-                        "sha1": "15b7d87c9ce3003764644e2eb1fd339b30bf4040",
-                        "md5": "c59058c4819c0e9ad84870db447b4892"
+                        "sha1": "085f5aef1d407f815028e5ecc87265cc5d8142e6",
+                        "md5": "13935bce3f6b827aa19567a81e5be38f"
                     },
                     "required_dependencies": [
                         "233105"
                     ],
-                    "size": 495985,
-                    "date_published": "2019-05-01T04:43:50.360Z"
+                    "size": 496307,
+                    "date_published": "2019-07-22T03:34:28.447Z"
                 }
             ]
         },

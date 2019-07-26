@@ -61,10 +61,6 @@ recipes.addShaped(<appliedenergistics2:energy_cell>, [[<ore:gemCertusQuartz>, <o
 recipes.remove(<appliedenergistics2:molecular_assembler>);
 recipes.addShaped(<appliedenergistics2:molecular_assembler>, [[<appliedenergistics2:quartz_glass>, <extrautils2:crafter>, <appliedenergistics2:quartz_glass>],[<appliedenergistics2:material:44>, <rftools:crafter3>, <appliedenergistics2:material:43>], [<opencomputers:tool:5>, <ore:ingotIron>, <extrautils2:analogcrafter>]]);
 
-#Wireless Terminal
-recipes.remove(<appliedenergistics2:wireless_terminal>);
-recipes.addShaped(<appliedenergistics2:wireless_terminal>, [[null, <appliedenergistics2:material:41>, null],[null, <appliedenergistics2:part:380>, null], [<opencomputers:upgrade:31>, <appliedenergistics2:dense_energy_cell>, <opencomputers:upgrade:31>]]);
-
 #ME Glass Cable
 recipes.removeByRecipeName("appliedenergistics2:network/cables/glass_fluix");
 recipes.addShaped(<appliedenergistics2:part:16> * 6, [[<appliedenergistics2:part:140>, <ore:crystalFluix>, null],[<ore:crystalFluix>, <projectred-transportation:pipe>, null], [null, null, null]]);
@@ -105,12 +101,57 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <ae2wtlib:infinity_booster_card
 	[<ore:compressed3xDustBedrock>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:pearlFluix>, <ore:compressed3xDustBedrock>]
 ]);
 
+#Wireless Terminal
+recipes.remove(<appliedenergistics2:wireless_terminal>);
+recipes.addShaped(<appliedenergistics2:wireless_terminal>, [[null, <appliedenergistics2:material:41>, null],[null, <appliedenergistics2:part:380>, null], [<opencomputers:upgrade:31>, <appliedenergistics2:dense_energy_cell>, <opencomputers:upgrade:31>]]);
+
+#Wireless Gas Terminal
+recipes.remove(<extracells:terminal.gas.wireless>);
+recipes.addShaped(<extracells:terminal.gas.wireless>, [[null, <appliedenergistics2:material:41>, null],[null, <extracells:part.base:15>, null], [<opencomputers:upgrade:31>, <appliedenergistics2:dense_energy_cell>, <opencomputers:upgrade:31>]]);
+
+#Wireless Fluid Terminal
+recipes.remove(<extracells:terminal.fluid.wireless>);
+recipes.addShaped(<extracells:terminal.fluid.wireless>, [[null, <appliedenergistics2:material:41>, null],[null, <appliedenergistics2:part:520>, null], [<opencomputers:upgrade:31>, <appliedenergistics2:dense_energy_cell>, <opencomputers:upgrade:31>]]);
+
 #Wireless Crafting Terminal
 recipes.remove(<wct:wct>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <wct:wct>, [
-	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
-	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+mods.extendedcrafting.TableCrafting.addShaped(2, <wct:wct>, [
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
 	[<appliedenergistics2:part:360>, <appliedenergistics2:part:360>, <appliedenergistics2:wireless_terminal>, <appliedenergistics2:part:360>, <appliedenergistics2:part:360>],
-	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
-	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:part:360>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <extracells:storage.physical:3>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <extracells:storage.physical:3>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
 ]);
+
+#Wireless Fluid Terminal 
+recipes.remove(<wft:wft>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <wft:wft>, [
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:part:520>, <appliedenergistics2:part:520>, <extracells:terminal.fluid.wireless>, <appliedenergistics2:part:520>, <appliedenergistics2:part:520>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <extracells:storage.fluid:6>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <extracells:storage.fluid:6>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
+]);
+
+#Wireless Interface Terminal
+recipes.remove(<wit:wit>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <wit:wit>, [
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:part:480>, <appliedenergistics2:part:480>, <appliedenergistics2:wireless_terminal>, <appliedenergistics2:part:480>, <appliedenergistics2:part:480>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:interface>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:interface>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
+]);
+
+#Wireless Pattern Terminal
+recipes.remove(<wpt:wpt>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <wpt:wpt>, [
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:controller>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:part:340>, <appliedenergistics2:part:340>, <appliedenergistics2:wireless_terminal>, <appliedenergistics2:part:340>, <appliedenergistics2:part:340>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:material:52>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>],
+	[<appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:material:52>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>]
+]);
+
+#Wireless Universal Terminal
+recipes.remove(<extracells:terminal.universal.wireless>);

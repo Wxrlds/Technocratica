@@ -82,3 +82,9 @@ mods.mekanism.crusher.addRecipe(<extrautils2:compressedsand>, <appliedenergistic
 #Metallurgic Infuser Compressed Blocks
 mods.mekanism.infuser.addRecipe("BIO", 90, <extrautils2:compressedsand>, <extrautils2:compresseddirt>);
 mods.mekanism.infuser.addRecipe("BIO", 810, <extrautils2:compressedsand:1>, <extrautils2:compresseddirt:1>);
+
+#Enrichment Chamber Block to Compressed
+mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
+mods.mekanism.enrichment.addRecipe(<ore:blockCharcoal>, <mekanism:compressedcarbon> * 9);
+mods.mekanism.enrichment.addRecipe(<minecraft:redstone_block>, <mekanism:compressedredstone> * 9);
+mods.mekanism.enrichment.addRecipe(<minecraft:diamond_block>, <mekanism:compresseddiamond> * 9);
