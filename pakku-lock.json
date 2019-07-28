@@ -2958,21 +2958,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilitiesBackups-1.0.0.4.jar",
+                    "file_name": "FTBUtilitiesBackups-1.0.0.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2716/458/FTBUtilitiesBackups-1.0.0.4.jar",
-                    "id": "2716458",
+                    "url": "https://edge.forgecdn.net/files/2749/104/FTBUtilitiesBackups-1.0.0.5.jar",
+                    "id": "2749104",
                     "parent_id": "314904",
                     "hashes": {
-                        "sha1": "109ddd8d43efc81c7da3e6a723c9d62e4ddea209",
-                        "md5": "33ab1e06c29c9a4d1ddaeddd14a273c6"
+                        "sha1": "65873a33da86cb919ff757164a092d4caecf4ec6",
+                        "md5": "075328d2801250e6f608a46a94cc1068"
                     },
                     "required_dependencies": [],
-                    "size": 42092,
-                    "date_published": "2019-05-27T14:31:48.390Z"
+                    "size": 42104,
+                    "date_published": "2019-07-27T01:07:31.907Z"
                 }
             ]
         },
@@ -4851,21 +4854,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modularmachinery-1.12.2-1.10.0.jar",
+                    "file_name": "modularmachinery-1.12.2-1.11.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2713/714/modularmachinery-1.12.2-1.10.0.jar",
-                    "id": "2713714",
+                    "url": "https://edge.forgecdn.net/files/2749/555/modularmachinery-1.12.2-1.11.0.jar",
+                    "id": "2749555",
                     "parent_id": "270790",
                     "hashes": {
-                        "sha1": "9947d25c9a685c12fe499a96d54be8d7db054cc5",
-                        "md5": "b4c18eb71f1666b0f59fc0af9659d50c"
+                        "sha1": "fdccc68d1453c8f5f01af624676f251a64fb6cfa",
+                        "md5": "084e88d691eae420314e6d5bf7908b9d"
                     },
                     "required_dependencies": [],
-                    "size": 654742,
-                    "date_published": "2019-05-20T18:30:54.990Z"
+                    "size": 683980,
+                    "date_published": "2019-07-27T18:29:06.540Z"
                 }
             ]
         },

@@ -131,7 +131,7 @@
   "cyclopscore": "1.4.0",
   "p455w0rdslib": "2.2.151",
   "enderiointegrationforestry": "5.0.46",
-  "modularmachinery": "1.10.0",
+  "modularmachinery": "1.11.0",
   "hats": "7.0.0",
   "wasaila": "1.0",
   "openmods": "0.12.2",
