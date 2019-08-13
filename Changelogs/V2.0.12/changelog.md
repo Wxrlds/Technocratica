@@ -11,3 +11,5 @@ Cleaned up Solar flux config
 Fixed some Tinkers parts being white
 
 Reduced the Durability for most tools to 1
+
+Fixed Draconic Evolution fusion crafting only consuming 1 item
