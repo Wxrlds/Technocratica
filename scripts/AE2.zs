@@ -155,3 +155,7 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <wpt:wpt>, [
 
 #Wireless Universal Terminal
 recipes.remove(<extracells:terminal.universal.wireless>);
+
+#Matter Condenser
+recipes.remove(<appliedenergistics2:condenser>);
+recipes.addShaped(<appliedenergistics2:condenser>, [[<ore:ingotIron>, <extrautils2:trashcan>, <ore:ingotIron>],[<cyclicmagic:trash>, <ore:dustFluix>, <extrautils2:trashchest>], [<ore:ingotIron>, <industrialforegoing:black_hole_unit>, <ore:ingotIron>]]);

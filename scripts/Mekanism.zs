@@ -67,7 +67,7 @@ mods.mekanism.infuser.addRecipe("CARBON", 90, <contenttweaker:enriched_iron_bloc
 
 #Mekanism Reactor Controller
 recipes.remove(<mekanismgenerators:reactor>);
-recipes.addShaped(<mekanismgenerators:reactor>, [[<ore:circuitUltimate>, <advanced_solar_panels:crafting:5>, <ore:circuitUltimate>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
+recipes.addShaped(<mekanismgenerators:reactor>, [[<ore:circuitUltimate>, <advanced_solar_panels:crafting:5>, <ore:circuitUltimate>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <bigreactors:reactorfuelrod>, <mekanismgenerators:reactor:1>]]);
 
 #Crusher Compressed Blocks
 #Cobblestone to Gravel

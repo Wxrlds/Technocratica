@@ -1,26 +1,34 @@
-recipes.remove(<yabba:decorative_block>);
-recipes.remove(<yabba:item_barrel_connector>);
-recipes.remove(<yabba:upgrade_iron_tier>);
-recipes.remove(<yabba:upgrade_blank>);
-recipes.remove(<yabba:upgrade_gold_tier>);
-recipes.remove(<yabba:upgrade_diamond_tier>);
-recipes.remove(<yabba:upgrade_star_tier>);
-recipes.remove(<yabba:upgrade_creative>);
-recipes.remove(<yabba:item_barrel>);
-recipes.remove(<yabba:upgrade_obsidian_shell>);
-recipes.remove(<yabba:upgrade_redstone_out>);
-recipes.remove(<yabba:upgrade_hopper>);
-recipes.remove(<yabba:upgrade_void>);
-recipes.remove(<yabba:upgrade_pickup>);
-recipes.remove(<yabba:hammer>);
-recipes.remove(<yabba:painter>);
-recipes.remove(<yabba:wrench>);
-recipes.remove(<storagedrawers:upgrade_storage>);
-recipes.remove(<storagedrawers:upgrade_storage:1>);
-recipes.remove(<storagedrawers:upgrade_storage:2>);
-recipes.remove(<storagedrawers:upgrade_storage:3>);
-recipes.remove(<storagedrawers:upgrade_storage:4>);
-recipes.remove(<yabba:upgrade_smelting>);
+import crafttweaker.item.IItemStack;
+
+val removerecipe = [
+	<yabba:decorative_block>,
+	<yabba:item_barrel_connector>,
+	<yabba:upgrade_iron_tier>,
+	<yabba:upgrade_blank>,
+	<yabba:upgrade_gold_tier>,
+	<yabba:upgrade_diamond_tier>,
+	<yabba:upgrade_star_tier>,
+	<yabba:upgrade_creative>,
+	<yabba:item_barrel>,
+	<yabba:upgrade_obsidian_shell>,
+	<yabba:upgrade_redstone_out>,
+	<yabba:upgrade_hopper>,
+	<yabba:upgrade_void>,
+	<yabba:upgrade_pickup>,
+	<yabba:hammer>,
+	<yabba:painter>,
+	<yabba:wrench>,
+	<storagedrawers:upgrade_storage>,
+	<storagedrawers:upgrade_storage:1>,
+	<storagedrawers:upgrade_storage:2>,
+	<storagedrawers:upgrade_storage:3>,
+	<storagedrawers:upgrade_storage:4>,
+	<yabba:upgrade_smelting>
+] as IItemStack [];
+
+for item in removerecipe {
+	recipes.remove(item);
+}
 
 recipes.addShaped(<storagedrawers:upgrade_storage:4>, [[<minecraft:stick>, <minecraft:stick>, <minecraft:stick>],[<minecraft:emerald>, <storagedrawers:upgrade_storage:3>, <minecraft:emerald>], [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>]]);
 recipes.addShaped(<storagedrawers:upgrade_storage:3>, [[<minecraft:stick>, <minecraft:stick>, <minecraft:stick>],[<minecraft:diamond>, <storagedrawers:upgrade_storage:2>, <minecraft:diamond>], [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>]]);

@@ -150,6 +150,10 @@ val pinkslime = <ore:slimeballPink>;
 pinkslime.remove(<industrialforegoing:pink_slime>);
 val pinkslime2 = <ore:slimeball>;
 pinkslime2.remove(<industrialforegoing:pink_slime>);
+recipes.addShapeless(<minecraft:slime_ball>, [<industrialforegoing:pink_slime>]);
+
+#Itemfilters recipe
+recipes.remove(<itemfilters:filter>);
 
 #Gears JAOPCA
 recipes.remove(<jaopca:item_gearardite>);

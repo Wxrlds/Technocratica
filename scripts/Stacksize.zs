@@ -42,3 +42,4 @@
 <projectex:final_star>.maxStackSize = 64;
 <tinker_io:cd_lonesome_avenue>.maxStackSize = 64;
 <ic2:reinforced_door>.maxStackSize = 64;
+<extrautils2:snowglobe:*>.maxStackSize = 64;

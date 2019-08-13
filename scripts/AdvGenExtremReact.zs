@@ -57,3 +57,6 @@ recipes.addShaped(<advgenerators:controller>, [[<ore:nuggetIron>, <minecraft:red
 #Pressure Valve
 recipes.remove(<advgenerators:pressure_valve>);
 recipes.addShaped(<advgenerators:pressure_valve>, [[null, <advgenerators:iron_frame>, null],[<ore:nuggetSteel>, <advgenerators:iron_tubing>, <ore:nuggetSteel>], [null, <ore:ingotIron>, null]]);
+
+#Cyanite recipe
+recipes.removeByRecipeName("bigreactors:ingot_cyanite_yellorium");
