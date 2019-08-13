@@ -1,8 +1,8 @@
-Added Quests: Mekanism Reactor. Matter Condenser, Singularity
+Added Quests: Mekanism Reactor, Matter Condenser, Singularity
 
 Removed the ability for Zombies to break blocks
 
-Recipes: Pinks slime to Slimeball, Cyanite, removed Itemfilter recipes, Matter condenser
+Recipes: Pink slime to Slimeball, Cyanite, removed Itemfilter recipes, Matter condenser
 
 Changed the Entity you have to fight for the Low Covalence Dust
 
