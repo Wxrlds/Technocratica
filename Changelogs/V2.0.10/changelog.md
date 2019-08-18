@@ -6,6 +6,4 @@ Recipes for Wireless Crafting-, Pattern-, Interface-, Gas-, Fluid Terminal
 
 Increased output for Creative Essence
 
-Added a UU-Matter Value for Dragon Hearts
-
 Packaged Auto in the Quest Book
