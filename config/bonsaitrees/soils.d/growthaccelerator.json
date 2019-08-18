@@ -1,0 +1,16 @@
+{
+  "name": "mysticalagriculture:growth_accelerator",
+  "mod": "mysticalagriculture",
+  "soil": {
+    "name": "mysticalagriculture:growth_accelerator",
+    "data": 0,
+    "ignoreMeta": false
+  },
+
+  "modifiers": {
+    "growTime": 0.01,
+    "dropChance": 100.0
+  },
+
+  "providedTags": [ "dirt", "grass" ]
+}

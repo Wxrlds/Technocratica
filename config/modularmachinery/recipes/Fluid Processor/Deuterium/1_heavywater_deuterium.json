@@ -1,0 +1,21 @@
+{
+	"machine": "fluid_processor",
+	"registryName": "1_heavywater_deuterium",
+	"recipeTime": 1,
+	"requirements": [{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 10000
+		}, {
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "heavywater",
+			"amount": 1
+		}, {
+			"type": "gas",
+			"io-type": "output",
+			"gas": "deuterium",
+			"amount": 100
+		}
+	]
+}

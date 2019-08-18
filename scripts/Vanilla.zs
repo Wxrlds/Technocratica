@@ -89,3 +89,61 @@ mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:prismarine_sh
 
 #Compressed Sand to Glass
 furnace.addRecipe(<minecraft:glass> * 9, <extrautils2:compressedsand>);
+
+#Dragons Breath
+recipes.addShaped(<minecraft:dragon_breath> * 64, [[<draconicevolution:draconium_dust>, <ore:crystalDraconium>, <draconicevolution:draconium_dust>],[<ore:crystalDraconium>, <minecraft:glass_bottle>, <ore:crystalDraconium>], [<draconicevolution:draconium_dust>, <ore:crystalDraconium>, <draconicevolution:draconium_dust>]]);
+
+#1 Log -> 3 Planks (Thermal Sawmill)		
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log:1>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log:2>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log:3>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log2>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:log2:1>);
+mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_log>);
+mods.thermalexpansion.Sawmill.removeRecipe(<extrautils2:ironwood_log:1>);
+mods.thermalexpansion.Sawmill.removeRecipe(<randomthings:spectrelog>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:pammaple>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:pampaperbark>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:pamcinnamon>);
+
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks> * 3, <minecraft:log>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <minecraft:log:1>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:2> * 3, <minecraft:log:2>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <minecraft:log:3>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:4> * 3, <minecraft:log2>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:5> * 3, <minecraft:log2:1>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks> * 3, <extrautils2:ironwood_log>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<extrautils2:ironwood_planks:1> * 3, <extrautils2:ironwood_log:1>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<randomthings:spectreplank> * 3, <randomthings:spectrelog>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:1> * 3, <harvestcraft:pammaple>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pampaperbark>, 1000, <mekanism:sawdust>, 100);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:planks:3> * 3, <harvestcraft:pamcinnamon>, 1000, <mekanism:sawdust>, 100);
+
+#1 Log -> 4 Planks (Mekanism Sawmill)
+mods.mekanism.sawmill.removeRecipe(<minecraft:log>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:log:1>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:log:2>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:log:3>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:log2>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:log2:1>);
+mods.mekanism.sawmill.removeRecipe(<extrautils2:ironwood_log>);
+mods.mekanism.sawmill.removeRecipe(<extrautils2:ironwood_log:1>);
+mods.mekanism.sawmill.removeRecipe(<randomthings:spectrelog>);
+mods.mekanism.sawmill.removeRecipe(<harvestcraft:pammaple>);
+mods.mekanism.sawmill.removeRecipe(<harvestcraft:pampaperbark>);
+mods.mekanism.sawmill.removeRecipe(<harvestcraft:pamcinnamon>);
+
+#mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
+mods.mekanism.sawmill.addRecipe(<minecraft:log>, <minecraft:planks> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<minecraft:log:1>, <minecraft:planks:1> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<minecraft:log:2>, <minecraft:planks:2> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<minecraft:log:3>, <minecraft:planks:3> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<minecraft:log2>, <minecraft:planks:4> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<minecraft:log2:1>, <minecraft:planks:5> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<extrautils2:ironwood_log>, <extrautils2:ironwood_planks> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<extrautils2:ironwood_log:1>, <extrautils2:ironwood_planks:1> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<randomthings:spectrelog>, <randomthings:spectreplank> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<harvestcraft:pammaple>, <minecraft:planks:1> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<harvestcraft:pampaperbark>, <minecraft:planks:3> * 4, <mekanism:sawdust>, 1.0);
+mods.mekanism.sawmill.addRecipe(<harvestcraft:pamcinnamon>, <minecraft:planks:3> * 4, <mekanism:sawdust>, 1.0);

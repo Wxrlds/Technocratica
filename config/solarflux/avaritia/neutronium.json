@@ -1,6 +1,7 @@
 {
-	"capacity": 2147483646,
+	"capacity": 131072000000,
 	"generation": 8388608,
 	"transfer": 32768000,
+	"thickness": 1,
 	"connected_textures": true
 }

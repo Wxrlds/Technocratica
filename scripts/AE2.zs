@@ -52,6 +52,7 @@ recipes.addShaped(<appliedenergistics2:part:380>, [[<appliedenergistics2:materia
 #Interface
 recipes.remove(<appliedenergistics2:interface>);
 recipes.addShaped(<appliedenergistics2:interface>, [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>],[<appliedenergistics2:material:44>, <opencomputers:transposer>, <appliedenergistics2:material:43>], [<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>]]);
+recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 
 #Energy Cell
 recipes.remove(<appliedenergistics2:energy_cell>);

@@ -2,5 +2,6 @@
 	"capacity": 425000,
 	"generation": 32,
 	"transfer": 256,
+	"thickness": 1,
 	"connected_textures": true
 }

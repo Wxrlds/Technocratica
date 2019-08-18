@@ -434,3 +434,7 @@ recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <
 recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:wireless_router>);
 recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:router>);
 recipes.replaceAllOccurences(<rftools:machine_frame>, <mekanism:basicblock:8>, <xnet:controller>);
+
+#Block Cutting Machine
+recipes.remove(<ic2:te:51>);
+recipes.addShaped(<ic2:te:51>, [[<ore:circuitBasic>, <ore:circuitBasic>, <ore:circuitBasic>],[<ic2:block_cutting_blade:2>, <mekanism:machineblock:7>.withTag({recipeType: 8}), <ic2:block_cutting_blade:2>], [<ic2:crafting:6>, <teslacorelib:machine_case>, <ic2:crafting:6>]]);

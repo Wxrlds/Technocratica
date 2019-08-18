@@ -43,3 +43,5 @@
 <tinker_io:cd_lonesome_avenue>.maxStackSize = 64;
 <ic2:reinforced_door>.maxStackSize = 64;
 <extrautils2:snowglobe:*>.maxStackSize = 64;
+<infinitystorage:ultimate_bag>.maxStackSize = 1;
+<infinitystorage:ultimate_chest>.maxStackSize = 1;

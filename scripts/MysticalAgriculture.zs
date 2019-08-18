@@ -24,3 +24,7 @@ recipes.remove(<mysticalagriculture:crafting:19>);
 recipes.remove(<mysticalagriculture:crafting:20>);
 recipes.remove(<mysticalagriculture:crafting:21>);
 recipes.remove(<mysticalagradditions:insanium:1>);
+
+#Growth Accelerator
+recipes.remove(<mysticalagriculture:growth_accelerator>);
+recipes.addShaped(<mysticalagriculture:growth_accelerator>, [[<ore:compressed3xCobblestone>, <ore:blockIntermedium>, <ore:compressed3xCobblestone>],[<ore:blockIntermedium>, <cyclicmagic:horse_upgrade_health>, <ore:blockIntermedium>], [<ore:compressed3xCobblestone>, <ore:blockIntermedium>, <ore:compressed3xCobblestone>]]);
