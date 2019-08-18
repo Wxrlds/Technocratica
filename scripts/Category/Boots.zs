@@ -214,6 +214,16 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <mekanismtools:osmiumboots>, [
 	[<ore:ingotOsmium>, <ore:ingotOsmium>, <actuallyadditions:item_boots_quartz>, <ore:ingotOsmium>, <ore:ingotOsmium>]
 ]);
 
+#Knightslime
+recipes.remove(<tcomplement:knightslime_boots>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <tcomplement:knightslime_boots>, [
+	[null, null, null, null, null], 
+	[null, null, null, null, null], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, null, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, null, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <mekanismtools:osmiumboots>, <ore:ingotKnightslime>, <ore:ingotKnightslime>]
+]);
+
 #Steel (Mek)
 recipes.remove(<mekanismtools:steelboots>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <mekanismtools:steelboots>, [
@@ -221,7 +231,7 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <mekanismtools:steelboots>, [
 	[null, null, null, null, null],
 	[<ore:ingotIron>, <ore:ingotSteel>, null, <ore:ingotSteel>, <ore:ingotIron>],
 	[<ore:ingotSteel>, <ore:ingotIron>, null, <ore:ingotIron>, <ore:ingotSteel>],
-	[<ore:ingotIron>, <ore:ingotSteel>, <mekanismtools:osmiumboots>, <ore:ingotSteel>, <ore:ingotIron>]
+	[<ore:ingotIron>, <ore:ingotSteel>, <tcomplement:knightslime_boots>, <ore:ingotSteel>, <ore:ingotIron>]
 ]);
 
 #Peridot
@@ -284,6 +294,16 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <cyclicmagic:emerald_boots>, [
 	[<ore:gemEmerald>, <ore:gemEmerald>, <thermalfoundation:armor.boots_platinum>, <ore:gemEmerald>, <ore:gemEmerald>]
 ]);
 
+#Manyullyn
+recipes.remove(<tcomplement:manyullyn_boots>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <tcomplement:manyullyn_boots>, [
+	[null, null, null, null, null], 
+	[null, null, null, null, null], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, null, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, null, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <cyclicmagic:emerald_boots>, <ore:ingotManyullyn>, <ore:ingotManyullyn>]
+]);
+
 #Diamatine
 recipes.remove(<actuallyadditions:item_boots_crystal_light_blue>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_boots_crystal_light_blue>, [
@@ -291,7 +311,7 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_boots_c
 	[null, null, null, null, null],
 	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, null, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
 	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, null, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
-	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <cyclicmagic:emerald_boots>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>]
+	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <tcomplement:manyullyn_boots>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>]
 ]);
 
 #Crystallized Obsidian

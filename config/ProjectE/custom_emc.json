@@ -507,6 +507,10 @@
     {
       "item": "mysticalagriculture:gear|9",
       "emc": 482808
+    },
+    {
+      "item": "tconstruct:ingots|3",
+      "emc": 56
     }
   ]
 }

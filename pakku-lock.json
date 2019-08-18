@@ -249,21 +249,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ActuallyAdditions-1.12.2-r151.jar",
+                    "file_name": "ActuallyAdditions-1.12.2-r151-2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2824/799/ActuallyAdditions-1.12.2-r151.jar",
-                    "id": "2824799",
+                    "url": "https://edge.forgecdn.net/files/2844/115/ActuallyAdditions-1.12.2-r151-2.jar",
+                    "id": "2844115",
                     "parent_id": "228404",
                     "hashes": {
-                        "sha1": "d585b79722d1d4ba97a4baaf7bbc9c4618c8c978",
-                        "md5": "498da982940355d3f8655875980b78d8"
+                        "sha1": "b5153ea7b73b667fdc49133ab21f2afa5a15aa39",
+                        "md5": "e62726802ff285f63da89690895c375c"
                     },
                     "required_dependencies": [],
-                    "size": 2703552,
-                    "date_published": "2019-11-09T20:22:57.597Z"
+                    "size": 2703860,
+                    "date_published": "2019-12-17T06:49:49.180Z"
                 }
             ]
         },
@@ -3290,21 +3290,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fluxnetworks-1.12.2-4.0.13-30.jar",
+                    "file_name": "fluxnetworks-1.12.2-4.0.14-31.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2814/768/fluxnetworks-1.12.2-4.0.13-30.jar",
-                    "id": "2814768",
+                    "url": "https://edge.forgecdn.net/files/2842/381/fluxnetworks-1.12.2-4.0.14-31.jar",
+                    "id": "2842381",
                     "parent_id": "248020",
                     "hashes": {
-                        "sha1": "ff6b77c1a5327411a7f2ce5fec628677dcfbbc86",
-                        "md5": "d6ddc365a9c55f2639e532e4c2e692af"
+                        "sha1": "4babb5884481db3566717304d80e405c4ed6642b",
+                        "md5": "04850be565e1fea67a27bc1b58999ee7"
                     },
                     "required_dependencies": [],
-                    "size": 462462,
-                    "date_published": "2019-10-23T03:20:04.687Z"
+                    "size": 464693,
+                    "date_published": "2019-12-14T04:57:02.147Z"
                 }
             ]
         },
@@ -4178,21 +4178,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "journeymap-1.12.2-5.5.5.jar",
+                    "file_name": "journeymap-1.12.2-5.5.6.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2755/458/journeymap-1.12.2-5.5.5.jar",
-                    "id": "2755458",
+                    "url": "https://edge.forgecdn.net/files/2844/789/journeymap-1.12.2-5.5.6.jar",
+                    "id": "2844789",
                     "parent_id": "32274",
                     "hashes": {
-                        "sha1": "29875c4d6c543562066f44b727eb020d4fd062c3",
-                        "md5": "d2249af8a61002ee976fcea804e46f3b"
+                        "sha1": "dad88954d4967eb91ff195c23b0dd73ab6996296",
+                        "md5": "5a3405d5e5fe9324a6b0dca36aad93ed"
                     },
                     "required_dependencies": [],
-                    "size": 1920463,
-                    "date_published": "2019-08-05T19:29:45.750Z"
+                    "size": 1933605,
+                    "date_published": "2019-12-18T14:31:23.887Z"
                 }
             ]
         },
@@ -6738,6 +6738,42 @@
             ]
         },
         {
+            "pakku_id": "9Suf2JCKWkM3bIAm",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "save-my-stronghold"
+            },
+            "name": {
+                "curseforge": "Save My Stronghold! (Forge)"
+            },
+            "id": {
+                "curseforge": "355248"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "savemystronghold-1.12.2-1.0.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2845/37/savemystronghold-1.12.2-1.0.0.jar",
+                    "id": "2845037",
+                    "parent_id": "355248",
+                    "hashes": {
+                        "sha1": "22fe11452d8b4e2dfebb2a2d438b8b34e8609857",
+                        "md5": "7b07d36e66d86b1403a7a1d94106d7d3"
+                    },
+                    "required_dependencies": [],
+                    "size": 53797,
+                    "date_published": "2019-12-18T23:58:14.937Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "8NekUkKE9aKSFsU8",
             "type": "MOD",
             "slug": {
@@ -7512,24 +7548,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TinkersComplement-1.12.2-0.4.2.jar",
+                    "file_name": "TinkersComplement-1.12.2-0.4.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2727/94/TinkersComplement-1.12.2-0.4.2.jar",
-                    "id": "2727094",
+                    "url": "https://edge.forgecdn.net/files/2843/439/TinkersComplement-1.12.2-0.4.3.jar",
+                    "id": "2843439",
                     "parent_id": "272671",
                     "hashes": {
-                        "sha1": "f4f23f4a6e7363e4c7a19d75a453fa6043129e7e",
-                        "md5": "81ea31d88f361c7bf9d5b52b0a8e540c"
+                        "sha1": "fa890e49c131e8ff93d8a4e6de0a5476083df6c3",
+                        "md5": "905f6590b33d4b3ba80d973f3979d0d0"
                     },
                     "required_dependencies": [
                         "74924",
                         "74072"
                     ],
-                    "size": 990947,
-                    "date_published": "2019-06-20T03:18:28.870Z"
+                    "size": 998411,
+                    "date_published": "2019-12-15T20:59:36.273Z"
                 }
             ]
         },

@@ -214,10 +214,20 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <mekanismtools:osmiumchestplate
 	[<ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>, <ore:ingotOsmium>]
 ]);
 
+#Knightslime
+recipes.remove(<tcomplement:knightslime_chestplate>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <tcomplement:knightslime_chestplate>, [
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <mekanismtools:osmiumchestplate>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], 
+	[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>]
+]);
+
 #Steel (Mek)
 recipes.remove(<mekanismtools:steelchestplate>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <mekanismtools:steelchestplate>, [
-	[<ore:ingotSteel>, <ore:ingotSteel>, <mekanismtools:osmiumchestplate>, <ore:ingotSteel>, <ore:ingotSteel>],
+	[<ore:ingotSteel>, <ore:ingotSteel>, <tcomplement:knightslime_chestplate>, <ore:ingotSteel>, <ore:ingotSteel>],
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
@@ -284,10 +294,20 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <cyclicmagic:emerald_chestplate
 	[<ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>]
 ]);
 
+#Manyullyn
+recipes.remove(<tcomplement:manyullyn_chestplate>);
+mods.extendedcrafting.TableCrafting.addShaped(2, <tcomplement:manyullyn_chestplate>, [
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <cyclicmagic:emerald_chestplate>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], 
+	[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>]
+]);
+
 #Diamatine
 recipes.remove(<actuallyadditions:item_chest_crystal_light_blue>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_chest_crystal_light_blue>, [
-	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <cyclicmagic:emerald_chestplate>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
+	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <tcomplement:manyullyn_chestplate>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
 	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
 	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
 	[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],
