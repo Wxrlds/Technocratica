@@ -2964,21 +2964,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.130.jar",
+                    "file_name": "FTBLib-5.4.3.131.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2747/793/FTBLib-5.4.3.130.jar",
-                    "id": "2747793",
+                    "url": "https://edge.forgecdn.net/files/2765/334/FTBLib-5.4.3.131.jar",
+                    "id": "2765334",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "d40f8ccea15cf94f3f434156964564db38f2a6a2",
-                        "md5": "59277aa4c2de5f38dc61c4c113beea6a"
+                        "sha1": "908e2fb1fcd48a7511059e29e2ad1585163d4660",
+                        "md5": "94fcdb901594c25a35ec458f99bd78db"
                     },
                     "required_dependencies": [],
-                    "size": 915679,
-                    "date_published": "2019-07-24T21:14:37.067Z"
+                    "size": 921050,
+                    "date_published": "2019-08-19T11:29:01.507Z"
                 }
             ]
         },
@@ -3036,24 +3036,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.7.2.189.jar",
+                    "file_name": "FTBQuests-1.7.2.190.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2752/698/FTBQuests-1.7.2.189.jar",
-                    "id": "2752698",
+                    "url": "https://edge.forgecdn.net/files/2767/872/FTBQuests-1.7.2.190.jar",
+                    "id": "2767872",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "4c4c63635d4d08a0779fa062df4eacb10aa4121e",
-                        "md5": "bf7bce47f05791b4325dd32b8be399a7"
+                        "sha1": "2d83c70226d5b9b8bd49d4928520e7b251887d90",
+                        "md5": "b71ab2f015e6d05d785c9403161a8e0a"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 953890,
-                    "date_published": "2019-08-01T16:22:04.493Z"
+                    "size": 964228,
+                    "date_published": "2019-08-23T00:07:58.700Z"
                 }
             ]
         },
@@ -3076,24 +3076,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.100.jar",
+                    "file_name": "FTBUtilities-5.4.0.101.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2734/166/FTBUtilities-5.4.0.100.jar",
-                    "id": "2734166",
+                    "url": "https://edge.forgecdn.net/files/2765/336/FTBUtilities-5.4.0.101.jar",
+                    "id": "2765336",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "9f81c931087d848cf233a0abcf977d4fd4d63705",
-                        "md5": "6a1f43828fff892220a8b76d7135d771"
+                        "sha1": "ad10d85fb1ed02595b0c26d06ccb321bddc20757",
+                        "md5": "af0d7ca5d0e5533de4564bac50cfffa7"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 422510,
-                    "date_published": "2019-07-02T01:04:48.720Z"
+                    "size": 425762,
+                    "date_published": "2019-08-19T11:29:57.113Z"
                 }
             ]
         },
@@ -3391,21 +3391,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.4.8.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.4.9.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2763/132/HammerCore-1.12.2-2.0.4.8.jar",
-                    "id": "2763132",
+                    "url": "https://edge.forgecdn.net/files/2767/710/HammerCore-1.12.2-2.0.4.9.jar",
+                    "id": "2767710",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "a8c1fea912f5cf6ee83061f1aef23a2450c9a714",
-                        "md5": "454ac3c18550232c78c228fd4bec9e17"
+                        "sha1": "58931fb35d3c4e66a040dbeb1ed73fe02985882c",
+                        "md5": "f6c0121c6e39d8309d308fe7b227a643"
                     },
                     "required_dependencies": [],
-                    "size": 2208372,
-                    "date_published": "2019-08-16T12:45:24.727Z"
+                    "size": 2228653,
+                    "date_published": "2019-08-22T21:12:04.060Z"
                 }
             ]
         },
@@ -4128,21 +4128,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jei_1.12.2-4.15.0.287.jar",
+                    "file_name": "jei_1.12.2-4.15.0.289.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2739/588/jei_1.12.2-4.15.0.287.jar",
-                    "id": "2739588",
+                    "url": "https://edge.forgecdn.net/files/2765/112/jei_1.12.2-4.15.0.289.jar",
+                    "id": "2765112",
                     "parent_id": "238222",
                     "hashes": {
-                        "sha1": "5a0f853c8f8738e69aa7ae520b03a41cada929fe",
-                        "md5": "20ba0763eb7d35d41f5d5e2f05a6ad21"
+                        "sha1": "9b850f9eb5874e36d67c74fdfe04bb63fb1a3677",
+                        "md5": "cf78404df6bbacbf8903baaa24379949"
                     },
                     "required_dependencies": [],
-                    "size": 650295,
-                    "date_published": "2019-07-11T20:42:36.317Z"
+                    "size": 650541,
+                    "date_published": "2019-08-19T01:32:42.107Z"
                 }
             ]
         },
@@ -4320,6 +4320,39 @@
                     "required_dependencies": [],
                     "size": 23967,
                     "date_published": "2019-06-30T20:55:40.607Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "dDLGdgmIolv0cEVp",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "laggoggles"
+            },
+            "name": {
+                "curseforge": "LagGoggles"
+            },
+            "id": {
+                "curseforge": "283525"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "LagGoggles-FORGE-1.12.2-4.3-HOTFIX.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2702/823/LagGoggles-FORGE-1.12.2-4.3-HOTFIX.jar",
+                    "id": "2702823",
+                    "parent_id": "283525",
+                    "hashes": {
+                        "sha1": "f8d86a090cb7d7606d0a511fb802568fe1891242",
+                        "md5": "15b08bf027a155650e550cf1073e12fd"
+                    },
+                    "required_dependencies": [],
+                    "size": 1173698,
+                    "date_published": "2019-04-23T20:42:38.080Z"
                 }
             ]
         },
@@ -6290,23 +6323,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.17.2.1.jar",
+                    "file_name": "randompatches-1.12.2-1.18.1.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2742/950/randompatches-1.12.2-1.17.2.1.jar",
-                    "id": "2742950",
+                    "url": "https://edge.forgecdn.net/files/2766/661/randompatches-1.12.2-1.18.1.1.jar",
+                    "id": "2766661",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "b1f19de3bc5a7894154d931824bd3cc018e3d9a3",
-                        "md5": "07bfa9842b6109a666276d8d453bdb38"
+                        "sha1": "d73f9e3de774f8cfdbdc92c7597694073a948a1e",
+                        "md5": "232b149e3c48b1505bca931d61fc404b"
                     },
                     "required_dependencies": [],
-                    "size": 264423,
-                    "date_published": "2019-07-17T12:02:45.757Z"
+                    "size": 264800,
+                    "date_published": "2019-08-21T07:07:13.843Z"
                 }
             ]
         },

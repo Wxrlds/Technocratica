@@ -8,9 +8,9 @@
   },
 
   "modifiers": {
-    "growTime": 0.01,
-    "dropChance": 100.0
+    "growTime": 0.05,
+    "dropChance": 10.0
   },
 
-  "providedTags": [ "dirt", "grass" ]
+  "providedTags": [ "dirt", "grass", "end_stone", "slime"]
 }

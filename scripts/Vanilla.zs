@@ -46,7 +46,7 @@ recipes.addShaped(<minecraft:ender_chest>, [[<minecraft:obsidian>, <mekanism:mac
 
 #Magma Cream
 recipes.removeByRecipeName("minecraft:magma_cream");
-mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:magma_cream>, <minecraft:slime_ball>, <liquid:pyrotheum> * 250, 5000);
+mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:magma_cream>, <minecraft:slime_ball>, <liquid:pyrotheum> * 50, 5000);
 
 #1 Log 1 -> 1 Plank
 recipes.removeByRecipeName("minecraft:oak_planks");
