@@ -1,4 +1,4 @@
-Quests: Removed an unused reward table, added Book quest, edited Iron Gear qeust
+Quests: Removed an unused reward table, added Book quest, edited Iron Gear quest
 
 Recipes: Magma Cream recipe requires less Pyrotheum
 
