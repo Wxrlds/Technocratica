@@ -15,6 +15,8 @@ Hopefully made the Server-Icon work
 
 Lowered the resulution of the Window Icon
 
-Added a Quest for the Scanner
+Added a Quest for the Scanner, Chaotic Energy Core
 
 Removed Draconic Evolution's tooltip from the End Crystal
+
+Removed an unused Quest reward
