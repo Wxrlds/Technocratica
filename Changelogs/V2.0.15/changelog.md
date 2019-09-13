@@ -1,5 +1,5 @@
 
-Removed the Contenttweakers ProjectE-ish matters, so use them (i.e. by up-,downgrading them to another matter) ___before___ updating the modpack!
+Removed the Contenttweaker's ProjectE-ish matters, so use them (i.e. by up-,downgrading them to another matter) ___before___ updating the modpack!
 
 Tweaked Dragons Breath, Thermal Expansion's Machine Frame, Empty Dimension Tab, Black Hole Storage's, Black Paper recipe
 
