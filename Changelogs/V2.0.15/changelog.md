@@ -20,3 +20,7 @@ Removed Draconic Evolution's tooltip from the End Crystal
 Removed an unused Quest reward
 
 Increased the cost for custom RFTools Dimlets
+
+Created a new quest line for repeatable quests and moved the repeatable quests there
+
+(Almost) every bucket recipe now can use a tank filled with 1000 of the fluid
