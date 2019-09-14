@@ -1,7 +1,7 @@
 
 Removed the Contenttweaker's ProjectE-ish matters, so use them (i.e. by up-,downgrading them to another matter) ___before___ updating the modpack!
 
-Tweaked Dragons Breath, Thermal Expansion's Machine Frame, Empty Dimension Tab, Black Hole Storage's, Black Paper recipe
+Tweaked Dragons Breath; Thermal Expansion's Machine Frame; Empty Dimension Tab; Black Hole Storage's; Black Paper; Fluid Gas Input/Output Hatch recipe
 
 Lowered the range from the Wither's difficulty increase by Progressive Bosses
 
