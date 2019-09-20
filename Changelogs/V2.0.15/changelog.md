@@ -3,7 +3,7 @@ Removed the Contenttweaker's ProjectE-ish matters, so use them (i.e. by up-,down
 
 Removed some Totems from the Everlasting Abilities, you might want to get your levels back ___before___ updating the modpack (Fire Resistance; Flight; Jump Boost; Speed; Wither)
 
-Tweaked Dragons Breath; Thermal Expansion's Machine Frame; Empty Dimension Tab; Black Hole Storage's; Black Paper; Fluid Gas Input/Output Hatch recipe
+Tweaked Dragons Breath; Thermal Expansion's Machine Frame; Empty Dimension Tab; Black Hole Storage's; Black Paper; Fluid Gas Input/Output Hatch; Mekanism Tank recipe
 
 Lowered the range from the Wither's difficulty increase by Progressive Bosses
 
@@ -28,3 +28,7 @@ Created a new quest line for repeatable quests and moved the repeatable quests t
 (Almost) every bucket recipe now can use a tank filled with 1000 of the fluid
 
 Added Genetics Reborn questline
+
+Increased Saturation Totem cost
+
+Lowered resolution of the Entity Clump
