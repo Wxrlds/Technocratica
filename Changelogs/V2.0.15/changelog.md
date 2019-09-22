@@ -15,7 +15,7 @@ Hopefully made the Server-Icon work
 
 Lowered the resulution of the Window Icon
 
-Added a Quest for the Scanner, Chaotic Energy Core
+Added a Quest for the Scanner, Chaotic Energy Core, Tinkers Tables
 
 Removed Draconic Evolution's tooltip from the End Crystal
 
@@ -27,8 +27,8 @@ Created a new quest line for repeatable quests and moved the repeatable quests t
 
 (Almost) every bucket recipe now can use a tank filled with 1000 of the fluid
 
-Added Genetics Reborn questline
+Added Genetics Reborn quest line
 
 Increased Saturation Totem cost
 
-Lowered resolution of the Entity Clump
+Lowered image resolution of the Entity Clump
