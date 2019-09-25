@@ -3,7 +3,7 @@ Removed the Contenttweaker's ProjectE-ish matters, so use them (i.e. by up-,down
 
 Removed some Totems from the Everlasting Abilities, you might want to get your levels back ___before___ updating the modpack (Fire Resistance; Flight; Jump Boost; Speed; Wither)
 
-Tweaked Dragons Breath; Thermal Expansion's Machine Frame; Empty Dimension Tab; Black Hole Storage's; Black Paper; Fluid Gas Input/Output Hatch; Mekanism Tank recipe
+Tweaked Dragons Breath; Thermal Expansion's Machine Frame; Empty Dimension Tab; Black Hole Storage's; Black Paper; Fluid Gas Input/Output Hatch; Mekanism Tank; Gold Turbine Blade recipe
 
 Lowered the range from the Wither's difficulty increase by Progressive Bosses
 
@@ -32,3 +32,5 @@ Added Genetics Reborn quest line
 Increased Saturation Totem cost
 
 Lowered image resolution of the Entity Clump
+
+Disabled the Engineer Villager and his House
