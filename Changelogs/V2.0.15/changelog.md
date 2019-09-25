@@ -36,5 +36,3 @@ Lowered image resolution of the Entity Clump
 Disabled the Engineer Villager and his House
 
 Fixed some of ProjectEX's Collectors and Relays being not craftable
-
-Disabled P455w0rds Lib's Dynamic Lighting
