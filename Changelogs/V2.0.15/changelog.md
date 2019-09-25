@@ -34,3 +34,5 @@ Increased Saturation Totem cost
 Lowered image resolution of the Entity Clump
 
 Disabled the Engineer Villager and his House
+
+Fixed some of ProjectEX's Collectors and Relays being not craftable
