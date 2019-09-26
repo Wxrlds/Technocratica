@@ -1,2 +1,0 @@
-recipes.remove(<enderstorage:ender_storage>);
-recipes.addShaped(<enderstorage:ender_storage>, [[<ore:rodBlaze>, <ore:blockWoolWhite>, <ore:rodBlaze>],[<ore:obsidian>, <minecraft:ender_chest>, <ore:obsidian>], [<ore:rodBlaze>, <ore:enderpearl>, <ore:rodBlaze>]]);

@@ -1,4 +1,4 @@
-~ README v1.0 ~
+~ README v1.1 ~
 This directory enables pack developers to add custom solar panels, with custom textures. Read this guide to understand, how to do so...
 
 
@@ -9,15 +9,21 @@ There, fill out the following template:
 {
 	"capacity": 0,
 	"generation": 0,
-	"trasnfer": 0,
+	"transfer": 0,
 	"thickness": 6,
-	"connected_textures": true
+	"connected_textures": true,
 	"localizations": {
 		"en_us": "NAME Solar Panel"
 	}
 }
 
 When you're done, save it to "panel.json"
+Oh also, please fill out the numerical fields to be greater than zero, or you'll run into troubles.
+Small tips for the JSON:
+- You can remove "thickness" if you want to use standard 6-pixel thickness.
+- You can remove "connected_textures" if you want the panels to connect anyway.
+- Any language is supported, but the fallback is always "en_us", so keep that in place!
+
 
 Next up: textures!
 In your panel folder, you're going to need 3 texture files: "top.png", "top_full.png" and "base.png".

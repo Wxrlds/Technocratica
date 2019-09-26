@@ -1,0 +1,1 @@
+mods.chisel.Carving.addVariation("marble",<projectred-exploration:stone:1>);

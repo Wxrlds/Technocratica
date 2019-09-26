@@ -1,47 +1,57 @@
-<minecraft:record_ward>.maxStackSize = 64;
-<minecraft:record_strad>.maxStackSize = 64;
-<minecraft:record_wait>.maxStackSize = 64;
-<minecraft:record_stal>.maxStackSize = 64;
-<minecraft:record_11>.maxStackSize = 64;
-<minecraft:record_13>.maxStackSize = 64;
-<minecraft:record_cat>.maxStackSize = 64;
-<minecraft:record_blocks>.maxStackSize = 64;
-<minecraft:record_chirp>.maxStackSize = 64;
-<minecraft:record_far>.maxStackSize = 64;
-<minecraft:record_mall>.maxStackSize = 64;
-<minecraft:record_mellohi>.maxStackSize = 64;
-<exchangers:mekanism_exchanger_core_tier2>.maxStackSize = 64;
-<exchangers:mekanism_exchanger_core_tier1>.maxStackSize = 64;
-<exchangers:te_exchanger_core_tier1>.maxStackSize = 64;
-<exchangers:te_exchanger_core_tier2>.maxStackSize = 64;
-<exchangers:te_exchanger_core_tier3>.maxStackSize = 64;
-<exchangers:eio_exchanger_core_tier3>.maxStackSize = 64;
-<exchangers:eio_exchanger_core_tier2>.maxStackSize = 64;
-<exchangers:eio_exchanger_core_tier1>.maxStackSize = 64;
-<exchangers:exchanger_core_tier1>.maxStackSize = 64;
-<exchangers:exchanger_core_tier2>.maxStackSize = 64;
-<exchangers:exchanger_core_tier3>.maxStackSize = 64;
-<enderio:item_soul_vial>.maxStackSize = 64;
-<industrialforegoing:range_addon:1>.maxStackSize = 64;
-<industrialforegoing:range_addon:2>.maxStackSize = 64;
-<industrialforegoing:range_addon:3>.maxStackSize = 64;
-<industrialforegoing:range_addon:4>.maxStackSize = 64;
-<industrialforegoing:range_addon:5>.maxStackSize = 64;
-<industrialforegoing:range_addon:6>.maxStackSize = 64;
-<industrialforegoing:range_addon:7>.maxStackSize = 64;
-<industrialforegoing:range_addon:8>.maxStackSize = 64;
-<industrialforegoing:range_addon:9>.maxStackSize = 64;
-<industrialforegoing:range_addon:10>.maxStackSize = 64;
-<industrialforegoing:range_addon:11>.maxStackSize = 64;
-<industrialforegoing:energy_field_addon>.maxStackSize = 64;
-<industrialforegoing:fortune_addon>.maxStackSize = 64;
-<industrialforegoing:itemstack_transfer_addon_pull>.maxStackSize = 64;
-<industrialforegoing:itemstack_transfer_addon_push>.maxStackSize = 64;
-<industrialforegoing:fluid_transfer_addon_pull>.maxStackSize = 64;
-<industrialforegoing:fluid_transfer_addon_push>.maxStackSize = 64;
-<projectex:final_star>.maxStackSize = 64;
-<tinker_io:cd_lonesome_avenue>.maxStackSize = 64;
-<ic2:reinforced_door>.maxStackSize = 64;
-<extrautils2:snowglobe:*>.maxStackSize = 64;
-<infinitystorage:ultimate_bag>.maxStackSize = 1;
-<infinitystorage:ultimate_chest>.maxStackSize = 1;
+import crafttweaker.item.IItemStack;
+val stack=[
+<enderio:item_soul_vial>,
+<exchangers:eio_exchanger_core_tier1>,
+<exchangers:eio_exchanger_core_tier2>,
+<exchangers:eio_exchanger_core_tier3>,
+<exchangers:exchanger_core_tier1>,
+<exchangers:exchanger_core_tier2>,
+<exchangers:exchanger_core_tier3>,
+<exchangers:mekanism_exchanger_core_tier1>,
+<exchangers:mekanism_exchanger_core_tier2>,
+<exchangers:te_exchanger_core_tier1>,
+<exchangers:te_exchanger_core_tier2>,
+<exchangers:te_exchanger_core_tier3>,
+<extrautils2:snowglobe:*>,
+<geneticsreborn:overclocker>,
+<geneticsreborn:dnahelix>,
+<geneticsreborn:antiplasmid>,
+<geneticsreborn:plasmid>,
+<ic2:reinforced_door>,
+<industrialforegoing:energy_field_addon>,
+<industrialforegoing:fluid_transfer_addon_pull>,
+<industrialforegoing:fluid_transfer_addon_push>,
+<industrialforegoing:fortune_addon>,
+<industrialforegoing:itemstack_transfer_addon_pull>,
+<industrialforegoing:itemstack_transfer_addon_push>,
+<industrialforegoing:range_addon:1>,
+<industrialforegoing:range_addon:10>,
+<industrialforegoing:range_addon:11>,
+<industrialforegoing:range_addon:2>,
+<industrialforegoing:range_addon:3>,
+<industrialforegoing:range_addon:4>,
+<industrialforegoing:range_addon:5>,
+<industrialforegoing:range_addon:6>,
+<industrialforegoing:range_addon:7>,
+<industrialforegoing:range_addon:8>,
+<industrialforegoing:range_addon:9>,
+<minecraft:record_11>,
+<minecraft:record_13>,
+<minecraft:record_blocks>,
+<minecraft:record_cat>,
+<minecraft:record_chirp>,
+<minecraft:record_far>,
+<minecraft:record_mall>,
+<minecraft:record_mellohi>,
+<minecraft:record_stal>,
+<minecraft:record_strad>,
+<minecraft:record_wait>,
+<minecraft:record_ward>,
+<projectex:final_star>,
+<tinker_io:cd_lonesome_avenue>
+] as IItemStack [];
+for x64 in stack {
+x64.maxStackSize = 64;
+}
+<infinitystorage:ultimate_bag>.maxStackSize=1;
+<infinitystorage:ultimate_chest>.maxStackSize=1;
