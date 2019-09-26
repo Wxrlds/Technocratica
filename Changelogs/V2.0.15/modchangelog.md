@@ -1,1 +1,1 @@
-Currently no changelog because the changelog generator is broken
+Currently no modchangelog because the changelog generator is broken
