@@ -2183,7 +2183,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.16.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.17.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2191,16 +2191,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2776/690/Cyclic-1.12.2-1.19.16.jar",
-                    "id": "2776690",
+                    "url": "https://edge.forgecdn.net/files/2798/325/Cyclic-1.12.2-1.19.17.jar",
+                    "id": "2798325",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "bfba9580f8bdd06b72d51712df38f1a44f10d171",
-                        "md5": "ff84a74de48644786f4d40d61f20e079"
+                        "sha1": "41f850f2618179678dabab390dc5e4968d75c649",
+                        "md5": "b105e5899c8ee832aa2e1a575fc89499"
                     },
                     "required_dependencies": [],
-                    "size": 4009979,
-                    "date_published": "2019-09-02T06:44:55.453Z"
+                    "size": 4009607,
+                    "date_published": "2019-09-29T16:22:41.690Z"
                 }
             ]
         },
@@ -4761,21 +4761,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Mekanism-1.12.2-9.8.2.387.jar",
+                    "file_name": "Mekanism-1.12.2-9.8.2.389.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2794/15/Mekanism-1.12.2-9.8.2.387.jar",
-                    "id": "2794015",
+                    "url": "https://edge.forgecdn.net/files/2798/295/Mekanism-1.12.2-9.8.2.389.jar",
+                    "id": "2798295",
                     "parent_id": "268560",
                     "hashes": {
-                        "sha1": "8e8739e7238ea01af0318402bdd72fe53fe86b9c",
-                        "md5": "a5958352c6993b865b083e9d692da57d"
+                        "sha1": "04caf8715146b7b40a68f6cd248ae51981260f9c",
+                        "md5": "e0f55f62adf9b0dbef2f231d2d24a5c6"
                     },
                     "required_dependencies": [],
                     "size": 7861466,
-                    "date_published": "2019-09-24T16:02:04.507Z"
+                    "date_published": "2019-09-29T15:51:45.070Z"
                 }
             ]
         },
@@ -4794,23 +4794,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismGenerators-1.12.2-9.8.2.387.jar",
+                    "file_name": "MekanismGenerators-1.12.2-9.8.2.389.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2794/17/MekanismGenerators-1.12.2-9.8.2.387.jar",
-                    "id": "2794017",
+                    "url": "https://edge.forgecdn.net/files/2798/297/MekanismGenerators-1.12.2-9.8.2.389.jar",
+                    "id": "2798297",
                     "parent_id": "268566",
                     "hashes": {
-                        "sha1": "d4f0aae80e846568baedc43822e6a36bd51296ce",
-                        "md5": "bc6aef36da3734936716c320339f0aca"
+                        "sha1": "a12cb97484df89a10964666fa60e114cb99e0899",
+                        "md5": "4050a08d48ace9968e002dc2348855c5"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
                     "size": 336247,
-                    "date_published": "2019-09-24T16:02:06.877Z"
+                    "date_published": "2019-09-29T15:51:47.167Z"
                 }
             ]
         },
@@ -4829,23 +4829,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismTools-1.12.2-9.8.2.387.jar",
+                    "file_name": "MekanismTools-1.12.2-9.8.2.389.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2794/18/MekanismTools-1.12.2-9.8.2.387.jar",
-                    "id": "2794018",
+                    "url": "https://edge.forgecdn.net/files/2798/298/MekanismTools-1.12.2-9.8.2.389.jar",
+                    "id": "2798298",
                     "parent_id": "268567",
                     "hashes": {
-                        "sha1": "ecaafe22b9a8464862ad0e9bdebe0388f3d31eb8",
-                        "md5": "1a6f1b43df343627dd29ee438b330ea2"
+                        "sha1": "b735081958771e2a9b227d34d974edf4a021a4f8",
+                        "md5": "dee9e1d6acbea7b69cafc52ec8a8b567"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
-                    "size": 159786,
-                    "date_published": "2019-09-24T16:02:08.397Z"
+                    "size": 159785,
+                    "date_published": "2019-09-29T15:51:48.753Z"
                 }
             ]
         },
@@ -7663,23 +7663,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniDict-1.12.2-2.9.2.jar",
+                    "file_name": "UniDict-1.12.2-2.9.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2652/588/UniDict-1.12.2-2.9.2.jar",
-                    "id": "2652588",
+                    "url": "https://edge.forgecdn.net/files/2796/682/UniDict-1.12.2-2.9.3.jar",
+                    "id": "2796682",
                     "parent_id": "244258",
                     "hashes": {
-                        "sha1": "3708fce1adc2c90e2b488402eeffcc6ca6e7d533",
-                        "md5": "b1ba004241d86a3e1280c8911c2b4ff2"
+                        "sha1": "27ad702d2cecdd26f005f4398b12e442b87630a1",
+                        "md5": "b0c522a739abbd8d342dc34d367a041b"
                     },
                     "required_dependencies": [
                         "253043"
                     ],
-                    "size": 192476,
-                    "date_published": "2018-12-26T13:27:09.830Z"
+                    "size": 185166,
+                    "date_published": "2019-09-27T15:41:47.737Z"
                 }
             ]
         },
