@@ -40,6 +40,7 @@ recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:64>
 recipes.replaceAllOccurences(<thermalexpansion:frame>,<extrautils2:machine>,<thermalexpansion:machine:5>);
 recipes.replaceAllOccurences(<thermalexpansion:frame>,<mekanism:basicblock:8>,<thermalexpansion:machine:2>);
 recipes.replaceAllOccurences(<thermalexpansion:frame>,<teslacorelib:machine_case>,<thermalexpansion:machine:6>);
+recipes.replaceAllOccurences(<minecraft:redstone>,<jaopca:item_stickcertusquartz>,<openblocks:block_breaker>);
 recipes.replaceAllOccurences(<minecraft:water_bucket>,<liquid:water>*1000);
 recipes.replaceAllOccurences(<minecraft:lava_bucket>,<liquid:lava>*1000);
 recipes.replaceAllOccurences(<minecraft:milk_bucket>,<liquid:milk>*1000);

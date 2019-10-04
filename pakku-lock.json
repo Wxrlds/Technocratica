@@ -900,24 +900,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "avaritiaio-1.3.jar",
+                    "file_name": "avaritiaio-1.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2712/514/avaritiaio-1.3.jar",
-                    "id": "2712514",
+                    "url": "https://edge.forgecdn.net/files/2800/346/avaritiaio-1.4.jar",
+                    "id": "2800346",
                     "parent_id": "312149",
                     "hashes": {
-                        "sha1": "9f5233429d4a26b5970404b6525007aae440a2a9",
-                        "md5": "217caa4630609b1597912da4daed60d6"
+                        "sha1": "5a5a734e8c5d58acb04920fe4f29c738e2096163",
+                        "md5": "a0e6a010ab54b9003d572d962eb55f58"
                     },
                     "required_dependencies": [
                         "64578",
                         "261348"
                     ],
-                    "size": 25014,
-                    "date_published": "2019-05-17T23:56:52.877Z"
+                    "size": 22178,
+                    "date_published": "2019-10-02T12:36:59.387Z"
                 }
             ]
         },
@@ -2391,23 +2391,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Ding-1.12.1-1.0.1.jar",
+                    "file_name": "Ding-1.12.2-1.0.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2476/271/Ding-1.12.1-1.0.1.jar",
-                    "id": "2476271",
+                    "url": "https://edge.forgecdn.net/files/2801/170/Ding-1.12.2-1.0.2.jar",
+                    "id": "2801170",
                     "parent_id": "231275",
                     "hashes": {
-                        "sha1": "6eb8f0ac77131ff04b7fd3069a197edb1887eb5c",
-                        "md5": "5b15173c1a4d3a48afa382857a1c0faa"
+                        "sha1": "1939ac649c1d6ed0cd9fca8afefc48795fbdb18f",
+                        "md5": "a53653c887baf2c82ceb55663e22a2a7"
                     },
                     "required_dependencies": [],
-                    "size": 4711,
-                    "date_published": "2017-09-05T22:57:36.960Z"
+                    "size": 8008,
+                    "date_published": "2019-10-03T22:11:15.117Z"
                 }
             ]
         },
@@ -3358,21 +3361,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.11.jar",
+                    "file_name": "geneticsreborn-1.12-1.13.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2792/323/geneticsreborn-1.12-1.11.jar",
-                    "id": "2792323",
+                    "url": "https://edge.forgecdn.net/files/2801/84/geneticsreborn-1.12-1.13.jar",
+                    "id": "2801084",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "4cfd2a1fd2371bf8aa918effc3b12a4b304ae63f",
-                        "md5": "73fee0d25cb9672abc83dcb6f0a3db55"
+                        "sha1": "59af1a87eeb6438e1581eae0d6d0f3a4ba7381b8",
+                        "md5": "cb3ff409cff797aecb4a37890613def1"
                     },
                     "required_dependencies": [],
-                    "size": 254672,
-                    "date_published": "2019-09-23T16:55:40.637Z"
+                    "size": 259711,
+                    "date_published": "2019-10-03T19:38:11.803Z"
                 }
             ]
         },
@@ -3391,25 +3394,28 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "GooglyEyes-1.12.2-7.1.0.jar",
+                    "file_name": "GooglyEyes-1.12.2-7.1.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2682/827/GooglyEyes-1.12.2-7.1.0.jar",
-                    "id": "2682827",
+                    "url": "https://edge.forgecdn.net/files/2801/268/GooglyEyes-1.12.2-7.1.1.jar",
+                    "id": "2801268",
                     "parent_id": "252188",
                     "hashes": {
-                        "sha1": "2ad8ade4173a64d173c9aac5bb3655bd252b8026",
-                        "md5": "b5a5bdf1da8a9bd5ef09cd7b5cac1973"
+                        "sha1": "5d6b6038acc27a289fc31dfc0efdcc7fe412f10c",
+                        "md5": "d95ec552d34e707f8fcfc9091c58bd16"
                     },
                     "required_dependencies": [
                         "229060"
                     ],
-                    "size": 23675,
-                    "date_published": "2019-03-03T18:34:44.817Z"
+                    "size": 24273,
+                    "date_published": "2019-10-04T00:46:39.717Z"
                 }
             ]
         },
@@ -3461,21 +3467,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.0.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.5.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2769/583/HammerCore-1.12.2-2.0.5.0.jar",
-                    "id": "2769583",
+                    "url": "https://edge.forgecdn.net/files/2801/510/HammerCore-1.12.2-2.0.5.1.jar",
+                    "id": "2801510",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "15b07ee99ceedf8ef2b0ce2e8d84831a1f8f45ba",
-                        "md5": "e262a0cdac038755d4fccd1d47cfc64d"
+                        "sha1": "630c0267ea1d9cbecdd991e735fb5812be7f0f67",
+                        "md5": "c3629ae7bdfd58614e4e98e2ce514ef8"
                     },
                     "required_dependencies": [],
-                    "size": 2246264,
-                    "date_published": "2019-08-25T13:10:34.560Z"
+                    "size": 2285722,
+                    "date_published": "2019-10-04T13:52:21.973Z"
                 }
             ]
         },
@@ -3529,25 +3535,28 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Hats-1.12.2-7.0.2.jar",
+                    "file_name": "Hats-1.12.2-7.1.0.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2487/838/Hats-1.12.2-7.0.2.jar",
-                    "id": "2487838",
+                    "url": "https://edge.forgecdn.net/files/2801/266/Hats-1.12.2-7.1.0.jar",
+                    "id": "2801266",
                     "parent_id": "229073",
                     "hashes": {
-                        "sha1": "9aa099012c224eb716be010ca88098e705f6af00",
-                        "md5": "7ebaabf25a086c5ab85eba8ed9f3b704"
+                        "sha1": "2d1f41d80e3a6717c9e8121b93da0e7f0350d899",
+                        "md5": "5c7ea9a9f9783a04e2af389c7d367344"
                     },
                     "required_dependencies": [
                         "229060"
                     ],
-                    "size": 299884,
-                    "date_published": "2017-10-06T13:12:13.140Z"
+                    "size": 314009,
+                    "date_published": "2019-10-04T00:43:35.187Z"
                 }
             ]
         },
@@ -5807,7 +5816,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProgressiveBosses-1.5.2-mc1.12.x.jar",
+                    "file_name": "ProgressiveBosses-1.5.3-mc1.12.x.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -5817,16 +5826,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2757/66/ProgressiveBosses-1.5.2-mc1.12.x.jar",
-                    "id": "2757066",
+                    "url": "https://edge.forgecdn.net/files/2799/757/ProgressiveBosses-1.5.3-mc1.12.x.jar",
+                    "id": "2799757",
                     "parent_id": "289466",
                     "hashes": {
-                        "sha1": "a4f3cf879adf0b4434e0bbe8e8051c540d9b6a44",
-                        "md5": "d5d2c56a4a2bbdc0cbefe31ca11dd1e9"
+                        "sha1": "7799d1ca70fcc1da9c4c5a29bfd065e775a3434e",
+                        "md5": "fe010a0633c7cb741c181707b9408fff"
                     },
                     "required_dependencies": [],
-                    "size": 67456,
-                    "date_published": "2019-08-08T07:55:14.740Z"
+                    "size": 69701,
+                    "date_published": "2019-10-01T15:52:11.363Z"
                 }
             ]
         },
@@ -6472,7 +6481,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.18.2.1.jar",
+                    "file_name": "randompatches-1.12.2-1.18.2.3.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -6482,16 +6491,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2789/309/randompatches-1.12.2-1.18.2.1.jar",
-                    "id": "2789309",
+                    "url": "https://edge.forgecdn.net/files/2801/312/randompatches-1.12.2-1.18.2.3.jar",
+                    "id": "2801312",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "5f683059fdfd7f4d9685951ef267cb7c1298d423",
-                        "md5": "32d19d25c848e63ab3e910320db4160b"
+                        "sha1": "2e856a960adcac119c9108240530c004ad3f1b6e",
+                        "md5": "327c73326a67a357361e15bdb282b858"
                     },
                     "required_dependencies": [],
-                    "size": 264820,
-                    "date_published": "2019-09-19T06:33:28.737Z"
+                    "size": 264909,
+                    "date_published": "2019-10-04T03:24:28.797Z"
                 }
             ]
         },
@@ -7871,21 +7880,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "WanionLib-1.12.2-2.2.jar",
+                    "file_name": "WanionLib-1.12.2-2.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2651/482/WanionLib-1.12.2-2.2.jar",
-                    "id": "2651482",
+                    "url": "https://edge.forgecdn.net/files/2800/927/WanionLib-1.12.2-2.3.jar",
+                    "id": "2800927",
                     "parent_id": "253043",
                     "hashes": {
-                        "sha1": "bbee84cafbbc72b24ee987fda668b3ee48ced74a",
-                        "md5": "da46d9a391cb6ac4d3bd453db2158e58"
+                        "sha1": "1f68c230a171f3c400137291e86c8ff24cb09c8c",
+                        "md5": "62666e632ab2a60e755aed2e547b5827"
                     },
                     "required_dependencies": [],
-                    "size": 129188,
-                    "date_published": "2018-12-23T01:11:42.713Z"
+                    "size": 134357,
+                    "date_published": "2019-10-03T13:08:17.727Z"
                 }
             ]
         },
@@ -8264,23 +8273,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "iChunUtil-1.12.2-7.2.1.jar",
+                    "file_name": "iChunUtil-1.12.2-7.2.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2684/0/iChunUtil-1.12.2-7.2.1.jar",
-                    "id": "2684000",
+                    "url": "https://edge.forgecdn.net/files/2801/262/iChunUtil-1.12.2-7.2.2.jar",
+                    "id": "2801262",
                     "parent_id": "229060",
                     "hashes": {
-                        "sha1": "32a5eb2adac78375d77c2cefcb9200da33a033d9",
-                        "md5": "a167bfbd5d02fd6f81a435d53fa984a9"
+                        "sha1": "2b53b0f9543c98adb0b89caa4da954a477259367",
+                        "md5": "bf13a2044ece544b449c7dc6f8aa40af"
                     },
                     "required_dependencies": [],
-                    "size": 581642,
-                    "date_published": "2019-03-06T15:41:44.007Z"
+                    "size": 581963,
+                    "date_published": "2019-10-04T00:38:01.827Z"
                 }
             ]
         },
