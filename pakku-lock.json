@@ -1502,21 +1502,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc-tweaked-1.12.2-1.84.0.jar",
+                    "file_name": "cc-tweaked-1.12.2-1.85.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2754/649/cc-tweaked-1.12.2-1.84.0.jar",
-                    "id": "2754649",
+                    "url": "https://edge.forgecdn.net/files/2801/674/cc-tweaked-1.12.2-1.85.0.jar",
+                    "id": "2801674",
                     "parent_id": "282001",
                     "hashes": {
-                        "sha1": "2b1cee190b3fc63a362f58887b2f2a23fbecc6b7",
-                        "md5": "681274f3c9cf8ee2ae0afc31fd3c035c"
+                        "sha1": "40c514955582ef8bb8569ec556c311daed46f675",
+                        "md5": "ec814e0193c8893e2a68be29f9b53d69"
                     },
                     "required_dependencies": [],
-                    "size": 1720739,
-                    "date_published": "2019-08-04T15:54:35.193Z"
+                    "size": 1724355,
+                    "date_published": "2019-10-04T18:53:36.330Z"
                 }
             ]
         },

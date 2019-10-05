@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 val remRecipe=[
+<actuallyadditions:block_atomic_reconstructor>,
 <actuallyadditions:block_grinder>,
 <actuallyadditions:block_misc:1>,
 <actuallyadditions:block_misc:5>,
