@@ -8,7 +8,7 @@ Decreased the chance for Nether Portals to naturally generate to the lowest poss
 
 Enabled Hard Mode in Genetics Reborn
 
-Disabled the Step Assist; Photosynthesis; Gene
+Disabled the Step Assist; Photosynthesis Gene
 
 Decreased the Light Level from the Bioluminscence Gene
 
