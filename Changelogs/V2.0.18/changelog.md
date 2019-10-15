@@ -25,3 +25,7 @@ Added some Ores to JER's JEI info
 Removed the Uranium Ore description from JEI
 
 Disabled Anglesite and Benitoite ore from spawning in the world
+
+Disabled p455w0rds shader
+
+Added a Tooltip to the Plasmid Infuser
