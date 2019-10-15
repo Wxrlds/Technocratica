@@ -4,7 +4,7 @@ Changed the description of the Crafting Station Quest
 
 Added Juicer Quest
 
-Decreased the chance for Nether Portals to naturally generate to the lowest possible number (to hopefully disable them
+Decreased the chance for Nether Portals to naturally generate to the lowest possible number (to hopefully disable them)
 
 Enabled Hard Mode in Genetics Reborn
 
