@@ -20,7 +20,7 @@ Renamed the Reactors Quest chapter to Generators
 
 Added Solar panel Quests
 
-Fixed the Infinity Chest not having the correct item name
+Fixed the Infinity Chest not having the correct name
 
 Added some Ores to JER's JEI info
 
@@ -28,6 +28,12 @@ Removed the Uranium Ore description from JEI
 
 Disabled Anglesite and Benitoite ore from spawning in the world
 
-Disabled p455w0rds shader
+Disabled P455w0rd's shader
 
 Added a Tooltip to the Plasmid Infuser
+
+Removed the realms button
+
+Disabled the regeneration totem
+
+What do you mean with you are not regenerating anymore?
