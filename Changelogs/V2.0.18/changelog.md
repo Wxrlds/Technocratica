@@ -1,5 +1,7 @@
 Updated Forge to 14.23.5.2847
 
+Tweaked Pharos Beacon recipe
+
 Fixed the Stencil Table and Part Builder Quest not ignoring NBT-Data
 
 Changed the description of the Crafting Station Quest
@@ -35,5 +37,7 @@ Added a Tooltip to the Plasmid Infuser
 Removed the realms button
 
 Disabled the regeneration totem
+
+Removed Energized-, Vibrant Bimetal Gear, Electrical Steel-, Vibrant Alloy-, Pulsating Iron-, Redstone Alloy-, Dark Steel Ingot, Dark Bow, The Ender, Conduit Probe, Blank Dark Steel Upgrade, Dark Boots, Air Charm from Loottables
 
 What do you mean with you are not regenerating anymore?
