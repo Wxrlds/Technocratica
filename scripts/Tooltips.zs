@@ -53,3 +53,5 @@ for item in tools {
 <projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));
 <torchmaster:dread_lamp>.addTooltip(format.green("Prevents passive mob spawning in a 64 block radius"));
 <torchmaster:mega_torch>.addTooltip(format.green("Prevents hostile mob spawning in a 128 block radius"));
+<geneticsreborn:plasmidinfuser>.addTooltip(format.red("Only insert one DNA-Helix at the time or you will loose the whole stack!"));
+<xat:inertia_null_stone>.addTooltip(format.red("Does not make you immune to fall damage!"));

@@ -2300,36 +2300,6 @@
     "3pair0": "{\n  \"left\": 2,\n  \"right\": 5\n}"
   },
   {
-    "name": "enderio:block_dark_paper_anvil",
-    "meta": 2,
-    "length": 1,
-    "name0": "enderio:item_material",
-    "meta0": 77,
-    "0chance0": 201.7,
-    "1chance0": 199.85,
-    "2chance0": 199.675,
-    "3chance0": 199.77501,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
-  },
-  {
-    "name": "enderio:block_dark_paper_anvil",
-    "meta": 1,
-    "length": 1,
-    "name0": "enderio:item_material",
-    "meta0": 77,
-    "0chance0": 262.17502,
-    "1chance0": 268.225,
-    "2chance0": 269.975,
-    "3chance0": 263.1,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}"
-  },
-  {
     "name": "actuallyadditions:block_colored_lamp_on",
     "meta": 13,
     "length": 1,
@@ -2660,21 +2630,6 @@
     "3pair0": "{\n  \"left\": 2,\n  \"right\": 6\n}"
   },
   {
-    "name": "enderio:block_dark_paper_anvil",
-    "meta": 0,
-    "length": 1,
-    "name0": "enderio:item_material",
-    "meta0": 77,
-    "0chance0": 349.02502,
-    "1chance0": 349.35,
-    "2chance0": 348.95,
-    "3chance0": 350.175,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}"
-  },
-  {
     "name": "appliedenergistics2:quartz_ore",
     "meta": 0,
     "length": 1,
@@ -2958,5 +2913,50 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "enderio:block_dark_paper_anvil",
+    "meta": 2,
+    "length": 1,
+    "name0": "enderio:item_material",
+    "meta0": 77,
+    "0chance0": 200.25,
+    "1chance0": 200.09999,
+    "2chance0": 198.3,
+    "3chance0": 200.55,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
+  },
+  {
+    "name": "enderio:block_dark_paper_anvil",
+    "meta": 1,
+    "length": 1,
+    "name0": "enderio:item_material",
+    "meta0": 77,
+    "0chance0": 261.94998,
+    "1chance0": 266.19998,
+    "2chance0": 264.625,
+    "3chance0": 268.77502,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}"
+  },
+  {
+    "name": "enderio:block_dark_paper_anvil",
+    "meta": 0,
+    "length": 1,
+    "name0": "enderio:item_material",
+    "meta0": 77,
+    "0chance0": 348.57498,
+    "1chance0": 348.75,
+    "2chance0": 356.45,
+    "3chance0": 351.05,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}"
   }
 ]

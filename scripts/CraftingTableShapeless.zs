@@ -42,6 +42,9 @@ recipes.addShapeless("CoT_16x_Iron_Ingot",<contenttweaker:16x_iron_ingot>,[<ore:
 recipes.addShapeless("CoT_16x_Iron_Ingot_Uncraft",<minecraft:iron_ingot>*16,[<contenttweaker:16x_iron_ingot>]);
 recipes.addShapeless("CoT_18x_Glowstone_Uncraft",<minecraft:glowstone>*18,[<contenttweaker:18x_glowstone>]);
 recipes.addShapeless("CoT_18x_Obsidian_Uncraft",<minecraft:obsidian>,[<contenttweaker:18x_obsidian>]);
+recipes.addShapeless("CoT_19x_Neutronium_Block_1",<contenttweaker:19x_neutronium_block>, [<contenttweaker:8x_neutronium_block>,<contenttweaker:8x_neutronium_block>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>]);
+recipes.addShapeless("CoT_19x_Neutronium_Block_2",<contenttweaker:19x_neutronium_block>, [<contenttweaker:12x_neutronium_block>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>,<ore:blockCosmicNeutronium>]);
+recipes.addShapeless("CoT_19x_Neutronium_Block_Uncraft",<avaritia:block_resource> * 19, [<contenttweaker:19x_neutronium_block>]);
 recipes.addShapeless("CoT_20x_Iron_Band_Uncraft",<projecte:item.pe_ring_iron_band>*20,[<contenttweaker:20x_iron_band>]);
 recipes.addShapeless("CoT_22x_Red_Matter_1",<contenttweaker:22x_red_matter>,[<projecte:matter_block:1>,<projecte:matter_block:1>,<projecte:item.pe_matter:1>,<projecte:matter_block:1>,<projecte:item.pe_matter:1>,<projecte:matter_block:1>,<projecte:matter_block:1>]);
 recipes.addShapeless("CoT_22x_Red_Matter_2",<contenttweaker:22x_red_matter>,[<projecte:matter_block:1>,<projecte:matter_block:1>,<projecte:item.pe_matter:1>,<projecte:matter_block:1>,<projecte:item.pe_matter:1>,<projecte:matter_block:1>,<projecte:matter_block:1>]);
@@ -105,6 +108,11 @@ recipes.addShapeless("CoT_64x_Iron_Ingot_3",<contenttweaker:64x_iron_ingot>,[<co
 recipes.addShapeless("CoT_64x_Iron_Ingot_Uncraft",<minecraft:iron_ingot>*64,[<contenttweaker:64x_iron_ingot>]);
 recipes.addShapeless("CoT_64x_Red_Matter",<contenttweaker:64x_red_matter>,[<contenttweaker:63x_red_matter>,<projecte:item.pe_matter:1>]);
 recipes.addShapeless("CoT_64x_Red_Matter_Uncraft",<projecte:item.pe_matter:1>*64,[<contenttweaker:64x_red_matter>]);
+recipes.addShapeless("CoT_6x_Draconic_Energy_Core",<contenttweaker:6x_draconic_energy_core>, [<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>]);
+recipes.addShapeless("CoT_6x_Draconic_Energy_Core_Uncraft",<draconicevolution:draconic_energy_core> * 6, [<contenttweaker:6x_draconic_energy_core>]);
+recipes.addShapeless("CoT_6x_Draconic_Ingot_1",<contenttweaker:6x_awakened_draconium_ingot>, [<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<contenttweaker:4x_awakened_draconium_ingot>]);
+recipes.addShapeless("CoT_6x_Draconic_Ingot_2",<contenttweaker:6x_awakened_draconium_ingot>, [<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>]);
+recipes.addShapeless("CoT_6x_Draconic_Ingot_Uncraft",<draconicevolution:draconic_ingot> * 6, [<contenttweaker:6x_awakened_draconium_ingot>]);
 recipes.addShapeless("CoT_7x_Awakened_Draconium_Ingot",<contenttweaker:7x_awakened_draconium_ingot>,[<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>,<ore:ingotDraconiumAwakened>]);
 recipes.addShapeless("CoT_7x_Awakened_Draconium_Ingot_Uncraft",<draconicevolution:draconic_ingot>*7,[<contenttweaker:7x_awakened_draconium_ingot>]);
 recipes.addShapeless("CoT_8x_Awakened_Core_1",<contenttweaker:8x_awakened_core>,[<draconicevolution:awakened_core>,<draconicevolution:awakened_core>,<draconicevolution:awakened_core>,<draconicevolution:awakened_core>,<contenttweaker:4x_awakened_core>]);
@@ -163,9 +171,9 @@ recipes.addShapeless("IC2_Hydrated_Coal_8",<ic2:dust:3>*8,[<ore:dustCoal>,<ore:d
 recipes.addShapeless("IC2_Hydrated_Tin_Dust",<ic2:dust:29>, [<ore:dustTin>,<liquid:water>*1000]);
 recipes.addShapeless("InfStore_Ultimate_Bag_Clear",<infinitystorage:ultimate_bag>,[<infinitystorage:ultimate_bag>]);
 recipes.addShapeless("InfStore_Ultimate_Chest_Clear",<infinitystorage:ultimate_chest>,[<infinitystorage:ultimate_chest>]);
-recipes.addShapeless("JAOPCA_Osmium_Plate",<jaopca:item_plateosmium>*6,[<ore:craftingToolForgeHammer>,<ore:blockOsmium>]);
 recipes.addShapeless("JAOPCA_Cobalt_Plate",<jaopca:item_platecobalt>*6,[<ore:craftingToolForgeHammer>,<ore:blockCobalt>]);
 recipes.addShapeless("JAOPCA_Draconium_Plate",<jaopca:item_platedraconium>*6,[<ore:craftingToolForgeHammer>,<ore:blockDraconium>]);
+recipes.addShapeless("JAOPCA_Osmium_Plate",<jaopca:item_plateosmium>*6,[<ore:craftingToolForgeHammer>,<ore:blockOsmium>]);
 recipes.addShapeless("JAOPCA_Uran_Plate",<jaopca:item_plateuranium>*6,[<ore:craftingToolForgeHammer>,<ore:blockUranium>]);
 recipes.addShapeless("Mekanism_Creative_Gas_Tank_Clear",<mekanism:gastank>.withTag({tier:4}),[<mekanism:gastank>.withTag({tier:4})]);
 recipes.addShapeless("Mekanism_Creative_Tank_Clear",<mekanism:machineblock2:11>.withTag({tier:4}),[<mekanism:machineblock2:11>.withTag({tier:4})]);
