@@ -1060,6 +1060,42 @@
             ]
         },
         {
+            "pakku_id": "y5FvrTFfiYBbdKln",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "baubley-heart-canisters"
+            },
+            "name": {
+                "curseforge": "Baubley Heart Canisters"
+            },
+            "id": {
+                "curseforge": "282947"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "baubley-heart-canisters-1.12.2-2.0.3.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2721/67/baubley-heart-canisters-1.12.2-2.0.3.jar",
+                    "id": "2721067",
+                    "parent_id": "282947",
+                    "hashes": {
+                        "sha1": "63a0872773dd016896d8458ae6684ed824240db2",
+                        "md5": "acced31f01339ea8af67b06aaa3cbe14"
+                    },
+                    "required_dependencies": [
+                        "227083",
+                        "74924"
+                    ],
+                    "size": 68590,
+                    "date_published": "2019-06-06T21:49:33.727Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3pUKsu3mFnOVYO0t",
             "type": "MOD",
             "slug": {
@@ -2977,21 +3013,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.142.jar",
+                    "file_name": "FTBLib-5.4.3.147.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2812/604/FTBLib-5.4.3.142.jar",
-                    "id": "2812604",
+                    "url": "https://edge.forgecdn.net/files/2816/477/FTBLib-5.4.3.147.jar",
+                    "id": "2816477",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "8786603421f44dad855c368804e325593a09fe65",
-                        "md5": "aae2e31179dc314d930e03abfe5ad23e"
+                        "sha1": "d12d80965bec924264c28667c995d878686dab77",
+                        "md5": "08ff9f9c3dd076b94bc36d57160c392f"
                     },
                     "required_dependencies": [],
-                    "size": 925714,
-                    "date_published": "2019-10-19T20:05:39.800Z"
+                    "size": 935576,
+                    "date_published": "2019-10-26T00:10:41.030Z"
                 }
             ]
         },
@@ -3049,24 +3085,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.7.2.221.jar",
+                    "file_name": "FTBQuests-1.8.0.228.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2812/606/FTBQuests-1.7.2.221.jar",
-                    "id": "2812606",
+                    "url": "https://edge.forgecdn.net/files/2817/80/FTBQuests-1.8.0.228.jar",
+                    "id": "2817080",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "ff15f7feff7ac3f4023b03fce353d75f898539c4",
-                        "md5": "ebf6fceb470ff8d5fb3ea0ac8e50c3b0"
+                        "sha1": "2c3582fc70738ae5ffc5bcbe0a12a4071081569a",
+                        "md5": "0b80ec3bcb21f8fbce3b59a8c5927767"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 1011652,
-                    "date_published": "2019-10-19T20:07:04.517Z"
+                    "size": 1063812,
+                    "date_published": "2019-10-27T00:40:54.310Z"
                 }
             ]
         },
@@ -3089,24 +3125,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.109.jar",
+                    "file_name": "FTBUtilities-5.4.0.111.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2812/608/FTBUtilities-5.4.0.109.jar",
-                    "id": "2812608",
+                    "url": "https://edge.forgecdn.net/files/2816/862/FTBUtilities-5.4.0.111.jar",
+                    "id": "2816862",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "2fff1b54ecf7dd4fb36b22a69fb8c5c362356468",
-                        "md5": "9d4f1c634c3f0c2f589432a8f344e667"
+                        "sha1": "421a524cc28c7762606608feac26bbf4063fb9da",
+                        "md5": "699647fe73b6ec7753636c66fce8169e"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 437524,
-                    "date_published": "2019-10-19T20:08:06.783Z"
+                    "size": 437529,
+                    "date_published": "2019-10-26T17:32:23.530Z"
                 }
             ]
         },
@@ -3258,21 +3294,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fluxnetworks-1.12.2-4.0.12-29.jar",
+                    "file_name": "fluxnetworks-1.12.2-4.0.13-30.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2810/848/fluxnetworks-1.12.2-4.0.12-29.jar",
-                    "id": "2810848",
+                    "url": "https://edge.forgecdn.net/files/2814/768/fluxnetworks-1.12.2-4.0.13-30.jar",
+                    "id": "2814768",
                     "parent_id": "248020",
                     "hashes": {
-                        "sha1": "6fac218c4101501d676dea56e813bc479362d4f7",
-                        "md5": "6bdeff23dbd9299a692b64fe46933c68"
+                        "sha1": "ff6b77c1a5327411a7f2ce5fec628677dcfbbc86",
+                        "md5": "d6ddc365a9c55f2639e532e4c2e692af"
                     },
                     "required_dependencies": [],
-                    "size": 461004,
-                    "date_published": "2019-10-17T00:39:30.903Z"
+                    "size": 462462,
+                    "date_published": "2019-10-23T03:20:04.687Z"
                 }
             ]
         },

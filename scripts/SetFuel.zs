@@ -1,3 +1,4 @@
+import crafttweaker.item.IItemStack;
 furnace.setFuel(<contenttweaker:blue_aeter>,286106980);
 furnace.setFuel(<contenttweaker:blue_alch>,74632417);
 furnace.setFuel(<contenttweaker:blue_mob>,146126163);
@@ -23,3 +24,18 @@ furnace.setFuel(<projecte:fuel_block:2>,901410);
 furnace.setFuel(<projecte:item.pe_fuel:0>,23513);
 furnace.setFuel(<projecte:item.pe_fuel:1>,46038);
 furnace.setFuel(<projecte:item.pe_fuel:2>,90141);
+
+val burn100=[
+<extrautils2:ironwood_leaves>,
+<extrautils2:ironwood_leaves:1>,
+<ic2:leaves>,
+<quark:variant_leaves>,
+<quark:variant_leaves:1>,
+<randomthings:spectreleaf>,
+<tconstruct:slime_leaves>,
+<tconstruct:slime_leaves:1>,
+<tconstruct:slime_leaves:2>
+] as IItemStack [];
+for item in burn100 {
+furnace.setFuel(item,100);
+}

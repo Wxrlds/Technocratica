@@ -36,3 +36,7 @@ mods.jei.JEI.addItem(<ic2:ingot:8>);
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Rabbit (It's a little bit stronger, so be prepared)");
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze (It's a little bit stronger, so be prepared)");
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (It's a little bit stronger, so be prepared)");
+mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs");
+mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither)");
+mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon");
+mods.jei.JEI.addDescription(<bhc:blue_heart>,"Drop from Evoker ");

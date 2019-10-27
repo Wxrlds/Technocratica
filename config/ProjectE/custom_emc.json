@@ -487,6 +487,26 @@
     {
       "item": "extracells:storage.physical|0",
       "emc": 0
+    },
+    {
+      "item": "harvestcraft:hardenedleatheritem|0",
+      "emc": 352
+    },
+    {
+      "item": "cyclicmagic:crystallized_amber|0",
+      "emc": 547
+    },
+    {
+      "item": "redstonearsenal:material|160",
+      "emc": 8352
+    },
+    {
+      "item": "mysticalagradditions:insanium|0",
+      "emc": 16384
+    },
+    {
+      "item": "mysticalagriculture:gear|9",
+      "emc": 482808
     }
   ]
 }

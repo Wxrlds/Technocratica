@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 val remExtr=[
 <avaritia:cosmic_meatballs>,
-<avaritia:resource:5>,
 <avaritia:endest_pearl>,
 <avaritia:infinity_axe>,
 <avaritia:infinity_bow>,
@@ -11,6 +10,7 @@ val remExtr=[
 <avaritia:infinity_sword>,
 <avaritia:neutron_collector>,
 <avaritia:neutronium_compressor>,
+<avaritia:resource:5>,
 <avaritia:resource:6>,
 <avaritia:skullfire_sword>,
 <avaritia:ultimate_stew>,
@@ -22,4 +22,4 @@ val remExtr=[
 for item in remExtr {
 mods.avaritia.ExtremeCrafting.remove(item);
 }
-mods.avaritia.ExtremeCrafting.addShaped("Luminessence",<extendedcrafting:material:7>*3,[[null,null,null,null,null,null,null,null,null],[null,<ore:shardProsperity>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:blockOsgloglas>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<cyclicmagic:glowing_chorus>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:dustPyrotheum>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<cyclicmagic:glowing_chorus>,<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:itemGrindingBallLumium>,<ore:dustGlowstone>,<ore:itemGrindingBallLumium>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:shardProsperity>,null],[null,<ore:blockOsgloglas>,<ore:dustAerotheum>,<ore:dustEnderPearl>,<ore:dustElectrumFlux>,<ore:gunpowder>,<ore:dustPetrotheum>,<ore:blockOsgloglas>,null],[null,<ore:shardProsperity>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:itemGrindingBallLumium>,<ore:dustRedstone>,<ore:itemGrindingBallLumium>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<cyclicmagic:glowing_chorus>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:dustCryotheum>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<cyclicmagic:glowing_chorus>,<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:blockOsgloglas>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:shardProsperity>,null],[null,null,null,null,null,null,null,null,null]]);
+mods.avaritia.ExtremeCrafting.addShaped("Luminessence",<extendedcrafting:material:7>*3,[[null,null,null,null,null,null,null,null,null],[null,<xat:glowing_powder>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:blockOsgloglas>,<ore:shardProsperity>,<ore:shardProsperity>,<xat:glowing_powder>,null],[null,<ore:shardProsperity>,<cyclicmagic:glowing_chorus>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:dustPyrotheum>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<cyclicmagic:glowing_chorus>,<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:itemGrindingBallLumium>,<ore:dustGlowstone>,<ore:itemGrindingBallLumium>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:shardProsperity>,null],[null,<ore:blockOsgloglas>,<ore:dustAerotheum>,<ore:dustEnderPearl>,<ore:dustElectrumFlux>,<ore:gunpowder>,<ore:dustPetrotheum>,<ore:blockOsgloglas>,null],[null,<ore:shardProsperity>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<ore:itemGrindingBallLumium>,<ore:dustRedstone>,<ore:itemGrindingBallLumium>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:shardProsperity>,null],[null,<ore:shardProsperity>,<cyclicmagic:glowing_chorus>,<tconstruct:large_plate>.withTag({Material:"lumium_plustic"}),<ore:dustCryotheum>,<tconstruct:large_plate>.withTag({Material:"refinedglowstone"}),<cyclicmagic:glowing_chorus>,<ore:shardProsperity>,null],[null,<xat:glowing_powder>,<ore:shardProsperity>,<ore:shardProsperity>,<ore:blockOsgloglas>,<ore:shardProsperity>,<ore:shardProsperity>,<xat:glowing_powder>,null],[null,null,null,null,null,null,null,null,null]]);

@@ -1,8 +1,11 @@
 val remName=[
 "actuallyadditions:recipes122",
+"agricraft:combine_nugget_quartz",
 "appliedenergistics2:network/cables/glass_fluix",
 "bigreactors:ingot_cyanite_yellorium",
 "chisel:charcoal_uncraft",
+"chisel:uncraft_blockcobalt",
+"chisel:uncraft_blockfuelcoke",
 "crafttweaker:ironbackpacks-pack_basic_decolor-modified",
 "crafttweaker:ironbackpacks-pack_diamond_storage_decolor-modified",
 "crafttweaker:ironbackpacks-pack_diamond_upgrade_decolor-modified",
@@ -39,10 +42,13 @@ val remName=[
 "minecraft:spruce_planks",
 "minecraft:stick",
 "minecraft:trapped_chest",
+"projectred-exploration:blocks/storage/silver_block_un",
+"projectred-exploration:blocks/storage/tin_block_un",
+"projectred-exploration:blocks/storage/copper_block_un",
 "randomthings:spectreplank",
 "rftools:powercell",
 "tcomplement:steelworks/charcoal",
-"tcomplement:steelworks/steel_ingot_from_block"
+"tcomplement:steelworks/steel_ingot_from_block",
 ] as string [];
 for item in remName {
 recipes.removeByRecipeName(item);
