@@ -8,7 +8,7 @@
   },
 
   "modifiers": {
-    "growTime": 0.05,
+    "growTime": 0.1,
     "dropChance": 10.0
   },
 

@@ -2980,21 +2980,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilitiesBackups-1.0.0.12.jar",
+                    "file_name": "FTBBackups-1.1.0.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2803/396/FTBUtilitiesBackups-1.0.0.12.jar",
-                    "id": "2803396",
+                    "url": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
+                    "id": "2819669",
                     "parent_id": "314904",
                     "hashes": {
-                        "sha1": "8b6ae2bfffbe5f62c1cca873d7a192eeff88d356",
-                        "md5": "595a72097facb9a214ca5fb37e566bb4"
+                        "sha1": "20ddf96ff380f1f3219305f2efc6742ab5999449",
+                        "md5": "932a6981ff08c35bbdf83bb9f7af8d17"
                     },
                     "required_dependencies": [],
-                    "size": 43120,
-                    "date_published": "2019-10-07T01:16:31.893Z"
+                    "size": 43764,
+                    "date_published": "2019-10-31T20:25:08.137Z"
                 }
             ]
         },
@@ -3013,21 +3013,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.147.jar",
+                    "file_name": "FTBLib-5.4.3.149.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2816/477/FTBLib-5.4.3.147.jar",
-                    "id": "2816477",
+                    "url": "https://edge.forgecdn.net/files/2819/859/FTBLib-5.4.3.149.jar",
+                    "id": "2819859",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "d12d80965bec924264c28667c995d878686dab77",
-                        "md5": "08ff9f9c3dd076b94bc36d57160c392f"
+                        "sha1": "017696f9b813bc9d5856d98b232eca2f1c7e77c2",
+                        "md5": "6b31d7a280e9f7608d2d4951ee54165c"
                     },
                     "required_dependencies": [],
-                    "size": 935576,
-                    "date_published": "2019-10-26T00:10:41.030Z"
+                    "size": 935390,
+                    "date_published": "2019-11-01T02:18:10.653Z"
                 }
             ]
         },
@@ -3085,24 +3085,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.8.0.228.jar",
+                    "file_name": "FTBQuests-1.8.0.234.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2817/80/FTBQuests-1.8.0.228.jar",
-                    "id": "2817080",
+                    "url": "https://edge.forgecdn.net/files/2820/121/FTBQuests-1.8.0.234.jar",
+                    "id": "2820121",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "2c3582fc70738ae5ffc5bcbe0a12a4071081569a",
-                        "md5": "0b80ec3bcb21f8fbce3b59a8c5927767"
+                        "sha1": "ef5be43f1199ab8752a2a7021fde284c6c150554",
+                        "md5": "fcfaa8031150a0afcc185ebc99f8f629"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 1063812,
-                    "date_published": "2019-10-27T00:40:54.310Z"
+                    "size": 1059528,
+                    "date_published": "2019-11-01T15:58:13.047Z"
                 }
             ]
         },
@@ -3125,24 +3125,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.111.jar",
+                    "file_name": "FTBUtilities-5.4.0.114.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2816/862/FTBUtilities-5.4.0.111.jar",
-                    "id": "2816862",
+                    "url": "https://edge.forgecdn.net/files/2819/164/FTBUtilities-5.4.0.114.jar",
+                    "id": "2819164",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "421a524cc28c7762606608feac26bbf4063fb9da",
-                        "md5": "699647fe73b6ec7753636c66fce8169e"
+                        "sha1": "91428c13bec4bd24d04429419a2c8725059f607c",
+                        "md5": "f6bcb97df636bb845775e058ad3170d8"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 437529,
-                    "date_published": "2019-10-26T17:32:23.530Z"
+                    "size": 425034,
+                    "date_published": "2019-10-30T22:13:26.197Z"
                 }
             ]
         },
@@ -3504,21 +3504,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.3.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.5.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2811/725/HammerCore-1.12.2-2.0.5.3.jar",
-                    "id": "2811725",
+                    "url": "https://edge.forgecdn.net/files/2819/479/HammerCore-1.12.2-2.0.5.5.jar",
+                    "id": "2819479",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "111a203d679fb8e78381265b47b0900d8d07414c",
-                        "md5": "4d3b60d6926cf4d11a680c0fce9cc8ff"
+                        "sha1": "b8979455a2ee9fe2429749c55977ac56ab18fb7a",
+                        "md5": "790f691fee485947c704f98018e04c52"
                     },
                     "required_dependencies": [],
-                    "size": 2315477,
-                    "date_published": "2019-10-18T14:32:40.220Z"
+                    "size": 2333768,
+                    "date_published": "2019-10-31T12:28:08.167Z"
                 }
             ]
         },
@@ -8248,23 +8248,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "YABBA-1.1.2.53.jar",
+                    "file_name": "YABBA-1.1.2.54.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2728/361/YABBA-1.1.2.53.jar",
-                    "id": "2728361",
+                    "url": "https://edge.forgecdn.net/files/2819/161/YABBA-1.1.2.54.jar",
+                    "id": "2819161",
                     "parent_id": "255177",
                     "hashes": {
-                        "sha1": "916d23ebf2a3627d0e643b017b66b52b36272048",
-                        "md5": "2fb17e3854eb47296c1f203c8c1425b2"
+                        "sha1": "a55cc1892d54b37e3a6c6c59cbb6e3b18f2d3f00",
+                        "md5": "2f8fdd44100dd43f185d82d8fa60619a"
                     },
                     "required_dependencies": [
                         "237167"
                     ],
-                    "size": 233275,
-                    "date_published": "2019-06-22T23:18:11.087Z"
+                    "size": 232794,
+                    "date_published": "2019-10-30T22:11:31.653Z"
                 }
             ]
         },
