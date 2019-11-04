@@ -10,3 +10,4 @@ ftbutilities.chunkloader.max_chunks: 100
 power: 2
 default_op_rank: true
 example.other_permission: true
+*: true

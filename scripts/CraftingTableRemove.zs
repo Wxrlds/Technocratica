@@ -14,6 +14,8 @@ val remRecipe=[
 <advgenerators:controller>,
 <advgenerators:iron_frame>,
 <advgenerators:iron_tubing>,
+<geneticsreborn:airdispersal>,
+<geneticsreborn:incubator>,
 <advgenerators:iron_wiring>,
 <advgenerators:power_io>,
 <advgenerators:pressure_valve>,

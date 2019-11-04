@@ -2223,24 +2223,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.17.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.18.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2798/325/Cyclic-1.12.2-1.19.17.jar",
-                    "id": "2798325",
+                    "url": "https://edge.forgecdn.net/files/2821/917/Cyclic-1.12.2-1.19.18.jar",
+                    "id": "2821917",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "41f850f2618179678dabab390dc5e4968d75c649",
-                        "md5": "b105e5899c8ee832aa2e1a575fc89499"
+                        "sha1": "2176a942613e773aa1c9cb4da691c4a10210a197",
+                        "md5": "fd6dd95291fbec556b85c254595c849b"
                     },
                     "required_dependencies": [],
-                    "size": 4009607,
-                    "date_published": "2019-09-29T16:22:41.690Z"
+                    "size": 3749145,
+                    "date_published": "2019-11-04T14:43:03.753Z"
                 }
             ]
         },
@@ -3085,24 +3082,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.8.0.234.jar",
+                    "file_name": "FTBQuests-1.8.0.236.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2820/121/FTBQuests-1.8.0.234.jar",
-                    "id": "2820121",
+                    "url": "https://edge.forgecdn.net/files/2821/482/FTBQuests-1.8.0.236.jar",
+                    "id": "2821482",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "ef5be43f1199ab8752a2a7021fde284c6c150554",
-                        "md5": "fcfaa8031150a0afcc185ebc99f8f629"
+                        "sha1": "f3f5ee464cc1345bc126a5ac8467d22cf63fd70a",
+                        "md5": "60602e89cddd6964600d85a92eebaaa7"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 1059528,
-                    "date_published": "2019-11-01T15:58:13.047Z"
+                    "size": 1059744,
+                    "date_published": "2019-11-03T18:10:46.390Z"
                 }
             ]
         },
@@ -3398,21 +3395,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.14.jar",
+                    "file_name": "geneticsreborn-1.12-1.15.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2805/346/geneticsreborn-1.12-1.14.jar",
-                    "id": "2805346",
+                    "url": "https://edge.forgecdn.net/files/2821/712/geneticsreborn-1.12-1.15.jar",
+                    "id": "2821712",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "2edb6f91a198f6b698f8f8932519bdf11e841d71",
-                        "md5": "eaf52c0788be888c652ac2abb20a038a"
+                        "sha1": "bfab949dfd37799148eabe0dcd76373eb7f4d008",
+                        "md5": "6865e7914f8754520cc203d7e999bcbd"
                     },
                     "required_dependencies": [],
-                    "size": 267278,
-                    "date_published": "2019-10-10T08:57:30.923Z"
+                    "size": 400331,
+                    "date_published": "2019-11-04T01:23:31.493Z"
                 }
             ]
         },
@@ -5856,7 +5853,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProgressiveBosses-1.5.3-mc1.12.x.jar",
+                    "file_name": "ProgressiveBosses-1.5.4-mc1.12.x.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -5866,16 +5863,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2799/757/ProgressiveBosses-1.5.3-mc1.12.x.jar",
-                    "id": "2799757",
+                    "url": "https://edge.forgecdn.net/files/2821/822/ProgressiveBosses-1.5.4-mc1.12.x.jar",
+                    "id": "2821822",
                     "parent_id": "289466",
                     "hashes": {
-                        "sha1": "7799d1ca70fcc1da9c4c5a29bfd065e775a3434e",
-                        "md5": "fe010a0633c7cb741c181707b9408fff"
+                        "sha1": "4fe89bb8a7eb3bf785899483710aad9c3ffbdf80",
+                        "md5": "89b1d4876a4523ca61692a874f34284c"
                     },
                     "required_dependencies": [],
-                    "size": 69701,
-                    "date_published": "2019-10-01T15:52:11.363Z"
+                    "size": 69818,
+                    "date_published": "2019-11-04T09:14:16.927Z"
                 }
             ]
         },
