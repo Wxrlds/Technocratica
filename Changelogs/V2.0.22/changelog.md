@@ -14,7 +14,7 @@ Added Quest for Inverted Bed
 
 Tweaked the Heart Canister quest
 
-Tweaked Spice of Life Carrot Edition new heart per Food. Now around 14,3625 foods for one new heart, up to 80 extra hearts
+Tweaked Spice of Life Carrot Edition new heart per Food. Now around 14,3625 foods for one new heart, up to 80 extra hearts (I'm from Europe, calm down you don't need to eat 14k foods for one heart)
 
 Rearanged the Machines; Extended Crafting; ProjectE; Draconic Evolution; Creative Items; "The beginning" Quest Chapter
 
