@@ -20,7 +20,7 @@ Rearanged the Machines; Extended Crafting; ProjectE; Draconic Evolution; Creativ
 
 Removed the Infinity Bag; Infinity Chest quest
 
-Added Juniperberrys; Tomatillo; Sky Stone; Alumite; Electrotine; Fluxed Electrum; End Steel; Graphite; Taro; Sisal; Quinoa; Mulberry; Millet; Lentil; Kohlrabi; Jute; Huckleberry; Green Grape; Flax; Elderberry; Jicama; Chickpea; Cassava; Rice; Sesame; Giga Pickle; Kale; Agave; Amaranth; Arrowroot; Coffee; Grains of Infinity Seeds to AgriCraft (Thank you [Katabug](https://github.com/katubug/AgriPlants) for creating lots of different plants)
+Added Juniperberrys; Tomatillo; Sky Stone; Alumite; Electrotine; Fluxed Electrum; End Steel; Graphite; Lotus; Taro; Sisal; Quinoa; Mulberry; Millet; Lentil; Kohlrabi; Jute; Huckleberry; Green Grape; Flax; Elderberry; Jicama; Chickpea; Cassava; Rice; Sesame; Giga Pickle; Kale; Agave; Amaranth; Arrowroot; Coffee; Grains of Infinity Seeds to AgriCraft (Thank you [Katabug](https://github.com/katubug/AgriPlants) for creating lots of different plants)
 
 Disabled the /back; /heal command
 
@@ -28,4 +28,6 @@ Tweaked Custom Main Menu (Probably not final but a beginning)
 
 Disabled Better Achievements (the Firework thing)
 
-Rearanged the order of quests
+Rearanged the order of quest chapters
+
+Scanner now detects Ruby, Sapphire and Peridot Ore
