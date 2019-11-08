@@ -18,6 +18,7 @@ val woodlandmansion=LootTables.getTable("minecraft:chests/woodland_mansion");
 val blacksmithmain=blacksmith.getPool("main");
 val deserttemplemain=deserttemple.getPool("main");
 val dungeonmain=dungeon.getPool("main");
+val dungeonpool1=dungeon.getPool("pool1");
 val end_citymain=end_city.getPool("main");
 val igloomain=igloo.getPool("main");
 val jungletemplemain=jungletemple.getPool("main");
@@ -27,6 +28,7 @@ val strongholdcorridormain=strongholdcorridor.getPool("main");
 val strongholdcrossingmain=strongholdcrossing.getPool("main");
 val strongholdlibrarymain=strongholdlibrary.getPool("main");
 val woodlandmansionmain=woodlandmansion.getPool("main");
+val woodlandmansionpool1=woodlandmansion.getPool("pool1");
 
 val remBlacksmithMain=[
 "cyclicmagic:item.book_ender",
@@ -73,7 +75,7 @@ val remDungeonMain=[
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
 "cyclicmagic:item.tool_warp_home",
-"cyclicmagic:item.tool_warp_spawn"
+"cyclicmagic:item.tool_warp_spawn",
 ] as string [];
 for item3 in remDungeonMain {
 dungeonmain.removeEntry(item3);
@@ -198,10 +200,23 @@ strongholdlibrarymain.removeEntry(item11);
 }
 
 val remWoodlandMansionMain=[
-
 ] as string [];
 for item12 in remWoodlandMansionMain {
 woodlandmansionmain.removeEntry(item12);
+}
+
+val remDungeonPool1=[
+"minecraft:bucket"
+] as string [];
+for item13 in remDungeonPool1 {
+dungeonpool1.removeEntry(item13);
+}
+
+val remWoodlandMansionPool1=[
+"minecraft:bucket"
+] as string [];
+for item14 in remWoodlandMansionPool1 {
+woodlandmansionpool1.removeEntry(item14);
 }
 
 val remPoolsEnderIO=[

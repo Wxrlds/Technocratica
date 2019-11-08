@@ -5,6 +5,18 @@ power: 1
 default_player_rank: true
 ftbutilities.claims.max_chunks: 1000
 ftbutilities.chunkloader.max_chunks: 100
+ftbutilities.back.back: false
+ftbutilities.back.cooldown: false
+ftbutilities.back.home: false
+ftbutilities.back.infinite: false
+ftbutilities.back.respawn: false
+ftbutilities.back.rtp: false
+ftbutilities.back.spawn: false
+ftbutilities.back.tpa: false
+ftbutilities.back.warmup: false
+ftbutilities.back.warp: false
+command.ftbutilities.heal: false
+ftbutilities.other_player.heal: false
 
 [admin]
 power: 2

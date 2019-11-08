@@ -49,6 +49,7 @@ val remName=[
 "rftools:powercell",
 "tcomplement:steelworks/charcoal",
 "tcomplement:steelworks/steel_ingot_from_block",
+"tconstruct:tools/table/chest/pattern"
 ] as string [];
 for item in remName {
 recipes.removeByRecipeName(item);

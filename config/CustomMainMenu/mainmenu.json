@@ -1,0 +1,175 @@
+{
+    "images":
+    {
+        "technocratica":
+        {
+            "image" : "cmm:textures/gui/technocratica.png",
+            "posX" : -200,
+            "posY" : 30,
+            "width" : 400,
+            "height" : 75,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -150,
+            "posY" : -100,
+            "width" : 100,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -150,
+            "posY" : -76,
+            "width" : 100,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "posX" : -150,
+            "posY" : -28,
+            "width" : 100,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -150,
+            "posY" : -52,
+            "width" : 100,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : -150,
+            "posY" : -4,
+            "width" : 100,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : -110,
+            "posY" : 20,
+            "width" : 20,
+            "height" : 20,			
+			"alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        "bug reports":
+		{
+            "text": "Github",
+            "posX": 44,
+            "posY": 50,
+            "width": 120,
+            "height": 20,
+            "alignment": "left_center",
+			"action": {
+				"type": "openLink",
+				"link": "https://github.com/Wxrlds/Technocratica/issues"
+			}
+        },
+        "Discord":
+		{
+            "text": "Discord",
+            "posX": 44,
+            "posY": 75,
+            "width": 120,
+            "height": 20,
+            "alignment": "left_center",
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/hsae7DJ"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -40,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 200,
+            "posY" : 100,
+            "color" : -256,
+            "alignment" : "top_center",
+            "texts" : "file:minecraft:texts/splashes.txt"
+        },        
+        "background":
+        {
+            "image" : "cmm:textures/gui/background.png"
+        }
+    }
+}

@@ -1378,39 +1378,6 @@
             ]
         },
         {
-            "pakku_id": "l95RBOB8Xir5i6K6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "bouncy-creepers"
-            },
-            "name": {
-                "curseforge": "Bouncy Creepers"
-            },
-            "id": {
-                "curseforge": "295271"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "BouncyCreepers-0.0.4.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2649/128/BouncyCreepers-0.0.4.jar",
-                    "id": "2649128",
-                    "parent_id": "295271",
-                    "hashes": {
-                        "sha1": "6562f0d5e0c080ac36e183318feac3268944042d",
-                        "md5": "02435d7e0a261761de719bea4521ec5a"
-                    },
-                    "required_dependencies": [],
-                    "size": 142396,
-                    "date_published": "2018-12-16T21:32:06.550Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "6C9OhPZ2CFONOu4k",
             "pakku_links": [
                 "CQ73fKhQqmA5AeSb",
@@ -2209,6 +2176,39 @@
             ]
         },
         {
+            "pakku_id": "1qdwLJ0Pr1Q09vVh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "custom-main-menu"
+            },
+            "name": {
+                "curseforge": "Custom Main Menu"
+            },
+            "id": {
+                "curseforge": "226406"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CustomMainMenu-MC1.12.2-2.0.9.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2638/282/CustomMainMenu-MC1.12.2-2.0.9.jar",
+                    "id": "2638282",
+                    "parent_id": "226406",
+                    "hashes": {
+                        "sha1": "7ccbcaa70cc448c2738bbc9b1ebf3d60703fe980",
+                        "md5": "0d34d658c07ebe9dd36aba17e59f8d3d"
+                    },
+                    "required_dependencies": [],
+                    "size": 177791,
+                    "date_published": "2018-11-15T15:01:56.787Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fkuGxqv5bT82Wr2s",
             "type": "MOD",
             "slug": {
@@ -2643,21 +2643,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderCore-1.12.2-0.5.72.jar",
+                    "file_name": "EnderCore-1.12.2-0.5.73.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/854/EnderCore-1.12.2-0.5.72.jar",
-                    "id": "2809854",
+                    "url": "https://edge.forgecdn.net/files/2822/401/EnderCore-1.12.2-0.5.73.jar",
+                    "id": "2822401",
                     "parent_id": "231868",
                     "hashes": {
-                        "sha1": "2a69358f6f96b290ad4866601ee224930df9ebfc",
-                        "md5": "b92619ccc41f22c5e5c280e3fae870f9"
+                        "sha1": "81bc2afe4bf0495c2a1c2588e3db769bc66e75b2",
+                        "md5": "619a6d82109069d4326ba5fabf48d4fa"
                     },
                     "required_dependencies": [],
-                    "size": 642655,
-                    "date_published": "2019-10-15T13:53:31.087Z"
+                    "size": 642654,
+                    "date_published": "2019-11-05T11:02:04.947Z"
                 }
             ]
         },
@@ -3010,21 +3010,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.3.149.jar",
+                    "file_name": "FTBLib-5.4.4.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2819/859/FTBLib-5.4.3.149.jar",
-                    "id": "2819859",
+                    "url": "https://edge.forgecdn.net/files/2823/531/FTBLib-5.4.4.4.jar",
+                    "id": "2823531",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "017696f9b813bc9d5856d98b232eca2f1c7e77c2",
-                        "md5": "6b31d7a280e9f7608d2d4951ee54165c"
+                        "sha1": "273596dba2683c680f9e12b5eeee64e7fa5b185a",
+                        "md5": "c5af67eb435e39b9e2c647b91965fa1a"
                     },
                     "required_dependencies": [],
-                    "size": 935390,
-                    "date_published": "2019-11-01T02:18:10.653Z"
+                    "size": 934355,
+                    "date_published": "2019-11-07T17:48:30.210Z"
                 }
             ]
         },
@@ -3122,24 +3122,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.114.jar",
+                    "file_name": "FTBUtilities-5.4.0.120.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2819/164/FTBUtilities-5.4.0.114.jar",
-                    "id": "2819164",
+                    "url": "https://edge.forgecdn.net/files/2823/433/FTBUtilities-5.4.0.120.jar",
+                    "id": "2823433",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "91428c13bec4bd24d04429419a2c8725059f607c",
-                        "md5": "f6bcb97df636bb845775e058ad3170d8"
+                        "sha1": "218b273873b05e61d3608eea8d59ac296a338ddd",
+                        "md5": "29dc1ec32b7c64507d9a1094459c7771"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 425034,
-                    "date_published": "2019-10-30T22:13:26.197Z"
+                    "size": 423933,
+                    "date_published": "2019-11-07T13:35:18.263Z"
                 }
             ]
         },
@@ -3395,21 +3395,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.15.jar",
+                    "file_name": "geneticsreborn-1.12-1.19.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2821/712/geneticsreborn-1.12-1.15.jar",
-                    "id": "2821712",
+                    "url": "https://edge.forgecdn.net/files/2823/334/geneticsreborn-1.12-1.19.jar",
+                    "id": "2823334",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "bfab949dfd37799148eabe0dcd76373eb7f4d008",
-                        "md5": "6865e7914f8754520cc203d7e999bcbd"
+                        "sha1": "a319f484ec91c3b953ada69cce7b63e50565e058",
+                        "md5": "b4803bbe9990e14cd56b7accbc7af02d"
                     },
                     "required_dependencies": [],
-                    "size": 400331,
-                    "date_published": "2019-11-04T01:23:31.493Z"
+                    "size": 402162,
+                    "date_published": "2019-11-07T05:11:43.347Z"
                 }
             ]
         },
@@ -4206,26 +4206,29 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jehc-1.12.2-1.6.4.jar",
+                    "file_name": "just-enough-harvestcraft-1.12.2-1.6.6.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2723/786/jehc-1.12.2-1.6.4.jar",
-                    "id": "2723786",
+                    "url": "https://edge.forgecdn.net/files/2823/958/just-enough-harvestcraft-1.12.2-1.6.6.jar",
+                    "id": "2823958",
                     "parent_id": "267939",
                     "hashes": {
-                        "sha1": "5c90100dcef59991f6816582c63fbf265eba23d2",
-                        "md5": "253ed00b6569c1ee71883e28da628434"
+                        "sha1": "3c619ad74d3ec1074d6b7aa2cebb0d3d8159ef70",
+                        "md5": "754680424362407e512ab46d032a7e39"
                     },
                     "required_dependencies": [
                         "238222",
                         "221857"
                     ],
-                    "size": 35964,
-                    "date_published": "2019-06-12T15:06:40.057Z"
+                    "size": 34966,
+                    "date_published": "2019-11-08T12:47:07.610Z"
                 }
             ]
         },
@@ -5628,39 +5631,6 @@
                     "required_dependencies": [],
                     "size": 4907780,
                     "date_published": "2019-08-27T01:52:20.720Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jDXLzhxIBdryEqHk",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "pams-simply-strawberries"
-            },
-            "name": {
-                "curseforge": "Pam's Simply Strawberries"
-            },
-            "id": {
-                "curseforge": "295871"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Pam's Simply Strawberries 1.12.2 - 1.0.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2572/121/Pam's Simply Strawberries 1.12.2 - 1.0.0.jar",
-                    "id": "2572121",
-                    "parent_id": "295871",
-                    "hashes": {
-                        "sha1": "ecb26ff5ef5098eb947f77adf6f817c1497013f5",
-                        "md5": "5ce8d04fa8ae94cf896d07a591b35454"
-                    },
-                    "required_dependencies": [],
-                    "size": 46727,
-                    "date_published": "2018-06-12T20:13:12.163Z"
                 }
             ]
         },
