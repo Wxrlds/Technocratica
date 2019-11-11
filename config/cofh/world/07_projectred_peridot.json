@@ -1,0 +1,24 @@
+{
+	"populate": {
+		"peridot": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {"name": "projectred-exploration:ore", "metadata": 2},
+				"material": "stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 15,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

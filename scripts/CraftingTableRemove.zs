@@ -366,7 +366,6 @@ val remRecipe=[
 <thermalfoundation:material:293>,
 <thermalfoundation:material:294>,
 <thermalfoundation:material:295>,
-<thermalfoundation:storage_resource>,
 <torchmaster:feral_flare_lantern>,
 <torchmaster:frozen_pearl>,
 <wct:wct>,

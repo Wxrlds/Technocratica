@@ -3122,24 +3122,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.120.jar",
+                    "file_name": "FTBUtilities-5.4.0.121.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2823/433/FTBUtilities-5.4.0.120.jar",
-                    "id": "2823433",
+                    "url": "https://edge.forgecdn.net/files/2825/576/FTBUtilities-5.4.0.121.jar",
+                    "id": "2825576",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "218b273873b05e61d3608eea8d59ac296a338ddd",
-                        "md5": "29dc1ec32b7c64507d9a1094459c7771"
+                        "sha1": "21b9370a03d342691bd7828a2081741f3a89c939",
+                        "md5": "e973ab3952fcc8b7cb7190f15e96f70d"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 423933,
-                    "date_published": "2019-11-07T13:35:18.263Z"
+                    "size": 423935,
+                    "date_published": "2019-11-11T00:08:41.420Z"
                 }
             ]
         },
@@ -3395,21 +3395,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.19.jar",
+                    "file_name": "geneticsreborn-1.12-1.20.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2823/334/geneticsreborn-1.12-1.19.jar",
-                    "id": "2823334",
+                    "url": "https://edge.forgecdn.net/files/2824/748/geneticsreborn-1.12-1.20.jar",
+                    "id": "2824748",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "a319f484ec91c3b953ada69cce7b63e50565e058",
-                        "md5": "b4803bbe9990e14cd56b7accbc7af02d"
+                        "sha1": "58144140d743d8cd5f82d1ae1aa7aa635ba7d528",
+                        "md5": "f0c30e4e766cf78d2e8aec43fc008188"
                     },
                     "required_dependencies": [],
-                    "size": 402162,
-                    "date_published": "2019-11-07T05:11:43.347Z"
+                    "size": 405213,
+                    "date_published": "2019-11-09T18:44:46.593Z"
                 }
             ]
         },
@@ -4247,21 +4247,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jei_1.12.2-4.15.0.291.jar",
+                    "file_name": "jei_1.12.2-4.15.0.292.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2803/400/jei_1.12.2-4.15.0.291.jar",
-                    "id": "2803400",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2822/849/jei_1.12.2-4.15.0.292.jar",
+                    "id": "2822849",
                     "parent_id": "238222",
                     "hashes": {
-                        "sha1": "b7ce5f00e9709e08e81c597dc2d7336f58b7fe8e",
-                        "md5": "cfdbfecefb1bdc5a3fbbcecbfecb0545"
+                        "sha1": "d7215dddae13bf062b9455003d9541f608ac6ae4",
+                        "md5": "791ac0fd9aaa681c3d38094c965b9657"
                     },
                     "required_dependencies": [],
-                    "size": 651473,
-                    "date_published": "2019-10-07T01:20:32.567Z"
+                    "size": 651472,
+                    "date_published": "2019-11-06T05:02:40.177Z"
                 }
             ]
         },
