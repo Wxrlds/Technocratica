@@ -22,26 +22,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DankNull-1.12.2-1.7.88.jar",
+                    "file_name": "DankNull-1.12.2-1.7.89.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2830/262/DankNull-1.12.2-1.7.88.jar",
-                    "id": "2830262",
+                    "url": "https://edge.forgecdn.net/files/2831/353/DankNull-1.12.2-1.7.89.jar",
+                    "id": "2831353",
                     "parent_id": "272514",
                     "hashes": {
-                        "sha1": "469af06bf06af37f6b93ec9edf01a07be9f5cee8",
-                        "md5": "ea2b29565083f0ce8a15c0fa1fa584cb"
+                        "sha1": "016b108de60f6ad553556df6e7ac6776b9384486",
+                        "md5": "cb828ea0c806b103a7fdbb55cfaf42b3"
                     },
                     "required_dependencies": [
                         "255232"
                     ],
-                    "size": 337211,
-                    "date_published": "2019-11-21T03:43:32.383Z"
+                    "size": 337396,
+                    "date_published": "2019-11-23T15:25:48.730Z"
                 }
             ]
         },
@@ -2256,7 +2253,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CyclopsCore-1.12.2-1.5.1.jar",
+                    "file_name": "CyclopsCore-1.12.2-1.6.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2264,16 +2261,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2811/241/CyclopsCore-1.12.2-1.5.1.jar",
-                    "id": "2811241",
+                    "url": "https://edge.forgecdn.net/files/2831/241/CyclopsCore-1.12.2-1.6.0.jar",
+                    "id": "2831241",
                     "parent_id": "232758",
                     "hashes": {
-                        "sha1": "9ebcbfee0584b7796f122134afac83f704e90f8f",
-                        "md5": "2f2b0de746490c49ba66c5428ed8d098"
+                        "sha1": "6c49b5a3503de2646709ee406bfa279f59f39620",
+                        "md5": "5aac4225b439bf6b25e128dd64f2879b"
                     },
                     "required_dependencies": [],
-                    "size": 1056606,
-                    "date_published": "2019-10-17T18:00:50.840Z"
+                    "size": 1060822,
+                    "date_published": "2019-11-23T10:24:09.957Z"
                 }
             ]
         },
@@ -2722,7 +2719,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EverlastingAbilities-1.12.2-1.5.1.jar",
+                    "file_name": "EverlastingAbilities-1.12.2-1.5.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2730,18 +2727,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2729/138/EverlastingAbilities-1.12.2-1.5.1.jar",
-                    "id": "2729138",
+                    "url": "https://edge.forgecdn.net/files/2831/248/EverlastingAbilities-1.12.2-1.5.2.jar",
+                    "id": "2831248",
                     "parent_id": "248353",
                     "hashes": {
-                        "sha1": "3ed345ee209ffd26224afea27c7676ab033a10b8",
-                        "md5": "ce3130d57f8656e2c8412e36e9dd0a36"
+                        "sha1": "3f8b68125260507363b6b641f1fb7f3a37c24b26",
+                        "md5": "31b8316db80a953b7d0ed055ffb989e3"
                     },
                     "required_dependencies": [
                         "232758"
                     ],
-                    "size": 170952,
-                    "date_published": "2019-06-24T15:09:35.647Z"
+                    "size": 171043,
+                    "date_published": "2019-11-23T10:28:27.243Z"
                 }
             ]
         },
@@ -6496,7 +6493,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.19.1.1.jar",
+                    "file_name": "randompatches-1.12.2-1.20.1.0.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -6506,16 +6503,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2803/621/randompatches-1.12.2-1.19.1.1.jar",
-                    "id": "2803621",
+                    "url": "https://edge.forgecdn.net/files/2831/330/randompatches-1.12.2-1.20.1.0.jar",
+                    "id": "2831330",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "c8727ecbeca3d08b4f576c4491ccecad42cef5b1",
-                        "md5": "59b11ec8eba38d5416545786a345c3b2"
+                        "sha1": "4e1a6eaabea58dcd452de0d41e1441f64e4f589f",
+                        "md5": "b5e155831a47803e5887b39914240c84"
                     },
                     "required_dependencies": [],
-                    "size": 270415,
-                    "date_published": "2019-10-07T13:51:57.227Z"
+                    "size": 282154,
+                    "date_published": "2019-11-23T14:04:16.557Z"
                 }
             ]
         },
