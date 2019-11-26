@@ -6,3 +6,6 @@ Updated Mods:
 
 CC:Tweaked
 
+ConnectedTexturesMod
+
+FTB Library
