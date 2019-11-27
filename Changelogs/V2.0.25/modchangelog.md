@@ -8,4 +8,6 @@ CC:Tweaked
 
 ConnectedTexturesMod
 
+FTB Utilities
+
 FTB Library
