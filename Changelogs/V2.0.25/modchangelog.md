@@ -11,3 +11,5 @@ ConnectedTexturesMod
 FTB Utilities
 
 FTB Library
+
+Project Intelligence
