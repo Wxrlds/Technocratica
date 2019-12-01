@@ -1,3 +1,4 @@
 recipes.addShapedMirrored("AA_Chiseled_Block_Of_Black_Quart",<actuallyadditions:block_misc:1>*2,[[null,null,null],[null,null,<actuallyadditions:block_quartz_slab>],[null,null,<actuallyadditions:block_quartz_slab>]]);
 recipes.addShapedMirrored("AA_Pillar_Of_Black_Quartz",<actuallyadditions:block_misc>*2,[[null,null,null],[null,null,<actuallyadditions:block_misc:2>],[null,null,<actuallyadditions:block_misc:2>]]);
 recipes.addShapedMirrored("Minecraft_Stick",<minecraft:stick>,[[<ore:plankWood>,null],[<ore:plankWood>,null]]);
+recipes.addShapedMirrored("ThermalFound_Hardened_Glass",<thermalfoundation:glass:3>, [[<ore:dustLead>, <ore:dustObsidian>],[<ore:dustObsidian>, <ore:dustPyrotheum>]]);

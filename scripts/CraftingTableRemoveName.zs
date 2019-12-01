@@ -1,6 +1,9 @@
 val remName=[
 "actuallyadditions:recipes122",
+"advgenerators:recipe37",
 "agricraft:combine_nugget_quartz",
+"agricraft:combine_nugget_diamond",
+"agricraft:combine_nugget_emerald",
 "appliedenergistics2:network/cables/glass_fluix",
 "bigreactors:ingot_cyanite_yellorium",
 "chisel:charcoal_uncraft",
@@ -13,6 +16,7 @@ val remName=[
 "crafttweaker:ironbackpacks-pack_gold_upgrade_decolor-modified",
 "crafttweaker:ironbackpacks-pack_iron_storage_decolor-modified",
 "crafttweaker:ironbackpacks-pack_iron_upgrade_decolor-modified",
+"extendedcrafting:diamond_nugget_to",
 "extrautils2:generator_generator_slime",
 "extrautils2:ironwood_log_to_planks_burnt",
 "extrautils2:ironwood_log_to_planks_raw",
@@ -42,13 +46,18 @@ val remName=[
 "minecraft:spruce_planks",
 "minecraft:stick",
 "minecraft:trapped_chest",
+"mysticalagriculture:diamond",
+"mysticalagriculture:emerald",
 "projectred-exploration:blocks/storage/silver_block_un",
 "projectred-exploration:blocks/storage/tin_block_un",
 "projectred-exploration:blocks/storage/copper_block_un",
 "randomthings:spectreplank",
 "rftools:powercell",
+"thermalfoundation:diamond",
+"thermalfoundation:emerald",
 "tcomplement:steelworks/charcoal",
 "tcomplement:steelworks/steel_ingot_from_block",
+"tcomplement:steelworks/steel_nugget",
 "tconstruct:tools/table/chest/pattern"
 ] as string [];
 for item in remName {

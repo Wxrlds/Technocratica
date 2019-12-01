@@ -27,7 +27,7 @@
         "max": 1,
         "chance": 0.8,
         "required": true,
-        "item": "extendedcrafting:material:129",
+        "item": "extendedcrafting:material",
         "meta": 129,
         "tags": "",
         "ignoreMeta": false,

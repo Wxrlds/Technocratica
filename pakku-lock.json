@@ -1502,21 +1502,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc-tweaked-1.12.2-1.85.0.jar",
+                    "file_name": "cc-tweaked-1.12.2-1.85.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2801/674/cc-tweaked-1.12.2-1.85.0.jar",
-                    "id": "2801674",
+                    "url": "https://edge.forgecdn.net/files/2834/382/cc-tweaked-1.12.2-1.85.2.jar",
+                    "id": "2834382",
                     "parent_id": "282001",
                     "hashes": {
-                        "sha1": "40c514955582ef8bb8569ec556c311daed46f675",
-                        "md5": "ec814e0193c8893e2a68be29f9b53d69"
+                        "sha1": "984b07762d8332a43c71b18ad99854b411c9f1d2",
+                        "md5": "8eaa04becb4bda930b25d3658cd3fcda"
                     },
                     "required_dependencies": [],
-                    "size": 1724355,
-                    "date_published": "2019-10-04T18:53:36.330Z"
+                    "size": 1727729,
+                    "date_published": "2019-11-29T20:21:50.710Z"
                 }
             ]
         },
@@ -1983,7 +1983,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CTM-MC1.12.2-1.0.0.29.jar",
+                    "file_name": "CTM-MC1.12.2-1.0.1.30.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -1991,16 +1991,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/915/CTM-MC1.12.2-1.0.0.29.jar",
-                    "id": "2809915",
+                    "url": "https://edge.forgecdn.net/files/2832/564/CTM-MC1.12.2-1.0.1.30.jar",
+                    "id": "2832564",
                     "parent_id": "267602",
                     "hashes": {
-                        "sha1": "4ff104329fee4b1ab40464b3ec654e1be3456fab",
-                        "md5": "fb551e41aa6ae3ae76cc247e810e2a80"
+                        "sha1": "d9133571636ec2c4c590dd69ac41ef813c63a8ab",
+                        "md5": "e8299f25d1437b1e7644d379d45a8a42"
                     },
                     "required_dependencies": [],
-                    "size": 197149,
-                    "date_published": "2019-10-15T16:37:49.343Z"
+                    "size": 199047,
+                    "date_published": "2019-11-26T00:07:07.293Z"
                 }
             ]
         },
@@ -2309,6 +2309,39 @@
                     ],
                     "size": 426515,
                     "date_published": "2019-10-21T06:25:00.997Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "xn9K094p1WOfWTnZ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "darknesslib"
+            },
+            "name": {
+                "curseforge": "DarknessLib"
+            },
+            "id": {
+                "curseforge": "349174"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "DarknessLib-1.12.2-1.0.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2831/423/DarknessLib-1.12.2-1.0.0.jar",
+                    "id": "2831423",
+                    "parent_id": "349174",
+                    "hashes": {
+                        "sha1": "9e50838dfb59b3c96e489311d3815f15e1e3baeb",
+                        "md5": "02276b42895d9703f6cf1bc57ae20c73"
+                    },
+                    "required_dependencies": [],
+                    "size": 49908,
+                    "date_published": "2019-11-23T17:35:59.923Z"
                 }
             ]
         },
@@ -3010,21 +3043,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.4.4.jar",
+                    "file_name": "FTBLib-5.4.4.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2823/531/FTBLib-5.4.4.4.jar",
-                    "id": "2823531",
+                    "url": "https://edge.forgecdn.net/files/2832/410/FTBLib-5.4.4.5.jar",
+                    "id": "2832410",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "273596dba2683c680f9e12b5eeee64e7fa5b185a",
-                        "md5": "c5af67eb435e39b9e2c647b91965fa1a"
+                        "sha1": "739da870868234cd4d1edd8f65089e6c68633711",
+                        "md5": "97f3523da82f7a935ee11c8dc858a6ff"
                     },
                     "required_dependencies": [],
-                    "size": 934355,
-                    "date_published": "2019-11-07T17:48:30.210Z"
+                    "size": 934358,
+                    "date_published": "2019-11-25T17:33:40.287Z"
                 }
             ]
         },
@@ -3122,24 +3155,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.122.jar",
+                    "file_name": "FTBUtilities-5.4.0.123.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2826/822/FTBUtilities-5.4.0.122.jar",
-                    "id": "2826822",
+                    "url": "https://edge.forgecdn.net/files/2832/763/FTBUtilities-5.4.0.123.jar",
+                    "id": "2832763",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "f967c61b1029773c948b2205c17c8b2fac02d202",
-                        "md5": "d5ff2bf48155c210bef04fb6316d6ee9"
+                        "sha1": "37829416026ed08a5aba73890ed30e4527b33778",
+                        "md5": "6e0217d1b3522c801b095543a0026750"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 423771,
-                    "date_published": "2019-11-13T17:00:58.820Z"
+                    "size": 424055,
+                    "date_published": "2019-11-26T14:35:16.297Z"
                 }
             ]
         },
@@ -3324,21 +3357,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "foamfix-0.10.8-1.12.2.jar",
+                    "file_name": "foamfix-0.10.9-1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/906/foamfix-0.10.8-1.12.2.jar",
-                    "id": "2809906",
+                    "url": "https://edge.forgecdn.net/files/2831/558/foamfix-0.10.9-1.12.2.jar",
+                    "id": "2831558",
                     "parent_id": "278494",
                     "hashes": {
-                        "sha1": "1ee4134a48f84d8a0122bc4efc18a49620b588ab",
-                        "md5": "a5f21c6feac6732a6fce381198054662"
+                        "sha1": "4cb447de218d5e68900bcfb7aa91c46d7b749f60",
+                        "md5": "6961a6c6bc450dde9eeaf4f98e7f7487"
                     },
                     "required_dependencies": [],
-                    "size": 201515,
-                    "date_published": "2019-10-15T16:10:37.710Z"
+                    "size": 201719,
+                    "date_published": "2019-11-23T21:46:27.690Z"
                 }
             ]
         },
@@ -3455,6 +3491,9 @@
         },
         {
             "pakku_id": "0JGjXT3PftvMnIex",
+            "pakku_links": [
+                "xn9K094p1WOfWTnZ"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "grue"
@@ -3468,21 +3507,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Grue-1.12.2-1.5.0.jar",
+                    "file_name": "Grue-1.12.2-1.6.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2794/61/Grue-1.12.2-1.5.0.jar",
-                    "id": "2794061",
+                    "url": "https://edge.forgecdn.net/files/2831/576/Grue-1.12.2-1.6.0.jar",
+                    "id": "2831576",
                     "parent_id": "235133",
                     "hashes": {
-                        "sha1": "275cd0913a99beeb2ba958c38aec3d70bffcfbec",
-                        "md5": "89a9d71aa1e353602f1549ffb9270f96"
+                        "sha1": "d6a3caa5df555869ad19e3c87c502c5834835ab3",
+                        "md5": "d8a09bec0414e8b12636cfbe30ad08e1"
                     },
-                    "required_dependencies": [],
-                    "size": 576059,
-                    "date_published": "2019-09-24T17:07:36.583Z"
+                    "required_dependencies": [
+                        "349174"
+                    ],
+                    "size": 561908,
+                    "date_published": "2019-11-23T22:15:37.280Z"
                 }
             ]
         },
@@ -5866,25 +5910,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectIntelligence-1.12.2-1.0.8.25-universal.jar",
+                    "file_name": "ProjectIntelligence-1.12.2-1.0.9.28-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2762/334/ProjectIntelligence-1.12.2-1.0.8.25-universal.jar",
-                    "id": "2762334",
+                    "url": "https://edge.forgecdn.net/files/2833/640/ProjectIntelligence-1.12.2-1.0.9.28-universal.jar",
+                    "id": "2833640",
                     "parent_id": "306028",
                     "hashes": {
-                        "sha1": "22b82fae1daec2366b20605c6cefcd7ea8f5c23c",
-                        "md5": "377855d29e1feabc16e201b112487cee"
+                        "sha1": "d6424c4111913a48f9c983199d07140136a12ee1",
+                        "md5": "96657f132afd609f2a92cf4994698e64"
                     },
                     "required_dependencies": [
                         "242818",
                         "270789",
                         "231382"
                     ],
-                    "size": 473921,
-                    "date_published": "2019-08-15T06:54:40.853Z"
+                    "size": 473948,
+                    "date_published": "2019-11-28T03:24:06.487Z"
                 }
             ]
         },

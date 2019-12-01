@@ -1,5 +1,12 @@
 {
   "name": "Technocratica",
-  "version": "2.0.24a",
-  "overrides": ["config", "resources", "scripts", "icon.png", "local"]
+  "version": "2.0.25",
+  "overrides": [
+    "config",
+    "resources",
+    "scripts",
+    "icon.png",
+    "local",
+    "structures"
+  ]
 }
