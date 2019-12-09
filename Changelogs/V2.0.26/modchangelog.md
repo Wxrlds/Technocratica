@@ -9,3 +9,11 @@ Mekanism Tools
 FTB Utilities
 
 Trinkets and Baubles
+
+CraftTweaker
+
+Bookshelf
+
+Hammer (Lib) Core
+
+LootTweaker
