@@ -17,3 +17,10 @@ Bookshelf
 Hammer (Lib) Core
 
 LootTweaker
+
+
+Added Mods:
+
+Hunting Dimension
+
+Broken Wings
