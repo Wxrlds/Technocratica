@@ -25,6 +25,10 @@ Hunting Dimension
 
 Broken Wings
 
+Schematica
+
+LunatriusCore
+
 
 **Removed Mods:**
 
