@@ -1,4 +1,4 @@
-Updated Mods:
+**Updated Mods:**
 
 Mekanism
 
@@ -19,7 +19,8 @@ Hammer (Lib) Core
 LootTweaker
 
 
-Added Mods:
+
+**Added Mods:**
 
 Hunting Dimension
 
