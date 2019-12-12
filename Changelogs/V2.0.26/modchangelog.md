@@ -19,9 +19,13 @@ Hammer (Lib) Core
 LootTweaker
 
 
-
 **Added Mods:**
 
 Hunting Dimension
 
 Broken Wings
+
+
+**Removed Mods:**
+
+Rex Additional Structures
