@@ -1,0 +1,72 @@
+{
+  "path": "mod_contenttweaker/plants/karat_seed_redstone_block_plant.json",
+  "enabled": true,
+  "id": "karatgarden:carrot_base_04_ext",
+  "plant_name": "12 Karat Carrot Plus",
+  "seed_name": "12 Karat Carrot Seed Plus",
+  "seed_items": [
+    {
+      "item": "contenttweaker:karat_seed_redstone_block",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "12 Karat Carrot Plus"
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": true,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.1,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 5,
+        "chance": 0.9,
+        "required": true,
+        "item": "karatgarden:item_carrot_04_ext",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "redstone_block_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "hash",
+    "seed_texture": "contenttweaker:items/karat_seed_redstone_block",
+    "plant_textures": [
+      "karatgarden:blocks/blockcarrotbase_stage_0",
+      "karatgarden:blocks/blockcarrotbase_stage_1",
+      "karatgarden:blocks/blockcarrotbase_stage_2",
+      "karatgarden:blocks/blockcarrotbase_stage_3",
+      "karatgarden:blocks/blockcarrotbase_stage_4",
+      "karatgarden:blocks/blockcarrotbase_stage_5",
+      "karatgarden:blocks/blockcarrotbase_stage_6",
+      "karatgarden:blocks/blockcarrot_04_stage_7"
+    ]
+  }
+}

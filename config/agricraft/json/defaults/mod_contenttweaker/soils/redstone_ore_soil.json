@@ -1,0 +1,18 @@
+{
+  "path": "mod_contenttweaker/soils/redstone_ore_soil.json",
+  "enabled": true,
+  "id": "redstone_ore_soil",
+  "name": "Redstone Ore",
+  "varients": [
+    {
+      "item": "minecraft:redstone_ore",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

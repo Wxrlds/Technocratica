@@ -382,44 +382,6 @@
             ]
         },
         {
-            "pakku_id": "rTe0ziVffkiil5Nm",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "additional-structures"
-            },
-            "name": {
-                "curseforge": "Additional Structures"
-            },
-            "id": {
-                "curseforge": "297680"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Rex's-Additional-Structures-1.12.x-(v.2.3.1).jar",
-                    "mc_versions": [
-                        "1.12.1",
-                        "1.12",
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2810/589/Rex's-Additional-Structures-1.12.x-(v.2.3.1).jar",
-                    "id": "2810589",
-                    "parent_id": "297680",
-                    "hashes": {
-                        "sha1": "7345e07cf2fdee3fd5578647824aa5b7468ccb93",
-                        "md5": "00a9a200be155591bc4974dbbf34c1ac"
-                    },
-                    "required_dependencies": [],
-                    "size": 818178,
-                    "date_published": "2019-10-16T17:48:14.377Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "C0d1CWz0fyFL9zR5",
             "type": "MOD",
             "slug": {
@@ -1228,43 +1190,6 @@
             ]
         },
         {
-            "pakku_id": "wOTb0CdDoCJh0w1t",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "block-drops-jei-addon"
-            },
-            "name": {
-                "curseforge": "Block Drops (JEI Addon)"
-            },
-            "id": {
-                "curseforge": "244181"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "blockdrops-1.12.2-1.4.0.jar",
-                    "mc_versions": [
-                        "1.12.1",
-                        "1.12",
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2509/46/blockdrops-1.12.2-1.4.0.jar",
-                    "id": "2509046",
-                    "parent_id": "244181",
-                    "hashes": {
-                        "sha1": "b47558862e4bb042ec8e851334b564b04388d35e",
-                        "md5": "ab28c4a2f73286da49f224e7b3ffd696"
-                    },
-                    "required_dependencies": [
-                        "238222"
-                    ],
-                    "size": 31143,
-                    "date_published": "2017-12-12T18:21:16.543Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "yGumvbpXf0xw1LUl",
             "type": "MOD",
             "slug": {
@@ -1314,24 +1239,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Bookshelf-1.12.2-2.3.589.jar",
+                    "file_name": "Bookshelf-1.12.2-2.3.590.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/2803/161/Bookshelf-1.12.2-2.3.589.jar",
-                    "id": "2803161",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2836/960/Bookshelf-1.12.2-2.3.590.jar",
+                    "id": "2836960",
                     "parent_id": "228525",
                     "hashes": {
-                        "sha1": "8cd55198c1edfb866798eff2525567d457803399",
-                        "md5": "6f5524ccfd91a2d7240fce6ab28edd1b"
+                        "sha1": "83a1864dd78f48102609849dd36866d6cf32b907",
+                        "md5": "85a44d3299449545e435f5ec55fc914b"
                     },
                     "required_dependencies": [],
-                    "size": 266629,
-                    "date_published": "2019-10-06T18:09:02.570Z"
+                    "size": 266636,
+                    "date_published": "2019-12-05T08:56:35.050Z"
                 }
             ]
         },
@@ -1446,6 +1371,42 @@
                     ],
                     "size": 24289,
                     "date_published": "2018-12-28T17:35:37.183Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NC2TzwcPFBo38id0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "broken-wings"
+            },
+            "name": {
+                "curseforge": "Broken Wings"
+            },
+            "id": {
+                "curseforge": "293704"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "brokenwings-2.1.1.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2809/46/brokenwings-2.1.1.jar",
+                    "id": "2809046",
+                    "parent_id": "293704",
+                    "hashes": {
+                        "sha1": "8f31c62bfef9ec4788715488aa8ccd4201013cd1",
+                        "md5": "c1d527584feb480195e4f31a807741c2"
+                    },
+                    "required_dependencies": [],
+                    "size": 32256,
+                    "date_published": "2019-10-14T06:49:07.563Z"
                 }
             ]
         },
@@ -2121,21 +2082,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.19.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2724/129/CraftTweaker2-1.12-4.1.19.jar",
-                    "id": "2724129",
+                    "url": "https://edge.forgecdn.net/files/2838/90/CraftTweaker2-1.12-4.1.20.jar",
+                    "id": "2838090",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "3f506c344ca17a6ef244d98ca1a0d921715f8c6d",
-                        "md5": "513ae1c980c23ef7be081ad151618320"
+                        "sha1": "5f0699d9dc850ce29fae8329e4b7089a88cd1fb0",
+                        "md5": "521297c5e2459dd232a72dacffa45a0b"
                     },
                     "required_dependencies": [],
-                    "size": 1368377,
-                    "date_published": "2019-06-13T10:50:46.937Z"
+                    "size": 1363036,
+                    "date_published": "2019-12-07T21:53:06.720Z"
                 }
             ]
         },
@@ -3155,24 +3116,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBUtilities-5.4.0.123.jar",
+                    "file_name": "FTBUtilities-5.4.0.124.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2832/763/FTBUtilities-5.4.0.123.jar",
-                    "id": "2832763",
+                    "url": "https://edge.forgecdn.net/files/2835/289/FTBUtilities-5.4.0.124.jar",
+                    "id": "2835289",
                     "parent_id": "237102",
                     "hashes": {
-                        "sha1": "37829416026ed08a5aba73890ed30e4527b33778",
-                        "md5": "6e0217d1b3522c801b095543a0026750"
+                        "sha1": "e8111cdd82ab2d9ebde8030b80569318c0683521",
+                        "md5": "bccfb63dcd1a3ea196a748f1138ab758"
                     },
                     "required_dependencies": [
                         "314904",
                         "237167"
                     ],
-                    "size": 424055,
-                    "date_published": "2019-11-26T14:35:16.297Z"
+                    "size": 424109,
+                    "date_published": "2019-12-01T13:00:13Z"
                 }
             ]
         },
@@ -3245,6 +3206,9 @@
         },
         {
             "pakku_id": "pBRJRoNtIAomYWw3",
+            "pakku_links": [
+                "IiM32SrI1OPaUTpw"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "fastworkbench"
@@ -3258,21 +3222,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FastWorkbench-1.12.2-1.7.2.jar",
+                    "file_name": "FastWorkbench-1.12.2-1.7.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2716/379/FastWorkbench-1.12.2-1.7.2.jar",
-                    "id": "2716379",
+                    "url": "https://edge.forgecdn.net/files/2838/777/FastWorkbench-1.12.2-1.7.3.jar",
+                    "id": "2838777",
                     "parent_id": "288885",
                     "hashes": {
-                        "sha1": "db57f6287b36810d86237a4e8f5a10a10f6b9aaa",
-                        "md5": "2a0e8335926fd413521d2432c91842a9"
+                        "sha1": "e40e850c8fb065e805538c8bf275d64b6cd5d6a7",
+                        "md5": "b55a31e4193204572acf05f78e0deedc"
                     },
-                    "required_dependencies": [],
-                    "size": 26322,
-                    "date_published": "2019-05-27T08:29:59.937Z"
+                    "required_dependencies": [
+                        "283644"
+                    ],
+                    "size": 26515,
+                    "date_published": "2019-12-09T00:14:14.563Z"
                 }
             ]
         },
@@ -3545,21 +3511,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.5.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.5.7.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2819/479/HammerCore-1.12.2-2.0.5.5.jar",
-                    "id": "2819479",
+                    "url": "https://edge.forgecdn.net/files/2841/315/HammerCore-1.12.2-2.0.5.7.jar",
+                    "id": "2841315",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "b8979455a2ee9fe2429749c55977ac56ab18fb7a",
-                        "md5": "790f691fee485947c704f98018e04c52"
+                        "sha1": "1cbbec65bf69246d0d6f58be95b3e063997e05b6",
+                        "md5": "2c45b7630d0a48a94342ea62e22ff5e6"
                     },
                     "required_dependencies": [],
-                    "size": 2333768,
-                    "date_published": "2019-10-31T12:28:08.167Z"
+                    "size": 2326611,
+                    "date_published": "2019-12-11T23:29:38.627Z"
                 }
             ]
         },
@@ -3635,6 +3601,44 @@
                     ],
                     "size": 314009,
                     "date_published": "2019-10-04T00:43:35.187Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "eKURpHspN33NPWRL",
+            "pakku_links": [
+                "Y6FjgjCE5LrovJKY"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hunting-dimension"
+            },
+            "name": {
+                "curseforge": "Hunting Dimension"
+            },
+            "id": {
+                "curseforge": "283235"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "HuntingDimension-1.12.2-1.0.42.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2827/888/HuntingDimension-1.12.2-1.0.42.jar",
+                    "id": "2827888",
+                    "parent_id": "283235",
+                    "hashes": {
+                        "sha1": "33c8f8975c52e9fbd6d13772599ac595724dde29",
+                        "md5": "4ce07b90a9157a29fdd5cd40fef6ec33"
+                    },
+                    "required_dependencies": [
+                        "228525"
+                    ],
+                    "size": 88822,
+                    "date_published": "2019-11-16T02:44:49.990Z"
                 }
             ]
         },
@@ -4671,28 +4675,58 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LootTweaker-0.1.2+MC1.12.2.jar",
+                    "file_name": "LootTweaker-0.1.3+MC1.12.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2829/782/LootTweaker-0.1.2+MC1.12.2.jar",
-                    "id": "2829782",
+                    "url": "https://edge.forgecdn.net/files/2837/240/LootTweaker-0.1.3+MC1.12.2.jar",
+                    "id": "2837240",
                     "parent_id": "255257",
                     "hashes": {
-                        "sha1": "048dc9b3bfee2c38b6d075021535a058d8be1c26",
-                        "md5": "bdc2d83840921bedce439de247771b49"
+                        "sha1": "4d7c3b40ad617644519484d36f7ab2b6909b9154",
+                        "md5": "3a66bfbebf806291c6beec2d08376659"
                     },
                     "required_dependencies": [
                         "239197"
                     ],
-                    "size": 84388,
-                    "date_published": "2019-11-20T00:26:50.270Z"
+                    "size": 84821,
+                    "date_published": "2019-12-05T23:44:48.863Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "FIdl80ZHfzJJESXm",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lunatriuscore"
+            },
+            "name": {
+                "curseforge": "LunatriusCore"
+            },
+            "id": {
+                "curseforge": "225605"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "LunatriusCore-1.12.2-1.2.0.42-universal.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2489/549/LunatriusCore-1.12.2-1.2.0.42-universal.jar",
+                    "id": "2489549",
+                    "parent_id": "225605",
+                    "hashes": {
+                        "sha1": "f70b39168f2a02d47792cf29bef432e20d0bcd57",
+                        "md5": "0dae43ef5376822db0399ad254207aa3"
+                    },
+                    "required_dependencies": [],
+                    "size": 76753,
+                    "date_published": "2017-10-11T07:40:08.403Z"
                 }
             ]
         },
@@ -4859,21 +4893,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Mekanism-1.12.2-9.8.2.389.jar",
+                    "file_name": "Mekanism-1.12.2-9.8.3.390.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2798/295/Mekanism-1.12.2-9.8.2.389.jar",
-                    "id": "2798295",
+                    "url": "https://edge.forgecdn.net/files/2835/175/Mekanism-1.12.2-9.8.3.390.jar",
+                    "id": "2835175",
                     "parent_id": "268560",
                     "hashes": {
-                        "sha1": "04caf8715146b7b40a68f6cd248ae51981260f9c",
-                        "md5": "e0f55f62adf9b0dbef2f231d2d24a5c6"
+                        "sha1": "1d5b531b7c107d6946b3e957f4554e2cb7686320",
+                        "md5": "e622b8365b9a1190b3b6cc042854e870"
                     },
                     "required_dependencies": [],
-                    "size": 7861466,
-                    "date_published": "2019-09-29T15:51:45.070Z"
+                    "size": 7863657,
+                    "date_published": "2019-12-01T07:56:18.493Z"
                 }
             ]
         },
@@ -4892,23 +4926,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismGenerators-1.12.2-9.8.2.389.jar",
+                    "file_name": "MekanismGenerators-1.12.2-9.8.3.390.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2798/297/MekanismGenerators-1.12.2-9.8.2.389.jar",
-                    "id": "2798297",
+                    "url": "https://edge.forgecdn.net/files/2835/177/MekanismGenerators-1.12.2-9.8.3.390.jar",
+                    "id": "2835177",
                     "parent_id": "268566",
                     "hashes": {
-                        "sha1": "a12cb97484df89a10964666fa60e114cb99e0899",
-                        "md5": "4050a08d48ace9968e002dc2348855c5"
+                        "sha1": "6980bbbc9d18c5dea7e2242fe9d542da2d41c481",
+                        "md5": "d75ddb11a6c1353b046c70d8904fe61e"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
-                    "size": 336247,
-                    "date_published": "2019-09-29T15:51:47.167Z"
+                    "size": 336364,
+                    "date_published": "2019-12-01T07:56:20.860Z"
                 }
             ]
         },
@@ -4927,23 +4961,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "MekanismTools-1.12.2-9.8.2.389.jar",
+                    "file_name": "MekanismTools-1.12.2-9.8.3.390.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2798/298/MekanismTools-1.12.2-9.8.2.389.jar",
-                    "id": "2798298",
+                    "url": "https://edge.forgecdn.net/files/2835/178/MekanismTools-1.12.2-9.8.3.390.jar",
+                    "id": "2835178",
                     "parent_id": "268567",
                     "hashes": {
-                        "sha1": "b735081958771e2a9b227d34d974edf4a021a4f8",
-                        "md5": "dee9e1d6acbea7b69cafc52ec8a8b567"
+                        "sha1": "8c32f71f2db7a695abc8413aa7dfe8c28c485585",
+                        "md5": "0095f13a729ce5873319e36e29a5b5e1"
                     },
                     "required_dependencies": [
                         "268560"
                     ],
                     "size": 159785,
-                    "date_published": "2019-09-29T15:51:48.753Z"
+                    "date_published": "2019-12-01T07:56:22.020Z"
                 }
             ]
         },
@@ -5547,35 +5581,35 @@
             ]
         },
         {
-            "pakku_id": "n4B1VECQEfWV1gCC",
+            "pakku_id": "YVYxIDQIVZaB1blW",
             "type": "MOD",
             "slug": {
-                "curseforge": "overpowered-armor-bar"
+                "curseforge": "overloaded-armor-bar"
             },
             "name": {
-                "curseforge": "Overpowered Armor Bar"
+                "curseforge": "Overloaded Armor Bar"
             },
             "id": {
-                "curseforge": "283649"
+                "curseforge": "314002"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "overpoweredarmorbar-1.12.2-0.3.2.jar",
+                    "file_name": "overloadedarmorbar-1.0.4g.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2614/893/overpoweredarmorbar-1.12.2-0.3.2.jar",
-                    "id": "2614893",
-                    "parent_id": "283649",
+                    "url": "https://edge.forgecdn.net/files/2719/400/overloadedarmorbar-1.0.4g.jar",
+                    "id": "2719400",
+                    "parent_id": "314002",
                     "hashes": {
-                        "sha1": "65e8281181753ee4bbdbc710d30a97100744dc20",
-                        "md5": "fa08b1acb8c123bb9548f44607950572"
+                        "sha1": "f9d557a6bb00e765984f39eec87eed9b5e873c7b",
+                        "md5": "acad421c31ba44659f4809d767e63821"
                     },
                     "required_dependencies": [],
-                    "size": 16358,
-                    "date_published": "2018-09-09T07:07:29.450Z"
+                    "size": 18649,
+                    "date_published": "2019-06-03T02:27:01.907Z"
                 }
             ]
         },
@@ -6737,6 +6771,44 @@
             ]
         },
         {
+            "pakku_id": "RkEflLpEHtkb9Rhz",
+            "pakku_links": [
+                "FIdl80ZHfzJJESXm"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "schematica"
+            },
+            "name": {
+                "curseforge": "Schematica"
+            },
+            "id": {
+                "curseforge": "225603"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Schematica-1.12.2-1.8.0.169-universal.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2554/100/Schematica-1.12.2-1.8.0.169-universal.jar",
+                    "id": "2554100",
+                    "parent_id": "225603",
+                    "hashes": {
+                        "sha1": "cc8c851bc47ecf314c3974e3b90acfa1a62105ac",
+                        "md5": "c779a8cd4fd0e99572385a529b790c73"
+                    },
+                    "required_dependencies": [
+                        "225605"
+                    ],
+                    "size": 336150,
+                    "date_published": "2018-04-22T11:25:44.013Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cOu3a7XvT59h4YMA",
             "type": "MOD",
             "slug": {
@@ -7728,26 +7800,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Trinkets and Baubles-1.12.2-0.27.jar",
+                    "file_name": "Trinkets and Baubles-1.12.2-0.28.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2810/31/Trinkets and Baubles-1.12.2-0.27.jar",
-                    "id": "2810031",
+                    "url": "https://edge.forgecdn.net/files/2836/115/Trinkets and Baubles-1.12.2-0.28.1.jar",
+                    "id": "2836115",
                     "parent_id": "279900",
                     "hashes": {
-                        "sha1": "04fe087f7f7d6c6278cfbc0ef834819cb30b5bc3",
-                        "md5": "a1daae5ce25be8b8b4650b56ce09fa5d"
+                        "sha1": "51be197f86764d7316a93b1ba6207d7d63c2b03b",
+                        "md5": "594f7e6617d58248e2b9bc37a7f5cafd"
                     },
                     "required_dependencies": [
                         "227083"
                     ],
-                    "size": 544037,
-                    "date_published": "2019-10-15T22:00:06.820Z"
+                    "size": 637606,
+                    "date_published": "2019-12-03T04:45:38.920Z"
                 }
             ]
         },

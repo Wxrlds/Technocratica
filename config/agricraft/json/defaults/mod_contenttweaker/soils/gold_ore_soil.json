@@ -1,0 +1,18 @@
+{
+  "path": "mod_contenttweaker/soils/gold_ore_soil.json",
+  "enabled": true,
+  "id": "gold_ore_soil",
+  "name": "Gold Ore",
+  "varients": [
+    {
+      "item": "minecraft:gold_ore",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

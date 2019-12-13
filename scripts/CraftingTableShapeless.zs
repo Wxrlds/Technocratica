@@ -25,6 +25,8 @@ val knife = <tconstruct:knife_blade>;
 val bow = <tconstruct:bow_limb>;
 val arrow = <tconstruct:arrow_head>;
 val chisel = <tcomplement:chisel_head>;
+recipes.addShapeless("Cot_Karat_Carrot_Seed_Plus_To_Default",<contenttweaker:karat_seed_coal_ore> * 2, [<ore:karatCarrotSeedPlus>,<ore:karatCarrotSeedPlus>]);
+recipes.addShapeless("Cot_Karat_Carrot_Seed_Default_To_Plus",<contenttweaker:karat_seed_coal_block> * 2, [<ore:karatCarrotSeed>,<ore:karatCarrotSeed>]);
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
 recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>,<ore:crystalFluix>,<projectred-transportation:pipe>]);
 recipes.addShapeless("CoT_10x_Sugar_Uncraft",<minecraft:sugar>*10,[<contenttweaker:10x_sugar>]);
