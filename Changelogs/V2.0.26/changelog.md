@@ -11,3 +11,5 @@ Renamed the ContentTweaker script file
 Made Karat Garden AgriCraft compatible by creating a new seed for every tier
 
 Tweaked Loot (again)
+
+Re-did the default options files
