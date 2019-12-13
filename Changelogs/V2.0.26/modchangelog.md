@@ -32,4 +32,6 @@ LunatriusCore
 
 **Removed Mods:**
 
-Rex Additional Structures
+Additional Structures
+
+Block Drops (JEI Addon)
