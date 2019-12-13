@@ -29,9 +29,13 @@ Schematica
 
 LunatriusCore
 
+Overloaded Armor Bar
+
 
 **Removed Mods:**
 
 Additional Structures
 
 Block Drops (JEI Addon)
+
+Overpowered Armor Bar
