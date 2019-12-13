@@ -17,3 +17,5 @@ Re-did the default options files
 Added Schematics for the Modular Machines
 
 Re-did the JER Ore spawn rates
+
+Disabled AE2's update checker
