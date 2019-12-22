@@ -4,10 +4,10 @@ Technocratica 2.0.14 --> Technocratica 2.0.15
 
 Added:
 
-- Genetics Reborn
-- Grue
-- ME Capability Adapter
-- Passive Aggression
+	- Genetics Reborn
+	- Grue
+	- ME Capability Adapter
+	- Passive Aggression
 
 Updated:
 
@@ -603,6 +603,6 @@ Updated:
 
 Removed:
 
-- stimmedcow : NoMoreRecipeConflict
+	- stimmedcow : NoMoreRecipeConflict
 
 Generated using [ChangelogGenerator 2.0.0-pre](https://github.com/TheRandomLabs/ChangelogGenerator).
