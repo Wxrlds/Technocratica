@@ -4,8 +4,8 @@ Technocratica 2.0.17a --> Technocratica 2.0.18
 
 Added:
 
-  - MiscTweaks_
-  - Trinkets and Baubles
+	  - MiscTweaks_
+  	- Trinkets and Baubles
 
 Updated:
 
@@ -2037,6 +2037,6 @@ Updated:
 
 Removed:
 
-  - NMPR
+  	- NMPR
 
 Generated using [ChangelogGenerator 2.0.0-pre](https://github.com/TheRandomLabs/ChangelogGenerator).
