@@ -3,6 +3,7 @@ Technocratica 2.0.14 --> Technocratica 2.0.15
 =============================================
 
 Added:
+
 - Genetics Reborn
 - Grue
 - ME Capability Adapter
@@ -601,6 +602,7 @@ Updated:
 			fixed CME bug and blockstate getCapability bug
 
 Removed:
+
 - stimmedcow : NoMoreRecipeConflict
 
 Generated using [ChangelogGenerator 2.0.0-pre](https://github.com/TheRandomLabs/ChangelogGenerator).
