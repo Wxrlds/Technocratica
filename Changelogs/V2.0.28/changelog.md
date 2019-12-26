@@ -1,6 +1,6 @@
 Tweaked the OpenBlocks Elevator
 
-Tweaked the Ender Eye; Flint recipe
+Tweaked the Ender Eye; Flint; Simply Jetpacks Fluxpacks; Thermal Foundations Fluxpack recipe
 
 Pattern Chest quest now ignores NBT
 
