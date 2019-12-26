@@ -28,6 +28,8 @@ val chisel = <tcomplement:chisel_head>;
 recipes.addShapeless("Cot_Karat_Carrot_Seed_Plus_To_Default",<contenttweaker:karat_seed_coal_ore> * 2, [<ore:karatCarrotSeedPlus>,<ore:karatCarrotSeedPlus>]);
 recipes.addShapeless("Cot_Karat_Carrot_Seed_Default_To_Plus",<contenttweaker:karat_seed_coal_block> * 2, [<ore:karatCarrotSeed>,<ore:karatCarrotSeed>]);
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
+recipes.addShapeless("minecraft_flint",<minecraft:flint> * 3, [<ore:gravel>,<ore:gravel>,<ore:gravel>]);
+recipes.addShapeless("Minecraft_Ender_Eye",<minecraft:ender_eye>, [<ore:enderpearl>,<ore:dustPyrotheum>]);
 recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>,<ore:crystalFluix>,<projectred-transportation:pipe>]);
 recipes.addShapeless("CoT_10x_Sugar_Uncraft",<minecraft:sugar>*10,[<contenttweaker:10x_sugar>]);
 recipes.addShapeless("CoT_11x_Infinity_Ingot_1",<contenttweaker:11x_infinity_ingot>,[<contenttweaker:5x_infinity_ingot>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>]);

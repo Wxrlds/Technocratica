@@ -41,6 +41,9 @@ recipes.replaceAllOccurences(<thermalexpansion:frame>,<extrautils2:machine>,<the
 recipes.replaceAllOccurences(<thermalexpansion:frame>,<mekanism:basicblock:8>,<thermalexpansion:machine:2>);
 recipes.replaceAllOccurences(<thermalexpansion:frame>,<teslacorelib:machine_case>,<thermalexpansion:machine:6>);
 recipes.replaceAllOccurences(<minecraft:redstone>,<jaopca:item_stickcertusquartz>,<openblocks:block_breaker>);
+recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 0 as byte}),<thermalexpansion:capacitor>,<simplyjetpacks:itemfluxpack:6>);
+recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 2 as byte}),<thermalexpansion:capacitor:2>,<simplyjetpacks:itemfluxpack:7>);
+recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 4 as byte}),<thermalexpansion:capacitor:4>,<simplyjetpacks:itemfluxpack:8>);
 recipes.replaceAllOccurences(<minecraft:water_bucket>,<liquid:water>*1000);
 recipes.replaceAllOccurences(<minecraft:lava_bucket>,<liquid:lava>*1000);
 recipes.replaceAllOccurences(<minecraft:milk_bucket>,<liquid:milk>*1000);

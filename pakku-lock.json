@@ -1204,23 +1204,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "bonsaitrees-1.1.3-b156.jar",
+                    "file_name": "bonsaitrees-1.1.4-b170.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2719/654/bonsaitrees-1.1.3-b156.jar",
-                    "id": "2719654",
+                    "url": "https://edge.forgecdn.net/files/2846/217/bonsaitrees-1.1.4-b170.jar",
+                    "id": "2846217",
                     "parent_id": "278993",
                     "hashes": {
-                        "sha1": "0135f4c50687bba6d9743fa89996b2acc1ada561",
-                        "md5": "dbfe5343f643f3913245ddc2d7e2c876"
+                        "sha1": "7bab0859525fb9f2f64e81eb47b19ffa190feb3c",
+                        "md5": "136677befb5a253b867c8fde52bfa11b"
                     },
                     "required_dependencies": [],
-                    "size": 568155,
-                    "date_published": "2019-06-03T17:21:49.180Z"
+                    "size": 658780,
+                    "date_published": "2019-12-21T10:37:47.653Z"
                 }
             ]
         },
@@ -1463,21 +1463,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc-tweaked-1.12.2-1.85.2.jar",
+                    "file_name": "cc-tweaked-1.12.2-1.86.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2834/382/cc-tweaked-1.12.2-1.85.2.jar",
-                    "id": "2834382",
+                    "url": "https://edge.forgecdn.net/files/2849/14/cc-tweaked-1.12.2-1.86.0.jar",
+                    "id": "2849014",
                     "parent_id": "282001",
                     "hashes": {
-                        "sha1": "984b07762d8332a43c71b18ad99854b411c9f1d2",
-                        "md5": "8eaa04becb4bda930b25d3658cd3fcda"
+                        "sha1": "5f373ad00ff363519dac0040d8ed1f3a9c868686",
+                        "md5": "95d3f33f4f4c1080f3702b6a232ac686"
                     },
                     "required_dependencies": [],
-                    "size": 1727729,
-                    "date_published": "2019-11-29T20:21:50.710Z"
+                    "size": 1740632,
+                    "date_published": "2019-12-24T19:33:40.843Z"
                 }
             ]
         },
@@ -3323,7 +3323,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "foamfix-0.10.9-1.12.2.jar",
+                    "file_name": "foamfix-0.10.10-1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3331,16 +3331,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2831/558/foamfix-0.10.9-1.12.2.jar",
-                    "id": "2831558",
+                    "url": "https://edge.forgecdn.net/files/2845/668/foamfix-0.10.10-1.12.2.jar",
+                    "id": "2845668",
                     "parent_id": "278494",
                     "hashes": {
-                        "sha1": "4cb447de218d5e68900bcfb7aa91c46d7b749f60",
-                        "md5": "6961a6c6bc450dde9eeaf4f98e7f7487"
+                        "sha1": "bcb36ec39c39d6b97252d68f379ddeb20de539ef",
+                        "md5": "bba94f1ee252fcfbd2d52779f5c2f2b1"
                     },
                     "required_dependencies": [],
-                    "size": 201719,
-                    "date_published": "2019-11-23T21:46:27.690Z"
+                    "size": 201683,
+                    "date_published": "2019-12-20T09:14:01.333Z"
                 }
             ]
         },
@@ -3511,21 +3511,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.7.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.5.9.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2841/315/HammerCore-1.12.2-2.0.5.7.jar",
-                    "id": "2841315",
+                    "url": "https://edge.forgecdn.net/files/2849/5/HammerCore-1.12.2-2.0.5.9.jar",
+                    "id": "2849005",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "1cbbec65bf69246d0d6f58be95b3e063997e05b6",
-                        "md5": "2c45b7630d0a48a94342ea62e22ff5e6"
+                        "sha1": "ae3e4d81b05a570080d5fa9ca329a3aa134b83d9",
+                        "md5": "10f1d9eb61bb7b7f29b1aaf71c522a72"
                     },
                     "required_dependencies": [],
-                    "size": 2326611,
-                    "date_published": "2019-12-11T23:29:38.627Z"
+                    "size": 2325996,
+                    "date_published": "2019-12-24T19:09:41.203Z"
                 }
             ]
         },
@@ -4254,29 +4254,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "just-enough-harvestcraft-1.12.2-1.6.6.jar",
+                    "file_name": "just-enough-harvestcraft-1.12.2-1.7.0.jar",
                     "mc_versions": [
-                        "1.12.1",
-                        "1.12",
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2823/958/just-enough-harvestcraft-1.12.2-1.6.6.jar",
-                    "id": "2823958",
+                    "url": "https://edge.forgecdn.net/files/2849/443/just-enough-harvestcraft-1.12.2-1.7.0.jar",
+                    "id": "2849443",
                     "parent_id": "267939",
                     "hashes": {
-                        "sha1": "3c619ad74d3ec1074d6b7aa2cebb0d3d8159ef70",
-                        "md5": "754680424362407e512ab46d032a7e39"
+                        "sha1": "6b2ba8883e9849cf91cfc8b64008335ab59a15fa",
+                        "md5": "a4d06849e3ba31081d8a5e7d5222bf81"
                     },
                     "required_dependencies": [
                         "238222",
                         "221857"
                     ],
-                    "size": 34966,
-                    "date_published": "2019-11-08T12:47:07.610Z"
+                    "size": 42287,
+                    "date_published": "2019-12-25T19:06:05.550Z"
                 }
             ]
         },
@@ -4295,21 +4293,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jei_1.12.2-4.15.0.292.jar",
+                    "file_name": "jei_1.12.2-4.15.0.293.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2822/849/jei_1.12.2-4.15.0.292.jar",
-                    "id": "2822849",
+                    "url": "https://edge.forgecdn.net/files/2847/112/jei_1.12.2-4.15.0.293.jar",
+                    "id": "2847112",
                     "parent_id": "238222",
                     "hashes": {
-                        "sha1": "d7215dddae13bf062b9455003d9541f608ac6ae4",
-                        "md5": "791ac0fd9aaa681c3d38094c965b9657"
+                        "sha1": "a9571911167b5081df25d8b19ef9ded519045957",
+                        "md5": "32541b3176b0d4b24af71836a52bc070"
                     },
                     "required_dependencies": [],
-                    "size": 651472,
-                    "date_published": "2019-11-06T05:02:40.177Z"
+                    "size": 653044,
+                    "date_published": "2019-12-22T23:07:28.040Z"
                 }
             ]
         },
@@ -4675,25 +4673,28 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LootTweaker-0.1.3+MC1.12.2.jar",
+                    "file_name": "LootTweaker-0.1.4+MC1.12.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2837/240/LootTweaker-0.1.3+MC1.12.2.jar",
-                    "id": "2837240",
+                    "url": "https://edge.forgecdn.net/files/2847/240/LootTweaker-0.1.4+MC1.12.2.jar",
+                    "id": "2847240",
                     "parent_id": "255257",
                     "hashes": {
-                        "sha1": "4d7c3b40ad617644519484d36f7ab2b6909b9154",
-                        "md5": "3a66bfbebf806291c6beec2d08376659"
+                        "sha1": "e3c4c7854d3050671321bd205568a0116cdd2544",
+                        "md5": "43afda9f0ffe06b649d84bbf5ed147ea"
                     },
                     "required_dependencies": [
                         "239197"
                     ],
-                    "size": 84821,
-                    "date_published": "2019-12-05T23:44:48.863Z"
+                    "size": 60548,
+                    "date_published": "2019-12-23T02:57:13.317Z"
                 }
             ]
         },

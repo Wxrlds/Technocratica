@@ -4,6 +4,7 @@ val remRecipe=[
 <actuallyadditions:block_grinder>,
 <actuallyadditions:block_misc:1>,
 <actuallyadditions:block_misc:5>,
+<minecraft:ender_eye>,
 <actuallyadditions:block_misc:9>,
 <actuallyadditions:block_misc>,
 <actuallyadditions:item_dust:5>,

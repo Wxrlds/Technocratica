@@ -3,6 +3,7 @@ val remName=[
 "advgenerators:recipe37",
 "agricraft:combine_nugget_quartz",
 "agricraft:combine_nugget_diamond",
+"thermalexpansion:capacitor",
 "agricraft:combine_nugget_emerald",
 "appliedenergistics2:network/cables/glass_fluix",
 "bigreactors:ingot_cyanite_yellorium",
