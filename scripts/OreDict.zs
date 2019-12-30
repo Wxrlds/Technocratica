@@ -10,7 +10,7 @@ val karatseedplus = <ore:karatCarrotSeedPlus>;
 <ore:oreCobalt>.remove(<tconstruct:metal>);
 <ore:slimeball>.remove(<industrialforegoing:pink_slime>);
 <ore:slimeballPink>.remove(<industrialforegoing:pink_slime>);
-<ore:nuggetDiamond>.remove(<extendedcrafting:material:128>);
+<ore:nuggetDiamond>.remove(<thermalfoundation:material:16>);
 <ore:nuggetEmerald>.remove(<agricraft:agri_nugget>);
 <ore:nuggetEmerald>.remove(<thermalfoundation:material:17>);
 

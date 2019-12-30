@@ -24,6 +24,29 @@
         ]
       }
     },
+	"iridium": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "thermalfoundation:ore",
+          "metadata": 7
+        },
+        "material": "minecraft:stone",
+        "cluster-size": 5
+      },
+      "cluster-count": 3,
+      "min-height": 5,
+      "max-height": 68,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
     "aluminum": {
       "distribution": "uniform",
       "generator": {

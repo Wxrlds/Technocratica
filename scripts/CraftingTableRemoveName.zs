@@ -17,7 +17,6 @@ val remName=[
 "crafttweaker:ironbackpacks-pack_gold_upgrade_decolor-modified",
 "crafttweaker:ironbackpacks-pack_iron_storage_decolor-modified",
 "crafttweaker:ironbackpacks-pack_iron_upgrade_decolor-modified",
-"extendedcrafting:diamond_nugget_to",
 "extrautils2:generator_generator_slime",
 "extrautils2:ironwood_log_to_planks_burnt",
 "extrautils2:ironwood_log_to_planks_raw",

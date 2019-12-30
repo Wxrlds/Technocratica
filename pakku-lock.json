@@ -7203,6 +7203,41 @@
             ]
         },
         {
+            "pakku_id": "gIF3IhzjUcSQgSGJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tesslocator"
+            },
+            "name": {
+                "curseforge": "Tesslocator"
+            },
+            "id": {
+                "curseforge": "314814"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Tesslocator-1.1.0.15.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2754/227/Tesslocator-1.1.0.15.jar",
+                    "id": "2754227",
+                    "parent_id": "314814",
+                    "hashes": {
+                        "sha1": "3e80462c51dfc12c757e170d3b2bd773319a1428",
+                        "md5": "0e7a3a2679a7b003db3775f455d1f6bc"
+                    },
+                    "required_dependencies": [
+                        "309674"
+                    ],
+                    "size": 129448,
+                    "date_published": "2019-08-03T21:57:33.587Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "O827tjlfKEwWIN35",
             "type": "MOD",
             "slug": {

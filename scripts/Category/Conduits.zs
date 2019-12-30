@@ -115,7 +115,7 @@ recipes.addShaped("Stellar_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:1
 
 #XNet
 recipes.remove(<xnet:netcable>);
-recipes.addShaped("XNet_Cable",<xnet:netcable> * 32, [[<minecraft:string>, <translocators:translocator_part>, <minecraft:string>],[<ore:nuggetGold>, <minecraft:redstone>, <ore:nuggetGold>], [<minecraft:string>, <translocators:translocator_part:1>, <minecraft:string>]]);
+recipes.addShaped("XNet_Cable",<xnet:netcable> * 32, [[<minecraft:string>, <tesslocator:basic_item_tesslocator>, <minecraft:string>],[<ore:nuggetGold>, <minecraft:redstone>, <ore:nuggetGold>], [<minecraft:string>, <tesslocator:basic_fluid_tesslocator>, <minecraft:string>]]);
 
 #Item Conduit
 recipes.remove(<enderio:item_item_conduit>);
