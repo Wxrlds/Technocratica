@@ -25,3 +25,5 @@ Fixed the Void Crystal Plate not being craftable in the Compactor
 Iridium Ore now spawns in the world
 
 Added Iridium Ore spawn rates to JEI
+
+Luminessence now is craftable in the Ultimate Crafting Table
