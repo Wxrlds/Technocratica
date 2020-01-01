@@ -511,6 +511,14 @@
     {
       "item": "tconstruct:ingots|3",
       "emc": 56
+    },
+    {
+      "item": "extendedcrafting:material|0",
+      "emc": 81387
+    },
+    {
+      "item": "extendedcrafting:material|7",
+      "emc": 41684
     }
   ]
 }

@@ -1,4 +1,5 @@
 val remName=[
+"translocators:diamond_nugget_un",
 "actuallyadditions:recipes122",
 "advgenerators:recipe37",
 "agricraft:combine_nugget_quartz",
@@ -53,8 +54,8 @@ val remName=[
 "projectred-exploration:blocks/storage/copper_block_un",
 "randomthings:spectreplank",
 "rftools:powercell",
-"thermalfoundation:diamond",
 "thermalfoundation:emerald",
+"thermalfoundation:diamond",
 "tcomplement:steelworks/charcoal",
 "tcomplement:steelworks/steel_ingot_from_block",
 "tcomplement:steelworks/steel_nugget",

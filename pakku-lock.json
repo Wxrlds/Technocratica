@@ -2181,21 +2181,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.18.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.19.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2821/917/Cyclic-1.12.2-1.19.18.jar",
-                    "id": "2821917",
+                    "url": "https://edge.forgecdn.net/files/2852/262/Cyclic-1.12.2-1.19.19.jar",
+                    "id": "2852262",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "2176a942613e773aa1c9cb4da691c4a10210a197",
-                        "md5": "fd6dd95291fbec556b85c254595c849b"
+                        "sha1": "059df1221acb1067ac889e96b78919beee814c7f",
+                        "md5": "3ad2493ab7d4d9f93a31dc34c5f87312"
                     },
                     "required_dependencies": [],
-                    "size": 3749145,
-                    "date_published": "2019-11-04T14:43:03.753Z"
+                    "size": 3750850,
+                    "date_published": "2019-12-31T07:33:06Z"
                 }
             ]
         },
@@ -3511,21 +3511,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.9.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.5.11.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2849/5/HammerCore-1.12.2-2.0.5.9.jar",
-                    "id": "2849005",
+                    "url": "https://edge.forgecdn.net/files/2852/397/HammerCore-1.12.2-2.0.5.11.jar",
+                    "id": "2852397",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "ae3e4d81b05a570080d5fa9ca329a3aa134b83d9",
-                        "md5": "10f1d9eb61bb7b7f29b1aaf71c522a72"
+                        "sha1": "52e37a067cf7c2c4aa59c0c33e082bceae8937e8",
+                        "md5": "c0c7946cab39a8d4d201f65b530df455"
                     },
                     "required_dependencies": [],
-                    "size": 2325996,
-                    "date_published": "2019-12-24T19:09:41.203Z"
+                    "size": 2329938,
+                    "date_published": "2019-12-31T15:46:51.410Z"
                 }
             ]
         },
