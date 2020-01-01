@@ -43,7 +43,7 @@ val MekTankTip=[
 <mekanism:machineblock2:11>.withTag({tier: 3})
 ] as IItemStack [];
 for item in MekTankTip {
-mods.jei.JEI.addDescription(item,"Right click with a Tier Intaller to upgrade");
+mods.jei.JEI.addDescription(item,"Right click with a Tier Installer to upgrade");
 }
 
 val InWorldCrafting=[

@@ -57,3 +57,4 @@ for item in tools {
 <bhc:heart_amulet>.addTooltip(format.gray("Can store up to 64 Heart Canisters per slot"));
 <extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));
 <ic2:te:86>.addTooltip(format.red("Can only be broken with an Electric Wrench!"));
+<agricraft:agri_seed>.addTooltip(format.gray("Can be upgraded to 10/10/10 in the Crafting Table like every other Seed"));

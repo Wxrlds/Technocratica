@@ -236,6 +236,7 @@ val remRecipe=[
 <minecraft:obsidian>,
 <minecraft:paper>,
 <minecraft:piston>,
+<minecraft:sticky_piston>,
 <modularmachinery:blockcontroller>,
 <modularmachinery:blockenergyinputhatch:1>,
 <modularmachinery:blockenergyinputhatch>,

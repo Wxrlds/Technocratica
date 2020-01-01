@@ -3511,21 +3511,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.5.11.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.6.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2852/397/HammerCore-1.12.2-2.0.5.11.jar",
-                    "id": "2852397",
+                    "url": "https://edge.forgecdn.net/files/2852/823/HammerCore-1.12.2-2.0.6.1.jar",
+                    "id": "2852823",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "52e37a067cf7c2c4aa59c0c33e082bceae8937e8",
-                        "md5": "c0c7946cab39a8d4d201f65b530df455"
+                        "sha1": "69e2b75302cafbb8f2c5eb05b16bdf748acf80f9",
+                        "md5": "f64367d6433cf96542d93953b11223e0"
                     },
                     "required_dependencies": [],
-                    "size": 2329938,
-                    "date_published": "2019-12-31T15:46:51.410Z"
+                    "size": 2331299,
+                    "date_published": "2020-01-01T12:33:22.647Z"
                 }
             ]
         },

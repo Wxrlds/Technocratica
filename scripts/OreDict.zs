@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 val karatseed = <ore:karatCarrotSeed>;
 val karatseedplus = <ore:karatCarrotSeedPlus>;
 
-<ore:dustCoal>.remove(<actuallyadditions:item_dust:6>);
 <ore:dustCoal>.remove(<thermalfoundation:material:768>);
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
 <ore:dustLithium>.remove(<ic2:dust:11>);
