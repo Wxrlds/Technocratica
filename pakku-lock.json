@@ -645,23 +645,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Aroma1997Core-1.12.2-2.0.0.2.b165.jar",
+                    "file_name": "Aroma1997Core-1.12.2-2.0.0.2.b166.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2690/354/Aroma1997Core-1.12.2-2.0.0.2.b165.jar",
-                    "id": "2690354",
+                    "url": "https://edge.forgecdn.net/files/2855/100/Aroma1997Core-1.12.2-2.0.0.2.b166.jar",
+                    "id": "2855100",
                     "parent_id": "223735",
                     "hashes": {
-                        "sha1": "0296897f943b29fa7cc2e05f684f4d1f88e7f971",
-                        "md5": "71d19fc0c4c6c67e45c0914c3e846394"
+                        "sha1": "e9feb13aad744211d4d8a8ce2fc87b74c52e8544",
+                        "md5": "dea71000a0e1b049a7303545307b4ec4"
                     },
                     "required_dependencies": [],
-                    "size": 398657,
-                    "date_published": "2019-03-22T16:02:55.213Z"
+                    "size": 398654,
+                    "date_published": "2020-01-05T15:13:01.293Z"
                 }
             ]
         },
@@ -2938,21 +2938,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FpsReducer-mc1.12.2-1.12.4.jar",
+                    "file_name": "FpsReducer-mc1.12.2-1.14.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2732/475/FpsReducer-mc1.12.2-1.12.4.jar",
-                    "id": "2732475",
+                    "url": "https://edge.forgecdn.net/files/2853/227/FpsReducer-mc1.12.2-1.14.jar",
+                    "id": "2853227",
                     "parent_id": "280294",
                     "hashes": {
-                        "sha1": "923cdfe66a12c3eccee9e4890ae6d0fcd65fa057",
-                        "md5": "8254c23c901b40744a100fc111023a1e"
+                        "sha1": "c9ade8f90d4d19e48aab51e063ae9ec9549bd5d6",
+                        "md5": "80a5940a4186a0520a78a3ce004a055a"
                     },
                     "required_dependencies": [],
-                    "size": 48464,
-                    "date_published": "2019-06-29T02:15:01.667Z"
+                    "size": 70872,
+                    "date_published": "2020-01-02T02:35:30.330Z"
                 }
             ]
         },
@@ -3511,21 +3514,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.6.1.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.6.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2852/823/HammerCore-1.12.2-2.0.6.1.jar",
-                    "id": "2852823",
+                    "url": "https://edge.forgecdn.net/files/2854/420/HammerCore-1.12.2-2.0.6.3.jar",
+                    "id": "2854420",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "69e2b75302cafbb8f2c5eb05b16bdf748acf80f9",
-                        "md5": "f64367d6433cf96542d93953b11223e0"
+                        "sha1": "50987529ac62dfae5b6bc8575483090012536649",
+                        "md5": "943ef17c5a0a43113ae1ac28975e0c2c"
                     },
                     "required_dependencies": [],
-                    "size": 2331299,
-                    "date_published": "2020-01-01T12:33:22.647Z"
+                    "size": 2339993,
+                    "date_published": "2020-01-04T10:06:08.160Z"
                 }
             ]
         },
