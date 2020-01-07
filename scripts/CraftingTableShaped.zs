@@ -11,7 +11,6 @@ recipes.addShaped("CoT_Karat_Carrot_Seed_Gold_Ore",<contenttweaker:karat_seed_go
 recipes.addShaped("CoT_Karat_Carrot_Seed_Iron_Ore",<contenttweaker:karat_seed_iron_ore>, [[null, null, <ore:karatCarrotSeed>],[null, null, null], [null, null, null]]);
 recipes.addShaped("CoT_Karat_Carrot_Seed_Coal_Ore",<contenttweaker:karat_seed_coal_ore>, [[null, <ore:karatCarrotSeed>, null],[null, null, null], [null, null, null]]);
 recipes.addShaped("KaratCarrot_Base",<karatgarden:seed_carrot_base>, [[<ore:karatCarrotSeed>, null, null],[null, null, null], [null, null, null]]);
-recipes.addShaped("InfinityStorage_Bag",<infinitystorage:ultimate_bag>,[[<ore:ingotUltimate>,<danknull:dank_null_5>,<ore:ingotUltimate>],[<ore:nuggetUltimate>,<storagedrawers:upgrade_creative>,<ore:nuggetUltimate>],[<extendedcrafting:trimmed:5>,<extendedcrafting:material:13>,<extendedcrafting:trimmed:5>]]);
 recipes.addShaped("CoT_Karat_Carrot_Seed_Quartz_Block",<contenttweaker:karat_seed_quartz_block>, [[null, null, null],[null, null, null], [null, null, <ore:karatCarrotSeedPlus>]]);
 recipes.addShaped("CoT_Karat_Carrot_Seed_Diamond_Block",<contenttweaker:karat_seed_diamond_block>, [[null, null, null],[null, null, null], [null, <ore:karatCarrotSeedPlus>, null]]);
 recipes.addShaped("CoT_Karat_Carrot_Seed_Emerald_Block",<contenttweaker:karat_seed_emerald_block>, [[null, null, null],[null, null, null], [<ore:karatCarrotSeedPlus>, null, null]]);
