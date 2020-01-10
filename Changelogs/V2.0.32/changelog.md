@@ -17,3 +17,5 @@ Added EMC to Basalt, Marble, Limestone, Elder Prismarine, Elder Prismarine Brick
 Tweaked Black Iron recipe in the Combination crafting
 
 Made a lot of potions visible in JEI
+
+Enabled the Grue warning
