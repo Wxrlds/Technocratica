@@ -23,3 +23,5 @@ Enabled the Grue warning
 Diamond Anvil now can repair more things
 
 Lava Fabricator now needs 1/10th of the Energy to produce one lava bucket
+
+Tweaked Wither Builder recipe
