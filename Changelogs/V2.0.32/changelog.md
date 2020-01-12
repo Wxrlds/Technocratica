@@ -27,3 +27,5 @@ Lava Fabricator now needs 1/10th of the Energy to produce one lava bucket
 Tweaked Wither Builder; Dislocator; Dislocator Receptacle recipe
 
 Completely unregistered most of the items from Trinkets and Baubles
+
+Made the Infinity Chest recipe an Extended Crafting Tier 1 recipe
