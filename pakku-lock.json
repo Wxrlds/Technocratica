@@ -1625,6 +1625,41 @@
             ]
         },
         {
+            "pakku_id": "3GcpUYFzHUerQ9PG",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cleanview"
+            },
+            "name": {
+                "curseforge": "CleanView"
+            },
+            "id": {
+                "curseforge": "226889"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CleanView-1.12.2-v1c.jar",
+                    "mc_versions": [
+                        "1.12.1",
+                        "1.12",
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2726/661/CleanView-1.12.2-v1c.jar",
+                    "id": "2726661",
+                    "parent_id": "226889",
+                    "hashes": {
+                        "sha1": "82bfa3c868d31b299ee6672a22fe32fd3a3d051a",
+                        "md5": "e81660333e332fb095d3bb836dc53d22"
+                    },
+                    "required_dependencies": [],
+                    "size": 10798,
+                    "date_published": "2019-06-19T05:43:55.340Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "k3G6UHtVjZQ5n8RG",
             "type": "MOD",
             "slug": {
@@ -2016,21 +2051,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Controlling-3.0.7.jar",
+                    "file_name": "Controlling-3.0.8.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2731/319/Controlling-3.0.7.jar",
-                    "id": "2731319",
+                    "url": "https://edge.forgecdn.net/files/2857/64/Controlling-3.0.8.jar",
+                    "id": "2857064",
                     "parent_id": "250398",
                     "hashes": {
-                        "sha1": "fe75a92885f03da578c8ad6601f59e9c2aaf8e6f",
-                        "md5": "f640a63ddae6419a706e4beaec4a9f31"
+                        "sha1": "9d37ca4704bdc571fac3d37145c5e74e87a7cb85",
+                        "md5": "b81c567a7918737c08dcb2ab3f50d7f6"
                     },
                     "required_dependencies": [],
-                    "size": 27162,
-                    "date_published": "2019-06-27T09:25:29.777Z"
+                    "size": 28487,
+                    "date_published": "2020-01-09T01:24:27.037Z"
                 }
             ]
         },
@@ -2148,21 +2183,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CustomMainMenu-MC1.12.2-2.0.9.jar",
+                    "file_name": "CustomMainMenu-MC1.12.2-2.0.9.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2638/282/CustomMainMenu-MC1.12.2-2.0.9.jar",
-                    "id": "2638282",
+                    "url": "https://edge.forgecdn.net/files/2857/869/CustomMainMenu-MC1.12.2-2.0.9.1.jar",
+                    "id": "2857869",
                     "parent_id": "226406",
                     "hashes": {
-                        "sha1": "7ccbcaa70cc448c2738bbc9b1ebf3d60703fe980",
-                        "md5": "0d34d658c07ebe9dd36aba17e59f8d3d"
+                        "sha1": "9aad10a13bed75b6061a33219ab4f2f39e0ccc12",
+                        "md5": "c12200ad89f9399d5bdcbe9da7900bb9"
                     },
                     "required_dependencies": [],
-                    "size": 177791,
-                    "date_published": "2018-11-15T15:01:56.787Z"
+                    "size": 91121,
+                    "date_published": "2020-01-10T17:57:03.183Z"
                 }
             ]
         },
@@ -2534,23 +2569,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderIO-1.12.2-5.1.52.jar",
+                    "file_name": "EnderIO-1.12.2-5.1.55.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/869/EnderIO-1.12.2-5.1.52.jar",
-                    "id": "2809869",
+                    "url": "https://edge.forgecdn.net/files/2858/816/EnderIO-1.12.2-5.1.55.jar",
+                    "id": "2858816",
                     "parent_id": "64578",
                     "hashes": {
-                        "sha1": "cd466c945442a10f21757f669ea8418e5b448674",
-                        "md5": "80db6ee6c1c0db4446a68123de692ddf"
+                        "sha1": "09fb0ebd8ec12914a56f8db40d5cb9a6d66b3da5",
+                        "md5": "8495577037840e0cacbc1c0c5914d459"
                     },
                     "required_dependencies": [
                         "231868"
                     ],
-                    "size": 8069669,
-                    "date_published": "2019-10-15T14:04:09.040Z"
+                    "size": 8366769,
+                    "date_published": "2020-01-12T07:05:06.310Z"
                 }
             ]
         },
@@ -2569,21 +2604,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderIO-endergy-1.12.2-5.1.52.jar",
+                    "file_name": "EnderIO-endergy-1.12.2-5.1.55.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/868/EnderIO-endergy-1.12.2-5.1.52.jar",
-                    "id": "2809868",
+                    "url": "https://edge.forgecdn.net/files/2858/815/EnderIO-endergy-1.12.2-5.1.55.jar",
+                    "id": "2858815",
                     "parent_id": "304346",
                     "hashes": {
-                        "sha1": "b9349551fcf1bbfabb0428a5343539a47d08aa69",
-                        "md5": "15abd22f97a4b2aacec41e6e89cb8c65"
+                        "sha1": "9e2b48abfa3bfd1290fe5b5ae059ff19c0821c6e",
+                        "md5": "2e93234efb9f4d918d13cfe7e06f0bde"
                     },
                     "required_dependencies": [],
-                    "size": 98901,
-                    "date_published": "2019-10-15T14:04:06.957Z"
+                    "size": 118048,
+                    "date_published": "2020-01-12T07:05:01.293Z"
                 }
             ]
         },
@@ -3514,21 +3549,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.6.3.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.6.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2854/420/HammerCore-1.12.2-2.0.6.3.jar",
-                    "id": "2854420",
+                    "url": "https://edge.forgecdn.net/files/2856/822/HammerCore-1.12.2-2.0.6.4.jar",
+                    "id": "2856822",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "50987529ac62dfae5b6bc8575483090012536649",
-                        "md5": "943ef17c5a0a43113ae1ac28975e0c2c"
+                        "sha1": "18f1e0610b46e06f9e9297081586e6af03803416",
+                        "md5": "c3a2807b7e9a81e5442d92c424a05426"
                     },
                     "required_dependencies": [],
-                    "size": 2339993,
-                    "date_published": "2020-01-04T10:06:08.160Z"
+                    "size": 2340379,
+                    "date_published": "2020-01-08T17:10:41.173Z"
                 }
             ]
         },
@@ -3883,39 +3918,6 @@
                     "required_dependencies": [],
                     "size": 263258,
                     "date_published": "2017-09-21T13:56:21.667Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "5mvHPFzb1VbAWnRw",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "invertedbed"
-            },
-            "name": {
-                "curseforge": "Inverted Bed"
-            },
-            "id": {
-                "curseforge": "307608"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "invertedbed-1.12.2-1.0.0-4.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2640/972/invertedbed-1.12.2-1.0.0-4.jar",
-                    "id": "2640972",
-                    "parent_id": "307608",
-                    "hashes": {
-                        "sha1": "fbbecf7fcad7374e17827e50aa4e2fda8e07db3d",
-                        "md5": "9df70b6bc40f492ca4ace692100f2123"
-                    },
-                    "required_dependencies": [],
-                    "size": 17078,
-                    "date_published": "2018-11-24T19:19:18.600Z"
                 }
             ]
         },
@@ -7878,23 +7880,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Trinkets and Baubles-1.12.2-0.28.1.jar",
+                    "file_name": "Trinkets and Baubles-1.12.2-0.29.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2836/115/Trinkets and Baubles-1.12.2-0.28.1.jar",
-                    "id": "2836115",
+                    "url": "https://edge.forgecdn.net/files/2858/820/Trinkets and Baubles-1.12.2-0.29.1.jar",
+                    "id": "2858820",
                     "parent_id": "279900",
                     "hashes": {
-                        "sha1": "51be197f86764d7316a93b1ba6207d7d63c2b03b",
-                        "md5": "594f7e6617d58248e2b9bc37a7f5cafd"
+                        "sha1": "a9270f04eb38e60fdb205942cfe9e9d858eef11f",
+                        "md5": "05c72cc0ae8f4aa30ea39ecee011f90c"
                     },
-                    "required_dependencies": [
-                        "227083"
-                    ],
-                    "size": 637606,
-                    "date_published": "2019-12-03T04:45:38.920Z"
+                    "required_dependencies": [],
+                    "size": 608662,
+                    "date_published": "2020-01-12T07:31:05.873Z"
                 }
             ]
         },

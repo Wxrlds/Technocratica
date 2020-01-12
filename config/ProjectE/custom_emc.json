@@ -519,6 +519,34 @@
     {
       "item": "extendedcrafting:material|7",
       "emc": 41684
+    },
+    {
+      "item": "chisel:basalt2|7",
+      "emc": 16
+    },
+    {
+      "item": "chisel:marble2|7",
+      "emc": 16
+    },
+    {
+      "item": "chisel:limestone2|7",
+      "emc": 16
+    },
+    {
+      "item": "quark:elder_prismarine|0",
+      "emc": 1024
+    },
+    {
+      "item": "quark:elder_prismarine|1",
+      "emc": 2304
+    },
+    {
+      "item": "quark:elder_prismarine|2",
+      "emc": 2064
+    },
+    {
+      "item": "quark:elder_sea_lantern|0",
+      "emc": 3584
     }
   ]
 }

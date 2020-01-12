@@ -36,6 +36,7 @@ val remName=[
 "industrialforegoing:black_hole_unit_thermal",
 "mekanism:coal_1",
 "mekanism:machineblock_8",
+"actuallyadditions:recipes55",
 "minecraft:acacia_planks",
 "minecraft:birch_planks",
 "minecraft:bucket",
