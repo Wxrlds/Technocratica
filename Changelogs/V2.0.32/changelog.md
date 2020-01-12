@@ -29,3 +29,5 @@ Tweaked Wither Builder; Dislocator; Dislocator Receptacle recipe
 Completely unregistered most of the items from Trinkets and Baubles
 
 Made the Infinity Chest recipe an Extended Crafting Tier 1 recipe
+
+Changed the reward for the Portal controller
