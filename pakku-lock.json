@@ -1463,21 +1463,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc-tweaked-1.12.2-1.86.0.jar",
+                    "file_name": "cc-tweaked-1.12.2-1.86.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2849/14/cc-tweaked-1.12.2-1.86.0.jar",
-                    "id": "2849014",
+                    "url": "https://edge.forgecdn.net/files/2860/48/cc-tweaked-1.12.2-1.86.2.jar",
+                    "id": "2860048",
                     "parent_id": "282001",
                     "hashes": {
-                        "sha1": "5f373ad00ff363519dac0040d8ed1f3a9c868686",
-                        "md5": "95d3f33f4f4c1080f3702b6a232ac686"
+                        "sha1": "afd5be3f9e23a2d61f4001527ca0d8f8f08d9434",
+                        "md5": "ea204a67fee2a0182282c4c92c3b455a"
                     },
                     "required_dependencies": [],
-                    "size": 1740632,
-                    "date_published": "2019-12-24T19:33:40.843Z"
+                    "size": 1740639,
+                    "date_published": "2020-01-14T08:51:53.250Z"
                 }
             ]
         },
@@ -1621,6 +1621,39 @@
                     "required_dependencies": [],
                     "size": 513984,
                     "date_published": "2019-10-18T17:24:36.223Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "u9EzRXkeV67z5DZb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "classic-bars"
+            },
+            "name": {
+                "curseforge": "Classic Bars"
+            },
+            "id": {
+                "curseforge": "317642"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "classicbar-0.5.3.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2851/915/classicbar-0.5.3.jar",
+                    "id": "2851915",
+                    "parent_id": "317642",
+                    "hashes": {
+                        "sha1": "52693e45242914d6eeb8ad7c332846bc594c99a2",
+                        "md5": "87ea88e083ceee278589841ef40933ab"
+                    },
+                    "required_dependencies": [],
+                    "size": 84447,
+                    "date_published": "2019-12-30T17:49:28.260Z"
                 }
             ]
         },
@@ -2973,7 +3006,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FpsReducer-mc1.12.2-1.14.jar",
+                    "file_name": "FpsReducer-mc1.12.2-1.14.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2981,16 +3014,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2853/227/FpsReducer-mc1.12.2-1.14.jar",
-                    "id": "2853227",
+                    "url": "https://edge.forgecdn.net/files/2859/408/FpsReducer-mc1.12.2-1.14.1.jar",
+                    "id": "2859408",
                     "parent_id": "280294",
                     "hashes": {
-                        "sha1": "c9ade8f90d4d19e48aab51e063ae9ec9549bd5d6",
-                        "md5": "80a5940a4186a0520a78a3ce004a055a"
+                        "sha1": "b3751b1c86564e69881151432a7c8802123a2724",
+                        "md5": "dbac3989c03855bf0b5ad7d18a1bcd73"
                     },
                     "required_dependencies": [],
-                    "size": 70872,
-                    "date_published": "2020-01-02T02:35:30.330Z"
+                    "size": 71246,
+                    "date_published": "2020-01-13T04:06:40.477Z"
                 }
             ]
         },
@@ -5583,39 +5616,6 @@
                     "required_dependencies": [],
                     "size": 2639587,
                     "date_published": "2019-04-14T10:36:25.690Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "YVYxIDQIVZaB1blW",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "overloaded-armor-bar"
-            },
-            "name": {
-                "curseforge": "Overloaded Armor Bar"
-            },
-            "id": {
-                "curseforge": "314002"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "overloadedarmorbar-1.0.4g.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2719/400/overloadedarmorbar-1.0.4g.jar",
-                    "id": "2719400",
-                    "parent_id": "314002",
-                    "hashes": {
-                        "sha1": "f9d557a6bb00e765984f39eec87eed9b5e873c7b",
-                        "md5": "acad421c31ba44659f4809d767e63821"
-                    },
-                    "required_dependencies": [],
-                    "size": 18649,
-                    "date_published": "2019-06-03T02:27:01.907Z"
                 }
             ]
         },
