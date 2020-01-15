@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack;
 
 val karatseed = <ore:karatCarrotSeed>;
 val karatseedplus = <ore:karatCarrotSeedPlus>;
+val bricks = <ore:brickBlock>;
+val terracotta = <ore:terracotta>;
 
 <ore:dustCoal>.remove(<thermalfoundation:material:768>);
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
@@ -42,4 +44,84 @@ val karatplus=[
 ] as IItemStack [];
 for item in karatplus {
 karatseedplus.add(item);
+}
+
+val brick=[
+<minecraft:brick_block>,
+<chisel:bricks>,
+<chisel:bricks:1>,
+<chisel:bricks:2>,
+<chisel:bricks:3>,
+<chisel:bricks:4>,
+<chisel:bricks:5>,
+<chisel:bricks:6>,
+<chisel:bricks:7>,
+<chisel:bricks:8>,
+<chisel:bricks:9>,
+<chisel:bricks:10>,
+<chisel:bricks:11>,
+<chisel:bricks:12>,
+<chisel:bricks:13>,
+<chisel:bricks:14>,
+<chisel:bricks:15>,
+<chisel:bricks1>,
+<chisel:bricks1:1>,
+<chisel:bricks1:2>,
+<chisel:bricks1:3>,
+<chisel:bricks1:4>,
+<chisel:bricks1:5>,
+<chisel:bricks1:6>,
+<chisel:bricks1:7>,
+<chisel:bricks1:8>,
+<chisel:bricks1:9>,
+<chisel:bricks2>,
+<chisel:bricks2:1>,
+<chisel:bricks2:2>,
+<chisel:bricks2:3>,
+<chisel:bricks2:4>,
+<chisel:bricks2:5>,
+] as IItemStack [];
+for item in brick {
+bricks.add(item);
+}
+
+val hardenedClay=[
+<minecraft:hardened_clay>,
+<chisel:hardenedclay>,
+<chisel:hardenedclay:1>,
+<chisel:hardenedclay:2>,
+<chisel:hardenedclay:3>,
+<chisel:hardenedclay:4>,
+<chisel:hardenedclay:5>,
+<chisel:hardenedclay:6>,
+<chisel:hardenedclay:7>,
+<chisel:hardenedclay:8>,
+<chisel:hardenedclay:9>,
+<chisel:hardenedclay:10>,
+<chisel:hardenedclay:11>,
+<chisel:hardenedclay:12>,
+<chisel:hardenedclay:13>,
+<chisel:hardenedclay:14>,
+<chisel:hardenedclay:15>,
+<chisel:hardenedclay1>,
+<chisel:hardenedclay1:1>,
+<chisel:hardenedclay1:2>,
+<chisel:hardenedclay1:3>,
+<chisel:hardenedclay1:4>,
+<chisel:hardenedclay1:5>,
+<chisel:hardenedclay1:6>,
+<chisel:hardenedclay1:7>,
+<chisel:hardenedclay1:8>,
+<chisel:hardenedclay1:9>,
+<chisel:hardenedclay2>,
+<chisel:hardenedclay2:1>,
+<chisel:hardenedclay2:2>,
+<chisel:hardenedclay2:3>,
+<chisel:hardenedclay2:4>,
+<chisel:hardenedclay2:5>,
+<chisel:hardenedclay2:6>,
+<quark:hardened_clay_tiles>
+] as IItemStack [];
+for item in hardenedClay {
+terracotta.add(item);
 }
