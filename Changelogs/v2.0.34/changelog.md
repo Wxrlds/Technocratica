@@ -16,6 +16,10 @@ Added a Tooltip to the Quantum Processor
 
 Added a recipe for Mana Infused Hardened Glass
 
+Added a recipe for Netherrack
+
+Replaced the Chaotic Solar Panels & Chaotic Fusion Injectors in the Entity Bundler with the Draconic Variants
+
 Accelerated the alloying speed for Aluminum Brass; Manyullyn; Knight Slime; Alumite; Osmiridium; Osgloglas
 
 Increased the cluster count for Certus Quartz from 15 to 25 & ore count from 4 to 9
