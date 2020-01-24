@@ -5,9 +5,9 @@
 			"generator": {
 				"block": {"name": "projectred-exploration:ore", "metadata": 1},
 				"material": "stone",
-				"cluster-size": 2
+				"cluster-size": 9
 			},
-			"cluster-count": 1,
+			"cluster-count": 5,
 			"min-height": 0,
 			"max-height": 15,
 			"retrogen": "true",

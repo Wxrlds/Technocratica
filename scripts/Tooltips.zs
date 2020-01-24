@@ -51,6 +51,7 @@ for item in tools {
 <tconstruct:wide_guard>.withTag({Material: item}).addTooltip(format.red("Place in Crafting Table for other Stats"));
 }
 <projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));
+<extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
 <torchmaster:dread_lamp>.addTooltip(format.green("Prevents passive mob spawning in a 64 block radius"));
 <torchmaster:mega_torch>.addTooltip(format.green("Prevents hostile mob spawning in a 128 block radius"));
 <xat:inertia_null_stone>.addTooltip(format.red("Does not make you immune to fall damage!"));

@@ -1,4 +1,11 @@
 mods.tconstruct.Casting.addBasinRecipe(<appliedenergistics2:material:45>,<ore:endstone>,<liquid:heavywater>,1000,true,900);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack:1>, <ore:compressed2xCobblestone>, <liquid:lava>, 4000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack:2>, <ore:compressed3xCobblestone>, <liquid:lava>, 8000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack:3>, <ore:compressed4xCobblestone>, <liquid:lava>, 16000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack:4>, <ore:compressed5xCobblestone>, <liquid:lava>, 32000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack:5>, <ore:compressed6xCobblestone>, <liquid:lava>, 64000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:compressednetherrack>, <ore:compressed1xCobblestone>, <liquid:lava>, 2000, true, 600);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:netherrack>, <ore:cobblestone>, <liquid:lava>, 1000, true, 600);
 mods.tconstruct.Casting.addTableRecipe(<draconicevolution:draconic_core>,<mysticalagradditions:stuff:69>,<liquid:draconium>,9216,true,1200);
 mods.tconstruct.Casting.addTableRecipe(<draconicevolution:draconic_energy_core>,<draconicevolution:wyvern_energy_core>,<liquid:glowstone>,256000,true,3000);
 mods.tconstruct.Casting.addTableRecipe(<draconicevolution:wyvern_core>,<draconicevolution:draconic_core>,<liquid:osgloglas>,9216,true,1800);
