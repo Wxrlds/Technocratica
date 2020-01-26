@@ -13,3 +13,7 @@ Fixed uses for Lapotron and Energy Crystals wanting specific matadata
 Fixed the name for the Sextuple Stacked Awakened Draconium Ingot; Sextuple Stacked Draconic Energy Core
 
 Tweaked the recipe for the Dimensional Transreceiver
+
+Transmutation Tablet needs Draconic large Plates instead of Chaotic ones
+
+Liquid Coal can now also be produced by melting Coal
