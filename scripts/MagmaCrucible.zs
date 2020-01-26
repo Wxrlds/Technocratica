@@ -1,0 +1,1 @@
+mods.thermalexpansion.Crucible.addRecipe(<liquid:coal>*100,<ore:coal>.firstItem,4000);

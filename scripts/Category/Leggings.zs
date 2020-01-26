@@ -477,7 +477,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:nano_leggings>, [
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
-	[<ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, null, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>]
+	[<ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, null, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>]
 ]);
 
 #Stellar
@@ -487,7 +487,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:item_stellar_alloy_leg
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
-	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ic2:nano_leggings>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
+	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ic2:nano_leggings:*>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
@@ -497,9 +497,9 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:item_stellar_alloy_leg
 #Quantum
 recipes.remove(<ic2:quantum_leggings>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:quantum_leggings>, [
-	[<ic2:resource:12>, <ic2:resource:12>, <ic2:resource:12>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:resource:12>, <ic2:resource:12>, <ic2:resource:12>],
-	[<ic2:resource:12>, <ic2:resource:12>, <ic2:crafting:4>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:crafting:4>, <ic2:resource:12>, <ic2:resource:12>],
-	[<ic2:resource:12>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:lapotron_crystal:26>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:resource:12>],
+	[<ic2:resource:12>, <ic2:resource:12>, <ic2:resource:12>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:resource:12>, <ic2:resource:12>, <ic2:resource:12>],
+	[<ic2:resource:12>, <ic2:resource:12>, <ic2:crafting:4>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:crafting:4>, <ic2:resource:12>, <ic2:resource:12>],
+	[<ic2:resource:12>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:lapotron_crystal:*>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:resource:12>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:hazmat_leggings>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <enderio:item_stellar_alloy_leggings>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, null, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
@@ -515,7 +515,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:item.pe_dm_armor_1>, 
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
-	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_leggings>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
+	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_leggings:*>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],

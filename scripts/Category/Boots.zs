@@ -477,7 +477,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:nano_boots>, [
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, null, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
-	[<ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <draconicevolution:wyvern_boots>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>, <ic2:energy_crystal:26>]
+	[<ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <draconicevolution:wyvern_boots>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>]
 ]);
 
 #Stellar
@@ -491,7 +491,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:item_stellar_alloy_boo
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, null, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
-	[<ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ic2:nano_boots>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>]
+	[<ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ic2:nano_boots:*>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>]
 ]);
 
 #Quantum
@@ -519,7 +519,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:item.pe_dm_armor_0>, 
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
-	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_boots>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>]
+	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_boots:*>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>]
 ]);
 
 #Red Matter

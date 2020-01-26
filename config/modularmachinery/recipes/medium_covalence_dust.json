@@ -23,13 +23,13 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "redstonearsenal:storage@1",
+      "item": "redstonearsenal:material@160",
       "amount": 64
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "redstonearsenal:storage@1",
+      "item": "redstonearsenal:material@160",
       "amount": 64
     },
     {

@@ -225,6 +225,3 @@ return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, 
 },null);
 count += 1;
 }
-
-
-//recipes.addShaped("AgriSeed",<minecraft:wheat_seeds>.withTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte}),[[<ore:nuggetDiamond>, <ore:nuggetDiamond>, <ore:nuggetDiamond>],[<ore:nuggetDiamond>, <minecraft:wheat_seeds>.withTag({agri_analyzed: 1 as byte}).marked("seed"), <ore:nuggetDiamond>],[<ore:nuggetDiamond>, <ore:nuggetDiamond>, <ore:nuggetDiamond>]],function(out, ins, cInfo){return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte});},null);

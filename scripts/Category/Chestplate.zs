@@ -505,9 +505,9 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:wyvern_chest
 #Nano Suit
 recipes.remove(<ic2:nano_chestplate>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:nano_chestplate>, [
-	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal>, <draconicevolution:wyvern_chest>, <ic2:energy_crystal>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
-	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal>, <ic2:energy_crystal>, <ic2:energy_crystal>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
-	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal>, <ic2:energy_crystal>, <ic2:energy_crystal>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
+	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal:*>, <draconicevolution:wyvern_chest>, <ic2:energy_crystal:*>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
+	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
+	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:energy_crystal:*>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
 	[<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>],
@@ -519,7 +519,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:nano_chestplate>, [
 #Stellar
 recipes.remove(<enderio:item_stellar_alloy_chestplate>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:item_stellar_alloy_chestplate>, [
-	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:skullSentientEnder>, <ic2:nano_chestplate>, <ore:skullSentientEnder>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
+	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:skullSentientEnder>, <ic2:nano_chestplate:*>, <ore:skullSentientEnder>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:skullSentientEnder>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
 	[<ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
@@ -533,21 +533,21 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:item_stellar_alloy_che
 #Quantum
 recipes.remove(<ic2:quantum_chestplate>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:quantum_chestplate>, [
-	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:26>, <enderio:item_stellar_alloy_chestplate>, <ic2:lapotron_crystal:26>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
-	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:lapotron_crystal:26>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
-	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:26>, <ic2:hazmat_chestplate>, <ic2:lapotron_crystal:26>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
+	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:*>, <enderio:item_stellar_alloy_chestplate>, <ic2:lapotron_crystal:*>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
+	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:lapotron_crystal:*>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
+	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:lapotron_crystal:*>, <ic2:hazmat_chestplate>, <ic2:lapotron_crystal:*>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
 	[<ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:3>, <ic2:crafting:3>, <ic2:crafting:3>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
 	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
-	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:jetpack_electric:26>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>]
+	[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:jetpack_electric:*>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>]
 ]);
 
 #Dark Matter
 recipes.remove(<projecte:item.pe_dm_armor_2>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <projecte:item.pe_dm_armor_2>, [
-	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_chestplate>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
+	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <ic2:quantum_chestplate:*>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],

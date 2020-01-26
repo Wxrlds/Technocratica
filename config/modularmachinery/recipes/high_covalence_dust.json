@@ -23,13 +23,13 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "thermalfoundation:storage_resource@1",
+      "item": "thermalfoundation:material@802",
       "amount": 64
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "thermalfoundation:storage_resource@1",
+      "item": "thermalfoundation:material@802",
       "amount": 64
     },
     {
