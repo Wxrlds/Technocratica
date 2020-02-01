@@ -14,6 +14,4 @@ Added EMC to the Photovoltaic Cell IV
 
 Swaped the recipes for the Quantum Quarry and Digital Miner
 
-Re-did the JEI item Blacklist
-
 Removed the Spawners Quest chapter
