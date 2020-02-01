@@ -1,5 +1,3 @@
-Unified Ores, Ingots, Dusts,... (this will most likely break all of your automation)
-
 Removed the Translocators -> Tesslocators scripts ([V2.0.35](https://www.curseforge.com/minecraft/modpacks/technocratica/files/2869685) is the last version with Translocators so convert them or **they will be lost**)
 
 Removed the "I updated the Modpack Quest" (if your world was generated in [V2.0.17a](https://www.curseforge.com/minecraft/modpacks/technocratica/files/2802139) or prior please activate this quest for best user experience)
