@@ -13,3 +13,5 @@ Swaped the recipes for the Quantum Quarry and Digital Miner
 Unified Ores (this will most likely break all of your automation)
 
 Re-did the JEI item Blacklist
+
+Removed the Spawners Quest chapter
