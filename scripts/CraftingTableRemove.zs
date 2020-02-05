@@ -1,8 +1,5 @@
 import crafttweaker.item.IItemStack;
 val remRecipe=[
-<translocators:translocator_part>,
-<translocators:translocator_part:1>,
-<translocators:diamond_nugget>,
 <actuallyadditions:block_atomic_reconstructor>,
 <actuallyadditions:block_grinder>,
 <actuallyadditions:block_misc:1>,
@@ -18,6 +15,8 @@ val remRecipe=[
 <advgenerators:controller>,
 <advgenerators:iron_frame>,
 <advgenerators:iron_tubing>,
+<mysticalagriculture:iridium_seeds>,
+<mysticalagriculture:iridium_ore_seeds>,
 <advgenerators:iron_wiring>,
 <advgenerators:power_io>,
 <advgenerators:pressure_valve>,

@@ -213,7 +213,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 1,
+			"cluster-count": 6,
 			"min-height": 0,
 			"max-height": 16,
 			"retrogen": false,
@@ -294,7 +294,7 @@
 					"name": "emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"cluster-size": 2
 			},
 			"cluster-count": {
 				"min": 3,

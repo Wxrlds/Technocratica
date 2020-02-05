@@ -67,3 +67,4 @@ mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the use
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (It's a little bit stronger, so be prepared)");
 
 mods.jei.JEI.addItem(<ic2:ingot:8>);
+mods.jei.JEI.addItem(<forge:bucketfilled>.withTag({FluidName: "tin", Amount: 1000}));

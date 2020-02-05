@@ -10,12 +10,14 @@ val terracotta = <ore:terracotta>;
 <ore:dustLithium>.remove(<ic2:dust:11>);
 <ore:nuggetDiamond>.remove(<thermalfoundation:material:16>);
 <ore:nuggetEmerald>.remove(<agricraft:agri_nugget>);
-<ore:nuggetEmerald>.remove(<thermalfoundation:material:17>);
+<ore:nuggetEmerald>.remove(<thermalfoundation:material:17>);													
 <ore:oreArdite>.remove(<tconstruct:metal>);
 <ore:oreCertusQuartz>.remove(<appliedenergistics2:charged_quartz_ore>);
 <ore:oreCobalt>.remove(<tconstruct:metal>);
 <ore:slimeball>.remove(<industrialforegoing:pink_slime>);
 <ore:slimeballPink>.remove(<industrialforegoing:pink_slime>);
+<ore:ingotIridium>.remove(<ic2:misc_resource:1>);
+<ore:crushedUranium>.add(<bigreactors:dustyellorium>);
 
 val karatnormal=[
 <contenttweaker:karat_seed_coal_ore>,

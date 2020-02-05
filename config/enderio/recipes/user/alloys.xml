@@ -266,7 +266,7 @@
   </recipe>
 
 <!--Remove Dark Steel3-->
-  <recipe name="Alloy: Dark Steel, Variant" required="true" disabled="false">
+  <recipe name="Alloy: Dark Steel, Variant" required="true" disabled="true">
     <alloying energy="10500" exp="0.4">
       <input name="ingotSteel"/>
       <input name="obsidian"/>

@@ -2933,23 +2933,28 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtraCells-1.12.2-2.6.2a.jar",
+                    "file_name": "ExtraCells-1.12.2-2.6.5.jar",
                     "mc_versions": [
+                        "1.12.1",
+                        "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2653/854/ExtraCells-1.12.2-2.6.2a.jar",
-                    "id": "2653854",
+                    "url": "https://edge.forgecdn.net/files/2855/967/ExtraCells-1.12.2-2.6.5.jar",
+                    "id": "2855967",
                     "parent_id": "229218",
                     "hashes": {
-                        "sha1": "784ff18312fd46434fb05da9f2218eaf0297a9d0",
-                        "md5": "d289ffbb9f618e524ece8a2c944498e0"
+                        "sha1": "ad12ab8ae21ed1076dc2c60fd5ce5f5d1f416538",
+                        "md5": "a96d3b8fd1cc8b41fdde9469bacc5c99"
                     },
                     "required_dependencies": [
                         "223794"
                     ],
-                    "size": 2563518,
-                    "date_published": "2018-12-30T00:06:50.377Z"
+                    "size": 2520745,
+                    "date_published": "2020-01-07T01:58:43.440Z"
                 }
             ]
         },
@@ -3582,21 +3587,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.6.8.jar",
+                    "file_name": "HammerCore-1.12.2-2.0.6.9.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2867/178/HammerCore-1.12.2-2.0.6.8.jar",
-                    "id": "2867178",
+                    "url": "https://edge.forgecdn.net/files/2872/957/HammerCore-1.12.2-2.0.6.9.jar",
+                    "id": "2872957",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "db0449ba768cbb529fde18fa68942d539e79dc98",
-                        "md5": "a50a360ab474dd315bc76aa3a2d43d4e"
+                        "sha1": "84dffcc29e166ce0b16f15db3dc3a9ed87085efe",
+                        "md5": "cc05f7feb6425e0cb4c1f431ae39c655"
                     },
                     "required_dependencies": [],
-                    "size": 2359362,
-                    "date_published": "2020-01-24T14:18:13.970Z"
+                    "size": 2359500,
+                    "date_published": "2020-02-01T11:46:54.793Z"
                 }
             ]
         },
@@ -4216,21 +4221,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "journeymap-1.12.2-5.5.7.jar",
+                    "file_name": "journeymap-1.12.2-5.5.8.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2866/97/journeymap-1.12.2-5.5.7.jar",
-                    "id": "2866097",
+                    "url": "https://edge.forgecdn.net/files/2873/185/journeymap-1.12.2-5.5.8.jar",
+                    "id": "2873185",
                     "parent_id": "32274",
                     "hashes": {
-                        "sha1": "54e1dd07cc17f6b9e3cb62d8e7251f72574f1c35",
-                        "md5": "d721a46d1e370a129be972879b1c2000"
+                        "sha1": "bc5f71b1478414b0e1711a89dd0efe3d467a22da",
+                        "md5": "927074f3947d29fe3f25a9b8932664f6"
                     },
                     "required_dependencies": [],
-                    "size": 1934134,
-                    "date_published": "2020-01-22T22:47:31.667Z"
+                    "size": 1934386,
+                    "date_published": "2020-02-01T18:56:47.963Z"
                 }
             ]
         },
@@ -6291,23 +6296,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ProjectEIntegration-1.12.2-2.3.1.jar",
+                    "file_name": "ProjectEIntegration-1.12.2-2.5.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2745/445/ProjectEIntegration-1.12.2-2.3.1.jar",
-                    "id": "2745445",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2759/658/ProjectEIntegration-1.12.2-2.5.0.jar",
+                    "id": "2759658",
                     "parent_id": "313402",
                     "hashes": {
-                        "sha1": "b2a7cd41bd967665117baa3766818987d8f974a7",
-                        "md5": "f13c801a5568ce5ab93e5a5d337d9abb"
+                        "sha1": "a566d2cd0b03657e373b9bbcd1b45a7422edfdd6",
+                        "md5": "247c702d016a8bb34125393df976f3a0"
                     },
                     "required_dependencies": [
                         "226410"
                     ],
-                    "size": 222054,
-                    "date_published": "2019-07-21T14:52:22.427Z"
+                    "size": 226103,
+                    "date_published": "2019-08-11T13:47:33.620Z"
                 }
             ]
         },
@@ -7826,42 +7831,6 @@
                     "required_dependencies": [],
                     "size": 167213,
                     "date_published": "2019-11-18T21:09:06.307Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "nCdDHUMVFe9105WI",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "translocators-1-8"
-            },
-            "name": {
-                "curseforge": "Translocators 1.8.+"
-            },
-            "id": {
-                "curseforge": "247695"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Translocators-1.12.2-2.5.2.81-universal.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2755/795/Translocators-1.12.2-2.5.2.81-universal.jar",
-                    "id": "2755795",
-                    "parent_id": "247695",
-                    "hashes": {
-                        "sha1": "b008cc099c15e0cb121c43c889504fc367b3dedd",
-                        "md5": "bea9b18295a2b7762dedd938f447353c"
-                    },
-                    "required_dependencies": [
-                        "242818",
-                        "258426"
-                    ],
-                    "size": 446678,
-                    "date_published": "2019-08-06T08:51:16.623Z"
                 }
             ]
         },

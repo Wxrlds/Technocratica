@@ -25,8 +25,6 @@ val knife = <tconstruct:knife_blade>;
 val bow = <tconstruct:bow_limb>;
 val arrow = <tconstruct:arrow_head>;
 val chisel = <tcomplement:chisel_head>;
-recipes.addShapeless("Tesslocators_Translocator_Item_to_Tesslocator_Item",<tesslocator:basic_fluid_tesslocator>, [<translocators:translocator_part:1>]);
-recipes.addShapeless("Tesslocators_Translocator_Fluid_to_Tesslocator_fluid",<tesslocator:basic_item_tesslocator>, [<translocators:translocator_part>]);
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
 recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>,<ore:crystalFluix>,<projectred-transportation:pipe>]);
 recipes.addShapeless("CoT_10x_Sugar_Uncraft",<minecraft:sugar>*10,[<contenttweaker:10x_sugar>]);
