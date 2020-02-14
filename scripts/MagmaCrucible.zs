@@ -1,3 +1,13 @@
 mods.thermalexpansion.Crucible.addRecipe(<liquid:coal>*100,<ore:coal>.firstItem,4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:electrumflux>*16, <ore:nuggetElectrumFlux>.firstItem, 500);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:electrumflux>*144, <ore:ingotElectrumFlux>.firstItem, 4000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:electrumflux>*1296, <ore:blockElectrumFlux>.firstItem, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedglowstone>*16, <ore:nuggetRefinedGlowstone>.firstItem, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedglowstone>*144, <ore:ingotRefinedGlowstone>.firstItem, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedglowstone>*1296, <ore:blockRefinedGlowstone>.firstItem, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedobsidian>*16, <ore:nuggetRefinedObsidian>.firstItem, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedobsidian>*144, <ore:ingotRefinedObsidian>.firstItem, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:refinedobsidian>*1296, <ore:blockRefinedObsidian>.firstItem, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:osgloglas>*16, <ore:nuggetOsgloglas>.firstItem, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:osgloglas>*144, <ore:ingotOsgloglas>.firstItem, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:osgloglas>*1296, <ore:blockOsgloglas>.firstItem, 32000);

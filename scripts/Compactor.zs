@@ -1,2 +1,0 @@
-mods.thermalexpansion.Compactor.addMintRecipe(<tconstruct:large_plate>.withTag({Material:"blackquartz_plustic"}),<actuallyadditions:item_misc:5>*8,3000);
-mods.thermalexpansion.Compactor.addMintRecipe(<tconstruct:large_plate>.withTag({Material:"void_actadd_plustic"}),<actuallyadditions:item_crystal:3>*8,3000);

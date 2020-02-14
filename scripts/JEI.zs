@@ -6,7 +6,6 @@ val HideCategJEI=[
 "EIOWC",
 "minecraft.anvil",
 "Painter",
-"thermalexpansion.charger",
 "tinker_io:smart_output"
 ] as string [];
 for Categ in HideCategJEI {
@@ -34,6 +33,15 @@ mods.jei.JEI.addDescription(item.withTag({recipeType:5}),"Right click a lower ti
 mods.jei.JEI.addDescription(item.withTag({recipeType:6}),"Right click a lower tier machine with a Tier Installer to upgrade");
 mods.jei.JEI.addDescription(item.withTag({recipeType:7}),"Right click a lower tier machine with a Tier Installer to upgrade");
 mods.jei.JEI.addDescription(item.withTag({recipeType:8}),"Right click a lower tier machine with a Tier Installer to upgrade");
+}
+
+val MekTTip2=[
+<mekanism:basicblock:6>,
+<mekanism:gastank>,
+<mekanism:energycube>
+] as IItemStack [];
+for item in MekTTip2 {
+mods.jei.JEI.addDescription(item,"Right click a lower tier with a Tier Installer to upgrade");
 }
 
 val MekTankTip=[
@@ -66,5 +74,14 @@ mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the use
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze (It's a little bit stronger, so be prepared)");
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (It's a little bit stronger, so be prepared)");
 
-mods.jei.JEI.addItem(<ic2:ingot:8>);
-mods.jei.JEI.addItem(<forge:bucketfilled>.withTag({FluidName: "tin", Amount: 1000}));
+val addItems=[
+<ic2:ingot:8>,
+<forge:bucketfilled>.withTag({FluidName: "tin", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "electrumflux", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "refinedglowstone", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "refinedobsidian", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "osmium", Amount: 1000})
+] as IItemStack [];
+for item in addItems {
+mods.jei.JEI.addItem(item);
+}

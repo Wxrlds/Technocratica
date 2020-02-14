@@ -2,7 +2,8 @@
 	"registryname": "seed_infuser",
 	"localizedname": "Seed Infuser",
 	"requires-blueprint": true,
-	"parts": [{
+	"parts": [
+		{
             "x": -1,
             "y": 0,
             "z": 0,
