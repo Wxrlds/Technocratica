@@ -18,6 +18,7 @@ val remRecipe=[
 <mysticalagriculture:iridium_seeds>,
 <mysticalagriculture:iridium_ore_seeds>,
 <advgenerators:iron_wiring>,
+<extendedcrafting:material:3>,
 <advgenerators:power_io>,
 <advgenerators:pressure_valve>,
 <advgenerators:turbine_adv_alloy>,

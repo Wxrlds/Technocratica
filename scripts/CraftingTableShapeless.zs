@@ -27,6 +27,7 @@ val arrow = <tconstruct:arrow_head>;
 val chisel = <tcomplement:chisel_head>;
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
 recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>,<ore:crystalFluix>,<projectred-transportation:pipe>]);
+recipes.addShapeless("AA_Black_Quartz_From_Block",<actuallyadditions:item_misc:5>*4,[<actuallyadditions:block_misc:2>]);
 recipes.addShapeless("CoT_10x_Sugar_Uncraft",<minecraft:sugar>*10,[<contenttweaker:10x_sugar>]);
 recipes.addShapeless("CoT_11x_Infinity_Ingot_1",<contenttweaker:11x_infinity_ingot>,[<contenttweaker:5x_infinity_ingot>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>]);
 recipes.addShapeless("CoT_11x_Infinity_Ingot_2",<contenttweaker:11x_infinity_ingot>,[<contenttweaker:4x_infinity_ingot>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>]);

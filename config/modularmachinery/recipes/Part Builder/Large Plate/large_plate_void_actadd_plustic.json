@@ -1,7 +1,7 @@
 {
 	"machine": "less_functional_part_builder",
 	"registryName": "large_plate_void_actadd_plustic",
-	"recipeTime": 100,
+	"recipeTime": 10,
 	"requirements": [{
 			"type": "energy",
 			"io-type": "input",

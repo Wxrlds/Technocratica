@@ -2249,21 +2249,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.19.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.20.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2852/262/Cyclic-1.12.2-1.19.19.jar",
-                    "id": "2852262",
+                    "url": "https://edge.forgecdn.net/files/2883/487/Cyclic-1.12.2-1.19.20.jar",
+                    "id": "2883487",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "059df1221acb1067ac889e96b78919beee814c7f",
-                        "md5": "3ad2493ab7d4d9f93a31dc34c5f87312"
+                        "sha1": "03cd88ad7fe9c43fee563b8ee7afdd508f75e153",
+                        "md5": "05140d52cbce3c6ce53b1d069fc10e4c"
                     },
                     "required_dependencies": [],
-                    "size": 3750850,
-                    "date_published": "2019-12-31T07:33:06Z"
+                    "size": 3986234,
+                    "date_published": "2020-02-17T07:53:34.953Z"
                 }
             ]
         },
@@ -7159,23 +7159,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tesla-core-lib-1.12.2-1.0.15.jar",
+                    "file_name": "tesla-core-lib-1.12.2-1.0.16.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2580/52/tesla-core-lib-1.12.2-1.0.15.jar",
-                    "id": "2580052",
+                    "url": "https://edge.forgecdn.net/files/2882/822/tesla-core-lib-1.12.2-1.0.16.jar",
+                    "id": "2882822",
                     "parent_id": "254602",
                     "hashes": {
-                        "sha1": "3e8b6133163f44644b7911027a986f4a2bf3c100",
-                        "md5": "b0214b0a90243374c6bd89a023f2b26e"
+                        "sha1": "4df21f45fa94849c1323f647aadec8a8968384b9",
+                        "md5": "a62f62a4c1fe52a9ff16ebc64aca8b1e"
                     },
                     "required_dependencies": [
                         "248453"
                     ],
-                    "size": 1140374,
-                    "date_published": "2018-07-06T13:40:50.553Z"
+                    "size": 1138980,
+                    "date_published": "2020-02-16T09:15:47.050Z"
                 }
             ]
         },
