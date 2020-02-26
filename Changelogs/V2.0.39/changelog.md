@@ -6,9 +6,9 @@ Fluxed Electrum con be produced in the Alloy Smelter & Induction Smelter
 
 Added a Quest for Knightslime; Manyullyn Armor
 
-Signalum Cell Frame (Empty) is now a Tier 2 only recipe
+Signalum Cell Frame (Empty); Resonant Cell Frame (Empty) is now a Tier 2 only recipe
 
-Tweaked Signalum Cell Frame (Empty); Energy Cell (AE2) recipe
+Tweaked Signalum Cell Frame (Empty); Energy Cell (AE2); Ultimate Energy Input/Output Hatch recipe
 
 Less Functional Part Builder Blueprint Quest is now hidden until unlocked
 
@@ -26,4 +26,10 @@ Removed EMC from Clay Matter
 
 Made the Creative Cobble Generator a Tier 2 recipe
 
+Made the Creative Energy Cell; Creative Mill; Turbine Creative Steam Generator (Legacy) a Tier 3 recipe
+
 Soularium JetPlate is behind End Steel Armor
+
+Added the Ore Quintupling Machine
+
+Disabled Quark Frogs (to reduce some lag)
