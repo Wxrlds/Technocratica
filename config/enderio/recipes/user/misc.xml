@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+<!--Fluxed Electrum-->
+<recipe name="Ingot: Fluxed Electrum--" required="true">
+    <alloying energy="10000" exp="0.5">
+      <input name="ingotElectrum"/>
+      <input name="dustRedstone" amount="5"/>
+      <output name="ingotElectrumFlux"/>
+    </alloying>
+  </recipe>
+</enderio:recipes>

@@ -6914,21 +6914,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SolarFluxReborn_1.12.2-4.35r.jar",
+                    "file_name": "SolarFluxReborn_1.12.2-12.3.8.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2783/99/SolarFluxReborn_1.12.2-4.35r.jar",
-                    "id": "2783099",
+                    "url": "https://edge.forgecdn.net/files/2887/575/SolarFluxReborn_1.12.2-12.3.8.jar",
+                    "id": "2887575",
                     "parent_id": "246974",
                     "hashes": {
-                        "sha1": "347bee46626d52cc71c42eeb88185a5945e53f25",
-                        "md5": "33b0a2c1e69fb5f15d063f20d2ff88fa"
+                        "sha1": "08b83b067da30340a503abbc936d2d63e4ccba01",
+                        "md5": "b37e5db94767d409c875d3d0a1950c55"
                     },
                     "required_dependencies": [],
-                    "size": 671064,
-                    "date_published": "2019-09-11T17:00:25.027Z"
+                    "size": 706049,
+                    "date_published": "2020-02-23T20:57:35.120Z"
                 }
             ]
         },
@@ -7089,25 +7089,28 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "StorageDrawers-1.12.2-5.4.0.jar",
+                    "file_name": "StorageDrawers-1.12.2-5.4.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2777/929/StorageDrawers-1.12.2-5.4.0.jar",
-                    "id": "2777929",
+                    "url": "https://edge.forgecdn.net/files/2887/858/StorageDrawers-1.12.2-5.4.1.jar",
+                    "id": "2887858",
                     "parent_id": "223852",
                     "hashes": {
-                        "sha1": "c6b873447d3682874f36936281034b26a9977b77",
-                        "md5": "039cbee23cf7fefe65af1114483fb57e"
+                        "sha1": "d72295689a9176b7dc435d59c6241d0463aed4e8",
+                        "md5": "050dd7ca699431dc4ce0b581567aae8a"
                     },
                     "required_dependencies": [
                         "230497"
                     ],
-                    "size": 604797,
-                    "date_published": "2019-09-04T02:11:39.673Z"
+                    "size": 605381,
+                    "date_published": "2020-02-24T06:13:00.340Z"
                 }
             ]
         },

@@ -1,3 +1,6 @@
+mods.thermalexpansion.Crucible.removeRecipe(<minecraft:obsidian>);
+
+mods.thermalexpansion.Crucible.addRecipe(<liquid:obsidian>*144, <ore:obsidian>.firstItem, 40000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:coal>*100,<ore:coal>.firstItem,4000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:electrumflux>*16, <ore:nuggetElectrumFlux>.firstItem, 500);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:electrumflux>*144, <ore:ingotElectrumFlux>.firstItem, 4000);

@@ -30,7 +30,7 @@
     },
     {
       "item": "projectex:clay_matter|0",
-      "emc": 9223372036854775807
+      "emc": 0
     },
     {
       "item": "actuallyadditions:item_misc|5",
@@ -551,6 +551,38 @@
     {
       "item": "minecraft:bucket|0",
       "emc": 768
+    },
+    {
+      "item": "thermalfoundation:material|1024",
+      "emc": 816
+    },
+    {
+      "item": "thermalfoundation:material|2050",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|772",
+      "emc": 192
+    },
+    {
+      "item": "thermalfoundation:material|1026",
+      "emc": 896
+    },
+    {
+      "item": "thermalfoundation:material|2048",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|1025",
+      "emc": 800
+    },
+    {
+      "item": "thermalfoundation:material|2052",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|1027",
+      "emc": 808
     }
   ]
 }

@@ -463,22 +463,10 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <simplyjetpacks:itemjetpack:18>
 	[<simplyjetpacks:metaitemmods:30>, <simplyjetpacks:metaitemmods:30>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:itemjetpack:17>, <simplyjetpacks:metaitemmods:30>, <simplyjetpacks:metaitemmods:30>]
 ]);
 
-#Dark Jetplate
-recipes.remove(<simplyjetpacks:itemjetpack:9>);
-mods.extendedcrafting.TableCrafting.addShaped(3, <simplyjetpacks:itemjetpack:9>, [
-	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <simplyjetpacks:itemjetpack:18>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
-	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
-	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:itemEnderCrystal>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
-	[<simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>],
-	[<simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>],
-	[<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>],
-	[<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>]
-]);
-
 #End Steel
 recipes.remove(<enderio:item_end_steel_chestplate>);
 mods.extendedcrafting.TableCrafting.addShaped(3, <enderio:item_end_steel_chestplate>, [
-	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:skullGuardianDiode>, <simplyjetpacks:itemjetpack:9>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
+	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:skullGuardianDiode>, <simplyjetpacks:itemjetpack:18>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
 	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:skullGuardianDiode>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
 	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:skullGuardianDiode>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
 	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
@@ -487,11 +475,23 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <enderio:item_end_steel_chestpl
 	[<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>]
 ]);
 
+#Dark Jetplate
+recipes.remove(<simplyjetpacks:itemjetpack:9>);
+mods.extendedcrafting.TableCrafting.addShaped(3, <simplyjetpacks:itemjetpack:9>, [
+	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <enderio:item_end_steel_chestplate>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
+	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
+	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:itemEnderCrystal>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
+	[<simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>],
+	[<simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>, <simplyjetpacks:metaitemmods:4>],
+	[<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:itemfluxpack:5>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>],
+	[<simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:itemjetpack:8>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>]
+]);
+
 #Tier 4 Table
 #Wyvern
 recipes.remove(<draconicevolution:wyvern_chest>);
 mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:wyvern_chest>, [
-	[<draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <enderio:item_end_steel_chestplate>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>],
+	[<draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <simplyjetpacks:itemjetpack:9>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_core>],
 	[<ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>],
 	[<ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>],
 	[<ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>],
