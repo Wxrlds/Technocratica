@@ -8,3 +8,14 @@ Increased Rf/t / FE/t for Ender Ingot; Black Iron
 
 Tweaked Atomic Reconstructor; Pattern Storage Signalum Cell Frame (Empty); Neutron Collector recipe
 
+Ore Quintupling Machine Quest now works with NBT
+
+Stone Transmutation Table from ProjectEX isn't able to learn Blocks, Nuggets, Dust, Ore anymore
+
+Added JEI Tooltips for PackagedAuto blocks
+
+Added EMC to Bottle o' Enchanting; Philosophers Stone; Stone Transmutation Table; Transmutation Table; Transmutation Tablet
+
+Recipes for Jetplates are now removed by name so Particles can be added
+
+IC2 coal coke dosn't show in JEI anymore
