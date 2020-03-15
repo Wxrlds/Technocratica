@@ -583,6 +583,62 @@
     {
       "item": "thermalfoundation:material|1027",
       "emc": 808
+    },
+    {
+      "item": "minecraft:experience_bottle|0",
+      "emc": 64
+    },
+    {
+      "item": "projecte:item.pe_philosophers_stone|0",
+      "emc": 1000
+    },
+    {
+      "item": "projectex:stone_table|0",
+      "emc": 10000
+    },
+    {
+      "item": "projecte:transmutation_table|0",
+      "emc": 100000
+    },
+    {
+      "item": "projecte:item.pe_transmutation_tablet|0",
+      "emc": 1000000
+    },
+    {
+      "item": "extrautils2:ingredients|12",
+      "emc": 2912
+    },
+    {
+      "item": "extrautils2:ingredients|17",
+      "emc": 17664
+    },
+    {
+      "item": "thermalfoundation:material|135",
+      "emc": 4096
+    },
+    {
+      "item": "extrautils2:ingredients|11",
+      "emc": 2048
+    },
+    {
+      "item": "thermalfoundation:material|802",
+      "emc": 128
+    },
+    {
+      "item": "tconstruct:ingots|5",
+      "emc": 512
+    },
+    {
+      "item": "tconstruct:ingots|4",
+      "emc": 296
+    },
+    {
+      "item": "tinker_io:cd_lonesome_avenue|0",
+      "emc": 2048
+    },
+    {
+      "item": "mysticalagriculture:crafting|14",
+      "emc": 2048
     }
   ]
 }

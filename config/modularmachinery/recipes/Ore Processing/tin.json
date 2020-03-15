@@ -9,7 +9,7 @@
 		}, {
 			"type": "item",
 			"io-type": "input",
-			"item": "thermalfoundation:ore@1",
+			"item": "mekanism:oreblock@2",
 			"amount": 1
 		}, {
 			"type": "item",

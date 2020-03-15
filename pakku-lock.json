@@ -2249,21 +2249,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.19.20.jar",
+                    "file_name": "Cyclic-1.12.2-1.19.21.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2883/487/Cyclic-1.12.2-1.19.20.jar",
-                    "id": "2883487",
+                    "url": "https://edge.forgecdn.net/files/2892/633/Cyclic-1.12.2-1.19.21.jar",
+                    "id": "2892633",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "03cd88ad7fe9c43fee563b8ee7afdd508f75e153",
-                        "md5": "05140d52cbce3c6ce53b1d069fc10e4c"
+                        "sha1": "2e6b5cfd0bac69b0ce4f4deb83dc8ba1c46d8854",
+                        "md5": "9cefc761c7eeae10ec3cc2aa602339e9"
                     },
                     "required_dependencies": [],
-                    "size": 3986234,
-                    "date_published": "2020-02-17T07:53:34.953Z"
+                    "size": 3986239,
+                    "date_published": "2020-03-01T17:11:32.913Z"
                 }
             ]
         },
@@ -2356,21 +2356,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DarknessLib-1.12.2-1.0.0.jar",
+                    "file_name": "DarknessLib-1.12.2-1.1.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2831/423/DarknessLib-1.12.2-1.0.0.jar",
-                    "id": "2831423",
+                    "url": "https://edge.forgecdn.net/files/2892/127/DarknessLib-1.12.2-1.1.0.jar",
+                    "id": "2892127",
                     "parent_id": "349174",
                     "hashes": {
-                        "sha1": "9e50838dfb59b3c96e489311d3815f15e1e3baeb",
-                        "md5": "02276b42895d9703f6cf1bc57ae20c73"
+                        "sha1": "6de4ac9a466829dcf52c53ff0f1cc8871cf7ab1e",
+                        "md5": "1ffa30777a3781990908de88e1a4324d"
                     },
                     "required_dependencies": [],
-                    "size": 49908,
-                    "date_published": "2019-11-23T17:35:59.923Z"
+                    "size": 50647,
+                    "date_published": "2020-02-29T20:36:08.150Z"
                 }
             ]
         },
@@ -3473,21 +3473,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.21.jar",
+                    "file_name": "geneticsreborn-1.12-1.23.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2826/632/geneticsreborn-1.12-1.21.jar",
-                    "id": "2826632",
+                    "url": "https://edge.forgecdn.net/files/2902/201/geneticsreborn-1.12-1.23.jar",
+                    "id": "2902201",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "53d81d96c98c4e450e1b71f63606c65bb191d815",
-                        "md5": "81cd924832167d2976c24cf61cbc7346"
+                        "sha1": "ce3ae633c2997f7c43af2c2c1ce59d14e50ef102",
+                        "md5": "40cc0d094e69b2669e04534127a532ac"
                     },
                     "required_dependencies": [],
-                    "size": 405623,
-                    "date_published": "2019-11-13T04:35:27.220Z"
+                    "size": 407267,
+                    "date_published": "2020-03-15T07:20:41.927Z"
                 }
             ]
         },
@@ -3549,7 +3549,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Grue-1.12.2-1.6.0.jar",
+                    "file_name": "Grue-1.12.2-1.7.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3557,18 +3557,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2831/576/Grue-1.12.2-1.6.0.jar",
-                    "id": "2831576",
+                    "url": "https://edge.forgecdn.net/files/2892/182/Grue-1.12.2-1.7.0.jar",
+                    "id": "2892182",
                     "parent_id": "235133",
                     "hashes": {
-                        "sha1": "d6a3caa5df555869ad19e3c87c502c5834835ab3",
-                        "md5": "d8a09bec0414e8b12636cfbe30ad08e1"
+                        "sha1": "13bb2f86e035aaf9dee05f62ee66089c8a787eec",
+                        "md5": "dab63c09cb43b82bb573c288255ad2e7"
                     },
                     "required_dependencies": [
                         "349174"
                     ],
-                    "size": 561908,
-                    "date_published": "2019-11-23T22:15:37.280Z"
+                    "size": 562100,
+                    "date_published": "2020-02-29T22:05:12.590Z"
                 }
             ]
         },
@@ -6333,23 +6333,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Quark-r1.6-177.jar",
+                    "file_name": "Quark-r1.6-178.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2759/240/Quark-r1.6-177.jar",
-                    "id": "2759240",
+                    "url": "https://edge.forgecdn.net/files/2889/332/Quark-r1.6-178.jar",
+                    "id": "2889332",
                     "parent_id": "243121",
                     "hashes": {
-                        "sha1": "3848e5bf228baf74541a565da01ac7179f0c4934",
-                        "md5": "db3f8b818a99d3155194d63ae8919bfa"
+                        "sha1": "37999cc0b83f1acb1522cdbc257eafb2da772812",
+                        "md5": "8d69c5722fa6498813da16b4d940246d"
                     },
                     "required_dependencies": [
                         "250363"
                     ],
-                    "size": 3875942,
-                    "date_published": "2019-08-10T23:01:22.870Z"
+                    "size": 3901586,
+                    "date_published": "2020-02-26T18:33:50.987Z"
                 }
             ]
         },
@@ -7115,6 +7115,39 @@
             ]
         },
         {
+            "pakku_id": "k16KKJtTq3EevoNh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "super-sound-muffler-revived"
+            },
+            "name": {
+                "curseforge": "Super Sound Muffler: Revived"
+            },
+            "id": {
+                "curseforge": "363856"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "supersoundmuffler-revived_1.12.2_1.0.2.10.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2886/150/supersoundmuffler-revived_1.12.2_1.0.2.10.jar",
+                    "id": "2886150",
+                    "parent_id": "363856",
+                    "hashes": {
+                        "sha1": "dbd647ab54a365b6f1a67d569fca20ee33fb958a",
+                        "md5": "e2cdef436dfe1ef9d8629a1af821c063"
+                    },
+                    "required_dependencies": [],
+                    "size": 80841,
+                    "date_published": "2020-02-21T19:01:16.863Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "SOG9mlhBh3Wak0rK",
             "type": "MOD",
             "slug": {
@@ -7162,26 +7195,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tesla-core-lib-1.12.2-1.0.16.jar",
+                    "file_name": "tesla-core-lib-1.12.2-1.0.17.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2882/822/tesla-core-lib-1.12.2-1.0.16.jar",
-                    "id": "2882822",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2891/841/tesla-core-lib-1.12.2-1.0.17.jar",
+                    "id": "2891841",
                     "parent_id": "254602",
                     "hashes": {
-                        "sha1": "4df21f45fa94849c1323f647aadec8a8968384b9",
-                        "md5": "a62f62a4c1fe52a9ff16ebc64aca8b1e"
+                        "sha1": "03b815d5955845be96a13a80f1d8b7ba8c6f4520",
+                        "md5": "6c76ff8a9251852d00d9a648e72ad25c"
                     },
                     "required_dependencies": [
                         "248453"
                     ],
-                    "size": 1138980,
-                    "date_published": "2020-02-16T09:15:47.050Z"
+                    "size": 1138988,
+                    "date_published": "2020-02-29T10:45:36.973Z"
                 }
             ]
         },

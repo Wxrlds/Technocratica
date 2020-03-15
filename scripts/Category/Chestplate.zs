@@ -451,8 +451,8 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <mysticalagriculture:supremium_
 	[<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>]
 ]);
 
-#Flux Jetplate
-recipes.remove(<simplyjetpacks:itemjetpack:18>);
+#Flux Jetplate 
+recipes.removeByRecipeName("simplyjetpacks:upgraderecipe34");
 mods.extendedcrafting.TableCrafting.addShaped(3, <simplyjetpacks:itemjetpack:18>, [
 	[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <mysticalagriculture:supremium_chestplate>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],
 	[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],
@@ -476,7 +476,7 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <enderio:item_end_steel_chestpl
 ]);
 
 #Dark Jetplate
-recipes.remove(<simplyjetpacks:itemjetpack:9>);
+recipes.removeByRecipeName("simplyjetpacks:upgraderecipe5");
 mods.extendedcrafting.TableCrafting.addShaped(3, <simplyjetpacks:itemjetpack:9>, [
 	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <enderio:item_end_steel_chestplate>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],
 	[<ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>, <ore:ingot_dark_soularium>],

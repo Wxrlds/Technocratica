@@ -40,6 +40,8 @@ recipes.addShapeless("CoT_12x_Wool_Uncraft",<minecraft:wool>*12,[<contenttweaker
 recipes.addShapeless("CoT_15x_Crystal_Matrix",<contenttweaker:15x_crystal_matrix>,[<ore:blockCrystalMatrix>,<contenttweaker:8x_crystal_matrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>]);
 recipes.addShapeless("CoT_15x_Crystal_Matrix_Uncraft",<avaritia:block_resource:2>*15,[<contenttweaker:15x_crystal_matrix>]);
 recipes.addShapeless("CoT_16x_Iron_Ingot",<contenttweaker:16x_iron_ingot>,[<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:blockIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]);
+recipes.addShapeless("ExtendedCrafting_Black_Iron_Block_Uncrafting",<extendedcrafting:material>*9, [<extendedcrafting:storage>]);
+recipes.addShapeless("AdvSolPan_Sunnarium_Uncrafting",<advanced_solar_panels:crafting:1> * 9, [<advanced_solar_panels:crafting>]);
 recipes.addShapeless("CoT_16x_Iron_Ingot_Uncraft",<minecraft:iron_ingot>*16,[<contenttweaker:16x_iron_ingot>]);
 recipes.addShapeless("CoT_18x_Glowstone_Uncraft",<minecraft:glowstone>*18,[<contenttweaker:18x_glowstone>]);
 recipes.addShapeless("CoT_18x_Obsidian_Uncraft",<minecraft:obsidian>,[<contenttweaker:18x_obsidian>]);

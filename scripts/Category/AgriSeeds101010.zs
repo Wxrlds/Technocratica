@@ -225,3 +225,7 @@ return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, 
 },null);
 count += 1;
 }
+
+for item in upgradeSeeds {
+mods.jei.JEI.addDescription(item,"The Seed needs to be analyzend first before trying to upgrade it");
+}
