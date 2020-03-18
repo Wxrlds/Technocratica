@@ -4,7 +4,7 @@ Added a Tooltip for Seeds explaining how to upgrade them in the Crafting Table
 
 Increased Rf/t / FE/t for Ender Ingot; Black Iron
 
-Tweaked Atomic Reconstructor; Pattern Storage Signalum Cell Frame (Empty); Neutron Collector; Advanced Solar Panel; Hybrid Solar Panel; Ultimate Solar Panel; Elytra recipe
+Tweaked Atomic Reconstructor; Pattern Storage; Signalum Cell Frame (Empty); Neutron Collector; Advanced Solar Panel; Hybrid Solar Panel; Ultimate Solar Panel; Elytra recipe
 
 Ore Quintupling Machine Quest now works with NBT
 
