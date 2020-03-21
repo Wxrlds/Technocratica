@@ -1,3 +1,3 @@
-Added Compressed Cobblestone to the Stone Transmutation Table
+Added Compressed Cobblestone; Opinium Cores to the Stone Transmutation Table
 
-Tweaked Base Crafting Seed recipe
+Tweaked Base Crafting Seed; Simple Machine Chassis recipe
