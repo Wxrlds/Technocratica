@@ -1,1 +1,0 @@
-mods.mekanism.combiner.addRecipe(<ore:blockGraphite>*64,<ore:compressed3xCobblestone>,<quantumflux:graphiteore>);

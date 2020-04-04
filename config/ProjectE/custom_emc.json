@@ -342,7 +342,7 @@
     },
     {
       "item": "advanced_solar_panels:crafting|7",
-      "emc": 0
+      "emc": 6144
     },
     {
       "item": "enderio:item_material|0",
@@ -639,6 +639,18 @@
     {
       "item": "mysticalagriculture:crafting|14",
       "emc": 2048
+    },
+    {
+      "item": "solarflux:photovoltaic_cell_4|0",
+      "emc": 20260
+    },
+    {
+      "item": "projectex:arcane_tablet|0",
+      "emc": 10000000
+    },
+    {
+      "item": "advanced_solar_panels:crafting|1",
+      "emc": 3840
     }
   ]
 }

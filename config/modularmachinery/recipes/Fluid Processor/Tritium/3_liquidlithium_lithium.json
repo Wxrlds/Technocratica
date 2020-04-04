@@ -1,7 +1,7 @@
 {
 	"machine": "fluid_processor",
 	"registryName": "3_liquidlithium_lithium",
-	"recipeTime": 4,
+	"recipeTime": 1,
 	"requirements": [{
 			"type": "energy",
 			"io-type": "input",

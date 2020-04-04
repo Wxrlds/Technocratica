@@ -1,7 +1,7 @@
 {
 	"machine": "fluid_processor",
 	"registryName": "4_lithium_tritium",
-	"recipeTime": 8,
+	"recipeTime": 1,
 	"requirements": [{
 			"type": "energy",
 			"io-type": "input",

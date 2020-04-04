@@ -1,1 +1,0 @@
-mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:prismarine_shard>);

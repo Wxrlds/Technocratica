@@ -1,3 +1,0 @@
-recipes.removeShaped(<minecraft:chest>,[[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],[<ore:plankWood>,null,<ore:plankWood>],[<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]]);
-recipes.removeShaped(<minecraft:chest>*4,[[<ore:logWood>,<ore:logWood>,<ore:logWood>],[<ore:logWood>,null,<ore:logWood>],[<ore:logWood>,<ore:logWood>,<ore:logWood>]]);
-recipes.removeShaped(<minecraft:trapped_chest>*4,[[<ore:logWood>,<ore:logWood>,<ore:logWood>],[<ore:logWood>,null,<ore:logWood>],[<ore:logWood>,<ore:logWood>,<ore:logWood>]]);

@@ -1,1 +1,0 @@
-<tinker_io:smart_output>.hardness = 3.0;

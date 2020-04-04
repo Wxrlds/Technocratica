@@ -22,23 +22,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DankNull-1.12.2-1.7.89.jar",
+                    "file_name": "DankNull-1.12.2-1.7.91.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2831/353/DankNull-1.12.2-1.7.89.jar",
-                    "id": "2831353",
+                    "url": "https://edge.forgecdn.net/files/2920/596/DankNull-1.12.2-1.7.91.jar",
+                    "id": "2920596",
                     "parent_id": "272514",
                     "hashes": {
-                        "sha1": "016b108de60f6ad553556df6e7ac6776b9384486",
-                        "md5": "cb828ea0c806b103a7fdbb55cfaf42b3"
+                        "sha1": "4db0be5d1557d2c6754579177c0cab361462304b",
+                        "md5": "b7f137558c8c0ed7b427592652f63809"
                     },
                     "required_dependencies": [
                         "255232"
                     ],
-                    "size": 337396,
-                    "date_published": "2019-11-23T15:25:48.730Z"
+                    "size": 333253,
+                    "date_published": "2020-04-04T04:17:48.673Z"
                 }
             ]
         },
@@ -645,23 +648,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Aroma1997Core-1.12.2-2.0.0.2.b166.jar",
+                    "file_name": "Aroma1997Core-1.12.2-2.0.0.2.b167.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2855/100/Aroma1997Core-1.12.2-2.0.0.2.b166.jar",
-                    "id": "2855100",
+                    "url": "https://edge.forgecdn.net/files/2914/62/Aroma1997Core-1.12.2-2.0.0.2.b167.jar",
+                    "id": "2914062",
                     "parent_id": "223735",
                     "hashes": {
-                        "sha1": "e9feb13aad744211d4d8a8ce2fc87b74c52e8544",
-                        "md5": "dea71000a0e1b049a7303545307b4ec4"
+                        "sha1": "0ed562d404eba9a79a323570b719558bc1303e72",
+                        "md5": "563a460fbaded01bf47835b84761a476"
                     },
                     "required_dependencies": [],
-                    "size": 398654,
-                    "date_published": "2020-01-05T15:13:01.293Z"
+                    "size": 399634,
+                    "date_published": "2020-03-27T13:01:25.257Z"
                 }
             ]
         },
@@ -1531,7 +1534,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Chisel-MC1.12.2-1.0.1.44.jar",
+                    "file_name": "Chisel-MC1.12.2-1.0.2.45.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -1539,18 +1542,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2813/538/Chisel-MC1.12.2-1.0.1.44.jar",
-                    "id": "2813538",
+                    "url": "https://edge.forgecdn.net/files/2915/375/Chisel-MC1.12.2-1.0.2.45.jar",
+                    "id": "2915375",
                     "parent_id": "235279",
                     "hashes": {
-                        "sha1": "d9a74dde6aafade73328dbf45bf7ec8aca30e038",
-                        "md5": "fd1dd13667812ea520446e6220510d45"
+                        "sha1": "d378cee9195841ea78bb9800f543d718ef2c60ef",
+                        "md5": "54afc298f94e708f0e1cdf399200b2cb"
                     },
                     "required_dependencies": [
                         "267602"
                     ],
-                    "size": 4754821,
-                    "date_published": "2019-10-21T03:51:43.013Z"
+                    "size": 4755282,
+                    "date_published": "2020-03-29T00:30:18.877Z"
                 }
             ]
         },
@@ -1773,23 +1776,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CoFHCore-1.12.2-4.6.3.27-universal.jar",
+                    "file_name": "CoFHCore-1.12.2-4.6.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2716/100/CoFHCore-1.12.2-4.6.3.27-universal.jar",
-                    "id": "2716100",
+                    "url": "https://edge.forgecdn.net/files/2920/433/CoFHCore-1.12.2-4.6.6.1-universal.jar",
+                    "id": "2920433",
                     "parent_id": "69162",
                     "hashes": {
-                        "sha1": "4e498a51bf45aeab25a05a3b2696855cc88401fb",
-                        "md5": "90efac9c0abffa63c6da1453ceca1d68"
+                        "sha1": "4dd5aa3ff30d7966ae253556f79bb3f13bc5576e",
+                        "md5": "f147d3b87f97bb317e1c37cba0dde002"
                     },
-                    "required_dependencies": [
-                        "270789"
-                    ],
-                    "size": 847938,
-                    "date_published": "2019-05-26T17:26:27.603Z"
+                    "required_dependencies": [],
+                    "size": 848187,
+                    "date_published": "2020-04-03T23:51:47.750Z"
                 }
             ]
         },
@@ -1808,21 +1809,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CoFHWorld-1.12.2-1.3.1.7-universal.jar",
+                    "file_name": "CoFHWorld-1.12.2-1.4.0.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/784/CoFHWorld-1.12.2-1.3.1.7-universal.jar",
-                    "id": "2715784",
+                    "url": "https://edge.forgecdn.net/files/2920/434/CoFHWorld-1.12.2-1.4.0.1-universal.jar",
+                    "id": "2920434",
                     "parent_id": "271384",
                     "hashes": {
-                        "sha1": "a75ae7aa37444b9a2ad3639cd30882a216c4bdea",
-                        "md5": "c196ade3fe4f33b4d38b4de43326ae2d"
+                        "sha1": "863e1524fe0087d434a5e44d27cc2dd0353b9399",
+                        "md5": "f2bfd74e76b71bdee8a20a9243dd5cdf"
                     },
                     "required_dependencies": [],
-                    "size": 532040,
-                    "date_published": "2019-05-25T22:39:58.397Z"
+                    "size": 505987,
+                    "date_published": "2020-04-03T23:52:03.300Z"
                 }
             ]
         },
@@ -2012,7 +2013,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CTM-MC1.12.2-1.0.0.29.jar",
+                    "file_name": "CTM-MC1.12.2-1.0.2.31.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2020,16 +2021,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2809/915/CTM-MC1.12.2-1.0.0.29.jar",
-                    "id": "2809915",
+                    "url": "https://edge.forgecdn.net/files/2915/363/CTM-MC1.12.2-1.0.2.31.jar",
+                    "id": "2915363",
                     "parent_id": "267602",
                     "hashes": {
-                        "sha1": "4ff104329fee4b1ab40464b3ec654e1be3456fab",
-                        "md5": "fb551e41aa6ae3ae76cc247e810e2a80"
+                        "sha1": "892e0788531269bfa2f356e4e12825e19d4e5412",
+                        "md5": "77a8bb5486c97e3eaa6f45e5bd768864"
                     },
                     "required_dependencies": [],
-                    "size": 197149,
-                    "date_published": "2019-10-15T16:37:49.343Z"
+                    "size": 199045,
+                    "date_published": "2020-03-29T00:19:35.120Z"
                 }
             ]
         },
@@ -2819,7 +2820,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Exchangers-1.12.2-2.8.jar",
+                    "file_name": "Exchangers-1.12.2-2.9.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -2829,16 +2830,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2621/277/Exchangers-1.12.2-2.8.jar",
-                    "id": "2621277",
+                    "url": "https://edge.forgecdn.net/files/2903/998/Exchangers-1.12.2-2.9.jar",
+                    "id": "2903998",
                     "parent_id": "270183",
                     "hashes": {
-                        "sha1": "b2b2165d1bb524c6caa7a6bba572fa6a306b6955",
-                        "md5": "6a01826309531ba47dea317e5dd5b409"
+                        "sha1": "3ea1a058256fb7f1bceabd29c0c97a50683726d3",
+                        "md5": "5ad9b1d08a9d5075b8637c80cfd42520"
                     },
-                    "required_dependencies": [],
-                    "size": 281052,
-                    "date_published": "2018-09-26T18:03:47.203Z"
+                    "required_dependencies": [
+                        "356646"
+                    ],
+                    "size": 316028,
+                    "date_published": "2020-03-17T18:21:49.443Z"
                 }
             ]
         },
@@ -3080,21 +3083,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBLib-5.4.4.5.jar",
+                    "file_name": "FTBLib-5.4.7.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2832/410/FTBLib-5.4.4.5.jar",
-                    "id": "2832410",
+                    "url": "https://edge.forgecdn.net/files/2891/572/FTBLib-5.4.7.0.jar",
+                    "id": "2891572",
                     "parent_id": "237167",
                     "hashes": {
-                        "sha1": "739da870868234cd4d1edd8f65089e6c68633711",
-                        "md5": "97f3523da82f7a935ee11c8dc858a6ff"
+                        "sha1": "813b7ea1c8ffa8eb2450288f083745010f5682d4",
+                        "md5": "23053152aeb147aec8d47329525449a7"
                     },
                     "required_dependencies": [],
-                    "size": 934358,
-                    "date_published": "2019-11-25T17:33:40.287Z"
+                    "size": 934566,
+                    "date_published": "2020-02-28T23:29:29.903Z"
                 }
             ]
         },
@@ -3473,21 +3479,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.23.jar",
+                    "file_name": "geneticsreborn-1.12-1.25.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2902/201/geneticsreborn-1.12-1.23.jar",
-                    "id": "2902201",
+                    "url": "https://edge.forgecdn.net/files/2910/902/geneticsreborn-1.12-1.25.jar",
+                    "id": "2910902",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "ce3ae633c2997f7c43af2c2c1ce59d14e50ef102",
-                        "md5": "40cc0d094e69b2669e04534127a532ac"
+                        "sha1": "a461aeb451cbb576bcfe20134868f03504bfb10a",
+                        "md5": "9d23c5fb2c528fc00bf4d48d6766ab15"
                     },
                     "required_dependencies": [],
-                    "size": 407267,
-                    "date_published": "2020-03-15T07:20:41.927Z"
+                    "size": 407985,
+                    "date_published": "2020-03-23T20:33:51.893Z"
                 }
             ]
         },
@@ -3549,7 +3555,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Grue-1.12.2-1.7.0.jar",
+                    "file_name": "Grue-1.12.2-1.8.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3557,18 +3563,56 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2892/182/Grue-1.12.2-1.7.0.jar",
-                    "id": "2892182",
+                    "url": "https://edge.forgecdn.net/files/2912/661/Grue-1.12.2-1.8.0.jar",
+                    "id": "2912661",
                     "parent_id": "235133",
                     "hashes": {
-                        "sha1": "13bb2f86e035aaf9dee05f62ee66089c8a787eec",
-                        "md5": "dab63c09cb43b82bb573c288255ad2e7"
+                        "sha1": "b62b1eb1704bd5b86bb9ba96b7d39430a0d73a3f",
+                        "md5": "0ade0b82f2ee6537be77c5a46322c0d0"
                     },
                     "required_dependencies": [
                         "349174"
                     ],
-                    "size": 562100,
-                    "date_published": "2020-02-29T22:05:12.590Z"
+                    "size": 564997,
+                    "date_published": "2020-03-25T20:42:09.920Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "7wOXDytW0AcQriNy",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gunpowderlib"
+            },
+            "name": {
+                "curseforge": "GunpowderLib"
+            },
+            "id": {
+                "curseforge": "356646"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "GunpowderLib-1.12.2-1.0.jar",
+                    "mc_versions": [
+                        "1.12.1",
+                        "1.12",
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2852/431/GunpowderLib-1.12.2-1.0.jar",
+                    "id": "2852431",
+                    "parent_id": "356646",
+                    "hashes": {
+                        "sha1": "9829c6d99fe87370b484470fc089589b04f3ad8a",
+                        "md5": "3db9feb2e7599dcbca3807341f97b592"
+                    },
+                    "required_dependencies": [],
+                    "size": 24639,
+                    "date_published": "2019-12-31T17:09:41.267Z"
                 }
             ]
         },
@@ -3587,21 +3631,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerCore-1.12.2-2.0.6.13.jar",
+                    "file_name": "HammerLib-1.12.2-2.0.6.14.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2879/743/HammerCore-1.12.2-2.0.6.13.jar",
-                    "id": "2879743",
+                    "url": "https://edge.forgecdn.net/files/2915/65/HammerLib-1.12.2-2.0.6.14.jar",
+                    "id": "2915065",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "341292ecf1822fc73470e2c59dbf649e05fd59ff",
-                        "md5": "af520a807848bfca708af21a4dea1b75"
+                        "sha1": "e157c222e621622a90e76fa1ccfe7eb49c030dfc",
+                        "md5": "609425324d2ff2b15dc44c1d0521daab"
                     },
                     "required_dependencies": [],
-                    "size": 2390159,
-                    "date_published": "2020-02-11T18:56:29.800Z"
+                    "size": 2397958,
+                    "date_published": "2020-03-28T18:25:24.743Z"
                 }
             ]
         },
@@ -4221,21 +4265,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "journeymap-1.12.2-5.5.9.jar",
+                    "file_name": "journeymap-1.12.2-5.7.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2880/387/journeymap-1.12.2-5.5.9.jar",
-                    "id": "2880387",
+                    "url": "https://edge.forgecdn.net/files/2916/2/journeymap-1.12.2-5.7.1.jar",
+                    "id": "2916002",
                     "parent_id": "32274",
                     "hashes": {
-                        "sha1": "84f78861e4171d69bbdf67e826528a4a85f4b4e8",
-                        "md5": "3ea889f3ff6b432c4c178a7d3b0b2c86"
+                        "sha1": "3da4323f71bcadcf140002a9f49578f0cd5ce8a8",
+                        "md5": "8160b970fc14cff30dff2785bb9f964c"
                     },
                     "required_dependencies": [],
-                    "size": 1934330,
-                    "date_published": "2020-02-12T18:16:48.357Z"
+                    "size": 6990968,
+                    "date_published": "2020-03-29T21:09:22.773Z"
                 }
             ]
         },
@@ -4683,28 +4727,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LootTweaker-0.1.5+MC1.12.2.jar",
+                    "file_name": "LootTweaker-0.1.6+MC1.12.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2865/495/LootTweaker-0.1.5+MC1.12.2.jar",
-                    "id": "2865495",
+                    "url": "https://edge.forgecdn.net/files/2913/717/LootTweaker-0.1.6+MC1.12.2.jar",
+                    "id": "2913717",
                     "parent_id": "255257",
                     "hashes": {
-                        "sha1": "889ef0fc926b731c0e2b502a317088c898eb8859",
-                        "md5": "126b498fa64f6e3eb51e624915590810"
+                        "sha1": "6d9e2f4155374b4e32a511f831de1372ca45995a",
+                        "md5": "0f45517c11f96faca2fb12da2de8dc28"
                     },
                     "required_dependencies": [
                         "239197"
                     ],
-                    "size": 60924,
-                    "date_published": "2020-01-22T00:17:00.390Z"
+                    "size": 60742,
+                    "date_published": "2020-03-26T23:56:42.057Z"
                 }
             ]
         },
@@ -5674,7 +5715,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Pam's HarvestCraft 1.12.2zf.jar",
+                    "file_name": "Pam's HarvestCraft 1.12.2zg.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5682,16 +5723,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2771/840/Pam's HarvestCraft 1.12.2zf.jar",
-                    "id": "2771840",
+                    "url": "https://edge.forgecdn.net/files/2904/825/Pam's HarvestCraft 1.12.2zg.jar",
+                    "id": "2904825",
                     "parent_id": "221857",
                     "hashes": {
-                        "sha1": "ffeb8369801e898c8a1598b37d124c251f40ba93",
-                        "md5": "d49e4034973a38b9a92d1f9939decd70"
+                        "sha1": "a064b434253305424755943dd66f389855ade953",
+                        "md5": "e8e1ac67accdeea50116e1e92e592397"
                     },
                     "required_dependencies": [],
-                    "size": 4907780,
-                    "date_published": "2019-08-27T01:52:20.720Z"
+                    "size": 4912890,
+                    "date_published": "2020-03-18T20:32:21.123Z"
                 }
             ]
         },
@@ -5743,21 +5784,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "phosphor-1.12.2-0.2.6+build50-universal.jar",
+                    "file_name": "phosphor-forge-mc1.12.2-0.2.7-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2747/710/phosphor-1.12.2-0.2.6+build50-universal.jar",
-                    "id": "2747710",
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2919/497/phosphor-forge-mc1.12.2-0.2.7-universal.jar",
+                    "id": "2919497",
                     "parent_id": "318255",
                     "hashes": {
-                        "sha1": "d4781f46fb18f0c6ed03893465244e7ec7dc8b8c",
-                        "md5": "9892af4ac4f8ca4222138a245592227c"
+                        "sha1": "1c75738ecd4bc5f7021b2b23ea04602aac3d16ec",
+                        "md5": "13f62131ab2fff6212301ee70f6bf5d8"
                     },
                     "required_dependencies": [],
-                    "size": 1082311,
-                    "date_published": "2019-07-24T18:34:13.063Z"
+                    "size": 920264,
+                    "date_published": "2020-04-02T19:30:34.903Z"
                 }
             ]
         },
@@ -5813,24 +5857,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "plustic-7.1.6.1.jar",
+                    "file_name": "plustic-8.0.0.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2789/626/plustic-7.1.6.1.jar",
-                    "id": "2789626",
+                    "url": "https://edge.forgecdn.net/files/2914/523/plustic-8.0.0.0.jar",
+                    "id": "2914523",
                     "parent_id": "260327",
                     "hashes": {
-                        "sha1": "0b411cca11b63f7e82f2cff22bc001340c814d26",
-                        "md5": "a5986fba10310c0e19a65b5eaf25522c"
+                        "sha1": "b3701e26662d6e9a63b6f7ef351f7428fa57f5c6",
+                        "md5": "2cc67a87c6c7a5821f471c33b228ab50"
                     },
                     "required_dependencies": [
-                        "74924",
-                        "74072"
+                        "74072",
+                        "74924"
                     ],
-                    "size": 546349,
-                    "date_published": "2019-09-19T19:22:31.603Z"
+                    "size": 546372,
+                    "date_published": "2020-03-28T00:34:56.507Z"
                 }
             ]
         },
@@ -6516,21 +6560,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "RandomThings-MC1.12.2-4.2.7.3.jar",
+                    "file_name": "RandomThings-MC1.12.2-4.2.7.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2751/591/RandomThings-MC1.12.2-4.2.7.3.jar",
-                    "id": "2751591",
+                    "url": "https://edge.forgecdn.net/files/2905/241/RandomThings-MC1.12.2-4.2.7.4.jar",
+                    "id": "2905241",
                     "parent_id": "59816",
                     "hashes": {
-                        "sha1": "f603cd8bfb8bfe1bd62d436c2b207d2e0417e9c5",
-                        "md5": "46851d970cc78a6354ca70139e3fe8f3"
+                        "sha1": "4422c297678e8f07a476ca5d4972568cfc7576bb",
+                        "md5": "b91502e1810cdf13dfd5fb3b4e15e5ad"
                     },
                     "required_dependencies": [],
-                    "size": 3292860,
-                    "date_published": "2019-07-30T18:38:42.593Z"
+                    "size": 3292861,
+                    "date_published": "2020-03-19T09:59:02.387Z"
                 }
             ]
         },
@@ -6662,23 +6709,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "RedstoneArsenal-1.12.2-2.6.3.18-universal.jar",
+                    "file_name": "RedstoneArsenal-1.12.2-2.6.4.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/786/RedstoneArsenal-1.12.2-2.6.3.18-universal.jar",
-                    "id": "2715786",
+                    "url": "https://edge.forgecdn.net/files/2920/435/RedstoneArsenal-1.12.2-2.6.4.1-universal.jar",
+                    "id": "2920435",
                     "parent_id": "70631",
                     "hashes": {
-                        "sha1": "8a8046494d114272f89f1e4cd02bc821558f2007",
-                        "md5": "3bbe81cebe761061b8d16f6c981e30b4"
+                        "sha1": "95e1d81da93640177ce8265e1519b62dcf2d221b",
+                        "md5": "9c7cab97811071b1b2d96442829a176e"
                     },
                     "required_dependencies": [
                         "69162"
                     ],
-                    "size": 262973,
-                    "date_published": "2019-05-25T22:40:44.303Z"
+                    "size": 243859,
+                    "date_published": "2020-04-03T23:52:26.527Z"
                 }
             ]
         },
@@ -6697,21 +6744,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
+                    "file_name": "RedstoneFlux-1.12-2.1.1.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2623/90/RedstoneFlux-1.12-2.1.0.6-universal.jar",
-                    "id": "2623090",
+                    "url": "https://edge.forgecdn.net/files/2920/436/RedstoneFlux-1.12-2.1.1.1-universal.jar",
+                    "id": "2920436",
                     "parent_id": "270789",
                     "hashes": {
-                        "sha1": "ed67a4ce69c8831b7536b2623a857fefc8257e62",
-                        "md5": "f00530b437c41a189dbf8a85d0ac40b6"
+                        "sha1": "7835c1dcc006e5d4a406a6b0615012b825e25044",
+                        "md5": "93b1715f05be1878da93fca36dd37f2a"
                     },
                     "required_dependencies": [],
-                    "size": 36278,
-                    "date_published": "2018-10-01T21:03:10.957Z"
+                    "size": 31802,
+                    "date_published": "2020-04-03T23:52:41.640Z"
                 }
             ]
         },
@@ -7162,21 +7209,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Surge-1.12.2-2.0.77.jar",
+                    "file_name": "Surge-1.12.2-2.0.79.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2665/849/Surge-1.12.2-2.0.77.jar",
-                    "id": "2665849",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2916/357/Surge-1.12.2-2.0.79.jar",
+                    "id": "2916357",
                     "parent_id": "250290",
                     "hashes": {
-                        "sha1": "d0efa575c6e43031622aa52c1f4836aa552322da",
-                        "md5": "53271408804cdf9bb22c1f885bcd8708"
+                        "sha1": "f7197d44a0f1fb1af216d3ba6b7e3c1ed06a36e9",
+                        "md5": "9f495709f961117c7823827ca10df0c8"
                     },
                     "required_dependencies": [],
-                    "size": 1042621,
-                    "date_published": "2019-01-27T22:46:32.487Z"
+                    "size": 957330,
+                    "date_published": "2020-03-30T09:04:09.827Z"
                 }
             ]
         },
@@ -7306,23 +7353,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ThermalCultivation-1.12.2-0.3.3.12-universal.jar",
+                    "file_name": "ThermalCultivation-1.12.2-0.3.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/791/ThermalCultivation-1.12.2-0.3.3.12-universal.jar",
-                    "id": "2715791",
+                    "url": "https://edge.forgecdn.net/files/2920/437/ThermalCultivation-1.12.2-0.3.6.1-universal.jar",
+                    "id": "2920437",
                     "parent_id": "271835",
                     "hashes": {
-                        "sha1": "0205848b31c77e1bb975b95f345c7063802ee757",
-                        "md5": "a6993f3947a833582909c7e31325987c"
+                        "sha1": "4aef97dad21a3b8cd6cce7bcf601b41574cb22ff",
+                        "md5": "28970430074736ae6efbe4f7c353b30a"
                     },
                     "required_dependencies": [
                         "222880"
                     ],
-                    "size": 106843,
-                    "date_published": "2019-05-25T22:43:06.010Z"
+                    "size": 98845,
+                    "date_published": "2020-04-03T23:53:05.083Z"
                 }
             ]
         },
@@ -7341,24 +7391,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ThermalDynamics-1.12.2-2.5.5.21-universal.jar",
+                    "file_name": "ThermalDynamics-1.12.2-2.5.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2716/138/ThermalDynamics-1.12.2-2.5.5.21-universal.jar",
-                    "id": "2716138",
+                    "url": "https://edge.forgecdn.net/files/2920/505/ThermalDynamics-1.12.2-2.5.6.1-universal.jar",
+                    "id": "2920505",
                     "parent_id": "227443",
                     "hashes": {
-                        "sha1": "614a98009f39fb204fe269ffc109df77362f8314",
-                        "md5": "3317c6f327d7ebe0ee3bd6206ececb02"
+                        "sha1": "691d7fafc4e104e41b878d8e1ce885785c995840",
+                        "md5": "38a0c024f5775b0cf783de839033f8db"
                     },
                     "required_dependencies": [
                         "242818",
                         "222880"
                     ],
-                    "size": 762980,
-                    "date_published": "2019-05-26T18:30:34.963Z"
+                    "size": 728082,
+                    "date_published": "2020-04-04T01:41:38.093Z"
                 }
             ]
         },
@@ -7377,24 +7427,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ThermalExpansion-1.12.2-5.5.4.43-universal.jar",
+                    "file_name": "ThermalExpansion-1.12.2-5.5.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/789/ThermalExpansion-1.12.2-5.5.4.43-universal.jar",
-                    "id": "2715789",
+                    "url": "https://edge.forgecdn.net/files/2920/438/ThermalExpansion-1.12.2-5.5.6.1-universal.jar",
+                    "id": "2920438",
                     "parent_id": "69163",
                     "hashes": {
-                        "sha1": "8544ea4b0e7c4a2d679db83b28fcdfb4af161102",
-                        "md5": "53144cfec12795862d20aa07750c9a59"
+                        "sha1": "bfa54e80bd63a25142fa20edfca60d2be929918d",
+                        "md5": "cc357e0f72a0f5251d3b8b408e489543"
                     },
                     "required_dependencies": [
-                        "222880",
-                        "242818"
+                        "242818",
+                        "222880"
                     ],
-                    "size": 2426151,
-                    "date_published": "2019-05-25T22:42:09.493Z"
+                    "size": 2345112,
+                    "date_published": "2020-04-03T23:53:55.120Z"
                 }
             ]
         },
@@ -7417,24 +7467,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
+                    "file_name": "ThermalFoundation-1.12.2-2.6.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/788/ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
-                    "id": "2715788",
+                    "url": "https://edge.forgecdn.net/files/2920/510/ThermalFoundation-1.12.2-2.6.6.1-universal.jar",
+                    "id": "2920510",
                     "parent_id": "222880",
                     "hashes": {
-                        "sha1": "a0300b3f25dfdd9aa5c9fcc5d05a3e2a56cad57c",
-                        "md5": "0f61017dc9412ba4aad8a64f7bca16bb"
+                        "sha1": "102a27638c751655ba90859a94cf7243c4bac6a8",
+                        "md5": "c956183ceaa8cd78c108061947f78338"
                     },
                     "required_dependencies": [
                         "69162",
                         "271384"
                     ],
-                    "size": 2312713,
-                    "date_published": "2019-05-25T22:41:39.057Z"
+                    "size": 2219733,
+                    "date_published": "2020-04-04T01:44:08.747Z"
                 }
             ]
         },
@@ -7456,23 +7506,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ThermalInnovation-1.12.2-0.3.3.12-universal.jar",
+                    "file_name": "ThermalInnovation-1.12.2-0.3.6.1-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2715/787/ThermalInnovation-1.12.2-0.3.3.12-universal.jar",
-                    "id": "2715787",
+                    "url": "https://edge.forgecdn.net/files/2920/441/ThermalInnovation-1.12.2-0.3.6.1-universal.jar",
+                    "id": "2920441",
                     "parent_id": "291737",
                     "hashes": {
-                        "sha1": "b678c21dc314f4bcac8042a0c873bfeb04ef82fc",
-                        "md5": "0a670c0665e1b2d41300f7ed6da148b4"
+                        "sha1": "a2603c82d0deefef67b3708fd79fd1e813b4d080",
+                        "md5": "320accf690ccc1c8a23679beb63fb615"
                     },
                     "required_dependencies": [
                         "222880"
                     ],
-                    "size": 197601,
-                    "date_published": "2019-05-25T22:41:08.993Z"
+                    "size": 182379,
+                    "date_published": "2020-04-03T23:54:47.553Z"
                 }
             ]
         },
@@ -7526,24 +7576,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tinker_io-1.12.2-rw2.7.1.jar",
+                    "file_name": "tinker_io-1.12.2-rw2.8.1a.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2629/659/tinker_io-1.12.2-rw2.7.1.jar",
-                    "id": "2629659",
+                    "url": "https://edge.forgecdn.net/files/2917/347/tinker_io-1.12.2-rw2.8.1a.jar",
+                    "id": "2917347",
                     "parent_id": "229503",
                     "hashes": {
-                        "sha1": "24e28b936811ee39242b9b46d263646ad03a1b9d",
-                        "md5": "2b210b0191a90613f7386aa0f68e896f"
+                        "sha1": "cb69728588f6d8a4199af0491ad69a7436bbc6e7",
+                        "md5": "846b653b6b5bc69f59ce912c0e4dee24"
                     },
                     "required_dependencies": [
-                        "74072",
-                        "270789"
+                        "74072"
                     ],
-                    "size": 5766861,
-                    "date_published": "2018-10-20T03:28:21.170Z"
+                    "size": 5769451,
+                    "date_published": "2020-03-31T12:55:50.617Z"
                 }
             ]
         },
@@ -7562,7 +7611,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TConstruct-1.12.2-2.13.0.179.jar",
+                    "file_name": "TConstruct-1.12.2-2.13.0.183.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -7570,18 +7619,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2877/575/TConstruct-1.12.2-2.13.0.179.jar",
-                    "id": "2877575",
+                    "url": "https://edge.forgecdn.net/files/2902/483/TConstruct-1.12.2-2.13.0.183.jar",
+                    "id": "2902483",
                     "parent_id": "74072",
                     "hashes": {
-                        "sha1": "7fd6b23bf0d91881a0d449362b153283b249907a",
-                        "md5": "a85ed1a8fa47c7049eb3987ad6411532"
+                        "sha1": "e37e1f05ad0eaf567497ce655bc877dc1778bd0f",
+                        "md5": "710d64342d41042b7d6ced891448e727"
                     },
                     "required_dependencies": [
                         "74924"
                     ],
-                    "size": 4023076,
-                    "date_published": "2020-02-08T16:28:38.647Z"
+                    "size": 4023372,
+                    "date_published": "2020-03-15T17:02:37.370Z"
                 }
             ]
         },
@@ -7959,23 +8008,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "VanillaFix-1.0.10-99.jar",
+                    "file_name": "VanillaFix-1.0.10-150.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2639/533/VanillaFix-1.0.10-99.jar",
-                    "id": "2639533",
+                    "url": "https://edge.forgecdn.net/files/2915/154/VanillaFix-1.0.10-150.jar",
+                    "id": "2915154",
                     "parent_id": "292785",
                     "hashes": {
-                        "sha1": "f8181cd78a0efe8c51d4f0cd46a1c83c373a1f7d",
-                        "md5": "eb05714c798a94f52ddd8617857052ab"
+                        "sha1": "646fc28aa81773662e33a3b447e830b816528fc9",
+                        "md5": "a74aaab68100e03f54e35d1007d50169"
                     },
                     "required_dependencies": [],
-                    "size": 1117860,
-                    "date_published": "2018-11-19T18:44:57.183Z"
+                    "size": 1025896,
+                    "date_published": "2020-03-28T20:11:04.723Z"
                 }
             ]
         },
@@ -8158,6 +8210,9 @@
         },
         {
             "pakku_id": "SEvIyN8eLa9Rj9Wa",
+            "pakku_links": [
+                "EVlKqjCZe8isreys"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "wawla"
@@ -8171,24 +8226,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Wawla-1.12.2-2.6.274.jar",
+                    "file_name": "Wawla-1.12.2-2.6.275.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2875/678/Wawla-1.12.2-2.6.274.jar",
-                    "id": "2875678",
+                    "url": "https://edge.forgecdn.net/files/2916/368/Wawla-1.12.2-2.6.275.jar",
+                    "id": "2916368",
                     "parent_id": "224712",
                     "hashes": {
-                        "sha1": "b47cd4ee739d8b10ef77e383ab1b451875bda1f9",
-                        "md5": "54e08206023a362d756feaff05a829fc"
+                        "sha1": "783157c607149875de1e045d72382d370256257c",
+                        "md5": "3762f87395a87af86e9552c6d7ca7e06"
                     },
-                    "required_dependencies": [],
-                    "size": 94120,
-                    "date_published": "2020-02-05T22:09:05.870Z"
+                    "required_dependencies": [
+                        "253449"
+                    ],
+                    "size": 94115,
+                    "date_published": "2020-03-30T09:15:19.083Z"
                 }
             ]
         },
