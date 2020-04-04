@@ -1,1 +1,1 @@
-Fixed scripts folder being empty
+Fixed scripts folder being empty/not included
