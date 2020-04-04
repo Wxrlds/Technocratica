@@ -2283,7 +2283,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CyclopsCore-1.12.2-1.6.1.jar",
+                    "file_name": "CyclopsCore-1.12.2-1.6.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2291,16 +2291,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2880/441/CyclopsCore-1.12.2-1.6.1.jar",
-                    "id": "2880441",
+                    "url": "https://edge.forgecdn.net/files/2920/796/CyclopsCore-1.12.2-1.6.2.jar",
+                    "id": "2920796",
                     "parent_id": "232758",
                     "hashes": {
-                        "sha1": "dc195efc7c8c94685e41e3f952143c526a7db5a8",
-                        "md5": "f1bef2c300d805ea68ac50ac6ffdf14e"
+                        "sha1": "824c2a11c4168719259306295850d0d282bced4a",
+                        "md5": "f59037bb77dde48e66fb65f9aa8bf16b"
                     },
                     "required_dependencies": [],
-                    "size": 1060805,
-                    "date_published": "2020-02-12T19:26:11.057Z"
+                    "size": 1060829,
+                    "date_published": "2020-04-04T13:02:38.637Z"
                 }
             ]
         },
@@ -5857,24 +5857,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "plustic-8.0.0.0.jar",
+                    "file_name": "plustic-8.0.0.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2914/523/plustic-8.0.0.0.jar",
-                    "id": "2914523",
+                    "url": "https://edge.forgecdn.net/files/2920/858/plustic-8.0.0.1.jar",
+                    "id": "2920858",
                     "parent_id": "260327",
                     "hashes": {
-                        "sha1": "b3701e26662d6e9a63b6f7ef351f7428fa57f5c6",
-                        "md5": "2cc67a87c6c7a5821f471c33b228ab50"
+                        "sha1": "4b20236a19e7eff9e5967a4d2ec39e0b863ccf57",
+                        "md5": "322c450a8acb2069378182453f0f2fcd"
                     },
                     "required_dependencies": [
                         "74072",
                         "74924"
                     ],
-                    "size": 546372,
-                    "date_published": "2020-03-28T00:34:56.507Z"
+                    "size": 546437,
+                    "date_published": "2020-04-04T14:00:21.347Z"
                 }
             ]
         },
