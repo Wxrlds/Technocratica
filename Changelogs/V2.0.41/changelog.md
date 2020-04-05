@@ -6,13 +6,13 @@ Decreased processing time of Fluid Processor
 
 (Hopefully) disabled IC2 Machines being moveable with pistons
 
-(Hopefully) fixed some Oredit issues with Ardite and Cobalt
+(Hopefully) fixed some Oredict issues with Ardite and Cobalt
 
 Changed Energy requirement of the Project-ish fuels/coals
 
 Added Stellar Exchanger Quest
 
-Added Flim Flame to the EnderIO Enchanter
+Added Flim Flam to the EnderIO Enchanter
 
 Added EMC to Photovoltaic Cell IV; Arcane Transmutation Tablet; Iridium-Iron Plate; Sunnarium Part
 
