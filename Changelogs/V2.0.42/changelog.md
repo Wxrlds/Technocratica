@@ -1,8 +1,6 @@
 Redesigned the main menu logo
 
-
-
-Tweaked Ultimate Stew; Transmutation Tablet; Energy Cube; Creative RF Source; Creative Flux Capacitor; Creative Gas Tank; Draconic Core; Wyvern Core; Wyvern Energy Core; Draconic Energy Core recipe
+Tweaked Ultimate Stew; Transmutation Tablet; Energy Cube; Creative RF Source; Creative Flux Capacitor; Creative Gas Tank; Draconic Core; Wyvern Core; Wyvern Energy Core; Draconic Energy Core; Mending Moss recipe
 
 Tweaked Green Heart drop chances and added Shulkers being able to drop them
 
