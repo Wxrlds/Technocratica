@@ -651,6 +651,10 @@
     {
       "item": "advanced_solar_panels:crafting|1",
       "emc": 3840
+    },
+    {
+      "item": "plustic:osmiridiumingot|0",
+      "emc": 4608
     }
   ]
 }

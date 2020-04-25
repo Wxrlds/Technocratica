@@ -66,7 +66,7 @@ mods.jei.JEI.addDescription(item.withTag({recipeType:0}),"Throw the items listed
 }
 
 mods.jei.JEI.addDescription(<bhc:blue_heart>,"Drop from Evoker. Can be eaten to restore hearts");
-mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon. Can be eaten to restore hearts");
+mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon and Shulkers. Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs. Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither). Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<ic2:te:50>,"Place next to a Heater to make it start working. Bucket/Universal Fluid Cells filled with Air can be used to accelerate the process");
@@ -80,7 +80,9 @@ val addItems=[
 <forge:bucketfilled>.withTag({FluidName: "electrumflux", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "refinedglowstone", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "refinedobsidian", Amount: 1000}),
-<forge:bucketfilled>.withTag({FluidName: "osmium", Amount: 1000})
+<forge:bucketfilled>.withTag({FluidName: "osmium", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "mithril", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "ludicrite", Amount: 1000})
 ] as IItemStack [];
 for item in addItems {
 mods.jei.JEI.addItem(item);
