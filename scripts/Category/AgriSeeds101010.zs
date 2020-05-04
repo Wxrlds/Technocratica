@@ -221,7 +221,7 @@ recipes.addShaped("Upgrade_Seed_" ~ count,agriseed.withTag({agri_analyzed: 1 as 
 [<ore:nuggetEmerald>, agriseed.withTag({agri_analyzed: 1 as byte}).marked("seed"), <ore:nuggetEmerald>],
 [<ore:nuggetDiamond>, <ore:nuggetEmerald>, <ore:nuggetDiamond>]],
 function(out, ins, cInfo){
-return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte});
+return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte})*1;
 },null);
 count += 1;
 }

@@ -3014,7 +3014,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FpsReducer-mc1.12.2-1.14.1.jar",
+                    "file_name": "FpsReducer-mc1.12.2-1.15.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3022,16 +3022,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2859/408/FpsReducer-mc1.12.2-1.14.1.jar",
-                    "id": "2859408",
+                    "url": "https://edge.forgecdn.net/files/2944/167/FpsReducer-mc1.12.2-1.15.jar",
+                    "id": "2944167",
                     "parent_id": "280294",
                     "hashes": {
-                        "sha1": "b3751b1c86564e69881151432a7c8802123a2724",
-                        "md5": "dbac3989c03855bf0b5ad7d18a1bcd73"
+                        "sha1": "995e82de9d2942e77bdcdc3454966d1f995be3d2",
+                        "md5": "6b3ef28ae486a43423facd5125d4d9db"
                     },
                     "required_dependencies": [],
-                    "size": 71246,
-                    "date_published": "2020-01-13T04:06:40.477Z"
+                    "size": 74440,
+                    "date_published": "2020-04-30T01:08:53.687Z"
                 }
             ]
         },
@@ -3631,21 +3631,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerLib-1.12.2-2.0.6.16.jar",
+                    "file_name": "HammerLib-1.12.2-2.0.6.17.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2939/598/HammerLib-1.12.2-2.0.6.16.jar",
-                    "id": "2939598",
+                    "url": "https://edge.forgecdn.net/files/2942/448/HammerLib-1.12.2-2.0.6.17.jar",
+                    "id": "2942448",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "3c2870f93c3be33dad84c643046a7feaa42e4325",
-                        "md5": "7d5373b36b58dea2b9898a63de21b2af"
+                        "sha1": "bb43abccb29f037ed84be3cfd37e51ac754ab0cf",
+                        "md5": "05ec236855857e861121eb29cfe0071e"
                     },
                     "required_dependencies": [],
-                    "size": 2398524,
-                    "date_published": "2020-04-24T20:45:11.880Z"
+                    "size": 2400016,
+                    "date_published": "2020-04-28T07:22:47.710Z"
                 }
             ]
         },
@@ -4190,7 +4190,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jeiintegration_1.12.2-1.5.1.36.jar",
+                    "file_name": "jeiintegration_1.12.2-1.6.0.48.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4198,18 +4198,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2491/927/jeiintegration_1.12.2-1.5.1.36.jar",
-                    "id": "2491927",
+                    "url": "https://edge.forgecdn.net/files/2946/855/jeiintegration_1.12.2-1.6.0.48.jar",
+                    "id": "2946855",
                     "parent_id": "265917",
                     "hashes": {
-                        "sha1": "94864b8144caac3d1f8b2c00b2f3a7ca8dad4031",
-                        "md5": "de73cdc5de95a2685e50d90f01c03a50"
+                        "sha1": "3a812cdc5bac3ef64a1e6044190298c050f1682c",
+                        "md5": "51d08474d2db6d0f475597cf25aff4c5"
                     },
                     "required_dependencies": [
                         "238222"
                     ],
-                    "size": 54046,
-                    "date_published": "2017-10-18T14:58:38.120Z"
+                    "size": 25206,
+                    "date_published": "2020-05-02T23:10:12.433Z"
                 }
             ]
         },
@@ -5650,21 +5650,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "PackagedAuto-1.12.2-1.0.2.11.jar",
+                    "file_name": "PackagedAuto-1.12.2-1.0.3.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2936/476/PackagedAuto-1.12.2-1.0.2.11.jar",
-                    "id": "2936476",
+                    "url": "https://edge.forgecdn.net/files/2945/554/PackagedAuto-1.12.2-1.0.3.12.jar",
+                    "id": "2945554",
                     "parent_id": "308380",
                     "hashes": {
-                        "sha1": "17ce11dd275493fcfe09eb8bf433317a1d6ff733",
-                        "md5": "a89fed1fe961512cd0aaaeabb0d0a094"
+                        "sha1": "6f83b35799e5a992aa75f095283c5e8bcdb18b04",
+                        "md5": "2dc8c7548433b13aec38edd9718900ff"
                     },
                     "required_dependencies": [],
-                    "size": 211939,
-                    "date_published": "2020-04-21T11:35:51.577Z"
+                    "size": 217186,
+                    "date_published": "2020-05-01T15:28:47.643Z"
                 }
             ]
         },
@@ -6562,7 +6562,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.21.0.2.jar",
+                    "file_name": "randompatches-1.12.2-1.21.0.3.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -6572,16 +6572,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2932/525/randompatches-1.12.2-1.21.0.2.jar",
-                    "id": "2932525",
+                    "url": "https://edge.forgecdn.net/files/2943/191/randompatches-1.12.2-1.21.0.3.jar",
+                    "id": "2943191",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "b1a3e8067ab8c9cf81a759e2fb25eff6efaf11c6",
-                        "md5": "511b1530f7d8ce8e22e69bdb517cd424"
+                        "sha1": "ad68f2ae48f82e5826f07863694e864938eb16e8",
+                        "md5": "1c7fc41b27b2f18210272ba3aa90eb99"
                     },
                     "required_dependencies": [],
-                    "size": 283552,
-                    "date_published": "2020-04-17T09:04:00.613Z"
+                    "size": 283446,
+                    "date_published": "2020-04-29T03:40:57.130Z"
                 }
             ]
         },

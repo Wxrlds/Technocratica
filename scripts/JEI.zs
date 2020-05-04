@@ -82,7 +82,9 @@ val addItems=[
 <forge:bucketfilled>.withTag({FluidName: "refinedobsidian", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "osmium", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "mithril", Amount: 1000}),
-<forge:bucketfilled>.withTag({FluidName: "ludicrite", Amount: 1000})
+<forge:bucketfilled>.withTag({FluidName: "ludicrite", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "milk_chocolate", Amount: 1000}),
+<forge:bucketfilled>.withTag({FluidName: "chocolate_liquor", Amount: 1000})
 ] as IItemStack [];
 for item in addItems {
 mods.jei.JEI.addItem(item);
