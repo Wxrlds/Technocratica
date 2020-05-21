@@ -64,3 +64,6 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:alumite>*144, <ore:ingotAlumite
 mods.thermalexpansion.Crucible.addRecipe(<liquid:alumite>*1296, <ore:blockAlumite>.firstItem, 32000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:ludicrite>*144, <ore:ingotLudicrite>.firstItem, 4000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:ludicrite>*1296, <ore:blockLudicrite>.firstItem, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:redstone_alloy>*16, <ore:nuggetRedstoneAlloy>.firstItem, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:redstone_alloy>*144, <ore:ingotRedstoneAlloy>.firstItem, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:redstone_alloy>*1296, <ore:blockRedstoneAlloy>.firstItem, 32000);

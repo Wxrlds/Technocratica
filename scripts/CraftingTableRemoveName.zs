@@ -23,6 +23,7 @@ val remName=[
 "extrautils2:ironwood_log_to_planks_raw",
 "extrautils2:machine_base",
 "extrautils2:shortcut_stick",
+"extrautils2:generator_furnace",
 "harvestcraft:minecraft_planks_meta_1_x4_pammaple",
 "harvestcraft:minecraft_planks_meta_3_x4_pamcinnamon",
 "harvestcraft:minecraft_planks_meta_3_x4_pampaperbark",

@@ -14,6 +14,7 @@ val remRecipe=[
 <advanced_solar_panels:machines>,
 <advgenerators:controller>,
 <advgenerators:iron_frame>,
+<randomthings:diviningrod:*>,
 <advgenerators:iron_tubing>,
 <mysticalagriculture:iridium_seeds>,
 <mysticalagriculture:iridium_ore_seeds>,

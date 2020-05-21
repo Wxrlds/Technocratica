@@ -24,6 +24,7 @@ furnace.setFuel(<projecte:fuel_block:2>,901410);
 furnace.setFuel(<projecte:item.pe_fuel:0>,23513);
 furnace.setFuel(<projecte:item.pe_fuel:1>,46038);
 furnace.setFuel(<projecte:item.pe_fuel:2>,90141);
+furnace.setFuel(<infinitystorage:ultimate_chest>,0);
 
 val burn100=[
 <extrautils2:ironwood_leaves>,

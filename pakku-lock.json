@@ -634,6 +634,41 @@
             ]
         },
         {
+            "pakku_id": "1NQZrPC76IEoa5B0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "architecturecraft-tridev"
+            },
+            "name": {
+                "curseforge": "ArchitectureCraft - TridentMC Version"
+            },
+            "id": {
+                "curseforge": "277631"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "architecturecraft-1.12-3.98.jar",
+                    "mc_versions": [
+                        "1.12.1",
+                        "1.12",
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2750/633/architecturecraft-1.12-3.98.jar",
+                    "id": "2750633",
+                    "parent_id": "277631",
+                    "hashes": {
+                        "sha1": "b84097e2f7d76904333c872edeaa7749d6e10279",
+                        "md5": "cc964d41fad4832a0850cf9da45d0414"
+                    },
+                    "required_dependencies": [],
+                    "size": 921733,
+                    "date_published": "2019-07-29T04:48:50.383Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ySY772NA2m0HNyMp",
             "type": "MOD",
             "slug": {
@@ -1414,6 +1449,42 @@
             ]
         },
         {
+            "pakku_id": "CvA4H2jF1jBplAK8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "building-gadgets"
+            },
+            "name": {
+                "curseforge": "Building Gadgets"
+            },
+            "id": {
+                "curseforge": "298187"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BuildingGadgets-2.8.3.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2928/313/BuildingGadgets-2.8.3.jar",
+                    "id": "2928313",
+                    "parent_id": "298187",
+                    "hashes": {
+                        "sha1": "37d89ec4d0a92398321ff78dddc491fef6186f31",
+                        "md5": "0bcc53c513b70d48ea21cee8f6b976c2"
+                    },
+                    "required_dependencies": [],
+                    "size": 718540,
+                    "date_published": "2020-04-12T19:19:47.147Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "rbXmQw5JrtLJrTBw",
             "pakku_links": [
                 "CQ73fKhQqmA5AeSb"
@@ -1466,21 +1537,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cc-tweaked-1.12.2-1.87.0.jar",
+                    "file_name": "cc-tweaked-1.12.2-1.88.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2938/257/cc-tweaked-1.12.2-1.87.0.jar",
-                    "id": "2938257",
+                    "url": "https://edge.forgecdn.net/files/2958/195/cc-tweaked-1.12.2-1.88.0.jar",
+                    "id": "2958195",
                     "parent_id": "282001",
                     "hashes": {
-                        "sha1": "29720740f4c23b536d31643d0b4c3b7a933a82b8",
-                        "md5": "e3ecfa937f0efc21cf4f53eb622b422d"
+                        "sha1": "73fa61dd28f7c9656bffc9d42bdbc11f49b857da",
+                        "md5": "b4c6b37ece56e7af514f2e8e2ae81063"
                     },
                     "required_dependencies": [],
-                    "size": 1798746,
-                    "date_published": "2020-04-23T09:39:16.753Z"
+                    "size": 1809399,
+                    "date_published": "2020-05-16T09:28:03.720Z"
                 }
             ]
         },
@@ -2151,21 +2222,54 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.20.564.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.574.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2928/558/CraftTweaker2-1.12-4.1.20.564.jar",
-                    "id": "2928558",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2958/236/CraftTweaker2-1.12-4.1.20.574.jar",
+                    "id": "2958236",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "c7a6841c83807e76655955ae7737a0186f8352af",
-                        "md5": "4709d6057aa57c475256280d75c362bc"
+                        "sha1": "1c6969ec2a7497b40051b6dab8a958c90f2f2476",
+                        "md5": "0e6260e528f35e77ba857972d65ef058"
                     },
                     "required_dependencies": [],
-                    "size": 1424627,
-                    "date_published": "2020-04-13T01:14:30.980Z"
+                    "size": 1431822,
+                    "date_published": "2020-05-16T10:52:22.857Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "VLcprPkBNH3OBMQF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "creativecore"
+            },
+            "name": {
+                "curseforge": "CreativeCore"
+            },
+            "id": {
+                "curseforge": "257814"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CreativeCore_v1.10.14_mc1.12.2.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2956/475/CreativeCore_v1.10.14_mc1.12.2.jar",
+                    "id": "2956475",
+                    "parent_id": "257814",
+                    "hashes": {
+                        "sha1": "f966536167baf0be673dbcdf52644aba608c1220",
+                        "md5": "21b44b6c67387e08b3bbc3b4c2132716"
+                    },
+                    "required_dependencies": [],
+                    "size": 1090454,
+                    "date_published": "2020-05-14T08:56:01.447Z"
                 }
             ]
         },
@@ -2283,7 +2387,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CyclopsCore-1.12.2-1.6.3.jar",
+                    "file_name": "CyclopsCore-1.12.2-1.6.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2291,16 +2395,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2929/967/CyclopsCore-1.12.2-1.6.3.jar",
-                    "id": "2929967",
+                    "url": "https://edge.forgecdn.net/files/2953/29/CyclopsCore-1.12.2-1.6.4.jar",
+                    "id": "2953029",
                     "parent_id": "232758",
                     "hashes": {
-                        "sha1": "3884a6838e17f4f85dd2fa02874f3e5a59c4c60a",
-                        "md5": "700d4cfd8fc36c40b69859f2652ffaaf"
+                        "sha1": "652ca54f7ebb23a774897bc4f738cf7bb9074095",
+                        "md5": "15264dedd43b16ca7a14ef95f58c8ec6"
                     },
                     "required_dependencies": [],
-                    "size": 1060856,
-                    "date_published": "2020-04-14T15:43:43.227Z"
+                    "size": 1060865,
+                    "date_published": "2020-05-10T08:13:49.987Z"
                 }
             ]
         },
@@ -3158,24 +3262,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1.8.0.237.jar",
+                    "file_name": "FTBQuests-1.8.1.239.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2827/655/FTBQuests-1.8.0.237.jar",
-                    "id": "2827655",
+                    "url": "https://edge.forgecdn.net/files/2961/486/FTBQuests-1.8.1.239.jar",
+                    "id": "2961486",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "6b844e001339535cb820072207b638b6e908a13e",
-                        "md5": "5c96db82f511109169da905b0f053b0b"
+                        "sha1": "e723faec4473143c8c88d6f4cabcc7fc3a7d341f",
+                        "md5": "68564ecb4e9a2fcffc1a254b3fd30ce7"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 1060002,
-                    "date_published": "2019-11-15T16:28:09.187Z"
+                    "size": 1060728,
+                    "date_published": "2020-05-20T12:42:10.130Z"
                 }
             ]
         },
@@ -3699,7 +3806,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Hats-1.12.2-7.1.0.jar",
+                    "file_name": "Hats-1.12.2-7.1.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -3709,18 +3816,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2801/266/Hats-1.12.2-7.1.0.jar",
-                    "id": "2801266",
+                    "url": "https://edge.forgecdn.net/files/2960/397/Hats-1.12.2-7.1.1.jar",
+                    "id": "2960397",
                     "parent_id": "229073",
                     "hashes": {
-                        "sha1": "2d1f41d80e3a6717c9e8121b93da0e7f0350d899",
-                        "md5": "5c7ea9a9f9783a04e2af389c7d367344"
+                        "sha1": "44d154180a99c02a2888649184794625d980acc2",
+                        "md5": "0240341ea62df45ba76ab8c54d8d127c"
                     },
                     "required_dependencies": [
                         "229060"
                     ],
-                    "size": 314009,
-                    "date_published": "2019-10-04T00:43:35.187Z"
+                    "size": 993630,
+                    "date_published": "2020-05-19T03:34:02.940Z"
                 }
             ]
         },
@@ -4190,7 +4297,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jeiintegration_1.12.2-1.6.0.48.jar",
+                    "file_name": "jeiintegration_1.12.2-1.6.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4198,18 +4305,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2946/855/jeiintegration_1.12.2-1.6.0.48.jar",
-                    "id": "2946855",
+                    "url": "https://edge.forgecdn.net/files/2951/731/jeiintegration_1.12.2-1.6.0.jar",
+                    "id": "2951731",
                     "parent_id": "265917",
                     "hashes": {
-                        "sha1": "3a812cdc5bac3ef64a1e6044190298c050f1682c",
-                        "md5": "51d08474d2db6d0f475597cf25aff4c5"
+                        "sha1": "54228a056a85fa146503cc7a20d3cf67fd55865f",
+                        "md5": "591f2eef8dc65ebc6850bce0acd88f41"
                     },
                     "required_dependencies": [
                         "238222"
                     ],
-                    "size": 25206,
-                    "date_published": "2020-05-02T23:10:12.433Z"
+                    "size": 25196,
+                    "date_published": "2020-05-08T19:34:37.910Z"
                 }
             ]
         },
@@ -4643,6 +4750,41 @@
                     "required_dependencies": [],
                     "size": 45341,
                     "date_published": "2018-11-20T22:44:03.790Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "p7z2LHpR5vKN8E9A",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "littletiles"
+            },
+            "name": {
+                "curseforge": "LittleTiles"
+            },
+            "id": {
+                "curseforge": "257818"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "LittleTiles_v1.5.0-pre199_32_mc1.12.2.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2960/766/LittleTiles_v1.5.0-pre199_32_mc1.12.2.jar",
+                    "id": "2960766",
+                    "parent_id": "257818",
+                    "hashes": {
+                        "sha1": "6ac364bcd578389feed68c828eb8e3903c33162b",
+                        "md5": "a21f1eb2b3d858e56ac57561fe807881"
+                    },
+                    "required_dependencies": [
+                        "257814"
+                    ],
+                    "size": 1650611,
+                    "date_published": "2020-05-19T14:46:41.870Z"
                 }
             ]
         },
@@ -6996,23 +7138,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "solcarrot-1.12.2-1.8.3.jar",
+                    "file_name": "solcarrot-1.12.2-1.8.4.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2731/62/solcarrot-1.12.2-1.8.3.jar",
-                    "id": "2731062",
+                    "url": "https://edge.forgecdn.net/files/2959/847/solcarrot-1.12.2-1.8.4.jar",
+                    "id": "2959847",
                     "parent_id": "277616",
                     "hashes": {
-                        "sha1": "9e45ee48540327f9b70b6d87c57d4369036759c1",
-                        "md5": "d09212a566382a479b5c88d29a26f564"
+                        "sha1": "3197a040e5a090ea12a2e2095a8cca0e6f650c13",
+                        "md5": "644c0f7f51a19fd1dce0cf4bdadfc52c"
                     },
                     "required_dependencies": [
                         "224472"
                     ],
-                    "size": 203154,
-                    "date_published": "2019-06-26T23:41:25.560Z"
+                    "size": 641217,
+                    "date_published": "2020-05-18T13:36:15.387Z"
                 }
             ]
         },
@@ -7102,28 +7247,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "StorageDrawers-1.12.2-5.4.1.jar",
+                    "file_name": "StorageDrawers-1.12.2-5.4.2.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2887/858/StorageDrawers-1.12.2-5.4.1.jar",
-                    "id": "2887858",
+                    "url": "https://edge.forgecdn.net/files/2952/606/StorageDrawers-1.12.2-5.4.2.jar",
+                    "id": "2952606",
                     "parent_id": "223852",
                     "hashes": {
-                        "sha1": "d72295689a9176b7dc435d59c6241d0463aed4e8",
-                        "md5": "050dd7ca699431dc4ce0b581567aae8a"
+                        "sha1": "c3f370ed6c158726061211334cbb72fd53f30364",
+                        "md5": "0f658c7cba3e6793abbcb934b4810902"
                     },
                     "required_dependencies": [
                         "230497"
                     ],
-                    "size": 605381,
-                    "date_published": "2020-02-24T06:13:00.340Z"
+                    "size": 605947,
+                    "date_published": "2020-05-09T19:26:15.443Z"
                 }
             ]
         },

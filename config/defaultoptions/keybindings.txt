@@ -136,6 +136,14 @@ key_key.cycleAttackAOE:0:NONE
 key_key.infinity_armor.noclip:0:NONE
 key_bbw.key.mode:54:NONE
 key_bbw.key.fluidmode:13:NONE
+key_key.settings_menu:34
+key_key.range:0
+key_key.undo:0
+key_key.anchor:0
+key_key.fuzzy:0
+key_key.connected_area:0
+key_key.rotate_mirror:0
+key_key.material_list:0					   
 key_mod.chiselsandbits.chiselmode.single:0:NONE
 key_mod.chiselsandbits.chiselmode.snap2:0:NONE
 key_mod.chiselsandbits.chiselmode.snap4:0:NONE
