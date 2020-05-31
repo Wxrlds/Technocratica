@@ -31,3 +31,5 @@ Made all BoP Wood 1 Log -> 1 Plank
 Enderman Anti Cheese!
 
 (Hopefully) disabled pickup of IC2 machines with Cardboard Boxes and Sack of Holding
+
+Powered Spawner needs more levels to combine
