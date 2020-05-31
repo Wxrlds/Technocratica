@@ -27,3 +27,7 @@ Tweaked the rewards for the last quest
 Added JEI information to all the Tinkers Materials that have to be crafted in the Part Builder
 
 Made all BoP Wood 1 Log -> 1 Plank
+
+Enderman Anti Cheese!
+
+(Hopefully) disabled pickup of IC2 machines with Cardboard Boxes and Sack of Holding
