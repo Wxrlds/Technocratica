@@ -26,7 +26,7 @@ Changed the Logo of the Creative Items Quest chapter
 
 Tweaked the rewards for the last quest
 
-Added JEI information to all the Tinkers Materials that have to be crafted in the Part Builder
+Added JEI information to all the TiC material parts
 
 Made all BoP Wood 1 Log -> 1 Plank
 
@@ -39,3 +39,13 @@ Powered Spawner needs more levels to combine
 Disabled ProjectRed Gems Ore generation
 
 Added Topaz Seeds; Tanzanite Seeds; Malachite Seeds; Amber Seeds; Ender Amethyst Seeds Quests
+
+Added Conversion recipes for Ruby (Ore); Sapphire (Ore); Peridot (Ore) from ProjectRed to BoP
+
+Disabled Biome Essence Ore generation
+
+BoP ores spawn only half as high as by default
+
+BoP ores now spawn in Mining Dimension, Deep Dark, Hunting Dimension
+
+Re-did JER pages
