@@ -1,6 +1,8 @@
+BoP is the default world generation type
+
 Enabled Little Tiles transparency for survival
 
-Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast recipe
+Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast; Record Fragment; Ultimate Singularity; Ruby Sharpening Kit; Sapphire Sharpening Kit; Peridot Sharpening Kit recipe
 
 Removed 5x Stacked Chaotic Core
 
@@ -33,3 +35,11 @@ Enderman Anti Cheese!
 (Hopefully) disabled pickup of IC2 machines with Cardboard Boxes and Sack of Holding
 
 Powered Spawner needs more levels to combine
+
+Disabled ProjectRed Gems Ore generation
+
+Disabled Biome Essence Ore generation
+
+BoP Ores only spawn half as high
+
+Added Topaz Seeds; Tanzanite Seeds; Malachite Seeds; Amber Seeds; Ender Amethyst Seeds Quests
