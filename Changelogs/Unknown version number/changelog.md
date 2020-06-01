@@ -38,8 +38,4 @@ Powered Spawner needs more levels to combine
 
 Disabled ProjectRed Gems Ore generation
 
-Disabled Biome Essence Ore generation
-
-BoP Ores only spawn half as high
-
 Added Topaz Seeds; Tanzanite Seeds; Malachite Seeds; Amber Seeds; Ender Amethyst Seeds Quests
