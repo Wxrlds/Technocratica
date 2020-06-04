@@ -2,7 +2,7 @@ BoP is the default world generation type
 
 Enabled Little Tiles transparency for survival
 
-Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast; Record Fragment; Ultimate Singularity; Ruby Sharpening Kit; Sapphire Sharpening Kit; Peridot Sharpening Kit recipe
+Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast; Record Fragment; Ultimate Singularity; Ruby Sharpening Kit; Sapphire Sharpening Kit; Peridot Sharpening Kit; Antidote Charm; Water Charm; Void Charm; Fire Charm; Wing Charm; Item Collector (Cyclic); Item Collector (Random Things); Redstone Clock (Cyclic); Forester; Hopping Bonsai Pot; Magma Anvil; Diamond Anvil; Experience Pylon; Structure Builder; Controlled Miner; Pattern Replicator; Storage Bag; Crafting Station; Computer; Advanced Computer recipe
 
 Removed 5x Stacked Chaotic Core
 
@@ -49,3 +49,17 @@ BoP ores spawn only half as high as by default
 BoP ores now spawn in Mining Dimension, Deep Dark, Hunting Dimension
 
 Re-did JER pages
+
+Made the Bonemealer Totem cost more levels
+
+Made the Bonemealer Totem rarer
+
+Mining Nether Ores have a 20% chance to make nearby Pigman angry
+
+Named entities no longer drop their nametag
+
+Increased the cost of Cyclics Repair Anvils; Fisher; User
+
+Removed Cyclics Harvester; Uncrafting Grinder; Pipes and Pumps; Shearing Block; Workbench; Packager; Battery
+
+Removed the Crafting Table Quest
