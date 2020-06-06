@@ -2,7 +2,7 @@ BoP is the default world generation type
 
 Enabled Little Tiles transparency for survival
 
-Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast; Record Fragment; Ultimate Singularity; Ruby Sharpening Kit; Sapphire Sharpening Kit; Peridot Sharpening Kit; Antidote Charm; Water Charm; Void Charm; Fire Charm; Wing Charm; Item Collector (Cyclic); Item Collector (Random Things); Redstone Clock (Cyclic); Forester; Hopping Bonsai Pot; Magma Anvil; Diamond Anvil; Experience Pylon; Structure Builder; Controlled Miner; Pattern Replicator; Storage Bag; Crafting Station; Computer; Advanced Computer recipe
+Tweaked Chaotic Energy Core; Debug Item; Creative Tank; Matter Condenser; Creative RF Source; World Eater; Wanderer Music Disc; Luminous Powder; Gear Cast; Record Fragment; Ultimate Singularity; Ruby Sharpening Kit; Sapphire Sharpening Kit; Peridot Sharpening Kit; Antidote Charm; Water Charm; Void Charm; Fire Charm; Wing Charm; Item Collector (Cyclic); Item Collector (Random Things); Redstone Clock (Cyclic); Forester; Hopping Bonsai Pot; Magma Anvil; Diamond Anvil; Experience Pylon; Structure Builder; Controlled Miner; Pattern Replicator; Storage Bag; Crafting Station; Computer; Advanced Computer; Tome of Knowledge (Thermal Foundation); Canister; Solar Panel I, III, IV, V, VI; Mirror; Photovoltaic Cell I, II, III, IV, V, VI; Black Iron Slate recipe
 
 Removed 5x Stacked Chaotic Core
 
@@ -14,7 +14,9 @@ Added Chisel carvings for Ruby; Peridot; Sapphire
 
 You can earn 100 extra HP through Food instead of 80
 
-Added/Changed EMC of BoP Gems to 2048
+Added/Changed EMC of BoP Gems; BoP Gears; Photovoltaic Cell I, II
+
+
 
 Added Singularities for BoP Gems
 
@@ -63,3 +65,15 @@ Increased the cost of Cyclics Repair Anvils; Fisher; User
 Removed Cyclics Harvester; Uncrafting Grinder; Pipes and Pumps; Shearing Block; Workbench; Packager; Battery
 
 Removed the Crafting Table Quest
+
+Pickaxe Clay Cast quest now needs a Sharpening Kit with Mining Level Diamond
+
+Karat Carrot Quests now requires the Seed and the Fruit
+
+Added JEI information to the Karat Carrots
+
+Nerfed Karat Carrots
+
+Added Particles to the custom Empowerer recipes
+
+Accelerated Empowerer recipes for Black Iron, Ender Ingot
