@@ -16,8 +16,6 @@ You can earn 100 extra HP through Food instead of 80
 
 Added/Changed EMC of BoP Gems; BoP Gears; Photovoltaic Cell I, II
 
-
-
 Added Singularities for BoP Gems
 
 Fixed the GUI name for the Infinity Chest
