@@ -75,3 +75,5 @@ Nerfed Karat Carrots
 Added Particles to the custom Empowerer recipes
 
 Accelerated Empowerer recipes for Black Iron, Ender Ingot
+
+Wind Generators produce less power
