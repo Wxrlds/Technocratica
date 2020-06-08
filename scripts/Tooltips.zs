@@ -50,13 +50,13 @@ for item in tools {
 <tconstruct:tough_tool_rod>.withTag({Material: item}).addTooltip(format.red("Place in Crafting Table for other Stats"));
 <tconstruct:wide_guard>.withTag({Material: item}).addTooltip(format.red("Place in Crafting Table for other Stats"));
 }
-<projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));
-<extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
+<agricraft:agri_seed>.addTooltip(format.red("Can be upgraded to 10/10/10 in the Crafting Table like every other Seed"));
+<bhc:heart_amulet>.addTooltip(format.red("Can store up to 64 Heart Canisters per slot"));
 <extendedcrafting:compressor>.addTooltip(format.red("Add Material first, then Catalyst"));
+<extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
+<extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));
+<ic2:te:86>.addTooltip(format.red("Can only be broken with an Electric Wrench!"));
+<projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));
 <torchmaster:dread_lamp>.addTooltip(format.red("Prevents passive mob spawning in a 64 block radius"));
 <torchmaster:mega_torch>.addTooltip(format.red("Prevents hostile mob spawning in a 128 block radius"));
 <xat:inertia_null_stone>.addTooltip(format.red("Does not make you immune to fall damage!"));
-<bhc:heart_amulet>.addTooltip(format.red("Can store up to 64 Heart Canisters per slot"));
-<extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));
-<ic2:te:86>.addTooltip(format.red("Can only be broken with an Electric Wrench!"));
-<agricraft:agri_seed>.addTooltip(format.red("Can be upgraded to 10/10/10 in the Crafting Table like every other Seed"));

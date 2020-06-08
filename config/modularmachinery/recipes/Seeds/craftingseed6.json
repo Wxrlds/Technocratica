@@ -91,6 +91,21 @@
 			"io-type": "input",
 			"item": "mysticalagriculture:manyullyn_essence",
 			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:amber_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:topaz_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:ender_amethyst_essence",
+			"amount": 1
 		}
 	]
 }

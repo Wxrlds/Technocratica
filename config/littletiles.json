@@ -22,7 +22,7 @@
     "editUnbreakable": false,
     "limitPlaceBlocksSurvival": false,
     "maxPlaceBlocks": 10,
-    "minimumTransparency": 255,
+    "minimumTransparency": 0,
     "dyeVolume": 2.0
   }
 }

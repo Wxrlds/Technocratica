@@ -17,15 +17,15 @@ val woodlandmansion=LootTables.getTable("minecraft:chests/woodland_mansion");
 
 val blacksmithmain=blacksmith.getPool("main");
 val deserttemplemain=deserttemple.getPool("main");
+val dungeonlavacharm=dungeon.getPool("lavacharm");
 val dungeonmain=dungeon.getPool("main");
 val dungeonpool1=dungeon.getPool("pool1");
-val dungeonlavacharm=dungeon.getPool("lavacharm");
 val end_citymain=end_city.getPool("main");
 val igloomain=igloo.getPool("main");
 val jungletemplemain=jungletemple.getPool("main");
 val mineshaftmain=mineshaft.getPool("main");
-val netherfortressmain=netherfortress.getPool("main");
 val netherfortresslavacharm=netherfortress.getPool("lavacharm");
+val netherfortressmain=netherfortress.getPool("main");
 val strongholdcorridormain=strongholdcorridor.getPool("main");
 val strongholdcrossingmain=strongholdcrossing.getPool("main");
 val strongholdlibrarymain=strongholdlibrary.getPool("main");
@@ -33,17 +33,17 @@ val woodlandmansionmain=woodlandmansion.getPool("main");
 val woodlandmansionpool1=woodlandmansion.getPool("pool1");
 
 val remBlacksmithMain=[
+"actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
-"actuallyadditions:drillCore",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
 "cyclicmagic:item.emerald_pickaxe",
 "cyclicmagic:item.emerald_sword",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
 ] as string [];
@@ -52,17 +52,17 @@ blacksmithmain.removeEntry(item1);
 }
 
 val remDesertTempleMain=[
+"actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
-"actuallyadditions:drillCore",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
 "cyclicmagic:item.emerald_pickaxe",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
 ] as string [];
@@ -71,10 +71,10 @@ deserttemplemain.removeEntry(item2);
 }
 
 val remDungeonMain=[
-"cyclicmagic:item.book_ender",
-"cyclicmagic:item.sack_ender",
-"actuallyadditions:drillCore",
 "actuallyadditions:crystalBlocks",
+"actuallyadditions:crystalItems",
+"actuallyadditions:drillCore",
+"cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
@@ -83,18 +83,18 @@ val remDungeonMain=[
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
-"cyclicmagic:item.tool_warp_spawn",
-"actuallyadditions:crystalItems"
+"cyclicmagic:item.tool_warp_spawn"
 ] as string [];
 for item3 in remDungeonMain {
 dungeonmain.removeEntry(item3);
 }
 
 val remEndCityMain=[
+"actuallyadditions:crystalBlocks",
 "actuallyadditions:crystalItems",
-"actuallyadditions:drillCore",
-"actuallyadditions:crystalBlocks"
+"actuallyadditions:drillCore"
 ] as string [];
 for item4 in remEndCityMain {
 end_citymain.removeEntry(item4);
@@ -112,45 +112,46 @@ val remJungleTempleMain=[
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.emerald_pickaxe",
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
+
 ] as string [];
 for item6 in remJungleTempleMain {
 jungletemplemain.removeEntry(item6);
 }
 
 val remMineshaftMain=[
+"actuallyadditions:crystalBlocks",
+"actuallyadditions:crystalItems",
+"actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.charm_antidote",
-"actuallyadditions:drillCore",
-"actuallyadditions:crystalBlocks",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
 "cyclicmagic:item.emerald_pickaxe",
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
-"cyclicmagic:item.tool_warp_spawn",
-"actuallyadditions:crystalItems"
+"cyclicmagic:item.tool_warp_spawn"
 ] as string [];
 for item7 in remMineshaftMain {
 mineshaftmain.removeEntry(item7);
 }
 
 val remNetherFortressMain=[
-"cyclicmagic:item.book_ender",
-"actuallyadditions:drillCore",
-"cyclicmagic:item.charm_air",
 "actuallyadditions:crystalBlocks",
-"cyclicmagic:item.sack_ender",
+"actuallyadditions:crystalItems",
+"actuallyadditions:drillCore",
+"cyclicmagic:item.book_ender",
+"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -158,9 +159,9 @@ val remNetherFortressMain=[
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
-"cyclicmagic:item.tool_warp_spawn",
-"actuallyadditions:crystalItems"
+"cyclicmagic:item.tool_warp_spawn"
 ] as string [];
 for item8 in remNetherFortressMain {
 netherfortressmain.removeEntry(item8);
@@ -169,7 +170,6 @@ netherfortressmain.removeEntry(item8);
 val remStrongholdCorridorMain=[
 "cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -177,6 +177,7 @@ val remStrongholdCorridorMain=[
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
 ] as string [];
@@ -187,7 +188,6 @@ strongholdcorridormain.removeEntry(item9);
 val remStrongholdCrossingMain=[
 "cyclicmagic:item.book_ender",
 "cyclicmagic:item.charm_air",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -195,6 +195,7 @@ val remStrongholdCrossingMain=[
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
 ] as string [];
@@ -204,7 +205,6 @@ strongholdcrossingmain.removeEntry(item10);
 
 val remStrongholdLibraryMain=[
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
@@ -213,6 +213,7 @@ val remStrongholdLibraryMain=[
 "cyclicmagic:item.emerald_sword",
 "cyclicmagic:item.ender_lightning",
 "cyclicmagic:item.inventory_food",
+"cyclicmagic:item.sack_ender",
 "cyclicmagic:item.tool_warp_home",
 "cyclicmagic:item.tool_warp_spawn"
 ] as string [];

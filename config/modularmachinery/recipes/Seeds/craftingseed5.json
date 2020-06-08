@@ -161,6 +161,16 @@
 			"io-type": "input",
 			"item": "mysticalagriculture:dark_steel_essence",
 			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:tanzanite_essence",
+			"amount": 1
+		},  {
+			"type": "item",
+			"io-type": "input",
+			"item": "mysticalagriculture:malachite_essence",
+			"amount": 1
 		}
 	]
 }

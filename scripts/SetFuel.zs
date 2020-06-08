@@ -27,15 +27,15 @@ furnace.setFuel(<projecte:item.pe_fuel:2>,90141);
 furnace.setFuel(<infinitystorage:ultimate_chest>,0);
 
 val burn100=[
-<extrautils2:ironwood_leaves>,
 <extrautils2:ironwood_leaves:1>,
+<extrautils2:ironwood_leaves>,
 <ic2:leaves>,
-<quark:variant_leaves>,
 <quark:variant_leaves:1>,
+<quark:variant_leaves>,
 <randomthings:spectreleaf>,
-<tconstruct:slime_leaves>,
 <tconstruct:slime_leaves:1>,
-<tconstruct:slime_leaves:2>
+<tconstruct:slime_leaves:2>,
+<tconstruct:slime_leaves>
 ] as IItemStack [];
 for item in burn100 {
 furnace.setFuel(item,100);

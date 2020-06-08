@@ -22,26 +22,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DankNull-1.12.2-1.7.91.jar",
+                    "file_name": "DankNull-1.12.2-1.7.101.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2920/596/DankNull-1.12.2-1.7.91.jar",
-                    "id": "2920596",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2962/52/DankNull-1.12.2-1.7.101.jar",
+                    "id": "2962052",
                     "parent_id": "272514",
                     "hashes": {
-                        "sha1": "4db0be5d1557d2c6754579177c0cab361462304b",
-                        "md5": "b7f137558c8c0ed7b427592652f63809"
+                        "sha1": "d082f6a00a3a11bc2bc4c9f8aac40851a413b92c",
+                        "md5": "9ed5d12995a6ede54778b728e17755a3"
                     },
                     "required_dependencies": [
                         "255232"
                     ],
-                    "size": 333253,
-                    "date_published": "2020-04-04T04:17:48.673Z"
+                    "size": 327386,
+                    "date_published": "2020-05-21T04:03:18.727Z"
                 }
             ]
         },
@@ -547,21 +547,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AppleCore-mc1.12.2-3.2.0.jar",
+                    "file_name": "AppleCore-mc1.12.2-3.4.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2679/415/AppleCore-mc1.12.2-3.2.0.jar",
-                    "id": "2679415",
+                    "url": "https://edge.forgecdn.net/files/2969/118/AppleCore-mc1.12.2-3.4.0.jar",
+                    "id": "2969118",
                     "parent_id": "224472",
                     "hashes": {
-                        "sha1": "3062a5361eb44f9070b8429d1c465c5daec62781",
-                        "md5": "1cbb68f6f8e55dbbe525dd8d90f86d1f"
+                        "sha1": "a6a57a76936a559088e9282aacde6f761d7e0b39",
+                        "md5": "a8dd635a81fed59be0d18206fd383f6e"
                     },
                     "required_dependencies": [],
-                    "size": 88308,
-                    "date_published": "2019-02-24T02:08:47.247Z"
+                    "size": 89615,
+                    "date_published": "2020-05-30T21:18:21.007Z"
                 }
             ]
         },
@@ -1224,6 +1227,42 @@
                     "required_dependencies": [],
                     "size": 155196,
                     "date_published": "2017-09-24T01:00:21.883Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Q12WzEaFQGMUgNPY",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "biomes-o-plenty"
+            },
+            "name": {
+                "curseforge": "Biomes O' Plenty"
+            },
+            "id": {
+                "curseforge": "220318"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/2842/510/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+                    "id": "2842510",
+                    "parent_id": "220318",
+                    "hashes": {
+                        "sha1": "6f281febea0746d2229f692cb719bd017ec70b32",
+                        "md5": "4c1d23b8a58b6aaa9a5204fae3f18393"
+                    },
+                    "required_dependencies": [],
+                    "size": 4702147,
+                    "date_published": "2019-12-14T11:25:45.710Z"
                 }
             ]
         },
@@ -2255,21 +2294,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreativeCore_v1.10.14_mc1.12.2.jar",
+                    "file_name": "CreativeCore_v1.10.16_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2956/475/CreativeCore_v1.10.14_mc1.12.2.jar",
-                    "id": "2956475",
+                    "url": "https://edge.forgecdn.net/files/2968/171/CreativeCore_v1.10.16_mc1.12.2.jar",
+                    "id": "2968171",
                     "parent_id": "257814",
                     "hashes": {
-                        "sha1": "f966536167baf0be673dbcdf52644aba608c1220",
-                        "md5": "21b44b6c67387e08b3bbc3b4c2132716"
+                        "sha1": "fdaf79230b813c4d7d9a8fad18f430f2cc402a5f",
+                        "md5": "ce9692bdbf5a16c1d48354b67fb8022e"
                     },
                     "required_dependencies": [],
-                    "size": 1090454,
-                    "date_published": "2020-05-14T08:56:01.447Z"
+                    "size": 1090904,
+                    "date_published": "2020-05-29T14:47:37.600Z"
                 }
             ]
         },
@@ -2810,21 +2849,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderCore-1.12.2-0.5.73.jar",
+                    "file_name": "EnderCore-1.12.2-0.5.76.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2822/401/EnderCore-1.12.2-0.5.73.jar",
-                    "id": "2822401",
+                    "url": "https://edge.forgecdn.net/files/2972/849/EnderCore-1.12.2-0.5.76.jar",
+                    "id": "2972849",
                     "parent_id": "231868",
                     "hashes": {
-                        "sha1": "81bc2afe4bf0495c2a1c2588e3db769bc66e75b2",
-                        "md5": "619a6d82109069d4326ba5fabf48d4fa"
+                        "sha1": "a61fda64cfb0e3852690678fbd7375a1ea982884",
+                        "md5": "6164be012de6ee761e37f54a74074125"
                     },
                     "required_dependencies": [],
-                    "size": 642654,
-                    "date_published": "2019-11-05T11:02:04.947Z"
+                    "size": 647959,
+                    "date_published": "2020-06-05T07:33:28.397Z"
                 }
             ]
         },
@@ -4111,39 +4150,6 @@
             ]
         },
         {
-            "pakku_id": "pGsJaV9yrTm9zqmt",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "iron-backpacks"
-            },
-            "name": {
-                "curseforge": "Iron Backpacks"
-            },
-            "id": {
-                "curseforge": "227049"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "IronBackpacks-1.12.2-3.0.8-12.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2564/573/IronBackpacks-1.12.2-3.0.8-12.jar",
-                    "id": "2564573",
-                    "parent_id": "227049",
-                    "hashes": {
-                        "sha1": "50758105dabe8f0d4c6e311e14ad2c1f5673d2cd",
-                        "md5": "9fd50b1827b711704c69789aa94ac2ca"
-                    },
-                    "required_dependencies": [],
-                    "size": 465363,
-                    "date_published": "2018-05-22T22:50:50.370Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "XNlFDEjeIbfRLTUG",
             "type": "MOD",
             "slug": {
@@ -4768,23 +4774,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.0-pre199_32_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.0-pre199_34_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2960/766/LittleTiles_v1.5.0-pre199_32_mc1.12.2.jar",
-                    "id": "2960766",
+                    "url": "https://edge.forgecdn.net/files/2968/170/LittleTiles_v1.5.0-pre199_34_mc1.12.2.jar",
+                    "id": "2968170",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "6ac364bcd578389feed68c828eb8e3903c33162b",
-                        "md5": "a21f1eb2b3d858e56ac57561fe807881"
+                        "sha1": "8efe7a7a2e477cc485412fd67cec224ced276810",
+                        "md5": "784c8ed793be7ad49a238f59bf7fe9a8"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 1650611,
-                    "date_published": "2020-05-19T14:46:41.870Z"
+                    "size": 1655470,
+                    "date_published": "2020-05-29T14:47:35.847Z"
                 }
             ]
         },
@@ -5792,21 +5798,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "PackagedAuto-1.12.2-1.0.3.12.jar",
+                    "file_name": "PackagedAuto-1.12.2-1.0.3.13.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2945/554/PackagedAuto-1.12.2-1.0.3.12.jar",
-                    "id": "2945554",
+                    "url": "https://edge.forgecdn.net/files/2967/449/PackagedAuto-1.12.2-1.0.3.13.jar",
+                    "id": "2967449",
                     "parent_id": "308380",
                     "hashes": {
-                        "sha1": "6f83b35799e5a992aa75f095283c5e8bcdb18b04",
-                        "md5": "2dc8c7548433b13aec38edd9718900ff"
+                        "sha1": "ec39b0b142106af3d0b12652c92eebe5ffdc4bbc",
+                        "md5": "2e035f2e6949a160700267be6f0fc570"
                     },
                     "required_dependencies": [],
-                    "size": 217186,
-                    "date_published": "2020-05-01T15:28:47.643Z"
+                    "size": 217211,
+                    "date_published": "2020-05-28T13:08:23.930Z"
                 }
             ]
         },
@@ -7014,6 +7020,41 @@
             ]
         },
         {
+            "pakku_id": "DL3KZh21rZ9vt7dr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "simply-backpacks"
+            },
+            "name": {
+                "curseforge": "Simply Backpacks"
+            },
+            "id": {
+                "curseforge": "311595"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "simplybackpacks-1.2.3.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2799/989/simplybackpacks-1.2.3.jar",
+                    "id": "2799989",
+                    "parent_id": "311595",
+                    "hashes": {
+                        "sha1": "50ead6e05ad39915d7e413f078d97f098109e3b7",
+                        "md5": "af7ccb7012730efd5e91ac8e8f244e2b"
+                    },
+                    "required_dependencies": [
+                        "248453"
+                    ],
+                    "size": 128949,
+                    "date_published": "2019-10-01T22:02:36.057Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "h4q14cjuy8CKvkrz",
             "pakku_links": [
                 "hJU0yqvzreEk3SlH"
@@ -8015,24 +8056,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Trinkets and Baubles-1.12.2-0.30.jar",
+                    "file_name": "Trinkets and Baubles-0.30.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2936/237/Trinkets and Baubles-1.12.2-0.30.jar",
-                    "id": "2936237",
+                    "url": "https://edge.forgecdn.net/files/2963/770/Trinkets and Baubles-0.30.1.jar",
+                    "id": "2963770",
                     "parent_id": "279900",
                     "hashes": {
-                        "sha1": "e4d90672cba0b470b135bfdb02747bfc377df42c",
-                        "md5": "d7af1b3287b645e3d6fffb47cd1b2bdc"
+                        "sha1": "70054408dad366784f4a3b4d7dd35756c8df2d73",
+                        "md5": "a33dc0cbb39d803b9182476ac40880a3"
                     },
                     "required_dependencies": [],
-                    "size": 1028644,
-                    "date_published": "2020-04-21T04:19:41.280Z"
+                    "size": 1092263,
+                    "date_published": "2020-05-23T10:13:41.717Z"
                 }
             ]
         },

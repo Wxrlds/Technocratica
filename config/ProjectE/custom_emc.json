@@ -641,10 +641,6 @@
       "emc": 2048
     },
     {
-      "item": "solarflux:photovoltaic_cell_4|0",
-      "emc": 20260
-    },
-    {
       "item": "projectex:arcane_tablet|0",
       "emc": 10000000
     },
@@ -655,6 +651,74 @@
     {
       "item": "plustic:osmiridiumingot|0",
       "emc": 4608
+    },
+    {
+      "item": "biomesoplenty:gem|0",
+      "emc": 2048
+    },
+    {
+      "item": "biomesoplenty:gem|3",
+      "emc": 2048
+    },
+    {
+      "item": "biomesoplenty:gem|4",
+      "emc": 2048
+    },
+    {
+      "item": "biomesoplenty:gem|5",
+      "emc": 2048
+    },
+    {
+      "item": "biomesoplenty:gem|7",
+      "emc": 2048
+    },
+    {
+      "item": "biomesoplenty:record_wanderer|0",
+      "emc": 2048
+    },
+    {
+      "item": "jaopca:item_geartopaz|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_geartanzanite|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearsapphire|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearruby|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearperidot|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearmalachite|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearamethyst|0",
+      "emc": 8192
+    },
+    {
+      "item": "jaopca:item_gearamber|0",
+      "emc": 8192
+    },
+    {
+      "item": "solarflux:photovoltaic_cell_1|0",
+      "emc": 10398
+    },
+    {
+      "item": "solarflux:photovoltaic_cell_2|0",
+      "emc": 13943
+    },
+    {
+      "item": "quark:blaze_lantern|0",
+      "emc": 9984
     }
   ]
 }

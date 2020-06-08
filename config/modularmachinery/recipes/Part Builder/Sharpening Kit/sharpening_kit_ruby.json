@@ -9,7 +9,7 @@
 		}, {
 			"type": "item",
 			"io-type": "input",
-			"item": "projectred-core:resource_item@200",
+			"item": "biomesoplenty:gem@1",
 			"amount": 2
 		}, {
 			"type": "item",
