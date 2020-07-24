@@ -6,7 +6,7 @@ Added EMC to Celestial Shard; BoP Grass; BoP Dirt; BoP Sand; Pile of Ashes; Hard
 
 Tweaked Atomic Disassembler; Hopper; Seared Gauge; Seared Window; Thermal Expansion Dynamos; Torch Launcher; Automatic Torch; Smart Wrench; Elite Crafting Table; Ultimate Crafting Table; Creative Essence recipe
 
-Hopefully fixed item detection of the Ore Quintupling Machine Quest
+(Hopefully) fixed item detection of the Ore Quintupling Machine Quest
 
 Removed the Pattern Encoder; IC2 Wrench; Crop Harvester recipe
 
