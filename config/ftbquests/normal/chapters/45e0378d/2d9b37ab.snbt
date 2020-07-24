@@ -1,0 +1,27 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	description: "Put this into a Routed Interface pipe",
+	text: [
+		"This chip tells the Item Extraction chip to put the items into this chest",
+		"",
+		"Right clicking every chip configures it so it can be inserted into the Routed Interface pipe. In the menu which opens upon right click you are able to set filters"
+	],
+	dependencies: [
+		"6c1f0a98"
+	],
+	tasks: [{
+		uid: "320ab904",
+		type: "item",
+		items: [{
+			item: "projectred-transportation:routing_chip"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cb99f9b7",
+		type: "item",
+		item: "projectred-transportation:routing_chip",
+		random_bonus: 2
+	}]
+}

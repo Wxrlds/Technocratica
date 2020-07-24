@@ -1,0 +1,50 @@
+{
+	title: "Lead Armor",
+	x: 14.0d,
+	y: 4.0d,
+	dependencies: [
+		"13bf7d32"
+	],
+	tasks: [{
+		uid: "9b117258",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_lead"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eb6ff749",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_lead"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a385b239",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_lead"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8de9a3c6",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_lead"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8f6c1950",
+		type: "item",
+		item: "thermalfoundation:material 1 131",
+		count: 10
+	}]
+}

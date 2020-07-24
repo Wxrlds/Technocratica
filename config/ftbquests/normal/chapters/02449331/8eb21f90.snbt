@@ -1,0 +1,29 @@
+{
+	x: 4.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "251e8c9c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:electrotine_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "af09049b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "9285d959",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "9ead3699",
+		type: "random",
+		table: 17
+	}]
+}

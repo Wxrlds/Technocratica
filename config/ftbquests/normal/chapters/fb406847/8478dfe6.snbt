@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "dfd224a2",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b77da78f",
+		type: "item",
+		item: "mekanism:energytablet"
+	}]
+}

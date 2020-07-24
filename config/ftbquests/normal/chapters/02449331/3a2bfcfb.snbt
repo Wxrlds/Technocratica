@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 4.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "90b35276",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:creeper_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "11fcf317",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "57fa17aa",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3b35ad3c",
+		type: "random",
+		table: 17
+	}]
+}

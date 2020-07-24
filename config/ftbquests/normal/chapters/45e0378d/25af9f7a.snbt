@@ -1,0 +1,27 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	description: "Put this into a Routed Interface pipe",
+	text: [
+		"This chip makes it so the Routed Request pipe can extract out of the chest connected with the network",
+		"",
+		"Right clicking every chip configures it so it can be inserted into the Routed Interface pipe. In the menu which opens upon right click you are able to set filters"
+	],
+	dependencies: [
+		"6c1f0a98"
+	],
+	tasks: [{
+		uid: "c7707e28",
+		type: "item",
+		items: [{
+			item: "projectred-transportation:routing_chip 1 5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c5465a52",
+		type: "item",
+		item: "projectred-transportation:routing_chip 1 5",
+		random_bonus: 2
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 21.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "251c5b67",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:platinum_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "f4ac7f5c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "73125d8e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5dbb2931",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "322ab3e2",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4e7b9d5a",
+		type: "random",
+		table: 17
+	}]
+}

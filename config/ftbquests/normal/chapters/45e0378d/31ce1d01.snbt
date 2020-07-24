@@ -1,0 +1,19 @@
+{
+	x: -4.5d,
+	y: 4.5d,
+	dependencies: [
+		"ba996886"
+	],
+	tasks: [{
+		uid: "3c409652",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}]
+	}],
+	rewards: [{
+		uid: "5b6436d4",
+		type: "random",
+		table: 18
+	}]
+}

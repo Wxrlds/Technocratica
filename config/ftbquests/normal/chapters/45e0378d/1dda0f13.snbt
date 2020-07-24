@@ -1,0 +1,80 @@
+{
+	title: "Useful Baubles",
+	icon: "darkutils:charm_sleep",
+	x: -2.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "9e9bc183",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"xat:trinket": {
+					mana: 0,
+					count: 0,
+					alt.ability: 0b,
+					slot: -1,
+					exp: 0,
+					target: -1,
+					main.ability: 0b
+				}
+			},
+			id: "xat:inertia_null_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3c124594",
+		type: "item",
+		items: [{
+			item: "darkutils:charm_gluttony"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "021411ac",
+		type: "item",
+		items: [{
+			item: "darkutils:charm_sleep"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "adf56411",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:charm_air",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d5f72435",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:charm_fire",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d99c6cde",
+		type: "item",
+		item: {
+			id: "cyclicmagic:charm_antidote",
+			tag: {}
+		}
+	},
+	{
+		uid: "3b7b4e7a",
+		type: "item",
+		item: {
+			id: "cyclicmagic:charm_water",
+			tag: {}
+		}
+	}]
+}

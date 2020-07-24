@@ -1,0 +1,39 @@
+{
+	title: "Mining Dimension",
+	icon: "aroma1997sdimension:miningmultitool",
+	x: 0.0d,
+	y: -2.0d,
+	description: "Build a Nether Portal like structure and light it with the Multitool. Sneak to go through the portal",
+	text: [
+		"Good for what the name suggests"
+	],
+	tasks: [{
+		uid: "dcdddcf3",
+		type: "item",
+		items: [{
+			item: "aroma1997sdimension:portalframe"
+		}],
+		count: 10L
+	},
+	{
+		uid: "2b76633b",
+		type: "item",
+		items: [{
+			item: "aroma1997sdimension:miningmultitool"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8aac8cad",
+		type: "item",
+		item: "aroma1997sdimension:portalframe",
+		count: 4
+	},
+	{
+		uid: "a19ee487",
+		type: "item",
+		item: "minecraft:shulker_shell",
+		random_bonus: 2
+	}]
+}

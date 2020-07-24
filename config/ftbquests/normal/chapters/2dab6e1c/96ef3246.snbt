@@ -1,0 +1,28 @@
+{
+	title: "Less Functional Part Builder",
+	x: 2.0d,
+	y: 2.0d,
+	description: "Did you know Schematica is installed?",
+	can_repeat: true,
+	dependencies: [
+		"f6ea6149"
+	],
+	hide: true,
+	tasks: [{
+		uid: "28292a24",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}],
+	rewards: [{
+		uid: "69caf76c",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:less_functional_part_builder"
+			}
+		}
+	}]
+}

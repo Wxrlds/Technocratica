@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "57f12b2e",
+		type: "item",
+		items: [{
+			item: "quantumflux:rfexciter"
+		}]
+	}],
+	rewards: [{
+		uid: "2d076117",
+		type: "item",
+		item: "quantumflux:craftingpiece 1 3",
+		count: 4
+	},
+	{
+		uid: "af85f1d5",
+		type: "item",
+		item: "quantumflux:craftingpiece",
+		count: 4
+	},
+	{
+		uid: "c2c31ba1",
+		type: "item",
+		item: "quantumflux:craftingpiece 1 1",
+		count: 4
+	}]
+}

@@ -719,6 +719,122 @@
     {
       "item": "quark:blaze_lantern|0",
       "emc": 9984
+    },
+    {
+      "item": "biomesoplenty:crystal_shard|0",
+      "emc": 384
+    },
+    {
+      "item": "biomesoplenty:grass|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:dirt|0",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:dirt|1",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:dirt|2",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:white_sand|0",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:dried_sand|0",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:ash|0",
+      "emc": 14
+    },
+    {
+      "item": "biomesoplenty:hard_ice|0",
+      "emc": 2
+    },
+    {
+      "item": "biomesoplenty:fleshchunk|0",
+      "emc": 14
+    },
+    {
+      "item": "biomesoplenty:honeycomb|0",
+      "emc": 16
+    },
+    {
+      "item": "biomesoplenty:filled_honeycomb|0",
+      "emc": 32
+    },
+    {
+      "item": "biomesoplenty:hive|0",
+      "emc": 8
+    },
+    {
+      "item": "biomesoplenty:honey_block|0",
+      "emc": 64
+    },
+    {
+      "item": "biomesoplenty:hive|2",
+      "emc": 8
+    },
+    {
+      "item": "biomesoplenty:mud_brick_block|0",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:coral|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:seaweed|0",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:waterlily|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:plant_0|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:plant_1|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:double_plant|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:mushroom|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:bramble_plant|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:flower_0|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:flower_1|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:ivy|*",
+      "emc": 1
+    },
+    {
+      "item": "biomesoplenty:willow_vine|*",
+      "emc": 1
+    },
+    {
+      "item": "extendedcrafting:table_ultimate|0",
+      "emc": 217042984
     }
   ]
 }

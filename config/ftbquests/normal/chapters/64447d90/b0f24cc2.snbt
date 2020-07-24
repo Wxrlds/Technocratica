@@ -1,0 +1,50 @@
+{
+	title: "Obsidian Armor",
+	x: 12.0d,
+	y: 0.0d,
+	dependencies: [
+		"2f8e2e96"
+	],
+	tasks: [{
+		uid: "bda78e68",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_obsidian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "14c2267a",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_obsidian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a841b669",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_obsidian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8d65b754",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_obsidian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b1aa7e91",
+		type: "item",
+		item: "minecraft:obsidian",
+		count: 5
+	}]
+}

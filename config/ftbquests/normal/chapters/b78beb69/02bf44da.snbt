@@ -1,0 +1,21 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"e987721e",
+		"aff1da6e"
+	],
+	tasks: [{
+		uid: "ec63a15b",
+		type: "item",
+		items: [{
+			item: "mekanism:tierinstaller 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0cc162e8",
+		type: "item",
+		item: "mekanism:tierinstaller 1 2"
+	}]
+}

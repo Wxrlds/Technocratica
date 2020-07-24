@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "abbdb28f",
+		type: "item",
+		items: [{
+			item: "danknull:dank_null_panel_0"
+		}]
+	}],
+	rewards: [{
+		uid: "ec88766a",
+		type: "item",
+		item: "danknull:dank_null_panel_0"
+	}]
+}

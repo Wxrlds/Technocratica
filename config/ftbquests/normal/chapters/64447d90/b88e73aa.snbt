@@ -1,0 +1,50 @@
+{
+	title: "Diamond Armor",
+	x: 8.0d,
+	y: 2.0d,
+	dependencies: [
+		"3dc45dc2"
+	],
+	tasks: [{
+		uid: "fb958d4a",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "45723d83",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e1968687",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bfdd5af3",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f5edb972",
+		type: "item",
+		item: "minecraft:diamond",
+		count: 10
+	}]
+}

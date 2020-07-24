@@ -1,0 +1,20 @@
+{
+	x: 8.5d,
+	y: -0.5d,
+	dependencies: [
+		"bab368af"
+	],
+	tasks: [{
+		uid: "29d30253",
+		type: "item",
+		items: [{
+			item: "bigreactors:turbinecreativesteamgenerator"
+		}]
+	}],
+	rewards: [{
+		uid: "50430e66",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p beginns to think what to do with infinite steam"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: -5.0d,
+	y: 4.0d,
+	dependencies: [
+		"4a71042a"
+	],
+	tasks: [{
+		uid: "b955604e",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:nether_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "2710b347",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "08372695",
+		type: "random",
+		table: 17
+	}]
+}

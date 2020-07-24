@@ -1,0 +1,29 @@
+{
+	x: 6.0d,
+	y: 5.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "de769101",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:bronze_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "214ea1ea",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3fab2812",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "365e4d19",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"79d5628d"
+	],
+	tasks: [{
+		uid: "9c305297",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_2"
+		}]
+	}],
+	rewards: [{
+		uid: "5118fea9",
+		type: "item",
+		item: "minecraft:iron_block",
+		random_bonus: 2
+	}]
+}

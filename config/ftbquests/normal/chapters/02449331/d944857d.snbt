@@ -1,0 +1,34 @@
+{
+	x: 11.0d,
+	y: 7.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "72d62d33",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:fluix_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "85b8b6ab",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "54b6ac6e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "442b5888",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a4c35971",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,50 @@
+{
+	title: "Black Quartz",
+	x: 0.0d,
+	y: 8.0d,
+	dependencies: [
+		"33462b78"
+	],
+	tasks: [{
+		uid: "0d554d61",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_quartz"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8f49d601",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_quartz"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2261fcab",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_quartz"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9a3ee9b7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_quartz"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3ed73093",
+		type: "item",
+		item: "actuallyadditions:item_misc 1 5",
+		count: 10
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"f748bd0c"
+	],
+	tasks: [{
+		uid: "b57250f8",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_0",
+			tag: {
+				UUID: "cfcce5b7-7d37-4746-a4fe-6f4205f3b0ae",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9f4927c1",
+		type: "item",
+		item: "minecraft:redstone_block"
+	}]
+}

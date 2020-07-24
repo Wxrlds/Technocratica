@@ -1,0 +1,51 @@
+{
+	icon: "scannable:scanner",
+	x: -4.0d,
+	y: -1.0d,
+	description: "Helps you to find ores",
+	text: [
+		"The Scanner can be charged with EU"
+	],
+	tasks: [{
+		uid: "6c346cf6",
+		type: "item",
+		items: [{
+			item: "scannable:scanner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fa61ceb7",
+		type: "item",
+		items: [{
+			item: "scannable:module_ore_common"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a165c1e0",
+		type: "item",
+		items: [{
+			item: "scannable:module_ore_rare"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f6df7dc7",
+		type: "item",
+		item: "scannable:module_block"
+	},
+	{
+		uid: "f196dfea",
+		type: "item",
+		item: "scannable:module_block"
+	},
+	{
+		uid: "f8113b6e",
+		type: "item",
+		item: "scannable:module_block"
+	}]
+}

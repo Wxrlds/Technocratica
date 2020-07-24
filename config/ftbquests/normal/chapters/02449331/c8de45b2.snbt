@@ -1,0 +1,24 @@
+{
+	x: -5.0d,
+	y: 6.0d,
+	dependencies: [
+		"4a71042a"
+	],
+	tasks: [{
+		uid: "439c6a11",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:grains_of_infinity_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "6b6ee52d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f4bed207",
+		type: "random",
+		table: 17
+	}]
+}

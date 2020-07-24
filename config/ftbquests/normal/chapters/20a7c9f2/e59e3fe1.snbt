@@ -1,0 +1,20 @@
+{
+	x: 13.5d,
+	y: 4.0d,
+	shape: "octagon",
+	dependencies: [
+		"e9714c5a"
+	],
+	tasks: [{
+		uid: "cbe21719",
+		type: "item",
+		items: [{
+			item: "avaritiaio:grindingballinfinity"
+		}]
+	}],
+	rewards: [{
+		uid: "565a2dde",
+		type: "random",
+		table: 13
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"0f1f4a58"
+	],
+	tasks: [{
+		uid: "7ffc0238",
+		type: "item",
+		items: [{
+			item: "advanced_solar_panels:machines 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "c172082b",
+		type: "item",
+		item: {
+			id: "ic2:energy_crystal",
+			tag: {
+				charge: 1000000.0d
+			}
+		},
+		count: 16
+	}]
+}

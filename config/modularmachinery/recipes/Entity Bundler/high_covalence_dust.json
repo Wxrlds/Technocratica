@@ -1,257 +1,257 @@
 {
-  "machine": "entity_bundler",
-  "registryName": "high_covalence_dust",
-  "recipeTime": 1200,
-  "requirements": [
-    {
-      "type": "energy",
-      "io-type": "input",
-      "energyPerTick": 40000
-    },
-    {
-      "type": "fluid",
-      "io-type": "input",
-      "fluid": "milk",
-      "amount": 1000
-    },
-    {
-      "type": "item",
-      "io-type": "input",
-      "item": "minecraft:diamond_block",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "io-type": "input",
-      "item": "thermalfoundation:material@802",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "io-type": "input",
-      "item": "thermalfoundation:material@802",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "io-type": "input",
-      "item": "contenttweaker:entity_clump",
-      "amount": 1
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "minecraft:spawn_egg",
-      "nbt": {
-        "EntityTag": {
-          "ArmorDropChances": [
-            "0.0f",
-            "0.0f",
-            "0.0f",
-            "0.0f"
-          ],
-          "Health": "2000.0f",
-          "ArmorItems": [
-            {
-              "id": "mekanismtools:obsidianboots",
-              "Count": "1b",
-              "tag": {
-                "ench": [
-                  {
-                    "lvl": "10",
-                    "id": "0"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "1"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "2"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "3"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "4"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "7"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "8"
-                  }
-                ],
-                "Unbreakable": "1"
-              }
-            },
-            {
-              "id": "mekanismtools:obsidianleggings",
-              "Count": "1b",
-              "tag": {
-                "ench": [
-                  {
-                    "lvl": "10",
-                    "id": "0"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "1"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "3"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "4"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "7"
-                  }
-                ],
-                "Unbreakable": "1"
-              }
-            },
-            {
-              "id": "mekanismtools:obsidianchestplate",
-              "Count": "1b",
-              "tag": {
-                "ench": [
-                  {
-                    "lvl": "10",
-                    "id": "0"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "1"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "3"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "4"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "7"
-                  }
-                ],
-                "Unbreakable": "1"
-              }
-            },
-            {
-              "id": "mekanismtools:obsidianhelmet",
-              "Count": "1b",
-              "tag": {
-                "ench": [
-                  {
-                    "lvl": "10",
-                    "id": "0"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "1"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "3"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "4"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "5"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "6"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "7"
-                  }
-                ],
-                "Unbreakable": "1"
-              }
-            }
-          ],
-          "Attributes": [
-            {
-              "Base": "2000",
-              "Name": "generic.maxHealth"
-            },
-            {
-              "Base": "100",
-              "Name": "generic.followRange"
-            }
-          ],
-          "HandDropChances": [
-            "0.0f",
-            "1.0f"
-          ],
-          "id": "minecraft:skeleton",
-          "ActiveEffects": [
-            {
-              "Duration": "42949672940",
-              "Id": "5",
-              "Amplifier": "5"
-            },
-            {
-              "Duration": "42949672940",
-              "Id": "12",
-              "Amplifier": "0"
-            },
-            {
-              "Duration": "42949672940",
-              "Id": "13",
-              "Amplifier": "0"
-            }
-          ],
-          "HandItems": [
-            {
-              "id": "minecraft:bow",
-              "Count": "1b",
-              "tag": {
-                "ench": [
-                  {
-                    "lvl": "10",
-                    "id": "48"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "49"
-                  },
-                  {
-                    "lvl": "10",
-                    "id": "50"
-                  },
-                  {
-                    "lvl": "1",
-                    "id": "51"
-                  }
-                ],
-                "Unbreakable": "1"
-              }
-            },
-            {
-              "id": "projecte:item.pe_covalence_dust",
-              "Count": "32b",
-              "Damage": "2"
-            }
-          ]
-        }
-      },
-      "amount": 1
-    }
-  ]
+	"machine": "entity_bundler",
+	"registryName": "high_covalence_dust",
+	"recipeTime": 1200,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 40000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "milk",
+			"amount": 1000
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:diamond_block",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:material@802",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:material@802",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "contenttweaker:entity_clump",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"ArmorDropChances": [
+						"0.0f",
+						"0.0f",
+						"0.0f",
+						"0.0f"
+					],
+					"Health": "2000.0f",
+					"ArmorItems": [
+						{
+							"id": "mekanismtools:obsidianboots",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "2"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									},
+									{
+										"lvl": "10",
+										"id": "8"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:obsidianleggings",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:obsidianchestplate",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:obsidianhelmet",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "5"
+									},
+									{
+										"lvl": "10",
+										"id": "6"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						}
+					],
+					"Attributes": [
+						{
+							"Base": "2000",
+							"Name": "generic.maxHealth"
+						},
+						{
+							"Base": "100",
+							"Name": "generic.followRange"
+						}
+					],
+					"HandDropChances": [
+						"0.0f",
+						"1.0f"
+					],
+					"id": "minecraft:skeleton",
+					"ActiveEffects": [
+						{
+							"Duration": "42949672940",
+							"Id": "5",
+							"Amplifier": "5"
+						},
+						{
+							"Duration": "42949672940",
+							"Id": "12",
+							"Amplifier": "0"
+						},
+						{
+							"Duration": "42949672940",
+							"Id": "13",
+							"Amplifier": "0"
+						}
+					],
+					"HandItems": [
+						{
+							"id": "minecraft:bow",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "48"
+									},
+									{
+										"lvl": "10",
+										"id": "49"
+									},
+									{
+										"lvl": "10",
+										"id": "50"
+									},
+									{
+										"lvl": "1",
+										"id": "51"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "projecte:item.pe_covalence_dust",
+							"Count": "32b",
+							"Damage": "2"
+						}
+					]
+				}
+			},
+			"amount": 1
+		}
+	]
 }

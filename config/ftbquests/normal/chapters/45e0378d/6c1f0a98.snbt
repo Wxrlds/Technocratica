@@ -1,0 +1,24 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	description: "This pipe can insert and extract items out of your network.",
+	text: [
+		"It needs to be connected to every chest you want to store items in and it has to be connected to the chest from which you want to import items, so they can be stored in the network"
+	],
+	dependencies: [
+		"040a7342"
+	],
+	tasks: [{
+		uid: "eeb40c0a",
+		type: "item",
+		items: [{
+			item: "projectred-transportation:pipe 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "ac6ac1b6",
+		type: "item",
+		item: "projectred-transportation:pipe 1 2",
+		random_bonus: 8
+	}]
+}

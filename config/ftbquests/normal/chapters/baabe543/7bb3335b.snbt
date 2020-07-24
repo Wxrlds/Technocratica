@@ -1,0 +1,19 @@
+{
+	x: 1.5d,
+	y: 7.5d,
+	dependencies: [
+		"704c4b1f"
+	],
+	tasks: [{
+		uid: "6d38eb59",
+		type: "item",
+		items: [{
+			item: "draconicevolution:tool_upgrade 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "c5cf494b",
+		type: "random",
+		table: 14
+	}]
+}

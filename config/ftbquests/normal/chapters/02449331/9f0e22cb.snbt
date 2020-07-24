@@ -1,0 +1,39 @@
+{
+	x: 17.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "9f68984d",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:manyullyn_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "7e0aa53c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "88f6f0dc",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "148e6e3c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "959f4675",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e415ddec",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: -8.0d,
+	y: 0.0d,
+	dependencies: [
+		"361c16b3"
+	],
+	tasks: [{
+		uid: "768a5f79",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "c1216443",
+		type: "item",
+		item: "actuallyadditions:item_crystal_shard 1 5",
+		count: 18
+	}]
+}

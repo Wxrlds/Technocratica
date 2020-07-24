@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 0.0d,
+	dependencies: [
+		"f74fb0d2"
+	],
+	tasks: [{
+		uid: "93a46dcb",
+		type: "item",
+		items: [{
+			item: "bigreactors:reactorfuelrod"
+		}]
+	}],
+	rewards: [{
+		uid: "eddbe683",
+		type: "item",
+		item: "ic2:ingot 1 8",
+		count: 16
+	}]
+}

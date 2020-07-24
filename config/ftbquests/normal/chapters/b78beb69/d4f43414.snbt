@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"2e678a0f",
+		"e987721e"
+	],
+	tasks: [{
+		uid: "406fde6e",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "4374aafb",
+		type: "item",
+		item: "mekanism:controlcircuit 1 3",
+		count: 3
+	}]
+}

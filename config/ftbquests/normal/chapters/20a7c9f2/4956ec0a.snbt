@@ -1,0 +1,25 @@
+{
+	x: 9.5d,
+	y: 2.0d,
+	dependencies: [
+		"77e20082",
+		"1a988b09",
+		"31b21883",
+		"8ed7eabf",
+		"b4a61d4f",
+		"ca44d66e",
+		"96b2081e"
+	],
+	tasks: [{
+		uid: "bf0995f5",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "50a879d0",
+		type: "random",
+		table: 13
+	}]
+}

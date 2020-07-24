@@ -1,0 +1,29 @@
+{
+	x: 5.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "350a6a6a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:basalz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "8ec0d630",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "1b84191f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "98ee60fa",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: 1.0d,
+	dependencies: [
+		"a312ff44"
+	],
+	tasks: [{
+		uid: "accd187c",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_matter"
+		}]
+	}],
+	rewards: [{
+		uid: "8ef428c8",
+		type: "random",
+		table: 12
+	}]
+}

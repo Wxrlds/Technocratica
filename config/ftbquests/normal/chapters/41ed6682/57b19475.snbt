@@ -1,0 +1,32 @@
+{
+	x: -12.5d,
+	y: 3.0d,
+	dependencies: [
+		"1270f104"
+	],
+	tasks: [{
+		uid: "f2b7c7fc",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 129"
+		}]
+	}],
+	rewards: [{
+		uid: "b8f9f285",
+		type: "item",
+		item: "thermalfoundation:material 1 226",
+		count: 64
+	},
+	{
+		uid: "a8d59296",
+		type: "item",
+		item: "thermalfoundation:material 1 226",
+		count: 64
+	},
+	{
+		uid: "cbd4b875",
+		type: "item",
+		item: "thermalfoundation:material 1 226",
+		count: 16
+	}]
+}

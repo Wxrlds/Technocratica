@@ -26,6 +26,8 @@ mods.jei.JEI.addDescription(<ic2:te:50>,"Place next to a Heater to make it start
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Rabbit (It's a little bit stronger, so be prepared.)");
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze (It's a little bit stronger, so be prepared.)");
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (It's a little bit stronger, so be prepared.)");
+mods.jei.JEI.addDescription(<enderio:block_powered_spawner>,"The Dark Steel Anvil has a much higher level limit");
+mods.jei.JEI.addDescription(<enderio:item_broken_spawner>,"The Dark Steel Anvil has a much higher level limit");
 
 val MekTTip=[
 <mekanism:machineblock:5>,
@@ -71,7 +73,7 @@ val InWorldCrafting=[
 <thermalfoundation:material:136>
 ] as IItemStack [];
 for item in InWorldCrafting {
-mods.jei.JEI.addDescription(item.withTag({recipeType:0}),"Throw the items listed to the left of the fluid in the InWorldCrafting tab into the fluid to obtain the output.");
+mods.jei.JEI.addDescription(item.withTag({recipeType:0}),"Throw the items listed to the left of the fluid, in the InWorldCrafting Tab, into the fluid to obtain the output.");
 }
 
 val addItems=[

@@ -1,0 +1,18 @@
+{
+	x: 7.5d,
+	y: 2.0d,
+	description: "Encode both of these with the encoder",
+	tasks: [{
+		uid: "b37cc0f1",
+		type: "item",
+		items: [{
+			item: "packagedauto:recipe_holder"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "fc36235f",
+		type: "random",
+		table: 11
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	shape: "pentagon",
+	dependencies: [
+		"b048eed1",
+		"e1bad29f"
+	],
+	tasks: [{
+		uid: "f509c2db",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_5",
+			tag: {
+				UUID: "922a38be-df27-41b2-848c-2cb4c71c4d20",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "af91b601",
+		type: "item",
+		item: "minecraft:emerald_block"
+	},
+	{
+		uid: "315441c5",
+		type: "item",
+		item: "harvestcraft:holidaycakeitem"
+	}]
+}

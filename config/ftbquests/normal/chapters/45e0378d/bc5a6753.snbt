@@ -1,0 +1,17 @@
+{
+	x: 8.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "66154408",
+		type: "item",
+		items: [{
+			item: "betterbuilderswands:wandunbreakable 1 14"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d3be962c",
+		type: "item",
+		item: "actuallyadditions:item_food 1 8"
+	}]
+}

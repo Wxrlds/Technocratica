@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: -0.5d,
+	dependencies: [
+		"704c4b1f"
+	],
+	tasks: [{
+		uid: "c8b098da",
+		type: "item",
+		items: [{
+			item: "draconicevolution:fusion_crafting_core"
+		}]
+	}],
+	rewards: [{
+		uid: "df5aaed0",
+		type: "random",
+		table: 14
+	}]
+}

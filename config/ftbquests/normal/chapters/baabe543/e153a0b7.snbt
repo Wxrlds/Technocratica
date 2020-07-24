@@ -1,0 +1,25 @@
+{
+	x: 8.5d,
+	y: 4.5d,
+	dependencies: [
+		"ed0bf92c",
+		"186b3588"
+	],
+	tasks: [{
+		uid: "40d49105",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_bow",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fbebd32a",
+		type: "random",
+		table: 14
+	}]
+}

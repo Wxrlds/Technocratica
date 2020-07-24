@@ -1,0 +1,50 @@
+{
+	title: "Hunting Dimension",
+	icon: {
+		id: "huntingdim:biome_changer",
+		tag: {
+			HeldBiome: 0
+		}
+	},
+	x: 0.0d,
+	y: 0.0d,
+	description: "Build a Nether Portal like structure and light it with a Sword, Bow or Flint and Steel. Sneak to go through the portal",
+	tasks: [{
+		uid: "f38bcf3d",
+		type: "item",
+		items: [{
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}],
+		count: 12L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "547d8036",
+		type: "item",
+		items: [{
+			id: "huntingdim:biome_changer",
+			tag: {
+				HeldBiome: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c4b2a589",
+		type: "choice",
+		table: 19
+	},
+	{
+		uid: "5326fbbd",
+		type: "item",
+		item: "minecraft:shulker_shell",
+		random_bonus: 2
+	}]
+}

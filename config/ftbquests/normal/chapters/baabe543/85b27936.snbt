@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -0.5d,
+	dependencies: [
+		"704c4b1f"
+	],
+	tasks: [{
+		uid: "5d35ce8b",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_core"
+		}]
+	}],
+	rewards: [{
+		uid: "69ce955a",
+		type: "random",
+		table: 14
+	}]
+}

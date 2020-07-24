@@ -1,0 +1,13 @@
+{
+	title: "Mystical Machine Frame",
+	icon: "mysticalagriculture:mystical_machine_frame",
+	loot_size: 2,
+	rewards: [{
+		item: "mysticalagriculture:crafting 1 28",
+		count: 4
+	},
+	{
+		item: "mysticalagriculture:crafting 1 5",
+		count: 8
+	}]
+}

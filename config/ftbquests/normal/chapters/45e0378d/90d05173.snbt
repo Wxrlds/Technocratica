@@ -1,0 +1,17 @@
+{
+	x: -13.0d,
+	y: 2.5d,
+	description: "I don't know why you're not regenerating but I guess you have to deal with it....",
+	tasks: [{
+		uid: "94561f32",
+		type: "item",
+		items: [{
+			item: "minecraft:golden_apple"
+		}]
+	}],
+	rewards: [{
+		uid: "9899bec9",
+		type: "random",
+		table: 18
+	}]
+}

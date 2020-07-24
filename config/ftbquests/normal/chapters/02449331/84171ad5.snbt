@@ -1,0 +1,45 @@
+{
+	x: 15.0d,
+	y: 0.0d,
+	dependencies: [
+		"e4e0e007",
+		"55bffa58"
+	],
+	tasks: [{
+		uid: "d37d510e",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:insanium 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "773511a0",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f90049fc",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "37d476f5",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ee0a47f7",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "9b72c738",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "38b08d9e",
+		type: "random",
+		table: 17
+	}]
+}

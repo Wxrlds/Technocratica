@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"b8d22a8f"
+	],
+	tasks: [{
+		uid: "2b38295c",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:cellanalyser"
+		}]
+	}],
+	rewards: [{
+		uid: "208b025f",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

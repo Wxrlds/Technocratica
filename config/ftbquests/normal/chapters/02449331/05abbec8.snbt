@@ -1,0 +1,34 @@
+{
+	x: 13.0d,
+	y: 7.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "cc17ee4b",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:glowstone_ingot_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "7af53950",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "387a57c4",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "82c29f50",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6a1de094",
+		type: "random",
+		table: 17
+	}]
+}

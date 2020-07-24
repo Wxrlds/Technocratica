@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 12.0d,
+	dependencies: [
+		"16ad8876"
+	],
+	tasks: [{
+		uid: "ca9c0ea6",
+		type: "item",
+		items: [{
+			item: "ic2:alloy_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4bef224b",
+		type: "item",
+		item: "ic2:crafting 1 3",
+		count: 10
+	}]
+}

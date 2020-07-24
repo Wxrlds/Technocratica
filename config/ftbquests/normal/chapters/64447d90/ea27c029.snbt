@@ -1,0 +1,50 @@
+{
+	title: "Silver Armor",
+	x: 14.0d,
+	y: 0.0d,
+	dependencies: [
+		"b0f24cc2"
+	],
+	tasks: [{
+		uid: "ab56db1c",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_silver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "229d9103",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_silver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a2dc4499",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_silver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0aa6dda7",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_silver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2db73bc7",
+		type: "item",
+		item: "thermalfoundation:material 1 130",
+		count: 10
+	}]
+}

@@ -1,0 +1,13 @@
+{
+	title: "Simple Machine Chassis",
+	icon: "enderio:item_material",
+	loot_size: 2,
+	rewards: [{
+		item: "thermalfoundation:material 1 199",
+		count: 36
+	},
+	{
+		item: "advanced_solar_panels:crafting 1 7",
+		count: 4
+	}]
+}

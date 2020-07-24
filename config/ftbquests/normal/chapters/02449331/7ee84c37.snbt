@@ -1,0 +1,44 @@
+{
+	x: 17.0d,
+	y: 6.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "20465e57",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ender_amethyst_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "1e5dce1e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "87437b60",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "96664bef",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "136cee38",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5eda5c80",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "177bfbe7",
+		type: "random",
+		table: 17
+	}]
+}

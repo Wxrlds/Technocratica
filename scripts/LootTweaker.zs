@@ -1,19 +1,19 @@
-import loottweaker.vanilla.loot.LootTables;
+import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
-val blacksmith=LootTables.getTable("minecraft:chests/village_blacksmith");
-val deserttemple=LootTables.getTable("minecraft:chests/desert_pyramid");
-val dungeon=LootTables.getTable("minecraft:chests/simple_dungeon");
-val end_city=LootTables.getTable("minecraft:chests/end_city_treasure");
-val igloo=LootTables.getTable("minecraft:chests/igloo_chest");
-val jungletemple=LootTables.getTable("minecraft:chests/jungle_temple");
-val mineshaft=LootTables.getTable("minecraft:chests/abandoned_mineshaft");
-val netherfortress=LootTables.getTable("minecraft:chests/nether_bridge");
-val strongholdcorridor=LootTables.getTable("minecraft:chests/stronghold_corridor");
-val strongholdcrossing=LootTables.getTable("minecraft:chests/stronghold_crossing");
-val strongholdlibrary=LootTables.getTable("minecraft:chests/stronghold_library");
-val woodlandmansion=LootTables.getTable("minecraft:chests/woodland_mansion");
+val blacksmith=LootTweaker.getTable("minecraft:chests/village_blacksmith");
+val deserttemple=LootTweaker.getTable("minecraft:chests/desert_pyramid");
+val dungeon=LootTweaker.getTable("minecraft:chests/simple_dungeon");
+val end_city=LootTweaker.getTable("minecraft:chests/end_city_treasure");
+val igloo=LootTweaker.getTable("minecraft:chests/igloo_chest");
+val jungletemple=LootTweaker.getTable("minecraft:chests/jungle_temple");
+val mineshaft=LootTweaker.getTable("minecraft:chests/abandoned_mineshaft");
+val netherfortress=LootTweaker.getTable("minecraft:chests/nether_bridge");
+val strongholdcorridor=LootTweaker.getTable("minecraft:chests/stronghold_corridor");
+val strongholdcrossing=LootTweaker.getTable("minecraft:chests/stronghold_crossing");
+val strongholdlibrary=LootTweaker.getTable("minecraft:chests/stronghold_library");
+val woodlandmansion=LootTweaker.getTable("minecraft:chests/woodland_mansion");
 
 val blacksmithmain=blacksmith.getPool("main");
 val deserttemplemain=deserttemple.getPool("main");

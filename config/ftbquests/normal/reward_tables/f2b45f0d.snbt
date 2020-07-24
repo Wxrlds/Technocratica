@@ -1,0 +1,13 @@
+{
+	title: "Steel Casing",
+	icon: "mekanism:basicblock 1 8",
+	loot_size: 2,
+	rewards: [{
+		item: "thermalfoundation:material 1 160",
+		count: 2
+	},
+	{
+		item: "minecraft:iron_ingot",
+		count: 4
+	}]
+}

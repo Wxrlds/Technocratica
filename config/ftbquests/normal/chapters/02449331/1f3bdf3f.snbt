@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "cbcce701",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:sky_stone_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "490f74ce",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "36978b62",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "20aa22fa",
+		type: "random",
+		table: 17
+	}]
+}

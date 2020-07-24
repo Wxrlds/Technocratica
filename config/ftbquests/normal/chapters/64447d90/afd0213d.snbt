@@ -1,0 +1,50 @@
+{
+	title: "Manyullyn Armor",
+	x: 12.0d,
+	y: 4.0d,
+	dependencies: [
+		"00e87bf0"
+	],
+	tasks: [{
+		uid: "affc8b3e",
+		type: "item",
+		items: [{
+			item: "tcomplement:manyullyn_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2cfe17ab",
+		type: "item",
+		items: [{
+			item: "tcomplement:manyullyn_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "40be6805",
+		type: "item",
+		items: [{
+			item: "tcomplement:manyullyn_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dbd371cd",
+		type: "item",
+		items: [{
+			item: "tcomplement:manyullyn_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3b4d4e8a",
+		type: "item",
+		item: "tconstruct:ingots 1 2",
+		count: 10
+	}]
+}

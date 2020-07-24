@@ -1,0 +1,22 @@
+{
+	x: -8.0d,
+	y: -3.0d,
+	description: "You spawn with Paper in your inventory",
+	text: [
+		"If you've lost the Paper you spawn with and you're unable finding structures with Books, check the Emergency Items"
+	],
+	tasks: [{
+		uid: "a3a05dc5",
+		type: "item",
+		items: [{
+			item: "minecraft:book"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1c00a567",
+		type: "item",
+		item: "minecraft:book",
+		random_bonus: 63
+	}]
+}

@@ -1,0 +1,50 @@
+{
+	title: "Emeradic Crystal Armor",
+	x: 10.0d,
+	y: 12.0d,
+	dependencies: [
+		"7baac8d4"
+	],
+	tasks: [{
+		uid: "7c799346",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_crystal_green"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2a112b8f",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_crystal_green"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "72c5e453",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_crystal_green"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ab15147a",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_crystal_green"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "222c8682",
+		type: "item",
+		item: "actuallyadditions:item_crystal 1 4",
+		count: 10
+	}]
+}

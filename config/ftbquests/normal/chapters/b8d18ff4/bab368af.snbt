@@ -1,0 +1,20 @@
+{
+	x: 7.5d,
+	y: -1.0d,
+	dependencies: [
+		"298b3d20"
+	],
+	tasks: [{
+		uid: "86c366c6",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials 1 50"
+		}]
+	}],
+	rewards: [{
+		uid: "2a7b698e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p's tools and weapons are now way to OP"
+	}]
+}

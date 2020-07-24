@@ -1,0 +1,29 @@
+{
+	x: 4.0d,
+	y: 8.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "159f6207",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ender_biotite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "0a7dce7f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e5a18aeb",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "bf8852cc",
+		type: "random",
+		table: 17
+	}]
+}

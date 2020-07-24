@@ -1,0 +1,41 @@
+{
+	x: 18.0d,
+	y: 2.0d,
+	description: "Craft two Wireless Terminals together to receive this. Add another Terminal to add towards the existing Ultimate Terminal",
+	dependencies: [
+		"002e4672",
+		"17c9635c",
+		"6ce6b363",
+		"141bd744"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e92a6354",
+		type: "item",
+		items: [{
+			id: "ae2wtlib:wut",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5a653ca2",
+		type: "item",
+		item: "ae2wtlib:infinity_booster_card",
+		count: 64,
+		random_bonus: 64
+	},
+	{
+		uid: "a3a1d561",
+		type: "random",
+		table: 11
+	},
+	{
+		uid: "97dd48a3",
+		type: "item",
+		item: "ae2wtlib:infinity_booster_card",
+		count: 64,
+		random_bonus: 64
+	}]
+}

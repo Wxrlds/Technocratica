@@ -1,0 +1,29 @@
+{
+	x: 3.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "229e4d47",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:blizz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "72721272",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "76cc4e4f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "70f6df18",
+		type: "random",
+		table: 17
+	}]
+}

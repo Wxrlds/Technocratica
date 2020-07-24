@@ -1,0 +1,20 @@
+{
+	x: -6.5d,
+	y: 0.0d,
+	dependencies: [
+		"ac5eae56"
+	],
+	tasks: [{
+		uid: "cefcb11a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:mystical_machine_frame"
+		}]
+	}],
+	rewards: [{
+		uid: "f2f0b9ea",
+		type: "random",
+		icon: "mysticalagriculture:mystical_machine_frame",
+		table: 3
+	}]
+}

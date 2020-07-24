@@ -1,0 +1,34 @@
+{
+	x: 9.0d,
+	y: 7.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "690c36f2",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:dark_steel_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "5b70b995",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4d3298ba",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "321dfb1b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5ba4f2b4",
+		type: "random",
+		table: 17
+	}]
+}

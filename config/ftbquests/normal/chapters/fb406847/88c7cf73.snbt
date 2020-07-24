@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"d08899c4"
+	],
+	tasks: [{
+		uid: "e949098b",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_draconic"
+		}]
+	}],
+	rewards: [{
+		uid: "1749a849",
+		type: "item",
+		item: "draconicevolution:draconic_ingot",
+		random_bonus: 3
+	}]
+}

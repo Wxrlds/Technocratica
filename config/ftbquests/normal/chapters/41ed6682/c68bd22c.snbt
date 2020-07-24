@@ -1,0 +1,21 @@
+{
+	x: -11.0d,
+	y: 0.0d,
+	description: "All IC2 machines can be broken without a wrench. Use a Pickaxe!",
+	dependencies: [
+		"2f9eb49f"
+	],
+	tasks: [{
+		uid: "dc090357",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 13"
+		}]
+	}],
+	rewards: [{
+		uid: "0b2e89f7",
+		type: "random",
+		icon: "ic2:resource 1 13",
+		table: 1
+	}]
+}

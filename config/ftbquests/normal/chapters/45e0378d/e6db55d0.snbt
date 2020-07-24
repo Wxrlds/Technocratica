@@ -1,0 +1,34 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	description: "Basic EU storage",
+	text: [
+		"All IC2 machines can be broken without a wrench. Use a Pickaxe!"
+	],
+	dependencies: [
+		"20e4e3b6"
+	],
+	tasks: [{
+		uid: "1876d25f",
+		type: "item",
+		items: [{
+			id: "ic2:te",
+			tag: {
+				energy: 40000.0d
+			},
+			Damage: 72s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4eb671bf",
+		type: "item",
+		item: {
+			id: "ic2:te",
+			tag: {
+				energy: 40000.0d
+			},
+			Damage: 68s
+		}
+	}]
+}

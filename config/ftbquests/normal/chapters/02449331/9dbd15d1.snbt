@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "d0b76139",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_farmer"
+		}]
+	}],
+	rewards: [{
+		uid: "83d78a2a",
+		type: "item",
+		item: "agricraft:crop_sticks",
+		random_bonus: 127
+	}]
+}

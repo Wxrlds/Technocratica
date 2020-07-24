@@ -1,0 +1,29 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "d07e1d04",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:certus_quartz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "fb8d19a3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "de72a46d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "30a3425b",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -14.0d,
+	y: 4.0d,
+	dependencies: [
+		"8765919d"
+	],
+	tasks: [{
+		uid: "5dc6e941",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ice_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "8f92daf1",
+		type: "random",
+		table: 17
+	}]
+}

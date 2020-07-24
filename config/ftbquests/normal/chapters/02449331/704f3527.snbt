@@ -1,0 +1,34 @@
+{
+	x: 12.0d,
+	y: 5.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "aed615b1",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:invar_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "ea737453",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c3e9e3bf",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "fd15adba",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "fbddaf57",
+		type: "random",
+		table: 17
+	}]
+}

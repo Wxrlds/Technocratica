@@ -1,0 +1,25 @@
+{
+	x: -6.5d,
+	y: 6.0d,
+	dependencies: [
+		"3ebd29d5"
+	],
+	tasks: [{
+		uid: "b7516b0a",
+		type: "item",
+		items: [{
+			id: "quantumflux:quibitcluster",
+			tag: {
+				Energy: 32000
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5fc784d2",
+		type: "item",
+		item: "enderio:item_material 1 1",
+		count: 2
+	}]
+}

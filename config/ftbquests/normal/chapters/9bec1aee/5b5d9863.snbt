@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"553e0811"
+	],
+	tasks: [{
+		uid: "65823a4c",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:dnadecrypter"
+		}]
+	}],
+	rewards: [{
+		uid: "5b21d1b4",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

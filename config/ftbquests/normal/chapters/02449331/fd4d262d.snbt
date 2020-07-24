@@ -1,0 +1,22 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	dependencies: [
+		"a1b796cd",
+		"b3224799"
+	],
+	tasks: [{
+		uid: "2c314fd6",
+		type: "item",
+		items: [{
+			item: "matc:intermediumcrystal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9daf091a",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 23.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "4cbdc7be",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:enderium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "523fba33",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "13184447",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "b97264a0",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3522b577",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c529f16e",
+		type: "random",
+		table: 17
+	}]
+}

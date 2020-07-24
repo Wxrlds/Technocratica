@@ -1,0 +1,34 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "8cf440cd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:electrum_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "cd8c9f21",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5b58a3fa",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a01c3d15",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "7a4b3fb3",
+		type: "random",
+		table: 17
+	}]
+}

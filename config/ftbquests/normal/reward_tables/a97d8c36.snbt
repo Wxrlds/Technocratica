@@ -1,0 +1,32 @@
+{
+	title: "ExtendedCrafting",
+	icon: "extendedcrafting:storage 1 4",
+	loot_size: 6,
+	rewards: [{
+		item: "avaritia:resource",
+		weight: 100
+	},
+	{
+		item: "avaritia:resource 1 1",
+		weight: 50
+	},
+	{
+		item: "extendedcrafting:material 1 37",
+		weight: 1000
+	},
+	{
+		item: "extendedcrafting:material 1 36",
+		weight: 250
+	},
+	{
+		item: "extendedcrafting:material 1 32",
+		weight: 10
+	},
+	{
+		item: "extendedcrafting:storage 1 4"
+	},
+	{
+		item: "extendedcrafting:material 1 7",
+		weight: 150
+	}]
+}

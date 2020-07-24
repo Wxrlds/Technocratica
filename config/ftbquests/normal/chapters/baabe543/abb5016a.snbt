@@ -1,0 +1,50 @@
+{
+	x: 4.0d,
+	y: 6.5d,
+	dependencies: [
+		"54272147",
+		"c475d677",
+		"3117b0b4",
+		"5f962df5",
+		"186b3588",
+		"0138cc3c",
+		"10ffef99",
+		"0dfb7ad3",
+		"7bb3335b",
+		"2c9c7195",
+		"d66a0be7",
+		"8b0787b6",
+		"a6eeee3b",
+		"3864e29d",
+		"8a4355d9",
+		"8dda6a41"
+	],
+	tasks: [{
+		uid: "6b6efb8f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					Size: 27,
+					Items: []
+				}
+			},
+			id: "draconicevolution:draconic_staff_of_power",
+			tag: {
+				Energy: 48000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f773e9ab",
+		type: "random",
+		table: 14
+	},
+	{
+		uid: "c535f69f",
+		type: "item",
+		item: "harvestcraft:chocolatesprinklecakeitem"
+	}]
+}

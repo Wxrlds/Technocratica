@@ -1,0 +1,27 @@
+{
+	x: -6.0d,
+	y: 1.0d,
+	description: "Upgrade your Tool with it",
+	text: [
+		"I wonder what happens when you click a Bucket of Lava and Water on the Seared Drain in the Smeltery..."
+	],
+	dependencies: [
+		"b7282f22"
+	],
+	tasks: [{
+		uid: "a551b618",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "751d194f",
+		type: "item",
+		item: "minecraft:obsidian",
+		random_bonus: 63
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"0b7c4f17"
+	],
+	tasks: [{
+		uid: "99fdf17c",
+		type: "item",
+		items: [{
+			item: "advanced_solar_panels:machines 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "31abf081",
+		type: "item",
+		item: {
+			id: "enderio:block_tank",
+			tag: {
+				"enderio:data": {
+					tank: {
+						FluidName: "ic2uu_matter",
+						Capacity: 16000,
+						Amount: 1389
+					}
+				}
+			}
+		}
+	}]
+}

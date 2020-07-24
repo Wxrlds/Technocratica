@@ -1,0 +1,44 @@
+{
+	x: 18.0d,
+	y: 1.0d,
+	dependencies: [
+		"84171ad5"
+	],
+	tasks: [{
+		uid: "34309ae9",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:awakened_draconium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "4111d37e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a000dc95",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "8421a013",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "260bdebe",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "30719b96",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d90cf248",
+		type: "random",
+		table: 17
+	}]
+}

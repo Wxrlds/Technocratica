@@ -1,0 +1,25 @@
+{
+	x: -9.5d,
+	y: 4.5d,
+	dependencies: [
+		"f6ea6149"
+	],
+	tasks: [{
+		uid: "8857e252",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 132"
+		}]
+	}],
+	rewards: [{
+		uid: "e3ac7b25",
+		type: "item",
+		item: "enderio:item_material 1 39",
+		count: 48
+	},
+	{
+		uid: "cfd9c456",
+		type: "item",
+		item: "modularmachinery:blockcontroller"
+	}]
+}

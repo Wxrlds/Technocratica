@@ -1,0 +1,23 @@
+{
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"ee3e7821"
+	],
+	tasks: [{
+		uid: "94f09c22",
+		type: "item",
+		items: [{
+			id: "draconicevolution:dislocator_advanced",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "42aa23dc",
+		type: "item",
+		item: "minecraft:ender_pearl",
+		count: 64
+	}]
+}

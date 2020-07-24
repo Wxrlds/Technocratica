@@ -1,0 +1,20 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	dependencies: [
+		"b67a5039"
+	],
+	tasks: [{
+		uid: "4f3b6471",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_manyullyn"
+		}]
+	}],
+	rewards: [{
+		uid: "f91a3c7c",
+		type: "item",
+		item: "tconstruct:ingots 1 2",
+		count: 16
+	}]
+}

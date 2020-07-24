@@ -1,0 +1,50 @@
+{
+	title: "Red Matter Armor",
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"593af5f2"
+	],
+	tasks: [{
+		uid: "3c15b258",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_rm_armor_0"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ed0139c3",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_rm_armor_1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "714865d0",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_rm_armor_2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cd7fb0f5",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_rm_armor_3"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "741b619f",
+		type: "item",
+		item: "projecte:item.pe_matter 1 1",
+		count: 10
+	}]
+}

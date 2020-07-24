@@ -1,0 +1,34 @@
+{
+	x: 14.0d,
+	y: 7.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "53de8c40",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:osmium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "c05c7a17",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "50a44b99",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "dd3e4546",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4e36a84a",
+		type: "random",
+		table: 17
+	}]
+}

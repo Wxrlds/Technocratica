@@ -1,0 +1,50 @@
+{
+	title: "Invar Armor",
+	x: 8.0d,
+	y: 14.0d,
+	dependencies: [
+		"89ab8b86"
+	],
+	tasks: [{
+		uid: "cf689e3a",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_invar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dd2fb103",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_invar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e8c9772a",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_invar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ab9b2d49",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_invar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aa9d7d95",
+		type: "item",
+		item: "thermalfoundation:material 1 162",
+		count: 10
+	}]
+}

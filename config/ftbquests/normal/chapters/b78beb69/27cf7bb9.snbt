@@ -1,0 +1,21 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"23a99bf4"
+	],
+	tasks: [{
+		uid: "14477879",
+		type: "item",
+		items: [{
+			item: "mekanism:configurator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d652f8e0",
+		type: "item",
+		item: "mekanism:filterupgrade"
+	}]
+}

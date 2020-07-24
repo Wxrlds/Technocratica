@@ -1,0 +1,17 @@
+{
+	x: 9.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "4aa9af22",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:cable_wireless_energy"
+		}]
+	}],
+	rewards: [{
+		uid: "969f9fd8",
+		type: "item",
+		item: "minecraft:netherbrick",
+		count: 4
+	}]
+}

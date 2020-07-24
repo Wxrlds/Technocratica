@@ -1,0 +1,38 @@
+{
+	x: -6.5d,
+	y: 3.0d,
+	dependencies: [
+		"596dea7b"
+	],
+	tasks: [{
+		uid: "a2cb99f1",
+		type: "item",
+		items: [{
+			item: "rftools:machine_frame"
+		}]
+	}],
+	rewards: [{
+		uid: "4f0a2bc4",
+		type: "item",
+		item: "minecraft:gold_block",
+		count: 64
+	},
+	{
+		uid: "3c8a7b1e",
+		type: "item",
+		item: "minecraft:gold_block",
+		count: 64
+	},
+	{
+		uid: "731d264a",
+		type: "item",
+		item: "minecraft:gold_block",
+		count: 64
+	},
+	{
+		uid: "8118f198",
+		type: "item",
+		item: "minecraft:gold_block",
+		count: 64
+	}]
+}

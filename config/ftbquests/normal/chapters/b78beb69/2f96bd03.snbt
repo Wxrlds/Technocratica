@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "de15e114",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit"
+		}]
+	}],
+	rewards: [{
+		uid: "a4991958",
+		type: "item",
+		item: "mekanism:controlcircuit",
+		count: 3
+	}]
+}

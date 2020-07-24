@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"ec76550e",
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "18dd2000",
+		type: "item",
+		items: [{
+			item: "matc:prudentiumcrystal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "97e31b9d",
+		type: "random",
+		table: 17
+	}]
+}

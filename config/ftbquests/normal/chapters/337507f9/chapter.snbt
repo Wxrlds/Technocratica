@@ -1,0 +1,7 @@
+{
+	title: "Conduits",
+	icon: "enderio:item_alloy_endergy_ingot 1 3",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

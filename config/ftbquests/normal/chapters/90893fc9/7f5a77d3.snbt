@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	dependencies: [
+		"01a31e21"
+	],
+	tasks: [{
+		uid: "bcc24f51",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_template"
+		}]
+	}],
+	rewards: [{
+		uid: "92428169",
+		type: "item",
+		item: "storagedrawers:upgrade_template"
+	}]
+}

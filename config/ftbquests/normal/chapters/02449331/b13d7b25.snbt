@@ -1,0 +1,39 @@
+{
+	x: 18.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "48e7bddd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:emerald_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "b5811481",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e0175f19",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "dcc2b1c8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "1ce07eb3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3a02b674",
+		type: "random",
+		table: 17
+	}]
+}

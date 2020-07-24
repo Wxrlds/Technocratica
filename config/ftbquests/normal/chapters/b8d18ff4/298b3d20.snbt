@@ -1,0 +1,20 @@
+{
+	x: 6.5d,
+	y: 0.0d,
+	dependencies: [
+		"468546ba"
+	],
+	tasks: [{
+		uid: "4fa7f528",
+		type: "item",
+		items: [{
+			item: "compacter:cobbler"
+		}]
+	}],
+	rewards: [{
+		uid: "6fca46d3",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p owns too much Cobblestone (now flood your ME System)"
+	}]
+}

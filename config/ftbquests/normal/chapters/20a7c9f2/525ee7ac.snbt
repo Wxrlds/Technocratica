@@ -1,0 +1,28 @@
+{
+	x: 13.5d,
+	y: 7.0d,
+	shape: "octagon",
+	dependencies: [
+		"e9714c5a"
+	],
+	tasks: [{
+		uid: "82779d00",
+		type: "item",
+		items: [{
+			id: "avaritia:infinity_pickaxe",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 35s
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fd96562a",
+		type: "random",
+		table: 13
+	}]
+}

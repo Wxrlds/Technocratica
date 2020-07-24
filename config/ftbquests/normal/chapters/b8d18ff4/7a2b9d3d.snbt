@@ -1,0 +1,20 @@
+{
+	x: 12.0d,
+	y: 4.0d,
+	dependencies: [
+		"0a970e3b"
+	],
+	tasks: [{
+		uid: "e2508fbf",
+		type: "item",
+		items: [{
+			item: "draconicevolution:creative_rf_source"
+		}]
+	}],
+	rewards: [{
+		uid: "dabbc5d0",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p's base is powered by Creative RF "
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "8166ddf9",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:guardian_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "e0e66f13",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "b0182ad3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6d4275c2",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	description: "Complete the Resonant Cell Frame (Full) Quest to unlock this Quest",
+	dependencies: [
+		"0c4229ba"
+	],
+	tasks: [{
+		uid: "b1e0f2c9",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:crafting 1 16"
+		}]
+	}],
+	rewards: [{
+		uid: "5f1811d4",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Seed Infuser",
+	x: 0.0d,
+	y: 0.0d,
+	description: "Did you know Schematica is installed?",
+	can_repeat: true,
+	dependencies: [
+		"837de456"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f9b8b284",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}],
+	rewards: [{
+		uid: "f211b50a",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:seed_infuser"
+			}
+		}
+	}]
+}

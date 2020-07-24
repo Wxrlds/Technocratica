@@ -1,2951 +1,2951 @@
 {
-  "registryname": "entity_bundler",
-  "localizedname": "Entity Bundler",
-  "requires-blueprint": true,
-  "parts": [
-    {
-      "x": -1,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 7,
-      "z": 3,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 7,
-      "z": 3,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 7,
-      "z": 3,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "z": 3,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "z": 3,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 0,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 8,
-      "z": 3,
-      "elements": [
-        "minecraft:beacon@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 2,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 7,
-      "z": 2,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 7,
-      "z": 2,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 7,
-      "z": 2,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "z": 2,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "z": 2,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockoutputbus@6"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 1,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 7,
-      "z": 1,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 7,
-      "z": 1,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 7,
-      "z": 1,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "z": 1,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "z": 1,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 0,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 6,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 0,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockenergyinputhatch@7"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 6,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 6,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 5,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 5,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 7,
-      "z": 5,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockfluidinputhatch@7"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 7,
-      "z": 5,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 7,
-      "z": 5,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "z": 5,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "z": 5,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 4,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockinputbus@6"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "cyclicmagic:exp_pylon"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "z": 4,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "actuallyadditions:block_giant_chest_large@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 4,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 0,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@4"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 7,
-      "z": 4,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 7,
-      "z": 4,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 7,
-      "z": 4,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "z": 4,
-      "elements": [
-        "minecraft:purpur_block@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "z": 4,
-      "elements": [
-        "solarflux:solar_panel_draconic@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "extrautils2:simpledecorative@2"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "extendedcrafting:storage@3"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "z": 3,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "extendedcrafting:pedestal@0"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "extendedcrafting:trimmed@5"
-      ]
-    },
-    {
-      "x": 3,
-      "y": 1,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "draconicevolution:crafting_injector@2"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -3,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "modularmachinery:blockcasing@2"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "mysticalagriculture:growth_accelerator@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": -2,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": -1,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "z": 3,
-      "elements": [
-        "mysticalagriculture:ingot_storage@6"
-      ]
-    },
-    {
-      "x": 1,
-      "y": 4,
-      "z": 2,
-      "elements": [
-        "enderio:block_experience_obelisk@0"
-      ]
-    },
-    {
-      "x": 0,
-      "y": 2,
-      "z": 1,
-      "elements": [
-        "extrautils2:simpledecorative@0"
-      ]
-    }
-  ]
+	"registryname": "entity_bundler",
+	"localizedname": "Entity Bundler",
+	"requires-blueprint": true,
+	"parts": [
+		{
+			"x": -1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"minecraft:beacon@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockoutputbus@6"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockenergyinputhatch@7"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockfluidinputhatch@7"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockinputbus@6"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"cyclicmagic:exp_pylon"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"actuallyadditions:block_giant_chest_large@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"minecraft:purpur_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"solarflux:solar_panel_draconic@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@2"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extendedcrafting:storage@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:pedestal@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:trimmed@5"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"draconicevolution:crafting_injector@2"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockcasing@2"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"enderio:block_experience_obelisk@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"extrautils2:simpledecorative@0"
+			]
+		}
+	]
 }

@@ -1,0 +1,50 @@
+{
+	title: "Inferium Armor",
+	x: 2.0d,
+	y: 12.0d,
+	dependencies: [
+		"86ef4616"
+	],
+	tasks: [{
+		uid: "5c5a1e2f",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:inferium_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3c94f5a3",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:inferium_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2e5220c5",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:inferium_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a15d3ccf",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:inferium_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "21e931a6",
+		type: "item",
+		item: "mysticalagriculture:crafting 1 33",
+		count: 10
+	}]
+}

@@ -1,0 +1,62 @@
+{
+	title: "Wyvern Armor",
+	x: 10.0d,
+	y: 4.0d,
+	dependencies: [
+		"6866c137"
+	],
+	tasks: [{
+		uid: "955b1508",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_boots",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "56ca5eca",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_legs",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "beed25d0",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_chest",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "92eb9e1b",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_helm",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7578ec8d",
+		type: "item",
+		item: "draconicevolution:draconium_ingot",
+		count: 10
+	}]
+}

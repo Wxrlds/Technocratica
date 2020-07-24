@@ -1,0 +1,34 @@
+{
+	x: 9.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "0873c141",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:constantan_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "329a13a8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "101579e9",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "62c57503",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "66c4cb6a",
+		type: "random",
+		table: 17
+	}]
+}

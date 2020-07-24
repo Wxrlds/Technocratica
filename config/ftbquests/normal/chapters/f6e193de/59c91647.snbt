@@ -1,0 +1,22 @@
+{
+	x: 7.0d,
+	y: -3.5d,
+	dependencies: [
+		"2e8a2f1d"
+	],
+	tasks: [{
+		uid: "9406d1ed",
+		type: "item",
+		items: [{
+			id: "projectex:colossal_star_sphere",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "689b3f4e",
+		type: "random",
+		table: 12
+	}]
+}

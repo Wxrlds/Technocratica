@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: 1.0d,
+	dependencies: [
+		"056038c6"
+	],
+	tasks: [{
+		uid: "a79c69a0",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "02f6490e",
+		type: "random",
+		table: 14
+	}]
+}

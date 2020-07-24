@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"6d9025f0",
+		"c90a2a82",
+		"a27f50b7"
+	],
+	tasks: [{
+		uid: "75f93d14",
+		type: "item",
+		items: [{
+			item: "enderio:block_transceiver"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ea96285f",
+		type: "item",
+		item: "enderio:item_basic_capacitor 1 2"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: -1.5d,
+	dependencies: [
+		"bab368af"
+	],
+	tasks: [{
+		uid: "45e502c7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:creative_energy_cell"
+		}]
+	}],
+	rewards: [{
+		uid: "f422ae20",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p's ME System is overloaded"
+	}]
+}

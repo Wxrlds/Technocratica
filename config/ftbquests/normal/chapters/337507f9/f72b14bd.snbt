@@ -1,0 +1,27 @@
+{
+	x: -25.0d,
+	y: 4.0d,
+	dependencies: [
+		"84ebb903"
+	],
+	tasks: [{
+		uid: "901bfe6f",
+		type: "item",
+		items: [{
+			id: "xnet:netcable",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "554185df",
+		type: "item",
+		item: "xnet:controller"
+	},
+	{
+		uid: "52576685",
+		type: "item",
+		item: "xnet:xnet_manual"
+	}]
+}

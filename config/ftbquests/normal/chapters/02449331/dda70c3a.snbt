@@ -1,0 +1,39 @@
+{
+	x: 21.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "090d6d32",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:iridium_ore_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "e3eed54f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "2cbee339",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "9d93b6e8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "af375f41",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "43a0f1e1",
+		type: "random",
+		table: 17
+	}]
+}

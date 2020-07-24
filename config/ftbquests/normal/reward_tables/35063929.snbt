@@ -1,0 +1,17 @@
+{
+	title: "Smeltery",
+	icon: "tconstruct:smeltery_controller",
+	loot_size: 27,
+	rewards: [{
+		item: "tconstruct:materials",
+		count: 64
+	},
+	{
+		item: "tconstruct:seared 1 3",
+		count: 16
+	},
+	{
+		item: "tconstruct:soil",
+		count: 64
+	}]
+}

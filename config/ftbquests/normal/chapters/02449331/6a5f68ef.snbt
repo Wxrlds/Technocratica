@@ -1,0 +1,34 @@
+{
+	x: 15.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "d73c43ca",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:soularium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "70e8b78c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d9307ac3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3ced449f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c49b5d85",
+		type: "random",
+		table: 17
+	}]
+}

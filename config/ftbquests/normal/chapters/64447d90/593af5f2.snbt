@@ -1,0 +1,50 @@
+{
+	title: "Dark Matter Armor",
+	x: 4.0d,
+	y: 6.0d,
+	dependencies: [
+		"c8a6402f"
+	],
+	tasks: [{
+		uid: "048a0d9b",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_dm_armor_0"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "69454349",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_dm_armor_1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2fb7fad5",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_dm_armor_2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "124db519",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_dm_armor_3"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "97e0468c",
+		type: "item",
+		item: "projecte:item.pe_matter",
+		count: 10
+	}]
+}

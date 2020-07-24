@@ -1,0 +1,20 @@
+{
+	x: -5.0d,
+	y: -2.0d,
+	dependencies: [
+		"00647960",
+		"232feed9"
+	],
+	tasks: [{
+		uid: "b2b37e78",
+		type: "item",
+		items: [{
+			item: "projecte:transmutation_table"
+		}]
+	}],
+	rewards: [{
+		uid: "9e08c3a4",
+		type: "random",
+		table: 12
+	}]
+}

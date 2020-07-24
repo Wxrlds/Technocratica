@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "6056857a",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:metalscraper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "101dd4fb",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

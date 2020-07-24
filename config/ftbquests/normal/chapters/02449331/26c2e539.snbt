@@ -1,0 +1,34 @@
+{
+	x: 11.0d,
+	y: 5.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "ea67584c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:mithril_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "e6e1d91e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "fc475cb8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "8eee3be1",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0e7dd4ec",
+		type: "random",
+		table: 17
+	}]
+}

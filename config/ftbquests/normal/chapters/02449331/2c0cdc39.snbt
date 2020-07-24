@@ -1,0 +1,34 @@
+{
+	x: 9.0d,
+	y: 4.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "7a3c1fa0",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:gold_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "33c19f82",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d83d322f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "7059de52",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "da73d20b",
+		type: "random",
+		table: 17
+	}]
+}

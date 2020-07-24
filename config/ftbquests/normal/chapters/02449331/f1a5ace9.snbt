@@ -1,0 +1,22 @@
+{
+	x: 15.0d,
+	y: -2.0d,
+	dependencies: [
+		"84171ad5",
+		"78315be7"
+	],
+	tasks: [{
+		uid: "6caba950",
+		type: "item",
+		items: [{
+			item: "matc:supremiumcrystal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "61e6f9ae",
+		type: "random",
+		table: 17
+	}]
+}

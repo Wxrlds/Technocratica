@@ -1,0 +1,50 @@
+{
+	title: "Copper Armor",
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"e1a4f409"
+	],
+	tasks: [{
+		uid: "37c10710",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_copper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4e5de31f",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_copper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "24d7912f",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_copper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "35355352",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_copper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3a77caf1",
+		type: "item",
+		item: "thermalfoundation:material 1 128",
+		count: 10
+	}]
+}

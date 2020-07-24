@@ -1,0 +1,31 @@
+{
+	x: 7.0d,
+	y: 2.5d,
+	dependencies: [
+		"85b27936",
+		"53c42551"
+	],
+	tasks: [{
+		uid: "8b018570",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					Size: 9,
+					Items: []
+				}
+			},
+			id: "draconicevolution:wyvern_axe",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dcf23404",
+		type: "random",
+		table: 14
+	}]
+}

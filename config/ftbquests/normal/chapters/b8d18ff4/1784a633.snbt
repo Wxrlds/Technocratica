@@ -1,0 +1,21 @@
+{
+	x: 7.5d,
+	y: 5.5d,
+	dependencies: [
+		"7cc0249d"
+	],
+	tasks: [{
+		uid: "5a2b077e",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_creative 1 1"
+		}],
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "78fa355f",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p's drawers own a Creative Storage Upgrade"
+	}]
+}

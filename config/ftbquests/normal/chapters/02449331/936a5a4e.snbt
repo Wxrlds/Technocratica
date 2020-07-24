@@ -1,0 +1,34 @@
+{
+	x: 13.0d,
+	y: 5.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "a2e4c102",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:nickel_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "963003d6",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "7e7c5df8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "b353ca2e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "8545620a",
+		type: "random",
+		table: 17
+	}]
+}

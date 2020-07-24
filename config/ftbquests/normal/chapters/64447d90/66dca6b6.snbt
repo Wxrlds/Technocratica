@@ -1,0 +1,50 @@
+{
+	title: "Gem Armor",
+	x: 8.0d,
+	y: 6.0d,
+	dependencies: [
+		"82beb87f"
+	],
+	tasks: [{
+		uid: "429b49dd",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_gem_armor_0"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "52cad91a",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_gem_armor_1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "60c2e861",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_gem_armor_2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fe0dba73",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_gem_armor_3"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "62b4d3f2",
+		type: "item",
+		item: "projectex:matter",
+		count: 10
+	}]
+}

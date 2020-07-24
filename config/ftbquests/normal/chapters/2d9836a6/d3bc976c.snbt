@@ -1,0 +1,25 @@
+{
+	x: 12.0d,
+	y: 0.0d,
+	shape: "pentagon",
+	dependencies: [
+		"59ae0cea"
+	],
+	tasks: [{
+		uid: "c2bed5b4",
+		type: "item",
+		items: [{
+			item: "fluxnetworks:fluxcore"
+		}]
+	}],
+	rewards: [{
+		uid: "620b18db",
+		type: "item",
+		item: "fluxnetworks:fluxplug"
+	},
+	{
+		uid: "ed3c21c0",
+		type: "item",
+		item: "fluxnetworks:fluxpoint"
+	}]
+}

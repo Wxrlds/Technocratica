@@ -1,0 +1,50 @@
+{
+	title: "Lapis Lazuli Armor",
+	x: 14.0d,
+	y: 8.0d,
+	dependencies: [
+		"1f2889cc"
+	],
+	tasks: [{
+		uid: "bb71fb38",
+		type: "item",
+		items: [{
+			item: "mekanismtools:lapislazuliboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c738f100",
+		type: "item",
+		items: [{
+			item: "mekanismtools:lapislazulileggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "536665c4",
+		type: "item",
+		items: [{
+			item: "mekanismtools:lapislazulichestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "74041bfa",
+		type: "item",
+		items: [{
+			item: "mekanismtools:lapislazulihelmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b0a2cebd",
+		type: "item",
+		item: "minecraft:dye 1 4",
+		count: 10
+	}]
+}

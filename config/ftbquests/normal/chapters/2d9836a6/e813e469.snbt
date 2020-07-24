@@ -1,0 +1,17 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "12d3ee2f",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:cable_wireless"
+		}]
+	}],
+	rewards: [{
+		uid: "9af5cd0e",
+		type: "item",
+		item: "minecraft:diamond",
+		count: 4
+	}]
+}

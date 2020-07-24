@@ -1,0 +1,13 @@
+{
+	title: "Advanced Machine Casing",
+	icon: "ic2:resource 1 13",
+	loot_size: 3,
+	rewards: [{
+		item: "ic2:crafting 1 3",
+		count: 2
+	},
+	{
+		item: "ic2:crafting 1 14",
+		count: 4
+	}]
+}

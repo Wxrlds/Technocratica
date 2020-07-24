@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "2c59300b",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:graphite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "c5bcc59f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "efc19e76",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "31b34ffd",
+		type: "random",
+		table: 17
+	}]
+}

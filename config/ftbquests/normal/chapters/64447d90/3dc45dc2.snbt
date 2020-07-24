@@ -1,0 +1,50 @@
+{
+	title: "Ruby Armor",
+	x: 6.0d,
+	y: 2.0d,
+	dependencies: [
+		"45bf85c2"
+	],
+	tasks: [{
+		uid: "1b032d51",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:ruby_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "59dace8c",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:ruby_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3a619d2a",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:ruby_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "da12cc5e",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:ruby_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "60d6034b",
+		type: "item",
+		item: "projectred-core:resource_item 1 200",
+		count: 10
+	}]
+}

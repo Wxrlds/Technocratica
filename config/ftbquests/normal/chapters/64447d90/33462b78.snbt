@@ -1,0 +1,99 @@
+{
+	x: 0.0d,
+	y: 10.0d,
+	dependencies: [
+		"0a4f4f34"
+	],
+	tasks: [{
+		uid: "3872012e",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:glowing_helmet",
+			tag: {
+				onoff: 1
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "13ae923e",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:night_vision"
+			}
+		}
+	},
+	{
+		uid: "9074cae6",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:long_night_vision"
+			}
+		}
+	},
+	{
+		uid: "c330ce6c",
+		type: "item",
+		item: {
+			id: "minecraft:splash_potion",
+			tag: {
+				Potion: "minecraft:night_vision"
+			}
+		}
+	},
+	{
+		uid: "04d7fa4c",
+		type: "item",
+		item: {
+			id: "minecraft:splash_potion",
+			tag: {
+				Potion: "minecraft:long_night_vision"
+			}
+		}
+	},
+	{
+		uid: "75788ce3",
+		type: "item",
+		item: {
+			id: "minecraft:tipped_arrow",
+			tag: {
+				Potion: "minecraft:night_vision"
+			}
+		}
+	},
+	{
+		uid: "5d09275a",
+		type: "item",
+		item: {
+			id: "minecraft:tipped_arrow",
+			tag: {
+				Potion: "minecraft:long_night_vision"
+			}
+		}
+	},
+	{
+		uid: "b7dd0140",
+		type: "item",
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:night_vision"
+			}
+		}
+	},
+	{
+		uid: "2ce9c994",
+		type: "item",
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:long_night_vision"
+			}
+		}
+	}]
+}

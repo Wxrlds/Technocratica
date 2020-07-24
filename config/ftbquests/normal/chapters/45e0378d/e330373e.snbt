@@ -1,0 +1,17 @@
+{
+	x: -10.0d,
+	y: -1.0d,
+	tasks: [{
+		uid: "6339764e",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot"
+		}]
+	}],
+	rewards: [{
+		uid: "f18583c5",
+		type: "item",
+		item: "randomthings:fertilizeddirt",
+		count: 4
+	}]
+}

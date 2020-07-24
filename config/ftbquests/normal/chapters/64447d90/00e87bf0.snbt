@@ -1,0 +1,50 @@
+{
+	title: "Emerald Armor",
+	x: 12.0d,
+	y: 2.0d,
+	dependencies: [
+		"dfc2a70c"
+	],
+	tasks: [{
+		uid: "cfb4a656",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:emerald_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "de80f1df",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:emerald_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "da70c987",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:emerald_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6b2efdda",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:emerald_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "34d0ee11",
+		type: "item",
+		item: "minecraft:emerald",
+		count: 5
+	}]
+}

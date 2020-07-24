@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	dependencies: [
+		"6be59273"
+	],
+	tasks: [{
+		uid: "7e87bdb0",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_neutronium"
+		}]
+	}],
+	rewards: [{
+		uid: "be003217",
+		type: "item",
+		item: "avaritia:resource 1 4",
+		random_bonus: 3
+	}]
+}

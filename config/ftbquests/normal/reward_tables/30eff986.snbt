@@ -1,0 +1,13 @@
+{
+	title: "Device Frame",
+	icon: "thermalexpansion:frame 1 64",
+	loot_size: 2,
+	rewards: [{
+		item: "thermalfoundation:material 1 321",
+		count: 8
+	},
+	{
+		item: "ic2:plate 1 17",
+		count: 10
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "5ec089fb",
+		type: "item",
+		items: [{
+			item: "portality:controller"
+		}]
+	},
+	{
+		uid: "7469a70f",
+		type: "item",
+		items: [{
+			item: "portality:frame"
+		}],
+		count: 47L
+	}],
+	rewards: [{
+		uid: "8500e181",
+		type: "item",
+		item: {
+			id: "mekanism:energytablet",
+			tag: {
+				mekData: {
+					energyStored: 1000000.0d
+				}
+			}
+		}
+	}]
+}

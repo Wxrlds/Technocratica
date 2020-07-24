@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	description: "Complete the Scanner Quest to unlock this Quest",
+	dependencies: [
+		"6766c2c2"
+	],
+	tasks: [{
+		uid: "a2ee3ece",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:energy_acceptor"
+		}]
+	}],
+	rewards: [{
+		uid: "61c05748",
+		type: "random",
+		table: 11
+	}]
+}

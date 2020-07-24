@@ -1,0 +1,30 @@
+{
+	x: -11.0d,
+	y: 6.0d,
+	dependencies: [
+		"ac2fddf5"
+	],
+	tasks: [{
+		uid: "308802fd",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 131"
+		}]
+	}],
+	rewards: [{
+		uid: "23699d0d",
+		type: "item",
+		item: "thermalfoundation:material 1 293",
+		count: 24
+	},
+	{
+		uid: "e05c080c",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:seed_infuser"
+			}
+		}
+	}]
+}

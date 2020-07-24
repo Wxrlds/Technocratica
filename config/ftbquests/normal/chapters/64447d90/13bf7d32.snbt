@@ -1,0 +1,50 @@
+{
+	title: "Electrum Armor",
+	x: 14.0d,
+	y: 2.0d,
+	dependencies: [
+		"ea27c029"
+	],
+	tasks: [{
+		uid: "a92d5ef4",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_electrum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9362b55e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_electrum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6cc7164d",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_electrum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fb0917cb",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_electrum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0faac0d1",
+		type: "item",
+		item: "thermalfoundation:material 1 161",
+		count: 10
+	}]
+}

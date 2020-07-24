@@ -1,0 +1,29 @@
+{
+	x: 5.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "e9bc84ff",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:black_quartz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "623cc2e2",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f62a7b92",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ccb07f99",
+		type: "random",
+		table: 17
+	}]
+}

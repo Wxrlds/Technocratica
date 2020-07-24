@@ -1,0 +1,50 @@
+{
+	title: "Sapphire Armor",
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"0bf6a070"
+	],
+	tasks: [{
+		uid: "c1d58562",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:sapphire_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "63c41027",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:sapphire_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c0b75cd6",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:sapphire_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "569a11b2",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:sapphire_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d08db046",
+		type: "item",
+		item: "projectred-core:resource_item 1 201",
+		count: 10
+	}]
+}

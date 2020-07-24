@@ -1,0 +1,50 @@
+{
+	title: "Chain Armor",
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"7671b2f4"
+	],
+	tasks: [{
+		uid: "a427c62c",
+		type: "item",
+		items: [{
+			item: "minecraft:chainmail_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "146ff8c0",
+		type: "item",
+		items: [{
+			item: "minecraft:chainmail_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0841371b",
+		type: "item",
+		items: [{
+			item: "minecraft:chainmail_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "24aa612e",
+		type: "item",
+		items: [{
+			item: "minecraft:chainmail_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b089a726",
+		type: "item",
+		item: "minecraft:iron_bars",
+		count: 10
+	}]
+}

@@ -1,0 +1,53 @@
+{
+	x: 8.0d,
+	y: 12.0d,
+	dependencies: [
+		"031e6d6f"
+	],
+	tasks: [{
+		uid: "2921eb84",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.boots_flux",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fb3c9040",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.legs_flux",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1891e55a",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.plate_flux",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2f885c40",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.helmet_flux",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b71ab540",
+		type: "item",
+		item: "redstonearsenal:material 1 224",
+		count: 5
+	}]
+}

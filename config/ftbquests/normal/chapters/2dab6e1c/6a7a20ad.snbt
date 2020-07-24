@@ -1,0 +1,29 @@
+{
+	title: "Fluid Processor",
+	x: 2.0d,
+	y: 0.0d,
+	description: "Did you know Schematica is installed?",
+	can_repeat: true,
+	hide_dependency_lines: true,
+	dependencies: [
+		"85a23541"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d1151e59",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}],
+	rewards: [{
+		uid: "6bdf1d17",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:fluid_processor"
+			}
+		}
+	}]
+}

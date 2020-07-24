@@ -1,0 +1,19 @@
+{
+	x: -11.0d,
+	y: 2.0d,
+	dependencies: [
+		"446bd4fc"
+	],
+	tasks: [{
+		uid: "48150155",
+		type: "item",
+		items: [{
+			item: "enderio:item_endergy_conduit 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "decdbfbb",
+		type: "item",
+		item: "thermalfoundation:material 1 161"
+	}]
+}

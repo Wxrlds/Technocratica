@@ -1,0 +1,17 @@
+{
+	x: -25.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "c3a91fd7",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "c570c46d",
+		type: "item",
+		item: "enderio:item_alloy_endergy_nugget",
+		count: 63
+	}]
+}
