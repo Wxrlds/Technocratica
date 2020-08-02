@@ -7,3 +7,5 @@ Added Waterwalking to the EnderIO Enchanter
 Tweaked the 10/10/10 Seed upgrade recipe
 
 Removed EMC from Little Tiles' Premade Blocks
+
+Changed the Layout of the Conduits; Teleportaion; Extended Crafting; Draconic Evolution Quest chapter
