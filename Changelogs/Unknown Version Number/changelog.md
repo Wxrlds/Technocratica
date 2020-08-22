@@ -6,7 +6,6 @@ Added Waterwalking to the EnderIO Enchanter
 
 Tweaked the 10/10/10 Seed upgrade; Dragons Breath; Tinkers' Complement Melter; Blood Purifier recipe
 
-Removed EMC from Little Tiles' Premade Blocks
 
 Changed the Layout of the Conduits; Teleportaion; Extended Crafting; Draconic Evolution Quest chapter
 
@@ -22,7 +21,7 @@ Disabled Creative Flight in the End and Nether
 
 Tweaked the rewards for the Solar Panel (Solar Flux) Quests
 
-Removed EMC from IC2 Cables, IC2 Pipes, Mekanism Cables, Energy Cubes (Please tell me on [Discord](https://discord.gg/hsae7DJ) or open an issue on [Github](https://github.com/Wxrlds/Technocratica/issues) if you find any more items that use NBT Data to tell different items appart)
+Removed EMC from IC2 Cables, IC2 Pipes, Mekanism Cables, Energy Cubes; Little Tiles' Premade Blocks (Please tell me on [Discord](https://discord.gg/hsae7DJ) or open an issue on [Github](https://github.com/Wxrlds/Technocratica/issues) if you find any more items that use NBT Data to tell different items appart)
 
 
 --------------
