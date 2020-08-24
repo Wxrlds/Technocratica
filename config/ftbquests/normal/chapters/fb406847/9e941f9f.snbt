@@ -14,7 +14,7 @@
 	rewards: [{
 		uid: "be003217",
 		type: "item",
-		item: "avaritia:resource 1 4",
+		item: "draconicevolution:chaos_shard",
 		random_bonus: 3
 	}]
 }

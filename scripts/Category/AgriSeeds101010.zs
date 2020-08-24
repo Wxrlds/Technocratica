@@ -8,6 +8,11 @@ val upgradeSeeds=[
 <actuallyadditions:item_flax_seed>,
 <actuallyadditions:item_rice_seed>,
 <agricraft:agri_seed>,
+<mysticalagriculture:ender_amethyst_seeds>,
+<mysticalagriculture:topaz_seeds>,
+<mysticalagriculture:tanzanite_seeds>,
+<mysticalagriculture:malachite_seeds>,
+<mysticalagriculture:amber_seeds>,
 <contenttweaker:karat_seed_coal_block>,
 <contenttweaker:karat_seed_coal_ore>,
 <contenttweaker:karat_seed_diamond_block>,
@@ -217,9 +222,9 @@ val upgradeSeeds=[
 ] as IItemStack [];
 for agriseed in upgradeSeeds {
 recipes.addShaped("Upgrade_Seed_" ~ count,agriseed.withTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte}),
-[[<ore:nuggetDiamond>, <ore:nuggetEmerald>, <ore:nuggetDiamond>],
-[<ore:nuggetEmerald>, agriseed.withTag({agri_analyzed: 1 as byte}).marked("seed"), <ore:nuggetEmerald>],
-[<ore:nuggetDiamond>, <ore:nuggetEmerald>, <ore:nuggetDiamond>]],
+[[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:4>, <actuallyadditions:item_crystal:2>],
+[<actuallyadditions:item_crystal:4>, agriseed.withTag({agri_analyzed: 1 as byte}).marked("seed"), <actuallyadditions:item_crystal:4>],
+[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:4>, <actuallyadditions:item_crystal:2>]],
 function(out, ins, cInfo){
 return ins.seed.updateTag({agri_analyzed: 1 as byte, agri_strength: 10 as byte, agri_gain: 10 as byte, agri_growth: 10 as byte})*1;
 },null);
@@ -227,5 +232,5 @@ count += 1;
 }
 
 for item in upgradeSeeds {
-mods.jei.JEI.addDescription(item,"The Seed needs to be analyzend first before trying to upgrade it");
+mods.jei.JEI.addDescription(item,"If you want to upgrade the Seed to 10/10/10 using the crafting recipe, you first have to analyze it.");
 }

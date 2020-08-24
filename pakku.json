@@ -1,6 +1,6 @@
 {
   "name": "Technocratica",
-  "version": "2.1.01",
+  "version": "2.1.02",
   "overrides": [
     "config",
     "local",

@@ -5,6 +5,7 @@
 		"aef37066",
 		"35984193"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "69f440ed",
 		type: "item",

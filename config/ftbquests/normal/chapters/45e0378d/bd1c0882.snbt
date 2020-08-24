@@ -3,7 +3,7 @@
 	y: -3.0d,
 	description: "You spawn with Paper in your inventory",
 	text: [
-		"If you've lost the Paper you spawn with and you're unable finding structures with Books, check the Emergency Items"
+		"If you've lost the Paper you spawn with and you are unable to find Books, check the Emergency Items (top right in the Quest Menu)"
 	],
 	tasks: [{
 		uid: "a3a05dc5",

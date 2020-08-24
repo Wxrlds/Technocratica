@@ -2,7 +2,6 @@
 	x: 4.0d,
 	y: -0.5d,
 	dependencies: [
-		"bd67037a",
 		"4b338fa2",
 		"a8573be0"
 	],

@@ -23,9 +23,9 @@ mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon and Shu
 mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs. Can be eaten to restore hearts.");
 mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither). Can be eaten to restore hearts.");
 mods.jei.JEI.addDescription(<ic2:te:50>,"Place next to a Heater to make it start working. Bucket/Universal Fluid Cells filled with Air can be used to accelerate the process.");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Rabbit (It's a little bit stronger, so be prepared.)");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze (It's a little bit stronger, so be prepared.)");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton (It's a little bit stronger, so be prepared.)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Rabbit Spawn Egg (It's a little bit stronger, so be prepared.)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze Spawn Egg (It's a little bit stronger, so be prepared.)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton Spawn Egg (It's a little bit stronger, so be prepared.)");
 mods.jei.JEI.addDescription(<enderio:block_powered_spawner>,"The Dark Steel Anvil has a much higher level limit");
 mods.jei.JEI.addDescription(<enderio:item_broken_spawner>,"The Dark Steel Anvil has a much higher level limit");
 

@@ -835,6 +835,70 @@
     {
       "item": "extendedcrafting:table_ultimate|0",
       "emc": 217042984
+    },
+    {
+      "item": "littletiles:premade|0",
+      "emc": 0
+    },
+    {
+      "item": "tconstruct:seared|0",
+      "emc": 8
+    },
+    {
+      "item": "ic2:cable|0",
+      "emc": 0
+    },
+    {
+      "item": "ic2:cable|2",
+      "emc": 0
+    },
+    {
+      "item": "ic2:cable|3",
+      "emc": 0
+    },
+    {
+      "item": "ic2:cable|4",
+      "emc": 0
+    },
+    {
+      "item": "ic2:cable|5",
+      "emc": 0
+    },
+    {
+      "item": "ic2:cable|6",
+      "emc": 0
+    },
+    {
+      "item": "ic2:pipe|0",
+      "emc": 0
+    },
+    {
+      "item": "ic2:pipe|1",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|0",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|1",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|2",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|3",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:transmitter|6",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:energycube|0",
+      "emc": 0
     }
   ]
 }

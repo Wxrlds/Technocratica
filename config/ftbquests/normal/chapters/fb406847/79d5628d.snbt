@@ -11,7 +11,7 @@
 	rewards: [{
 		uid: "19f40b92",
 		type: "item",
-		item: "minecraft:iron_block",
+		item: "solarflux:mirror",
 		random_bonus: 1
 	}]
 }

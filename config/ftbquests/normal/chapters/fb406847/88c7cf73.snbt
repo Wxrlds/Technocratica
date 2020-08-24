@@ -14,7 +14,7 @@
 	rewards: [{
 		uid: "1749a849",
 		type: "item",
-		item: "draconicevolution:draconic_ingot",
-		random_bonus: 3
+		item: "draconicevolution:awakened_core",
+		random_bonus: 2
 	}]
 }

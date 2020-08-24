@@ -14,6 +14,7 @@
 	rewards: [{
 		uid: "91baaf7d",
 		type: "item",
-		item: "minecraft:dragon_egg"
+		item: "minecraft:dragon_egg",
+		random_bonus: 1
 	}]
 }

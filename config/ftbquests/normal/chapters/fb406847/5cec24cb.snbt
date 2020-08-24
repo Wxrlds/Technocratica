@@ -14,7 +14,7 @@
 	rewards: [{
 		uid: "559b738e",
 		type: "item",
-		item: "minecraft:iron_block",
+		item: "solarflux:photovoltaic_cell_2",
 		random_bonus: 4
 	}]
 }

@@ -30,6 +30,20 @@
 				Material: "iron"
 			}
 		}]
+	},
+	{
+		uid: "5d8c8ae9",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter"
+		}]
+	},
+	{
+		uid: "0cca2b41",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter 1 8"
+		}]
 	}],
 	rewards: [{
 		uid: "cb9ff9be",

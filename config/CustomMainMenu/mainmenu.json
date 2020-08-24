@@ -4,10 +4,10 @@
         "technocratica":
         {
             "image" : "cmm:textures/gui/technocratica.png",
-            "posX" : -200,
-            "posY" : 30,
-            "width" : 400,
-            "height" : 75,
+            "posX" : -250,
+            "posY" : 10,
+            "width" : 500,
+            "height" : 85,
             "alignment" : "top_center"
         }
     },
@@ -18,7 +18,7 @@
         {
             "text" : "menu.singleplayer",
             "posX" : -150,
-            "posY" : -100,
+            "posY" : -50,
             "width" : 100,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -33,7 +33,7 @@
         {
             "text" : "menu.multiplayer",
             "posX" : -150,
-            "posY" : -76,
+            "posY" : -26,
             "width" : 100,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -48,7 +48,7 @@
         {
             "text" : "fml.menu.mods",
             "posX" : -150,
-            "posY" : -28,
+            "posY" : 22,
             "width" : 100,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -63,7 +63,7 @@
         {
             "text" : "menu.options",
             "posX" : -150,
-            "posY" : -52,
+            "posY" : -2,
             "width" : 100,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -78,7 +78,7 @@
         {
             "text" : "menu.quit",
             "posX" : -150,
-            "posY" : -4,
+            "posY" : 46,
             "width" : 100,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -92,7 +92,7 @@
         {
             "text" : "",
             "posX" : -110,
-            "posY" : 20,
+            "posY" : 70,
             "width" : 20,
             "height" : 20,			
 			"alignment" : "right_center",
@@ -162,7 +162,7 @@
         "splash-text":
         {
             "posX" : 200,
-            "posY" : 100,
+            "posY" : 80,
             "color" : -256,
             "alignment" : "top_center",
             "texts" : "file:minecraft:texts/splashes.txt"

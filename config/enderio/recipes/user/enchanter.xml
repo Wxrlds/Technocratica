@@ -9,4 +9,12 @@ disabled="false">
 </enchanting>
 </recipe>
 
+<recipe name="Enchanter: cyclic:waterwalking" required="false"
+disabled="false">
+<enchanting>
+<input name="minecraft:potion" nbt='{Potion:"cyclicmagic:waterwalk"}' amount="9"/>
+<enchantment name="cyclicmagic:enchantment.waterwalking" costMultiplier="1"/>
+</enchanting>
+</recipe>
+
 </enderio:recipes>

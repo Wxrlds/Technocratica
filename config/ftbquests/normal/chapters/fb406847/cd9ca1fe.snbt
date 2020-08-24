@@ -14,7 +14,7 @@
 	rewards: [{
 		uid: "5118fea9",
 		type: "item",
-		item: "minecraft:iron_block",
+		item: "minecraft:piston",
 		random_bonus: 2
 	}]
 }
