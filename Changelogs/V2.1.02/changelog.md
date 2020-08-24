@@ -31,3 +31,9 @@ Removed the Enhancement Upgrade recipes from Avaritia Items where the Upgrade do
 Fixed the World Breaker not needing an Enhancement Crystal to be upgraded
 
 Removed the Stacked Items from Content Tweaker
+
+The Main Menu now has a new font for the Technocratica Text
+
+Moved some buttons on the main menu so it looks nice when playing with a resolution of 1280x720
+
+Fixed conflicting recipes
