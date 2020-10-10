@@ -1,0 +1,26 @@
+{
+	x: 1.0d,
+	y: 2.5d,
+	dependencies: [
+		"5fae674f",
+		"a8573be0",
+		"71735f0c"
+	],
+	tasks: [{
+		uid: "04684be8",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			tag: {
+				Energy: 256000000
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7d63854b",
+		type: "random",
+		table: 14
+	}]
+}

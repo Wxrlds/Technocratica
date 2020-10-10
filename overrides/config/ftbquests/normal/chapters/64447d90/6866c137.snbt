@@ -1,0 +1,23 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	dependencies: [
+		"b4d8cce5"
+	],
+	tasks: [{
+		uid: "fff21c6e",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			tag: {},
+			Damage: 9s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "917ef32e",
+		type: "item",
+		item: "simplyjetpacks:metaitemmods 1 3",
+		count: 10
+	}]
+}

@@ -1,0 +1,44 @@
+{
+	x: 18.0d,
+	y: 2.0d,
+	dependencies: [
+		"84171ad5"
+	],
+	tasks: [{
+		uid: "ed6b92d8",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:neutronium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "7e427ce8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4f0e60f8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "52f9e89e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "1a774231",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0497766d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "fe69c072",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 18.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "161652da",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:vibrant_alloy_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "05723040",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c51054fb",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "2bffb22a",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e294d84c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "eee529c8",
+		type: "random",
+		table: 17
+	}]
+}

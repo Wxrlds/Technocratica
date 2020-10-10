@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "30ccf8d0",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:crafting_food"
+		}]
+	}],
+	rewards: [{
+		uid: "490316fd",
+		type: "xp_levels",
+		xp_levels: 30
+	}]
+}

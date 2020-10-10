@@ -1,0 +1,31 @@
+{
+	x: 4.0d,
+	y: 4.5d,
+	dependencies: [
+		"bfbf5a0d",
+		"186b3588"
+	],
+	tasks: [{
+		uid: "1a8b3eb6",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					Size: 18,
+					Items: []
+				}
+			},
+			id: "draconicevolution:draconic_pick",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6ae4084e",
+		type: "random",
+		table: 14
+	}]
+}

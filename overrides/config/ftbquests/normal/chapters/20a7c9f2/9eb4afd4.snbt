@@ -1,0 +1,22 @@
+{
+	x: 13.5d,
+	y: 6.0d,
+	shape: "octagon",
+	dependencies: [
+		"e9714c5a"
+	],
+	tasks: [{
+		uid: "737a6018",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_bow"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ce57b054",
+		type: "random",
+		table: 13
+	}]
+}

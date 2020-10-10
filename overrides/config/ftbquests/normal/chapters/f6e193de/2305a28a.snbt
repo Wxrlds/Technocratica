@@ -1,0 +1,25 @@
+{
+	x: 10.0d,
+	y: -3.5d,
+	shape: "hexagon",
+	dependencies: [
+		"bb975a9b"
+	],
+	tasks: [{
+		uid: "ebde699a",
+		type: "item",
+		items: [{
+			item: "projectex:final_star"
+		}]
+	}],
+	rewards: [{
+		uid: "da94a742",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "60fe2f1a",
+		type: "item",
+		item: "harvestcraft:carrotcakeitem"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 4.0d,
+	dependencies: [
+		"9e941f9f"
+	],
+	tasks: [{
+		uid: "f1505f3f",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_infinity"
+		}]
+	}],
+	rewards: [{
+		uid: "070bbe06",
+		type: "item",
+		item: "avaritia:resource 1 5",
+		random_bonus: 3
+	}]
+}

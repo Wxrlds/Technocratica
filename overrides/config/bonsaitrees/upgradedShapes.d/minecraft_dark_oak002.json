@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:dark_oak",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves2",
+      "meta": 1
+    },
+    "b": {
+      "name": "minecraft:log2",
+      "meta": 1
+    },
+    "c": {
+      "name": "minecraft:leaves2",
+      "meta": 9
+    }
+  },
+  "shape": [
+    [
+      "        ",
+      "        ",
+      " aaaaa  ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "   aa   ",
+      " aaaaa  ",
+      " aaaaaa ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "  aaaa  ",
+      "aaaaaaaa",
+      " aaaaaa ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "   aa   ",
+      " aaaaaa ",
+      "aaabbaaa",
+      " aabbaa ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   "
+    ],
+    [
+      "   aa   ",
+      " aaaaaa ",
+      "accbbcaa",
+      "accbbca ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   ",
+      "   bb   "
+    ],
+    [
+      "        ",
+      "  aaaa  ",
+      "acccccaa",
+      "acbcbca ",
+      "  b b   ",
+      "  b b   ",
+      "    b   ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "   aa   ",
+      "acccccaa",
+      "accccca ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "        ",
+      " aaaaa  ",
+      " aaaaa  ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ]
+  ]
+}

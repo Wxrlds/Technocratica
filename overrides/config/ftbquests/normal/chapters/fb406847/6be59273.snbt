@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 6.0d,
+	dependencies: [
+		"88c7cf73"
+	],
+	tasks: [{
+		uid: "9c76f9e0",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_chaotic"
+		}]
+	}],
+	rewards: [{
+		uid: "0b58aae6",
+		type: "item",
+		item: "draconicevolution:chaos_shard",
+		random_bonus: 1
+	}]
+}

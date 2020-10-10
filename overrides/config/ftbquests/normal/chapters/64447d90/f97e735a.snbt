@@ -1,0 +1,50 @@
+{
+	title: "Crystallized Obsidian Armor",
+	x: 12.0d,
+	y: 8.0d,
+	dependencies: [
+		"07bd22e9"
+	],
+	tasks: [{
+		uid: "5700f86d",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:purple_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f8499050",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:purple_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9d036850",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:purple_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bff2357c",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:purple_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d6d9277a",
+		type: "item",
+		item: "cyclicmagic:crystallized_obsidian",
+		count: 10
+	}]
+}

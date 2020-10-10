@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"2b2719ac"
+	],
+	tasks: [{
+		uid: "2005fd81",
+		type: "item",
+		items: [{
+			item: "mekanism:atomicalloy"
+		}]
+	}],
+	rewards: [{
+		uid: "62a67fa6",
+		type: "item",
+		item: "mekanism:atomicalloy",
+		count: 3
+	}]
+}

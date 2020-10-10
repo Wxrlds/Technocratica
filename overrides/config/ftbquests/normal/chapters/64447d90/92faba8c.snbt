@@ -1,0 +1,50 @@
+{
+	title: "Palis Crystal Armor",
+	x: 0.0d,
+	y: 14.0d,
+	dependencies: [
+		"6b74297c"
+	],
+	tasks: [{
+		uid: "498f15c8",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_crystal_blue"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "25f86393",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_crystal_blue"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4496eb05",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_crystal_blue"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a40347e7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_crystal_blue"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "21049066",
+		type: "item",
+		item: "actuallyadditions:item_crystal 1 1",
+		count: 10
+	}]
+}

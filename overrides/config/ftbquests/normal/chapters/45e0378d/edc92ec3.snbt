@@ -1,0 +1,78 @@
+{
+	title: "Tinker Tables",
+	icon: "tconstruct:tooltables",
+	x: -12.0d,
+	y: -2.0d,
+	description: "You probably realized Vanilla Tools are useless",
+	tasks: [{
+		uid: "9c7ac439",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}]
+	},
+	{
+		uid: "66d3d1bf",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:planks",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a4685ad3",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a5720843",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 4"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c1faf5ec",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "c9563682",
+		type: "item",
+		item: "tconstruct:tooltables 1 5"
+	},
+	{
+		uid: "4615c63b",
+		type: "item",
+		item: "minecraft:flint",
+		count: 9
+	},
+	{
+		uid: "74e7df6b",
+		type: "item",
+		item: "tconstruct:pattern",
+		count: 3
+	}]
+}

@@ -1,0 +1,50 @@
+{
+	title: "Osmium Armor",
+	x: 0.0d,
+	y: 6.0d,
+	dependencies: [
+		"0e9c9041"
+	],
+	tasks: [{
+		uid: "fedffa72",
+		type: "item",
+		items: [{
+			item: "mekanismtools:osmiumboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9ad3165b",
+		type: "item",
+		items: [{
+			item: "mekanismtools:osmiumleggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1ded75d1",
+		type: "item",
+		items: [{
+			item: "mekanismtools:osmiumchestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "020616ae",
+		type: "item",
+		items: [{
+			item: "mekanismtools:osmiumhelmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8afa00d4",
+		type: "item",
+		item: "mekanism:ingot 1 1",
+		count: 10
+	}]
+}

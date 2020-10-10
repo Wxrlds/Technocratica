@@ -1,0 +1,27 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"885238eb"
+	],
+	tasks: [{
+		uid: "13d28bca",
+		type: "item",
+		items: [{
+			item: "projectex:arcane_tablet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "95182e24",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "378d8653",
+		type: "item",
+		item: "harvestcraft:cheesecakeitem"
+	}]
+}

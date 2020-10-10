@@ -1,0 +1,24 @@
+{
+	x: -6.0d,
+	y: 6.0d,
+	dependencies: [
+		"4a71042a"
+	],
+	tasks: [{
+		uid: "581bc184",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:aluminum_brass_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "6946bf55",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a0e1ab4c",
+		type: "random",
+		table: 17
+	}]
+}

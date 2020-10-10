@@ -1,0 +1,17 @@
+{
+	title: "Trash Can 2.0",
+	x: 13.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "a208f64a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:condenser"
+		}]
+	}],
+	rewards: [{
+		uid: "c4480a53",
+		type: "random",
+		table: 11
+	}]
+}

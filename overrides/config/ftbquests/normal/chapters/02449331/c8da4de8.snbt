@@ -1,0 +1,34 @@
+{
+	x: 10.0d,
+	y: 8.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "eca77116",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:malachite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "abec5bfd",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "111ba72d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "75dbbee8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "b18b2341",
+		type: "random",
+		table: 17
+	}]
+}

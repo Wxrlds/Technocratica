@@ -1,0 +1,13 @@
+{
+	title: "Machine Case",
+	icon: "teslacorelib:machine_case",
+	loot_size: 2,
+	rewards: [{
+		item: "jaopca:item_platedenseplatinum",
+		count: 4
+	},
+	{
+		item: "thermalfoundation:material 1 70",
+		count: 30
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	description: "You probably want an early game storage system",
+	text: [
+		"This pipe can make the path items take more efficient when used in intersections"
+	],
+	tasks: [{
+		uid: "76771a80",
+		type: "item",
+		items: [{
+			item: "projectred-transportation:pipe 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "3cc5f2d9",
+		type: "item",
+		item: "projectred-transportation:pipe 1 1",
+		random_bonus: 8
+	}]
+}

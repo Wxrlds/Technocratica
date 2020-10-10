@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"8bd76fa8"
+	],
+	tasks: [{
+		uid: "505e12a6",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_vibrant"
+		}]
+	}],
+	rewards: [{
+		uid: "195e2dee",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 2",
+		count: 16
+	}]
+}

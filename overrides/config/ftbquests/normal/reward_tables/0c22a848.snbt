@@ -1,0 +1,13 @@
+{
+	title: "Advanced Circuit",
+	icon: "mekanism:controlcircuit 1 1",
+	loot_size: 2,
+	rewards: [{
+		item: "mekanism:controlcircuit 1 1",
+		count: 10
+	},
+	{
+		item: "ic2:crafting 1 2",
+		count: 10
+	}]
+}

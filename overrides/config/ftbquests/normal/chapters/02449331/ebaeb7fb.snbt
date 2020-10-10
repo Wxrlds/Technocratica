@@ -1,0 +1,44 @@
+{
+	x: 18.0d,
+	y: -1.0d,
+	dependencies: [
+		"84171ad5"
+	],
+	tasks: [{
+		uid: "152c5e4c",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:dragon_egg_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "ea68b9f2",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "69d9444d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a37b3c9f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6a1845ee",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a3b7f406",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3edc4155",
+		type: "random",
+		table: 17
+	}]
+}

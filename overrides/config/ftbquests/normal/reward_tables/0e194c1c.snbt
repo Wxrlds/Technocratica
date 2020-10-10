@@ -1,0 +1,88 @@
+{
+	title: "ProjectE",
+	icon: "contenttweaker:rain_aeter",
+	loot_size: 21,
+	rewards: [{
+		item: "contenttweaker:dark_alch",
+		weight: 42
+	},
+	{
+		item: "contenttweaker:dark_mob",
+		weight: 40
+	},
+	{
+		item: "contenttweaker:dark_aeter",
+		weight: 38
+	},
+	{
+		item: "projecte:item.pe_fuel",
+		weight: 27
+	},
+	{
+		item: "projecte:item.pe_fuel 1 1",
+		weight: 26
+	},
+	{
+		item: "projecte:item.pe_fuel 1 2",
+		weight: 24
+	},
+	{
+		item: "contenttweaker:blue_alch",
+		weight: 15
+	},
+	{
+		item: "contenttweaker:blue_mob",
+		weight: 14
+	},
+	{
+		item: "contenttweaker:blue_aeter",
+		weight: 13
+	},
+	{
+		item: "contenttweaker:green_alch",
+		weight: 12
+	},
+	{
+		item: "contenttweaker:green_mob",
+		weight: 11
+	},
+	{
+		item: "contenttweaker:green_aeter",
+		weight: 10
+	},
+	{
+		item: "contenttweaker:yellow_alch",
+		weight: 9
+	},
+	{
+		item: "contenttweaker:yellow_mob",
+		weight: 8
+	},
+	{
+		item: "contenttweaker:yellow_aeter",
+		weight: 7
+	},
+	{
+		item: "contenttweaker:orange_alch",
+		weight: 6
+	},
+	{
+		item: "contenttweaker:orange_mob",
+		weight: 5
+	},
+	{
+		item: "contenttweaker:orange_aeter",
+		weight: 4
+	},
+	{
+		item: "contenttweaker:rain_alch",
+		weight: 3
+	},
+	{
+		item: "contenttweaker:rain_mob",
+		weight: 2
+	},
+	{
+		item: "contenttweaker:rain_aeter"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 17.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "8a700a8f",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:diamond_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "e7286137",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "da2d9b2e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ecb68036",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "686fd7dc",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "2ecdbb1f",
+		type: "random",
+		table: 17
+	}]
+}

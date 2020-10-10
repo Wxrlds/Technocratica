@@ -1,0 +1,27 @@
+{
+	icon: "karatgarden:item_carrot_07_ext",
+	x: -6.0d,
+	y: 4.5d,
+	dependencies: [
+		"1601a61b"
+	],
+	tasks: [{
+		uid: "dcb4f4bf",
+		type: "item",
+		items: [{
+			item: "karatgarden:item_carrot_07_ext"
+		}]
+	},
+	{
+		uid: "794e9739",
+		type: "item",
+		items: [{
+			item: "contenttweaker:karat_seed_diamond_block"
+		}]
+	}],
+	rewards: [{
+		uid: "81eae8aa",
+		type: "random",
+		table: 18
+	}]
+}

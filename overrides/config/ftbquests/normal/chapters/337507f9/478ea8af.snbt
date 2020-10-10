@@ -1,0 +1,19 @@
+{
+	x: -23.5d,
+	y: 3.5d,
+	dependencies: [
+		"f72b14bd"
+	],
+	tasks: [{
+		uid: "9a3499ab",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "d7be0f76",
+		type: "item",
+		item: "enderio:block_fused_glass"
+	}]
+}

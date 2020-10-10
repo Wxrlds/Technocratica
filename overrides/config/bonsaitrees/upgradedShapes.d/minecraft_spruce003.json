@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:spruce",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:log",
+      "meta": 1
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 1
+    },
+    "c": {
+      "name": "minecraft:leaves",
+      "meta": 9
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      " bbb ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "  c  ",
+      "     ",
+      "  c  ",
+      "bcccb",
+      "     ",
+      "     "
+    ],
+    [
+      "  c  ",
+      " cac ",
+      "  a  ",
+      " cac ",
+      "bcacb",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "  c  ",
+      "     ",
+      "  c  ",
+      "bcccb",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      " bbb ",
+      "     ",
+      "     "
+    ]
+  ]
+}

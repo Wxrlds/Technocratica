@@ -1,0 +1,19 @@
+{
+	x: -8.0d,
+	y: 1.0d,
+	dependencies: [
+		"bd1c0882"
+	],
+	tasks: [{
+		uid: "37d7c597",
+		type: "item",
+		items: [{
+			item: "harvestcraft:presser"
+		}]
+	}],
+	rewards: [{
+		uid: "184645ec",
+		type: "random",
+		table: 16
+	}]
+}

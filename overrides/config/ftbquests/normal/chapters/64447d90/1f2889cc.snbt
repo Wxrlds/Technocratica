@@ -1,0 +1,50 @@
+{
+	title: "Constantan Armor",
+	x: 14.0d,
+	y: 6.0d,
+	dependencies: [
+		"82f4e6e2"
+	],
+	tasks: [{
+		uid: "2c8a684e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_constantan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c0d6cef0",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_constantan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "85f59a78",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_constantan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bf174b94",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_constantan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a5074148",
+		type: "item",
+		item: "thermalfoundation:material 1 164",
+		count: 10
+	}]
+}

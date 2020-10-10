@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: 5.0d,
+	dependencies: [
+		"ad280f2e"
+	],
+	tasks: [{
+		uid: "fdc90988",
+		type: "item",
+		items: [{
+			item: "extracells:storage.component 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "3f155a89",
+		type: "random",
+		table: 11
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 11.5d,
+	y: 1.0d,
+	description: "Add one Pattern holder into the Packager",
+	dependencies: [
+		"cdc67976"
+	],
+	tasks: [{
+		uid: "dbdf083a",
+		type: "item",
+		items: [{
+			item: "packagedauto:packager"
+		}]
+	}],
+	rewards: [{
+		uid: "7a10b81d",
+		type: "random",
+		table: 11
+	}]
+}

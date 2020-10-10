@@ -1,0 +1,7 @@
+{
+	title: "Genetics Reborn",
+	icon: "geneticsreborn:overclocker",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "da96a9d1",
+		type: "item",
+		items: [{
+			id: "storagedrawers:basicdrawers",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9d89a34f",
+		type: "item",
+		item: {
+			id: "storagedrawers:basicdrawers",
+			tag: {
+				material: "oak"
+			}
+		}
+	}]
+}

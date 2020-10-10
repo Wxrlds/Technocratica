@@ -1,0 +1,29 @@
+{
+	title: "Wood",
+	icon: "minecraft:log",
+	loot_size: 6,
+	rewards: [{
+		item: "minecraft:log",
+		random_bonus: 63
+	},
+	{
+		item: "minecraft:log 1 1",
+		random_bonus: 63
+	},
+	{
+		item: "minecraft:log 1 2",
+		random_bonus: 63
+	},
+	{
+		item: "minecraft:log 1 3",
+		random_bonus: 63
+	},
+	{
+		item: "minecraft:log2",
+		random_bonus: 63
+	},
+	{
+		item: "minecraft:log2 1 1",
+		random_bonus: 63
+	}]
+}

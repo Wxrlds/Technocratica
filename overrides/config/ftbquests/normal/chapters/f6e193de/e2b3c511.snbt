@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: 1.0d,
+	dependencies: [
+		"232feed9"
+	],
+	tasks: [{
+		uid: "5d287e4d",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_matter 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "b1bc6422",
+		type: "random",
+		table: 12
+	}]
+}

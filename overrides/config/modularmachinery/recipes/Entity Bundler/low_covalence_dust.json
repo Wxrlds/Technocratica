@@ -1,0 +1,234 @@
+{
+	"machine": "entity_bundler",
+	"registryName": "low_covalence_dust",
+	"recipeTime": 300,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 10000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "water",
+			"amount": 1000
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extrautils2:compressedcobblestone@2",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extrautils2:ingredients@4",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extrautils2:ingredients@4",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "contenttweaker:entity_clump",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"ArmorDropChances": [
+						"0.0f",
+						"0.0f",
+						"0.0f",
+						"0.0f"
+					],
+					"Health": "500.0f",
+					"ArmorItems": [
+						{
+							"id": "mekanismtools:osmiumboots",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "127",
+										"id": "2"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									},
+									{
+										"lvl": "10",
+										"id": "9"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:osmiumleggings",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:osmiumchestplate",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						},
+						{
+							"id": "mekanismtools:osmiumhelmet",
+							"Count": "1b",
+							"tag": {
+								"ench": [
+									{
+										"lvl": "10",
+										"id": "0"
+									},
+									{
+										"lvl": "10",
+										"id": "1"
+									},
+									{
+										"lvl": "10",
+										"id": "3"
+									},
+									{
+										"lvl": "10",
+										"id": "4"
+									},
+									{
+										"lvl": "10",
+										"id": "5"
+									},
+									{
+										"lvl": "10",
+										"id": "6"
+									},
+									{
+										"lvl": "10",
+										"id": "7"
+									}
+								],
+								"Unbreakable": "1"
+							}
+						}
+					],
+					"Attributes": [
+						{
+							"Base": "500",
+							"Name": "generic.maxHealth"
+						},
+						{
+							"Base": "100",
+							"Name": "generic.followRange"
+						}
+					],
+					"HandDropChances": [
+						"1.0f",
+						"0.085f"
+					],
+					"RabbitType": "99",
+					"id": "minecraft:rabbit",
+					"ActiveEffects": [
+						{
+							"Duration": "42949672940",
+							"Id": "5",
+							"Amplifier": "5"
+						},
+						{
+							"Duration": "42949672940",
+							"Id": "12",
+							"Amplifier": "0"
+						},
+						{
+							"Duration": "42949672940",
+							"Id": "13",
+							"Amplifier": "0"
+						}
+					],
+					"HandItems": [
+						{
+							"id": "projecte:item.pe_covalence_dust",
+							"Count": "32b",
+							"Damage": "0"
+						},
+						{}
+					]
+				}
+			},
+			"amount": 1
+		}
+	]
+}

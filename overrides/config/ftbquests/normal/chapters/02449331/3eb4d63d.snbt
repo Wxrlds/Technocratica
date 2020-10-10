@@ -1,0 +1,34 @@
+{
+	x: 14.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "0f66b8bd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:cobalt_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "af6e1353",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "2407dd0f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "acdd67f8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "414744d6",
+		type: "random",
+		table: 17
+	}]
+}

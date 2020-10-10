@@ -1,0 +1,21 @@
+{
+	x: 10.5d,
+	y: -1.0d,
+	dependencies: [
+		"fc8f135d",
+		"c7ead57c"
+	],
+	tasks: [{
+		uid: "9e9ec769",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "c4e0be1c",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p received ALL of the Grid Power!"
+	}]
+}

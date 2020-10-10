@@ -1,0 +1,16 @@
+{
+	x: -12.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "0ff9399f",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_giant_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "92f2e62d",
+		type: "item",
+		item: "actuallyadditions:item_chest_to_crate_upgrade"
+	}]
+}

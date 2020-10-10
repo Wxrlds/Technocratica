@@ -1,0 +1,20 @@
+{
+	x: 3.5d,
+	y: 7.5d,
+	dependencies: [
+		"bedafd20",
+		"986ffb80"
+	],
+	tasks: [{
+		uid: "cabe344c",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 48"
+		}]
+	}],
+	rewards: [{
+		uid: "09365a24",
+		type: "random",
+		table: 13
+	}]
+}

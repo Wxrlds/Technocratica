@@ -1,0 +1,54 @@
+{
+	title: "NanoSuit Armor",
+	x: 10.0d,
+	y: 6.0d,
+	dependencies: [
+		"e14289de"
+	],
+	tasks: [{
+		uid: "457783fb",
+		type: "item",
+		items: [{
+			id: "ic2:nano_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9d5cc98a",
+		type: "item",
+		items: [{
+			id: "ic2:nano_leggings",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3a9242af",
+		type: "item",
+		items: [{
+			id: "ic2:nano_chestplate",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a437793c",
+		type: "item",
+		items: [{
+			id: "ic2:nano_helmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "90996d64",
+		type: "item",
+		item: "ic2:crafting 1 15",
+		count: 10
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"8478dfe6"
+	],
+	tasks: [{
+		uid: "66dca1ba",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0233f829",
+		type: "item",
+		item: {
+			id: "mekanism:energytablet",
+			tag: {
+				mekData: {
+					energyStored: 1000000.0d
+				}
+			}
+		}
+	}]
+}

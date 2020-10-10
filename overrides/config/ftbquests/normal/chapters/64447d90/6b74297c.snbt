@@ -1,0 +1,50 @@
+{
+	title: "Enori Crystal Armor",
+	x: 2.0d,
+	y: 14.0d,
+	dependencies: [
+		"e84cb757"
+	],
+	tasks: [{
+		uid: "816deb09",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_crystal_white"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "01c3b6ed",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_crystal_white"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "51973c9c",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_crystal_white"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cc7414c7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_crystal_white"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a27dd30d",
+		type: "item",
+		item: "actuallyadditions:item_crystal 1 5",
+		count: 10
+	}]
+}

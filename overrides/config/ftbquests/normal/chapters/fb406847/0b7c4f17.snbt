@@ -1,0 +1,25 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	dependencies: [
+		"39212afb"
+	],
+	tasks: [{
+		uid: "437bf846",
+		type: "item",
+		items: [{
+			item: "advanced_solar_panels:machines 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "fb929241",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ic2coolant",
+				Amount: 1000
+			}
+		}
+	}]
+}

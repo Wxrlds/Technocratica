@@ -1,0 +1,24 @@
+{
+	x: 1.0d,
+	y: 4.5d,
+	dependencies: [
+		"0ad05cfc"
+	],
+	tasks: [{
+		uid: "7f3dd4b9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:chaotic_energy_core"
+		}]
+	}],
+	rewards: [{
+		uid: "57b8859a",
+		type: "item",
+		item: "draconicevolution:draconium_capacitor 1 1"
+	},
+	{
+		uid: "d5fbb0ff",
+		type: "random",
+		table: 14
+	}]
+}

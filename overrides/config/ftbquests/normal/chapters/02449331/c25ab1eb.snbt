@@ -1,0 +1,34 @@
+{
+	x: 12.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "7e983f53",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:lumium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "77b14c82",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c967fb22",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e60d4a13",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0cb32338",
+		type: "random",
+		table: 17
+	}]
+}

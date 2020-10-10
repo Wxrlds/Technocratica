@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: 3.5d,
+	shape: "diamond",
+	dependencies: [
+		"faf9ea34",
+		"c22b6e8c"
+	],
+	tasks: [{
+		uid: "102e2e83",
+		type: "item",
+		items: [{
+			item: "enderio:item_fluid_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "24cd6a20",
+		type: "item",
+		item: "enderio:item_alloy_endergy_ingot 1 3"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 9.0d,
+	y: -3.5d,
+	dependencies: [
+		"6e5acd73"
+	],
+	tasks: [{
+		uid: "24ebeb1f",
+		type: "item",
+		items: [{
+			item: "projectex:final_star_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "4f96bcd2",
+		type: "random",
+		table: 12
+	}]
+}

@@ -1,0 +1,57 @@
+{
+	title: "Infinity Armor",
+	x: 6.0d,
+	y: 8.0d,
+	shape: "pentagon",
+	dependencies: [
+		"ebc5970c",
+		"e9714c5a"
+	],
+	tasks: [{
+		uid: "1cd0fa4c",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "538d7c3e",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_pants"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "536a1f9a",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b920b5bc",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "da1401cb",
+		type: "item",
+		item: "avaritia:resource 1 6",
+		count: 10
+	},
+	{
+		uid: "5f7c6758",
+		type: "item",
+		item: "harvestcraft:redvelvetcakeitem"
+	}]
+}

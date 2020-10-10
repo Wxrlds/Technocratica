@@ -1,0 +1,21 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	description: "Basic EU generation",
+	text: [
+		"All IC2 machines can be broken without a wrench. Use a Pickaxe!"
+	],
+	tasks: [{
+		uid: "ccc444b6",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "371a6af8",
+		type: "item",
+		item: "extrautils2:ingredients 1 4",
+		random_bonus: 9
+	}]
+}

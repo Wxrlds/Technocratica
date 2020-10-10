@@ -1,0 +1,19 @@
+{
+	x: -7.0d,
+	y: -2.0d,
+	dependencies: [
+		"a312ff44"
+	],
+	tasks: [{
+		uid: "2712b9bb",
+		type: "item",
+		items: [{
+			item: "projectex:stone_table"
+		}]
+	}],
+	rewards: [{
+		uid: "b922b191",
+		type: "random",
+		table: 12
+	}]
+}

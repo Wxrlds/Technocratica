@@ -1,0 +1,25 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"008807ac",
+		"7250c3a6"
+	],
+	tasks: [{
+		uid: "8b487c91",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_3",
+			tag: {
+				UUID: "b63d5512-a577-43d0-923b-395cb9d0f56f",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bdb0e1ce",
+		type: "item",
+		item: "minecraft:gold_block"
+	}]
+}

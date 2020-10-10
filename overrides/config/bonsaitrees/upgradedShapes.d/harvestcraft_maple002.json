@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:maple",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 1
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 9
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 1
+    },
+    "d": {
+      "name": "harvestcraft:pammaple",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " aaa ",
+      "aaaa ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  bb ",
+      "abbba",
+      "abbba",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
+      "  d  ",
+      "  d  ",
+      "  d  ",
+      "  d  "
+    ],
+    [
+      "  b  ",
+      "  b  ",
+      "abbba",
+      "abbba",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "aaaaa",
+      " aaa ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

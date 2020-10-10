@@ -1,0 +1,50 @@
+{
+	title: "Bronze Armor",
+	x: 14.0d,
+	y: 14.0d,
+	dependencies: [
+		"48969d27"
+	],
+	tasks: [{
+		uid: "c6fc60b8",
+		type: "item",
+		items: [{
+			item: "ic2:bronze_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cba8fe49",
+		type: "item",
+		items: [{
+			item: "ic2:bronze_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6d017f8e",
+		type: "item",
+		items: [{
+			item: "ic2:bronze_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "76131ed6",
+		type: "item",
+		items: [{
+			item: "ic2:bronze_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d5d2bfa4",
+		type: "item",
+		item: "thermalfoundation:material 1 163",
+		count: 5
+	}]
+}

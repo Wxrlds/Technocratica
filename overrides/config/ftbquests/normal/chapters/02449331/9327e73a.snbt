@@ -1,0 +1,24 @@
+{
+	x: -1.0d,
+	y: 5.0d,
+	dependencies: [
+		"4a71042a"
+	],
+	tasks: [{
+		uid: "19e5d9f3",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:copper_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "79392ac1",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "8d9a216a",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"45683f6f"
+	],
+	tasks: [{
+		uid: "66c9be94",
+		type: "item",
+		items: [{
+			item: "danknull:dank_null_panel_2"
+		}]
+	}],
+	rewards: [{
+		uid: "cbf43e23",
+		type: "item",
+		item: "danknull:dank_null_panel_2"
+	}]
+}

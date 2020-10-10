@@ -1,0 +1,29 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "948d9efd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:knightslime_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "9a0e397f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6a8385bc",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "cdd7fc60",
+		type: "random",
+		table: 17
+	}]
+}

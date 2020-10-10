@@ -1,0 +1,39 @@
+{
+	x: 22.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "24c13419",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:refined_obsidian_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "4f83be2e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a8d22e4b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "884ac0e0",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6be93ff8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "29643b14",
+		type: "random",
+		table: 17
+	}]
+}

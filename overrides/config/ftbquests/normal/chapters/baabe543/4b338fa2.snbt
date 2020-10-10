@@ -1,0 +1,40 @@
+{
+	x: 5.5d,
+	y: -0.5d,
+	tasks: [{
+		uid: "7cee44c9",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "3f104118",
+		type: "random",
+		table: 14
+	},
+	{
+		uid: "e96a6af8",
+		type: "random",
+		table: 14
+	},
+	{
+		uid: "383e62a9",
+		type: "item",
+		item: {
+			id: "minecraft:written_book",
+			tag: {
+				pages: [
+					"{\"color\":\"black\",\"text\":\"Our scientists created this strange fluid they call UU-Matter. It seems to be able replicating almost everything...\"}"
+				],
+				author: "Galactic Civilisation",
+				display: {
+					Name: "..."
+				},
+				title: "",
+				resolved: 1b
+			}
+		}
+	}]
+}

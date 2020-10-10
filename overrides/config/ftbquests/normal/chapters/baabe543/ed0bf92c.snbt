@@ -1,0 +1,25 @@
+{
+	x: 8.5d,
+	y: 2.5d,
+	dependencies: [
+		"85b27936",
+		"53c42551"
+	],
+	tasks: [{
+		uid: "0537b8a0",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_bow",
+			tag: {
+				Energy: 4000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "63a27b9d",
+		type: "random",
+		table: 14
+	}]
+}

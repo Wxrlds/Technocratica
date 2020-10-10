@@ -1,0 +1,26 @@
+{
+	"machine": "ore_quintupling_machine",
+	"registryName": "cobalt",
+	"recipeTime": 1,
+	"requirements": [{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 300
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:ore@0",
+			"amount": 1
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:material@771",
+			"amount": 1
+		}, {
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:ingots@0",
+			"amount": 5
+		}
+	]
+}

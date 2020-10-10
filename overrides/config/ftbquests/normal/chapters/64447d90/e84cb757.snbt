@@ -1,0 +1,50 @@
+{
+	title: "Restonia Crystal Armor",
+	x: 4.0d,
+	y: 14.0d,
+	dependencies: [
+		"a5b2a2bb"
+	],
+	tasks: [{
+		uid: "a6dad9cc",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_boots_crystal_red"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "993ff632",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_pants_crystal_red"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b425f865",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_chest_crystal_red"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "975fa26f",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_helm_crystal_red"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cd591f30",
+		type: "item",
+		item: "actuallyadditions:item_crystal",
+		count: 10
+	}]
+}

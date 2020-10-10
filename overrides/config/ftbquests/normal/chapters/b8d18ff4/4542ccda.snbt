@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	tasks: [{
+		uid: "0014e26f",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:stuff 1 69"
+		}]
+	}],
+	rewards: [{
+		uid: "49a7d20e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p obtained the (not so) Creative Essence"
+	}]
+}

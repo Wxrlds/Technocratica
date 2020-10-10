@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<recipe name="Enchanter: openblocks:flim_flam" required="false"
+disabled="false">
+<enchanting>
+<input name="randomthings:playerinterface" amount="10"/>
+<enchantment name="openblocks:flim_flam" costMultiplier="1"/>
+</enchanting>
+</recipe>
+
+<recipe name="Enchanter: cyclic:waterwalking" required="false"
+disabled="false">
+<enchanting>
+<input name="minecraft:potion" nbt='{Potion:"cyclicmagic:waterwalk"}' amount="9"/>
+<enchantment name="cyclicmagic:enchantment.waterwalking" costMultiplier="1"/>
+</enchanting>
+</recipe>
+
+</enderio:recipes>

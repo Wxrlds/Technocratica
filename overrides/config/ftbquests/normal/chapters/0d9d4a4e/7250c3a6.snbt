@@ -1,0 +1,25 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"622ef084",
+		"73e9693b"
+	],
+	tasks: [{
+		uid: "707bf73a",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_2",
+			tag: {
+				UUID: "8469f1fa-288e-4f39-8f90-2f8c71d108b6",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "434ba16c",
+		type: "item",
+		item: "minecraft:iron_block"
+	}]
+}

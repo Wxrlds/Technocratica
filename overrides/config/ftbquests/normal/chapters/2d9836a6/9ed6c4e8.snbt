@@ -1,0 +1,19 @@
+{
+	x: 1.5d,
+	y: 0.0d,
+	dependencies: [
+		"4fb64116"
+	],
+	tasks: [{
+		uid: "514b05b6",
+		type: "item",
+		items: [{
+			item: "rftools:powercell"
+		}]
+	}],
+	rewards: [{
+		uid: "30f04040",
+		type: "item",
+		item: "rftools:powercell_card"
+	}]
+}

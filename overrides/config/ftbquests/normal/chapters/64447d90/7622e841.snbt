@@ -1,0 +1,50 @@
+{
+	title: "Nickel Armor",
+	x: 14.0d,
+	y: 10.0d,
+	dependencies: [
+		"c72ff5be"
+	],
+	tasks: [{
+		uid: "a4954ed5",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_nickel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fe2fe9d3",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_nickel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "18dbd4ee",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_nickel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9b7130da",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_nickel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "258cc544",
+		type: "item",
+		item: "thermalfoundation:material 1 133",
+		count: 10
+	}]
+}

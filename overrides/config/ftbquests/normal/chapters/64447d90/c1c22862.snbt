@@ -1,0 +1,50 @@
+{
+	title: "Aluminum Armor",
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"4e88f655"
+	],
+	tasks: [{
+		uid: "19039434",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_aluminum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "654f3abe",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_aluminum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "876d376c",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_aluminum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "75a98aba",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_aluminum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f83d83d2",
+		type: "item",
+		item: "thermalfoundation:material 1 132",
+		count: 10
+	}]
+}

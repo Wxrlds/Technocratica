@@ -1,0 +1,18 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "374b03e4",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "052417c5",
+		type: "item",
+		item: "ic2:te 1 8",
+		count: 2,
+		random_bonus: 4
+	}]
+}

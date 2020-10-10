@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"4484bcb5"
+	],
+	tasks: [{
+		uid: "7a1d18ce",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:plasmidinjector"
+		}]
+	}],
+	rewards: [{
+		uid: "662abc4a",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

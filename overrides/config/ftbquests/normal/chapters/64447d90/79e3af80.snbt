@@ -1,0 +1,50 @@
+{
+	title: "Knightslime Armor",
+	x: 0.0d,
+	y: 4.0d,
+	dependencies: [
+		"20ad7e2f"
+	],
+	tasks: [{
+		uid: "37340836",
+		type: "item",
+		items: [{
+			item: "tcomplement:knightslime_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5f3796d6",
+		type: "item",
+		items: [{
+			item: "tcomplement:knightslime_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e58732ed",
+		type: "item",
+		items: [{
+			item: "tcomplement:knightslime_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "30335e54",
+		type: "item",
+		items: [{
+			item: "tcomplement:knightslime_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "95005b61",
+		type: "item",
+		item: "tconstruct:ingots 1 3",
+		count: 10
+	}]
+}

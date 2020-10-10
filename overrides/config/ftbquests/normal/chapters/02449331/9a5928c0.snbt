@@ -1,0 +1,34 @@
+{
+	x: 11.0d,
+	y: 4.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "f721f187",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:end_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "d32d1cec",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0380d099",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "29003bea",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f2344858",
+		type: "random",
+		table: 17
+	}]
+}

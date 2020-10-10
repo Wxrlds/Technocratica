@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 5.5d,
+	shape: "pentagon",
+	dependencies: [
+		"2d48752e"
+	],
+	tasks: [{
+		uid: "1bb2e854",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_laser_relay_fluids"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "24a681b8",
+		type: "item",
+		item: "actuallyadditions:block_laser_relay_fluids",
+		count: 2
+	}]
+}

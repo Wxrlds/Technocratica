@@ -1,0 +1,17 @@
+{
+	x: 8.5d,
+	y: -2.0d,
+	tasks: [{
+		uid: "e98c51d1",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:cable_wireless_fluid"
+		}]
+	}],
+	rewards: [{
+		uid: "35b2bbc3",
+		type: "item",
+		item: "minecraft:sponge 1 1",
+		count: 4
+	}]
+}

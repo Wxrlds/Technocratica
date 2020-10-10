@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 10.0d,
+	dependencies: [
+		"3b0a5b61"
+	],
+	tasks: [{
+		uid: "4a9b9960",
+		type: "item",
+		items: [{
+			id: "advanced_solar_panels:advancedsolarhelmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9764f40d",
+		type: "choice",
+		icon: "mekanism:controlcircuit 1 1",
+		table: 10
+	}]
+}

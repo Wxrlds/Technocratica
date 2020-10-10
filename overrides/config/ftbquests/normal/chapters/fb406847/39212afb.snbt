@@ -1,0 +1,25 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	dependencies: [
+		"daf9edd0"
+	],
+	tasks: [{
+		uid: "9eb21124",
+		type: "item",
+		items: [{
+			item: "advanced_solar_panels:machines 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "d218afb4",
+		type: "item",
+		item: {
+			id: "ic2:lapotron_crystal",
+			tag: {
+				charge: 1.0E7d
+			}
+		},
+		count: 16
+	}]
+}

@@ -1,0 +1,71 @@
+{
+	title: "Mekanism Fusion Reactor",
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"56f45536"
+	],
+	tasks: [{
+		uid: "2d33b9b3",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}]
+	},
+	{
+		uid: "41b30314",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor 1 1"
+		}],
+		count: 57L
+	},
+	{
+		uid: "45a50cb5",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactorglass 1 1"
+		}]
+	},
+	{
+		uid: "848168f5",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactorglass"
+		}],
+		count: 5L
+	},
+	{
+		uid: "351c7a70",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor 1 2"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "0b525006",
+		type: "item",
+		item: {
+			id: "mekanismgenerators:hohlraum",
+			tag: {
+				mekData: {
+					stored: {
+						amount: 10,
+						gasName: "fusionfuel"
+					}
+				}
+			}
+		}
+	},
+	{
+		uid: "4f59f104",
+		type: "item",
+		item: "mekanismgenerators:hohlraum"
+	},
+	{
+		uid: "b9f9a364",
+		type: "item",
+		item: "harvestcraft:pumpkincheesecakeitem"
+	}]
+}

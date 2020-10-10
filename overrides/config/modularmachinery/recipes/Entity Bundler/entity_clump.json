@@ -1,0 +1,149 @@
+{
+	"machine": "entity_bundler",
+	"registryName": "entity_clump",
+	"recipeTime": 25600,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 2097152
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "blood",
+			"amount": 32000
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extracells:walrus",
+			"amount": 8
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extendedcrafting:material@13"
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "mekanism:controlcircuit@3",
+			"amount": 8
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "openblocks:golden_egg",
+			"amount": 8
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "actuallyadditions:item_solidified_experience",
+			"amount": 8
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:experience_bottle",
+			"amount": 8
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:cow"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:chicken"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:rabbit"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:horse"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:wolf"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:ocelot"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:pig"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:sheep"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:spawn_egg",
+			"nbt": {
+				"EntityTag": {
+					"id": "minecraft:cow"
+				}
+			}
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "contenttweaker:entity_clump",
+			"amount": 64
+		}
+	]
+}

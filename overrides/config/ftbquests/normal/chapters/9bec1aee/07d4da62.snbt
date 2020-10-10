@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"498b84bf"
+	],
+	tasks: [{
+		uid: "c60d0467",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:advancedscraper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8eff698c",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

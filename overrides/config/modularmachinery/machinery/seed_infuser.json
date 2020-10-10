@@ -1,0 +1,3919 @@
+{
+	"registryname": "seed_infuser",
+	"localizedname": "Seed Infuser",
+	"requires-blueprint": true,
+	"parts": [
+		{
+			"x": -1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockfluidinputhatch@7"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"extrautils2:compressedcobblestone@7"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 3,
+			"elements": [
+				"modularmachinery:blockinputbus@6"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 2,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 2,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 1,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 0,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 0,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockoutputbus@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 0,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"actuallyadditions:block_display_stand@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 6,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"extrautils2:compressedcobblestone@7"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 6,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"modularmachinery:blockenergyinputhatch@7"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extrautils2:compresseddirt@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extrautils2:compressedgravel@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extrautils2:compresseddirt@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_display_stand@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"extrautils2:compressedsand@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 6,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"extrautils2:compressedsand@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_empowerer@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 5,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"actuallyadditions:block_display_stand@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extrautils2:compressedcobblestone@7"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extrautils2:compressedgravel@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extrautils2:compressedcobblestone@7"
+			]
+		},
+		{
+			"x": -2,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extrautils2:compressedgravel@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 4,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"extrautils2:compressedcobblestone@7"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"extendedcrafting:trimmed@4"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 5,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"z": 4,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_pyrotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_cryotheum@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": -1,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": -1,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extrautils2:compresseddirt@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"thermalfoundation:fluid_glowstone@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extrautils2:compressedgravel@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"enderio:block_dark_fused_glass@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extrautils2:compresseddirt@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"z": 3,
+			"elements": [
+				"enderio:block_enlightened_fused_quartz@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"extrautils2:compressednetherrack@5"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"z": 2,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:glass@8"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"xtones:zane@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -3,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"mysticalagriculture:growth_accelerator@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -3,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": -2,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": -1,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"extrautils2:simpledecorative@1"
+			]
+		},
+		{
+			"x": -2,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"extrautils2:compressedsand@1"
+			]
+		},
+		{
+			"x": 2,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:draconium_block@1"
+			]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"draconicevolution:draconic_block@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"thermalfoundation:fluid_redstone@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"z": 4,
+			"elements": [
+				"draconicevolution:infused_obsidian@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"z": 3,
+			"elements": [
+				"mysticalagriculture:ingot_storage@6"
+			]
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"z": 2,
+			"elements": [
+				"extrautils2:compressedsand@1"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"actuallyadditions:block_display_stand@0"
+			]
+		}
+	]
+}

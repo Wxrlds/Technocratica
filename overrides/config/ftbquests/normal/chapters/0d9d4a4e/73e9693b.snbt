@@ -1,0 +1,25 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"f1c7c989",
+		"45683f6f"
+	],
+	tasks: [{
+		uid: "f76253d0",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_1",
+			tag: {
+				UUID: "c80a7768-fe26-4a11-8568-6019446a345d",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "296e63c3",
+		type: "item",
+		item: "minecraft:lapis_block"
+	}]
+}

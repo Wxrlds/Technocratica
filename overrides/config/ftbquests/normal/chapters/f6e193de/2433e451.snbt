@@ -1,0 +1,19 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"0e4da5f8"
+	],
+	tasks: [{
+		uid: "461fcc6e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rainbow_matter"
+		}]
+	}],
+	rewards: [{
+		uid: "ff24d748",
+		type: "random",
+		table: 12
+	}]
+}

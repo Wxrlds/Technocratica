@@ -1,0 +1,19 @@
+{
+	x: 9.0d,
+	y: -4.0d,
+	dependencies: [
+		"aef37066"
+	],
+	tasks: [{
+		uid: "9988f5e3",
+		type: "item",
+		items: [{
+			item: "denseneutroncollectors:double_compressed_neutron_collector"
+		}]
+	}],
+	rewards: [{
+		uid: "5f69a49c",
+		type: "random",
+		table: 13
+	}]
+}

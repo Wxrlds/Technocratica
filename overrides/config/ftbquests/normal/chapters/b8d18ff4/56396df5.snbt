@@ -1,0 +1,20 @@
+{
+	x: 11.5d,
+	y: 0.0d,
+	dependencies: [
+		"a70590ef"
+	],
+	tasks: [{
+		uid: "96040ebb",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 86"
+		}]
+	}],
+	rewards: [{
+		uid: "f26b02e4",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p's UU-Matter is powered by the Creative Generator"
+	}]
+}

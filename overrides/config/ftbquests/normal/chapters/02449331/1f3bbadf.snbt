@@ -1,0 +1,34 @@
+{
+	x: 12.0d,
+	y: 8.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "29dc30c0",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:amber_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "212a9302",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ad2d5c2a",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f29f3295",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "57030ed5",
+		type: "random",
+		table: 17
+	}]
+}

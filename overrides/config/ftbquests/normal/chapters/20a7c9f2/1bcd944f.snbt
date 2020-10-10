@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	dependencies: [
+		"394b95ce"
+	],
+	tasks: [{
+		uid: "22957007",
+		type: "item",
+		items: [{
+			item: "avaritiaio:grindingballneutronium"
+		}]
+	}],
+	rewards: [{
+		uid: "2f003c8a",
+		type: "random",
+		table: 13
+	}]
+}

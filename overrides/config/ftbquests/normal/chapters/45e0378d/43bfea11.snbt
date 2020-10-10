@@ -1,0 +1,19 @@
+{
+	x: 7.0d,
+	y: 2.5d,
+	dependencies: [
+		"0af6ba52"
+	],
+	tasks: [{
+		uid: "818523cc",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:beacon_potion"
+		}]
+	}],
+	rewards: [{
+		uid: "57e8cd9b",
+		type: "random",
+		table: 18
+	}]
+}

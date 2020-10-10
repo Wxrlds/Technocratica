@@ -1,0 +1,39 @@
+{
+	x: 19.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "ee392427",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:end_steel_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "b6a3b8e0",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "845eb30b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "47916731",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "296cb988",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "676b8e63",
+		type: "random",
+		table: 17
+	}]
+}

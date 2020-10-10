@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 10.0d,
+	dependencies: [
+		"ae329841"
+	],
+	tasks: [{
+		uid: "2f975a30",
+		type: "item",
+		items: [{
+			id: "advanced_solar_panels:hybridsolarhelmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b37314cc",
+		type: "random",
+		table: 10
+	}]
+}

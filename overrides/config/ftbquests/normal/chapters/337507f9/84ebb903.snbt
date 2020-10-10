@@ -1,0 +1,37 @@
+{
+	title: "Tesslocators",
+	x: -25.0d,
+	y: 5.0d,
+	tasks: [{
+		uid: "0fcdd08b",
+		type: "item",
+		items: [{
+			item: "tesslocator:basic_item_tesslocator"
+		}]
+	},
+	{
+		uid: "d8cb4f75",
+		type: "item",
+		items: [{
+			item: "tesslocator:basic_fluid_tesslocator"
+		}]
+	}],
+	rewards: [{
+		uid: "c75047d9",
+		type: "item",
+		item: "minecraft:glowstone_dust",
+		count: 4
+	},
+	{
+		uid: "c2ae3e58",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 4
+	},
+	{
+		uid: "ee443ccd",
+		type: "item",
+		item: "extendedcrafting:material 1 128",
+		count: 4
+	}]
+}

@@ -1,0 +1,113 @@
+{
+	title: "Exchanger",
+	icon: {
+		id: "exchangers:end_exchanger",
+		tag: {
+			exmode: 0,
+			directionalPlacement: 0b,
+			forceDropItems: 0b,
+			range: 0,
+			blockstate: {
+				Name: "minecraft:air"
+			}
+		}
+	},
+	x: 8.0d,
+	y: -2.0d,
+	description: "Who needs one when you can have ALL of the Exchangers?!",
+	tasks: [{
+		uid: "9958cab2",
+		type: "item",
+		items: [{
+			id: "exchangers:resonant_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				Energy: 20000000,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "31218d28",
+		type: "item",
+		items: [{
+			id: "exchangers:end_steel_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				Energy: 50000000,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8fd7e823",
+		type: "item",
+		items: [{
+			id: "exchangers:end_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "26a38a2b",
+		type: "item",
+		items: [{
+			id: "exchangers:ultimate_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				Energy: 10000000,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cfceaa48",
+		type: "item",
+		items: [{
+			id: "exchangers:stellar_exchanger",
+			tag: {
+				exmode: 0,
+				directionalPlacement: 0b,
+				forceDropItems: 0b,
+				Energy: 100000000,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "638a2013",
+		type: "item",
+		item: "minecraft:cake"
+	}]
+}

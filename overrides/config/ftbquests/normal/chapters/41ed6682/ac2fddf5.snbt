@@ -1,0 +1,26 @@
+{
+	x: -12.5d,
+	y: 6.0d,
+	dependencies: [
+		"7b24b083"
+	],
+	tasks: [{
+		uid: "33037ce4",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 146"
+		}]
+	}],
+	rewards: [{
+		uid: "998d96af",
+		type: "item",
+		item: "redstonearsenal:storage",
+		count: 2
+	},
+	{
+		uid: "844a6216",
+		type: "item",
+		item: "mysticalagriculture:crafting 1 16",
+		count: 6
+	}]
+}

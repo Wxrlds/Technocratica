@@ -1,0 +1,22 @@
+{
+	x: 5.0d,
+	y: -3.5d,
+	dependencies: [
+		"f10dd6b3"
+	],
+	tasks: [{
+		uid: "f13085f7",
+		type: "item",
+		items: [{
+			id: "projectex:colossal_star_drei",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7dd2f1cd",
+		type: "random",
+		table: 12
+	}]
+}

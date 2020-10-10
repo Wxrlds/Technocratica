@@ -1,0 +1,54 @@
+{
+	title: "QuantumSuit Armor",
+	x: 6.0d,
+	y: 10.0d,
+	dependencies: [
+		"497017c6"
+	],
+	tasks: [{
+		uid: "720e6aa6",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "4bed6655",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_leggings",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d36ac814",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_chestplate",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a3972f3e",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_helmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "69bf7202",
+		type: "item",
+		item: "ic2:crafting 1 4",
+		count: 10
+	}]
+}

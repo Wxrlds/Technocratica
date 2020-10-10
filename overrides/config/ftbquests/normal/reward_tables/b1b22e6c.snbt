@@ -1,0 +1,171 @@
+{
+	title: "Hunting Dimension",
+	icon: {
+		id: "huntingdim:frame",
+		Count: 2b,
+		tag: {
+			BaseBlock: {
+				id: "minecraft:log",
+				Count: 1b,
+				Damage: 0s
+			}
+		}
+	},
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 1s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 2s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 3s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log2",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "minecraft:log2",
+					Count: 1b,
+					Damage: 1s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "extrautils2:ironwood_log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "extrautils2:ironwood_log",
+					Count: 1b,
+					Damage: 1s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "randomthings:spectrelog",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "harvestcraft:pammaple",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "harvestcraft:pampaperbark",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	},
+	{
+		item: {
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					id: "harvestcraft:pamcinnamon",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 2
+	}]
+}

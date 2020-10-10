@@ -1,0 +1,34 @@
+{
+	x: 15.0d,
+	y: 5.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "87e661a4",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:enderman_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "7b057d5e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3e1a9295",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "95cc2481",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "01423308",
+		type: "random",
+		table: 17
+	}]
+}

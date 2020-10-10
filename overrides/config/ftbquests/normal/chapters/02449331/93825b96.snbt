@@ -1,0 +1,29 @@
+{
+	x: 4.0d,
+	y: 5.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "b22b42d7",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:saltpeter_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "86bea7ae",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "061d1da3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e61905e7",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 20.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "f55584f9",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:uranium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "b751fa42",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a2efad27",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4a9ba7b3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "99ceb9ac",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "c527c32b",
+		type: "random",
+		table: 17
+	}]
+}

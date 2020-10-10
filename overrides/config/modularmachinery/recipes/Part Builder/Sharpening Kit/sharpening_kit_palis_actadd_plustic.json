@@ -1,0 +1,27 @@
+{
+	"machine": "less_functional_part_builder",
+	"registryName": "sharpening_kit_palis_actadd_plustic",
+	"recipeTime": 10,
+	"requirements": [{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 100
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "actuallyadditions:item_crystal@1",
+			"amount": 2
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:flint",
+			"amount": 1
+		}, {
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:sharpening_kit@0",
+			"nbt": {"Material":"palis_actadd_plustic"},
+			"amount": 1
+		}
+	]
+}

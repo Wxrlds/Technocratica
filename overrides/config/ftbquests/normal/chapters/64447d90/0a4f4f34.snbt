@@ -1,0 +1,50 @@
+{
+	title: "Glowstone Armor",
+	x: 0.0d,
+	y: 12.0d,
+	dependencies: [
+		"92faba8c"
+	],
+	tasks: [{
+		uid: "17699db4",
+		type: "item",
+		items: [{
+			item: "mekanismtools:glowstoneboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "545be31f",
+		type: "item",
+		items: [{
+			item: "mekanismtools:glowstoneleggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dea7d042",
+		type: "item",
+		items: [{
+			item: "mekanismtools:glowstonechestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c3bfcf6e",
+		type: "item",
+		items: [{
+			item: "mekanismtools:glowstonehelmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "538d8d70",
+		type: "item",
+		item: "mekanism:ingot 1 3",
+		count: 10
+	}]
+}

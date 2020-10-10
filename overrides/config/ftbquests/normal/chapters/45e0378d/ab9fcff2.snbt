@@ -1,0 +1,53 @@
+{
+	title: "Melter",
+	icon: "thermalfoundation:material 1 24",
+	x: -6.0d,
+	y: -3.0d,
+	description: "Check the JEI page of Molten Iron to see what Items made out of Iron can be smelted with the Melter and a Seared Heater",
+	text: [
+		"The Melter only holds one fluid at the time"
+	],
+	tasks: [{
+		uid: "8bca1f9e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 24"
+		}]
+	},
+	{
+		uid: "f7c5e02b",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 10"
+		}]
+	},
+	{
+		uid: "4c6ad05a",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "iron"
+			}
+		}]
+	},
+	{
+		uid: "5d8c8ae9",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter"
+		}]
+	},
+	{
+		uid: "0cca2b41",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "cb9ff9be",
+		type: "item",
+		item: "thermalfoundation:material 1 24"
+	}]
+}

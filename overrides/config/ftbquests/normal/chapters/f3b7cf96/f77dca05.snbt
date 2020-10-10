@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"4e47ebde",
+		"59d84701",
+		"73e8c625"
+	],
+	tasks: [{
+		uid: "1957ed75",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}]
+	}],
+	rewards: [{
+		uid: "76b43300",
+		type: "random",
+		table: 11
+	}]
+}

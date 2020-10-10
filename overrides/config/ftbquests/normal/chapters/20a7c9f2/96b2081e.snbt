@@ -1,0 +1,56 @@
+{
+	x: 9.0d,
+	y: 10.0d,
+	dependencies: [
+		"98499ecb",
+		"2a78e93b",
+		"1658821d",
+		"175815d0",
+		"216c2de4",
+		"63423f0f",
+		"9857465a",
+		"0c891406",
+		"3943fd12",
+		"abcf089e",
+		"8c1a2ac8",
+		"7c85e391",
+		"bd657131",
+		"1b3435ee",
+		"b681a2dd",
+		"bc5e7e82",
+		"103c7b22",
+		"5b81975e",
+		"7246aaa7",
+		"7a826566",
+		"261fcbba",
+		"41d8b7b0",
+		"0c5acab6",
+		"32dd5ef0",
+		"5b45faeb",
+		"9befe701",
+		"663b1154",
+		"5409f066",
+		"b5b7c587",
+		"8a2a2a5b",
+		"24682759",
+		"731aa4ae",
+		"f38b6e3e",
+		"c5788ec2",
+		"3a90062c",
+		"00e0b91e",
+		"e02ce0d2",
+		"695871e6"
+	],
+	tasks: [{
+		uid: "8d278fed",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_ultimate"
+		}]
+	}],
+	rewards: [{
+		uid: "b91aeb4f",
+		type: "random",
+		table: 13
+	}]
+}

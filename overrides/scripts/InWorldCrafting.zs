@@ -1,0 +1,5 @@
+mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>,<liquid:nutrient_distillation>,[<minecraft:stick>]);
+mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:1>,<liquid:glowstone>,[<mekanism:controlcircuit>,<mekanism:enrichedalloy>*4,<mekanism:compressedredstone>*4]);
+mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:2>,<liquid:aerotheum>,[<mekanism:controlcircuit:1>,<mekanism:reinforcedalloy>*4,<mekanism:compresseddiamond>*4]);
+mods.inworldcrafting.FluidToItem.transform(<mekanism:controlcircuit:3>,<liquid:crystal>,[<mekanism:controlcircuit:2>,<mekanism:atomicalloy>*4,<mekanism:compressedobsidian>*4]);
+mods.inworldcrafting.FluidToItem.transform(<thermalfoundation:material:136>,<liquid:blueslime>,[<ore:dustCobalt>,<ore:nuggetEnderpearl>,<ore:ingotSteel>*2]);

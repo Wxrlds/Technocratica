@@ -1,0 +1,54 @@
+{
+	title: "Supremium Armor",
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"601e87a1"
+	],
+	tasks: [{
+		uid: "0c6432c2",
+		type: "item",
+		items: [{
+			id: "mysticalagriculture:supremium_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9fb13b50",
+		type: "item",
+		items: [{
+			id: "mysticalagriculture:supremium_leggings",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "29defe74",
+		type: "item",
+		items: [{
+			id: "mysticalagriculture:supremium_chestplate",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a249d775",
+		type: "item",
+		items: [{
+			id: "mysticalagriculture:supremium_helmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5c6cd8f6",
+		type: "item",
+		item: "mysticalagriculture:crafting 1 37",
+		count: 10
+	}]
+}

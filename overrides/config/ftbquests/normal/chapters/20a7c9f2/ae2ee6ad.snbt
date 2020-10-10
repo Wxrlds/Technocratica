@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: 2.0d,
+	dependencies: [
+		"faffe320"
+	],
+	tasks: [{
+		uid: "86c556a5",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:pedestal"
+		}]
+	}],
+	rewards: [{
+		uid: "47e96ae6",
+		type: "random",
+		table: 13
+	}]
+}

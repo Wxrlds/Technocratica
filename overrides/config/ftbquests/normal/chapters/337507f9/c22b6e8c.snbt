@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: 0.0d,
+	shape: "diamond",
+	dependencies: [
+		"4a94ecc1"
+	],
+	tasks: [{
+		uid: "d609432b",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "c02c3526",
+		type: "item",
+		item: "enderio:item_alloy_endergy_nugget 1 3",
+		count: 63
+	}]
+}

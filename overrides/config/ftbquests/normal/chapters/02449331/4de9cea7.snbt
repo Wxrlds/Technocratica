@@ -1,0 +1,25 @@
+{
+	x: 22.0d,
+	y: -7.0d,
+	dependencies: [
+		"cf8ae223",
+		"c7696a50",
+		"226e0e6d",
+		"f1a5ace9",
+		"ebaeb7fb"
+	],
+	tasks: [{
+		uid: "71d3413b",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:master_infusion_crystal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c85b16ee",
+		type: "item",
+		item: "mysticalagradditions:storage"
+	}]
+}

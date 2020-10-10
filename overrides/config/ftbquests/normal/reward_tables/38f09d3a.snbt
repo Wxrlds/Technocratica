@@ -1,0 +1,13 @@
+{
+	title: "Machine Frame (Thermal)",
+	icon: "thermalexpansion:frame",
+	loot_size: 2,
+	rewards: [{
+		item: "bigreactors:ingotcyanite",
+		count: 16
+	},
+	{
+		item: "ic2:ingot 1 8",
+		count: 16
+	}]
+}

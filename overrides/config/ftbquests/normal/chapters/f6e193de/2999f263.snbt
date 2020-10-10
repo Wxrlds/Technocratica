@@ -1,0 +1,27 @@
+{
+	x: 10.0d,
+	y: -0.5d,
+	shape: "pentagon",
+	dependencies: [
+		"008c6677"
+	],
+	tasks: [{
+		uid: "faf207cb",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_tome"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "555de1be",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "027563e6",
+		type: "item",
+		item: "harvestcraft:cherrycheesecakeitem"
+	}]
+}

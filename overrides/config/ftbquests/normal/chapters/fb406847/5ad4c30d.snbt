@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"f7273b08"
+	],
+	tasks: [{
+		uid: "fb0ea2fd",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_steel"
+		}]
+	}],
+	rewards: [{
+		uid: "defdd18e",
+		type: "item",
+		item: "thermalfoundation:material 1 160",
+		count: 16
+	}]
+}

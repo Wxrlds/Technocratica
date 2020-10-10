@@ -1,0 +1,20 @@
+{
+	x: 13.5d,
+	y: 3.0d,
+	shape: "octagon",
+	dependencies: [
+		"e9714c5a"
+	],
+	tasks: [{
+		uid: "e24dddf8",
+		type: "item",
+		items: [{
+			item: "avaritiatweaks:enhancement_crystal"
+		}]
+	}],
+	rewards: [{
+		uid: "7e5ac8b3",
+		type: "random",
+		table: 13
+	}]
+}

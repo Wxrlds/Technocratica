@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"23a99bf4"
+	],
+	tasks: [{
+		uid: "ec7d0ee9",
+		type: "item",
+		items: [{
+			item: "mekanism:reinforcedalloy"
+		}]
+	}],
+	rewards: [{
+		uid: "fd203b3f",
+		type: "item",
+		item: "mekanism:reinforcedalloy",
+		count: 3
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 7.5d,
+	y: 5.0d,
+	dependencies: [
+		"50e773c6"
+	],
+	tasks: [{
+		uid: "45c90850",
+		type: "item",
+		items: [{
+			id: "wit:wit",
+			tag: {
+				InfinityEnergy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7d1a5cf8",
+		type: "item",
+		item: "ae2wtlib:infinity_booster_card",
+		count: 64,
+		random_bonus: 64
+	},
+	{
+		uid: "bfdebd32",
+		type: "random",
+		table: 11
+	}]
+}

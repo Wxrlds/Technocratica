@@ -1,0 +1,29 @@
+{
+	x: 3.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "1956aa1f",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:conductive_iron_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "3c30fb5e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f55854e4",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a1e920e2",
+		type: "random",
+		table: 17
+	}]
+}

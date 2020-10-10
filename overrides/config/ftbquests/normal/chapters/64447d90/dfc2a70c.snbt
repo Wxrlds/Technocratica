@@ -1,0 +1,50 @@
+{
+	title: "Platinum Armor",
+	x: 10.0d,
+	y: 2.0d,
+	dependencies: [
+		"b88e73aa"
+	],
+	tasks: [{
+		uid: "55171745",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_platinum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b5a331e7",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_platinum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "120bcd8f",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_platinum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0b25d043",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_platinum"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "44a95f47",
+		type: "item",
+		item: "thermalfoundation:material 1 134",
+		count: 10
+	}]
+}

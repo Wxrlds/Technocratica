@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: 2.5d,
+	dependencies: [
+		"6659f9fc"
+	],
+	tasks: [{
+		uid: "2c33429e",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:supremium_apple"
+		}]
+	}],
+	rewards: [{
+		uid: "cc9d89ce",
+		type: "random",
+		table: 18
+	}]
+}

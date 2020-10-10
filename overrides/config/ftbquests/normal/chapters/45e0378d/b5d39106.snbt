@@ -1,0 +1,21 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	description: "Just a basic item transportation pipe",
+	dependencies: [
+		"040a7342"
+	],
+	tasks: [{
+		uid: "a5b0b010",
+		type: "item",
+		items: [{
+			item: "projectred-transportation:pipe"
+		}]
+	}],
+	rewards: [{
+		uid: "73cf67ac",
+		type: "item",
+		item: "projectred-transportation:pipe",
+		random_bonus: 8
+	}]
+}

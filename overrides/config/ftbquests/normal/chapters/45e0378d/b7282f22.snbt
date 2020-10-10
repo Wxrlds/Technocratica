@@ -1,0 +1,59 @@
+{
+	title: "Smeltery",
+	icon: "tconstruct:smeltery_controller",
+	x: -6.0d,
+	y: -1.0d,
+	description: "That's enough to build the smallest possible Smeltery",
+	dependencies: [
+		"ab9fcff2"
+	],
+	tasks: [{
+		uid: "5241deba",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "524057e7",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fca9a996",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 1 3"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4ecb3ee4",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "1633ea64",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "c3c280bb",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	}],
+	rewards: [{
+		uid: "6be119f3",
+		type: "random",
+		table: 15
+	}]
+}

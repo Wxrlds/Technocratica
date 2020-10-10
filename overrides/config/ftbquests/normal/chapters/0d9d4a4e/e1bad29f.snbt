@@ -1,0 +1,25 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"f0907c2c",
+		"c06c8176"
+	],
+	tasks: [{
+		uid: "aa099a4c",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_4",
+			tag: {
+				UUID: "008fac38-58ac-433a-9bf7-ecc0f0c19ef7",
+				selectedIndex: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "06074896",
+		type: "item",
+		item: "minecraft:diamond_block"
+	}]
+}

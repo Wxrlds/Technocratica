@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	dependencies: [
+		"d4fbbc4e"
+	],
+	tasks: [{
+		uid: "a8d38e2f",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_enderium"
+		}]
+	}],
+	rewards: [{
+		uid: "cc82079e",
+		type: "item",
+		item: "thermalfoundation:material 1 167",
+		count: 16
+	}]
+}

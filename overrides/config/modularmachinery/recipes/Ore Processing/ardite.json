@@ -1,0 +1,26 @@
+{
+	"machine": "ore_quintupling_machine",
+	"registryName": "ardite",
+	"recipeTime": 1,
+	"requirements": [{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 300
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:ore@1",
+			"amount": 1
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:material@771",
+			"amount": 1
+		}, {
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:ingots@1",
+			"amount": 5
+		}
+	]
+}

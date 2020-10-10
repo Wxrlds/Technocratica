@@ -1,0 +1,25 @@
+{
+	x: 12.0d,
+	y: 1.0d,
+	dependencies: [
+		"56396df5"
+	],
+	tasks: [{
+		uid: "5037896e",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			tag: {
+				Energy: 1073741823
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "35525449",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p is overloaded with the Creative Flux Capacitor"
+	}]
+}

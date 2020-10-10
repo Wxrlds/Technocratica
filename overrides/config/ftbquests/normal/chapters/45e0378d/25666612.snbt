@@ -1,0 +1,21 @@
+{
+	x: -10.0d,
+	y: 1.0d,
+	dependencies: [
+		"e330373e"
+	],
+	tasks: [{
+		uid: "738ed24e",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "b997a36e",
+		type: "item",
+		team_reward: false,
+		item: "bonsaitrees:bonsaipot 1 1",
+		count: 2
+	}]
+}

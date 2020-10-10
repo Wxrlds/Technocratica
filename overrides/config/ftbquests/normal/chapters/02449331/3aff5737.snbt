@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "5b6369bd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:redstone_alloy_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "ed8d39ba",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "235d9e15",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "4b37dd07",
+		type: "random",
+		table: 17
+	}]
+}

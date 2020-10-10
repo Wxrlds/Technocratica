@@ -1,0 +1,24 @@
+{
+	x: 2.0d,
+	y: 15.0d,
+	dependencies: [
+		"cdc67976",
+		"30622da8",
+		"3a88cdeb",
+		"1b6dbd86",
+		"b039ea12",
+		"4613b1c7"
+	],
+	tasks: [{
+		uid: "2ed1b954",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:interface"
+		}]
+	}],
+	rewards: [{
+		uid: "300ff593",
+		type: "random",
+		table: 13
+	}]
+}

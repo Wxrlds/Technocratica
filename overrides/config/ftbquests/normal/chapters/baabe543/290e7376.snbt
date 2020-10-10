@@ -1,0 +1,30 @@
+{
+	icon: "draconicevolution:dragon_heart",
+	x: 1.5d,
+	y: -3.5d,
+	tasks: [{
+		uid: "95265889",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_egg"
+		}]
+	},
+	{
+		uid: "49b9e324",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dragon_heart"
+		}]
+	}],
+	rewards: [{
+		uid: "53a5868d",
+		type: "item",
+		item: "minecraft:tnt",
+		count: 8
+	},
+	{
+		uid: "cf18ec0e",
+		type: "random",
+		table: 14
+	}]
+}

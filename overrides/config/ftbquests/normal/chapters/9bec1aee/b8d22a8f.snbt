@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"498b84bf"
+	],
+	tasks: [{
+		uid: "6ac5037c",
+		type: "item",
+		items: [{
+			item: "geneticsreborn:glasssyringe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f6208516",
+		type: "item",
+		item: "geneticsreborn:overclocker",
+		random_bonus: 4
+	}]
+}

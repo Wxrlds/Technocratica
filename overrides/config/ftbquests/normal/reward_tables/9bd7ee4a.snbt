@@ -1,0 +1,14 @@
+{
+	title: "Basic Machine Casing",
+	icon: "ic2:resource 1 12",
+	loot_size: 3,
+	rewards: [{
+		item: "thermalfoundation:storage 1 4"
+	},
+	{
+		item: "minecraft:iron_block"
+	},
+	{
+		item: "thermalfoundation:storage 1 1"
+	}]
+}

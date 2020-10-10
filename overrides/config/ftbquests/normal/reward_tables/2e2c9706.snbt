@@ -1,0 +1,108 @@
+{
+	title: "Health",
+	icon: {
+		id: "minecraft:lingering_potion",
+		tag: {
+			Potion: "cofhcore:regeneration4"
+		}
+	},
+	loot_size: 27,
+	rewards: [{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:regeneration"
+			}
+		},
+		weight: 14
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:long_regeneration"
+			}
+		},
+		weight: 12
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:strong_regeneration"
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:regeneration2+"
+			}
+		},
+		weight: 8
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:regeneration3"
+			}
+		},
+		weight: 6
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:regeneration3+"
+			}
+		},
+		weight: 4
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:regeneration4"
+			}
+		}
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:healing"
+			}
+		},
+		weight: 13
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "minecraft:strong_healing"
+			}
+		},
+		weight: 11
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:healing3"
+			}
+		},
+		weight: 9
+	},
+	{
+		item: {
+			id: "minecraft:lingering_potion",
+			tag: {
+				Potion: "cofhcore:healing4"
+			}
+		},
+		weight: 7
+	}]
+}

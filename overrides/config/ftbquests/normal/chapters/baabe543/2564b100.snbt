@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "385e5bc7",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "e35b6bbb",
+		type: "random",
+		table: 14
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	x: 13.0d,
+	y: 6.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "83d4db4a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:fluxed_electrum_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "b42278e3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d3e9ad40",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d26970c0",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "750f2285",
+		type: "random",
+		table: 17
+	}]
+}

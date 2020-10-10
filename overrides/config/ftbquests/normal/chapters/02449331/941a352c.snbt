@@ -1,0 +1,29 @@
+{
+	x: 4.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "e4cc1ef1",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:blitz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "d14269d8",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5b6aae3d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0ccf674e",
+		type: "random",
+		table: 17
+	}]
+}

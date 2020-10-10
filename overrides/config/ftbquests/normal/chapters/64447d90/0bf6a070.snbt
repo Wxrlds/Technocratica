@@ -1,0 +1,50 @@
+{
+	title: "Peridot Armor",
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"a75d4fa5"
+	],
+	tasks: [{
+		uid: "ccd4b881",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:peridot_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bbebed0b",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:peridot_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "af14ede9",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:peridot_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b9b8866c",
+		type: "item",
+		items: [{
+			item: "projectred-exploration:peridot_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "05b1bf8f",
+		type: "item",
+		item: "projectred-core:resource_item 1 202",
+		count: 10
+	}]
+}

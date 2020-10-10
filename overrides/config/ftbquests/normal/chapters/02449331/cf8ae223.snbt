@@ -1,0 +1,45 @@
+{
+	x: 18.0d,
+	y: -2.0d,
+	dependencies: [
+		"f1a5ace9",
+		"84171ad5"
+	],
+	tasks: [{
+		uid: "a4875233",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:nether_star_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "6c80ce67",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "053eca0a",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "757a6ab3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "5ea27b0d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f5822388",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "740b3dee",
+		type: "random",
+		table: 17
+	}]
+}

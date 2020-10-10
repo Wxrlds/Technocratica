@@ -1,0 +1,34 @@
+{
+	x: 10.0d,
+	y: 5.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "0e5b9f0c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:peridot_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "8ae6d3f1",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "78945252",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "7e6835ff",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "14fa3b47",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,52 @@
+{
+	title: "Draconic",
+	loot_size: 27,
+	rewards: [{
+		item: "draconicevolution:energy_crystal",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 6",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 3",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 1",
+		weight: 5
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 7",
+		weight: 5
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 4",
+		weight: 5
+	},
+	{
+		item: "draconicevolution:draconium_dust",
+		weight: 100
+	},
+	{
+		item: "draconicevolution:draconium_ore",
+		weight: 24
+	},
+	{
+		item: "draconicevolution:draconium_ingot",
+		weight: 50
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 2",
+		weight: 3
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 8",
+		weight: 3
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 5",
+		weight: 3
+	}]
+}

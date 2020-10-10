@@ -1,0 +1,19 @@
+{
+	x: -7.0d,
+	y: 0.0d,
+	dependencies: [
+		"4858f86f"
+	],
+	tasks: [{
+		uid: "deb1f5c2",
+		type: "item",
+		items: [{
+			item: "avaritia:double_compressed_crafting_table"
+		}]
+	}],
+	rewards: [{
+		uid: "e2c944ac",
+		type: "random",
+		table: 13
+	}]
+}

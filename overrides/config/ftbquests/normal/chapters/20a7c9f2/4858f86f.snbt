@@ -1,0 +1,16 @@
+{
+	x: -7.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "c55af37b",
+		type: "item",
+		items: [{
+			item: "avaritia:compressed_crafting_table"
+		}]
+	}],
+	rewards: [{
+		uid: "e3871f29",
+		type: "random",
+		table: 13
+	}]
+}

@@ -1,0 +1,60 @@
+{
+	x: 5.5d,
+	y: -2.0d,
+	tasks: [{
+		uid: "326666b2",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4335ebfc",
+		type: "item",
+		item: "minecraft:dye 1 12",
+		count: 6
+	},
+	{
+		uid: "af2afebe",
+		type: "item",
+		item: "minecraft:dye 1 10",
+		count: 6
+	},
+	{
+		uid: "aef3e64c",
+		type: "item",
+		item: "minecraft:dye 1 15",
+		count: 6
+	},
+	{
+		uid: "19fbad56",
+		type: "item",
+		item: "minecraft:dye 1 7",
+		count: 6
+	},
+	{
+		uid: "af160cd4",
+		type: "item",
+		item: "minecraft:dye 1 3",
+		count: 6
+	},
+	{
+		uid: "3bd77ee7",
+		type: "item",
+		item: "minecraft:dye 1 13",
+		count: 6
+	},
+	{
+		uid: "1d04f590",
+		type: "item",
+		item: "minecraft:dye 1 1",
+		count: 6
+	},
+	{
+		uid: "c5bdd129",
+		type: "item",
+		item: "minecraft:dye 1 5",
+		count: 6
+	}]
+}

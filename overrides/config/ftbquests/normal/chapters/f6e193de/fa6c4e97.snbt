@@ -1,0 +1,22 @@
+{
+	x: -3.0d,
+	y: -0.5d,
+	dependencies: [
+		"e2b3c511"
+	],
+	tasks: [{
+		uid: "eb6af1d8",
+		type: "item",
+		items: [{
+			id: "projecte:item.pe_rm_katar",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7e154188",
+		type: "random",
+		table: 12
+	}]
+}

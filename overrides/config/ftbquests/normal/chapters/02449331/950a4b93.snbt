@@ -1,0 +1,34 @@
+{
+	x: 9.0d,
+	y: 8.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "e4a1a748",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:tanzanite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "0f479312",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "cd02b7d3",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "e515745b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a57d5463",
+		type: "random",
+		table: 17
+	}]
+}

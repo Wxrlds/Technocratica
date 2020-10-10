@@ -1,0 +1,20 @@
+{
+	x: -11.0d,
+	y: 3.0d,
+	dependencies: [
+		"590378be"
+	],
+	tasks: [{
+		uid: "60d530be",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 148"
+		}]
+	}],
+	rewards: [{
+		uid: "abf924dd",
+		type: "item",
+		item: "actuallyadditions:block_misc 1 6",
+		count: 16
+	}]
+}

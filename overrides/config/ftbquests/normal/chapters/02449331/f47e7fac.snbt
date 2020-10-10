@@ -1,0 +1,39 @@
+{
+	x: 23.0d,
+	y: 5.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "f0812fe2",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:draconium_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "a0bfb83f",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "cb06e2ba",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "953cd36d",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "614c2c7e",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "3d781ee2",
+		type: "random",
+		table: 17
+	}]
+}

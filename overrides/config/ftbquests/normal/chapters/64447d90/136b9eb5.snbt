@@ -1,0 +1,50 @@
+{
+	title: "Golden Armor",
+	x: 0.0d,
+	y: 0.0d,
+	dependencies: [
+		"42f51697"
+	],
+	tasks: [{
+		uid: "c67b0b0c",
+		type: "item",
+		items: [{
+			item: "minecraft:golden_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "41048d0d",
+		type: "item",
+		items: [{
+			item: "minecraft:golden_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1136b15b",
+		type: "item",
+		items: [{
+			item: "minecraft:golden_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "91abbbbe",
+		type: "item",
+		items: [{
+			item: "minecraft:golden_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9899cc7a",
+		type: "item",
+		item: "minecraft:gold_ingot",
+		count: 10
+	}]
+}

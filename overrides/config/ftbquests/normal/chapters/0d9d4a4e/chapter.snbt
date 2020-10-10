@@ -1,0 +1,13 @@
+{
+	title: "/dank/null",
+	icon: {
+		id: "danknull:dank_null_5",
+		tag: {
+			UUID: "5c043049-4be4-42be-b7e6-535bcde3e09f",
+			selectedIndex: 0
+		}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

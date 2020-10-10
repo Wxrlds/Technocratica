@@ -1,0 +1,115 @@
+{
+	title: "Kitchen Utilities",
+	icon: "cookingforblockheads:cooking_table",
+	x: -10.0d,
+	y: -3.0d,
+	dependencies: [
+		"e330373e"
+	],
+	tasks: [{
+		uid: "72c1e659",
+		type: "item",
+		items: [{
+			item: "harvestcraft:juiceritem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "326640d0",
+		type: "item",
+		items: [{
+			item: "harvestcraft:cuttingboarditem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7673ef03",
+		type: "item",
+		items: [{
+			item: "harvestcraft:potitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c9137983",
+		type: "item",
+		items: [{
+			item: "harvestcraft:skilletitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5b11ecc0",
+		type: "item",
+		items: [{
+			item: "harvestcraft:saucepanitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c18b87c4",
+		type: "item",
+		items: [{
+			item: "harvestcraft:bakewareitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db1e811d",
+		type: "item",
+		items: [{
+			item: "harvestcraft:mortarandpestleitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e809d08c",
+		type: "item",
+		items: [{
+			item: "harvestcraft:mixingbowlitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d619e51a",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:cooking_table"
+		}]
+	},
+	{
+		uid: "a7a7ec76",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:sink"
+		}]
+	},
+	{
+		uid: "15d05931",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:counter"
+		}]
+	},
+	{
+		uid: "4ef654fb",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:cow_jar"
+		}]
+	}],
+	rewards: [{
+		uid: "0e19c126",
+		type: "item",
+		item: "minecraft:apple",
+		random_bonus: 63
+	}]
+}

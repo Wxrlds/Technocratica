@@ -1,0 +1,19 @@
+{
+	x: -11.0d,
+	y: 2.5d,
+	dependencies: [
+		"90d05173"
+	],
+	tasks: [{
+		uid: "16366789",
+		type: "item",
+		items: [{
+			item: "karatgarden:seed_carrot_base"
+		}]
+	}],
+	rewards: [{
+		uid: "87fd0f82",
+		type: "random",
+		table: 18
+	}]
+}

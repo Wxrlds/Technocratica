@@ -1,0 +1,34 @@
+{
+	x: 12.0d,
+	y: 7.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "f142c733",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:alumite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "7f093203",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "848c053c",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "60f15f46",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "8829a0f6",
+		type: "random",
+		table: 17
+	}]
+}

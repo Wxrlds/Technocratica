@@ -1,0 +1,50 @@
+{
+	title: "Steel Armor",
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"79e3af80"
+	],
+	tasks: [{
+		uid: "385a120c",
+		type: "item",
+		items: [{
+			item: "mekanismtools:steelboots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eb151138",
+		type: "item",
+		items: [{
+			item: "mekanismtools:steelleggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3b4b19c2",
+		type: "item",
+		items: [{
+			item: "mekanismtools:steelchestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "71e3ab8d",
+		type: "item",
+		items: [{
+			item: "mekanismtools:steelhelmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0494f749",
+		type: "item",
+		item: "thermalfoundation:material 1 160",
+		count: 15
+	}]
+}

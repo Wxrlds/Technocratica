@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "6b5fc286",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_iron"
+		}]
+	}],
+	rewards: [{
+		uid: "cfdeebbc",
+		type: "item",
+		item: "minecraft:iron_ingot",
+		count: 16
+	}]
+}

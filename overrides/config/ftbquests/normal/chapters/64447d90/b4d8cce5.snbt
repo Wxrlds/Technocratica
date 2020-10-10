@@ -1,0 +1,50 @@
+{
+	title: "Ender Armor",
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"28d145b9"
+	],
+	tasks: [{
+		uid: "68c2a079",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dbda1d8e",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "48d66a7c",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "20bb1143",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c4c5794c",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 8",
+		count: 10
+	}]
+}

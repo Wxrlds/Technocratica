@@ -1,0 +1,10 @@
+{
+	title: "Teleportation",
+	icon: {
+		id: "draconicevolution:dislocator_advanced",
+		tag: {}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

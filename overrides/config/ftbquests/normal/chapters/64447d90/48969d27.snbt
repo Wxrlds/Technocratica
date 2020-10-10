@@ -1,0 +1,50 @@
+{
+	title: "Hardened Leather",
+	x: 14.0d,
+	y: 12.0d,
+	dependencies: [
+		"7622e841"
+	],
+	tasks: [{
+		uid: "66cf073f",
+		type: "item",
+		items: [{
+			item: "harvestcraft:hardenedleatherbootsitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3dcd609b",
+		type: "item",
+		items: [{
+			item: "harvestcraft:hardenedleatherleggingsitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a530e1c5",
+		type: "item",
+		items: [{
+			item: "harvestcraft:hardenedleatherchestitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ab020ec5",
+		type: "item",
+		items: [{
+			item: "harvestcraft:hardenedleatherhelmitem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2cda9a30",
+		type: "item",
+		item: "harvestcraft:hardenedleatheritem",
+		count: 10
+	}]
+}

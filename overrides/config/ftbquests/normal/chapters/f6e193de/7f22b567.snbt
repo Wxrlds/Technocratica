@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"86c90cab"
+	],
+	tasks: [{
+		uid: "6820c537",
+		type: "item",
+		items: [{
+			item: "projectex:matter 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "0b7ab135",
+		type: "random",
+		table: 12
+	}]
+}

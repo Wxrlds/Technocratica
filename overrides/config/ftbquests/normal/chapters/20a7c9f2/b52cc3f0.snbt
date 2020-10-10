@@ -1,0 +1,20 @@
+{
+	x: 8.5d,
+	y: 5.0d,
+	dependencies: [
+		"77215379",
+		"b45267c9"
+	],
+	tasks: [{
+		uid: "fb78f0f1",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:compressor"
+		}]
+	}],
+	rewards: [{
+		uid: "4cb18611",
+		type: "random",
+		table: 13
+	}]
+}

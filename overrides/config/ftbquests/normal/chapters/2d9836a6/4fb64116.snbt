@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "922444c2",
+		type: "item",
+		items: [{
+			item: "rftools:powercell_simple"
+		}]
+	}],
+	rewards: [{
+		uid: "34d2e99c",
+		type: "item",
+		item: "rftools:powercell_card"
+	}]
+}

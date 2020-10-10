@@ -1,0 +1,22 @@
+{
+	x: -1.0d,
+	y: -3.5d,
+	dependencies: [
+		"4736f4db"
+	],
+	tasks: [{
+		uid: "fa60da1b",
+		type: "item",
+		items: [{
+			id: "projectex:magnum_star_drei",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3f8671f9",
+		type: "random",
+		table: 12
+	}]
+}

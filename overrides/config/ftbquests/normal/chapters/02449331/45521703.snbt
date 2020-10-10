@@ -1,0 +1,34 @@
+{
+	x: 14.0d,
+	y: 4.0d,
+	dependencies: [
+		"b3224799"
+	],
+	tasks: [{
+		uid: "859fbb6b",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ghast_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "346e841b",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "a12e8221",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ee5741b5",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "53b03a8c",
+		type: "random",
+		table: 17
+	}]
+}

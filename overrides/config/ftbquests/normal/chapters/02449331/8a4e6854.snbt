@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "41366b59",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:nether_quartz_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "fb2578b4",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "0b4dd544",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "83c0ccd6",
+		type: "random",
+		table: 17
+	}]
+}

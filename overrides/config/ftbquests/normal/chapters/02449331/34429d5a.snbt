@@ -1,0 +1,39 @@
+{
+	x: 19.0d,
+	y: 4.0d,
+	dependencies: [
+		"e4e0e007"
+	],
+	tasks: [{
+		uid: "2fbf4bb7",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:wither_skeleton_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "63126768",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f762b2ee",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "59469f12",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "46041788",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "36bb8439",
+		type: "random",
+		table: 17
+	}]
+}

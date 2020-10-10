@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "90916ef9",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:inventory_food"
+		}]
+	}],
+	rewards: [{
+		uid: "8ee44d28",
+		type: "xp_levels",
+		xp_levels: 30
+	}]
+}

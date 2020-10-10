@@ -1,0 +1,26 @@
+{
+	x: -11.0d,
+	y: 4.5d,
+	dependencies: [
+		"837de456"
+	],
+	tasks: [{
+		uid: "de806053",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 147"
+		}]
+	}],
+	rewards: [{
+		uid: "ee468027",
+		type: "item",
+		item: "tconstruct:metal 1 1",
+		count: 2
+	},
+	{
+		uid: "b703588c",
+		type: "item",
+		item: "modularmachinery:itemmodularium",
+		count: 12
+	}]
+}

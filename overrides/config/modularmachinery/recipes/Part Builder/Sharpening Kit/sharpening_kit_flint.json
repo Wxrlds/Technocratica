@@ -1,0 +1,22 @@
+{
+	"machine": "less_functional_part_builder",
+	"registryName": "sharpening_kit_flint",
+	"recipeTime": 10,
+	"requirements": [{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 100
+		}, {
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:flint",
+			"amount": 3
+		}, {
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:sharpening_kit@0",
+			"nbt": {"Material":"flint"},
+			"amount": 1
+		}
+	]
+}

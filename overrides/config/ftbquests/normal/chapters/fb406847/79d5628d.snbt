@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "f24d5880",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_1"
+		}]
+	}],
+	rewards: [{
+		uid: "19f40b92",
+		type: "item",
+		item: "solarflux:mirror",
+		random_bonus: 1
+	}]
+}

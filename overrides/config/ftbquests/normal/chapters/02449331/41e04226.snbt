@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "2d3681bf",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ardite_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "ca917645",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "f9433249",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ea48ed12",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,54 @@
+{
+	title: "Heart Canisters",
+	x: -1.0d,
+	y: 2.5d,
+	dependencies: [
+		"442c1fb2"
+	],
+	tasks: [{
+		uid: "d040f333",
+		type: "item",
+		items: [{
+			item: "bhc:red_heart_canister"
+		}],
+		count: 64L
+	},
+	{
+		uid: "c220131d",
+		type: "item",
+		items: [{
+			item: "bhc:yellow_heart_canister"
+		}],
+		count: 64L
+	},
+	{
+		uid: "5290e990",
+		type: "item",
+		items: [{
+			item: "bhc:green_heart_canister"
+		}],
+		count: 64L
+	},
+	{
+		uid: "2c72544f",
+		type: "item",
+		items: [{
+			item: "bhc:blue_heart_canister"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "754a55cb",
+		type: "item",
+		item: "bhc:relic_apple",
+		count: 64,
+		random_bonus: 64
+	},
+	{
+		uid: "806b8840",
+		type: "item",
+		item: "minecraft:golden_apple 1 1",
+		count: 64,
+		random_bonus: 64
+	}]
+}

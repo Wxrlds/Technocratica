@@ -1,0 +1,33 @@
+{
+	x: 10.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	dependencies: [
+		"d3bc976c"
+	],
+	hide: true,
+	tasks: [{
+		uid: "cadde598",
+		type: "item",
+		items: [{
+			item: "fluxnetworks:fluxcontroller"
+		}]
+	}],
+	rewards: [{
+		uid: "d9256893",
+		type: "item",
+		item: "fluxnetworks:fluxplug",
+		count: 2
+	},
+	{
+		uid: "5b855a95",
+		type: "item",
+		item: "fluxnetworks:fluxpoint",
+		count: 2
+	},
+	{
+		uid: "edb2a2bb",
+		type: "item",
+		item: "harvestcraft:pineappleupsidedowncakeitem"
+	}]
+}

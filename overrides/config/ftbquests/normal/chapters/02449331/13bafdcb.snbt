@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "d6a1e6c6",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:silver_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "81d4f123",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ced16c36",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "2f9f02c2",
+		type: "random",
+		table: 17
+	}]
+}

@@ -1,0 +1,50 @@
+{
+	title: "Leather Armor",
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"68fed3b7"
+	],
+	tasks: [{
+		uid: "40b312eb",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e2ee34ca",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "99c1fcde",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "26a5aa20",
+		type: "item",
+		items: [{
+			item: "minecraft:leather_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e7ae1c45",
+		type: "item",
+		item: "minecraft:leather",
+		count: 10
+	}]
+}

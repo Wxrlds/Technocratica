@@ -1,0 +1,13 @@
+{
+	title: "Machine Block (ExU)",
+	icon: "extrautils2:machine",
+	loot_size: 2,
+	rewards: [{
+		item: "extrautils2:compressedcobblestone 1 1",
+		count: 36
+	},
+	{
+		item: "extrautils2:decorativesolidwood 1 1",
+		count: 12
+	}]
+}

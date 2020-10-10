@@ -1,0 +1,24 @@
+{
+	x: -1.0d,
+	y: 4.0d,
+	dependencies: [
+		"4a71042a"
+	],
+	tasks: [{
+		uid: "eee13f8c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:cow_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "68474727",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "6a7874be",
+		type: "random",
+		table: 17
+	}]
+}

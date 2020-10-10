@@ -1,0 +1,29 @@
+{
+	x: 1.0d,
+	y: 6.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "5d3cd62b",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:lead_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "e47700ea",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "d480bd25",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "ccffbcf9",
+		type: "random",
+		table: 17
+	}]
+}

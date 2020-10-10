@@ -1,0 +1,50 @@
+{
+	title: "Tin Armor",
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"136b9eb5"
+	],
+	tasks: [{
+		uid: "c7623e04",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.boots_tin"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b108d1a2",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.legs_tin"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8d3cabc6",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.plate_tin"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3ce2fb33",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:armor.helmet_tin"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "44fb50f9",
+		type: "item",
+		item: "thermalfoundation:material 1 129",
+		count: 10
+	}]
+}

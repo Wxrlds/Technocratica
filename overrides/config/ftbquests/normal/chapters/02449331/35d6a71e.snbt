@@ -1,0 +1,29 @@
+{
+	x: 1.0d,
+	y: 7.0d,
+	dependencies: [
+		"5c2ef313"
+	],
+	tasks: [{
+		uid: "eb526dbd",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:electrical_steel_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "0817fe48",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "aad1f418",
+		type: "random",
+		table: 17
+	},
+	{
+		uid: "62f088fe",
+		type: "random",
+		table: 17
+	}]
+}

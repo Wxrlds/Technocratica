@@ -1,0 +1,20 @@
+{
+	x: 11.5d,
+	y: 3.0d,
+	description: "Add one Pattern holder into the Unpackager",
+	dependencies: [
+		"cdc67976"
+	],
+	tasks: [{
+		uid: "6d4ae0cd",
+		type: "item",
+		items: [{
+			item: "packagedauto:unpackager"
+		}]
+	}],
+	rewards: [{
+		uid: "190ea279",
+		type: "random",
+		table: 11
+	}]
+}
