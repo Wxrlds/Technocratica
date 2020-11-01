@@ -1,6 +1,6 @@
 {
 	title: "Copper Armor",
-	x: 4.0d,
+	x: -2.0d,
 	y: 0.0d,
 	dependencies: [
 		"e1a4f409"

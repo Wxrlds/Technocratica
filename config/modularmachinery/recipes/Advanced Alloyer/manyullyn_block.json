@@ -1,0 +1,36 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "manyullyn_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:metal@0",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:metal@1",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:metal@2",
+			"amount": 1
+		}
+	]
+}

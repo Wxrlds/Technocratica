@@ -2,25 +2,31 @@
 	"machine": "less_functional_part_builder",
 	"registryName": "sharpening_kit_sapphire",
 	"recipeTime": 10,
-	"requirements": [{
+	"requirements": [
+		{
 			"type": "energy",
 			"io-type": "input",
 			"energyPerTick": 100
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "biomesoplenty:gem@6",
 			"amount": 2
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "minecraft:flint",
 			"amount": 1
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "output",
 			"item": "tconstruct:sharpening_kit@0",
-			"nbt": {"Material":"sapphire"},
+			"nbt": {
+				"Material": "sapphire"
+			},
 			"amount": 1
 		}
 	]

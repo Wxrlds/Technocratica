@@ -1,0 +1,60 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "pigiron_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:rotten_flesh",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:rotten_flesh",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:rotten_flesh",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:rotten_flesh",
+			"amount": 33
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:clay",
+			"amount": 18
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:iron_block",
+			"amount": 4
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:metal@4",
+			"amount": 4
+		}
+	]
+}

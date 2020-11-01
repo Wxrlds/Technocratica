@@ -1,0 +1,42 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "crude_steel_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "extrautils2:compressedcobblestone@0",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:clay_ball",
+			"amount": 9
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:gravel",
+			"amount": 9
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "enderio:block_alloy_endergy@0",
+			"amount": 1
+		}
+	]
+}

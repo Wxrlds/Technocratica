@@ -1,12 +1,5 @@
 #Chestplate
 #Normal Crafting Table
-#Leather
-recipes.remove(<minecraft:leather_chestplate>);
-recipes.addShaped(<minecraft:leather_chestplate>, [
-	[<ore:leather>, <minecraft:iron_chestplate>, <ore:leather>],
-	[<ore:leather>, <ore:leather>, <ore:leather>],
-	[<ore:leather>, <ore:leather>, <ore:leather>]
-]);
 
 #Gold
 recipes.remove(<minecraft:golden_chestplate>);
@@ -40,11 +33,19 @@ recipes.addShaped(<thermalfoundation:armor.plate_aluminum>, [
 	[<ore:ingotAluminum>, <ore:ingotAluminum>, <ore:ingotAluminum>]
 ]);
 
+#Iron
+recipes.remove(<minecraft:iron_chestplate>);
+recipes.addShaped(<minecraft:iron_chestplate>, [
+	[<ore:ingotIron>, <thermalfoundation:armor.plate_aluminum>, <ore:ingotIron>],
+	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]
+]);
+
 #Tier 1 Crafting Table
 #Void Crystal
 recipes.remove(<actuallyadditions:item_chest_crystal_black>);
 mods.extendedcrafting.TableCrafting.addShaped(1, <actuallyadditions:item_chest_crystal_black>, [
-	[<actuallyadditions:item_crystal:3>, <thermalfoundation:armor.plate_aluminum>, <actuallyadditions:item_crystal:3>],
+	[<actuallyadditions:item_crystal:3>, <minecraft:iron_chestplate>, <actuallyadditions:item_crystal:3>],
 	[<actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>],
 	[<actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>]
 ]);

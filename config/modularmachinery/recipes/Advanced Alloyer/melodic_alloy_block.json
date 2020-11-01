@@ -1,0 +1,42 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "melodic_alloy_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:chorus_fruit_popped",
+			"amount": 9
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "plustic:alumiteblock",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "enderio:block_alloy@8",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "enderio:block_alloy_endergy@2",
+			"amount": 2
+		}
+	]
+}

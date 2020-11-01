@@ -5,8 +5,7 @@ val karatseed = <ore:karatCarrotSeed>;
 val karatseedplus = <ore:karatCarrotSeedPlus>;
 val terracotta = <ore:terracotta>;
 
-<ore:crushedUranium>.add(<bigreactors:dustyellorium>);													
-<ore:dustCoal>.remove(<thermalfoundation:material:768>);													
+<ore:crushedUranium>.add(<bigreactors:dustyellorium>);												
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);													
 <ore:dustLithium>.remove(<ic2:dust:11>);													
 <ore:ingotIridium>.remove(<ic2:misc_resource:1>);													

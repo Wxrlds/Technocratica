@@ -2,106 +2,127 @@
 	"machine": "seed_infuser",
 	"registryName": "craftingseed6",
 	"recipeTime": 60,
-	"requirements": [{
+	"requirements": [
+		{
 			"type": "item",
 			"io-type": "output",
 			"item": "mysticalagradditions:insanium@1",
 			"amount": 1
-		},{
+		},
+		{
 			"type": "energy",
 			"io-type": "input",
 			"energyPerTick": 3200000000
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagradditions:storage@0",
 			"amount": 4
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:crafting@21",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:diamond_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:emerald_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:wither_skeleton_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:uranium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:platinum_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:iridium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:enderium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:draconium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:refined_obsidian_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:iridium_ore_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:uranium_238_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:end_steel_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:vibrant_alloy_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:manyullyn_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:amber_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:topaz_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:ender_amethyst_essence",

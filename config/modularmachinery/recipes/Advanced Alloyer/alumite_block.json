@@ -1,0 +1,42 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "alumite_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:storage@4",
+			"amount": 5
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:obsidian",
+			"amount": 2
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:iron_block",
+			"amount": 2
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "plustic:alumiteblock",
+			"amount": 3
+		}
+	]
+}

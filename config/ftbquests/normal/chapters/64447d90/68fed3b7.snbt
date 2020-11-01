@@ -1,7 +1,10 @@
 {
 	title: "Iron Armor",
-	x: -2.0d,
-	y: 2.0d,
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"c1c22862"
+	],
 	tasks: [{
 		uid: "74c81119",
 		type: "item",

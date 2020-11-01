@@ -1,12 +1,5 @@
 #Helmet
 #Normal Crafting Table
-#Leather
-recipes.remove(<minecraft:leather_helmet>);
-recipes.addShaped(<minecraft:leather_helmet>, [
-	[<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>],
-	[<ore:itemLeather>, <minecraft:iron_helmet>, <ore:itemLeather>],
-	[null, null, null]
-]);
 
 #Gold
 recipes.remove(<minecraft:golden_helmet>);
@@ -40,12 +33,20 @@ recipes.addShaped(<thermalfoundation:armor.helmet_aluminum>, [
 	[null, null, null]
 ]);
 
+#Iron
+recipes.remove(<minecraft:iron_helmet>);
+recipes.addShaped(<minecraft:iron_helmet>, [
+	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+	[<ore:ingotIron>, <thermalfoundation:armor.helmet_aluminum>, <ore:ingotIron>],
+	[null, null, null]
+]);
+
 #Tier 1 Crafting Table
 #Void Crystal
 recipes.remove(<actuallyadditions:item_helm_crystal_black>);
 mods.extendedcrafting.TableCrafting.addShaped(1, <actuallyadditions:item_helm_crystal_black>, [
 	[<actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>],
-	[<actuallyadditions:item_crystal:3>, <thermalfoundation:armor.helmet_aluminum>, <actuallyadditions:item_crystal:3>],
+	[<actuallyadditions:item_crystal:3>, <minecraft:iron_helmet>, <actuallyadditions:item_crystal:3>],
 	[null, null, null]
 ]);
 

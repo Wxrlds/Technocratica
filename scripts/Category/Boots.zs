@@ -1,12 +1,5 @@
 #Boots
 #Normal Crafting Table
-#Leather
-recipes.remove(<minecraft:leather_boots>);
-recipes.addShaped(<minecraft:leather_boots>, [
-	[null, null, null],
-	[<ore:itemLeather>, null, <ore:itemLeather>],
-	[<ore:itemLeather>, <minecraft:iron_boots>, <ore:itemLeather>]
-]);
 
 #Gold
 recipes.remove(<minecraft:golden_boots>);
@@ -40,13 +33,38 @@ recipes.addShaped(<thermalfoundation:armor.boots_aluminum>, [
 	[<ore:ingotAluminium>, <thermalfoundation:armor.boots_copper>, <ore:ingotAluminium>]
 ]);
 
+#Iron
+recipes.remove(<minecraft:iron_boots>);
+recipes.addShaped(<minecraft:iron_boots>, [
+	[null, null, null],
+	[<ore:ingotAluminium>, null, <ore:ingotAluminium>],
+	[<ore:ingotAluminium>, <thermalfoundation:armor.boots_aluminum>, <ore:ingotAluminium>]
+]);
+
+#Slime Boots
+recipes.remove(<tconstruct:slime_boots:*>);
+#Green
+recipes.addShaped(<tconstruct:slime_boots>, [[null, null, null],[<ore:slimeballGreen>, null, <ore:slimeballGreen>], [<tconstruct:slime_congealed>, <minecraft:iron_boots>, <tconstruct:slime_congealed>]]);
+#Blue
+recipes.addShaped(<tconstruct:slime_boots:1>, [[null, null, null],[<ore:slimeballBlue>, null, <ore:slimeballBlue>], [<tconstruct:slime_congealed:1>, <minecraft:iron_boots>, <tconstruct:slime_congealed:1>]]);
+#Purple
+recipes.addShaped(<tconstruct:slime_boots:2>, [[null, null, null],[<ore:slimeballPurple>, null, <ore:slimeballPurple>], [<tconstruct:slime_congealed:2>, <minecraft:iron_boots>, <tconstruct:slime_congealed:2>]]);
+#Blood
+recipes.addShaped(<tconstruct:slime_boots:3>, [[null, null, null],[<ore:slimeballBlood>, null, <ore:slimeballBlood>], [<tconstruct:slime_congealed:3>, <minecraft:iron_boots>, <tconstruct:slime_congealed:3>]]);
+#Magma
+recipes.addShaped(<tconstruct:slime_boots:4>, [[null, null, null],[<ore:slimeballMagma>, null, <ore:slimeballMagma>], [<tconstruct:slime_congealed:4>, <minecraft:iron_boots>, <tconstruct:slime_congealed:4>]]);
+
+#Longfall Boots
+recipes.remove(<longfallboots:longfallboots>);
+recipes.addShaped(<longfallboots:longfallboots>, [[<ore:ingotIron>, <rftools:featherfallingplus_module>, <ore:ingotIron>],[<ore:obsidian>, <tconstruct:slime_boots:*>, <ore:obsidian>], [<ore:gemDiamond>, null, <ore:gemDiamond>]]);
+
 #Tier 1 Crafting Table
 #Void Crystal
 recipes.remove(<actuallyadditions:item_boots_crystal_black>);
 mods.extendedcrafting.TableCrafting.addShaped(1, <actuallyadditions:item_boots_crystal_black>, [
 	[null, null, null],
 	[<actuallyadditions:item_crystal:3>, null, <actuallyadditions:item_crystal:3>],
-	[<actuallyadditions:item_crystal:3>, <thermalfoundation:armor.boots_aluminum>, <actuallyadditions:item_crystal:3>]
+	[<actuallyadditions:item_crystal:3>, <longfallboots:longfallboots>, <actuallyadditions:item_crystal:3>]
 ]);
 
 #Chain
@@ -541,7 +559,3 @@ recipes.remove(<projecte:item.pe_gem_armor_0>);
 
 #Infinity
 mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_boots>);
-
-#Longfall Boots
-recipes.remove(<longfallboots:longfallboots>);
-recipes.addShaped(<longfallboots:longfallboots>, [[<ore:ingotIron>, <rftools:featherfallingplus_module>, <ore:ingotIron>],[<ore:obsidian>, <tconstruct:slime_boots:*>, <ore:obsidian>], [<ore:gemDiamond>, null, <ore:gemDiamond>]]);
