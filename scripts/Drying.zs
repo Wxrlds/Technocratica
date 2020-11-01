@@ -1,0 +1,1 @@
+mods.tconstruct.Drying.addRecipe(<minecraft:hardened_clay>, <minecraft:clay>, 1200);

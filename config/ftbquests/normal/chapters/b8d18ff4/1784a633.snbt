@@ -1,21 +1,44 @@
 {
-	x: 7.5d,
-	y: 5.5d,
+	x: 9.0d,
+	y: 2.5d,
 	dependencies: [
-		"7cc0249d"
+		"90893fc9",
+		"f3b7cf96",
+		"9bec1aee",
+		"b78beb69",
+		"fb406847",
+		"baabe543",
+		"337507f9",
+		"45e0378d",
+		"41ed6682",
+		"0d9d4a4e",
+		"64447d90",
+		"02449331",
+		"20a7c9f2",
+		"7cc0249d",
+		"2d9836a6",
+		"f6e193de"
 	],
+	hide: true,
 	tasks: [{
-		uid: "5a2b077e",
+		uid: "e1cbfe84",
 		type: "item",
 		items: [{
-			item: "storagedrawers:upgrade_creative 1 1"
+			id: "appliedenergistics2:creative_storage_cell",
+			tag: {}
 		}],
-		ignore_nbt: 2b
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "78fa355f",
+		uid: "0c2db6fc",
 		type: "command",
 		auto: "invisible",
-		command: "/say @p's drawers own a Creative Storage Upgrade"
+		command: "/say @p completed the Modpack by receiving the Creative ME Storage Cell. Wxrlds (the Pack Author) is happy you sticked so long with the Modpack!"
+	},
+	{
+		uid: "89e7fc88",
+		type: "item",
+		item: "appliedenergistics2:cell_workbench"
 	}]
 }

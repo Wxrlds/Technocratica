@@ -1,0 +1,36 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "invar_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:storage@5",
+			"amount": 2
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:iron_block",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "thermalfoundation:storage_alloy@2",
+			"amount": 3
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "knightslime_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:materials@0",
+			"amount": 36
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "tconstruct:edible@2",
+			"amount": 9
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:iron_block",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:metal@3",
+			"amount": 1
+		}
+	]
+}

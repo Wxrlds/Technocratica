@@ -2,21 +2,25 @@
 	"machine": "ore_quintupling_machine",
 	"registryName": "uran",
 	"recipeTime": 1,
-	"requirements": [{
+	"requirements": [
+		{
 			"type": "energy",
 			"io-type": "input",
 			"energyPerTick": 300
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "ic2:resource@4",
 			"amount": 1
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "thermalfoundation:material@771",
 			"amount": 1
-		}, {
+		},
+		{
 			"type": "item",
 			"io-type": "output",
 			"item": "ic2:ingot@8",

@@ -1,0 +1,42 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "vibrant_alloy_block",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "minecraft:ender_pearl",
+			"amount": 9
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "enderio:block_alloy_endergy@6",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:storage_alloy@4",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "enderio:block_alloy@2",
+			"amount": 2
+		}
+	]
+}

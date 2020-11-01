@@ -2,171 +2,205 @@
 	"machine": "seed_infuser",
 	"registryName": "craftingseed5",
 	"recipeTime": 50,
-	"requirements": [{
+	"requirements": [
+		{
 			"type": "item",
 			"io-type": "output",
 			"item": "mysticalagriculture:crafting@21",
 			"amount": 1
-		},{
+		},
+		{
 			"type": "energy",
 			"io-type": "input",
 			"energyPerTick": 400000000
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:storage@4",
 			"amount": 4
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:crafting@20",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:gold_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:lapis_lazuli_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:end_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:experience_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:blaze_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:ghast_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:enderman_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:ruby_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:mithril_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:invar_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:electrum_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:constantan_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:constantan_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:steel_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:sapphire_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:peridot_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:signalum_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:lumium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:fluxed_electrum_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:cobalt_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:soularium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:fluix_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:alumite_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:glowstone_ingot_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:osmium_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:energetic_alloy_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:pulsating_iron_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:dark_steel_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:tanzanite_essence",
 			"amount": 1
-		},  {
+		},
+		{
 			"type": "item",
 			"io-type": "input",
 			"item": "mysticalagriculture:malachite_essence",

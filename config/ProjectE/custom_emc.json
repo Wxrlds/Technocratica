@@ -899,6 +899,74 @@
     {
       "item": "mekanism:energycube|0",
       "emc": 0
+    },
+    {
+      "item": "backportedflora:cornflower|0",
+      "emc": 16
+    },
+    {
+      "item": "backportedflora:lily_of_the_valley|0",
+      "emc": 16
+    },
+    {
+      "item": "backportedflora:wither_rose|0",
+      "emc": 16
+    },
+    {
+      "item": "backportedflora:kelp|0",
+      "emc": 1
+    },
+    {
+      "item": "backportedflora:seagrass|0",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|1",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|11",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|5",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|6",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|7",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|8",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|9",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|10",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|12",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|13",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:dye|14",
+      "emc": 1
+    },
+    {
+      "item": "projecte:item.pe_tome|0",
+      "emc": 13300721472
     }
   ]
 }

@@ -9,11 +9,8 @@
 	],
 	hide: true,
 	tasks: [{
-		uid: "beb36a1f",
-		type: "item",
-		items: [{
-			item: "minecraft:cobblestone"
-		}]
+		uid: "4df31f2b",
+		type: "checkmark"
 	}],
 	rewards: [{
 		uid: "f9839e96",

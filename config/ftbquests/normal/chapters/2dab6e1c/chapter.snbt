@@ -1,6 +1,6 @@
 {
 	title: "Repeatable Quests",
-	icon: "minecraft:cobblestone",
+	icon: "modularmachinery:itemblueprint",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: ""

@@ -16,15 +16,5 @@
 		type: "item",
 		item: "thermalfoundation:material 1 293",
 		count: 24
-	},
-	{
-		uid: "e05c080c",
-		type: "item",
-		item: {
-			id: "modularmachinery:itemblueprint",
-			tag: {
-				dynamicmachine: "modularmachinery:seed_infuser"
-			}
-		}
 	}]
 }

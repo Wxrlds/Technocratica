@@ -25,10 +25,12 @@ val knife = <tconstruct:knife_blade>;
 val bow = <tconstruct:bow_limb>;
 val arrow = <tconstruct:arrow_head>;
 val chisel = <tcomplement:chisel_head>;
+
 recipes.addShapeless("AA_Black_Quartz_From_Block",<actuallyadditions:item_misc:5>*4,[<actuallyadditions:block_misc:2>]);
 recipes.addShapeless("AdvSolPan_Sunnarium_Uncrafting",<advanced_solar_panels:crafting:1> * 9, [<advanced_solar_panels:crafting>]);
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
 recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>|<ore:crystalPureFluix>,<ore:crystalFluix>|<ore:crystalPureFluix>,<projectred-transportation:pipe>]);
+recipes.addShapeless("AvaritiasComplement_Pickaxe_Remove_Upgrade",<avaritia:infinity_pickaxe>,[<avaritia:infinity_pickaxe>]);
 recipes.addShapeless("Bonsai_Hopping_Bonsai",<bonsaitrees:bonsaipot:1>, [<bonsaitrees:bonsaipot>,<cyclicmagic:block_forester>,<minecraft:hopper>]);
 recipes.addShapeless("BoP_Music_Disc",<biomesoplenty:record_wanderer>, [<mysticalagriculture:crafting:14>,<biomesoplenty:terrestrial_artifact>,<mysticalagriculture:skeleton_essence>,<mysticalagriculture:creeper_essence>]);
 recipes.addShapeless("BoP_Plank_Cherry",<biomesoplenty:planks_0:1>,[<biomesoplenty:log_0:5>]);
@@ -37,7 +39,6 @@ recipes.addShapeless("BoP_Plank_Ethereal",<biomesoplenty:planks_0:4>,[<biomesopl
 recipes.addShapeless("BoP_Plank_Eucalyptus",<biomesoplenty:planks_0:15>,[<biomesoplenty:log_3:7>]);
 recipes.addShapeless("BoP_Plank_Fir",<biomesoplenty:planks_0:3>,[<biomesoplenty:log_0:7>]);
 recipes.addShapeless("BoP_Plank_Hellbark",<biomesoplenty:planks_0:11>,[<biomesoplenty:log_2:7>]);
-recipes.addShapeless("AvaritiasComplement_Pickaxe_Remove_Upgrade",<avaritia:infinity_pickaxe>,[<avaritia:infinity_pickaxe>]);
 recipes.addShapeless("BoP_Plank_Jacaranda",<biomesoplenty:planks_0:12>,[<biomesoplenty:log_3:4>]);
 recipes.addShapeless("BoP_Plank_Magic",<biomesoplenty:planks_0:5>,[<biomesoplenty:log_1:5>]);
 recipes.addShapeless("BoP_Plank_Mahogany",<biomesoplenty:planks_0:13>,[<biomesoplenty:log_3:5>]);
@@ -77,6 +78,7 @@ recipes.addShapeless("ExtendedCrafting_Crystaltine_Component",<extendedcrafting:
 recipes.addShapeless("ExtendedCrafting_Elite_Component",<extendedcrafting:material:16>,[<extendedcrafting:material:15>,<extendedcrafting:material:7>,<ore:gemDiamond>,<ore:gemDiamond>]);
 recipes.addShapeless("ExtendedCrafting_The_Ultimate_Component",<extendedcrafting:material:19>,[<extendedcrafting:material:18>,<extendedcrafting:material:7>,<ore:ingotUltimate>,<ore:ingotUltimate>]);
 recipes.addShapeless("ExtendedCrafting_Ultimate_Component",<extendedcrafting:material:17>,[<extendedcrafting:material:16>,<extendedcrafting:material:7>,<ore:gemEmerald>,<ore:gemEmerald>]);
+recipes.addShapeless("ExU2_Mechanical_User",<extrautils2:user>, [<minecraft:dropper>,<extrautils2:ingredients>,<minecraft:lever>,<actuallyadditions:block_misc:9>]);
 recipes.addShapeless("ExU2_Plank_Ironwood1",<extrautils2:ironwood_planks:1>,[<extrautils2:ironwood_log:1>]);
 recipes.addShapeless("ExU2_Plank_Ironwood2",<extrautils2:ironwood_planks>,[<extrautils2:ironwood_log>]);
 recipes.addShapeless("HarvestCraft_Hardened_Leather",<harvestcraft:hardenedleatheritem>,[<minecraft:leather>,<harvestcraft:beeswaxitem>,<harvestcraft:rhubarbitem>,<harvestcraft:rhubarbitem>]);
@@ -119,6 +121,8 @@ recipes.addShapeless("Minecraft_Sticky_Piston_Slime",<minecraft:sticky_piston>, 
 recipes.addShapeless("Minecraft_Sticky_Piston_Tar",<minecraft:sticky_piston>, [<thermalfoundation:material:833>,<minecraft:piston>]);
 recipes.addShapeless("Minecraft_Terracotta_to_Brick",<minecraft:brick_block>, [<ore:terracotta>]);
 recipes.addShapeless("Minecraft_Tiny_Coal_To_Coal",<minecraft:coal>,[<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>]);
+recipes.addShapeless("OpenBlocks_Building_Guide_Reset",<openblocks:guide>,[<openblocks:guide>]);
+recipes.addShapeless("OpenBlocks_Enhanced_Building_Guide_Reset",<openblocks:builder_guide>,[<openblocks:builder_guide>]);
 recipes.addShapeless("Portality_Portal_Controller",<portality:controller>,[<actuallyadditions:item_tele_staff>,<notenoughwands:teleportation_wand>,<cyclicmagic:tool_elevate>,<portality:frame>,<minecraft:fire_charge>,<portality:frame>,<cyclicmagic:tool_warp_spawn>,<quark:blaze_lantern>,<cyclicmagic:tool_warp_home>]);
 recipes.addShapeless("ProjectE_Blue_Alch_Uncraft",<projecte:item.pe_fuel:2>*4,[<contenttweaker:blue_alch>]);
 recipes.addShapeless("ProjectE_Dark_Matter_Uncraft",<projecte:item.pe_matter>*4,[<projecte:matter_block>]);
@@ -137,7 +141,6 @@ recipes.addShapeless("ThermalFound_Gold_Plate",<thermalfoundation:material:33>*6
 recipes.addShapeless("ThermalFound_Iron_Plate",<thermalfoundation:material:32>*6,[<ore:craftingToolForgeHammer>,<ore:blockIron>]);
 recipes.addShapeless("ThermalFound_Lead_Plate",<thermalfoundation:material:323>*6,[<ore:craftingToolForgeHammer>,<ore:blockLead>]);
 recipes.addShapeless("ThermalFound_Tin_Plate",<thermalfoundation:material:321>*6,[<ore:craftingToolForgeHammer>,<ore:blockTin>]);
-recipes.addShapeless("TiC_Crafting_Station",<tconstruct:tooltables>, [<ore:logWood>,<ore:craftingTableWood>]);
 recipes.addShapeless("TiC_Aluminium_Plate",<thermalfoundation:material:324>*6,[<ore:craftingToolForgeHammer>,<ore:blockAluminium>]);
 recipes.addShapeless("TiC_Aluminum_Plate",<thermalfoundation:material:324>*6,[<ore:craftingToolForgeHammer>,<ore:blockAluminum>]);
 recipes.addShapeless("TiC_Ardite_Plate",<jaopca:item_plateardite>*6,[<ore:craftingToolForgeHammer>,<ore:blockArdite>]);
@@ -303,6 +306,7 @@ recipes.addShapeless("TiC_Chaotic_TToolRod_1",ttoolrod.withTag({Material: "chaot
 recipes.addShapeless("TiC_Chaotic_TToolRod_2",ttoolrod.withTag({Material: "chaoticdraconium"}), [ttoolrod.withTag({Material: "chaotic_plustic"})]);
 recipes.addShapeless("TiC_Chaotic_WideGuard_1",wideguard.withTag({Material: "chaotic_plustic"}), [wideguard.withTag({Material: "chaoticdraconium"})]);
 recipes.addShapeless("TiC_Chaotic_WideGuard_2",wideguard.withTag({Material: "chaoticdraconium"}), [wideguard.withTag({Material: "chaotic_plustic"})]);
+recipes.addShapeless("TiC_Crafting_Station",<tconstruct:tooltables>, [<ore:logWood>,<ore:craftingTableWood>]);
 recipes.addShapeless("TiC_Enderium_Arrow_1",arrow.withTag({Material: "enderium_plustic"}), [arrow.withTag({Material: "enderium"})]);
 recipes.addShapeless("TiC_Enderium_Arrow_2",arrow.withTag({Material: "enderium"}), [arrow.withTag({Material: "enderium_plustic"})]);
 recipes.addShapeless("TiC_Enderium_Axe_1",axe.withTag({Material: "enderium_plustic"}), [axe.withTag({Material: "enderium"})]);

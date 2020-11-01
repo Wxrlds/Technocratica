@@ -86,6 +86,7 @@ val addItems=[
 <forge:bucketfilled>.withTag({FluidName: "refinedglowstone", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "refinedobsidian", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "tin", Amount: 1000}),
+<minecraft:potion>.withTag({CustomPotionEffects: [{Duration: 3600, Id: 17 as byte, Amplifier: "127b"}], CustomPotionColor: 1470027, display: {Name: "Strong Potion of Hunger"}}),
 <ic2:ingot:8>
 ] as IItemStack [];
 for item in addItems {
@@ -159,5 +160,5 @@ val KaratSeeds=[
 <karatgarden:seed_carrot_base>
 ] as IItemStack [];
 for seed in KaratSeeds {
-mods.jei.JEI.addDescription(seed,"Craft two Normal or Plus Seeds together to obtain the other kind of Seed.");
+mods.jei.JEI.addDescription(seed,"Craft two Normal or two Plus Seeds together to obtain the other kind of Seed.");
 }

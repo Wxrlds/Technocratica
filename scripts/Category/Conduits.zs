@@ -1,14 +1,14 @@
 #Crude
 recipes.remove(<enderio:item_endergy_conduit:0>);
-recipes.addShaped("Crude_Energy_Conduit",<enderio:item_endergy_conduit> *16, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_alloy_endergy_ingot>, <xnet:netcable>, <enderio:item_alloy_endergy_ingot>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
+recipes.addShaped("Crude_Energy_Conduit",<enderio:item_endergy_conduit> *8, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_alloy_endergy_ingot>, <xnet:netcable>, <enderio:item_alloy_endergy_ingot>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
 
 #Iron
 recipes.remove(<enderio:item_endergy_conduit:1>);
-recipes.addShaped("Iron_Energy_Conduit",<enderio:item_endergy_conduit:1> *16, [[<enderio:item_alloy_ingot:9>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_endergy_conduit>, <enderio:item_material:75>, <enderio:item_material:4>], [<enderio:item_alloy_ingot:9>, <enderio:item_material:4>, <enderio:item_material:4>]]);
+recipes.addShaped("Iron_Energy_Conduit",<enderio:item_endergy_conduit:1> *3, [[<enderio:item_alloy_ingot:9>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_endergy_conduit>, <enderio:item_material:75>, <enderio:item_material:4>], [<enderio:item_alloy_ingot:9>, <enderio:item_material:4>, <enderio:item_material:4>]]);
 
 #Aluminum
 recipes.remove(<enderio:item_endergy_conduit:2>);
-recipes.addShaped("Aluminum_Energy_Conduit",<enderio:item_endergy_conduit:2> *16, [
+recipes.addShaped("Aluminum_Energy_Conduit",<enderio:item_endergy_conduit:2> *3, [
 	[<ore:ingotAluminum>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:1>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotAluminum>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -16,7 +16,7 @@ recipes.addShaped("Aluminum_Energy_Conduit",<enderio:item_endergy_conduit:2> *16
 
 #Gold
 recipes.remove(<enderio:item_endergy_conduit:3>);
-recipes.addShaped("Gold_Energy_Conduit",<enderio:item_endergy_conduit:3> *16, [
+recipes.addShaped("Gold_Energy_Conduit",<enderio:item_endergy_conduit:3> *3, [
 	[<ore:ingotGold>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:2>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotGold>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -24,7 +24,7 @@ recipes.addShaped("Gold_Energy_Conduit",<enderio:item_endergy_conduit:3> *16, [
 
 #Copper
 recipes.remove(<enderio:item_endergy_conduit:4>);
-recipes.addShaped("Copper_Energy_Conduit",<enderio:item_endergy_conduit:4> *16, [
+recipes.addShaped("Copper_Energy_Conduit",<enderio:item_endergy_conduit:4> *3, [
 	[<ore:ingotCopper>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:3>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotCopper>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -32,7 +32,7 @@ recipes.addShaped("Copper_Energy_Conduit",<enderio:item_endergy_conduit:4> *16, 
 
 #Conductive Iron
 recipes.remove(<enderio:item_power_conduit>);
-recipes.addShaped("Conductive_Iron_Energy_Conduit",<enderio:item_power_conduit> *16, [
+recipes.addShaped("Conductive_Iron_Energy_Conduit",<enderio:item_power_conduit> *3, [
 	[<ore:ingotConductiveIron>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:4>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotConductiveIron>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -42,7 +42,7 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material>
 
 #Silver
 recipes.remove(<enderio:item_endergy_conduit:5>);
-recipes.addShaped("Silver_Energy_Conduit",<enderio:item_endergy_conduit:5> *16, [
+recipes.addShaped("Silver_Energy_Conduit",<enderio:item_endergy_conduit:5> *3, [
 	[<ore:ingotSilver>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_power_conduit>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotSilver>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -50,7 +50,7 @@ recipes.addShaped("Silver_Energy_Conduit",<enderio:item_endergy_conduit:5> *16, 
 
 #Electrum
 recipes.remove(<enderio:item_endergy_conduit:6>);
-recipes.addShaped("Electrum_Energy_Conduit",<enderio:item_endergy_conduit:6> *16, [
+recipes.addShaped("Electrum_Energy_Conduit",<enderio:item_endergy_conduit:6> *3, [
 	[<ore:ingotElectrum>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:5>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotElectrum>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -58,7 +58,7 @@ recipes.addShaped("Electrum_Energy_Conduit",<enderio:item_endergy_conduit:6> *16
 
 #Energetic Alloy
 recipes.remove(<enderio:item_power_conduit:1>);
-recipes.addShaped("Energetic_Alloy_Energy_Conduit",<enderio:item_power_conduit:1> *16, [
+recipes.addShaped("Energetic_Alloy_Energy_Conduit",<enderio:item_power_conduit:1> *3, [
 	[<ore:ingotEnergeticAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:6>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotEnergeticAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -66,7 +66,7 @@ recipes.addShaped("Energetic_Alloy_Energy_Conduit",<enderio:item_power_conduit:1
 
 #Energetic Silver Alloy
 recipes.remove(<enderio:item_endergy_conduit:7>);
-recipes.addShaped("Energetic_Silver_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:7> *16, [
+recipes.addShaped("Energetic_Silver_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:7> *3, [
 	[<ore:ingotEnergeticSilver>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_power_conduit:1>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotEnergeticSilver>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -74,7 +74,7 @@ recipes.addShaped("Energetic_Silver_Alloy_Energy_Conduit",<enderio:item_endergy_
 
 #Vibrant Alloy
 recipes.remove(<enderio:item_power_conduit:2>);
-recipes.addShaped("Vibrant_Alloy_Energy_Conduit",<enderio:item_power_conduit:2> *16, [
+recipes.addShaped("Vibrant_Alloy_Energy_Conduit",<enderio:item_power_conduit:2> *3, [
 	[<ore:ingotVibrantAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:7>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotVibrantAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -83,7 +83,7 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>
 
 #Crystalline Ingot
 recipes.remove(<enderio:item_endergy_conduit:8>);
-recipes.addShaped("Crystalline_Ingot_Energy_Conduit",<enderio:item_endergy_conduit:8> *16, [
+recipes.addShaped("Crystalline_Ingot_Energy_Conduit",<enderio:item_endergy_conduit:8> *3, [
 	[<ore:ingotCrystallineAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_power_conduit:2>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotCrystallineAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -91,7 +91,7 @@ recipes.addShaped("Crystalline_Ingot_Energy_Conduit",<enderio:item_endergy_condu
 
 #Crystalline Pink Slime
 recipes.remove(<enderio:item_endergy_conduit:9>);
-recipes.addShaped("Crystalline_Pink_Slime_Energy_Conduit",<enderio:item_endergy_conduit:9> *16, [
+recipes.addShaped("Crystalline_Pink_Slime_Energy_Conduit",<enderio:item_endergy_conduit:9> *3, [
 	[<ore:ingotCrystallinePinkSlime>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:8>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotCrystallinePinkSlime>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -99,7 +99,7 @@ recipes.addShaped("Crystalline_Pink_Slime_Energy_Conduit",<enderio:item_endergy_
 
 #Melodic Alloy
 recipes.remove(<enderio:item_endergy_conduit:10>);
-recipes.addShaped("Melodic_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:10> *16, [
+recipes.addShaped("Melodic_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:10> *3, [
 	[<ore:ingotMelodicAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:9>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotMelodicAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -107,7 +107,7 @@ recipes.addShaped("Melodic_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:1
 
 #Stellar Alloy
 recipes.remove(<enderio:item_endergy_conduit:11>);
-recipes.addShaped("Stellar_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:11> *16, [
+recipes.addShaped("Stellar_Alloy_Energy_Conduit",<enderio:item_endergy_conduit:11> *3, [
 	[<ore:ingotStellarAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],
 	[<enderio:item_endergy_conduit:10>, <ore:itemInfinityGoop>, <ore:itemConduitBinder>],
 	[<ore:ingotStellarAlloy>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
@@ -124,9 +124,6 @@ recipes.addShaped("Item_Condiut",<enderio:item_item_conduit> * 8, [[<ore:itemCon
 #Fluid Conduit
 recipes.remove(<enderio:item_liquid_conduit>);
 recipes.addShaped("Fluid_Conduit",<enderio:item_liquid_conduit> * 8, [[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>],[<ore:fusedGlass>, <xnet:netcable>, <ore:fusedGlass>], [<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]]);
-
-#Stellar Fluid Conduit
-recipes.removeByRecipeName("stellarfluidconduits:item_fluid_conduit");
 
 #Actually Fluid Laser
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_laser_relay_fluids>);

@@ -1,24 +1,24 @@
 [
-    {
-        "mode": "ADD",
-        "result": "projecte:item.pe_gem_armor_0",
-        "catalyst": "projecte:item.pe_rm_armor_0",
-        "energy": 500000,
-        "tier": 1,
-        "ingredients": [
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:matter_block",
-			"projecte:matter_block",
-			"projecte:matter_block",
-			"projecte:matter_block",
-			"projecte:matter_block",
+	{
+		"mode": "ADD",
+		"result": "projecte:item.pe_gem_armor_0",
+		"catalyst": "projecte:item.pe_rm_armor_0",
+		"energy": 500000,
+		"tier": 1,
+		"ingredients": [
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
 			"minecraft:feather",
 			"minecraft:feather",
 			"minecraft:feather",
@@ -26,42 +26,42 @@
 			"minecraft:feather",
 			"projecte:item.pe_ring_iron_band",
 			"projecte:item.pe_ring_iron_band"
-        ]
-    },
-    {
-        "mode": "REMOVE",
-        "result": "draconicevolution:draconic_boots",
-        "catalyst": "draconicevolution:wyvern_boots"
-    },	
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconic_boots",
-        "catalyst": "projecte:item.pe_gem_armor_0",
-        "energy": 10000000,
-        "tier": 2,
-        "ingredients": [
+		]
+	},
+	{
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_boots",
+		"catalyst": "draconicevolution:wyvern_boots"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_boots",
+		"catalyst": "projecte:item.pe_gem_armor_0",
+		"energy": 10000000,
+		"tier": 2,
+		"ingredients": [
 			"draconicevolution:draconic_energy_core",
-            "draconicevolution:awakened_core",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot"
-        ]
-    },
-    {
-        "mode": "ADD",
-        "result": "avaritia:infinity_boots",
-        "catalyst": "draconicevolution:draconic_boots",
+			"draconicevolution:awakened_core",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot"
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "avaritia:infinity_boots",
+		"catalyst": "draconicevolution:draconic_boots",
 		"energy": 100000000,
-		"tier":3,
+		"tier": 3,
 		"ingredients": [
 			"avaritia:block_resource,1,2",
 			"avaritia:block_resource",
-            "avaritia:resource,1,6",
+			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
@@ -69,26 +69,27 @@
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6"
-			]
-    },{
-        "mode": "ADD",
-        "result": "projecte:item.pe_gem_armor_1",
-        "catalyst": "projecte:item.pe_rm_armor_1",
-        "energy": 500000,
-        "tier": 1,
-        "ingredients": [
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:matter_block",
-            "projecte:matter_block",
-            "projecte:matter_block",
-            "minecraft:glowstone",
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "projecte:item.pe_gem_armor_1",
+		"catalyst": "projecte:item.pe_rm_armor_1",
+		"energy": 500000,
+		"tier": 1,
+		"ingredients": [
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
+			"projectex:matter,1,4",
+			"minecraft:glowstone",
 			"minecraft:obsidian",
 			"minecraft:clock",
 			"projecte:item.pe_ring_iron_band",
@@ -97,42 +98,42 @@
 			"ore:wool",
 			"ore:wool",
 			"ore:wool"
-        ]
-    },
-    {
-        "mode": "REMOVE",
-        "result": "draconicevolution:draconic_legs",
-        "catalyst": "draconicevolution:wyvern_legs"
-    },	
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconic_legs",
-        "catalyst": "projecte:item.pe_gem_armor_1",
-        "energy": 10000000,
-        "tier": 2,
-        "ingredients": [
+		]
+	},
+	{
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_legs",
+		"catalyst": "draconicevolution:wyvern_legs"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_legs",
+		"catalyst": "projecte:item.pe_gem_armor_1",
+		"energy": 10000000,
+		"tier": 2,
+		"ingredients": [
 			"draconicevolution:draconic_energy_core,1",
-            "draconicevolution:awakened_core",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot"
-        ]
-    },
-    {
-        "mode": "ADD",
-        "result": "avaritia:infinity_pants",
-        "catalyst": "draconicevolution:draconic_legs",
+			"draconicevolution:awakened_core",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot"
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "avaritia:infinity_pants",
+		"catalyst": "draconicevolution:draconic_legs",
 		"energy": 100000000,
-		"tier":3,
+		"tier": 3,
 		"ingredients": [
 			"avaritia:block_resource,1,2",
 			"avaritia:block_resource",
-            "avaritia:resource,1,6",
+			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
@@ -140,26 +141,27 @@
 			"avaritia:resource,1,5",
 			"avaritia:resource,1,5",
 			"avaritia:resource,1,5"
-			]
-    },{
-        "mode": "ADD",
-        "result": "projecte:item.pe_gem_armor_3",
-        "catalyst": "projecte:item.pe_rm_armor_3",
-        "energy": 500000,
-        "tier": 1,
-        "ingredients": [
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:matter_block,1,1",
-            "projecte:matter_block,1,1",
-            "projecte:matter_block",
-            "minecraft:glowstone",
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "projecte:item.pe_gem_armor_3",
+		"catalyst": "projecte:item.pe_rm_armor_3",
+		"energy": 500000,
+		"tier": 1,
+		"ingredients": [
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projectex:matter,1,5",
+			"projectex:matter,1,5",
+			"projectex:matter,1,4",
+			"minecraft:glowstone",
 			"minecraft:glowstone",
 			"minecraft:glowstone",
 			"minecraft:glowstone",
@@ -168,42 +170,42 @@
 			"minecraft:iron_block",
 			"minecraft:iron_block",
 			"minecraft:iron_block"
-        ]
-    },
-    {
-        "mode": "REMOVE",
-        "result": "draconicevolution:draconic_helm",
-        "catalyst": "draconicevolution:wyvern_helm"
-    },	
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconic_helm",
-        "catalyst": "projecte:item.pe_gem_armor_3",
-        "energy": 10000000,
-        "tier": 2,
-        "ingredients": [
+		]
+	},
+	{
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_helm",
+		"catalyst": "draconicevolution:wyvern_helm"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_helm",
+		"catalyst": "projecte:item.pe_gem_armor_3",
+		"energy": 10000000,
+		"tier": 2,
+		"ingredients": [
 			"draconicevolution:draconic_energy_core,1",
-            "draconicevolution:awakened_core",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot"
-        ]
-    },
-    {
-        "mode": "ADD",
-        "result": "avaritia:infinity_helmet",
-        "catalyst": "draconicevolution:draconic_helm",
+			"draconicevolution:awakened_core",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot"
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "avaritia:infinity_helmet",
+		"catalyst": "draconicevolution:draconic_helm",
 		"energy": 100000000,
-		"tier":3,
+		"tier": 3,
 		"ingredients": [
 			"avaritia:block_resource",
 			"avaritia:block_resource",
-            "avaritia:resource,1,6",
+			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
@@ -211,70 +213,71 @@
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6"
-			]
-    },{
-        "mode": "ADD",
-        "result": "projecte:item.pe_gem_armor_2",
-        "catalyst": "projecte:item.pe_rm_armor_2",
-        "energy": 500000,
-        "tier": 1,
-        "ingredients": [
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:item.pe_klein_star,1,5",
-            "projecte:matter_block",
-            "minecraft:iron_block",
-            "minecraft:iron_block",
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "projecte:item.pe_gem_armor_2",
+		"catalyst": "projecte:item.pe_rm_armor_2",
+		"energy": 500000,
+		"tier": 1,
+		"ingredients": [
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projecte:item.pe_klein_star,1,5",
+			"projectex:matter,1,4",
 			"minecraft:iron_block",
-			"projecte:matter_block,1,1",
-			"projecte:matter_block,1,1",
+			"minecraft:iron_block",
+			"minecraft:iron_block",
+			"projectex:matter,1,5",
+			"projectex:matter,1,5",
 			"quark:sugar_block",
 			"quark:sugar_block",
 			"quark:sugar_block",
 			"quark:sugar_block",
 			"minecraft:lapis_block"
-        ]
-    },
-    {
-        "mode": "REMOVE",
-        "result": "draconicevolution:draconic_chest",
-        "catalyst": "draconicevolution:wyvern_chest"
-    },	
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconic_chest",
-        "catalyst": "projecte:item.pe_gem_armor_2",
-        "energy": 10000000,
-        "tier": 2,
-        "ingredients": [
+		]
+	},
+	{
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_chest",
+		"catalyst": "draconicevolution:wyvern_chest"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_chest",
+		"catalyst": "projecte:item.pe_gem_armor_2",
+		"energy": 10000000,
+		"tier": 2,
+		"ingredients": [
 			"draconicevolution:draconic_energy_core",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_ingot",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1",
-            "draconicevolution:draconic_block,1"
-        ]
-    },
-    {
-        "mode": "ADD",
-        "result": "avaritia:infinity_chestplate",
-        "catalyst": "draconicevolution:draconic_chest",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_ingot",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1",
+			"draconicevolution:draconic_block,1"
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "avaritia:infinity_chestplate",
+		"catalyst": "draconicevolution:draconic_chest",
 		"energy": 100000000,
-		"tier":3,
+		"tier": 3,
 		"ingredients": [
 			"avaritia:block_resource,1,2",
 			"avaritia:block_resource",
-            "avaritia:resource,1,6",
+			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
@@ -282,58 +285,58 @@
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6",
 			"avaritia:resource,1,6"
-			]
-    },
+		]
+	},
 	{
-        "mode": "REMOVE",
-        "result": "draconicevolution:draconic_block",
-        "catalyst": "draconicevolution:draconium_block"
-    },
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconic_block,4",
-        "catalyst": "draconicevolution:draconium_block,4,1",
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_block",
+		"catalyst": "draconicevolution:draconium_block"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_block,4",
+		"catalyst": "draconicevolution:draconium_block,4,1",
 		"energy": 5000000,
-		"tier":1,
+		"tier": 1,
 		"ingredients": [
 			"draconicevolution:draconic_core",
 			"draconicevolution:draconic_core",
-            "draconicevolution:draconic_core",
+			"draconicevolution:draconic_core",
 			"draconicevolution:draconic_core",
 			"draconicevolution:dragon_heart",
 			"minecraft:tnt",
 			"minecraft:tnt"
-			]
-    },
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:draconium_block,2,1",
-        "catalyst": "draconicevolution:draconium_block",
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconium_block,2,1",
+		"catalyst": "draconicevolution:draconium_block",
 		"energy": 20000000,
-		"tier":0,
+		"tier": 0,
 		"ingredients": [
 			"draconicevolution:draconium_block"
-			]
-    },
-    {
-        "mode": "ADD",
-        "result": "contenttweaker:chaotic_energy_core",
-        "catalyst": "draconicevolution:draconium_capacitor,1,1",
+		]
+	},
+	{
+		"mode": "ADD",
+		"result": "contenttweaker:chaotic_energy_core",
+		"catalyst": "draconicevolution:draconium_capacitor,1,1",
 		"energy": 79536431,
-		"tier":3,
+		"tier": 3,
 		"ingredients": [
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
-			"draconicevolution:chaotic_core,1",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:chaotic_core",
 			"draconicevolution:awakened_core",
 			"draconicevolution:awakened_core",
 			"draconicevolution:awakened_core",
@@ -349,19 +352,19 @@
 			"draconicevolution:draconic_block",
 			"draconicevolution:draconic_block",
 			"draconicevolution:dragon_heart"
-			]
-    },
+		]
+	},
 	{
-        "mode": "REMOVE",
-        "result": "draconicevolution:awakened_core",
-        "catalyst": "minecraft:nether_star"
-    },
-    {
-        "mode": "ADD",
-        "result": "draconicevolution:awakened_core",
-        "catalyst": "extrautils2:snowglobe,1",
+		"mode": "REMOVE",
+		"result": "draconicevolution:awakened_core",
+		"catalyst": "minecraft:nether_star"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:awakened_core",
+		"catalyst": "extrautils2:snowglobe",
 		"energy": 40000000,
-		"tier":1,
+		"tier": 1,
 		"ingredients": [
 			"draconicevolution:wyvern_core",
 			"draconicevolution:wyvern_core",
@@ -373,6 +376,30 @@
 			"draconicevolution:draconic_ingot",
 			"draconicevolution:draconic_ingot",
 			"draconicevolution:draconic_ingot"
-			]
-    }
-	]
+		]
+	},
+	{
+		"mode": "REMOVE",
+		"result": "draconicevolution:draconic_staff_of_power",
+		"catalyst": "draconicevolution:draconic_pick"
+	},
+	{
+		"mode": "ADD",
+		"result": "draconicevolution:draconic_staff_of_power",
+		"catalyst": "mekanism:atomicdisassembler",
+		"energy": 400000000,
+		"tier": 3,
+		"ingredients": [
+			"mysticalagradditions:supremium_paxel",
+			"draconicevolution:draconic_shovel",
+			"draconicevolution:draconic_pick",
+			"draconicevolution:chaotic_core",
+			"draconicevolution:draconium_capacitor,1,1",
+			"thermalinnovation:drill,1,4",
+			"mysticalagradditions:special,1,4",
+			"mysticalagradditions:special,1,4",
+			"mysticalagradditions:special,1,4",
+			"mysticalagradditions:special,1,4"
+		]
+	}
+]

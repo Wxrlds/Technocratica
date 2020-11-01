@@ -13,7 +13,15 @@
 		uid: "d1151e59",
 		type: "item",
 		items: [{
-			item: "minecraft:cobblestone"
+			id: "mekanismgenerators:hohlraum",
+			tag: {
+				mekData: {
+					stored: {
+						amount: 10,
+						gasName: "fusionfuel"
+					}
+				}
+			}
 		}]
 	}],
 	rewards: [{

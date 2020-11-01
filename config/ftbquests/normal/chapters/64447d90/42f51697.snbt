@@ -1,10 +1,7 @@
 {
 	title: "Leather Armor",
 	x: -2.0d,
-	y: 0.0d,
-	dependencies: [
-		"68fed3b7"
-	],
+	y: 6.0d,
 	tasks: [{
 		uid: "40b312eb",
 		type: "item",

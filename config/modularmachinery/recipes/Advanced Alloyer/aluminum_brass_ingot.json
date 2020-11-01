@@ -1,0 +1,36 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "aluminum_brass_ingot",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:storage@0",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "thermalfoundation:storage@4",
+			"amount": 3
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "tconstruct:metal@5",
+			"amount": 4
+		}
+	]
+}

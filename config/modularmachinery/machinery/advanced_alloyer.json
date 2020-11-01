@@ -1,0 +1,655 @@
+{
+	"registryname": "advanced_alloyer",
+	"localizedname": "Advanced Alloyer",
+	"requires-blueprint": true,
+	"parts": [
+		{
+			"x": -1,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockfluidinputhatch@7"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockenergyinputhatch@7"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"modularmachinery:blockinputbus@6"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"modularmachinery:blockoutputbus@6"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 0,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": -1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"mysticalagradditions:molten_supremium@0"
+			]
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 0,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"z": 3,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 1,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 2,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 2,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": 3,
+			"y": -1,
+			"z": 4,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		},
+		{
+			"x": -1,
+			"y": 2,
+			"z": 1,
+			"elements": [
+				"tconstruct:seared@3"
+			]
+		}
+	]
+}

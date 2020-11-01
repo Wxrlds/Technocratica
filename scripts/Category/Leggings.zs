@@ -1,12 +1,5 @@
 #Leggings
 #Normal Crafting Table
-#Leather
-recipes.remove(<minecraft:leather_leggings>);
-recipes.addShaped(<minecraft:leather_leggings>, [
-	[<ore:leather>, <ore:leather>, <ore:leather>],
-	[<ore:leather>, <minecraft:iron_leggings>, <ore:leather>],
-	[<ore:leather>, null, <ore:leather>]
-]);
 
 #Gold
 recipes.remove(<minecraft:golden_leggings>);
@@ -40,12 +33,20 @@ recipes.addShaped(<thermalfoundation:armor.legs_aluminum>, [
 	[<ore:ingotAluminium>, null, <ore:ingotAluminium>]
 ]);
 
+#Iron
+recipes.remove(<minecraft:iron_leggings>);
+recipes.addShaped(<minecraft:iron_leggings>, [
+	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+	[<ore:ingotIron>, <thermalfoundation:armor.legs_aluminum>, <ore:ingotIron>],
+	[<ore:ingotIron>, null, <ore:ingotIron>]
+]);
+
 #Tier 1 Crafting Table
 #Void Crystal
 recipes.remove(<actuallyadditions:item_pants_crystal_black>);
 mods.extendedcrafting.TableCrafting.addShaped(1, <actuallyadditions:item_pants_crystal_black>, [
 	[<actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>, <actuallyadditions:item_crystal:3>],
-	[<actuallyadditions:item_crystal:3>, <thermalfoundation:armor.legs_aluminum>, <actuallyadditions:item_crystal:3>],
+	[<actuallyadditions:item_crystal:3>, <minecraft:iron_leggings>, <actuallyadditions:item_crystal:3>],
 	[<actuallyadditions:item_crystal:3>, null, <actuallyadditions:item_crystal:3>]
 ]);
 

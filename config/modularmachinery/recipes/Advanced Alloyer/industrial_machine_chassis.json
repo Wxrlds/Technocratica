@@ -1,0 +1,36 @@
+{
+	"machine": "advanced_alloyer",
+	"registryName": "industrial_machine_chassis",
+	"recipeTime": 1,
+	"requirements": [
+		{
+			"type": "energy",
+			"io-type": "input",
+			"energyPerTick": 200000
+		},
+		{
+			"type": "fluid",
+			"io-type": "input",
+			"fluid": "pyrotheum",
+			"amount": 100
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "enderio:item_material@51",
+			"amount": 64
+		},
+		{
+			"type": "item",
+			"io-type": "input",
+			"item": "enderio:item_material@0",
+			"amount": 1
+		},
+		{
+			"type": "item",
+			"io-type": "output",
+			"item": "enderio:item_material@1",
+			"amount": 1
+		}
+	]
+}
