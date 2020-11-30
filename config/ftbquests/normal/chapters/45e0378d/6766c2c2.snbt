@@ -6,6 +6,9 @@
 	text: [
 		"The Scanner can be charged with EU"
 	],
+	dependencies: [
+		"20e4e3b6"
+	],
 	tasks: [{
 		uid: "6c346cf6",
 		type: "item",

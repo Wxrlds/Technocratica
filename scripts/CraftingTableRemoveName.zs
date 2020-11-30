@@ -70,6 +70,8 @@ val remName=[
 "tconstruct:tools/table/chest/pattern",
 "tconstruct:tools/table/crafting_station",
 "thermalexpansion:capacitor",
+"thermalexpansion:satchel_1",
+"thermalexpansion:satchel",
 "thermalfoundation:diamond",
 "thermalfoundation:emerald"
 ] as string [];

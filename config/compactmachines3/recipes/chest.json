@@ -4,7 +4,7 @@
   "target-count": 32,
   "target-meta": 0,
   
-  "duration": 640,
+  "duration": 40,
   
   "catalyst": "extrautils2:decorativesolid",
   "catalyst-meta": 3,
@@ -19,7 +19,7 @@
       "meta": 2
     },
     "c": {
-      "id": "minecraft:log",
+      "id": "quark:bark",
       "meta": 0
     },
     "d": {

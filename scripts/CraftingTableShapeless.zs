@@ -29,7 +29,7 @@ val chisel = <tcomplement:chisel_head>;
 recipes.addShapeless("AA_Black_Quartz_From_Block",<actuallyadditions:item_misc:5>*4,[<actuallyadditions:block_misc:2>]);
 recipes.addShapeless("AdvSolPan_Sunnarium_Uncrafting",<advanced_solar_panels:crafting:1> * 9, [<advanced_solar_panels:crafting>]);
 recipes.addShapeless("AE2_Interface_Panel_To_Block",<appliedenergistics2:interface>,[<appliedenergistics2:part:440>]);
-recipes.addShapeless("AE2_ME_Glass_Cable",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>|<ore:crystalPureFluix>,<ore:crystalFluix>|<ore:crystalPureFluix>,<projectred-transportation:pipe>]);
+recipes.addShapeless("AE2_ME_Glass_Cable_Fluix",<appliedenergistics2:part:16>*6,[<appliedenergistics2:part:140>,<ore:crystalFluix>|<ore:crystalPureFluix>,<ore:crystalFluix>|<ore:crystalPureFluix>,<projectred-transportation:pipe:2>]);
 recipes.addShapeless("AvaritiasComplement_Pickaxe_Remove_Upgrade",<avaritia:infinity_pickaxe>,[<avaritia:infinity_pickaxe>]);
 recipes.addShapeless("Bonsai_Hopping_Bonsai",<bonsaitrees:bonsaipot:1>, [<bonsaitrees:bonsaipot>,<cyclicmagic:block_forester>,<minecraft:hopper>]);
 recipes.addShapeless("BoP_Music_Disc",<biomesoplenty:record_wanderer>, [<mysticalagriculture:crafting:14>,<biomesoplenty:terrestrial_artifact>,<mysticalagriculture:skeleton_essence>,<mysticalagriculture:creeper_essence>]);
