@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "contenttweaker:items/16x_iron_ingot"
-  }
-}

@@ -294,21 +294,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ActuallyAdditions-1.12.2-r151-2.jar",
+                    "file_name": "ActuallyAdditions-1.12.2-r152.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2844/115/ActuallyAdditions-1.12.2-r151-2.jar",
-                    "id": "2844115",
+                    "url": "https://edge.forgecdn.net/files/3117/927/ActuallyAdditions-1.12.2-r152.jar",
+                    "id": "3117927",
                     "parent_id": "228404",
                     "hashes": {
-                        "sha1": "b5153ea7b73b667fdc49133ab21f2afa5a15aa39",
-                        "md5": "e62726802ff285f63da89690895c375c"
+                        "sha1": "6e5f7deda0d3cf196b38f57eb60ef18a85b0ca2d",
+                        "md5": "4bb5c052581c729eb8a6adc60b376ec6"
                     },
                     "required_dependencies": [],
-                    "size": 2703860,
-                    "date_published": "2019-12-17T06:49:49.180Z"
+                    "size": 2958699,
+                    "date_published": "2020-11-20T18:01:16.073Z"
                 }
             ]
         },
@@ -4899,23 +4902,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.0-pre199_72_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.0-pre199_73_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/3097/9/LittleTiles_v1.5.0-pre199_72_mc1.12.2.jar",
-                    "id": "3097009",
+                    "url": "https://edge.forgecdn.net/files/3100/846/LittleTiles_v1.5.0-pre199_73_mc1.12.2.jar",
+                    "id": "3100846",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "f19412a88dc63b1383e45b0378e75c0fdfaefc5e",
-                        "md5": "c80cece66999df75bd1a8af6460a416e"
+                        "sha1": "9707803a198af3c8a1a5cd3b8bb4558ac6a01266",
+                        "md5": "b3350ca1b070645e09bf272ee830028d"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 1615233,
-                    "date_published": "2020-10-30T12:34:07.243Z"
+                    "size": 1615411,
+                    "date_published": "2020-11-03T10:10:56.893Z"
                 }
             ]
         },
@@ -7817,23 +7820,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tinker_io-1.12.2-rw2.8.2.jar",
+                    "file_name": "tinker_io-1.12.2-rw2.8.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3032/878/tinker_io-1.12.2-rw2.8.2.jar",
-                    "id": "3032878",
+                    "url": "https://edge.forgecdn.net/files/3102/626/tinker_io-1.12.2-rw2.8.3.jar",
+                    "id": "3102626",
                     "parent_id": "229503",
                     "hashes": {
-                        "sha1": "96ba498440f0b20540382f00f54e8af258300688",
-                        "md5": "cccf3352ae82dc442e4dea6ababa8c0f"
+                        "sha1": "6fe015e930d57f3c9b4c41731f6464d55a198f72",
+                        "md5": "4736bd776d4fbbdf3324cc11a249cc6b"
                     },
                     "required_dependencies": [
                         "74072"
                     ],
-                    "size": 5769424,
-                    "date_published": "2020-08-15T06:42:48.127Z"
+                    "size": 5770361,
+                    "date_published": "2020-11-05T03:29:46.470Z"
                 }
             ]
         },

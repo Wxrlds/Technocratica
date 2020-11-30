@@ -28,6 +28,7 @@ mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the use
 mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton Spawn Egg (It's a little bit stronger, so be prepared.)");
 mods.jei.JEI.addDescription(<enderio:block_powered_spawner>,"The Dark Steel Anvil has a much higher level limit");
 mods.jei.JEI.addDescription(<enderio:item_broken_spawner>,"The Dark Steel Anvil has a much higher level limit");
+mods.jei.JEI.addDescription(<appliedenergistics2:grindstone>,"To use it, place a Wooden Crank on the Grindstone and turn it");
 
 val MekTTip=[
 <mekanism:machineblock:5>,
