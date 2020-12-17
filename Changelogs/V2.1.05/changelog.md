@@ -1,4 +1,4 @@
-[Click here for a more detailled changelog](https://github.com/Wxrlds/Technocratica/commit/36eab6d5697cfe219a804b599ec599806dd590c4)
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/36eab6d5697cfe219a804b599ec599806dd590c4)
 
 Tweaked Hopper; Oak Planks; Jetpack (IC2); Electric Jetpack (IC2); Jetpack (Mekanism); Jetpack (ProjectRed); Mana Infused Block; Wings of the Bats; Terracotta; Dried Clay; Simple Powercell recipe
 

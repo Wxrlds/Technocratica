@@ -1,4 +1,4 @@
-[Check here for a more detailled changelog](https://github.com/Wxrlds/Technocratica/commit/fc6e5afb365b1af85aafada34a6c3d74192f3551)
+[Check here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/fc6e5afb365b1af85aafada34a6c3d74192f3551)
 
 Tweaked Chest; Wings of the Bat; Leather Strap; Elytra (Colytra); Storage Crate; Satchel (Basic); Sleeping Bag; ME Glass Cable Fluix; Space Chamber Corner Block recipe
 

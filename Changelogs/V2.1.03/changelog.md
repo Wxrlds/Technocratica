@@ -1,4 +1,4 @@
-[Check here for a more detailled changelog](https://github.com/Wxrlds/Technocratica/compare/v2.1.02...v2.1.03)
+[Check here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/v2.1.02...v2.1.03)
 
 Removed the Creative Vending Upgrade recipe
 
