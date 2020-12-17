@@ -101,7 +101,6 @@ recipes.addShapeless("Mekanism_Energy_Cube_Elite",<mekanism:energycube>.withTag(
 recipes.addShapeless("Mekanism_Energy_Cube_Ultimate",<mekanism:energycube>.withTag({tier: 1}), [<mekanism:energycube>.withTag({tier: 0}),<mekanism:tierinstaller:1>]);
 recipes.addShapeless("Mekenism_Enriched_Iron",<mekanism:enrichediron> * 9, [<contenttweaker:enriched_iron_block>]);
 recipes.addShapeless("Minecraft_Book_To_Paper",<minecraft:paper>*2,[<minecraft:book>]);
-recipes.addShapeless("Minecraft_Brick_to_Terracotta",<minecraft:hardened_clay>, [<ore:brickBlock>]);
 recipes.addShapeless("Minecraft_Dark_Alch_Uncraft",<minecraft:coal>*4,[<contenttweaker:dark_alch>]);
 recipes.addShapeless("Minecraft_Diamond_Nugget_to_Ingot",<extendedcrafting:material:128> * 9, [<ore:gemDiamond>]);
 recipes.addShapeless("Minecraft_Ender_Eye",<minecraft:ender_eye>, [<ore:enderpearl>,<ore:dustPyrotheum>]);
@@ -120,6 +119,8 @@ recipes.addShapeless("Minecraft_Sticky_Piston_Rosin",<minecraft:sticky_piston>, 
 recipes.addShapeless("Minecraft_Sticky_Piston_Slime",<minecraft:sticky_piston>, [<ore:slimeball>,<minecraft:piston>]);
 recipes.addShapeless("Minecraft_Sticky_Piston_Tar",<minecraft:sticky_piston>, [<thermalfoundation:material:833>,<minecraft:piston>]);
 recipes.addShapeless("Minecraft_Terracotta_to_Brick",<minecraft:brick_block>, [<ore:terracotta>]);
+recipes.addShapeless("Minecraft_Brick_to_DriedClay",<tconstruct:dried_clay>, [<minecraft:brick_block>]);
+recipes.addShapeless("Minecraft_DriedClay_to_Terracotta",<minecraft:hardened_clay>, [<tconstruct:dried_clay>]);
 recipes.addShapeless("Minecraft_Tiny_Coal_To_Coal",<minecraft:coal>,[<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>,<actuallyadditions:item_misc:10>]);
 recipes.addShapeless("OpenBlocks_Building_Guide_Reset",<openblocks:guide>,[<openblocks:guide>]);
 recipes.addShapeless("OpenBlocks_Enhanced_Building_Guide_Reset",<openblocks:builder_guide>,[<openblocks:builder_guide>]);

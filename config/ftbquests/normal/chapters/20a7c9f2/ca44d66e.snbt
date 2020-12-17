@@ -2,8 +2,7 @@
 	x: 13.0d,
 	y: -2.0d,
 	dependencies: [
-		"394b95ce",
-		"134c45de"
+		"394b95ce"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{

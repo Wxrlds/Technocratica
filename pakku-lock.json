@@ -2763,21 +2763,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Discord-1.12.2-1.0.10.jar",
+                    "file_name": "Discord-1.12.2-1.0.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/2704/488/Discord-1.12.2-1.0.10.jar",
-                    "id": "2704488",
+                    "url": "https://edge.forgecdn.net/files/2879/457/Discord-1.12.2-1.0.12.jar",
+                    "id": "2879457",
                     "parent_id": "316898",
                     "hashes": {
-                        "sha1": "c64520cb211b7272652c322df8c3464340f465c6",
-                        "md5": "566b2bc986dad74704a0d6aa3802c3c3"
+                        "sha1": "3f364f431b82401ad1bcd8d3aa7195d829219b70",
+                        "md5": "4b6e4bb1507cd1cbecf72d1208c0b517"
                     },
                     "required_dependencies": [],
-                    "size": 1702703,
-                    "date_published": "2019-04-27T21:30:03.107Z"
+                    "size": 1702822,
+                    "date_published": "2020-02-11T05:40:26.597Z"
                 }
             ]
         },
@@ -2882,23 +2882,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderIO-1.12.2-5.2.61.jar",
+                    "file_name": "EnderIO-1.12.2-5.2.66.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3068/701/EnderIO-1.12.2-5.2.61.jar",
-                    "id": "3068701",
+                    "url": "https://edge.forgecdn.net/files/3124/452/EnderIO-1.12.2-5.2.66.jar",
+                    "id": "3124452",
                     "parent_id": "64578",
                     "hashes": {
-                        "sha1": "fcaf9d450dee59a5b28342dbfdb534043d4232c9",
-                        "md5": "158cb696bbc9431ed2eaeaa6806474ee"
+                        "sha1": "910b1efc1e6e781e97daed4890fe52456d764858",
+                        "md5": "bb115594256d21b416e33a89eeb38306"
                     },
                     "required_dependencies": [
                         "231868"
                     ],
-                    "size": 8508268,
-                    "date_published": "2020-09-29T22:02:32.517Z"
+                    "size": 8846109,
+                    "date_published": "2020-11-27T11:43:19.517Z"
                 }
             ]
         },
@@ -2917,21 +2917,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "EnderIO-endergy-1.12.2-5.2.61.jar",
+                    "file_name": "EnderIO-endergy-1.12.2-5.2.66.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3068/700/EnderIO-endergy-1.12.2-5.2.61.jar",
-                    "id": "3068700",
+                    "url": "https://edge.forgecdn.net/files/3124/450/EnderIO-endergy-1.12.2-5.2.66.jar",
+                    "id": "3124450",
                     "parent_id": "304346",
                     "hashes": {
-                        "sha1": "b9724fa395da051f9b48ffa02a30384700613dac",
-                        "md5": "eccd92bde1625a741234beaa3c9b2992"
+                        "sha1": "64cef5f30c7d1fae33a476a26996fdd2897831c0",
+                        "md5": "c0ee462be7f19962311258acd1066717"
                     },
                     "required_dependencies": [],
-                    "size": 117515,
-                    "date_published": "2020-09-29T22:02:27.667Z"
+                    "size": 118516,
+                    "date_published": "2020-11-27T11:43:13.590Z"
                 }
             ]
         },
@@ -3434,24 +3434,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FTBQuests-1202.9.0.13.jar",
+                    "file_name": "FTBQuests-1202.9.0.14.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3077/814/FTBQuests-1202.9.0.13.jar",
-                    "id": "3077814",
+                    "url": "https://edge.forgecdn.net/files/3136/304/FTBQuests-1202.9.0.14.jar",
+                    "id": "3136304",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "d57c6793b0759578138f3cde2616d679e54f6e3f",
-                        "md5": "dcea504f368603e31eca296e248aec0b"
+                        "sha1": "2f3dfa95b376fc388f74a1b2dfd5052e274600a8",
+                        "md5": "9a87ed0477c8464ba22ec22adadafe01"
                     },
                     "required_dependencies": [
                         "309674",
                         "237167"
                     ],
-                    "size": 1084170,
-                    "date_published": "2020-10-12T18:14:59.970Z"
+                    "size": 1091897,
+                    "date_published": "2020-12-11T22:38:12.287Z"
                 }
             ]
         },
@@ -3679,7 +3679,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "foamfix-0.10.10-1.12.2.jar",
+                    "file_name": "foamfix-0.10.11-1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3687,16 +3687,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2845/668/foamfix-0.10.10-1.12.2.jar",
-                    "id": "2845668",
+                    "url": "https://edge.forgecdn.net/files/3137/883/foamfix-0.10.11-1.12.2.jar",
+                    "id": "3137883",
                     "parent_id": "278494",
                     "hashes": {
-                        "sha1": "bcb36ec39c39d6b97252d68f379ddeb20de539ef",
-                        "md5": "bba94f1ee252fcfbd2d52779f5c2f2b1"
+                        "sha1": "6df0efeff2486f284ea76fe1b6e2c0831cde004a",
+                        "md5": "005b3d124df67e4c2ca7c1aeb1b2cb7c"
                     },
                     "required_dependencies": [],
-                    "size": 201683,
-                    "date_published": "2019-12-20T09:14:01.333Z"
+                    "size": 210423,
+                    "date_published": "2020-12-13T21:59:32.830Z"
                 }
             ]
         },
@@ -6838,7 +6838,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "randompatches-1.12.2-1.22.1.7.jar",
+                    "file_name": "randompatches-1.12.2-1.22.1.10.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -6848,16 +6848,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3070/895/randompatches-1.12.2-1.22.1.7.jar",
-                    "id": "3070895",
+                    "url": "https://edge.forgecdn.net/files/3133/651/randompatches-1.12.2-1.22.1.10.jar",
+                    "id": "3133651",
                     "parent_id": "285612",
                     "hashes": {
-                        "sha1": "4cee82831d2f47a5e8ea3822412832e0ccbdedc0",
-                        "md5": "1bb26148768a05d62a94e6b258bb3407"
+                        "sha1": "d45d3cadbbab3f2222059b2acb68d9620c6839a8",
+                        "md5": "dfbb30ff396e6426ba9a284b04c7bcf3"
                     },
                     "required_dependencies": [],
-                    "size": 293206,
-                    "date_published": "2020-10-03T11:59:52.697Z"
+                    "size": 293231,
+                    "date_published": "2020-12-08T08:14:46.773Z"
                 }
             ]
         },
@@ -7055,21 +7055,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Scannable-MC1.12.2-1.6.3.24.jar",
+                    "file_name": "Scannable-MC1.12.2-1.6.3.25.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2662/364/Scannable-MC1.12.2-1.6.3.24.jar",
-                    "id": "2662364",
+                    "url": "https://edge.forgecdn.net/files/3131/449/Scannable-MC1.12.2-1.6.3.25.jar",
+                    "id": "3131449",
                     "parent_id": "266784",
                     "hashes": {
-                        "sha1": "b10db32099548a6297f0bd883159b7ded124392c",
-                        "md5": "3873d7e7061835bdf06fc83e58de64f0"
+                        "sha1": "1dabdd77e18241ac5b38680163fc0acaa39278d4",
+                        "md5": "0881baa7361d18266c94e42bcc19ac2e"
                     },
                     "required_dependencies": [],
-                    "size": 252687,
-                    "date_published": "2019-01-19T23:20:13.363Z"
+                    "size": 252694,
+                    "date_published": "2020-12-05T15:35:35.230Z"
                 }
             ]
         },
@@ -8184,23 +8184,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniDict-1.12.2-2.9.8.jar",
+                    "file_name": "UniDict-1.12.2-3.0.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3087/799/UniDict-1.12.2-2.9.8.jar",
-                    "id": "3087799",
+                    "url": "https://edge.forgecdn.net/files/3136/936/UniDict-1.12.2-3.0.2.jar",
+                    "id": "3136936",
                     "parent_id": "244258",
                     "hashes": {
-                        "sha1": "2ed3a131bb54e73aac655328b483126c93780d43",
-                        "md5": "66589b2142e64d2d5671b342cf344119"
+                        "sha1": "5c77b901d72a10c8f6050323e5420747738709d3",
+                        "md5": "abac93abb0f3d22c64ba866d7f456325"
                     },
                     "required_dependencies": [
                         "253043"
                     ],
-                    "size": 189378,
-                    "date_published": "2020-10-20T18:02:53.420Z"
+                    "size": 204616,
+                    "date_published": "2020-12-12T19:19:01.920Z"
                 }
             ]
         },

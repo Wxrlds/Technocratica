@@ -6,7 +6,7 @@
 		"All IC2 machines can be broken without a wrench. Use a Pickaxe!"
 	],
 	dependencies: [
-		"20e4e3b6"
+		"6766c2c2"
 	],
 	tasks: [{
 		uid: "1876d25f",

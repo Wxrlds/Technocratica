@@ -46,7 +46,8 @@
 		type: "item",
 		items: [{
 			id: "cyclicmagic:charm_air",
-			tag: {}
+			tag: {},
+			Count: 1b
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

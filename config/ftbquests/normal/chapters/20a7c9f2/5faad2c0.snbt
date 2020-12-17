@@ -2,7 +2,6 @@
 	x: 9.0d,
 	y: -2.0d,
 	dependencies: [
-		"aef37066",
 		"35984193"
 	],
 	dependency_requirement: "one_completed",
