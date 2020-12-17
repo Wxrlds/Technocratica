@@ -1,9 +1,12 @@
 {
-	x: -2.0d,
-	y: -2.0d,
+	x: -4.0d,
+	y: -1.0d,
 	description: "Basic EU generation",
 	text: [
 		"All IC2 machines can be broken without a wrench. Use a Pickaxe!"
+	],
+	dependencies: [
+		"b7282f22"
 	],
 	tasks: [{
 		uid: "ccc444b6",

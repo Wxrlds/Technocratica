@@ -44,7 +44,6 @@ recipes.replaceAllOccurences(<rftools:machine_frame>,<quantumflux:quibitcluster:
 recipes.replaceAllOccurences(<rftools:machine_frame>,<teslacorelib:machine_case>,<rftools:scanner>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:128>,<rftools:block_protector>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:128>,<rftools:shield_block1>);
-recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:129>,<rftools:powercell_simple>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:131>,<rftools:environmental_controller>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:146>,<rftools:booster>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:146>,<rftools:matter_receiver>);

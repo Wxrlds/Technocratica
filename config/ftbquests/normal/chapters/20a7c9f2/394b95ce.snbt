@@ -2,7 +2,6 @@
 	x: 11.0d,
 	y: -2.0d,
 	dependencies: [
-		"ec84b028",
 		"5faad2c0"
 	],
 	dependency_requirement: "one_completed",

@@ -35,7 +35,6 @@ val woodlandmansionpool1=woodlandmansion.getPool("pool1");
 val remBlacksmithMain=[
 "actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -54,7 +53,6 @@ blacksmithmain.removeEntry(item1);
 val remDesertTempleMain=[
 "actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -75,7 +73,6 @@ val remDungeonMain=[
 "actuallyadditions:crystalItems",
 "actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -108,7 +105,6 @@ igloomain.removeEntry(item5);
 
 val remJungleTempleMain=[
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -130,7 +126,6 @@ val remMineshaftMain=[
 "actuallyadditions:crystalItems",
 "actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -151,7 +146,6 @@ val remNetherFortressMain=[
 "actuallyadditions:crystalItems",
 "actuallyadditions:drillCore",
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -169,7 +163,6 @@ netherfortressmain.removeEntry(item8);
 
 val remStrongholdCorridorMain=[
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -187,7 +180,6 @@ strongholdcorridormain.removeEntry(item9);
 
 val remStrongholdCrossingMain=[
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",
@@ -205,7 +197,6 @@ strongholdcrossingmain.removeEntry(item10);
 
 val remStrongholdLibraryMain=[
 "cyclicmagic:item.book_ender",
-"cyclicmagic:item.charm_air",
 "cyclicmagic:item.charm_antidote",
 "cyclicmagic:item.crafting_food",
 "cyclicmagic:item.emerald_chestplate",

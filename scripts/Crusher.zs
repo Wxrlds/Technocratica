@@ -5,3 +5,4 @@ mods.mekanism.crusher.addRecipe(<extrautils2:compressedgravel:1>,<extrautils2:co
 mods.mekanism.crusher.addRecipe(<extrautils2:compressedgravel>,<extrautils2:compressedsand>);
 mods.mekanism.crusher.addRecipe(<extrautils2:compressedsand>,<appliedenergistics2:material:5>*9);
 mods.mekanism.crusher.addRecipe(<minecraft:clay>,<ic2:dust:1>*2);
+mods.mekanism.crusher.addRecipe(<minecraft:magma>, <minecraft:magma_cream>*4);
