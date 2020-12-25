@@ -12,8 +12,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "cc9d89ce",
-		type: "random",
-		table: 18
+		uid: "95089cc3",
+		type: "item",
+		item: "extendedcrafting:material 1 36",
+		random_bonus: 3
 	}]
 }

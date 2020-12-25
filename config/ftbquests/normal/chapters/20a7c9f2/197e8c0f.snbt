@@ -1,8 +1,7 @@
 {
-	x: -1.0d,
-	y: 14.0d,
+	x: -1.5d,
+	y: 12.0d,
 	dependencies: [
-		"4613b1c7",
 		"b999832f"
 	],
 	tasks: [{
@@ -14,6 +13,26 @@
 	}],
 	rewards: [{
 		uid: "91b030b7",
+		type: "random",
+		table: 13
+	},
+	{
+		uid: "2d80bef5",
+		type: "random",
+		table: 13
+	},
+	{
+		uid: "31fc06d5",
+		type: "random",
+		table: 13
+	},
+	{
+		uid: "6f478c72",
+		type: "random",
+		table: 13
+	},
+	{
+		uid: "5d962860",
 		type: "random",
 		table: 13
 	}]

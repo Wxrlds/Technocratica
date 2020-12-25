@@ -1,6 +1,6 @@
 {
-	x: 1.5d,
-	y: -3.0d,
+	x: 2.5d,
+	y: -1.5d,
 	dependencies: [
 		"8c79f05d"
 	],
@@ -15,5 +15,11 @@
 		uid: "abbc698a",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "ef93c5f0",
+		type: "item",
+		item: "avaritia:resource 1 7",
+		random_bonus: 3
 	}]
 }

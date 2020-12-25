@@ -14,6 +14,7 @@
 	rewards: [{
 		uid: "c4b91c4d",
 		type: "item",
-		item: "enderio:block_fused_quartz"
+		item: "enderio:block_fused_quartz",
+		random_bonus: 2
 	}]
 }

@@ -12,8 +12,14 @@
 		}]
 	}],
 	rewards: [{
-		uid: "5b6436d4",
-		type: "random",
-		table: 18
+		uid: "7cec52ee",
+		type: "item",
+		item: {
+			id: "tconstruct:large_plate",
+			tag: {
+				Material: "blackquartz_plustic"
+			}
+		},
+		random_bonus: 3
 	}]
 }

@@ -910,23 +910,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Avaritia-1.12.2-3.3.0.33-universal.jar",
+                    "file_name": "Avaritia-1.12.2-3.3.0.37-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2660/801/Avaritia-1.12.2-3.3.0.33-universal.jar",
-                    "id": "2660801",
+                    "url": "https://edge.forgecdn.net/files/3143/349/Avaritia-1.12.2-3.3.0.37-universal.jar",
+                    "id": "3143349",
                     "parent_id": "261348",
                     "hashes": {
-                        "sha1": "8a0a6f876d896140194afea6922ea5b84a783058",
-                        "md5": "8eedd678495a7ce0958c026a7873fc62"
+                        "sha1": "7b60729ab6e144803160c955fcb1e6d695a1aba6",
+                        "md5": "a4de486714f079db83119039fbe2dfa5"
                     },
                     "required_dependencies": [
                         "242818"
                     ],
-                    "size": 972581,
-                    "date_published": "2019-01-16T04:28:33.830Z"
+                    "size": 975727,
+                    "date_published": "2020-12-19T20:30:23.187Z"
                 }
             ]
         },
@@ -3753,21 +3753,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geneticsreborn-1.12-1.29.jar",
+                    "file_name": "geneticsreborn-1.12-1.30.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3030/960/geneticsreborn-1.12-1.29.jar",
-                    "id": "3030960",
+                    "url": "https://edge.forgecdn.net/files/3147/280/geneticsreborn-1.12-1.30.jar",
+                    "id": "3147280",
                     "parent_id": "256989",
                     "hashes": {
-                        "sha1": "2c0ae5c2952f16c96fb667fb03f12a9fcac3ee81",
-                        "md5": "4fd01b06f4d544f938425fae8eef4b7e"
+                        "sha1": "2c1ea53097b0b23154de8a6f5239c31c488e9503",
+                        "md5": "d1a59dfb1a0f81bff7ba298d0a0a7e15"
                     },
                     "required_dependencies": [],
-                    "size": 415545,
-                    "date_published": "2020-08-13T07:05:56.253Z"
+                    "size": 416956,
+                    "date_published": "2020-12-23T15:59:08.713Z"
                 }
             ]
         },
@@ -3905,21 +3905,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerLib-1.12.2-2.0.6.23.jar",
+                    "file_name": "HammerLib-1.12.2-2.0.6.25.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3035/316/HammerLib-1.12.2-2.0.6.23.jar",
-                    "id": "3035316",
+                    "url": "https://edge.forgecdn.net/files/3139/259/HammerLib-1.12.2-2.0.6.25.jar",
+                    "id": "3139259",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "26407be44a832b23427ef1583ea48ebf9589b045",
-                        "md5": "4c5f7a4bf7982769b884e7a5fa878fed"
+                        "sha1": "43ef9397b1363ae626079d7dfe9c16c896e13e5f",
+                        "md5": "5fb66725ee578c8dfd8557a0239f2cd3"
                     },
                     "required_dependencies": [],
-                    "size": 2422162,
-                    "date_published": "2020-08-17T20:22:01.313Z"
+                    "size": 2426797,
+                    "date_published": "2020-12-15T09:13:21.820Z"
                 }
             ]
         },
@@ -7055,21 +7055,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Scannable-MC1.12.2-1.6.3.25.jar",
+                    "file_name": "Scannable-MC1.12.2-1.6.3.26.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3131/449/Scannable-MC1.12.2-1.6.3.25.jar",
-                    "id": "3131449",
+                    "url": "https://edge.forgecdn.net/files/3146/549/Scannable-MC1.12.2-1.6.3.26.jar",
+                    "id": "3146549",
                     "parent_id": "266784",
                     "hashes": {
-                        "sha1": "1dabdd77e18241ac5b38680163fc0acaa39278d4",
-                        "md5": "0881baa7361d18266c94e42bcc19ac2e"
+                        "sha1": "b949f46eef7fe63e42e4d5a618f1e26e66a1af5c",
+                        "md5": "47f919498bd29961f62b6655b8d76f2e"
                     },
                     "required_dependencies": [],
-                    "size": 252694,
-                    "date_published": "2020-12-05T15:35:35.230Z"
+                    "size": 252718,
+                    "date_published": "2020-12-22T21:51:18.103Z"
                 }
             ]
         },
@@ -8184,23 +8184,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniDict-1.12.2-3.0.2.jar",
+                    "file_name": "UniDict-1.12.2-3.0.3.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3136/936/UniDict-1.12.2-3.0.2.jar",
-                    "id": "3136936",
+                    "url": "https://edge.forgecdn.net/files/3142/968/UniDict-1.12.2-3.0.3.jar",
+                    "id": "3142968",
                     "parent_id": "244258",
                     "hashes": {
-                        "sha1": "5c77b901d72a10c8f6050323e5420747738709d3",
-                        "md5": "abac93abb0f3d22c64ba866d7f456325"
+                        "sha1": "0b15b8da2e5867ba07c88564dab56f03ae063c56",
+                        "md5": "8bf121b84c6739cf8e293d5b06eecead"
                     },
                     "required_dependencies": [
                         "253043"
                     ],
-                    "size": 204616,
-                    "date_published": "2020-12-12T19:19:01.920Z"
+                    "size": 208924,
+                    "date_published": "2020-12-19T11:24:02.110Z"
                 }
             ]
         },

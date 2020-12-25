@@ -1,6 +1,6 @@
 {
-	x: -1.0d,
-	y: 8.0d,
+	x: -1.5d,
+	y: 7.5d,
 	dependencies: [
 		"a8c56380"
 	],
@@ -13,6 +13,11 @@
 	}],
 	rewards: [{
 		uid: "03162d29",
+		type: "random",
+		table: 13
+	},
+	{
+		uid: "05d35e0e",
 		type: "random",
 		table: 13
 	}]

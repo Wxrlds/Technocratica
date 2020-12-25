@@ -1,8 +1,8 @@
 {
-	x: 2.5d,
-	y: -4.0d,
+	x: 5.5d,
+	y: -1.0d,
 	dependencies: [
-		"1a988b09"
+		"35984193"
 	],
 	tasks: [{
 		uid: "80359654",
@@ -15,5 +15,10 @@
 		uid: "341056a3",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "f27b9d7c",
+		type: "item",
+		item: "avaritia:endest_pearl"
 	}]
 }

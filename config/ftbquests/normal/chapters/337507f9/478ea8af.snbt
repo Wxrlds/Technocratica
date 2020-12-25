@@ -2,6 +2,7 @@
 	x: -23.5d,
 	y: 3.5d,
 	dependencies: [
+		"6ab0abf9",
 		"f72b14bd"
 	],
 	tasks: [{
@@ -14,6 +15,7 @@
 	rewards: [{
 		uid: "d7be0f76",
 		type: "item",
-		item: "enderio:block_fused_glass"
+		item: "enderio:block_fused_glass",
+		random_bonus: 2
 	}]
 }

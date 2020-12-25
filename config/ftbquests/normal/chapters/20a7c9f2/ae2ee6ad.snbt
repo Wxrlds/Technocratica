@@ -1,6 +1,6 @@
 {
-	x: 1.0d,
-	y: 2.0d,
+	x: -0.5d,
+	y: 2.5d,
 	dependencies: [
 		"faffe320"
 	],
@@ -15,5 +15,11 @@
 		uid: "47e96ae6",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "f956725f",
+		type: "item",
+		item: "extendedcrafting:material 1 7",
+		random_bonus: 3
 	}]
 }

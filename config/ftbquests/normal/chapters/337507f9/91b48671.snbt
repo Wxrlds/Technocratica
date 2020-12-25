@@ -14,6 +14,7 @@
 	rewards: [{
 		uid: "30d9eb75",
 		type: "item",
-		item: "minecraft:gold_ingot"
+		item: "minecraft:gold_ingot",
+		random_bonus: 2
 	}]
 }

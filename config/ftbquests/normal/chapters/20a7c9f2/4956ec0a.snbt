@@ -1,6 +1,6 @@
 {
-	x: 9.5d,
-	y: 2.0d,
+	x: 6.0d,
+	y: 3.0d,
 	dependencies: [
 		"77e20082",
 		"8ed7eabf",
@@ -20,5 +20,11 @@
 		uid: "50a879d0",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "de00d912",
+		type: "item",
+		item: "extendedcrafting:singularity_ultimate",
+		random_bonus: 8
 	}]
 }

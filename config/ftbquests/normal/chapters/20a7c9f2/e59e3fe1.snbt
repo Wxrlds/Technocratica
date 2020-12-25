@@ -1,6 +1,6 @@
 {
-	x: 13.5d,
-	y: 4.0d,
+	x: 13.0d,
+	y: 2.0d,
 	shape: "octagon",
 	dependencies: [
 		"e9714c5a"
@@ -16,5 +16,10 @@
 		uid: "565a2dde",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "426a1222",
+		type: "item",
+		item: "avaritia:endest_pearl"
 	}]
 }

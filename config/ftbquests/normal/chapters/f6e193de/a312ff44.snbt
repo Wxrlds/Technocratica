@@ -1,9 +1,11 @@
 {
 	x: -7.0d,
 	y: -0.5d,
-	description: "Complete the Ultimate Crafting Table Quest to unlock this Quest",
 	dependencies: [
-		"1a988b09"
+		"1a988b09",
+		"5fae674f",
+		"09f0980b",
+		"a8573be0"
 	],
 	tasks: [{
 		uid: "8bcb8f82",

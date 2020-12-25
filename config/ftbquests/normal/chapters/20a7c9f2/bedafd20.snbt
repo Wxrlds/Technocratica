@@ -1,6 +1,6 @@
 {
-	x: 4.0d,
-	y: 6.0d,
+	x: 3.0d,
+	y: 5.5d,
 	dependencies: [
 		"d1f90319"
 	],
@@ -15,5 +15,11 @@
 		uid: "e8bd9da3",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "4e23c048",
+		type: "item",
+		item: "minecraft:skull 1 1",
+		random_bonus: 63
 	}]
 }

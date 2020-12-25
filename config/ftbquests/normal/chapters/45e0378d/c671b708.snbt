@@ -50,5 +50,11 @@
 		item: "minecraft:golden_apple 1 1",
 		count: 64,
 		random_bonus: 64
+	},
+	{
+		uid: "debdff74",
+		type: "item",
+		item: "minecraft:nether_star",
+		random_bonus: 12
 	}]
 }

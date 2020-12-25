@@ -18,7 +18,7 @@
 			"type": "item",
 			"io-type": "input",
 			"item": "ore:slimeball",
-			"amount": 32
+			"amount": 16
 		},
 		{
 			"type": "item",
@@ -29,14 +29,14 @@
 		{
 			"type": "item",
 			"io-type": "input",
-			"item": "ore:dyeBlack",
-			"amount": 64
+			"item": "thermalfoundation:material@768",
+			"amount": 32
 		},
 		{
 			"type": "item",
 			"io-type": "output",
 			"item": "enderio:item_material@50",
-			"amount": 64
+			"amount": 32
 		}
 	]
 }

@@ -14,7 +14,11 @@
 	},
 	x: 8.0d,
 	y: -2.0d,
+	shape: "pentagon",
 	description: "Who needs one when you can have ALL of the Exchangers?!",
+	dependencies: [
+		"290e7376"
+	],
 	tasks: [{
 		uid: "9958cab2",
 		type: "item",

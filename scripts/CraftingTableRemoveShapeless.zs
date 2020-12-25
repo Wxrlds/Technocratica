@@ -25,9 +25,9 @@ recipes.removeShapeless(<projecte:item.pe_fuel>*4,[<projecte:item.pe_philosopher
 recipes.removeShapeless(<thermalfoundation:material:16>*9,[<minecraft:diamond>]);
 recipes.removeShapeless(<thermalfoundation:material:17>*9,[<minecraft:emerald>]);
 recipes.removeShapeless(<thermalfoundation:material:32>,[<ore:craftingToolForgeHammer>,<ore:ingotIron>]);
+recipes.removeShapeless(<thermalfoundation:material:33>,[<ore:craftingToolForgeHammer>,<ore:ingotGold>]);
 recipes.removeShapeless(<thermalfoundation:material:320>,[<ore:craftingToolForgeHammer>,<ore:ingotCopper>]);
 recipes.removeShapeless(<thermalfoundation:material:321>,[<ore:craftingToolForgeHammer>,<ore:ingotTin>]);
 recipes.removeShapeless(<thermalfoundation:material:323>,[<ore:craftingToolForgeHammer>,<ore:ingotLead>]);
-recipes.removeShapeless(<thermalfoundation:material:33>,[<ore:craftingToolForgeHammer>,<ore:ingotGold>]);
 recipes.removeShapeless(<thermalfoundation:material:355>,[<ore:craftingToolForgeHammer>,<ore:ingotBronze>]);
 recipes.removeShapeless(<thermalfoundation:material:768>*2,[<ore:oreCoal>,<ore:dustPetrotheum>]);

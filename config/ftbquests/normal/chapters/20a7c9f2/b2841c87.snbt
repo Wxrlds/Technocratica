@@ -1,6 +1,9 @@
 {
-	x: -5.0d,
-	y: -4.0d,
+	x: -5.5d,
+	y: -2.5d,
+	dependencies: [
+		"c68bd22c"
+	],
 	tasks: [{
 		uid: "e6f6d020",
 		type: "item",
@@ -12,5 +15,11 @@
 		uid: "6b0e7237",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "3e664368",
+		type: "item",
+		item: "extendedcrafting:material 1 7",
+		random_bonus: 24
 	}]
 }

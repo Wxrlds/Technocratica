@@ -967,6 +967,18 @@
     {
       "item": "projecte:item.pe_tome|0",
       "emc": 13300721472
+    },
+    {
+      "item": "enderio:block_holy_fog|0",
+      "emc": 100
+    },
+    {
+      "item": "quantumflux:quibitcluster|4",
+      "emc": 1579759
+    },
+    {
+      "item": "quantumflux:quibitcluster|5",
+      "emc": 6356108
     }
   ]
 }

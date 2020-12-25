@@ -1,9 +1,6 @@
 {
 	x: -1.5d,
 	y: -0.5d,
-	text: [
-		"Craft the Creative Essence to unlock this quest"
-	],
 	dependencies: [
 		"4542ccda",
 		"4aa77180"
