@@ -42,6 +42,22 @@
 			item: "mekanismgenerators:reactor 1 2"
 		}],
 		count: 3L
+	},
+	{
+		uid: "23348271",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 13"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "84a73b84",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 14"
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "0b525006",

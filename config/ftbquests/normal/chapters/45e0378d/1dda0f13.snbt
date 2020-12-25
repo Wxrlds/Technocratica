@@ -42,16 +42,6 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "adf56411",
-		type: "item",
-		items: [{
-			id: "cyclicmagic:charm_air",
-			tag: {}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
 		uid: "d5f72435",
 		type: "item",
 		items: [{

@@ -18,17 +18,21 @@ for itm in loadedMods["appliedenergistics2"].items {
     }
 }
 
-mods.jei.JEI.addDescription(<bhc:blue_heart>,"Drop from Evoker. Can be eaten to restore hearts.");
-mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon and Shulkers. Can be eaten to restore hearts.");
-mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs. Can be eaten to restore hearts.");
-mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither). Can be eaten to restore hearts.");
-mods.jei.JEI.addDescription(<ic2:te:50>,"Place next to a Heater to make it start working. Bucket/Universal Fluid Cells filled with Air can be used to accelerate the process.");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"Look at the uses for the Entity Clump and craft+kill the Rabbit Spawn Egg (It's a little bit stronger, so be prepared.)");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"Look at the uses for the Entity Clump and craft+kill the Blaze Spawn Egg (It's a little bit stronger, so be prepared.)");
-mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"Look at the uses for the Entity Clump and craft+kill the Skeleton Spawn Egg (It's a little bit stronger, so be prepared.)");
+mods.jei.JEI.addDescription(<appliedenergistics2:grindstone>,"To use it, place a Wooden Crank on the Grindstone and turn it");
+mods.jei.JEI.addDescription(<bhc:blue_heart>,"Drop from Evoker. Can be eaten to restore hearts");
+mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon and Shulkers. Can be eaten to restore hearts");
+mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs. Can be eaten to restore hearts");
+mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither). Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<enderio:block_powered_spawner>,"The Dark Steel Anvil has a much higher level limit");
 mods.jei.JEI.addDescription(<enderio:item_broken_spawner>,"The Dark Steel Anvil has a much higher level limit");
-mods.jei.JEI.addDescription(<appliedenergistics2:grindstone>,"To use it, place a Wooden Crank on the Grindstone and turn it");
+mods.jei.JEI.addDescription(<ic2:te:50>,"Place next to a Heater to make it start working. Bucket/Universal Fluid Cells filled with Air can be used to accelerate the process.");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:0>,"To get this item, look at the uses for the Entity Clump and craft the Rabbit Spawn Egg and kill the mob (only the mob spawned from the Spawn Egg drops the Covalence Dust)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:1>,"To get this item, look at the uses for the Entity Clump and craft the Blaze Spawn Egg and kill the mob (only the mob spawned from the Spawn Egg drops the Covalence Dust)");
+mods.jei.JEI.addDescription(<projecte:item.pe_covalence_dust:2>,"To get this item, look at the uses for the Entity Clump and craft the Skeleton Spawn Egg and kill the mob (only the mob spawned from the Spawn Egg drops the Covalence Dust)");
+mods.jei.JEI.addDescription(<rf-capability-adapter:aecapabilityadapter>,"Place before connecting it to AE2 for easier setup");
+mods.jei.JEI.addDescription(<rf-capability-adapter:aecapabilityadapter_part>,"Place before connecting it to AE2 for easier setup");
+mods.jei.JEI.addDescription(<ic2:resource:11>,"Use a filled CF Sprayer on Iron Scaffolding to get Reinforced Stone");
+mods.jei.JEI.addDescription(<modularmachinery:blockcontroller>,"The machines require a blueprint to work");
 
 val MekTTip=[
 <mekanism:machineblock:5>,
@@ -53,7 +57,7 @@ val MekTTip2=[
 <mekanism:energycube>
 ] as IItemStack [];
 for item in MekTTip2 {
-mods.jei.JEI.addDescription(item,"Right click a lower tier with a Tier Installer to upgrade.");
+mods.jei.JEI.addDescription(item,"Right click a lower tier with a Tier Installer to upgrade");
 }
 
 val MekTankTip=[
@@ -63,7 +67,7 @@ val MekTankTip=[
 <mekanism:machineblock2:11>.withTag({tier: 3})
 ] as IItemStack [];
 for item in MekTankTip {
-mods.jei.JEI.addDescription(item,"Right click a lower tier with a Tier Installer to upgrade.");
+mods.jei.JEI.addDescription(item,"Right click a lower tier with a Tier Installer to upgrade");
 }
 
 val InWorldCrafting=[
@@ -74,7 +78,7 @@ val InWorldCrafting=[
 <thermalfoundation:material:136>
 ] as IItemStack [];
 for item in InWorldCrafting {
-mods.jei.JEI.addDescription(item.withTag({recipeType:0}),"Throw the items listed to the left of the fluid, in the InWorldCrafting Tab, into the fluid to obtain the output.");
+mods.jei.JEI.addDescription(item.withTag({recipeType:0}),"Throw the items listed to the left of the fluid, in the InWorldCrafting Tab, into the fluid to obtain the output");
 }
 
 val addItems=[
@@ -87,8 +91,8 @@ val addItems=[
 <forge:bucketfilled>.withTag({FluidName: "refinedglowstone", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "refinedobsidian", Amount: 1000}),
 <forge:bucketfilled>.withTag({FluidName: "tin", Amount: 1000}),
-<minecraft:potion>.withTag({CustomPotionEffects: [{Duration: 3600, Id: 17 as byte, Amplifier: "127b"}], CustomPotionColor: 1470027, display: {Name: "Strong Potion of Hunger"}}),
-<ic2:ingot:8>
+<ic2:ingot:8>,
+<minecraft:potion>.withTag({CustomPotionEffects: [{Duration: 3600, Id: 17 as byte, Amplifier: "127b"}], CustomPotionColor: 1470027, display: {Name: "Strong Potion of Hunger"}})
 ] as IItemStack [];
 for item in addItems {
 mods.jei.JEI.addItem(item);
@@ -96,12 +100,12 @@ mods.jei.JEI.addItem(item);
 
 val PackagedAuto=[
 <packagedauto:encoder>,
-<packagedauto:packager_extension>,
 <packagedauto:packager>,
+<packagedauto:packager_extension>,
 <packagedauto:unpackager>
 ] as IItemStack [];
 for item in PackagedAuto {
-mods.jei.JEI.addDescription(item,"Power before connecting it to AE2 for easier setup.");
+mods.jei.JEI.addDescription(item,"Power before connecting it to AE2 for easier setup");
 }
 
 val PartBuilder=[

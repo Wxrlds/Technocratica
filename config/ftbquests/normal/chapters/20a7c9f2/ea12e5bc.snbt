@@ -15,5 +15,11 @@
 		uid: "ea51ce78",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "c3ae432f",
+		type: "item",
+		item: "extendedcrafting:material 1 7",
+		random_bonus: 7
 	}]
 }

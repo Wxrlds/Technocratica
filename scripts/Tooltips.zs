@@ -52,6 +52,8 @@ for item in tools {
 }
 <agricraft:agri_seed>.addTooltip(format.red("Can be upgraded to 10/10/10 in the Crafting Table like every other Seed"));
 <bhc:heart_amulet>.addTooltip(format.red("Can store up to 64 Heart Canisters per slot"));
+<enderio:block_powered_spawner>.addTooltip(format.red("Use with a Dark Steel Anvil. Takes 100 Levels"));
+<enderio:item_broken_spawner>.addTooltip(format.red("Use with a Dark Steel Anvil. Takes 100 Levels"));
 <extendedcrafting:compressor>.addTooltip(format.red("Add Material first, then Catalyst"));
 <extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
 <extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));

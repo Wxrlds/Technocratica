@@ -14,6 +14,7 @@
 	rewards: [{
 		uid: "5112fca9",
 		type: "item",
-		item: "thermalfoundation:material 1 132"
+		item: "thermalfoundation:material 1 132",
+		random_bonus: 2
 	}]
 }

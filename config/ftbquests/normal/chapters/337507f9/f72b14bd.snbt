@@ -23,5 +23,18 @@
 		uid: "52576685",
 		type: "item",
 		item: "xnet:xnet_manual"
+	},
+	{
+		uid: "c40f5f44",
+		type: "item",
+		item: {
+			id: "xnet:connector",
+			tag: {
+				display: {
+					LocName: "tile.xnet.connector_blue.name"
+				}
+			}
+		},
+		count: 2
 	}]
 }

@@ -1,6 +1,7 @@
 {
 	x: 7.0d,
 	y: 2.5d,
+	shape: "pentagon",
 	dependencies: [
 		"0af6ba52"
 	],
@@ -12,8 +13,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "57e8cd9b",
-		type: "random",
-		table: 18
+		uid: "cf5cf502",
+		type: "item",
+		item: "extendedcrafting:storage",
+		random_bonus: 4
 	}]
 }

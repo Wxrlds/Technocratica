@@ -1,6 +1,6 @@
 {
-	x: 3.5d,
-	y: 7.5d,
+	x: 3.0d,
+	y: 7.0d,
 	dependencies: [
 		"bedafd20",
 		"986ffb80"
@@ -16,5 +16,12 @@
 		uid: "09365a24",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "f7926a5f",
+		type: "item",
+		item: "minecraft:nether_star",
+		count: 3,
+		random_bonus: 7
 	}]
 }

@@ -1,6 +1,6 @@
 {
-	x: -1.0d,
-	y: 0.0d,
+	x: -1.5d,
+	y: 0.5d,
 	dependencies: [
 		"4725a8bb",
 		"b45267c9"
@@ -16,5 +16,10 @@
 		uid: "60c0a4a8",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "2ee92317",
+		type: "item",
+		item: "extendedcrafting:interface"
 	}]
 }

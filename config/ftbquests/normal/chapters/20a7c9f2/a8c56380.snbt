@@ -1,6 +1,6 @@
 {
 	x: -3.0d,
-	y: 8.0d,
+	y: 7.5d,
 	dependencies: [
 		"ea12e5bc"
 	],
@@ -15,5 +15,11 @@
 		uid: "8da4c5db",
 		type: "random",
 		table: 13
+	},
+	{
+		uid: "c783db10",
+		type: "item",
+		item: "extendedcrafting:material 1 7",
+		random_bonus: 6
 	}]
 }

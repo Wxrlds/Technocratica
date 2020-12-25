@@ -1,7 +1,6 @@
 {
 	x: -3.0d,
 	y: 0.0d,
-	description: "Complete the Resonant Cell Frame (Full) Quest to unlock this Quest",
 	dependencies: [
 		"0c4229ba"
 	],

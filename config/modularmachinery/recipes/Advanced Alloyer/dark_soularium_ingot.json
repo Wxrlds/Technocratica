@@ -24,7 +24,7 @@
 			"type": "item",
 			"io-type": "input",
 			"item": "enderio:item_material@14",
-			"amount": 1
+			"amount": 9
 		},
 		{
 			"type": "item",

@@ -29,8 +29,8 @@
 		{
 			"type": "item",
 			"io-type": "input",
-			"item": "enderio:item_alloy_ingot@0",
-			"amount": 9
+			"item": "enderio:block_alloy@0",
+			"amount": 1
 		},
 		{
 			"type": "item",

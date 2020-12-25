@@ -15,6 +15,7 @@
 	rewards: [{
 		uid: "9b187c2d",
 		type: "item",
-		item: "enderio:item_alloy_ingot 1 1"
+		item: "enderio:item_alloy_ingot 1 1",
+		random_bonus: 2
 	}]
 }

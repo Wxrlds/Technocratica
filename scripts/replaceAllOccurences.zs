@@ -42,6 +42,7 @@ recipes.replaceAllOccurences(<rftools:machine_frame>,<quantumflux:quibitcluster:
 recipes.replaceAllOccurences(<rftools:machine_frame>,<quantumflux:quibitcluster:5>,<rftoolsdim:liquid_absorber>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<quantumflux:quibitcluster:5>,<rftoolsdim:material_absorber>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<teslacorelib:machine_case>,<rftools:scanner>);
+recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:64>,<rftools:pearl_injector>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:128>,<rftools:block_protector>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:128>,<rftools:shield_block1>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:131>,<rftools:environmental_controller>);
@@ -49,7 +50,6 @@ recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:146
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:146>,<rftools:matter_receiver>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:147>,<rftools:matter_beamer>);
 recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:148>,<rftools:matter_transmitter>);
-recipes.replaceAllOccurences(<rftools:machine_frame>,<thermalexpansion:frame:64>,<rftools:pearl_injector>);
 recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 0 as byte}),<thermalexpansion:capacitor>,<simplyjetpacks:itemfluxpack:6>);
 recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 2 as byte}),<thermalexpansion:capacitor:2>,<simplyjetpacks:itemfluxpack:7>);
 recipes.replaceAllOccurences(<thermalexpansion:cell>.withTag({Level: 4 as byte}),<thermalexpansion:capacitor:4>,<simplyjetpacks:itemfluxpack:8>);
