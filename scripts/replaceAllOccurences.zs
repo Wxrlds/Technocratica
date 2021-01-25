@@ -1,4 +1,3 @@
-recipes.replaceAllOccurences(<enderio:block_tele_pad>,<cyclicmagic:tool_warp_home>,<exchangers:melodic_exchanger>);
 recipes.replaceAllOccurences(<forge:bucketfilled>.withTag({FluidName: "cloud_seed_concentrated", Amount: 1000}),<liquid:cloud_seed_concentrated>*1000,<exchangers:eio_endergy_exchanger_core_tier3>);
 recipes.replaceAllOccurences(<forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000}),<liquid:liquid_sunshine>*1000,<exchangers:eio_endergy_exchanger_core_tier2>);
 recipes.replaceAllOccurences(<forge:bucketfilled>.withTag({FluidName:"cryotheum",Amount: 1000}),<liquid:cryotheum>*1000);

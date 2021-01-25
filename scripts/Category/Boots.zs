@@ -37,8 +37,8 @@ recipes.addShaped(<thermalfoundation:armor.boots_aluminum>, [
 recipes.remove(<minecraft:iron_boots>);
 recipes.addShaped(<minecraft:iron_boots>, [
 	[null, null, null],
-	[<ore:ingotAluminium>, null, <ore:ingotAluminium>],
-	[<ore:ingotAluminium>, <thermalfoundation:armor.boots_aluminum>, <ore:ingotAluminium>]
+	[<ore:ingotIron>, null, <ore:ingotIron>],
+	[<ore:ingotIron>, <thermalfoundation:armor.boots_aluminum>, <ore:ingotIron>]
 ]);
 
 #Slime Boots

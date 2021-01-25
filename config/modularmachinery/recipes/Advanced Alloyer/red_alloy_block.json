@@ -1,6 +1,6 @@
 {
 	"machine": "advanced_alloyer",
-	"registryName": "organic_black_dye",
+	"registryName": "red_alloy_block",
 	"recipeTime": 1,
 	"requirements": [
 		{
@@ -17,26 +17,20 @@
 		{
 			"type": "item",
 			"io-type": "input",
-			"item": "ore:slimeball",
-			"amount": 32
+			"item": "appliedenergistics2:material@5",
+			"amount": 9
 		},
 		{
 			"type": "item",
 			"io-type": "input",
-			"item": "thermalfoundation:material@768",
-			"amount": 64
-		},
-		{
-			"type": "item",
-			"io-type": "input",
-			"item": "ore:dyeBlack",
-			"amount": 64
+			"item": "minecraft:redstone_block",
+			"amount": 1
 		},
 		{
 			"type": "item",
 			"io-type": "output",
-			"item": "enderio:item_material@50",
-			"amount": 64
+			"item": "enderio:block_alloy@3",
+			"amount": 1
 		}
 	]
 }

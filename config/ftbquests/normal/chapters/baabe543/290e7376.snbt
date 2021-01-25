@@ -1,8 +1,8 @@
 {
 	title: "Ender Dragon",
 	icon: "draconicevolution:dragon_heart",
-	x: 1.5d,
-	y: -3.5d,
+	x: 4.5d,
+	y: -2.0d,
 	tasks: [{
 		uid: "95265889",
 		type: "item",

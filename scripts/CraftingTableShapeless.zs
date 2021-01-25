@@ -125,7 +125,6 @@ recipes.addShapeless("Minecraft_Tiny_Coal_To_Coal",<minecraft:coal>,[<actuallyad
 recipes.addShapeless("OpenBlocks_Building_Guide_Reset",<openblocks:guide>,[<openblocks:guide>]);
 recipes.addShapeless("OpenBlocks_Enhanced_Building_Guide_Reset",<openblocks:builder_guide>,[<openblocks:builder_guide>]);
 recipes.addShapeless("Portality_Portal_Controller",<portality:controller>,[<actuallyadditions:item_tele_staff>,<notenoughwands:teleportation_wand>,<cyclicmagic:tool_elevate>,<portality:frame>,<minecraft:fire_charge>,<portality:frame>,<cyclicmagic:tool_warp_spawn>,<quark:blaze_lantern>,<cyclicmagic:tool_warp_home>]);
-recipes.addShapeless("ProjectEX_Green_Matter_Uncraft",<projectex:matter:6>*4,[<contenttweaker:gm_block>]);
 recipes.addShapeless("ProjectE_Blue_Alch_Uncraft",<projecte:item.pe_fuel:2>*4,[<contenttweaker:blue_alch>]);
 recipes.addShapeless("ProjectE_Dark_Matter_Uncraft",<projecte:item.pe_matter>*4,[<projecte:matter_block>]);
 recipes.addShapeless("ProjectE_Manual",<projecte:item.pe_manual>,[<contenttweaker:dark_alch>,<minecraft:book>]);

@@ -2,6 +2,7 @@
 	title: "Mekanism Fusion Reactor",
 	x: 4.0d,
 	y: 0.0d,
+	shape: "pentagon",
 	dependencies: [
 		"56f45536"
 	],
@@ -18,7 +19,7 @@
 		items: [{
 			item: "mekanismgenerators:reactor 1 1"
 		}],
-		count: 57L
+		count: 56L
 	},
 	{
 		uid: "45a50cb5",

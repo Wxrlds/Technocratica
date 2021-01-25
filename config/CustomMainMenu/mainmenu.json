@@ -104,7 +104,7 @@
         },
         "bug reports":
 		{
-            "text": "Github",
+            "text": "GitHub",
             "posX": 44,
             "posY": 50,
             "width": 120,
@@ -113,6 +113,20 @@
 			"action": {
 				"type": "openLink",
 				"link": "https://github.com/Wxrlds/Technocratica/issues"
+			}
+        },
+        "Server":
+		{
+            "text": "Get a Server",
+			"hoverText": "By BisectHosting",
+            "posX": 44,
+            "posY": 25,
+            "width": 120,
+            "height": 20,
+            "alignment": "left_center",
+			"action": {
+				"type": "openLink",
+				"link": "https://bisecthosting.com/Wxrlds"
 			}
         },
         "Discord":

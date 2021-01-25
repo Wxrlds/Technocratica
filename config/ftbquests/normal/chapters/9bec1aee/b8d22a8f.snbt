@@ -16,7 +16,6 @@
 	rewards: [{
 		uid: "f6208516",
 		type: "item",
-		item: "geneticsreborn:overclocker",
-		random_bonus: 4
+		item: "geneticsreborn:overclocker"
 	}]
 }
