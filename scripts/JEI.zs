@@ -33,6 +33,7 @@ mods.jei.JEI.addDescription(<rf-capability-adapter:aecapabilityadapter>,"Place b
 mods.jei.JEI.addDescription(<rf-capability-adapter:aecapabilityadapter_part>,"Place before connecting it to AE2 for easier setup");
 mods.jei.JEI.addDescription(<ic2:resource:11>,"Use a filled CF Sprayer on Iron Scaffolding to get Reinforced Stone");
 mods.jei.JEI.addDescription(<modularmachinery:blockcontroller>,"The machines require a blueprint to work");
+mods.jei.JEI.addDescription(<projectex:stone_table>,"Can learn only a limited amount of items. Important ones are OreDictionary Ingots, (Compressed) Cobblestone, Opinium Cores, Covalence Dust");
 
 val MekTTip=[
 <mekanism:machineblock:5>,

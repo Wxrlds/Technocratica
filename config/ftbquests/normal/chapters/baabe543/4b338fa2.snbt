@@ -3,6 +3,9 @@
 	x: 5.5d,
 	y: -0.5d,
 	description: "The Chaos Guardian spawns in the End in a grid like pattern every 3000 blocks",
+	dependencies: [
+		"290e7376"
+	],
 	tasks: [{
 		uid: "7cee44c9",
 		type: "item",

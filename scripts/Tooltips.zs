@@ -56,6 +56,8 @@ for item in tools {
 <enderio:item_broken_spawner>.addTooltip(format.red("Use with a Dark Steel Anvil. Takes 100 Levels"));
 <extendedcrafting:compressor>.addTooltip(format.red("Add Material first, then Catalyst"));
 <extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
+<extrautils2:ironwood_sapling>.addTooltip(format.gray("Do not burn me."));
+<extrautils2:ironwood_sapling:1>.addTooltip(format.gray("Why did you let that happen?"));
 <extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));
 <ic2:te:86>.addTooltip(format.red("Can only be broken with an Electric Wrench!"));
 <projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));

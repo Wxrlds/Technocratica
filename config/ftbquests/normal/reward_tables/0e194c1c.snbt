@@ -4,7 +4,7 @@
 	loot_size: 21,
 	rewards: [{
 		item: "contenttweaker:dark_alch",
-		weight: 42
+		weight: 45
 	},
 	{
 		item: "contenttweaker:dark_mob",
@@ -16,7 +16,7 @@
 	},
 	{
 		item: "projecte:item.pe_fuel",
-		weight: 27
+		weight: 32
 	},
 	{
 		item: "projecte:item.pe_fuel 1 1",

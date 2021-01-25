@@ -979,6 +979,22 @@
     {
       "item": "quantumflux:quibitcluster|5",
       "emc": 6356108
+    },
+    {
+      "item": "simplyjetpacks:metaitemmods|19",
+      "emc": 10688
+    },
+    {
+      "item": "simplyjetpacks:metaitemmods|21",
+      "emc": 15552
+    },
+    {
+      "item": "draconicevolution:draconium_dust|0",
+      "emc": 0
+    },
+    {
+      "item": "mysticalagradditions:stuff|69",
+      "emc": 383404
     }
   ]
 }

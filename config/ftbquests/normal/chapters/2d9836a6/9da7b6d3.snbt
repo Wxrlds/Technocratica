@@ -3,7 +3,8 @@
 	y: 0.0d,
 	shape: "hexagon",
 	dependencies: [
-		"d3bc976c"
+		"d3bc976c",
+		"0ad05cfc"
 	],
 	hide: true,
 	tasks: [{
