@@ -69,8 +69,6 @@ V2.1.05a
 
 Fixed Unidict removing important recipes.
 
-[Here is the previous changelog](https://github.com/Wxrlds/Technocratica/blob/master/Changelogs/V2.1.05/changelog.md)
-
 -------
 V2.1.05
 
