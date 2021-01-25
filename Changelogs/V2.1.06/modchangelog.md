@@ -1,5 +1,5 @@
 ===============================================
-Technocratica v2.1.05a --> Technocratica 2.1.06
+Technocratica 2.1.05a --> Technocratica 2.1.06
 ===============================================
 
 Updated:
