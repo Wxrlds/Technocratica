@@ -1,4 +1,21 @@
 -------
+V3.0.01
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/b171eca09458f01f285ebb37b75c5e4875e2fb78)
+
+Added recipe for Vacuum Fluid Input Hatch
+
+Tweaked recipe for Energy Condenser MK1
+
+Wither Roses no longer generate naturally
+
+Removed recipes for Redstone Tool Forge, Glowstone Tool Forge
+
+Hopefully fixed a dupe bug
+
+Replaced all the replaceAllOccurences recipes with normal recipes
+
+-------
 V3.0.00
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/e0bb51e3bcf57708e80147e4f46ec6eec2cbed40)

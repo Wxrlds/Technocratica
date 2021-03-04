@@ -1,4 +1,4925 @@
 =============================================
+Technocratica 3.0.00 --> Technocratica 3.0.01
+=============================================
+
+Updated:
+
+	Backported Flora (backportedflora-1.6.0.jar --> backportedflora-1.7.jar):
+		backportedflora-1.7.jar:
+			Added dimension and biome black/whitelists for every plant
+			Added configs to disable seagrass and kelp generation in caves (disabled by default)
+			Wither roses can now drop from entities killed by Withers (configurable)
+			Added allFlowers oredict to flowers
+			Added cropSeaweed oredict to kelp (makes it usable in Harvestcraft recipes)
+			Dye recipes no longer load if Quark is not installed (prevents log spam)
+
+	Chunk-Pregenerator (Chunk Pregenerator-V1.12-2.4.1 --> Chunk Pregenerator-V1.12-2.5.0):
+		Chunk Pregenerator-V1.12-2.5.0:
+			Hotfix/Critical Bugfix patch for a bug that was found a couple times but it took a long time to find out what the issue was.
+			NOTE: This affects every single pregenerator that I know of and that includes a lot of them.
+			So whats the problem:
+			A pregenerator loads a chunk makes sure that its fully generated then unloads it. (It loads extra chunks as needed for this specific chunk)
+			Now the default implementation is they load a 4x4 grid area.
+			There is a extra step that has to be done otherwise not strongly powered servers will have giant lag problems.
+			This extra step is lighting the chunks which only happens if a chunk is in the center of a 3x3 chunk area otherwise the step outright will be skipped.
+			This patch fixes this issue. By a newly designed pregenerator that accounts for this problem in the first place.
+			The pregenerator does basically work the same but has a new foundation so stability should be 95-99% instead of the 99% the 2.4.1 release has.
+			On top of that the pregnerator seems to have gotten a 10-20% pregen speed boost due to the new foundation logic.
+			Changelog:
+			Version 2.5.0:
+			* Changed: Reworked the Entire Pregeneration logic to fix the "chunklighting" step missing.
+			* Added: The Max Pregeneration radius got changed from 1000 to 25000 due to new Pregeneration Task "A LOT" taking less memory then 2.4.1 version. (Thanks 1.14-1.16)
+			* Added/Fixed: Pregenerator now prepaires tasks offthread allowing for much larger tasks to be started without crashing. This also fixes the constant crashloop when the task was to big. (Thanks 1.14-1.16)
+			* Changed: Tasks no longer skip chunks during runtime they are now skipped during task creation allowing for a more accurate pregen task size. (Thanks 1.14-1.16)
+			* Fixed: Preview sees chunks now as they are being generated allowing for a much better view. (Think: TerrainOnly view got also now applied to fullgen view) (Thanks 1.14-1.16)
+			* Changed: Preview Converts chunks now to PreviewChunks on the ServerThread. This should fix a lot of incompats with the Preview. (GT6 is now compatible with it confirmed)
+			* Fixed: Bug with a Networking Packet for Deletion Tasks.
+			* Added: Config to Delete Structure References during pregeneration to fight the memory leak.
+
+	CraftTweaker (CraftTweaker2-1.12-4.1.20.586.jar --> CraftTweaker2-1.12-4.1.20.618.jar):
+		CraftTweaker2-1.12-4.1.20.618.jar:
+			Current version: unspecified
+			* [fix: IBiomeType is not registered and missing biomes getter (see docs) (#1164)](https://github.com/CraftTweaker/CraftTweaker/commit/13d03cc443e104b67b93f233e57f92961f6ab17b) - youyihj - Sat Feb 13 22:02:48 2021
+			* [add IItemStack capNBT access, close #1114 (#1161)](https://github.com/CraftTweaker/CraftTweaker/commit/83ffad4553ff2798bf87145f767292fdd742a1a2) - youyihj - Thu Feb 11 19:28:49 2021
+			* [Refactor replaceAllOccurences & add progress bar when applying actions (#1144)](https://github.com/CraftTweaker/CraftTweaker/commit/41c43b792a67d3181ed627e838b008798fe193b4) - youyihj - Sun Feb 7 05:28:46 2021
+			* [fix (#1149)](https://github.com/CraftTweaker/CraftTweaker/commit/31acd6998ea3bc30eda89672a2f316cef955376e) - youyihj - Thu Jan 28 13:19:10 2021
+			* [revert the recipe expansion](https://github.com/CraftTweaker/CraftTweaker/commit/9f1765c0ddb4b505722e564099fa3c2002671501) - youyihj - Thu Jan 14 17:07:24 2021
+			* [and IFurnaceRecipe](https://github.com/CraftTweaker/CraftTweaker/commit/89ef48ba72126fee3e63e19c5b84214f216f07c4) - youyihj - Thu Jan 14 16:45:42 2021
+			* [add ICraftingRecipe#remove](https://github.com/CraftTweaker/CraftTweaker/commit/308ee3ab4dd12700ccc7c8c081ba4643e44e7100) - youyihj - Thu Jan 14 16:05:55 2021
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [clean unused import](https://github.com/CraftTweaker/CraftTweaker/commit/5ff9bc697f5a69998f900b46f0c4c7eda0c4daa9) - youyihj - Mon Dec 7 01:54:44 2020
+			* [IPlayer#sendStatusMessage hotbar default value](https://github.com/CraftTweaker/CraftTweaker/commit/6950a6863b2e0e14a39855cf5d099478f28b6f32) - youyihj - Fri Dec 4 13:42:28 2020
+			* [forget it, make it default again](https://github.com/CraftTweaker/CraftTweaker/commit/7175104f242de134269c5c4ee127a9fb7b47422a) - youyihj - Fri Dec 4 13:38:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/8fbc1360e4fd1f925f6621e76a7f4d4e1337401f) - youyihj - Fri Dec 4 13:33:53 2020
+			* [expand package](https://github.com/CraftTweaker/CraftTweaker/commit/e88e719cd134d15d0e5d4b22678ce95b7102a058) - youyihj - Fri Dec 4 13:13:46 2020
+			* [move IPlayer#sendStatusMessage to ExpandPlayer#sendRichTextStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/f422a9b2648047d3a218f80366343ce7c8c1e90b) - youyihj - Fri Dec 4 13:07:43 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1cfb6724e6cec20656b9de3e8671535811201bb0) - youyihj - Fri Dec 4 12:54:52 2020
+			* [move ICommandSender#sendMessage to ExpandCommandSender#sendRichTextMessage](https://github.com/CraftTweaker/CraftTweaker/commit/33cd3450992fd4fefb02d6693251d0af790bb8b8) - youyihj - Fri Dec 4 12:52:37 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [suppress warnings](https://github.com/CraftTweaker/CraftTweaker/commit/84437be9ec4ee6a292547e3f7a189d69809e9e08) - youyihj - Fri Dec 4 06:20:21 2020
+			* [simply import](https://github.com/CraftTweaker/CraftTweaker/commit/8a89d0d6f17b9a8bcd77a080bf3acc9e42444bd6) - youyihj - Fri Dec 4 06:06:00 2020
+			* [add IFormattedText#asTextComponent](https://github.com/CraftTweaker/CraftTweaker/commit/55bcbf58ac4df422e4973aa7633fe24e8d20b231) - youyihj - Wed Dec 2 11:54:55 2020
+			* [overload IPlayer#sendStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/03b1024155fb394a233c8f73865c1edfc9d18bf0) - youyihj - Wed Dec 2 11:21:23 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/9828bea734c299cda573d68b60e537aaddb300f3) - youyihj - Wed Dec 2 10:18:31 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [add copy methods](https://github.com/CraftTweaker/CraftTweaker/commit/b96588153ad8c64283a2a09a712f2737cf57047d) - youyihj - Wed Dec 2 04:53:20 2020
+			* [add getParent](https://github.com/CraftTweaker/CraftTweaker/commit/1166b36649b6772e6391c2e94492491cebe01532) - youyihj - Wed Dec 2 03:20:34 2020
+			* [all zenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/828e979b0873e66e422d66b159c5203bd063e942) - youyihj - Tue Dec 1 15:01:44 2020
+			* [also work on DataList](https://github.com/CraftTweaker/CraftTweaker/commit/7be1f684ed3ee38a34ae53c849980436f24278ad) - youyihj - Tue Dec 1 02:39:10 2020
+			* [return a new object](https://github.com/CraftTweaker/CraftTweaker/commit/d42d877662d7f8bc5124fca81f64a2d9d2f779ef) - youyihj - Tue Dec 1 01:51:27 2020
+			* [fix bug](https://github.com/CraftTweaker/CraftTweaker/commit/970b45c05b1f6c8f11b5f6dbcc9b37d431f0be41) - youyihj - Mon Nov 30 17:22:42 2020
+			* [tab component](https://github.com/CraftTweaker/CraftTweaker/commit/2fef7c62745b2f671bea55d3ff8658d52bfe0062) - youyihj - Mon Nov 30 17:20:51 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.617.jar:
+			Current version: unspecified
+			* [add IItemStack capNBT access, close #1114 (#1161)](https://github.com/CraftTweaker/CraftTweaker/commit/83ffad4553ff2798bf87145f767292fdd742a1a2) - youyihj - Thu Feb 11 19:28:49 2021
+			* [Refactor replaceAllOccurences & add progress bar when applying actions (#1144)](https://github.com/CraftTweaker/CraftTweaker/commit/41c43b792a67d3181ed627e838b008798fe193b4) - youyihj - Sun Feb 7 05:28:46 2021
+			* [fix (#1149)](https://github.com/CraftTweaker/CraftTweaker/commit/31acd6998ea3bc30eda89672a2f316cef955376e) - youyihj - Thu Jan 28 13:19:10 2021
+			* [revert the recipe expansion](https://github.com/CraftTweaker/CraftTweaker/commit/9f1765c0ddb4b505722e564099fa3c2002671501) - youyihj - Thu Jan 14 17:07:24 2021
+			* [and IFurnaceRecipe](https://github.com/CraftTweaker/CraftTweaker/commit/89ef48ba72126fee3e63e19c5b84214f216f07c4) - youyihj - Thu Jan 14 16:45:42 2021
+			* [add ICraftingRecipe#remove](https://github.com/CraftTweaker/CraftTweaker/commit/308ee3ab4dd12700ccc7c8c081ba4643e44e7100) - youyihj - Thu Jan 14 16:05:55 2021
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [clean unused import](https://github.com/CraftTweaker/CraftTweaker/commit/5ff9bc697f5a69998f900b46f0c4c7eda0c4daa9) - youyihj - Mon Dec 7 01:54:44 2020
+			* [IPlayer#sendStatusMessage hotbar default value](https://github.com/CraftTweaker/CraftTweaker/commit/6950a6863b2e0e14a39855cf5d099478f28b6f32) - youyihj - Fri Dec 4 13:42:28 2020
+			* [forget it, make it default again](https://github.com/CraftTweaker/CraftTweaker/commit/7175104f242de134269c5c4ee127a9fb7b47422a) - youyihj - Fri Dec 4 13:38:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/8fbc1360e4fd1f925f6621e76a7f4d4e1337401f) - youyihj - Fri Dec 4 13:33:53 2020
+			* [expand package](https://github.com/CraftTweaker/CraftTweaker/commit/e88e719cd134d15d0e5d4b22678ce95b7102a058) - youyihj - Fri Dec 4 13:13:46 2020
+			* [move IPlayer#sendStatusMessage to ExpandPlayer#sendRichTextStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/f422a9b2648047d3a218f80366343ce7c8c1e90b) - youyihj - Fri Dec 4 13:07:43 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1cfb6724e6cec20656b9de3e8671535811201bb0) - youyihj - Fri Dec 4 12:54:52 2020
+			* [move ICommandSender#sendMessage to ExpandCommandSender#sendRichTextMessage](https://github.com/CraftTweaker/CraftTweaker/commit/33cd3450992fd4fefb02d6693251d0af790bb8b8) - youyihj - Fri Dec 4 12:52:37 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [suppress warnings](https://github.com/CraftTweaker/CraftTweaker/commit/84437be9ec4ee6a292547e3f7a189d69809e9e08) - youyihj - Fri Dec 4 06:20:21 2020
+			* [simply import](https://github.com/CraftTweaker/CraftTweaker/commit/8a89d0d6f17b9a8bcd77a080bf3acc9e42444bd6) - youyihj - Fri Dec 4 06:06:00 2020
+			* [add IFormattedText#asTextComponent](https://github.com/CraftTweaker/CraftTweaker/commit/55bcbf58ac4df422e4973aa7633fe24e8d20b231) - youyihj - Wed Dec 2 11:54:55 2020
+			* [overload IPlayer#sendStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/03b1024155fb394a233c8f73865c1edfc9d18bf0) - youyihj - Wed Dec 2 11:21:23 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/9828bea734c299cda573d68b60e537aaddb300f3) - youyihj - Wed Dec 2 10:18:31 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [add copy methods](https://github.com/CraftTweaker/CraftTweaker/commit/b96588153ad8c64283a2a09a712f2737cf57047d) - youyihj - Wed Dec 2 04:53:20 2020
+			* [add getParent](https://github.com/CraftTweaker/CraftTweaker/commit/1166b36649b6772e6391c2e94492491cebe01532) - youyihj - Wed Dec 2 03:20:34 2020
+			* [all zenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/828e979b0873e66e422d66b159c5203bd063e942) - youyihj - Tue Dec 1 15:01:44 2020
+			* [also work on DataList](https://github.com/CraftTweaker/CraftTweaker/commit/7be1f684ed3ee38a34ae53c849980436f24278ad) - youyihj - Tue Dec 1 02:39:10 2020
+			* [return a new object](https://github.com/CraftTweaker/CraftTweaker/commit/d42d877662d7f8bc5124fca81f64a2d9d2f779ef) - youyihj - Tue Dec 1 01:51:27 2020
+			* [fix bug](https://github.com/CraftTweaker/CraftTweaker/commit/970b45c05b1f6c8f11b5f6dbcc9b37d431f0be41) - youyihj - Mon Nov 30 17:22:42 2020
+			* [tab component](https://github.com/CraftTweaker/CraftTweaker/commit/2fef7c62745b2f671bea55d3ff8658d52bfe0062) - youyihj - Mon Nov 30 17:20:51 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.616.jar:
+			Current version: unspecified
+			* [Refactor replaceAllOccurences & add progress bar when applying actions (#1144)](https://github.com/CraftTweaker/CraftTweaker/commit/41c43b792a67d3181ed627e838b008798fe193b4) - youyihj - Sun Feb 7 05:28:46 2021
+			* [fix (#1149)](https://github.com/CraftTweaker/CraftTweaker/commit/31acd6998ea3bc30eda89672a2f316cef955376e) - youyihj - Thu Jan 28 13:19:10 2021
+			* [revert the recipe expansion](https://github.com/CraftTweaker/CraftTweaker/commit/9f1765c0ddb4b505722e564099fa3c2002671501) - youyihj - Thu Jan 14 17:07:24 2021
+			* [and IFurnaceRecipe](https://github.com/CraftTweaker/CraftTweaker/commit/89ef48ba72126fee3e63e19c5b84214f216f07c4) - youyihj - Thu Jan 14 16:45:42 2021
+			* [add ICraftingRecipe#remove](https://github.com/CraftTweaker/CraftTweaker/commit/308ee3ab4dd12700ccc7c8c081ba4643e44e7100) - youyihj - Thu Jan 14 16:05:55 2021
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [clean unused import](https://github.com/CraftTweaker/CraftTweaker/commit/5ff9bc697f5a69998f900b46f0c4c7eda0c4daa9) - youyihj - Mon Dec 7 01:54:44 2020
+			* [IPlayer#sendStatusMessage hotbar default value](https://github.com/CraftTweaker/CraftTweaker/commit/6950a6863b2e0e14a39855cf5d099478f28b6f32) - youyihj - Fri Dec 4 13:42:28 2020
+			* [forget it, make it default again](https://github.com/CraftTweaker/CraftTweaker/commit/7175104f242de134269c5c4ee127a9fb7b47422a) - youyihj - Fri Dec 4 13:38:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/8fbc1360e4fd1f925f6621e76a7f4d4e1337401f) - youyihj - Fri Dec 4 13:33:53 2020
+			* [expand package](https://github.com/CraftTweaker/CraftTweaker/commit/e88e719cd134d15d0e5d4b22678ce95b7102a058) - youyihj - Fri Dec 4 13:13:46 2020
+			* [move IPlayer#sendStatusMessage to ExpandPlayer#sendRichTextStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/f422a9b2648047d3a218f80366343ce7c8c1e90b) - youyihj - Fri Dec 4 13:07:43 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1cfb6724e6cec20656b9de3e8671535811201bb0) - youyihj - Fri Dec 4 12:54:52 2020
+			* [move ICommandSender#sendMessage to ExpandCommandSender#sendRichTextMessage](https://github.com/CraftTweaker/CraftTweaker/commit/33cd3450992fd4fefb02d6693251d0af790bb8b8) - youyihj - Fri Dec 4 12:52:37 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [suppress warnings](https://github.com/CraftTweaker/CraftTweaker/commit/84437be9ec4ee6a292547e3f7a189d69809e9e08) - youyihj - Fri Dec 4 06:20:21 2020
+			* [simply import](https://github.com/CraftTweaker/CraftTweaker/commit/8a89d0d6f17b9a8bcd77a080bf3acc9e42444bd6) - youyihj - Fri Dec 4 06:06:00 2020
+			* [add IFormattedText#asTextComponent](https://github.com/CraftTweaker/CraftTweaker/commit/55bcbf58ac4df422e4973aa7633fe24e8d20b231) - youyihj - Wed Dec 2 11:54:55 2020
+			* [overload IPlayer#sendStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/03b1024155fb394a233c8f73865c1edfc9d18bf0) - youyihj - Wed Dec 2 11:21:23 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/9828bea734c299cda573d68b60e537aaddb300f3) - youyihj - Wed Dec 2 10:18:31 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [add copy methods](https://github.com/CraftTweaker/CraftTweaker/commit/b96588153ad8c64283a2a09a712f2737cf57047d) - youyihj - Wed Dec 2 04:53:20 2020
+			* [add getParent](https://github.com/CraftTweaker/CraftTweaker/commit/1166b36649b6772e6391c2e94492491cebe01532) - youyihj - Wed Dec 2 03:20:34 2020
+			* [all zenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/828e979b0873e66e422d66b159c5203bd063e942) - youyihj - Tue Dec 1 15:01:44 2020
+			* [also work on DataList](https://github.com/CraftTweaker/CraftTweaker/commit/7be1f684ed3ee38a34ae53c849980436f24278ad) - youyihj - Tue Dec 1 02:39:10 2020
+			* [return a new object](https://github.com/CraftTweaker/CraftTweaker/commit/d42d877662d7f8bc5124fca81f64a2d9d2f779ef) - youyihj - Tue Dec 1 01:51:27 2020
+			* [fix bug](https://github.com/CraftTweaker/CraftTweaker/commit/970b45c05b1f6c8f11b5f6dbcc9b37d431f0be41) - youyihj - Mon Nov 30 17:22:42 2020
+			* [tab component](https://github.com/CraftTweaker/CraftTweaker/commit/2fef7c62745b2f671bea55d3ff8658d52bfe0062) - youyihj - Mon Nov 30 17:20:51 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.615.jar:
+			Current version: unspecified
+			* [fix (#1149)](https://github.com/CraftTweaker/CraftTweaker/commit/31acd6998ea3bc30eda89672a2f316cef955376e) - youyihj - Thu Jan 28 13:19:10 2021
+			* [revert the recipe expansion](https://github.com/CraftTweaker/CraftTweaker/commit/9f1765c0ddb4b505722e564099fa3c2002671501) - youyihj - Thu Jan 14 17:07:24 2021
+			* [and IFurnaceRecipe](https://github.com/CraftTweaker/CraftTweaker/commit/89ef48ba72126fee3e63e19c5b84214f216f07c4) - youyihj - Thu Jan 14 16:45:42 2021
+			* [add ICraftingRecipe#remove](https://github.com/CraftTweaker/CraftTweaker/commit/308ee3ab4dd12700ccc7c8c081ba4643e44e7100) - youyihj - Thu Jan 14 16:05:55 2021
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [clean unused import](https://github.com/CraftTweaker/CraftTweaker/commit/5ff9bc697f5a69998f900b46f0c4c7eda0c4daa9) - youyihj - Mon Dec 7 01:54:44 2020
+			* [IPlayer#sendStatusMessage hotbar default value](https://github.com/CraftTweaker/CraftTweaker/commit/6950a6863b2e0e14a39855cf5d099478f28b6f32) - youyihj - Fri Dec 4 13:42:28 2020
+			* [forget it, make it default again](https://github.com/CraftTweaker/CraftTweaker/commit/7175104f242de134269c5c4ee127a9fb7b47422a) - youyihj - Fri Dec 4 13:38:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/8fbc1360e4fd1f925f6621e76a7f4d4e1337401f) - youyihj - Fri Dec 4 13:33:53 2020
+			* [expand package](https://github.com/CraftTweaker/CraftTweaker/commit/e88e719cd134d15d0e5d4b22678ce95b7102a058) - youyihj - Fri Dec 4 13:13:46 2020
+			* [move IPlayer#sendStatusMessage to ExpandPlayer#sendRichTextStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/f422a9b2648047d3a218f80366343ce7c8c1e90b) - youyihj - Fri Dec 4 13:07:43 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1cfb6724e6cec20656b9de3e8671535811201bb0) - youyihj - Fri Dec 4 12:54:52 2020
+			* [move ICommandSender#sendMessage to ExpandCommandSender#sendRichTextMessage](https://github.com/CraftTweaker/CraftTweaker/commit/33cd3450992fd4fefb02d6693251d0af790bb8b8) - youyihj - Fri Dec 4 12:52:37 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [suppress warnings](https://github.com/CraftTweaker/CraftTweaker/commit/84437be9ec4ee6a292547e3f7a189d69809e9e08) - youyihj - Fri Dec 4 06:20:21 2020
+			* [simply import](https://github.com/CraftTweaker/CraftTweaker/commit/8a89d0d6f17b9a8bcd77a080bf3acc9e42444bd6) - youyihj - Fri Dec 4 06:06:00 2020
+			* [add IFormattedText#asTextComponent](https://github.com/CraftTweaker/CraftTweaker/commit/55bcbf58ac4df422e4973aa7633fe24e8d20b231) - youyihj - Wed Dec 2 11:54:55 2020
+			* [overload IPlayer#sendStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/03b1024155fb394a233c8f73865c1edfc9d18bf0) - youyihj - Wed Dec 2 11:21:23 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/9828bea734c299cda573d68b60e537aaddb300f3) - youyihj - Wed Dec 2 10:18:31 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [add copy methods](https://github.com/CraftTweaker/CraftTweaker/commit/b96588153ad8c64283a2a09a712f2737cf57047d) - youyihj - Wed Dec 2 04:53:20 2020
+			* [add getParent](https://github.com/CraftTweaker/CraftTweaker/commit/1166b36649b6772e6391c2e94492491cebe01532) - youyihj - Wed Dec 2 03:20:34 2020
+			* [all zenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/828e979b0873e66e422d66b159c5203bd063e942) - youyihj - Tue Dec 1 15:01:44 2020
+			* [also work on DataList](https://github.com/CraftTweaker/CraftTweaker/commit/7be1f684ed3ee38a34ae53c849980436f24278ad) - youyihj - Tue Dec 1 02:39:10 2020
+			* [return a new object](https://github.com/CraftTweaker/CraftTweaker/commit/d42d877662d7f8bc5124fca81f64a2d9d2f779ef) - youyihj - Tue Dec 1 01:51:27 2020
+			* [fix bug](https://github.com/CraftTweaker/CraftTweaker/commit/970b45c05b1f6c8f11b5f6dbcc9b37d431f0be41) - youyihj - Mon Nov 30 17:22:42 2020
+			* [tab component](https://github.com/CraftTweaker/CraftTweaker/commit/2fef7c62745b2f671bea55d3ff8658d52bfe0062) - youyihj - Mon Nov 30 17:20:51 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.614.jar:
+			Current version: unspecified
+			* [revert the recipe expansion](https://github.com/CraftTweaker/CraftTweaker/commit/9f1765c0ddb4b505722e564099fa3c2002671501) - youyihj - Thu Jan 14 17:07:24 2021
+			* [and IFurnaceRecipe](https://github.com/CraftTweaker/CraftTweaker/commit/89ef48ba72126fee3e63e19c5b84214f216f07c4) - youyihj - Thu Jan 14 16:45:42 2021
+			* [add ICraftingRecipe#remove](https://github.com/CraftTweaker/CraftTweaker/commit/308ee3ab4dd12700ccc7c8c081ba4643e44e7100) - youyihj - Thu Jan 14 16:05:55 2021
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [clean unused import](https://github.com/CraftTweaker/CraftTweaker/commit/5ff9bc697f5a69998f900b46f0c4c7eda0c4daa9) - youyihj - Mon Dec 7 01:54:44 2020
+			* [IPlayer#sendStatusMessage hotbar default value](https://github.com/CraftTweaker/CraftTweaker/commit/6950a6863b2e0e14a39855cf5d099478f28b6f32) - youyihj - Fri Dec 4 13:42:28 2020
+			* [forget it, make it default again](https://github.com/CraftTweaker/CraftTweaker/commit/7175104f242de134269c5c4ee127a9fb7b47422a) - youyihj - Fri Dec 4 13:38:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/8fbc1360e4fd1f925f6621e76a7f4d4e1337401f) - youyihj - Fri Dec 4 13:33:53 2020
+			* [expand package](https://github.com/CraftTweaker/CraftTweaker/commit/e88e719cd134d15d0e5d4b22678ce95b7102a058) - youyihj - Fri Dec 4 13:13:46 2020
+			* [move IPlayer#sendStatusMessage to ExpandPlayer#sendRichTextStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/f422a9b2648047d3a218f80366343ce7c8c1e90b) - youyihj - Fri Dec 4 13:07:43 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1cfb6724e6cec20656b9de3e8671535811201bb0) - youyihj - Fri Dec 4 12:54:52 2020
+			* [move ICommandSender#sendMessage to ExpandCommandSender#sendRichTextMessage](https://github.com/CraftTweaker/CraftTweaker/commit/33cd3450992fd4fefb02d6693251d0af790bb8b8) - youyihj - Fri Dec 4 12:52:37 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [suppress warnings](https://github.com/CraftTweaker/CraftTweaker/commit/84437be9ec4ee6a292547e3f7a189d69809e9e08) - youyihj - Fri Dec 4 06:20:21 2020
+			* [simply import](https://github.com/CraftTweaker/CraftTweaker/commit/8a89d0d6f17b9a8bcd77a080bf3acc9e42444bd6) - youyihj - Fri Dec 4 06:06:00 2020
+			* [add IFormattedText#asTextComponent](https://github.com/CraftTweaker/CraftTweaker/commit/55bcbf58ac4df422e4973aa7633fe24e8d20b231) - youyihj - Wed Dec 2 11:54:55 2020
+			* [overload IPlayer#sendStatusMessage](https://github.com/CraftTweaker/CraftTweaker/commit/03b1024155fb394a233c8f73865c1edfc9d18bf0) - youyihj - Wed Dec 2 11:21:23 2020
+			* [unused import](https://github.com/CraftTweaker/CraftTweaker/commit/9828bea734c299cda573d68b60e537aaddb300f3) - youyihj - Wed Dec 2 10:18:31 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [add copy methods](https://github.com/CraftTweaker/CraftTweaker/commit/b96588153ad8c64283a2a09a712f2737cf57047d) - youyihj - Wed Dec 2 04:53:20 2020
+			* [add getParent](https://github.com/CraftTweaker/CraftTweaker/commit/1166b36649b6772e6391c2e94492491cebe01532) - youyihj - Wed Dec 2 03:20:34 2020
+			* [all zenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/828e979b0873e66e422d66b159c5203bd063e942) - youyihj - Tue Dec 1 15:01:44 2020
+			* [also work on DataList](https://github.com/CraftTweaker/CraftTweaker/commit/7be1f684ed3ee38a34ae53c849980436f24278ad) - youyihj - Tue Dec 1 02:39:10 2020
+			* [return a new object](https://github.com/CraftTweaker/CraftTweaker/commit/d42d877662d7f8bc5124fca81f64a2d9d2f779ef) - youyihj - Tue Dec 1 01:51:27 2020
+			* [fix bug](https://github.com/CraftTweaker/CraftTweaker/commit/970b45c05b1f6c8f11b5f6dbcc9b37d431f0be41) - youyihj - Mon Nov 30 17:22:42 2020
+			* [tab component](https://github.com/CraftTweaker/CraftTweaker/commit/2fef7c62745b2f671bea55d3ff8658d52bfe0062) - youyihj - Mon Nov 30 17:20:51 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.613.jar:
+			Current version: unspecified
+			* [change to value == 1](https://github.com/CraftTweaker/CraftTweaker/commit/e64c04c033d6b1f372659f006b3f4ad8f14518d9) - youyihj - Wed Jan 13 15:09:48 2021
+			* [fix NPE when register creative tab](https://github.com/CraftTweaker/CraftTweaker/commit/17dd9034651b99cbb42bc766113c82fbe07ae8d5) - youyihj - Wed Jan 13 13:20:18 2021
+			* [hashCode BlockPos](https://github.com/CraftTweaker/CraftTweaker/commit/dc29fd884ebea53fc09a3c46bd4086963b93aa2c) - youyihj - Wed Jan 13 09:23:16 2021
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [make DataNumber can cast to boolean](https://github.com/CraftTweaker/CraftTweaker/commit/95406619f164aa9266b9041cb08701b86e9551a9) - youyihj - Wed Jan 13 07:14:06 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Close #992](https://github.com/CraftTweaker/CraftTweaker/commit/8cd8256a68dbfa5574ea388f1124943bec8989e5) - youyihj - Mon Dec 28 06:34:01 2020
+			* [typo](https://github.com/CraftTweaker/CraftTweaker/commit/bcf4ec8a7b000402943f713b34f7338842404eb1) - youyihj - Sat Dec 19 13:43:50 2020
+			* [some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/39ad6b3f84b17c069f6ce76ab0cae6de1ec5267a) - youyihj - Sat Dec 19 13:02:09 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [localize MCLiquidStack#getItems item's display name](https://github.com/CraftTweaker/CraftTweaker/commit/e9a0050aa67d3dc92a6d1996503f6ef4f9c0ab4d) - youyihj - Wed Dec 9 05:40:05 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.612.jar:
+			Current version: unspecified
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/0700accb22684cd49bf86a639837a778f7e50392) - ExpensiveLadder - Mon Dec 14 00:20:31 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.611.jar:
+			Current version: unspecified
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [neighbour -> neighbor](https://github.com/CraftTweaker/CraftTweaker/commit/191114db9f83598685598a02a6850ac9896471cc) - youyihj - Thu Dec 31 02:33:07 2020
+			* [add two events](https://github.com/CraftTweaker/CraftTweaker/commit/fca7b3d0bfea5fd8dbabb028bbe3602b4559f987) - youyihj - Wed Dec 30 11:43:50 2020
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.610.jar:
+			Current version: unspecified
+			* [getBoder != getBorder. Fix typo](https://github.com/CraftTweaker/CraftTweaker/commit/7a44460436218610c6b104c662f33250480c7c03) - Jared - Wed Jan 13 09:16:08 2021
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.609.jar:
+			Current version: unspecified
+			* [Prefill Array for recipes.craft to prevent NPEs](https://github.com/CraftTweaker/CraftTweaker/commit/73548ff6cff572ef9aec94d2409694eba8ed2b2f) - kindlich - Wed Jan 6 01:21:13 2021
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.608.jar:
+			Current version: unspecified
+			* [describe these two preprocessors](https://github.com/CraftTweaker/CraftTweaker/commit/c2f8952b00b7f03cf77b36809eadd22cfeb97ca1) - youyihj - Tue Dec 29 13:00:56 2020
+			* [players' chat 2](https://github.com/CraftTweaker/CraftTweaker/commit/147afe773938ad34f42147ea68b4336180e9d2d2) - youyihj - Tue Dec 29 12:55:09 2020
+			* [players' chat](https://github.com/CraftTweaker/CraftTweaker/commit/ea79a6d82b9eaf7a03067d24121094a20c91d087) - youyihj - Tue Dec 29 12:46:35 2020
+			* [update ZS](https://github.com/CraftTweaker/CraftTweaker/commit/cac7b14c639660562ee9f3cf3a61311c57536ea2) - youyihj - Mon Dec 28 07:10:15 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/a845a2a106f889a562f20c1d8a80a5670c54bc35) - youyihj - Mon Dec 28 07:00:26 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/9069397a79b47854e6c16d6d76d4b2b7ae51e3ff) - youyihj - Mon Dec 28 07:00:26 2020
+			* [update the latest zs commit](https://github.com/CraftTweaker/CraftTweaker/commit/a9a86d3a7e5da98c1c3e2673c786faa2f828dd54) - youyihj - Mon Dec 28 07:00:26 2020
+			* [use enum](https://github.com/CraftTweaker/CraftTweaker/commit/3c998a0467b1daef2d8474cf19b03af90fde1768) - youyihj - Mon Dec 28 07:00:25 2020
+			* [nowarn javadoc](https://github.com/CraftTweaker/CraftTweaker/commit/9a683d04b328313993b6e9a93bc9af16e94b942b) - youyihj - Mon Dec 28 07:00:25 2020
+			* [add NoWarnPreprocessor, syntax command must log errors](https://github.com/CraftTweaker/CraftTweaker/commit/9efe411ffc4ffc75c932c8347d6b40fb04557bc1) - youyihj - Mon Dec 28 07:00:14 2020
+			* [error message shouldn't be suppressed by #ikwid](https://github.com/CraftTweaker/CraftTweaker/commit/64f03a2e85dc87a9c4b0e9b52d8073f02fa311fa) - youyihj - Mon Dec 28 06:59:06 2020
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.607.jar:
+			Current version: unspecified
+			* [Updated ZC](https://github.com/CraftTweaker/CraftTweaker/commit/7c769e5e47de1125b6c340cbc8b5dc1ec07faf96) - kindlich - Tue Dec 15 18:33:38 2020
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.605.jar:
+			Current version: unspecified
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [Register searchTree preprocessor and put repopulating in try/catch](https://github.com/CraftTweaker/CraftTweaker/commit/96f4f1b9a13802c3061c8d0b35ed6e22e3044546) - kindlich - Sun Nov 8 16:36:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.604.jar:
+			Current version: unspecified
+			* [fix completely](https://github.com/CraftTweaker/CraftTweaker/commit/10808c8de9685e674932ed7c9496b79ec027344c) - youyihj - Fri Dec 4 12:42:14 2020
+			* [more fix](https://github.com/CraftTweaker/CraftTweaker/commit/1dfc455281bbd4b79d94b69a16e00bd3a67dc6e8) - youyihj - Fri Dec 4 12:28:58 2020
+			* [ZenExpansion need static methods. And some fixes](https://github.com/CraftTweaker/CraftTweaker/commit/d956aa6d0fe7d85d656ffdc998647a56560e36fe) - youyihj - Fri Dec 4 11:53:32 2020
+			* [remove a wrong zengetter annotation](https://github.com/CraftTweaker/CraftTweaker/commit/d3ebb87103ce002788ff659b647be264cf98e44c) - youyihj - Fri Dec 4 11:20:23 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.603.jar:
+			Current version: unspecified
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/2b9c746b7bc82fd91ee90efeae3c82041dc0d3fd) - ExpensiveLadder - Wed Dec 2 08:31:06 2020
+			* [added IBiomeType.getBiomes](https://github.com/CraftTweaker/CraftTweaker/commit/50f17a00685c2d1fc1ecc9aa4a411ff793878996) - ExpensiveLadder - Wed Nov 25 01:51:43 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/f0d21c793db69d7f0aaf2506b6824a2709625d9e) - ExpensiveLadder - Sat Nov 21 08:34:47 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/0f392005fb6e70c7c4311cca228bdc220b60d4ed) - ExpensiveLadder - Sat Nov 21 08:23:46 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/b55f8f7bc10681741f997f23ed89138dc0dc0ecb) - ExpensiveLadder - Sat Nov 21 08:21:06 2020
+			* [add logError to IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d3adb8d32d3626b357d9986bf3b4eafeddda6112) - ExpensiveLadder - Sat Nov 21 08:03:14 2020
+			* [Move new IEntityAttributeModifier methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/7902e6431f0a22d280fa3eac10a8e6bb12372f69) - ExpensiveLadder - Sat Nov 21 07:55:21 2020
+			* [Move new IEntityItem methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/6f2b8ca068fd2f978f94f2be0d288d51553f8f06) - ExpensiveLadder - Sat Nov 21 07:50:52 2020
+			* [Move new IDamageSource methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/85f8be743acf871e6b45164895311145e9cb16ce) - ExpensiveLadder - Sat Nov 21 07:42:34 2020
+			* [IWorld.extinguishFire uses IFacing instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/0b6b1370d6ad0a814c0885cd513a015e472f0cfa) - ExpensiveLadder - Sat Nov 21 04:22:15 2020
+			* [IEntityLivingBase.activeHand uses IEntityEquipmentSlot instead of String](https://github.com/CraftTweaker/CraftTweaker/commit/e875090ff8496f785b2af8f41af39e855f92df53) - ExpensiveLadder - Sat Nov 21 03:39:17 2020
+			* [added IEntity.removeFromWorld()](https://github.com/CraftTweaker/CraftTweaker/commit/73236c8bacef4af8739f691428d645221800c348) - ExpensiveLadder - Sat Nov 21 03:04:51 2020
+			* [Move new IEntity methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/8d14d08e528f1bdc3cd394fcd297dcaae5c6f16e) - ExpensiveLadder - Sat Nov 21 02:56:20 2020
+			* [Move new IWorld methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/4f06eec2846d18a346c53dc08cb427a3113e5b6d) - ExpensiveLadder - Sat Nov 21 02:41:23 2020
+			* [Move new IEntityLivingBase methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/395e4486cbab0667182e52330c62785e259ec745) - ExpensiveLadder - Sat Nov 21 00:35:27 2020
+			* [Move new IItemDefinition methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/657e4ba5b2fb8fdd1d04642cee7c7e2342e14057) - ExpensiveLadder - Sat Nov 21 00:05:32 2020
+			* [Move new IItemStack methods to expand](https://github.com/CraftTweaker/CraftTweaker/commit/faf23340a877230d5433c80c7ce2e73e9df0d1c8) - ExpensiveLadder - Fri Nov 20 23:59:53 2020
+			* [added IItemStack.getMaxItemUseDuration](https://github.com/CraftTweaker/CraftTweaker/commit/a56022e53bef8b7df7ed171450d284ac9a1de5fe) - ExpensiveLadder - Wed Nov 18 06:19:57 2020
+			* [added IItemDefinition.isArrow](https://github.com/CraftTweaker/CraftTweaker/commit/72ac30002a7e8e4f23cbf996eca8ccceedefa5e3) - ExpensiveLadder - Wed Nov 18 05:31:14 2020
+			* [added PlayerCloneEvent](https://github.com/CraftTweaker/CraftTweaker/commit/4daed46dc03dc266631c26859361f28a05a4ed1f) - ExpensiveLadder - Sun Nov 15 06:14:50 2020
+			* [added IEntityLivingBase.creatureAttribute getter](https://github.com/CraftTweaker/CraftTweaker/commit/46b3b3f548cf574db2d0c31470fbbe8da2e1a8ff) - ExpensiveLadder - Sun Nov 15 05:23:59 2020
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [added IEntityLivingBase.attemptTeleport](https://github.com/CraftTweaker/CraftTweaker/commit/a0de31f0c356d0817dff869c5d24621ac633f13d) - ExpensiveLadder - Thu Nov 12 22:41:32 2020
+			* [moved IAxisAlignedBB.create methods to ExpandAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/8f97bad896a2b2a1c3648e94dc0f060e5e46c361) - ExpensiveLadder - Fri Nov 6 06:45:10 2020
+			* [implement PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/d01871b8618aeaea925766a57f0293fe260050f7) - ExpensiveLadder - Fri Nov 6 05:01:59 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/bc4df714d3799ed0b0f6c089e010a839db9d6c09) - ExpensiveLadder - Fri Nov 6 03:54:28 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2f34b163116cdabb1b9630515381b757b5b33d12) - ExpensiveLadder - Fri Nov 6 02:09:53 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [added EntityLivingUpdateEvent](https://github.com/CraftTweaker/CraftTweaker/commit/57d5ae20610481be0edd4a619cd1b16b0bd32a20) - ExpensiveLadder - Wed Nov 4 21:30:42 2020
+			* [IEntity boundingBox getter and setter](https://github.com/CraftTweaker/CraftTweaker/commit/ae41e6d8a2f21c3143e78b29682d80dc0ebe5481) - ExpensiveLadder - Tue Nov 3 06:15:33 2020
+			* [added IWorld.findNearestEntityWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/384ab16260de796e99ede84d7f7b9fe3332a1de7) - ExpensiveLadder - Tue Nov 3 05:52:15 2020
+			* [added IWorld.getEntitiesWithinAABBExcludingEntity](https://github.com/CraftTweaker/CraftTweaker/commit/0177ac74dc648010c99f265e7be9be20c4864ecc) - ExpensiveLadder - Sun Nov 1 00:45:58 2020
+			* [added ItemFishedEvent.getFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/1121e34e6e7a073aacc32e53d90d6f0901eb88f8) - ExpensiveLadder - Sat Oct 31 22:07:40 2020
+			* [added IWorld.getEntitiesWithinAABB](https://github.com/CraftTweaker/CraftTweaker/commit/3257231d516993f0c6c75180e07d2b17e817658c) - ExpensiveLadder - Sat Oct 31 02:30:20 2020
+			* [added IAxisAlignedBB](https://github.com/CraftTweaker/CraftTweaker/commit/b6db94064b5699f8f17eaa2f682b84341cc249ec) - ExpensiveLadder - Sat Oct 31 01:02:28 2020
+			* [make IEntity.getNBT a ZenGetter](https://github.com/CraftTweaker/CraftTweaker/commit/d7f426b3e0d46cd6d94f31df69ec2784c41e5447) - ExpensiveLadder - Thu Oct 29 22:06:36 2020
+			* [make IEntity.getUUID ZenGetter lowercase](https://github.com/CraftTweaker/CraftTweaker/commit/0430871194a7cea1b4badc971b80dd10044dd56c) - ExpensiveLadder - Thu Oct 29 06:02:41 2020
+			* [added IEntity.getUUID](https://github.com/CraftTweaker/CraftTweaker/commit/757c77df0962f12135eb4f532db8a6919af4f410) - ExpensiveLadder - Thu Oct 29 00:52:04 2020
+			* [make camelCase](https://github.com/CraftTweaker/CraftTweaker/commit/8458469487dbcb0ab7d51681b0523d4f7ad3ff16) - ExpensiveLadder - Tue Oct 27 21:52:39 2020
+			* [added IEntityFishHook.state](https://github.com/CraftTweaker/CraftTweaker/commit/f71891cc25895d22222334418b5a75ec021b0499) - ExpensiveLadder - Tue Oct 27 21:03:29 2020
+			* [added IEntityArrow.getKnockbackStrength](https://github.com/CraftTweaker/CraftTweaker/commit/e57fbff22552ff42451252c5c199308b3f4f0e49) - ExpensiveLadder - Tue Oct 27 21:00:35 2020
+			* [added IItemStack.setAlwaysEdible](https://github.com/CraftTweaker/CraftTweaker/commit/9602ec930fb5d2d798aabc74263687c3b14546b1) - ExpensiveLadder - Tue Oct 27 06:30:33 2020
+			* [update](https://github.com/CraftTweaker/CraftTweaker/commit/2d38c71cbae2f2a97d1a9d7b9d5709540fc02468) - ExpensiveLadder - Sun Oct 25 22:21:50 2020
+			* [make setActiveHand a ZenSetter](https://github.com/CraftTweaker/CraftTweaker/commit/f531affce811f50f20886a427489866387729838) - ExpensiveLadder - Sun Oct 25 21:51:16 2020
+			* [added potiontype bracket handler](https://github.com/CraftTweaker/CraftTweaker/commit/d78ff3b7192adf6be44af03f98154cc7c7d5d378) - ExpensiveLadder - Sat Oct 24 08:07:53 2020
+			* [fix indentation](https://github.com/CraftTweaker/CraftTweaker/commit/f7ee09f4342dc1f915612521cf55f1cb5bd8048b) - ExpensiveLadder - Sat Oct 24 06:05:40 2020
+			* [added IWorld.removeEntity](https://github.com/CraftTweaker/CraftTweaker/commit/3f367dbc0430fd8e79b6ac8be6e234e33b9159ee) - ExpensiveLadder - Sat Oct 24 00:17:54 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [added IPotionType](https://github.com/CraftTweaker/CraftTweaker/commit/8c6f507cedab5283ef2d63c574f5d74ece9d6052) - ExpensiveLadder - Tue Oct 20 02:57:28 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [remove mutating getters](https://github.com/CraftTweaker/CraftTweaker/commit/e8b95e4441e7fc526f977b4b8e127c48ed2e7b4f) - ExpensiveLadder - Sat Oct 17 23:38:53 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/62fd24a1868933ee810b27a7c4cc855de9df4506) - ExpensiveLadder - Sat Oct 17 00:36:48 2020
+			* [added PotionEffectAddedEvent](https://github.com/CraftTweaker/CraftTweaker/commit/34f82c3b721312d0e2e733be6c3d2ba380287128) - ExpensiveLadder - Sat Oct 17 00:15:39 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [fix things](https://github.com/CraftTweaker/CraftTweaker/commit/e4208315b79a8d1d6bed940f074a141d8cb7366b) - ExpensiveLadder - Mon Oct 12 22:56:37 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/5c461ac12195f4023559c846c9ff544287409bd9) - ExpensiveLadder - Wed Oct 7 08:04:34 2020
+			* [Moved IEntityAttributeModifier.createModifier to ExpandEntityAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/ddc274bcbec4669f1fcd2b883ccf98a4ad7c52aa) - ExpensiveLadder - Wed Oct 7 07:45:09 2020
+			* [Moved createEntityDamage and createIndirectDamage to MCDamageSourceExpand](https://github.com/CraftTweaker/CraftTweaker/commit/e6d15b9db23a4708029b819182d3166725edf436) - ExpensiveLadder - Wed Oct 7 07:20:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/35037800f07796e70ba9cf1e04cb4ee850d5233a) - ExpensiveLadder - Sat Oct 3 23:10:07 2020
+			* [added: IPotion.setBeneficial IPotionEffect.combine](https://github.com/CraftTweaker/CraftTweaker/commit/0448c2b1d485d71df4beab576c8a7d0fb55876f9) - ExpensiveLadder - Fri Oct 2 22:48:04 2020
+			* [WorldTickEvent correctly extends IWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/03194af90a1ea35440f34270a164d4225c39769a) - ExpensiveLadder - Tue Sep 29 20:04:00 2020
+			* [remove getEntityDefinitionFromString](https://github.com/CraftTweaker/CraftTweaker/commit/28e3623e22ce28456e7ab8da283590a4b27f2555) - ExpensiveLadder - Tue Sep 29 08:57:51 2020
+			* [fix IEntityArrowTipped's zenclass](https://github.com/CraftTweaker/CraftTweaker/commit/06a5f4d8d17b8bfb72c66a5e91266e74a2baed3a) - ExpensiveLadder - Tue Sep 29 08:17:59 2020
+			* [added: IProjectile IEntityThrowable IEntityArrow IEntityArrowTipped](https://github.com/CraftTweaker/CraftTweaker/commit/e231697728e0551ee058f27e35463005c0e775cb) - ExpensiveLadder - Tue Sep 29 08:02:17 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix IWorld.extinguishFire](https://github.com/CraftTweaker/CraftTweaker/commit/b2fe0ec2a61ca53e50d66b626c010a858de592e3) - ExpensiveLadder - Sat Sep 26 03:52:42 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [add WorldTickEvent](https://github.com/CraftTweaker/CraftTweaker/commit/3f1d8195902d41c0549098b51bdde73b970308b2) - ExpensiveLadder - Fri Sep 25 01:22:14 2020
+			* [add IEntityArrow and IEntityThrowable](https://github.com/CraftTweaker/CraftTweaker/commit/4659794d64da9721db6c583e46176f7794ceba94) - ExpensiveLadder - Thu Sep 24 10:11:37 2020
+			* [more IEntityLivingBase methods](https://github.com/CraftTweaker/CraftTweaker/commit/e010885e30e2ab25055421c78da0c54a536a4a4c) - ExpensiveLadder - Wed Sep 23 23:44:42 2020
+			* [add IItemStack.addAttributeModifier](https://github.com/CraftTweaker/CraftTweaker/commit/b31c1090b1ddae2297041da5543cf815fdb83e99) - ExpensiveLadder - Wed Sep 23 03:16:51 2020
+			* [more IEntityAttributeModifier methods](https://github.com/CraftTweaker/CraftTweaker/commit/67ba6a4bfd618d8305e41651043b537f03241f61) - ExpensiveLadder - Wed Sep 23 02:51:03 2020
+			* [Revert "add IExplosion"](https://github.com/CraftTweaker/CraftTweaker/commit/f5443f050d7473ab623a196c192f06b16f51a146) - ExpensiveLadder - Wed Sep 23 00:55:11 2020
+			* [add IExplosion](https://github.com/CraftTweaker/CraftTweaker/commit/6b4e438fb087487533601dffc43442912e06a29a) - ExpensiveLadder - Tue Sep 22 04:03:49 2020
+			* [fix EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0c8afa3821dc375c38e06a553b4f94e4f81c06dd) - ExpensiveLadder - Tue Sep 22 04:01:31 2020
+			* [Add getter for if the entity is a lightningbolt](https://github.com/CraftTweaker/CraftTweaker/commit/538f5af885f02b514864df97eb5c31ad64f0391c) - ExpensiveLadder - Mon Sep 21 06:40:26 2020
+			* [add EntityLivingHealEvent](https://github.com/CraftTweaker/CraftTweaker/commit/1d37b8cfc819b05b2006b24b82b46cf2d616d2c4) - ExpensiveLadder - Mon Sep 21 06:10:23 2020
+			* [fix new events](https://github.com/CraftTweaker/CraftTweaker/commit/bf22e110a5f8635c1d8358d062975283712b18c6) - ExpensiveLadder - Mon Sep 21 05:37:58 2020
+			* [EntityLivingDamageEvent](https://github.com/CraftTweaker/CraftTweaker/commit/529937e8080c8b268e8456c71e50c5b649bb34af) - ExpensiveLadder - Mon Sep 21 02:07:15 2020
+			* [add EntityJoinWorldEvent](https://github.com/CraftTweaker/CraftTweaker/commit/0dcae427109f456c94111e063179b2d30dde6444) - ExpensiveLadder - Mon Sep 21 01:21:23 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Revert "Revert "add IEntityFishHook""](https://github.com/CraftTweaker/CraftTweaker/commit/40bc383a980648e677c2713a05ffd3a1e0e77272) - ExpensiveLadder - Sun Sep 20 12:19:12 2020
+			* [Revert "add IEntityFishHook"](https://github.com/CraftTweaker/CraftTweaker/commit/289781e8e98282b559e33f4ebac20b478e1e9a62) - ExpensiveLadder - Sun Sep 20 12:18:18 2020
+			* [add IEntityFishHook](https://github.com/CraftTweaker/CraftTweaker/commit/8db9a975b3095fc60c4935cc61fbf342f91a0ce7) - ExpensiveLadder - Sun Sep 20 12:17:34 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [IEntity thing](https://github.com/CraftTweaker/CraftTweaker/commit/213fc3cb178c6b9ce926d07b171a7b8789bbf9bd) - ExpensiveLadder - Sun Sep 20 02:43:36 2020
+			* [IEntityLivingBase Things](https://github.com/CraftTweaker/CraftTweaker/commit/c64c1e3dff488aa501cb0d998fd367b2a673e837) - ExpensiveLadder - Sun Sep 20 00:17:42 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/33262c057dde3afd3e12070545d17ce0f2acc956) - ExpensiveLadder - Sun Sep 20 00:10:39 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/83b9a79772515ac46d9a2d02800ab0924e96ffcc) - ExpensiveLadder - Sat Sep 19 23:29:38 2020
+			* [ArrowLooseEvent and ArrowNockEvent](https://github.com/CraftTweaker/CraftTweaker/commit/c3f8af6d5cb3ff58b4035c2e18616ea7a0af7424) - ExpensiveLadder - Sat Sep 19 23:23:49 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.602.jar:
+			Current version: unspecified
+			* [fix maven jars](https://github.com/CraftTweaker/CraftTweaker/commit/e891ab1a465ec689e05a6a8814bc742ed7521f50) - Jared - Fri Nov 13 01:01:03 2020
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.601.jar:
+			Current version: unspecified
+			* [Face impl](https://github.com/CraftTweaker/CraftTweaker/commit/0e51feebe14cb50a03684789aad42aea65f377ec) - Colin Wong - Thu Nov 5 03:13:05 2020
+			* [Add face getter to API](https://github.com/CraftTweaker/CraftTweaker/commit/8c910fa54f37c6e516d601068dea27a9f114f96d) - Colin Wong - Thu Nov 5 03:03:19 2020
+			* [Make world accessible](https://github.com/CraftTweaker/CraftTweaker/commit/2aa183f6cf364dbf759d9386476775c857f3a71d) - Colin Wong - Fri Oct 23 07:52:16 2020
+			* [Rename for clarity, add to CrTMC](https://github.com/CraftTweaker/CraftTweaker/commit/87fe79e8a4f2ba29cfdc0acd1c7d7b6404c2d84d) - Colin Wong - Fri Oct 23 07:05:03 2020
+			* [Add more explosion stuff + events](https://github.com/CraftTweaker/CraftTweaker/commit/1a78f364ad17682ed56e639ab92a81782304a8d1) - Colin Wong - Fri Oct 23 06:21:27 2020
+			* [Fix some warnings](https://github.com/CraftTweaker/CraftTweaker/commit/228ff15de19708b1b973c44a2840cae44e68f28f) - Colin Wong - Thu Oct 22 03:15:20 2020
+			* [Oops I introduced build errors](https://github.com/CraftTweaker/CraftTweaker/commit/fceb3245d9badd55f154bfc6d4c5f3a0600f06cc) - Colin Wong - Wed Oct 21 08:16:35 2020
+			* [Initial addition](https://github.com/CraftTweaker/CraftTweaker/commit/919f65eb2dc60aa576276a559c9de6bc2680318d) - Colin Wong - Wed Oct 21 05:59:58 2020
+			* [Remove unused import](https://github.com/CraftTweaker/CraftTweaker/commit/3ce7350f8703dba020f9bc88d9ec68d891895a87) - Colin Wong - Mon Oct 19 20:05:34 2020
+			* [Create .gitpod.yml](https://github.com/CraftTweaker/CraftTweaker/commit/a2976d9aafeb4fa84a23e20af52e7b130b65b2f1) - Colin Wong - Sun Oct 18 19:58:46 2020
+			* [Remove .gitpod.yml form .gitignore](https://github.com/CraftTweaker/CraftTweaker/commit/0c13d27eb5986e52937a5eda24d61ef4443dd362) - Colin Wong - Sun Oct 18 19:58:12 2020
+			* [Add tick events](https://github.com/CraftTweaker/CraftTweaker/commit/0dafb7be55a99625cc59bcab6b06658fa8a09172) - Colin Wong - Sun Oct 18 08:40:56 2020
+			* [Make zg default](https://github.com/CraftTweaker/CraftTweaker/commit/1fc818541847a40dc331b041a00bc83a8bfa2dfd) - Colin Wong - Tue Oct 13 20:34:27 2020
+			* [Change to AT](https://github.com/CraftTweaker/CraftTweaker/commit/2a5aafa466a1b31141f465b30c6b2136119db96e) - Colin Wong - Tue Oct 13 20:27:55 2020
+			* [Fix ed getting with obfreflhelper](https://github.com/CraftTweaker/CraftTweaker/commit/3da88453d03084ac66b98f01e4c9b64054b95a9c) - Colin Wong - Tue Oct 13 06:06:56 2020
+			* [Update dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/9caff3fe59e28a9d0b9cedc3c05121959b466e16) - Colin Wong - Mon Oct 12 08:52:21 2020
+			* [Add ed getter to impl](https://github.com/CraftTweaker/CraftTweaker/commit/d7b3b324ce4730bca6af94b5a888212f3629de6b) - Colin Wong - Mon Oct 12 08:49:36 2020
+			* [Add ed getter to api](https://github.com/CraftTweaker/CraftTweaker/commit/885cafeacbed8d0df3a2934463eb2140db3a08f2) - Colin Wong - Mon Oct 12 08:27:28 2020
+			* [Add dockerfile](https://github.com/CraftTweaker/CraftTweaker/commit/b391903473d94bdce3655d057ba01682e47f4d3a) - Colin Wong - Sun Oct 11 22:13:37 2020
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [make IWorld#getEntitiesInArea return value can use instanceof](https://github.com/CraftTweaker/CraftTweaker/commit/8f6fdaeff334fbfbd88c80cd9c32077c426a7681) - youyihj - Sat Oct 10 01:13:57 2020
+			* [so there is an unused import](https://github.com/CraftTweaker/CraftTweaker/commit/1703f10c786c561d72b3f3dbfa7c82584c8eb5ff) - youyihj - Tue Oct 6 01:18:58 2020
+			* [delete getTileDataInternal method](https://github.com/CraftTweaker/CraftTweaker/commit/7bc6ecb9b1d11ceb0a9157e8caf3a3843a520803) - youyihj - Tue Oct 6 01:17:34 2020
+			* [delete a space](https://github.com/CraftTweaker/CraftTweaker/commit/42f5409bb9e4313c33c7e9d0c3ba7838f49540f9) - youyihj - Mon Oct 5 09:28:07 2020
+			* [no, don't use MCSpecificBlock](https://github.com/CraftTweaker/CraftTweaker/commit/d528b3d2bd707da589b24fc7122c2da3af7801e3) - youyihj - Mon Oct 5 09:26:06 2020
+			* [send warning when call MCSpecificBlock#getTileData. (Close #989)](https://github.com/CraftTweaker/CraftTweaker/commit/2c3f1de70685f807bae9a156e9fafeb51656e872) - youyihj - Mon Oct 5 09:26:02 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/7b69b2dbab55ddbdd79776993ef4c5ba0249a922) - youyihj - Mon Oct 5 08:53:43 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/94bfe4baf2bd0119459a04877cfe7b6cfd725005) - youyihj - Mon Oct 5 08:53:05 2020
+			* [default](https://github.com/CraftTweaker/CraftTweaker/commit/91070f2c274986cb730cb784405e180c3e59e659) - youyihj - Mon Oct 5 08:50:51 2020
+			* [Not exposed](https://github.com/CraftTweaker/CraftTweaker/commit/9578cbb7bd5451e0e94b6c937bb1c125dc0571dc) - youyihj - Sun Oct 4 06:25:30 2020
+			* [Update MCBlockDefinition.java](https://github.com/CraftTweaker/CraftTweaker/commit/63551069894dd9586bf0c72f76d59e85a96acca0) - youyihj - Sun Oct 4 05:09:36 2020
+			* [changing as the suggestion](https://github.com/CraftTweaker/CraftTweaker/commit/db2de1bb11c87be7cd1e113145253665c376c7a5) - youyihj - Sun Oct 4 04:52:33 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [clean](https://github.com/CraftTweaker/CraftTweaker/commit/c6e75ed5741eef8fdbc2ab6dc455ae14e7b27c8f) - youyihj - Sat Sep 26 05:55:53 2020
+			* [fix truly](https://github.com/CraftTweaker/CraftTweaker/commit/3fa7a99905049a9b75fb1a8c1030d3eda8dd8011) - youyihj - Sat Sep 26 05:51:20 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/609dbc1c355eac425a96a3abd8068744e41bc8ad) - youyihj - Sat Sep 26 02:09:17 2020
+			* [fix](https://github.com/CraftTweaker/CraftTweaker/commit/eaebd19989a5cb069c3039f4d6cc7f3a33f862db) - youyihj - Sat Sep 26 02:07:28 2020
+			* [implement](https://github.com/CraftTweaker/CraftTweaker/commit/f6f5704aeec2e939d3e848b635a7f480c986e5c2) - youyihj - Sat Sep 26 02:06:33 2020
+			* [harvest level for IBlockState](https://github.com/CraftTweaker/CraftTweaker/commit/07b2b488c3b3b43bf80cd86222d7738fb47c1081) - youyihj - Sat Sep 26 02:03:52 2020
+			* [implement the method](https://github.com/CraftTweaker/CraftTweaker/commit/f9b1b1cbc797b44581d1f187be439f8d5091c914) - youyihj - Fri Sep 25 01:54:12 2020
+			* [add IBlockDefinition#isToolEffective](https://github.com/CraftTweaker/CraftTweaker/commit/ccee0cac9f968c9edf151597e017d03dd7ec7735) - youyihj - Fri Sep 25 01:48:33 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.594.jar:
+			Current version: unspecified
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [Proper setter for EntityLivingHurtEvent](https://github.com/CraftTweaker/CraftTweaker/commit/8d4af63f4f68b1dad39514156e244b834565fa90) - Colin Wong - Mon Sep 28 21:26:58 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.593.jar:
+			Current version: unspecified
+			* [Fix 1.12 building](https://github.com/CraftTweaker/CraftTweaker/commit/1a2c4c9fb6bd9ab6ef5d2cf7177e02fae29c41a9) - Colin Wong - Sun Oct 11 03:33:26 2020
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.592.jar:
+			Current version: unspecified
+			* [Add result to sleep in bed impl](https://github.com/CraftTweaker/CraftTweaker/commit/97546f070d30bbeb29606d4dffda2a705854ac83) - Colin Wong - Mon Sep 21 00:58:29 2020
+			* [Add result to sleep in bed api](https://github.com/CraftTweaker/CraftTweaker/commit/da4605af2d718326627ee8ca988e52aeae96541b) - Colin Wong - Mon Sep 21 00:54:47 2020
+			* [Add AnvilUpdate to CommonEvHandler](https://github.com/CraftTweaker/CraftTweaker/commit/053254b056da34a564aa15926f8670c9b51439df) - Colin Wong - Sun Sep 20 20:43:40 2020
+			* [Add AnvilUpdate implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8d47c7bb3e8babe5dd8d3b2bbd898e2e29fe19ae) - Colin Wong - Sun Sep 20 20:39:11 2020
+			* [Add itemName](https://github.com/CraftTweaker/CraftTweaker/commit/96a476370c773433772d5e0c4ff47fa4d5535c7a) - Colin Wong - Sun Sep 20 20:38:16 2020
+			* [Remove cancellation result](https://github.com/CraftTweaker/CraftTweaker/commit/f339b9e3ada11f660665ffe8b24fa7736916def7) - Colin Wong - Sun Sep 20 20:35:38 2020
+			* [Add AnvilUpdate to MTEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/a8777efa406495832974d1576dbc3c8ccd30b915) - Colin Wong - Sun Sep 20 20:18:12 2020
+			* [Add anvil update event to IEventMgr](https://github.com/CraftTweaker/CraftTweaker/commit/7d559f66e8ca47ab15d025ffb374f7322f09a1b4) - Colin Wong - Sun Sep 20 20:12:11 2020
+			* [Add AnvilUpdateEvent to api](https://github.com/CraftTweaker/CraftTweaker/commit/083517c9fc85cc18c36299b5094a4e805feb949f) - Colin Wong - Sun Sep 20 19:55:23 2020
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.590.jar:
+			Current version: unspecified
+			* [Fix uuid null check](https://github.com/CraftTweaker/CraftTweaker/commit/9d47de0bbd12015040b83dcd84bb651a310ac6d5) - Colin Wong - Sun Sep 20 19:06:03 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/a53bc98d9e9f2784cc1b39ad49ad46710a8920ac) - Colin Wong - Sun Sep 20 07:59:40 2020
+			* [Make default](https://github.com/CraftTweaker/CraftTweaker/commit/03fc98f8654dbc774232361f9621f3dc347e763e) - Colin Wong - Sun Sep 20 07:58:43 2020
+			* [Add dropItem mc](https://github.com/CraftTweaker/CraftTweaker/commit/71f13e70b11051597723e8a7f5ea8a09f511e74c) - Colin Wong - Sun Sep 20 07:39:59 2020
+			* [Player drop item api](https://github.com/CraftTweaker/CraftTweaker/commit/9127b81682bc9e2d86fa9084a3cbf6eb80830874) - Colin Wong - Sun Sep 20 07:18:06 2020
+			* [Get UUID implementation](https://github.com/CraftTweaker/CraftTweaker/commit/8f83bd3d33179e9a9ebefa0ecb499636fa813695) - Colin Wong - Sun Sep 20 06:24:19 2020
+			* [Get UUID api](https://github.com/CraftTweaker/CraftTweaker/commit/d91af018f9bc0c05d2bc11e0dfb28a0b1c80a118) - Colin Wong - Sun Sep 20 06:17:04 2020
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.589.jar:
+			Current version: unspecified
+			* [Add IEntityLivingBase#removePotionEffect](https://github.com/CraftTweaker/CraftTweaker/commit/a5434d64738955b7b88109c09be4a55aaf1d01bc) - youyihj - Sat Sep 19 07:01:10 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.588.jar:
+			Current version: unspecified
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/8f5df8d4f4ea651001d1ee992c51bd10f3b3ff35) - kindlich - Wed Sep 9 19:33:29 2020
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+		CraftTweaker2-1.12-4.1.20.587.jar:
+			Current version: unspecified
+			* [Have CraftTweakerMC#getIngredient respect matchTagExact in IItemStack#withTag(IData, boolean).](https://github.com/CraftTweaker/CraftTweaker/commit/1f39004183b18e825148fdbc0664c3c7bd8e933f) - eutropius225 - Mon Sep 7 22:56:48 2020
+			* [added a setting to entitylivinghurtevent close #1051](https://github.com/CraftTweaker/CraftTweaker/commit/4d9e91e563b8bce2b22db24a7f83e1d6c01b6da5) - Jared - Mon Aug 24 04:33:25 2020
+			* [added a way to get entities in a specific area of the world](https://github.com/CraftTweaker/CraftTweaker/commit/eecc3610738861315101bae091327c93aef06235) - Jared - Thu Aug 20 01:34:43 2020
+			* [logError not logWarning](https://github.com/CraftTweaker/CraftTweaker/commit/5abb18eba3d817f56ba9b48cf6ba781a79e5e172) - eutropius225 - Wed Aug 19 15:30:15 2020
+			* [Add IWorld#getPickedBlock(IBlockPos,IRayTraceResult,IPlayer)](https://github.com/CraftTweaker/CraftTweaker/commit/bfaa05cf3e3e580511cdb859a3078e7424c4dd27) - eutropius225 - Wed Aug 19 15:28:49 2020
+			* [added IPlayer#changeDimension](https://github.com/CraftTweaker/CraftTweaker/commit/b58df912453d59fa9014e857f061bd0d18db179c) - Jared - Sat Aug 15 02:22:23 2020
+			* [Add IBlockDefinition#getStateFromMeta(int)](https://github.com/CraftTweaker/CraftTweaker/commit/3a2425d391bbaa5142855f1c93b5593f02cae85c) - eutropius225 - Sun Jul 26 20:06:03 2020
+			* [Use forge methods for giving items instead of a custom broken one](https://github.com/CraftTweaker/CraftTweaker/commit/fa3e8f8685f835cc0abc23c536f3d554995097f4) - Jared - Sun Jul 5 23:01:29 2020
+			* [Update the interface as well for oredict changes..](https://github.com/CraftTweaker/CraftTweaker/commit/8122bcada9b335bec3bbf883290e35c27a5b3eec) - Jared - Sun Jul 5 03:57:20 2020
+			* [Made addAll() varargs for oredicts](https://github.com/CraftTweaker/CraftTweaker/commit/009b3a8d8abe47069437984b36fa525a543edf35) - Jared - Sun Jul 5 03:54:24 2020
+			* [Changed how block defintions convert creative tabs](https://github.com/CraftTweaker/CraftTweaker/commit/093129ba0f0ca8c525725f8d235359f01574a64d) - Jared - Sat Jul 4 06:01:15 2020
+			* [added a way to see if an entity is on the ground or not](https://github.com/CraftTweaker/CraftTweaker/commit/96db59c83eab3a124b63fae7b8819df645ceabf2) - Jared - Sun Jun 28 09:01:49 2020
+			* [Updated ZenScript](https://github.com/CraftTweaker/CraftTweaker/commit/2a235cc0eb80caa2b4c07e4c490fe273d9896db9) - kindlich - Sun May 31 21:49:25 2020
+			* [Updated ZS: Fixes for Captures and allow Function Types to be used as Members in functions/classes](https://github.com/CraftTweaker/CraftTweaker/commit/5f9db0ba226c2d935dd8b4629bc343966b62ced3) - kindlich - Wed May 27 16:53:26 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/b47fd2ceeb8ca6b958d653f053e417cb63a009bb) - kindlich - Sat May 16 12:50:05 2020
+			* [actually use the update json, thanks forge](https://github.com/CraftTweaker/CraftTweaker/commit/a9441dee16193fc0f3e4655dbd348e47e2e55163) - Jared - Thu May 14 23:46:16 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/24ef754e8a1cc5e79b8be3709575cdb8af73bc1f) - kindlich - Wed May 13 15:44:12 2020
+			* [thanks forge for having an incorrect mdk](https://github.com/CraftTweaker/CraftTweaker/commit/da62d9a28f63b370c38d9b9efc9b4ed6a2533844) - Jared - Tue May 12 18:39:50 2020
+			* [put update tracker in the right build.gradle file](https://github.com/CraftTweaker/CraftTweaker/commit/24f7bf3de9199f7450f8b1fea02e430d1a6eb733) - Jared - Tue May 12 15:46:55 2020
+			* [and this one...](https://github.com/CraftTweaker/CraftTweaker/commit/480335a890e9437559351ba836e6b4eae368e311) - Jared - Tue May 12 15:43:06 2020
+			* [Would be good to actually call the url...](https://github.com/CraftTweaker/CraftTweaker/commit/16d72770e30d8ff4f846dda8cce03f9c7ce021c0) - Jared - Tue May 12 15:40:35 2020
+			* [ We are still pushing some builds, may as well add the update tracker](https://github.com/CraftTweaker/CraftTweaker/commit/739e63b7e4d5150fe7a1e26a75302b794dc39d8c) - Jared - Tue May 12 15:35:04 2020
+			* [added a way to get a liquid using a string, game#getLiquid close #970](https://github.com/CraftTweaker/CraftTweaker/commit/3a68c5aca6bbf8adae8ee97c944b1e39bbc3a5a7) - Jared - Tue May 12 15:21:53 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/7f0ca9f7b63b9acfffd772ae6e77ea4a46d7ca88) - kindlich - Mon May 11 20:49:54 2020
+			* [Updated ZS](https://github.com/CraftTweaker/CraftTweaker/commit/e237a00b71678a99e5f72eaece5638e55d33f78c) - kindlich - Sun May 10 21:08:44 2020
+			* [Make right-click-block-event properly cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/88d6d7697745b563cbeba77619cd8d0758673ec7) - Jon McManus - Mon Apr 13 03:08:15 2020
+			* [Add a patreon thank you at the start of the log](https://github.com/CraftTweaker/CraftTweaker/commit/a2fa4486f93c4bbc03a238c01a4db38c11ef2311) - Jared - Sat Apr 11 06:35:47 2020
+			* [Rename ProjectileImpactEvent to IProjectileImpactEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/c1ace7e4b519c3116afc52441bd106d76458629e) - Jon McManus - Sat Apr 11 06:24:39 2020
+			* [Unify some class/interface names.](https://github.com/CraftTweaker/CraftTweaker/commit/8dfe9bab14eeef0ad363b7812a64a3278ff2990c) - Jon McManus - Sat Apr 11 06:00:39 2020
+			* [releases are beta by default](https://github.com/CraftTweaker/CraftTweaker/commit/bc8cf9f1f3ce482d83fa9599f3b656b2d84bddea) - Jared - Sat Apr 11 05:44:57 2020
+			* [Fix typo.](https://github.com/CraftTweaker/CraftTweaker/commit/07b604568b9bd83117b12c1e9b4b650d2f039d46) - Jon McManus - Sat Apr 11 05:35:02 2020
+			* [Address issues raised by Kindlich.](https://github.com/CraftTweaker/CraftTweaker/commit/e2d34b682c6454f21226990ace3b6b0676a1dfc3) - Jon McManus - Sat Apr 11 05:30:25 2020
+			* [fix jenkins file](https://github.com/CraftTweaker/CraftTweaker/commit/5d76d7c032a532c1c1698c82f841201a34ee0451) - Jared - Sat Apr 11 05:27:01 2020
+			* [updated jenkins file to gen changelog and push to curse](https://github.com/CraftTweaker/CraftTweaker/commit/c9905a10830e5ffa02811d54eeb9a0122cd4ce84) - Jared - Sat Apr 11 05:22:53 2020
+			* [Allow access to the cancellation result.](https://github.com/CraftTweaker/CraftTweaker/commit/bfa7c162c4e3c1c88d9c5d42f5154e0ef45090bf) - Jon McManus - Thu Apr 2 03:43:03 2020
+			* [Remove RightClickEmpty, it only fires on the client side.](https://github.com/CraftTweaker/CraftTweaker/commit/4c02dc9e7293aec2cd3a393f849a850a6e85fd12) - Jon McManus - Thu Apr 2 02:56:47 2020
+			* [Add missing clear calls.](https://github.com/CraftTweaker/CraftTweaker/commit/d49e2b6ab80fca81034c23a764c14ba168e0d888) - Jon McManus - Mon Mar 16 11:06:27 2020
+			* [Unify allow/deny/default into a single string result as per other systems.](https://github.com/CraftTweaker/CraftTweaker/commit/62b16c15d7404623d07d64e3a0e3a43607d0d90a) - Jon McManus - Mon Mar 16 11:00:30 2020
+			* [Fix rename failure.](https://github.com/CraftTweaker/CraftTweaker/commit/e265a7d75305a1c8cd1a101446aa1e3e57446464) - Jon McManus - Sun Mar 15 12:46:35 2020
+			* [More indentations fixes.](https://github.com/CraftTweaker/CraftTweaker/commit/6307b19336769fc8d2c68bad76b01ec1fb24ad48) - Jon McManus - Sun Mar 15 12:37:25 2020
+			* [Fix indents.](https://github.com/CraftTweaker/CraftTweaker/commit/0b65de669044c354cc31dfa283970c547a248b29) - Jon McManus - Sun Mar 15 12:35:21 2020
+			* [This event is also cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/d421ddbeca86e4e0a6f958eb0fcc9933dce5b46d) - Jon McManus - Sun Mar 15 05:34:06 2020
+			* [EntityMount is cancelable; limit EnchantmentLevelSet to 0-30.](https://github.com/CraftTweaker/CraftTweaker/commit/eabe1e14ae0d8d4137fe9fddcc4405d1e4dababc) - Jon McManus - Sun Mar 15 05:29:00 2020
+			* [It's already a getter.](https://github.com/CraftTweaker/CraftTweaker/commit/aa16ccb607abe765b80f4d35a4212619eaba2f7b) - Jon McManus - Sun Mar 15 05:15:28 2020
+			* [Back-port curseforge_gradle support from 1.14.](https://github.com/CraftTweaker/CraftTweaker/commit/5ff47f69089d144a3a2878c57ac0dc7dc67aa5bd) - Jon McManus - Sun Mar 15 02:06:06 2020
+			* [Implement an "isItemBlock" functionality for IItemStacks.](https://github.com/CraftTweaker/CraftTweaker/commit/ecbfbd06fa8f9b63c915280e8a50a968a11dbd25) - Jon McManus - Sat Mar 14 23:53:34 2020
+			* [Final exorcism of things.](https://github.com/CraftTweaker/CraftTweaker/commit/69cf45122f927d3fbe151484e05b2bc8e7e27b7e) - Jon McManus - Sat Mar 14 12:24:52 2020
+			* [Screw the Terrain Generation bus.](https://github.com/CraftTweaker/CraftTweaker/commit/cc55805d91ea2e3563fafc897a8b7751b724fcfc) - Jon McManus - Sat Mar 14 12:09:29 2020
+			* [Add hand and ItemStack handlers for PlayerInteractEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/199ac07b1c996c9436b362f79c2afae440f50a35) - Jon McManus - Sat Mar 14 11:54:29 2020
+			* [Fix some minor issues.](https://github.com/CraftTweaker/CraftTweaker/commit/9a996c183d7540e43a88b62e9a753ed5a1dead59) - Jon McManus - Sat Mar 14 11:37:13 2020
+			* [Some minor tweaks.](https://github.com/CraftTweaker/CraftTweaker/commit/3c21a121c0a7588b05dab22e2e378e65c448504b) - Jon McManus - Sat Mar 14 10:24:04 2020
+			* [Fix CropGrowEvent names.](https://github.com/CraftTweaker/CraftTweaker/commit/34df2d7318b7a85b09a26d8f42b767232e18c7fd) - Jon McManus - Fri Mar 13 02:35:26 2020
+			* [publish JEI support to maven](https://github.com/CraftTweaker/CraftTweaker/commit/9beca9982fcbf04bf71f2edd0a6147cda278ca20) - Jared - Wed Mar 11 06:25:33 2020
+			* [Whoops.](https://github.com/CraftTweaker/CraftTweaker/commit/5cb19adbc99cf187fb571f90afcb18c671861f01) - Jon McManus - Sun Mar 8 07:33:51 2020
+			* [ProjectileImpactEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/2ba9f393d69e3cd85ff98bb4a8287b632cca4ea4) - Jon McManus - Sun Mar 8 06:13:53 2020
+			* [PotionBrewEvents.](https://github.com/CraftTweaker/CraftTweaker/commit/d4e5f004a34e445acd082a7f81b112a6de605a0e) - Jon McManus - Sun Mar 8 05:08:07 2020
+			* [Sleeping Checks.](https://github.com/CraftTweaker/CraftTweaker/commit/b4fea8e2a07605c72a99d14123c26e75d7c83ef8) - Jon McManus - Sun Mar 8 04:36:33 2020
+			* [SaplingGrowTreeEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/96bda23d9e870acd2a7cc83b14c0f9e0e6e57f35) - Jon McManus - Sun Mar 8 04:16:39 2020
+			* [PlayerRightClickItemEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/a7fa3217df42bcd8aa17e40a6a65f0938ac76f7b) - Jon McManus - Sun Mar 8 03:31:24 2020
+			* [RightClickEmptyEvent, not every PlayerInteractEvent is cancellable.](https://github.com/CraftTweaker/CraftTweaker/commit/4182e45d2f77cd04710e255ef9877c22ebe3cc7e) - Jon McManus - Sun Mar 8 03:25:08 2020
+			* [Oops.](https://github.com/CraftTweaker/CraftTweaker/commit/7b28d3f2c71123f9c4bcc3cb6e86a59abbb84b60) - Jon McManus - Sun Mar 8 03:07:54 2020
+			* [PlayerLeftClickBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/eb040be4bbccd0f20a42ec423ba35d5cb2ef27aa) - Jon McManus - Sun Mar 8 03:06:38 2020
+			* [Player Visibility Event.](https://github.com/CraftTweaker/CraftTweaker/commit/6675f78846d47c3ae1918d35a5cd4db1d9dff191) - Jon McManus - Sun Mar 8 02:59:52 2020
+			* [PlayerItemPickupEvent](https://github.com/CraftTweaker/CraftTweaker/commit/e6b41bbd2d9241b190436fd0c6267e1765f0eeb2) - Jon McManus - Sun Mar 8 01:43:00 2020
+			* [PlayerContainerClose event.](https://github.com/CraftTweaker/CraftTweaker/commit/471a4cb891b7344bd2585ca83ddcac57f74a2b48) - Jon McManus - Sat Mar 7 13:30:45 2020
+			* [Minecart events.](https://github.com/CraftTweaker/CraftTweaker/commit/b8324039e8216d54585ed58e1b807e5f494ff5d1) - Jon McManus - Sat Mar 7 13:08:03 2020
+			* [Remove ItemTooltipEvent?](https://github.com/CraftTweaker/CraftTweaker/commit/7b99eaa64b14fa2ae0d8dbee830a5c17b853b433) - Jon McManus - Sat Mar 7 13:07:42 2020
+			* [LootingLevelEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0ae1180bc2c7495fad1c83c9016b95548d1d6972) - Jon McManus - Sat Mar 7 12:46:57 2020
+			* [LivingKnockBackEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/7f19f82dcc1f057b7ac620c39d1c30c59a984091) - Jon McManus - Sat Mar 7 12:42:41 2020
+			* [LivingExperienceDropEvent](https://github.com/CraftTweaker/CraftTweaker/commit/bcc1148fa39784b39860e55006226a92189cca14) - Jon McManus - Sat Mar 7 12:34:02 2020
+			* [LivingDestroyBlockEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0e22bb1b3c245bbf2e7ce8ee85e091a339706b49) - Jon McManus - Sat Mar 7 12:28:10 2020
+			* [ItemTooltipEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/4291f0d8099d9dea49bdc4fda8ef585cca30cb6d) - Jon McManus - Sat Mar 7 12:22:13 2020
+			* [EntityTravelToDimensionEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/0863d1f222e9f7643f7c9e7d044684e626006e04) - Jon McManus - Sat Mar 7 12:13:38 2020
+			* [MobGriefing.](https://github.com/CraftTweaker/CraftTweaker/commit/cb201918b44e33475989a473f3fdf0cdc1294f5e) - Jon McManus - Sat Mar 7 12:06:28 2020
+			* [BlockPlace event.](https://github.com/CraftTweaker/CraftTweaker/commit/1363e9560aaab43ff848ccc0cd330ea860cc6270) - Jon McManus - Sat Mar 7 11:57:02 2020
+			* [CropGrowth events.](https://github.com/CraftTweaker/CraftTweaker/commit/c3b58552b18e4c5bf300ebb7905debb4c04dc280) - Jon McManus - Sat Mar 7 11:42:29 2020
+			* [ItemFishedEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/25d7fbc4f79f73a378f19ef69defea699fdc620d) - Jon McManus - Sat Mar 7 11:28:55 2020
+			* [Explosion events.](https://github.com/CraftTweaker/CraftTweaker/commit/46a5bc70dedb540ba0c5c8831e950fe1b391c29b) - Jon McManus - Sat Mar 7 11:08:01 2020
+			* [EntityMountEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/dba7af5a258cd5b6541e001e479ed295b84f0c16) - Jon McManus - Sat Mar 7 10:35:32 2020
+			* [EnchantmentLevelSet event.](https://github.com/CraftTweaker/CraftTweaker/commit/c5be1a93ca7e94a17b9deccd3730dac5b52d1f88) - Jon McManus - Sat Mar 7 10:25:28 2020
+			* [Critical Hit event.](https://github.com/CraftTweaker/CraftTweaker/commit/94f86720174c5bafbf2e072d5c12295e10021534) - Jon McManus - Sat Mar 7 09:54:49 2020
+			* [Implement BlockEvent.FarmlandTrampleEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/142336a50295a0bff12a60908fecc2245579de7d) - Jon McManus - Sat Mar 7 09:28:42 2020
+			* [First in additional events: AnimalTameEvent.](https://github.com/CraftTweaker/CraftTweaker/commit/53062a88f76c9e2b57c33239d9887a5d6b67b733) - Jon McManus - Sat Mar 7 09:20:24 2020
+
+	CreativeCore (CreativeCore_v1.10.44_mc1.12.2.jar --> CreativeCore_v1.10.46_mc1.12.2.jar):
+		CreativeCore_v1.10.46_mc1.12.2.jar:
+			Fixed crash when setting color in color picker without alpha slider
+			Added flip for facing
+
+		CreativeCore_v1.10.45_mc1.12.2.jar:
+			Fixed inaccurate vectorfans could collide even though they don't
+			Fixed not disabling depth in certain cases
+			Added color palette to color picker
+			Added ability to configure config holder in list
+
+	Exchangers (Exchangers-1.12.2-2.10.jar --> Exchangers-1.12.2-2.10.1.jar):
+		Exchangers-1.12.2-2.10.1.jar:
+			* Requires GunpowderLib (At least 1.1)
+			* Fixed items not being detected when there are multiple different item containers in player inventory
+
+	Extreme Reactors (ExtremeReactors-1.12.2-0.4.5.67.jar --> ExtremeReactors-1.12.2-0.4.5.68.jar):
+		ExtremeReactors-1.12.2-0.4.5.68.jar:
+			* Fix Power Taps not updating correctly
+			* Backported the The Extreme Book to 1.12.2 (it requires Patchouli 1.0-23.6+)
+			* Updated Forge to version 14.23.5.2847
+			* Updated ZeroCORE to version 0.1.2.9
+			* Bumped version to 0.4.5.68
+
+	LittleTiles (LittleTiles_v1.5.0-pre320_mc1.12.2.jar --> LittleTiles_v1.5.0-pre326_mc1.12.2.jar):
+		LittleTiles_v1.5.0-pre326_mc1.12.2.jar:
+			Added maxAllowedDensity configuration
+			Made glowing blocks light depending on volume
+			Fixed storage structure inventory size exploit
+			Added structure scaling ingredients
+			* bed requires a bed to be crafted
+			* ladders will need a ladder for each block height
+			* light needs one glowstone for each 1/8 of a block
+			Added pyramid shape
+
+		LittleTiles_v1.5.0-pre325_mc1.12.2.jar:
+			Made chairs work on doors
+
+		LittleTiles_v1.5.0-pre324_mc1.12.2.jar:
+			Fixed door closing right after being opened
+
+		LittleTiles_v1.5.0-pre323_mc1.12.2.jar:
+			Fixed crash when using undo after destroying multiple structures
+
+		LittleTiles_v1.5.0-pre322_mc1.12.2.jar:
+			Fixed not saving the door in preview with the right state
+			Fixed off hand still being activated even if main hand is canceled
+			Fixed sending block updates when placing door too early
+			Fixed not saving child dynamic connection
+
+		LittleTiles_v1.5.0-pre321_mc1.12.2.jar:
+			Added dynamic children
+			Fixed a crash when tileentity gets rendered before its loaded
+			Fixed structure builder recipe
+			Added french translation (thanks to Harald De Luca)
+			Fixed blank-o-matic using transparency
+			Removed hideParticleBlock option
+
+	ME Capability Adapter (capabilityadapter-1.1.0a --> capabilityadapter-1.1.1.jar):
+		capabilityadapter-1.1.1.jar:
+			Merged pull requests on github.
+			Built at commit e7289f53eac64ceedeee10ae5994dfa5fc6edd20
+
+	PackagedAuto (PackagedAuto-1.12.2-1.0.3.14.jar --> PackagedAuto-1.12.2-1.0.5.17.jar):
+		PackagedAuto-1.12.2-1.0.5.17.jar:
+			Fixed blocks not connecting to secured ME systems, blocks will now respect security terminal settings
+			Fixed packager/unpackager accessible slots including the recipe pattern/energy storage slots
+			Fixed not being to extract input from packager extension
+
+		PackagedAuto-1.12.2-1.0.4.16.jar:
+			Added redstone control to packagers when not used in ME systems
+			Added config for packagers to not require exact inputs
+
+		PackagedAuto-1.12.2-1.0.4.15.jar:
+			Added feature for packagers to not require exact inputs under certain circumstances
+			Added feature where packages can be used as patterns in the packager
+
+	UniDict (UniDict-1.12.2-3.0.5.jar --> UniDict-1.12.2-3.0.6.jar):
+		UniDict-1.12.2-3.0.6.jar:
+			Added support for Mekanism PRC and Crystallizer.
+			Simplify RecipeBook fixing code, now using vanilla code instead of some reflection hacks.
+			Fixed keepOneEntry blacklists implementation.
+			Added two config options "keepOneEntryDisableHideFromJEI" and "autoHideInJEIItemBlackList".
+			Added support for Forestry's Squeezer extra output.
+			Fixed a bug with CraftTweaker integration which caused kinds to be detected incorrectly.
+			Improved the code for CrafTweaker created recipes so they have proper shape now.
+			Fixed a bug with the IE crusher duplication removal which caused some recipes to be removed accidentally.
+
+	ZeroCore 2 (zerocore-1.12.2-0.1.2.8.jar --> zerocore-1.12.2-0.1.2.9.jar):
+		zerocore-1.12.2-0.1.2.9.jar:
+			* Added support for Patchouli
+			* Added Forge-update support
+			* Updated Forge to version 14.23.5.2847
+			* Bumped version to 0.1.2.9
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
+
+
+=============================================
 Technocratica 2.1.06 --> Technocratica 3.0.00
 =============================================
 
