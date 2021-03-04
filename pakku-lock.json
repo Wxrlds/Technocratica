@@ -1066,7 +1066,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "backportedflora-1.6.0.jar",
+                    "file_name": "backportedflora-1.7.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -1074,18 +1074,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3085/303/backportedflora-1.6.0.jar",
-                    "id": "3085303",
+                    "url": "https://edge.forgecdn.net/files/3218/329/backportedflora-1.7.jar",
+                    "id": "3218329",
                     "parent_id": "385654",
                     "hashes": {
-                        "sha1": "969658c4a9c29f0914a4adcf9a4846d19d7575cd",
-                        "md5": "6839500dcd01e0f3f05b0e3bccaf40c0"
+                        "sha1": "03e1e434462c6bcb4e8ecd4acc597fc744374218",
+                        "md5": "17233aa212cd87ccffd63f25c06d2fb7"
                     },
                     "required_dependencies": [
                         "248453"
                     ],
-                    "size": 258363,
-                    "date_published": "2020-10-18T12:16:37.407Z"
+                    "size": 267337,
+                    "date_published": "2021-02-26T20:15:25.990Z"
                 }
             ]
         },
@@ -1817,21 +1817,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Chunk Pregenerator-V1.12-2.4.1.jar",
+                    "file_name": "Chunk Pregenerator-V1.12-2.5.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3158/203/Chunk Pregenerator-V1.12-2.4.1.jar",
-                    "id": "3158203",
+                    "url": "https://edge.forgecdn.net/files/3214/752/Chunk Pregenerator-V1.12-2.5.0.jar",
+                    "id": "3214752",
                     "parent_id": "267193",
                     "hashes": {
-                        "sha1": "a090d8e0db35367ab39cc03cb4d67befa8f7d7a8",
-                        "md5": "7c4cac545627ce69ab2c0f753e61d899"
+                        "sha1": "a6b7168e190aa9a8f665d826fa9cd77aba419135",
+                        "md5": "ff8408c9b5e00c8eea3663a33465a5e0"
                     },
                     "required_dependencies": [],
-                    "size": 527868,
-                    "date_published": "2021-01-04T14:14:15.443Z"
+                    "size": 543859,
+                    "date_published": "2021-02-23T20:33:13.050Z"
                 }
             ]
         },
@@ -2359,21 +2359,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.20.586.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.618.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3040/575/CraftTweaker2-1.12-4.1.20.586.jar",
-                    "id": "3040575",
+                    "url": "https://edge.forgecdn.net/files/3202/907/CraftTweaker2-1.12-4.1.20.618.jar",
+                    "id": "3202907",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "a574364d537efe9a96047efb9b745f1818616b48",
-                        "md5": "52f1edbedf131a7afb0d7801ffcb53cc"
+                        "sha1": "e1ae49d207d7817221aa070c9f5f8425feb4cf3e",
+                        "md5": "b44e6d90134f8f6cef88487d0152a372"
                     },
                     "required_dependencies": [],
-                    "size": 1438517,
-                    "date_published": "2020-08-24T02:35:40.933Z"
+                    "size": 1523777,
+                    "date_published": "2021-02-13T21:04:04.147Z"
                 }
             ]
         },
@@ -2392,21 +2392,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreativeCore_v1.10.44_mc1.12.2.jar",
+                    "file_name": "CreativeCore_v1.10.46_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3173/840/CreativeCore_v1.10.44_mc1.12.2.jar",
-                    "id": "3173840",
+                    "url": "https://edge.forgecdn.net/files/3225/175/CreativeCore_v1.10.46_mc1.12.2.jar",
+                    "id": "3225175",
                     "parent_id": "257814",
                     "hashes": {
-                        "sha1": "4ac57e338fe43c78c9da83ba4e5df0c58532304f",
-                        "md5": "1ec6aa803ba0827eb97ed7160090b795"
+                        "sha1": "514a7a96aa8a9f8f7a17d49d1b38b5825f8b112e",
+                        "md5": "f36a9c18f31518127f7e7685cecbe0e8"
                     },
                     "required_dependencies": [],
-                    "size": 1193769,
-                    "date_published": "2021-01-19T16:21:38.217Z"
+                    "size": 1211095,
+                    "date_published": "2021-03-03T15:43:33.030Z"
                 }
             ]
         },
@@ -3106,7 +3106,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Exchangers-1.12.2-2.10.jar",
+                    "file_name": "Exchangers-1.12.2-2.10.1.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
@@ -3116,18 +3116,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/3174/939/Exchangers-1.12.2-2.10.jar",
-                    "id": "3174939",
+                    "url": "https://edge.forgecdn.net/files/3207/523/Exchangers-1.12.2-2.10.1.jar",
+                    "id": "3207523",
                     "parent_id": "270183",
                     "hashes": {
-                        "sha1": "bfc788d78d434bb03807e34d544097c14f75f6fe",
-                        "md5": "be13f7019157c236f6b55369a7588e0a"
+                        "sha1": "3f240041bd539f65044b4cab37aec3bb65f63915",
+                        "md5": "ea832cfcdf2ce10d87ed5334937462f1"
                     },
                     "required_dependencies": [
                         "356646"
                     ],
-                    "size": 333357,
-                    "date_published": "2021-01-20T14:56:33.523Z"
+                    "size": 334845,
+                    "date_published": "2021-02-17T17:46:35.237Z"
                 }
             ]
         },
@@ -3265,23 +3265,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtremeReactors-1.12.2-0.4.5.67.jar",
+                    "file_name": "ExtremeReactors-1.12.2-0.4.5.68.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2722/271/ExtremeReactors-1.12.2-0.4.5.67.jar",
-                    "id": "2722271",
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/3194/746/ExtremeReactors-1.12.2-0.4.5.68.jar",
+                    "id": "3194746",
                     "parent_id": "250277",
                     "hashes": {
-                        "sha1": "e62d2fa14893ab60ca33b3b05d5c3d9b44ec97ef",
-                        "md5": "92e5cc48aca43add940af096e7694141"
+                        "sha1": "69dde2f0c2b2c204a66f5ae5c704a39f6b08c6ef",
+                        "md5": "ea53f47ee48439a3fea2586e023bd6c8"
                     },
                     "required_dependencies": [
                         "247921"
                     ],
-                    "size": 1110113,
-                    "date_published": "2019-06-09T09:29:46.427Z"
+                    "size": 1149733,
+                    "date_published": "2021-02-06T15:39:56.240Z"
                 }
             ]
         },
@@ -4942,23 +4945,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.0-pre320_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.0-pre326_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/3178/353/LittleTiles_v1.5.0-pre320_mc1.12.2.jar",
-                    "id": "3178353",
+                    "url": "https://edge.forgecdn.net/files/3225/184/LittleTiles_v1.5.0-pre326_mc1.12.2.jar",
+                    "id": "3225184",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "2a9bdae6aeef69330f8253ce00cb14e7ff118daa",
-                        "md5": "1ad9e81b16f0133574bcba3c3dfb9cfc"
+                        "sha1": "f283cf1a2dfb2e8709068aa84ad0205420f3eebb",
+                        "md5": "b11d1a068c581c7886e4a773840fe98a"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 2045089,
-                    "date_published": "2021-01-23T10:18:09.230Z"
+                    "size": 2068720,
+                    "date_published": "2021-03-03T15:47:40.220Z"
                 }
             ]
         },
@@ -5120,27 +5123,29 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "capabilityadapter-1.1.0.jar",
+                    "file_name": "capabilityadapter-1.1.1.jar",
                     "mc_versions": [
+                        "1.12.1",
+                        "1.12",
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2812/866/capabilityadapter-1.1.0.jar",
-                    "id": "2812866",
+                    "url": "https://edge.forgecdn.net/files/3196/507/capabilityadapter-1.1.1.jar",
+                    "id": "3196507",
                     "parent_id": "281657",
                     "hashes": {
-                        "sha1": "eb87dab46a32bcb9a5948219d75a0bbc2501ed29",
-                        "md5": "e30ed1f16ff0e300e24109ac78718183"
+                        "sha1": "2cc3d6ef160005830f7707974d4cc9213fd1f8eb",
+                        "md5": "2f262b2855642b0da10017485d8a4c8c"
                     },
                     "required_dependencies": [
                         "248453",
                         "223794"
                     ],
-                    "size": 80715,
-                    "date_published": "2019-10-20T05:53:23.663Z"
+                    "size": 81051,
+                    "date_published": "2021-02-08T04:45:13.493Z"
                 }
             ]
         },
@@ -5966,21 +5971,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "PackagedAuto-1.12.2-1.0.3.14.jar",
+                    "file_name": "PackagedAuto-1.12.2-1.0.5.17.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2977/147/PackagedAuto-1.12.2-1.0.3.14.jar",
-                    "id": "2977147",
+                    "url": "https://edge.forgecdn.net/files/3214/216/PackagedAuto-1.12.2-1.0.5.17.jar",
+                    "id": "3214216",
                     "parent_id": "308380",
                     "hashes": {
-                        "sha1": "989b4b59734ffe7da4ac6a118b476fdaec554de1",
-                        "md5": "352dd872e686a40447ea72c033451c63"
+                        "sha1": "16406cbb3e27e702f35f2a1d7f6dab442b7d95e7",
+                        "md5": "003bd431d3c90caae174a77acb0bdc22"
                     },
                     "required_dependencies": [],
-                    "size": 217291,
-                    "date_published": "2020-06-10T17:26:13.463Z"
+                    "size": 220178,
+                    "date_published": "2021-02-23T13:54:29.677Z"
                 }
             ]
         },
@@ -8224,23 +8229,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniDict-1.12.2-3.0.5.jar",
+                    "file_name": "UniDict-1.12.2-3.0.6.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3180/34/UniDict-1.12.2-3.0.5.jar",
-                    "id": "3180034",
+                    "url": "https://edge.forgecdn.net/files/3201/828/UniDict-1.12.2-3.0.6.jar",
+                    "id": "3201828",
                     "parent_id": "244258",
                     "hashes": {
-                        "sha1": "6a193c39e5dff10cb9d2b95fb6ee06d344155354",
-                        "md5": "235804860e6bac7422a2c737765b02bf"
+                        "sha1": "b01fe591921268dd0aa393624cc5a9551a9c3bf3",
+                        "md5": "2416fb24fe296fc3c0521fa8d06e004b"
                     },
                     "required_dependencies": [
                         "253043"
                     ],
-                    "size": 216360,
-                    "date_published": "2021-01-24T20:35:09.903Z"
+                    "size": 217033,
+                    "date_published": "2021-02-12T20:41:21.443Z"
                 }
             ]
         },
@@ -8800,21 +8805,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "zerocore-1.12.2-0.1.2.8.jar",
+                    "file_name": "zerocore-1.12.2-0.1.2.9.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2670/570/zerocore-1.12.2-0.1.2.8.jar",
-                    "id": "2670570",
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/3194/743/zerocore-1.12.2-0.1.2.9.jar",
+                    "id": "3194743",
                     "parent_id": "247921",
                     "hashes": {
-                        "sha1": "a0bff416f130e061041ac3195a6872dd8b74f578",
-                        "md5": "cc782f73e62792dcdb108449baec110f"
+                        "sha1": "bc87c72b3aac54367b6641f9dbd41f6a218043cd",
+                        "md5": "8e15e85a8975db0f7a2285f336b47688"
                     },
                     "required_dependencies": [],
-                    "size": 228623,
-                    "date_published": "2019-02-08T11:59:23.890Z"
+                    "size": 227426,
+                    "date_published": "2021-02-06T15:37:10.737Z"
                 }
             ]
         },

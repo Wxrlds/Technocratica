@@ -135,6 +135,11 @@ recipes.addShapeless("ProjectE_Red_Matter_Uncraft",<projecte:item.pe_matter:1>*4
 recipes.addShapeless("ProjectE_Red_Mob_Uncraft",<projecte:item.pe_fuel:0>*4,[<projecte:item.pe_fuel:1>]);
 recipes.addShapeless("QuantumFlux_Hamcheese",<quantumflux:hamcheese>,[<harvestcraft:toastsandwichitem>,<harvestcraft:toastsandwichitem>,<harvestcraft:cheeseitem>,<harvestcraft:bakedhamitem>]);
 recipes.addShapeless("RandomThings_Plank_Spectre",<randomthings:spectreplank>,[<randomthings:spectrelog>]);
+recipes.addShapeless("RfTools_biome_absorber_clear", <rftoolsdim:biome_absorber>, [<rftoolsdim:biome_absorber>]);
+recipes.addShapeless("RfTools_feature_absorber_clear", <rftoolsdim:feature_absorber>, [<rftoolsdim:feature_absorber>]);
+recipes.addShapeless("RfTools_liquid_absorber_clear", <rftoolsdim:liquid_absorber>, [<rftoolsdim:liquid_absorber>]);
+recipes.addShapeless("RfTools_material_absorber_clear", <rftoolsdim:material_absorber>, [<rftoolsdim:material_absorber>]);
+recipes.addShapeless("RfTools_terrain_absorber_clear", <rftoolsdim:terrain_absorber>, [<rftoolsdim:terrain_absorber>]);
 recipes.addShapeless("ThermalFound_Bronze_Plate",<thermalfoundation:material:355>*6,[<ore:craftingToolForgeHammer>,<ore:blockBronze>]);
 recipes.addShapeless("ThermalFound_Copper_Plate",<thermalfoundation:material:320>*6,[<ore:craftingToolForgeHammer>,<ore:blockCopper>]);
 recipes.addShapeless("ThermalFound_Gold_Plate",<thermalfoundation:material:33>*6,[<ore:craftingToolForgeHammer>,<ore:blockGold>]);
