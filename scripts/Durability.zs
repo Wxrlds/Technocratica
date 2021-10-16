@@ -271,4 +271,5 @@ val Durability1=[
 ] as IItemStack [];
 for tool in Durability1 {
 tool.maxDamage = 1;
+tool.addTooltip(format.red("This tool snaps like a twig. You can only use this for crafting..."));
 }

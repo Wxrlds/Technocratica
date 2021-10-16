@@ -1,5 +1,6 @@
 {
-	x: -11.0d,
+	title: "Karat Carrots",
+	x: -8.0d,
 	y: 2.5d,
 	dependencies: [
 		"90d05173"
@@ -9,6 +10,34 @@
 		type: "item",
 		items: [{
 			item: "karatgarden:seed_carrot_base"
+		}]
+	},
+	{
+		uid: "944ef8ef",
+		type: "item",
+		items: [{
+			item: "karatgarden:item_carrot_07_ext"
+		}]
+	},
+	{
+		uid: "e7b351ce",
+		type: "item",
+		items: [{
+			item: "karatgarden:item_carrot_06_ext"
+		}]
+	},
+	{
+		uid: "d4f8ab43",
+		type: "item",
+		items: [{
+			item: "karatgarden:item_carrot_07"
+		}]
+	},
+	{
+		uid: "a4f3827f",
+		type: "item",
+		items: [{
+			item: "karatgarden:item_carrot_06"
 		}]
 	}],
 	rewards: [{
