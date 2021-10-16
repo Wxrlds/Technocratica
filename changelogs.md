@@ -1,4 +1,33 @@
 -------
+V3.0.02
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/78f37aee1b6d5fde1d500431b51ca24f7d13a57d)
+
+Changed Karat Carrot Quest
+
+Disabled Pam's crop planting
+
+Disabled Pam's easy harvest
+
+Disabled Agricraft Village Features
+
+Added Tooltips to all Tools with 1 durability
+
+Changed order of ContentTweaker items
+
+Updated task bar icon
+
+Updated Main Menu with new graphics
+
+Tweaked recipe for Smart Output; Fuel input machine
+
+Disabled EnderIO Farming Station
+
+Added Quests for Crystalline Photovoltaic Cell; Melodic Photovoltaic Cell; Stellar Photovoltaic Cell
+
+Added more Vanilla Tweaks resource packs
+
+-------
 V3.0.01
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/b171eca09458f01f285ebb37b75c5e4875e2fb78)
