@@ -1,4 +1,14 @@
 -------
+V3.0.03
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/eaf6332ee271edbfe273970500f07f86f50813f4)
+
+Disabled Agricraft Villages (hopefully for real this time)
+
+Removed the duplicate Mod Name Tooltip
+
+
+-------
 V3.0.02
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/78f37aee1b6d5fde1d500431b51ca24f7d13a57d)
