@@ -15,7 +15,8 @@
     "enableCollisionMotion": true,
     "dyeVolume": 2.0,
     "maxAllowedDensity": 2048,
-    "maxDoorDistance": 512
+    "maxDoorDistance": 512,
+    "allowConverationToChiselsAndBits": true
   },
   "build": {
     "default": {

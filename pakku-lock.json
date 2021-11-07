@@ -4,7 +4,7 @@
         "1.12.2"
     ],
     "loaders": {
-        "forge": "14.23.5.2855"
+        "forge": "14.23.5.2847"
     },
     "projects": [
         {
@@ -2364,21 +2364,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.20.662.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.669.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3478/825/CraftTweaker2-1.12-4.1.20.662.jar",
-                    "id": "3478825",
+                    "url": "https://edge.forgecdn.net/files/3515/80/CraftTweaker2-1.12-4.1.20.669.jar",
+                    "id": "3515080",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "d817d10a25c1717af82e7909e59c64c273792d93",
-                        "md5": "7493d2fe390e275507aba30701348006"
+                        "sha1": "f725b3e0b1c965ab989e2eee6f0dfcabeb1eaab8",
+                        "md5": "ded3e577f3c5b140a112dd6ce73cd7d2"
                     },
                     "required_dependencies": [],
-                    "size": 1562907,
-                    "date_published": "2021-10-02T09:19:48.780Z"
+                    "size": 1571433,
+                    "date_published": "2021-11-04T09:28:29.030Z"
                 }
             ]
         },
@@ -3995,21 +3995,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HammerLib-1.12.2-2.0.6.28.jar",
+                    "file_name": "HammerLib-1.12.2-2.0.6.31.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3366/814/HammerLib-1.12.2-2.0.6.28.jar",
-                    "id": "3366814",
+                    "url": "https://edge.forgecdn.net/files/3493/538/HammerLib-1.12.2-2.0.6.31.jar",
+                    "id": "3493538",
                     "parent_id": "247401",
                     "hashes": {
-                        "sha1": "8e05c64e8fa9b0558e29fe3cd597b508e066c110",
-                        "md5": "b2763c59894c5527f36a32d54f62492a"
+                        "sha1": "cd22bd9b477e6ad66a210a1932e5af218ab398f7",
+                        "md5": "918046f45e184cc049b5b01482a7f221"
                     },
                     "required_dependencies": [],
-                    "size": 2433033,
-                    "date_published": "2021-06-27T18:51:29.947Z"
+                    "size": 2434333,
+                    "date_published": "2021-10-17T02:40:54.833Z"
                 }
             ]
         },
@@ -4957,23 +4957,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.30_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.35_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3491/619/LittleTiles_v1.5.30_mc1.12.2.jar",
-                    "id": "3491619",
+                    "url": "https://edge.forgecdn.net/files/3516/89/LittleTiles_v1.5.35_mc1.12.2.jar",
+                    "id": "3516089",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "daba1b879b7abe994f8cc1876e5ba4c565a1f63b",
-                        "md5": "b96672fb126d57516fa38e378f108fe8"
+                        "sha1": "ad00e3a9dfc09c9e6c8740c3ee821bd331c62c44",
+                        "md5": "45ef9df4d9cfc86e1a554ac81cfc5942"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 2249359,
-                    "date_published": "2021-10-15T08:13:35.210Z"
+                    "size": 2252586,
+                    "date_published": "2021-11-05T09:46:40.560Z"
                 }
             ]
         },
@@ -5058,26 +5061,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LootTweaker-0.3.0+MC1.12.2.jar",
+                    "file_name": "LootTweaker-0.3.1+MC1.12.2.jar",
                     "mc_versions": [
+                        "1.12.1",
+                        "1.12",
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3334/690/LootTweaker-0.3.0+MC1.12.2.jar",
-                    "id": "3334690",
+                    "url": "https://edge.forgecdn.net/files/3507/866/LootTweaker-0.3.1+MC1.12.2.jar",
+                    "id": "3507866",
                     "parent_id": "255257",
                     "hashes": {
-                        "sha1": "213494319e4ffebaeceb70373060d2639d4271f9",
-                        "md5": "76e02991f8938d35057040d9d0c124d8"
+                        "sha1": "c8f19101b381333a549cc069a0e0814831bfedc9",
+                        "md5": "0d74886eee7e2756269e8362e0dfd32f"
                     },
                     "required_dependencies": [
                         "239197"
                     ],
-                    "size": 105537,
-                    "date_published": "2021-06-02T04:45:57.063Z"
+                    "size": 111302,
+                    "date_published": "2021-10-29T00:09:06.263Z"
                 }
             ]
         },
@@ -5468,39 +5470,6 @@
                     ],
                     "size": 70754,
                     "date_published": "2018-07-06T01:04:05.200Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "LLLmTgB7z4QhFviE",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "mod-name-tooltip"
-            },
-            "name": {
-                "curseforge": "Mod Name Tooltip"
-            },
-            "id": {
-                "curseforge": "238747"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "modnametooltip_1.12.2-1.10.1.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2739/582/modnametooltip_1.12.2-1.10.1.jar",
-                    "id": "2739582",
-                    "parent_id": "238747",
-                    "hashes": {
-                        "sha1": "46e4e9aa1a443de953088148fdcd3c7b9255d7cf",
-                        "md5": "e36854d3c58af598ab3ce08d6cf0c760"
-                    },
-                    "required_dependencies": [],
-                    "size": 12732,
-                    "date_published": "2019-07-11T20:34:48.003Z"
                 }
             ]
         },
