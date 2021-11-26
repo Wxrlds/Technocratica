@@ -1,4 +1,11 @@
 -------
+V3.0.04
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/2cc360c48aa432d7c7f5574df91355b8ac65552e)
+
+Tweaked Quibit Cluster Level 2; Nether Quartz in Macerator recipe
+
+-------
 V3.0.03
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/eaf6332ee271edbfe273970500f07f86f50813f4)
