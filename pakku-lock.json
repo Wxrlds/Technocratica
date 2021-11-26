@@ -2364,21 +2364,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.20.669.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.670.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3515/80/CraftTweaker2-1.12-4.1.20.669.jar",
-                    "id": "3515080",
+                    "url": "https://edge.forgecdn.net/files/3523/955/CraftTweaker2-1.12-4.1.20.670.jar",
+                    "id": "3523955",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "f725b3e0b1c965ab989e2eee6f0dfcabeb1eaab8",
-                        "md5": "ded3e577f3c5b140a112dd6ce73cd7d2"
+                        "sha1": "8d000c08adccc5738a002ef548ce5dbaa05266fa",
+                        "md5": "ba26094f45122cee4d3a1f9c9bea2f87"
                     },
                     "required_dependencies": [],
-                    "size": 1571433,
-                    "date_published": "2021-11-04T09:28:29.030Z"
+                    "size": 1571455,
+                    "date_published": "2021-11-13T00:08:56.130Z"
                 }
             ]
         },
@@ -2397,21 +2397,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreativeCore_v1.10.65_mc1.12.2.jar",
+                    "file_name": "CreativeCore_v1.10.68_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3467/576/CreativeCore_v1.10.65_mc1.12.2.jar",
-                    "id": "3467576",
+                    "url": "https://edge.forgecdn.net/files/3522/788/CreativeCore_v1.10.68_mc1.12.2.jar",
+                    "id": "3522788",
                     "parent_id": "257814",
                     "hashes": {
-                        "sha1": "38a3e1b02d5916049867c521cbcb2495f73ec4cb",
-                        "md5": "e6e4ad48ce7d4f0cd47a5d106dbad745"
+                        "sha1": "5092d49ed17152faa467f92558c38296e3e77afc",
+                        "md5": "d6b504f2ac29ea57549581f1777e443c"
                     },
                     "required_dependencies": [],
-                    "size": 1290012,
-                    "date_published": "2021-09-21T11:14:55.707Z"
+                    "size": 1318836,
+                    "date_published": "2021-11-11T21:45:09.293Z"
                 }
             ]
         },
@@ -4957,7 +4960,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.35_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.45_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4965,18 +4968,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3516/89/LittleTiles_v1.5.35_mc1.12.2.jar",
-                    "id": "3516089",
+                    "url": "https://edge.forgecdn.net/files/3523/199/LittleTiles_v1.5.45_mc1.12.2.jar",
+                    "id": "3523199",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "ad00e3a9dfc09c9e6c8740c3ee821bd331c62c44",
-                        "md5": "45ef9df4d9cfc86e1a554ac81cfc5942"
+                        "sha1": "39c9a03500ef578e23fe5e7c3c36a071193a29e8",
+                        "md5": "5a72a41ed1723a89595aa7f945627a68"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 2252586,
-                    "date_published": "2021-11-05T09:46:40.560Z"
+                    "size": 2262469,
+                    "date_published": "2021-11-12T09:31:51.697Z"
                 }
             ]
         },
@@ -8107,7 +8110,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "torchmaster_1.12.2-1.8.4.84.jar",
+                    "file_name": "torchmaster_1.12.2-1.8.5.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -8115,16 +8118,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3051/236/torchmaster_1.12.2-1.8.4.84.jar",
-                    "id": "3051236",
+                    "url": "https://edge.forgecdn.net/files/3529/742/torchmaster_1.12.2-1.8.5.0.jar",
+                    "id": "3529742",
                     "parent_id": "254268",
                     "hashes": {
-                        "sha1": "6a9f4051d05a2cb1528262955097a9fd7dca5d13",
-                        "md5": "e747c087c45e362f9cf497d008a367eb"
+                        "sha1": "8bc4bae76967b025746768473462d446ee09f505",
+                        "md5": "5d242ff1c4bd434f0b865abec8f7b4a0"
                     },
                     "required_dependencies": [],
-                    "size": 168301,
-                    "date_published": "2020-09-06T21:37:54.247Z"
+                    "size": 156406,
+                    "date_published": "2021-11-18T17:32:54.117Z"
                 }
             ]
         },
