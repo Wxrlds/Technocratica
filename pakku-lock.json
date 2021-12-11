@@ -4,7 +4,7 @@
         "1.12.2"
     ],
     "loaders": {
-        "forge": "14.23.5.2847"
+        "forge": "14.23.5.2859"
     },
     "projects": [
         {
@@ -1345,24 +1345,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
+                    "file_name": "BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/2842/510/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar",
-                    "id": "2842510",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/3558/882/BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar",
+                    "id": "3558882",
                     "parent_id": "220318",
                     "hashes": {
-                        "sha1": "6f281febea0746d2229f692cb719bd017ec70b32",
-                        "md5": "4c1d23b8a58b6aaa9a5204fae3f18393"
+                        "sha1": "13c1e58ffec2a550b9698e25cda93b8d155007b0",
+                        "md5": "9d364be3df6fee338c1729b7fb1def1b"
                     },
                     "required_dependencies": [],
-                    "size": 4702147,
-                    "date_published": "2019-12-14T11:25:45.710Z"
+                    "size": 4746208,
+                    "date_published": "2021-12-10T22:26:48.903Z"
                 }
             ]
         },
@@ -2397,7 +2394,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CreativeCore_v1.10.68_mc1.12.2.jar",
+                    "file_name": "CreativeCore_v1.10.69_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -2405,16 +2402,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3522/788/CreativeCore_v1.10.68_mc1.12.2.jar",
-                    "id": "3522788",
+                    "url": "https://edge.forgecdn.net/files/3537/907/CreativeCore_v1.10.69_mc1.12.2.jar",
+                    "id": "3537907",
                     "parent_id": "257814",
                     "hashes": {
-                        "sha1": "5092d49ed17152faa467f92558c38296e3e77afc",
-                        "md5": "d6b504f2ac29ea57549581f1777e443c"
+                        "sha1": "5fe1cbba045e1817978d4d4bbd62356e4387ffcb",
+                        "md5": "693190be9521366896ebbab75d01294d"
                     },
                     "required_dependencies": [],
-                    "size": 1318836,
-                    "date_published": "2021-11-11T21:45:09.293Z"
+                    "size": 1320457,
+                    "date_published": "2021-11-26T17:39:11.450Z"
                 }
             ]
         },
@@ -4960,7 +4957,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.45_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.49_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -4968,18 +4965,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3523/199/LittleTiles_v1.5.45_mc1.12.2.jar",
-                    "id": "3523199",
+                    "url": "https://edge.forgecdn.net/files/3553/559/LittleTiles_v1.5.49_mc1.12.2.jar",
+                    "id": "3553559",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "39c9a03500ef578e23fe5e7c3c36a071193a29e8",
-                        "md5": "5a72a41ed1723a89595aa7f945627a68"
+                        "sha1": "fdeae579750f6719237602e90e301c7dfa0ccd11",
+                        "md5": "8f518abae5706cf074d8df0f9ee6f000"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 2262469,
-                    "date_published": "2021-11-12T09:31:51.697Z"
+                    "size": 2268135,
+                    "date_published": "2021-12-07T11:13:30.950Z"
                 }
             ]
         },
@@ -8179,23 +8176,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniDict-1.12.2-3.0.8.jar",
+                    "file_name": "UniDict-1.12.2-3.0.10.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3268/501/UniDict-1.12.2-3.0.8.jar",
-                    "id": "3268501",
+                    "url": "https://edge.forgecdn.net/files/3553/627/UniDict-1.12.2-3.0.10.jar",
+                    "id": "3553627",
                     "parent_id": "244258",
                     "hashes": {
-                        "sha1": "32b5738b65ca70d934b3345ac4adb2b2dc183c9c",
-                        "md5": "a620d9d19149607e3903d8f69e862cfb"
+                        "sha1": "2b72e49682aca50fa55522c5080f2ba20173c565",
+                        "md5": "82e3fc598749e2cf620cff62f10d9edd"
                     },
                     "required_dependencies": [
                         "253043"
                     ],
-                    "size": 220064,
-                    "date_published": "2021-04-07T18:23:06.427Z"
+                    "size": 225385,
+                    "date_published": "2021-12-07T12:34:33.010Z"
                 }
             ]
         },
@@ -8357,21 +8354,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "WanionLib-1.12.2-2.5.jar",
+                    "file_name": "WanionLib-1.12.2-2.7.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3064/112/WanionLib-1.12.2-2.5.jar",
-                    "id": "3064112",
+                    "url": "https://edge.forgecdn.net/files/3558/524/WanionLib-1.12.2-2.7.jar",
+                    "id": "3558524",
                     "parent_id": "253043",
                     "hashes": {
-                        "sha1": "71bb7ba2feed94a3cad90615ddece2d2ed8a7ab0",
-                        "md5": "fb29157afa23a5d00fc68185712fa1cf"
+                        "sha1": "6a1fb627e9ccf9ad5689b6303866c6c7201f7a39",
+                        "md5": "0a9a69adc6dddc5377e3e00b83bcaf20"
                     },
                     "required_dependencies": [],
-                    "size": 180135,
-                    "date_published": "2020-09-24T22:49:19.617Z"
+                    "size": 217225,
+                    "date_published": "2021-12-10T18:50:23.810Z"
                 }
             ]
         },
