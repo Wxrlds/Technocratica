@@ -1243,19 +1243,6 @@ Actually included the correct Audio-Death sounds
 -------
 V2.0.13
 
-Quests: Removed an unused reward table, added Book quest, edited Iron Gear quest
-
-Recipes: Magma Cream recipe requires less Pyrotheum
-
-Nerfed the new Bonsai soil (to hopefully reduce a little lag)
-
-Made all trees compatible with the new Bonsai soil
-
-Actually included the correct Audio-Death sounds
-
--------
-V2.0.13
-
 Recipes: Dragons Breath, Growth Accelerator, Slimey Generator, ME Interface Panel -> ME Interface Block, Block Cutting Machine
 
 Quests: Crystal Binder reward, removed "Random Things (not the mod)", added "Help for the beginning"
