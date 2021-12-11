@@ -1,4 +1,48 @@
 =============================================
+Technocratica 3.0.04 --> Technocratica 3.0.05
+=============================================
+
+Updated:
+
+	Biomes O' Plenty (BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar --> Biomes O' Plenty 1.12.2-7.0.1.2445):
+		Biomes O' Plenty 1.12.2-7.0.1.2445:
+			Bumped the required Forge version to 14.23.5.2858 in light of the log4j exploit fix in that version of Forge.
+			Please note: 1.12 is still unsupported by us, this version is simply being released as a consequence of the log4j vulnerability.
+
+	CreativeCore (CreativeCore_v1.10.68_mc1.12.2.jar --> CreativeCore_v1.10.69_mc1.12.2.jar):
+		CreativeCore_v1.10.69_mc1.12.2.jar:
+			Added NeighborUpdateCollector
+
+	LittleTiles (LittleTiles_v1.5.45_mc1.12.2.jar --> LittleTiles_v1.5.49_mc1.12.2.jar):
+		LittleTiles_v1.5.49_mc1.12.2.jar:
+			Added signal converter recipe
+			Added LittleNeighborUpdateCollector and used it for placement and removing structures
+			Reworked left and right click (should finally fix all issues regarding interactions)
+
+		LittleTiles_v1.5.48_mc1.12.2.jar:
+			Added signal converter recipe
+			Added LittleNeighborUpdateCollector and used it for placement and removing structures
+			Reworked left and right click (should finally fix all issues regarding interactions)
+
+		LittleTiles_v1.5.46_mc1.12.2.jar:
+			Added LittleNeighborUpdateCollector and used it for placement
+			Fixed structure connection cache using unloaded tileentity
+
+	UniDict (UniDict-1.12.2-3.0.8.jar --> UniDict-1.12.2-3.0.10.jar):
+		UniDict-1.12.2-3.0.10.jar:
+			moved our CraftTweaker integration to run after the integrations.
+
+	WanionLib (WanionLib-1.12.2-2.5.jar --> WanionLib-1.12.2-2.7.jar):
+		WanionLib-1.12.2-2.7.jar:
+			No changelog available.
+
+		WanionLib-1.12.2-2.6.jar:
+			No changelog available.
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
+
+
+=============================================
 Technocratica 3.0.03 --> Technocratica 3.0.04
 =============================================
 

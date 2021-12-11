@@ -1,4 +1,11 @@
 -------
+V3.0.05
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/5461ae831a401ad6ec6e1351022c45bfe758b2d0)
+
+Security fix by updating Forge
+
+-------
 V3.0.04
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/2cc360c48aa432d7c7f5574df91355b8ac65552e)
