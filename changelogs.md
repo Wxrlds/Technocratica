@@ -1,4 +1,11 @@
 -------
+V3.0.05a
+
+Server side only release.
+
+Included a server.properties file to set the default world generator
+
+-------
 V3.0.05
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/5461ae831a401ad6ec6e1351022c45bfe758b2d0)
