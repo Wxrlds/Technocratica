@@ -2,7 +2,6 @@
 V3.0.06
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/0311552fccb46d4871184623f315f67206cdc247)
-[Click here for a more detailed changelog]() 
 
 Added Synthetic Redstone Ore
 
