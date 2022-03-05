@@ -20,6 +20,7 @@ item.contenttweaker.dark_aeter.name=Dark Aeternalis Fuel
 item.contenttweaker.dark_mob.name=Dark Mobius Fuel
 item.contenttweaker.dark_alch.name=Dark Alchemical Coal
 tile.contenttweaker.gm_block.name=Green Matter Block
+tile.contenttweaker.synthetic_redstone_ore.name=Synthetic Redstone Ore
 tile.contenttweaker.rainbow_block.name=Rainbow Matter Block
 item.contenttweaker.green_matter.name=Green Matter
 item.contenttweaker.rainbow_matter.name=Rainbow Matter

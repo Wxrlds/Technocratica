@@ -1,25 +1,25 @@
 import crafttweaker.data.IData;
 val tools=[
-"awakened_plustic",
-"awakeneddraconium",
-"certus",
-"certusquartz_plustic",
-"chaotic_plustic",
-"chaoticdraconium",
-"enderium",
-"enderium_plustic",
-"fluix",
-"fluixcrystal_plustic",
-"lumium",
-"lumium_plustic",
-"platinum",
-"platinum_plustic",
-"refinediron",
-"signalum",
-"signalum_plustic",
-"steel",
-"wyvern_plustic",
-"wyverndraconium"
+	"awakened_plustic",
+	"awakeneddraconium",
+	"certus",
+	"certusquartz_plustic",
+	"chaotic_plustic",
+	"chaoticdraconium",
+	"enderium",
+	"enderium_plustic",
+	"fluix",
+	"fluixcrystal_plustic",
+	"lumium",
+	"lumium_plustic",
+	"platinum",
+	"platinum_plustic",
+	"refinediron",
+	"signalum",
+	"signalum_plustic",
+	"steel",
+	"wyvern_plustic",
+	"wyverndraconium"
 ] as IData [];
 for item in tools {
 <plustic:pipe_piece>.withTag({Material: item}).addTooltip(format.red("Place in Crafting Table for other Stats"));
@@ -52,12 +52,13 @@ for item in tools {
 }
 <agricraft:agri_seed>.addTooltip(format.red("Can be upgraded to 10/10/10 in the Crafting Table like every other Seed"));
 <bhc:heart_amulet>.addTooltip(format.red("Can store up to 64 Heart Canisters per slot"));
+<contenttweaker:synthetic_redstone_ore>.addTooltip(format.red("Rubber coated"));
 <enderio:block_powered_spawner>.addTooltip(format.red("Use with a Dark Steel Anvil. Takes 100 Levels"));
 <enderio:item_broken_spawner>.addTooltip(format.red("Use with a Dark Steel Anvil. Takes 100 Levels"));
 <extendedcrafting:compressor>.addTooltip(format.red("Add Material first, then Catalyst"));
 <extendedcrafting:compressor>.addTooltip(format.red("Needs one FE stored to actually work"));
-<extrautils2:ironwood_sapling>.addTooltip(format.gray("Do not burn me."));
 <extrautils2:ironwood_sapling:1>.addTooltip(format.gray("Why did you let that happen?"));
+<extrautils2:ironwood_sapling>.addTooltip(format.gray("Do not burn me."));
 <extrautils2:passivegenerator:6>.addTooltip(format.red("Can only be broken with the World Breaker!"));
 <ic2:te:86>.addTooltip(format.red("Can only be broken with an Electric Wrench!"));
 <projectex:final_star>.addTooltip(format.red("Item duplication is disabled!"));

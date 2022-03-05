@@ -22,6 +22,8 @@ mods.jei.JEI.addDescription(<appliedenergistics2:grindstone>,"To use it, place a
 mods.jei.JEI.addDescription(<bhc:blue_heart>,"Drop from Evoker. Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<bhc:green_heart>,"Drop from the Enderdragon and Shulkers. Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<bhc:red_heart>,"Drop From Enemy Mobs. Can be eaten to restore hearts");
+mods.jei.JEI.addDescription(<contenttweaker:synthetic_redstone_ore>,"Use Crop Sticks to to plant 12 Karat Carrot Seeds on it.");
+mods.jei.JEI.addDescription(<contenttweaker:karat_seed_redstone_ore>,"Can be planted in Crops Sticks on Redstone Ore and Synthetic Redstone Ore.");
 mods.jei.JEI.addDescription(<bhc:yellow_heart>,"Drop From Boss Mobs (I.E. Wither). Can be eaten to restore hearts");
 mods.jei.JEI.addDescription(<enderio:block_powered_spawner>,"The Dark Steel Anvil has a much higher level limit");
 mods.jei.JEI.addDescription(<enderio:item_broken_spawner>,"The Dark Steel Anvil has a much higher level limit");
