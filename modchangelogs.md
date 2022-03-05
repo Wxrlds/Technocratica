@@ -1,3 +1,5 @@
+No modchangelog, changelog generator is broken
+
 =============================================
 Technocratica 3.0.04 --> Technocratica 3.0.05
 =============================================

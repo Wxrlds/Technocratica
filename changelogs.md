@@ -1,4 +1,16 @@
 -------
+V3.0.06
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/commit/0311552fccb46d4871184623f315f67206cdc247)
+[Click here for a more detailed changelog]() 
+
+Added Synthetic Redstone Ore
+
+Added Tooltip to Synthetic Redstone Ore
+
+Redstone Ore Karat Carrots can now be planted on Synthetic Redstone Ore (only in Cropsticks)
+
+-------
 V3.0.05a
 
 Server side only release.
