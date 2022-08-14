@@ -1,6 +1,4 @@
 # Technocratica
-Config folders of Technocratica
-
 A Minecraft 1.12.2 progressive "expert" Modpack.
 
 [Curseforge](https://minecraft.curseforge.com/projects/technocratica/)
