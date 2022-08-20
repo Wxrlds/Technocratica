@@ -1,6 +1,11 @@
 {
+	icon: "chisel:futura 1 2",
 	x: 5.5d,
 	y: 2.0d,
+	description: "AE2 Meteors do not spawn!",
+	text: [
+		""
+	],
 	dependencies: [
 		"f77dca05"
 	],
@@ -9,6 +14,13 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:controller"
+		}]
+	},
+	{
+		uid: "ffd167db",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 45"
 		}]
 	}],
 	rewards: [{

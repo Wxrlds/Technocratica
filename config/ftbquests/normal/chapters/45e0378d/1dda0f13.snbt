@@ -9,11 +9,13 @@
 		items: [{
 			ForgeCaps: {
 				"xat:trinket": {
+					handler: 0,
 					mana: 0,
-					count: 0,
 					alt.ability: 0b,
+					player.status: -1,
 					slot: -1,
 					exp: 0,
+					hitcount: 0,
 					target: -1,
 					main.ability: 0b
 				}

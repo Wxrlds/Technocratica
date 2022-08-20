@@ -1,4 +1,5 @@
 import crafttweaker.data.IData;
+
 val tools=[
 	"awakened_plustic",
 	"awakeneddraconium",
@@ -65,3 +66,4 @@ for item in tools {
 <torchmaster:dread_lamp>.addTooltip(format.red("Prevents passive mob spawning in a 64 block radius"));
 <torchmaster:mega_torch>.addTooltip(format.red("Prevents hostile mob spawning in a 128 block radius"));
 <xat:inertia_null_stone>.addTooltip(format.red("Does not make you immune to fall damage!"));
+<quantumflux:craftingpiece:6>.addTooltip(format.red("Use Quantum Flux Graphite Dust!"));

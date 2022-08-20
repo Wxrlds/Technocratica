@@ -52,8 +52,7 @@
             "pakku_id": "fm6h4Kp20hILcJHR",
             "pakku_links": [
                 "6C9OhPZ2CFONOu4k",
-                "CQ73fKhQqmA5AeSb",
-                "iLwvDTT7nI9pYAyU"
+                "CQ73fKhQqmA5AeSb"
             ],
             "type": "MOD",
             "slug": {
@@ -93,7 +92,6 @@
         {
             "pakku_id": "L0K8jldetUPG824t",
             "pakku_links": [
-                "iLwvDTT7nI9pYAyU",
                 "3pUKsu3mFnOVYO0t"
             ],
             "type": "MOD",
@@ -129,6 +127,39 @@
                     ],
                     "size": 513374,
                     "date_published": "2017-10-15T16:37:50.747Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "HoJ8spnq9nhk6fY1",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2-extended-life"
+            },
+            "name": {
+                "curseforge": "AE2 Unofficial Extended Life"
+            },
+            "id": {
+                "curseforge": "570458"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "appliedenergistics2-rv6-stable-7-extended_life-v0.52.8.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/3811/277/appliedenergistics2-rv6-stable-7-extended_life-v0.52.8.jar",
+                    "id": "3811277",
+                    "parent_id": "570458",
+                    "hashes": {
+                        "sha1": "0846b4d432af845514077de21d6a051e22fd06eb",
+                        "md5": "1db3c8817f30c78824d7db95b7158e31"
+                    },
+                    "required_dependencies": [],
+                    "size": 4017378,
+                    "date_published": "2022-05-31T02:32:06.957Z"
                 }
             ]
         },
@@ -171,7 +202,6 @@
         {
             "pakku_id": "bP2LnxzQqWiEb7xg",
             "pakku_links": [
-                "iLwvDTT7nI9pYAyU",
                 "S6xSKFguVRPfdLnl"
             ],
             "type": "MOD",
@@ -215,7 +245,6 @@
         {
             "pakku_id": "cn1L7jquTNIhbYbu",
             "pakku_links": [
-                "iLwvDTT7nI9pYAyU",
                 "S6xSKFguVRPfdLnl"
             ],
             "type": "MOD",
@@ -663,39 +692,6 @@
                     "required_dependencies": [],
                     "size": 33683,
                     "date_published": "2020-06-24T05:27:04.913Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "iLwvDTT7nI9pYAyU",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "applied-energistics-2"
-            },
-            "name": {
-                "curseforge": "Applied Energistics 2"
-            },
-            "id": {
-                "curseforge": "223794"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "appliedenergistics2-rv6-stable-7.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2747/63/appliedenergistics2-rv6-stable-7.jar",
-                    "id": "2747063",
-                    "parent_id": "223794",
-                    "hashes": {
-                        "sha1": "e5c3c11eafc5daf73652a2dabe855e3759caa8b5",
-                        "md5": "b8667d60a761d5b5ae3c8a15192f9e28"
-                    },
-                    "required_dependencies": [],
-                    "size": 4062630,
-                    "date_published": "2019-07-23T19:19:12.153Z"
                 }
             ]
         },
@@ -1389,24 +1385,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BH-Menu-1.12.2-1.1.jar",
+                    "file_name": "BH-Menu-1.12.2-1.3.jar",
                     "mc_versions": [
+                        "1.12.1",
+                        "1.12",
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3670/347/BH-Menu-1.12.2-1.1.jar",
-                    "id": "3670347",
+                    "url": "https://edge.forgecdn.net/files/3707/413/BH-Menu-1.12.2-1.3.jar",
+                    "id": "3707413",
                     "parent_id": "585546",
                     "hashes": {
-                        "sha1": "c27795902a1cf7ddb001c9b1a4107025d6bcde10",
-                        "md5": "b611e57769f802c48a9a15dd401aaae2"
+                        "sha1": "c52421ac13066e4a8070309424892029a611b68f",
+                        "md5": "42faa926490c44f66a54c1b7ef921d50"
                     },
                     "required_dependencies": [],
-                    "size": 67895,
-                    "date_published": "2022-03-02T23:10:43.193Z"
+                    "size": 71799,
+                    "date_published": "2022-03-21T17:38:40.010Z"
                 }
             ]
         },
@@ -1858,23 +1856,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Chunk Pregenerator-V1.12-2.5.1.jar",
+                    "file_name": "Chunk Pregenerator-V1.12-2.5.6.jar",
                     "mc_versions": [
                         "1.12.1",
                         "1.12",
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3490/718/Chunk Pregenerator-V1.12-2.5.1.jar",
-                    "id": "3490718",
+                    "url": "https://edge.forgecdn.net/files/3859/363/Chunk Pregenerator-V1.12-2.5.6.jar",
+                    "id": "3859363",
                     "parent_id": "267193",
                     "hashes": {
-                        "sha1": "2d250927e12b29dc82ce719233c5e07fc0224c83",
-                        "md5": "a2ea2f42d5adf66dfba6f629074cecaa"
+                        "sha1": "8db753962813554c9c925853503a585208f908cf",
+                        "md5": "fd149b657edbee03ef83ba510f413115"
                     },
                     "required_dependencies": [],
-                    "size": 543872,
-                    "date_published": "2021-10-14T09:16:25.270Z"
+                    "size": 565486,
+                    "date_published": "2022-07-04T19:39:45.890Z"
                 }
             ]
         },
@@ -2409,21 +2410,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CraftTweaker2-1.12-4.1.20.674.jar",
+                    "file_name": "CraftTweaker2-1.12-4.1.20.679.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3642/364/CraftTweaker2-1.12-4.1.20.674.jar",
-                    "id": "3642364",
+                    "url": "https://edge.forgecdn.net/files/3935/788/CraftTweaker2-1.12-4.1.20.679.jar",
+                    "id": "3935788",
                     "parent_id": "239197",
                     "hashes": {
-                        "sha1": "270041a26840b0b37ee5b8f49cc9f617a42030bb",
-                        "md5": "3971bf74a37a7e1f025522a7679980ce"
+                        "sha1": "4b11b24b114e8065375e3e7479db2731230f9a52",
+                        "md5": "7f18e7a1446fa610eb5d22cc6f855259"
                     },
                     "required_dependencies": [],
-                    "size": 1572166,
-                    "date_published": "2022-02-09T18:53:16.160Z"
+                    "size": 1574751,
+                    "date_published": "2022-08-15T15:53:33.673Z"
                 }
             ]
         },
@@ -2544,21 +2545,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Cyclic-1.12.2-1.20.11.jar",
+                    "file_name": "Cyclic-1.12.2-1.20.12.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3386/442/Cyclic-1.12.2-1.20.11.jar",
-                    "id": "3386442",
+                    "url": "https://edge.forgecdn.net/files/3722/420/Cyclic-1.12.2-1.20.12.jar",
+                    "id": "3722420",
                     "parent_id": "239286",
                     "hashes": {
-                        "sha1": "fb5b45ab77b11de00f764e6c23d27c675612787b",
-                        "md5": "5f4c37166dbe93009b363ac68f927bee"
+                        "sha1": "2b6ed36e30be997c95d25d64c9c699500f166127",
+                        "md5": "2efb8717bf56327ca9a9051fb00d6146"
                     },
                     "required_dependencies": [],
-                    "size": 3988367,
-                    "date_published": "2021-07-12T19:48:26.720Z"
+                    "size": 3989385,
+                    "date_published": "2022-03-28T16:13:31.547Z"
                 }
             ]
         },
@@ -2651,24 +2655,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DarknessLib-1.12.2-1.1.1.jar",
+                    "file_name": "DarknessLib-1.12.2-1.1.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3425/516/DarknessLib-1.12.2-1.1.1.jar",
-                    "id": "3425516",
+                    "url": "https://edge.forgecdn.net/files/3672/570/DarknessLib-1.12.2-1.1.2.jar",
+                    "id": "3672570",
                     "parent_id": "349174",
                     "hashes": {
-                        "sha1": "ac1ea3e27a2dfd39b73c115560c931899e633b9e",
-                        "md5": "8ffbf1ff112e9a0df70389d28b78eee8"
+                        "sha1": "8ddb310a517f59eddf6e1b884dd924bee1036ca8",
+                        "md5": "27253a8a30226944e5df6f3f393761cd"
                     },
                     "required_dependencies": [],
-                    "size": 51924,
-                    "date_published": "2021-08-14T21:23:30.750Z"
+                    "size": 52092,
+                    "date_published": "2022-03-04T22:10:27.663Z"
                 }
             ]
         },
@@ -3225,37 +3226,37 @@
             ]
         },
         {
-            "pakku_id": "I97bfc95UbINSogo",
+            "pakku_id": "sYkZ71DuIjiFbWc1",
             "type": "MOD",
             "slug": {
-                "curseforge": "extended-crafting"
+                "curseforge": "extended-crafting-nomifactory-edition"
             },
             "name": {
-                "curseforge": "Extended Crafting"
+                "curseforge": "Extended Crafting: Nomifactory Edition"
             },
             "id": {
-                "curseforge": "268387"
+                "curseforge": "398267"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedCrafting-1.12.2-1.5.6.jar",
+                    "file_name": "ExtendedCrafting-Nomifactory-Edition-1.7.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/2777/71/ExtendedCrafting-1.12.2-1.5.6.jar",
-                    "id": "2777071",
-                    "parent_id": "268387",
+                    "url": "https://edge.forgecdn.net/files/3613/140/ExtendedCrafting-Nomifactory-Edition-1.7.0.jar",
+                    "id": "3613140",
+                    "parent_id": "398267",
                     "hashes": {
-                        "sha1": "fa76962c44c0f445c6f0022ff539dc57d67db27d",
-                        "md5": "2d0daf5586eeeb6e35fbdd6e980b9228"
+                        "sha1": "e4a83a43a407080a2fc0697c233eed5135093246",
+                        "md5": "a8be2c053f00b1168b3ce04f4793c3f0"
                     },
                     "required_dependencies": [
                         "272335"
                     ],
-                    "size": 446452,
-                    "date_published": "2019-09-02T18:57:19.553Z"
+                    "size": 484416,
+                    "date_published": "2022-01-19T08:36:24.580Z"
                 }
             ]
         },
@@ -3296,9 +3297,6 @@
         },
         {
             "pakku_id": "KkIjDJqGuJWhYDuu",
-            "pakku_links": [
-                "iLwvDTT7nI9pYAyU"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "extracells2"
@@ -3945,6 +3943,9 @@
         },
         {
             "pakku_id": "0JGjXT3PftvMnIex",
+            "pakku_links": [
+                "xn9K094p1WOfWTnZ"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "grue"
@@ -4016,6 +4017,42 @@
                     "required_dependencies": [],
                     "size": 23153,
                     "date_published": "2021-01-14T23:07:04.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "igHtQp5ydP7U2oEk",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "had-enough-items"
+            },
+            "name": {
+                "curseforge": "Had Enough Items"
+            },
+            "id": {
+                "curseforge": "557549"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "HadEnoughItems_1.12.2-4.23.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/3934/312/HadEnoughItems_1.12.2-4.23.0.jar",
+                    "id": "3934312",
+                    "parent_id": "557549",
+                    "hashes": {
+                        "sha1": "dfe688c30f9e47b6f60e1c65c4545b348f11c524",
+                        "md5": "b6dd2f570c45d713d0635ca5b92efd70"
+                    },
+                    "required_dependencies": [],
+                    "size": 686180,
+                    "date_published": "2022-08-14T17:02:39.850Z"
                 }
             ]
         },
@@ -4623,10 +4660,6 @@
         },
         {
             "pakku_id": "3n7Fq6d26G5Sv4uf",
-            "pakku_links": [
-                "iLwvDTT7nI9pYAyU",
-                "iqCuXqZ2kyhFlDpp"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "just-enough-energistics-jee"
@@ -4704,39 +4737,6 @@
             ]
         },
         {
-            "pakku_id": "iqCuXqZ2kyhFlDpp",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "jei"
-            },
-            "name": {
-                "curseforge": "Just Enough Items (JEI)"
-            },
-            "id": {
-                "curseforge": "238222"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "jei_1.12.2-4.16.1.302.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/3043/174/jei_1.12.2-4.16.1.302.jar",
-                    "id": "3043174",
-                    "parent_id": "238222",
-                    "hashes": {
-                        "sha1": "3e88d2896ca868c3cedb65e117ad3a1b82488fa8",
-                        "md5": "2dc4b6046812e64c514ff4d18bc5cb03"
-                    },
-                    "required_dependencies": [],
-                    "size": 653210,
-                    "date_published": "2020-08-27T01:47:46.263Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "PaAVv5dsSgpUQqL6",
             "type": "MOD",
             "slug": {
@@ -4775,9 +4775,6 @@
         },
         {
             "pakku_id": "dJLneMzJuAOX88EY",
-            "pakku_links": [
-                "iqCuXqZ2kyhFlDpp"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "just-enough-reactors"
@@ -4814,9 +4811,6 @@
         },
         {
             "pakku_id": "HTS61Xqd6r1KiORa",
-            "pakku_links": [
-                "iqCuXqZ2kyhFlDpp"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "just-enough-resources-jer"
@@ -4989,9 +4983,6 @@
         },
         {
             "pakku_id": "p7z2LHpR5vKN8E9A",
-            "pakku_links": [
-                "VLcprPkBNH3OBMQF"
-            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "littletiles"
@@ -5005,26 +4996,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LittleTiles_v1.5.57_mc1.12.2.jar",
+                    "file_name": "LittleTiles_v1.5.58_mc1.12.2.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
-                    "loaders": [
-                        "forge"
-                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3584/330/LittleTiles_v1.5.57_mc1.12.2.jar",
-                    "id": "3584330",
+                    "url": "https://edge.forgecdn.net/files/3781/3/LittleTiles_v1.5.58_mc1.12.2.jar",
+                    "id": "3781003",
                     "parent_id": "257818",
                     "hashes": {
-                        "sha1": "433e236391e7f24fc6cf2fdbad6737f083da99ae",
-                        "md5": "6215fff829f2d3d46d442c22daa6350c"
+                        "sha1": "9ed4f84c38bbcbfea846e84a3f4262c9b5809242",
+                        "md5": "0c61f5177285caec3887e06743d552f4"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 2271682,
-                    "date_published": "2021-12-29T11:45:54.353Z"
+                    "size": 2273597,
+                    "date_published": "2022-05-05T17:21:31.283Z"
                 }
             ]
         },
@@ -5535,7 +5523,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modtweaker-4.0.20.5.jar",
+                    "file_name": "modtweaker-4.0.20.11.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5543,18 +5531,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3488/553/modtweaker-4.0.20.5.jar",
-                    "id": "3488553",
+                    "url": "https://edge.forgecdn.net/files/3840/577/modtweaker-4.0.20.11.jar",
+                    "id": "3840577",
                     "parent_id": "220954",
                     "hashes": {
-                        "sha1": "4e1e9795f8344ffa76718ece16dc4692d0f630cf",
-                        "md5": "fc9fa26170ef4cb53cebb4bd60d9b9a6"
+                        "sha1": "f0bdbf6f4257e392e59023289998aaa8c295df47",
+                        "md5": "f78bbfb0382d7bcc37c1749d8be3e776"
                     },
                     "required_dependencies": [
                         "253211"
                     ],
-                    "size": 493245,
-                    "date_published": "2021-10-12T03:21:23.537Z"
+                    "size": 493285,
+                    "date_published": "2022-06-20T01:53:46.080Z"
                 }
             ]
         },
@@ -8450,7 +8438,6 @@
         {
             "pakku_id": "NXFOlgRkPzqRshIp",
             "pakku_links": [
-                "iLwvDTT7nI9pYAyU",
                 "S6xSKFguVRPfdLnl"
             ],
             "type": "MOD",

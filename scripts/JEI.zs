@@ -168,5 +168,5 @@ val KaratSeeds=[
 <karatgarden:seed_carrot_base>
 ] as IItemStack [];
 for seed in KaratSeeds {
-mods.jei.JEI.addDescription(seed,"Craft two Normal or two Plus Seeds together to obtain the other kind of Seed.");
+mods.jei.JEI.addDescription(seed,"Depending on the slot you put the seed into a crafting table you can obtain another variant of the Seed. Craft two Normal or Plus Seeds together to obtain the Plus or Normal variant of the Seed.");
 }

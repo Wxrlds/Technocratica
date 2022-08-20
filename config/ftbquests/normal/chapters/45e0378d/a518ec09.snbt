@@ -9,6 +9,9 @@
 	x: 0.0d,
 	y: 0.0d,
 	description: "Build a Nether Portal like structure and light it with a Sword, Bow or Flint and Steel. Sneak to go through the portal",
+	text: [
+		"Good for what the name suggests"
+	],
 	tasks: [{
 		uid: "f38bcf3d",
 		type: "item",
