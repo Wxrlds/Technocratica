@@ -1,0 +1,135 @@
+{
+    "name": "Technocratica",
+    "version": "3.0.09",
+    "author": "wxrlds_",
+    "overrides": [
+        "config",
+        "!config/brandon3055/ResourceCache",
+        "!config/betteradvancements",
+        "!config/chiselsandbits_clipboard.cfg",
+        "!config/classicbar.cfg",
+        "!config/clienttweaks.cfg",
+        "!config/ctm.cfg",
+        "!config/CustomMainMenu",
+        "!config/defaultoptions",
+        "!config/ding.cfg",
+        "!config/discord.cfg",
+        "!config/fpsreducer",
+        "!config/googlyeyes.cfg",
+        "!config/jei/bookmarks.ini",
+        "!config/jei/worldSettings.cfg",
+        "!config/jeiintegration.cfg",
+        "!config/jeivillagers.cfg",
+        "!config/jeresources",
+        "!config/lootcapacitortooltips.cfg",
+        "!config/modnametooltip.cfg",
+        "!config/MoreOverlays.cfg",
+        "!config/MouseTweaks.cfg",
+        "!config/toastcontrol.cfg",
+        "!config/wailaharvestability.cfg",
+        "local/ftbutilities/ranks.txt",
+        "scripts",
+        "structures/active"
+    ],
+    "server_overrides": [
+        "server-icon.png"
+    ],
+    "client_overrides": [
+        "config/betteradvancements",
+        "config/classicbar.cfg",
+        "config/clienttweaks.cfg",
+        "config/ctm.cfg",
+        "config/CustomMainMenu",
+        "config/defaultoptions",
+        "config/ding.cfg",
+        "config/discord.cfg",
+        "config/fpsreducer",
+        "config/googlyeyes.cfg",
+        "config/jeiintegration.cfg",
+        "config/jeivillagers.cfg",
+        "config/jeresources",
+        "config/lootcapacitortooltips.cfg",
+        "config/modnametooltip.cfg",
+        "config/MoreOverlays.cfg",
+        "config/MouseTweaks.cfg",
+        "config/toastcontrol.cfg",
+        "config/wailaharvestability.cfg",
+        "icon.png",
+        "resources",
+        "schematics"
+    ],
+    "projects": {
+        "better-advancements": {
+            "side": "CLIENT"
+        },
+        "classic-bars": {
+            "side": "CLIENT"
+        },
+        "cleanview": {
+            "side": "CLIENT"
+        },
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "custom-main-menu": {
+            "side": "CLIENT"
+        },
+        "default-options": {
+            "side": "CLIENT"
+        },
+        "ding": {
+            "side": "CLIENT"
+        },
+        "discord": {
+            "side": "CLIENT"
+        },
+        "fps-reducer": {
+            "side": "CLIENT"
+        },
+        "googlyeyes": {
+            "side": "CLIENT"
+        },
+        "jei-integration": {
+            "side": "CLIENT"
+        },
+        "jei-villagers": {
+            "side": "CLIENT"
+        },
+        "just-enough-harvestcraft": {
+            "side": "CLIENT"
+        },
+        "just-enough-resources-jer": {
+            "side": "CLIENT"
+        },
+        "loot-capacitor-tooltips": {
+            "side": "CLIENT"
+        },
+        "more-overlays": {
+            "side": "CLIENT"
+        },
+        "mouse-tweaks": {
+            "side": "CLIENT"
+        },
+        "no-nv-flash": {
+            "side": "CLIENT"
+        },
+        "texfix": {
+            "side": "CLIENT"
+        },
+        "tipthescales": {
+            "side": "CLIENT"
+        },
+        "toast-control": {
+            "side": "CLIENT"
+        },
+        "waila-harvestability": {
+            "side": "CLIENT"
+        }
+    }
+}
