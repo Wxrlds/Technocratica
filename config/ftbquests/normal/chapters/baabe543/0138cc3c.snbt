@@ -8,15 +8,15 @@
 		uid: "1a8b3eb6",
 		type: "item",
 		items: [{
+			id: "draconicevolution:draconic_pick",
+			tag: {
+				Energy: 16000000
+			},
 			ForgeCaps: {
 				Parent: {
 					Size: 18,
 					Items: []
 				}
-			},
-			id: "draconicevolution:draconic_pick",
-			tag: {
-				Energy: 16000000
 			}
 		}],
 		ignore_damage: true,

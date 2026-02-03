@@ -10,15 +10,15 @@
 		uid: "6b6efb8f",
 		type: "item",
 		items: [{
+			id: "draconicevolution:draconic_staff_of_power",
+			tag: {
+				Energy: 48000000
+			},
 			ForgeCaps: {
 				Parent: {
 					Size: 27,
 					Items: []
 				}
-			},
-			id: "draconicevolution:draconic_staff_of_power",
-			tag: {
-				Energy: 48000000
 			}
 		}],
 		ignore_damage: true,

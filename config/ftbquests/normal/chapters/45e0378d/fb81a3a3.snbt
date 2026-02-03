@@ -3,7 +3,7 @@
 	icon: "aroma1997sdimension:miningmultitool",
 	x: 0.0d,
 	y: -2.0d,
-	description: "Build a Nether Portal like structure and light it with the Multitool. Sneak to go through the portal",
+	description: "Build a Nether Portal like structure and light it with the Multitool. Sneak to go through the portal. The Biosphere world is not very nice for mining though!",
 	text: [
 		"Good for what the name suggests"
 	],
@@ -35,5 +35,11 @@
 		type: "item",
 		item: "minecraft:shulker_shell",
 		random_bonus: 2
+	},
+	{
+		uid: "4bf99060",
+		type: "item",
+		item: "aroma1997sdimension:portalframesphere",
+		count: 14
 	}]
 }

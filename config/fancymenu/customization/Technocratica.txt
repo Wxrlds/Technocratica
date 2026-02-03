@@ -1,0 +1,297 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/assets/background.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = {"placeholder":"elementposx","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementposy","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}+{"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}+{"placeholder":"guiheight"}*0.015","decimal":"true"}}
+}
+
+customization {
+  advanced_height = {"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = {"placeholder":"elementwidth","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = setbuttonlabel
+  value =
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiplayerhover.png
+  backgroundnormal = config\fancymenu\assets\multiplayer.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = {"placeholder":"elementposx","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementposy","values":{"id":"vanillabtn:button_compatibility_id:forge_titlescreen_mods_button"}}+{"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:forge_titlescreen_mods_button"}}+{"placeholder":"guiheight"}*0.015","decimal":"true"}}
+}
+
+customization {
+  advanced_height = {"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 50
+  action = resizebutton
+  advanced_width = {"placeholder":"elementwidth","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttonlabel
+  value =
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\optionshover.png
+  backgroundnormal = config\fancymenu\assets\options.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = {"placeholder":"elementposx","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementposy","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_options_button"}}+{"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_options_button"}}+{"placeholder":"guiheight"}*0.015","decimal":"true"}}
+}
+
+customization {
+  advanced_height = {"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 50
+  action = resizebutton
+  advanced_width = {"placeholder":"elementwidth","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = setbuttonlabel
+  value =
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\quitgamehover.png
+  backgroundnormal = config\fancymenu\assets\quitgame.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.272-{"placeholder":"elementwidth","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}/2","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementposy","values":{"id":"5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359"}}+{"placeholder":"elementheight","values":{"id":"5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359"}}+{"placeholder":"guiheight"}*0.06","decimal":"true"}}
+}
+
+customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementheight","values":{"id":"5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359"}}/1.4","decimal":"true"}}
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementwidth","values":{"id":"5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359"}}*0.66","decimal":"true"}}
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = setbuttonlabel
+  value =
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\singleplayerhover.png
+  backgroundnormal = config\fancymenu\assets\singleplayer.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = {"placeholder":"elementposx","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"elementposy","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_multiplayer_button"}}+{"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_multiplayer_button"}}+{"placeholder":"guiheight"}*0.015","decimal":"true"}}
+}
+
+customization {
+  advanced_height = {"placeholder":"elementheight","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 50
+  action = resizebutton
+  advanced_width = {"placeholder":"elementwidth","values":{"id":"vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button"}}
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = setbuttonlabel
+  value =
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\modshover.png
+  backgroundnormal = config\fancymenu\assets\mods.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 346
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 057e55eb-c3ca-46ec-9e22-031125c5e00c1769792513342
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = 804ab60c-5129-44e8-8254-7940ecb3624d1769792513346
+  y = 460
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 731
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 974e758e-30c1-4d2d-9d6e-a3d371150ae81769792513346
+  y = 502
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 234dd825-c4ba-4abe-b080-51222dafb98d1769792513347
+  y = 230
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 7d41a269-37a6-4d0f-a495-0d3cd690c0281769792513347
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a69dff0e-1a16-42ea-9773-b02f496c93281769792513347
+  y = 0
+  height = 30
+}
+
+customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*1/15","decimal":"true"}}
+  path = config/fancymenu/assets/technocratica.png
+  orientation = top-left
+  x = 0
+  width = 50
+  actionid = 5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359
+  action = addtexture
+  y = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.272-{"placeholder":"elementwidth","values":{"id":"5cb44898-2beb-4a12-815a-04d51bcbef1c1633622456359"}}/2","decimal":"true"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}*(0.38275+4/61))","decimal":"true"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.15","decimal":"true"}}
+  height = 50
+}
+
+customization {
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*(400/477)","decimal":"true"}}
+  path = config/fancymenu/assets/logo.png
+  orientation = top-left
+  x = 0
+  width = 50
+  actionid = 9ac3f1f8-7b98-40f3-b151-3cd24cbf1d561633618925449
+  action = addtexture
+  y = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.7316875-{"placeholder":"elementwidth","values":{"id":"9ac3f1f8-7b98-40f3-b151-3cd24cbf1d561633618925449"}}/2","decimal":"true"}}
+  advanced_width = {"placeholder":"elementheight","values":{"id":"9ac3f1f8-7b98-40f3-b151-3cd24cbf1d561633618925449"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}/2-{"placeholder":"elementheight","values":{"id":"9ac3f1f8-7b98-40f3-b151-3cd24cbf1d561633618925449"}}/2","decimal":"true"}}
+  height = 50
+}

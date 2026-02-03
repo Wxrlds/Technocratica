@@ -4,64 +4,64 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 11
-    },
-    "d": {
       "name": "harvestcraft:pampistachio",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "aaaa ",
-      "aaaa ",
-      " d d ",
+      "bbbb ",
+      "bbbb ",
+      " c c ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "accca",
-      "accca",
-      "d  dd",
-      "     ",
-      "     "
-    ],
-    [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      "d b  ",
-      "  b  ",
-      "  b  "
-    ],
-    [
-      "  c  ",
-      "  cc ",
-      "accca",
-      "accca",
-      "d d d",
-      "     ",
-      "     "
-    ],
-    [
-      "     ",
-      "     ",
+      "  a  ",
       " aaa ",
-      "aaaa ",
-      "   d ",
+      "baaab",
+      "baaab",
+      "c  cc",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " ada ",
+      "badab",
+      "badab",
+      "c d  ",
+      "  d  ",
+      "  d  "
+    ],
+    [
+      "  a  ",
+      "  aa ",
+      "baaab",
+      "baaab",
+      "c c c",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " bbb ",
+      "bbbb ",
+      "   c ",
       "     ",
       "     "
     ]

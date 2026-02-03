@@ -7,65 +7,65 @@
       "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 3
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 3
     },
-    "d": {
+    "c": {
       "name": "harvestcraft:pamvanillabean",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "ccccc",
+      "bbbbb",
+      " bbb ",
+      " c   ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " ada ",
+      "badab",
+      "badab",
+      " cd  ",
+      "  d  ",
+      "  d  ",
+      "  d  "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " bbbb",
+      "bbbb ",
       " ccc ",
-      " d   ",
-      "     ",
-      "     ",
-      "     "
-    ],
-    [
-      "  a  ",
-      " aaa ",
-      "caaac",
-      "caaac",
-      "     ",
-      "     ",
-      "     ",
-      "     "
-    ],
-    [
-      " aaa ",
-      " aba ",
-      "cabac",
-      "cabac",
-      " db  ",
-      "  b  ",
-      "  b  ",
-      "  b  "
-    ],
-    [
-      "  a  ",
-      "  a  ",
-      "caaac",
-      "caaac",
-      "     ",
-      "     ",
-      "     ",
-      "     "
-    ],
-    [
-      "     ",
-      "     ",
-      " cccc",
-      "cccc ",
-      " ddd ",
       "     ",
       "     ",
       "     "

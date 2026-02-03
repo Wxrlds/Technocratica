@@ -3,16 +3,16 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "b": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pampaperbark",
@@ -23,35 +23,35 @@
     [
       "     ",
       "     ",
-      " bbbb",
-      " bbbb",
+      " aaaa",
+      " aaaa",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "bcccb",
-      "bcccb",
+      "  b  ",
+      "  b  ",
+      "abbba",
+      "abbba",
       "     ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cac ",
-      "bcacb",
-      "bcacb",
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
       "  d  ",
       "  d  ",
       "  d  "
     ],
     [
-      "  c  ",
-      " cc  ",
-      "bcccb",
-      "bcccb",
+      "  b  ",
+      " bb  ",
+      "abbba",
+      "abbba",
       "     ",
       "     ",
       "     "
@@ -59,8 +59,8 @@
     [
       "     ",
       "     ",
-      "bbbbb",
-      " bbb ",
+      "aaaaa",
+      " aaa ",
       "     ",
       "     ",
       "     "

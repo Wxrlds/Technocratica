@@ -9,10 +9,10 @@
 		type: "item",
 		items: [{
 			id: "quantumflux:quibitcluster",
+			Damage: 5s,
 			tag: {
 				Energy: 312500000
-			},
-			Damage: 5s
+			}
 		}],
 		ignore_nbt: 1b
 	}],

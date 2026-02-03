@@ -1,0 +1,66 @@
+{
+  "type": "biomesoplenty:yellow_autumn",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_0",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 2
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "aaaa ",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  aa ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aba ",
+      "aabaa",
+      "aabaa",
+      "  b  ",
+      "  b  ",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " aaaa",
+      " aaaa",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -8,7 +8,7 @@
 		uid: "b5eac728",
 		type: "item",
 		items: [{
-			item: "extracells:storage.component 1 1"
+			item: "aeadditions:storage.component 1 1"
 		}]
 	}],
 	rewards: [{

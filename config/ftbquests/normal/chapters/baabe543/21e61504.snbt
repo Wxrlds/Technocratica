@@ -8,15 +8,15 @@
 		uid: "8b018570",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					Size: 9,
-					Items: []
-				}
-			},
 			id: "draconicevolution:wyvern_axe",
 			tag: {
 				Energy: 4000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
 			}
 		}],
 		ignore_damage: true,

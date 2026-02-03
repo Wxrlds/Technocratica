@@ -1,0 +1,181 @@
+{
+  "type": "biomesoplenty:mahogany",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 1
+    },
+    "b": {
+      "name": "biomesoplenty:log_3",
+      "meta": 5
+    },
+    "c": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 9
+    },
+    "d": {
+      "name": "biomesoplenty:log_3",
+      "meta": 1
+    },
+    "e": {
+      "name": "biomesoplenty:log_3",
+      "meta": 9
+    }
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "         ",
+      " cccccccc",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "  accac  ",
+      "ccceeeccc",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "  cccc   ",
+      " cccbcca ",
+      "ccccbcaac",
+      "    b    ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    c    ",
+      "  cacaa  ",
+      " caccaac ",
+      "cdacccadc",
+      "         ",
+      "         ",
+      "    d    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   ccc   ",
+      "  caacc  ",
+      " cbaacba ",
+      "cdbcccbdc",
+      "  b   b  ",
+      "  b   b  ",
+      "   e e   ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    "
+    ],
+    [
+      "    c    ",
+      "  cccac  ",
+      " accccaa ",
+      "cdcccccdc",
+      "         ",
+      "         ",
+      "    d    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "  ccccc  ",
+      " cccbcac ",
+      "ccccbcccc",
+      "    b    ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "  cccca  ",
+      "acceeecca",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      " cccccccc",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

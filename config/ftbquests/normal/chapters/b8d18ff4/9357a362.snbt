@@ -12,10 +12,10 @@
 		type: "item",
 		items: [{
 			id: "draconicevolution:draconium_capacitor",
+			Damage: 2s,
 			tag: {
 				Energy: 1073741823
-			},
-			Damage: 2s
+			}
 		}],
 		ignore_nbt: 1b
 	}],

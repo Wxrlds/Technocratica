@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 0
     },
     "b": {
@@ -11,11 +11,11 @@
       "meta": 8
     },
     "c": {
-      "name": "minecraft:leaves",
+      "name": "harvestcraft:pampear",
       "meta": 0
     },
     "d": {
-      "name": "harvestcraft:pampear",
+      "name": "minecraft:log",
       "meta": 0
     }
   },
@@ -23,41 +23,41 @@
     [
       "     ",
       "     ",
-      "cccc ",
-      " ccc ",
-      " d   ",
+      "aaaa ",
+      " aaa ",
+      " c   ",
       "     "
     ],
     [
       "  b  ",
       " bbb ",
-      "cbbbc",
-      "cbbbc",
-      "d d d",
+      "abbba",
+      "abbba",
+      "c c c",
       "     "
     ],
     [
       " bbb ",
-      " bab ",
-      "cbabc",
-      "cbabc",
-      "d a  ",
-      "  a  "
+      " bdb ",
+      "abdba",
+      "abdba",
+      "c d  ",
+      "  d  "
     ],
     [
       "  b  ",
       " bbb ",
-      "cbbbc",
-      "cbbbc",
-      " d   ",
+      "abbba",
+      "abbba",
+      " c   ",
       "     "
     ],
     [
       "     ",
       "     ",
-      " ccc ",
-      "ccccc",
-      "    d",
+      " aaa ",
+      "aaaaa",
+      "    c",
       "     "
     ]
   ]

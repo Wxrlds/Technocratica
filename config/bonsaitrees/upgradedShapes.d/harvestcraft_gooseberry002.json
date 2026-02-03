@@ -4,15 +4,15 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves",
-      "meta": 0
+      "meta": 8
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 0
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 8
+      "name": "minecraft:log",
+      "meta": 0
     },
     "d": {
       "name": "harvestcraft:pamgooseberry",
@@ -23,48 +23,48 @@
     [
       "     ",
       "     ",
-      " aaaa",
-      "aaaaa",
+      " bbbb",
+      "bbbbb",
       "  d  ",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "accca",
-      "accca",
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
       "  d  ",
       "     ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      "  b  ",
-      "  b  ",
-      "  b  ",
-      "  b  "
-    ],
-    [
-      "  c  ",
-      "  c  ",
-      "accca",
-      "accca",
-      "  d  ",
-      "     ",
-      "     ",
-      "     "
-    ],
-    [
-      "     ",
-      "     ",
-      "aaaa ",
       " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c  ",
+      "  c  ",
+      "  c  ",
+      "  c  "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
+      "  d  ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "bbbb ",
+      " bbb ",
       " d   ",
       "     ",
       "     ",

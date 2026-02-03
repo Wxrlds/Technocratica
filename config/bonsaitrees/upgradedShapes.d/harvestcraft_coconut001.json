@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "b": {
@@ -11,57 +11,57 @@
       "meta": 11
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 3
-    },
-    "d": {
       "name": "harvestcraft:pamcoconut",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      " ccc ",
-      " cccc",
-      " dd  ",
+      " aaa ",
+      " aaaa",
+      " cc  ",
       "     ",
       "     "
     ],
     [
       "  b  ",
       "  bb ",
-      "cbbbc",
-      "cbbbc",
-      "dd   ",
+      "abbba",
+      "abbba",
+      "cc   ",
       "     ",
       "     "
     ],
     [
       " bbb ",
-      " bab ",
-      "cbabc",
-      "cbabc",
-      "d a  ",
-      "  a  ",
-      "  a  "
+      " bdb ",
+      "abdba",
+      "abdba",
+      "c d  ",
+      "  d  ",
+      "  d  "
     ],
     [
       "  b  ",
       " bb  ",
-      "cbbbc",
-      "cbbbc",
-      "   d ",
+      "abbba",
+      "abbba",
+      "   c ",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      " ccc ",
-      "cccc ",
-      "  d  ",
+      " aaa ",
+      "aaaa ",
+      "  c  ",
       "     ",
       "     "
     ]

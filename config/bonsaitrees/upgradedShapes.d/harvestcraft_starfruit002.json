@@ -3,59 +3,59 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "harvestcraft:pamstarfruit",
-      "meta": 0
+      "name": "minecraft:leaves",
+      "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "minecraft:leaves",
+      "name": "minecraft:log",
       "meta": 3
     },
     "d": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "harvestcraft:pamstarfruit",
+      "meta": 0
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "cccc ",
-      "accc ",
-      "   a ",
+      "bbbb ",
+      "dbbb ",
+      "   d ",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  d  ",
-      "  d  ",
-      "cdddc",
-      "cdddc",
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
       "     ",
       "     ",
       "     ",
       "     "
     ],
     [
-      " ddd ",
-      " dbd ",
-      "cdbdc",
-      "cdbdc",
-      "  b  ",
-      "  b  ",
-      "  b  ",
-      "  b  "
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c  ",
+      "  c  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  d  ",
-      "  d  ",
-      "cdddc",
-      "cdddc",
-      "   a ",
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
+      "   d ",
       "     ",
       "     ",
       "     "
@@ -63,9 +63,9 @@
     [
       "     ",
       "     ",
-      " cccc",
-      "ccccc",
-      " aa  ",
+      " bbbb",
+      "bbbbb",
+      " dd  ",
       "     ",
       "     ",
       "     "

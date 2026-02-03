@@ -7,15 +7,15 @@
       "meta": 0
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 0
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 8
     },
-    "d": {
+    "c": {
       "name": "harvestcraft:pamwalnut",
+      "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
       "meta": 0
     }
   },
@@ -25,34 +25,34 @@
       "     ",
       "aaaaa",
       "aaaa ",
-      " d   ",
+      " c   ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "accca",
-      "accca",
-      "dd   ",
-      "     ",
-      "     "
-    ],
-    [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      " db  ",
       "  b  ",
-      "  b  "
+      " bbb ",
+      "abbba",
+      "abbba",
+      "cc   ",
+      "     ",
+      "     "
     ],
     [
-      "  c  ",
-      " cc  ",
-      "accca",
-      "accca",
+      " bbb ",
+      " bdb ",
+      "abdba",
+      "abdba",
+      " cd  ",
       "  d  ",
+      "  d  "
+    ],
+    [
+      "  b  ",
+      " bb  ",
+      "abbba",
+      "abbba",
+      "  c  ",
       "     ",
       "     "
     ],
@@ -61,7 +61,7 @@
       "     ",
       " aaaa",
       "aaaaa",
-      "  d  ",
+      "  c  ",
       "     ",
       "     "
     ]

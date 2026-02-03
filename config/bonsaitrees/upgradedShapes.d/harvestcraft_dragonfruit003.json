@@ -7,25 +7,25 @@
       "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 3
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 3
     },
-    "d": {
+    "c": {
       "name": "harvestcraft:pamdragonfruit",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "ccccc",
-      " cccd",
-      " d   ",
+      "bbbbb",
+      " bbbc",
+      " c   ",
       "     ",
       "     ",
       "     "
@@ -33,28 +33,28 @@
     [
       "  a  ",
       " aaa ",
-      "caaac",
-      "caaac",
-      "    d",
+      "baaab",
+      "baaab",
+      "    c",
       "     ",
       "     ",
       "     "
     ],
     [
       " aaa ",
-      " aba ",
-      "cabac",
-      "cabac",
-      " dbd ",
-      "  b  ",
-      "  b  ",
-      "  b  "
+      " ada ",
+      "badab",
+      "badab",
+      " cdc ",
+      "  d  ",
+      "  d  ",
+      "  d  "
     ],
     [
       "  a  ",
       " aa  ",
-      "caaac",
-      "caaac",
+      "baaab",
+      "baaab",
       "     ",
       "     ",
       "     ",
@@ -63,8 +63,8 @@
     [
       "     ",
       "     ",
-      " ccc ",
-      " ccc ",
+      " bbb ",
+      " bbb ",
       "     ",
       "     ",
       "     ",

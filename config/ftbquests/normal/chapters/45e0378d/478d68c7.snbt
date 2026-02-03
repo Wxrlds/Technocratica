@@ -96,11 +96,11 @@
 		items: [{
 			id: "exchangers:stellar_exchanger",
 			tag: {
+				Energy: 100000000,
+				forceDropItems: 0b,
+				range: 0,
 				exmode: 0,
 				directionalPlacement: 0b,
-				forceDropItems: 0b,
-				Energy: 100000000,
-				range: 0,
 				blockstate: {
 					Name: "minecraft:air"
 				}

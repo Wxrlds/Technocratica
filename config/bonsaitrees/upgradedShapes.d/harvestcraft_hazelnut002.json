@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:hazelnut",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 8
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
+    "d": {
+      "name": "harvestcraft:pamhazelnut",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "bbbb ",
+      "bbbbb",
+      " ddd ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  aa ",
+      "baaab",
+      "baaab",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c  ",
+      "  c  ",
+      "  c  ",
+      "  c  "
+    ],
+    [
+      "  a  ",
+      " aa  ",
+      "baaab",
+      "baaab",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " bbbb",
+      "bbbbb",
+      " dd  ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

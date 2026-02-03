@@ -3,15 +3,15 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log2",
-      "meta": 1
-    },
-    "b": {
       "name": "minecraft:leaves2",
       "meta": 9
     },
-    "c": {
+    "b": {
       "name": "minecraft:leaves2",
+      "meta": 1
+    },
+    "c": {
+      "name": "minecraft:log2",
       "meta": 1
     }
   },
@@ -19,8 +19,8 @@
     [
       "        ",
       "        ",
-      " ccccc  ",
-      " cccccc ",
+      " bbbbb  ",
+      " bbbbbb ",
       "        ",
       "        ",
       "        ",
@@ -31,64 +31,64 @@
     ],
     [
       "        ",
+      "   bb   ",
+      " aaaaab ",
+      "baaaaaab",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "        ",
+      "  bbbb  ",
+      "baaaaaab",
+      "bacaacab",
+      "  c  c  ",
+      "  c  c  ",
+      "     c  ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "   bb   ",
+      " bbbbbb ",
+      "baaccaab",
+      "baacccab",
+      "   ccc  ",
+      "   ccc  ",
       "   cc   ",
-      " bbbbbc ",
-      "cbbbbbbc",
-      "        ",
-      "        ",
-      "        ",
-      "        ",
-      "        ",
-      "        ",
-      "        "
-    ],
-    [
-      "        ",
-      "  cccc  ",
-      "cbbbbbbc",
-      "cbabbabc",
-      "  a  a  ",
-      "  a  a  ",
-      "     a  ",
-      "        ",
-      "        ",
-      "        ",
-      "        "
-    ],
-    [
       "   cc   ",
-      " cccccc ",
-      "cbbaabbc",
-      "cbbaaabc",
-      "   aaa  ",
-      "   aaa  ",
-      "   aa   ",
-      "   aa   ",
-      "   aa   ",
-      "   aa   ",
-      "   aa   "
+      "   cc   ",
+      "   cc   ",
+      "   cc   "
     ],
     [
+      "   bb   ",
+      " bbbbbb ",
+      "baaccaab",
+      "bacccaab",
+      "  ccc   ",
+      "  ccc   ",
+      "  ccc   ",
       "   cc   ",
-      " cccccc ",
-      "cbbaabbc",
-      "cbaaabbc",
-      "  aaa   ",
-      "  aaa   ",
-      "  aaa   ",
-      "   aa   ",
-      "   aa   ",
-      "   aa   ",
-      "   aa   "
+      "   cc   ",
+      "   cc   ",
+      "   cc   "
     ],
     [
       "        ",
-      "  cccc  ",
-      "cbbbbbbc",
-      "cbaababc",
-      "  aa a  ",
-      "  aa    ",
-      "  a     ",
+      "  bbbb  ",
+      "baaaaaab",
+      "baccacab",
+      "  cc c  ",
+      "  cc    ",
+      "  c     ",
       "        ",
       "        ",
       "        ",
@@ -96,9 +96,9 @@
     ],
     [
       "        ",
-      "   cc   ",
-      "cbbbbbbc",
-      "cbbbbbbc",
+      "   bb   ",
+      "baaaaaab",
+      "baaaaaab",
       "        ",
       "        ",
       "        ",
@@ -110,8 +110,8 @@
     [
       "        ",
       "        ",
-      " ccccc  ",
-      " cccccc ",
+      " bbbbb  ",
+      " bbbbbb ",
       "        ",
       "        ",
       "        ",

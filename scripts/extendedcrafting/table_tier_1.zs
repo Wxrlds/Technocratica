@@ -1,0 +1,5 @@
+mods.extendedcrafting.TableCrafting.addShaped(1, <extendedcrafting:table_advanced>, [
+    [<extendedcrafting:material:9>, <extendedcrafting:material:15>, <extendedcrafting:material:9>],
+    [<extendedcrafting:table_basic>, <ore:blockGold>, <extendedcrafting:table_basic>],
+    [<extendedcrafting:material:9>, <extendedcrafting:material:2>, <extendedcrafting:material:9>]
+]);

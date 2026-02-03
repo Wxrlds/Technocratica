@@ -4,15 +4,15 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pampapaya",
@@ -23,35 +23,35 @@
     [
       "     ",
       "     ",
-      "aaaa ",
-      "aaaa ",
+      "bbbb ",
+      "bbbb ",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      "  cc ",
-      "accca",
-      "accca",
+      "  a  ",
+      "  aa ",
+      "baaab",
+      "baaab",
       "  d  ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      " db  ",
-      "  b  ",
-      "  b  "
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      " dc  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "accca",
-      "accca",
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
       "     ",
       "     ",
       "     "
@@ -59,8 +59,8 @@
     [
       "     ",
       "     ",
-      "aaaaa",
-      "aaaaa",
+      "bbbbb",
+      "bbbbb",
       "dd  d",
       "     ",
       "     "

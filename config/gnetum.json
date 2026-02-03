@@ -1,0 +1,376 @@
+{
+  "enabled": {
+    "value": "ON"
+  },
+  "showHudFps": {
+    "value": "ON"
+  },
+  "numberOfPasses": 3,
+  "maxFps": 60,
+  "mapVanillaElements": {
+    "minecraft:record_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:portal": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:hotbar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "gnetum:player_left": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:experience": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:hud_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:fps_graph": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:potion_icons": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "gnetum:minecraft_hand": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "betterhud:other_huds": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:player_list": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:boss_health": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:sleep_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:scoreboard": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:title": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "gnetum:player_right": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:jump_meter": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:tool_highlight": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:subtitles": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "minecraft:helmet": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:chat_panel": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    }
+  },
+  "mapModdedElementsPre": {
+    "tconstruct": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "theoneprobe": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "simplyjetpacks": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "exchangers": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "rftools": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "gnetum_unknown": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "projecte": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "classicbar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "plustic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "hammercore": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "randomthings": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "cyclicmagic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "journeymap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "danknull": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    }
+  },
+  "mapModdedElementsPost": {
+    "industrialforegoing": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "bogosorter": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "ftbquests": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "simplyjetpacks": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "exchangers": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "rftools": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "chunkpregenerator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "draconicevolution": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "enderio": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "extrautils2": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "actuallyadditions": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "plustic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "quark": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "opencomputers": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "ic2": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "hammercore": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "randomthings": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "journeymap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "moreoverlays": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "gnetum_unknown": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "fpsreducer": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "chiselsandbits": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "brandonscore": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cyclicmagic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "danknull": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    }
+  }
+}

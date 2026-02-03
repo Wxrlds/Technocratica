@@ -8,10 +8,10 @@
 		uid: "db062076",
 		type: "item",
 		items: [{
+			id: "yabba:antibarrel",
 			ForgeCaps: {
 				Parent: {}
-			},
-			id: "yabba:antibarrel"
+			}
 		}]
 	}],
 	rewards: [{

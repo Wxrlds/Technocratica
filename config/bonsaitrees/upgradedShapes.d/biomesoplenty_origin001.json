@@ -1,0 +1,56 @@
+{
+  "type": "biomesoplenty:origin",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_2",
+      "meta": 0
+    },
+    "b": {
+      "name": "minecraft:log",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " aaaa",
+      "aaaaa",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aba ",
+      "aabaa",
+      "aabaa",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      " aaa ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "aaaaa",
+      " aaa ",
+      "     ",
+      "     "
+    ]
+  ]
+}

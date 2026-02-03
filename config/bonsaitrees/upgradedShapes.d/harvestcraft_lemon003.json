@@ -4,15 +4,15 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pamlemon",
@@ -23,38 +23,38 @@
     [
       "     ",
       "     ",
-      "aaaa ",
-      "aaaaa",
+      "bbbb ",
+      "bbbbb",
       " dd  ",
       "     ",
       "     ",
       "     "
     ],
     [
-      "  c  ",
-      " cc  ",
-      "accca",
-      "accca",
+      "  a  ",
+      " aa  ",
+      "baaab",
+      "baaab",
       "  d  ",
       "     ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      "  b d",
-      "  b  ",
-      "  b  ",
-      "  b  "
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c d",
+      "  c  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "accca",
-      "accca",
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
       "d d  ",
       "     ",
       "     ",
@@ -63,8 +63,8 @@
     [
       "     ",
       "     ",
-      "aaaa ",
-      "aaaaa",
+      "bbbb ",
+      "bbbbb",
       "d  d ",
       "     ",
       "     ",

@@ -1,0 +1,144 @@
+{
+  "type": "biomesoplenty:willow",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_4",
+      "meta": 3
+    },
+    "b": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 2
+    },
+    "c": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 4
+    },
+    "d": {
+      "name": "biomesoplenty:log_2",
+      "meta": 5
+    },
+    "e": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 1
+    },
+    "f": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 8
+    }
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "  b      ",
+      "  b      ",
+      "  b      ",
+      "  b      ",
+      "  b      ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    b    ",
+      "   bb    ",
+      "  aaaaaa ",
+      " baaaaaa ",
+      " b       ",
+      " b       ",
+      " b       ",
+      " b       ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   aaac  ",
+      "  aaaaac ",
+      " aaaaaaa ",
+      " aaaaaaa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "  aaaaac ",
+      "  aaaaac ",
+      " aaaaaaac",
+      " aaaaaaac",
+      "        c",
+      "        c",
+      "        c",
+      "        c",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "  aaaaa  ",
+      "  aadaa  ",
+      " aaadaaa ",
+      " aaadaaa ",
+      "    d    ",
+      "    d    ",
+      "    d    ",
+      "    d    ",
+      "    d    ",
+      "    d    ",
+      "    d    ",
+      "    d    "
+    ],
+    [
+      "  aaaaa  ",
+      "  aaaaac ",
+      " aaaaaaac",
+      " aaaaaaac",
+      "        c",
+      "        c",
+      "        c",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "  faaa   ",
+      " eaaaaa  ",
+      " aaaaaaa ",
+      "eaaaaaaac",
+      "e       c",
+      "e       c",
+      "e       c",
+      "e       c",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "   ff    ",
+      " faaaaac ",
+      " aaaaaac ",
+      "       c ",
+      "       c ",
+      "       c ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

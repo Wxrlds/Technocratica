@@ -1,13 +1,158 @@
 {
-  "name": "Technocratica",
-  "version": "3.0.09",
-  "overrides": [
-    "config",
-    "local",
-    "resources",
-    "schematics",
-    "scripts",
-    "structures",
-    "icon.png"
-  ]
+    "name": "Technocratica",
+    "version": "3.1.0",
+    "overrides": [
+        "local",
+        "scripts",
+        "structures",
+        "config",
+        "!config/AppliedEnergistics2/items.csv",
+        "!config/MoreOverlays.cfg",
+        "!config/betteradvancements",
+        "!config/bhmenu.cfg",
+        "!config/brandon3055/ProjectIntelligence",
+        "!config/brandon3055/ResourceCache",
+        "!config/brandon3055/contributors.json",
+        "!config/chiselsandbits_clipboard.cfg",
+        "!config/classicbar.cfg",
+        "!config/clienttweaks.cfg",
+        "!config/codechicken/supportes.json",
+        "!config/codechicken/supportes.marker",
+        "!config/ctm.cfg",
+        "!config/ding.cfg",
+        "!config/discord.cfg",
+        "!config/enderio/recipes/*.pdf",
+        "!config/entityculling.json",
+        "!config/fancymenu",
+        "!config/fpsreducer",
+        "!config/gnetum.json",
+        "!config/googlyeyes.cfg",
+        "!config/InvTweaks",
+        "!config/jei/bookmarks.ini",
+        "!config/jei/worldSettings.cfg",
+        "!config/jeiintegration.cfg",
+        "!config/jeivillagers.cfg",
+        "!config/jeresources",
+        "!config/konkrete",
+        "!config/lootcapacitortooltips.cfg",
+        "!config/modnametooltip.cfg",
+        "!config/mousetweaks.cfg",
+        "!config/normalasm",
+        "!config/particleculling.cfg",
+        "!config/smoothfont",
+        "!config/splash.properties",
+        "!config/tconstruct_oredictcache.dat"
+    ],
+    "server_overrides": [
+        "install_server.sh",
+        "install_server.bat",
+        "start.sh",
+        "start.bat",
+        "server-icon.png"
+    ],
+    "client_overrides": [
+        "icon.png",
+        "resources",
+        "schematics",
+        "config/MoreOverlays.cfg",
+        "config/betteradvancements",
+        "config/bhmenu.cfg",
+        "config/classicbar.cfg",
+        "config/clienttweaks.cfg",
+        "config/ctm.cfg",
+        "config/ding.cfg",
+        "config/discord.cfg",
+        "config/entityculling.json",
+        "config/fancymenu",
+        "config/fpsreducer",
+        "config/gnetum.json",
+        "config/googlyeyes.cfg",
+        "config/jeiintegration.cfg",
+        "config/jeivillagers.cfg",
+        "config/jeresources",
+        "config/lootcapacitortooltips.cfg",
+        "config/modnametooltip.cfg",
+        "config/particleculling.cfg",
+        "config/smoothfont"
+    ],
+    "projects": {
+        "better-advancements": {
+            "side": "CLIENT"
+        },
+        "bisecthosting-server-integration-menu-forge": {
+            "side": "CLIENT"
+        },
+        "classic-bars": {
+            "side": "CLIENT"
+        },
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "fancymenu": {
+            "side": "CLIENT"
+        },
+        "ding": {
+            "side": "CLIENT"
+        },
+        "discord": {
+            "side": "CLIENT"
+        },
+        "entityculling": {
+            "side": "CLIENT"
+        },
+        "fps-reducer": {
+            "side": "CLIENT"
+        },
+        "gnetum": {
+            "side": "CLIENT"
+        },
+        "googlyeyes": {
+            "side": "CLIENT"
+        },
+        "jei-integration": {
+            "side": "CLIENT"
+        },
+        "jei-villagers": {
+            "side": "CLIENT"
+        },
+        "just-enough-harvestcraft": {
+            "side": "CLIENT"
+        },
+        "just-enough-resources-jer": {
+            "side": "CLIENT"
+        },
+        "loot-capacitor-tooltips": {
+            "side": "CLIENT"
+        },
+        "more-overlays": {
+            "side": "CLIENT"
+        },
+        "mouse-tweaks-unofficial": {
+            "side": "CLIENT"
+        },
+        "key-binding-patch": {
+            "side": "CLIENT"
+        },
+        "particle-culling": {
+            "side": "CLIENT"
+        },
+        "smooth-font": {
+            "side": "CLIENT"
+        },
+        "tipthescales": {
+            "side": "CLIENT"
+        },
+        "mod-name-tooltip": {
+            "side": "CLIENT"
+        },
+        "jaopca": {
+            "update_strategy": "NONE"
+        }
+    }
 }

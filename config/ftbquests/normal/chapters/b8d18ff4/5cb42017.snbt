@@ -9,10 +9,10 @@
 		type: "item",
 		items: [{
 			id: "mekanism:machineblock2",
+			Damage: 11s,
 			tag: {
 				tier: 4
-			},
-			Damage: 11s
+			}
 		}]
 	}],
 	rewards: [{

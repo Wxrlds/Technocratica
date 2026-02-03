@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "b": {
@@ -11,53 +11,53 @@
       "meta": 11
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 3
-    },
-    "d": {
       "name": "harvestcraft:pamdurian",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      " ccc ",
-      "cccc ",
+      " aaa ",
+      "aaaa ",
       "     ",
       "     "
     ],
     [
       "  b  ",
       " bb  ",
-      "cbbbc",
-      "cbbbc",
-      " d   ",
+      "abbba",
+      "abbba",
+      " c   ",
       "     "
     ],
     [
       " bbb ",
-      " bab ",
-      "cbabc",
-      "cbabc",
-      "d a  ",
-      "  a  "
+      " bdb ",
+      "abdba",
+      "abdba",
+      "c d  ",
+      "  d  "
     ],
     [
       "  b  ",
       "  bb ",
-      "cbbbc",
-      "cbbbc",
-      " d   ",
+      "abbba",
+      "abbba",
+      " c   ",
       "     "
     ],
     [
       "     ",
       "     ",
-      " ccc ",
-      " cccc",
-      "    d",
+      " aaa ",
+      " aaaa",
+      "    c",
       "     "
     ]
   ]

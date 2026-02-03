@@ -1,0 +1,56 @@
+{
+  "type": "biomesoplenty:pink_cherry",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_2",
+      "meta": 1
+    },
+    "b": {
+      "name": "biomesoplenty:log_0",
+      "meta": 5
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " aaaa",
+      " aaa ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aba ",
+      "aabaa",
+      "aabaa",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "aaaaa",
+      "aaaaa",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " aaa ",
+      "aaaa ",
+      "     ",
+      "     "
+    ]
+  ]
+}

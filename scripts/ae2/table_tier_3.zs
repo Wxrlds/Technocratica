@@ -1,0 +1,9 @@
+mods.extendedcrafting.TableCrafting.addShaped(3, <appliedenergistics2:creative_energy_cell>, [
+    [<aeadditions:storage.component:3>, <ore:blockChargedCertusQuartz>, <extendedcrafting:trimmed:5>, <advanced_solar_panels:machines:5>, <extendedcrafting:trimmed:5>, <ore:blockChargedCertusQuartz>, <aeadditions:storage.component:3>],
+    [<ore:blockChargedCertusQuartz>, <draconicevolution:draconium_capacitor:1>, <extendedcrafting:singularity_custom:8>, <wft:wft>, <extendedcrafting:singularity_custom:9>, <draconicevolution:draconium_capacitor:1>, <ore:blockChargedCertusQuartz>],
+    [<extendedcrafting:trimmed:5>, <extendedcrafting:singularity_custom:9>, <mekanism:basicblock2:3>.withTag({tier: 3}), <enderio:item_capacitor_stellar>, <mekanism:basicblock2:3>.withTag({tier: 3}), <extendedcrafting:singularity_custom:8>, <extendedcrafting:trimmed:5>],
+    [<advanced_solar_panels:machines:5>, <wit:wit>, <enderio:item_capacitor_stellar>, <tconstruct:materials:50>, <enderio:item_capacitor_stellar>, <wct:wct>, <advanced_solar_panels:machines:5>],
+    [<extendedcrafting:trimmed:5>, <extendedcrafting:singularity_custom:8>, <mekanism:basicblock2:3>.withTag({tier: 3}), <enderio:item_capacitor_stellar>, <mekanism:basicblock2:3>.withTag({tier: 3}), <extendedcrafting:singularity_custom:9>, <extendedcrafting:trimmed:5>],
+    [<ore:blockChargedCertusQuartz>, <draconicevolution:draconium_capacitor:1>, <extendedcrafting:singularity_custom:9>, <wpt:wpt>, <extendedcrafting:singularity_custom:8>, <draconicevolution:draconium_capacitor:1>, <ore:blockChargedCertusQuartz>],
+    [<aeadditions:storage.component:3>, <ore:blockChargedCertusQuartz>, <extendedcrafting:trimmed:5>, <advanced_solar_panels:machines:5>, <extendedcrafting:trimmed:5>, <ore:blockChargedCertusQuartz>, <aeadditions:storage.component:3>]
+]);

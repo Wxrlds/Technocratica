@@ -4,14 +4,14 @@
   "ref": {
     "a": {
       "name": "tconstruct:slime_leaves",
-      "meta": 8
-    },
-    "b": {
-      "name": "tconstruct:slime_congealed",
       "meta": 0
     },
-    "c": {
+    "b": {
       "name": "tconstruct:slime_leaves",
+      "meta": 8
+    },
+    "c": {
+      "name": "tconstruct:slime_congealed",
       "meta": 0
     }
   },
@@ -20,7 +20,7 @@
       "         ",
       "         ",
       "         ",
-      "    c    ",
+      "    a    ",
       "         ",
       "         ",
       "         ",
@@ -29,53 +29,64 @@
     ],
     [
       "         ",
-      "         ",
-      "    c    ",
-      "   ccc   ",
-      "         ",
-      "         ",
-      "         ",
-      "         ",
-      "         "
-    ],
-    [
       "         ",
       "    a    ",
-      "  caaac  ",
-      "  ccccc  ",
-      "         ",
-      "         ",
-      "         ",
-      "         ",
-      "         "
-    ],
-    [
-      "    a    ",
-      "    a    ",
-      "  aaaaa  ",
-      " ccaaacc ",
-      "         ",
-      "         ",
-      "         ",
-      "         ",
-      "         "
-    ],
-    [
       "   aaa   ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    b    ",
+      "  abbba  ",
       "  aaaaa  ",
-      " caaaaac ",
-      "cccabaccc",
-      "    b    ",
-      "    b    ",
-      "    b    ",
-      "    b    ",
-      "    b    "
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
     ],
     [
-      "    a    ",
-      "    a    ",
+      "    b    ",
+      "    b    ",
+      "  bbbbb  ",
+      " aabbbaa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   bbb   ",
+      "  bbbbb  ",
+      " abbbbba ",
+      "aaabcbaaa",
+      "    c    ",
+      "    c    ",
+      "    c    ",
+      "    c    ",
+      "    c    "
+    ],
+    [
+      "    b    ",
+      "    b    ",
+      "  bbbbb  ",
+      " aabbbaa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    b    ",
+      "  abbba  ",
       "  aaaaa  ",
-      " ccaaacc ",
       "         ",
       "         ",
       "         ",
@@ -83,21 +94,10 @@
       "         "
     ],
     [
+      "         ",
       "         ",
       "    a    ",
-      "  caaac  ",
-      "  ccccc  ",
-      "         ",
-      "         ",
-      "         ",
-      "         ",
-      "         "
-    ],
-    [
-      "         ",
-      "         ",
-      "    c    ",
-      "   ccc   ",
+      "   aaa   ",
       "         ",
       "         ",
       "         ",
@@ -108,7 +108,7 @@
       "         ",
       "         ",
       "         ",
-      "    c    ",
+      "    a    ",
       "         ",
       "         ",
       "         ",

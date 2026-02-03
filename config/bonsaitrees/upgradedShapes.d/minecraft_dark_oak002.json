@@ -4,22 +4,22 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves2",
-      "meta": 1
+      "meta": 9
     },
     "b": {
-      "name": "minecraft:log2",
+      "name": "minecraft:leaves2",
       "meta": 1
     },
     "c": {
-      "name": "minecraft:leaves2",
-      "meta": 9
+      "name": "minecraft:log2",
+      "meta": 1
     }
   },
   "shape": [
     [
       "        ",
       "        ",
-      " aaaaa  ",
+      " bbbbb  ",
       "        ",
       "        ",
       "        ",
@@ -29,9 +29,9 @@
     ],
     [
       "        ",
-      "   aa   ",
-      " aaaaa  ",
-      " aaaaaa ",
+      "   bb   ",
+      " bbbbb  ",
+      " bbbbbb ",
       "        ",
       "        ",
       "        ",
@@ -40,9 +40,9 @@
     ],
     [
       "        ",
-      "  aaaa  ",
-      "aaaaaaaa",
-      " aaaaaa ",
+      "  bbbb  ",
+      "bbbbbbbb",
+      " bbbbbb ",
       "        ",
       "        ",
       "        ",
@@ -50,43 +50,43 @@
       "        "
     ],
     [
-      "   aa   ",
-      " aaaaaa ",
-      "aaabbaaa",
-      " aabbaa ",
       "   bb   ",
-      "   bb   ",
-      "   bb   ",
-      "   bb   ",
-      "   bb   "
+      " bbbbbb ",
+      "bbbccbbb",
+      " bbccbb ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   "
     ],
     [
-      "   aa   ",
-      " aaaaaa ",
-      "accbbcaa",
-      "accbbca ",
       "   bb   ",
-      "   bb   ",
-      "   bb   ",
-      "   bb   ",
-      "   bb   "
+      " bbbbbb ",
+      "baaccabb",
+      "baaccab ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   ",
+      "   cc   "
     ],
     [
       "        ",
-      "  aaaa  ",
-      "acccccaa",
-      "acbcbca ",
-      "  b b   ",
-      "  b b   ",
-      "    b   ",
+      "  bbbb  ",
+      "baaaaabb",
+      "bacacab ",
+      "  c c   ",
+      "  c c   ",
+      "    c   ",
       "        ",
       "        "
     ],
     [
       "        ",
-      "   aa   ",
-      "acccccaa",
-      "accccca ",
+      "   bb   ",
+      "baaaaabb",
+      "baaaaab ",
       "        ",
       "        ",
       "        ",
@@ -96,8 +96,8 @@
     [
       "        ",
       "        ",
-      " aaaaa  ",
-      " aaaaa  ",
+      " bbbbb  ",
+      " bbbbb  ",
       "        ",
       "        ",
       "        ",

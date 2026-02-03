@@ -1,0 +1,73 @@
+{
+  "type": "biomesoplenty:ebony",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 10
+    },
+    "b": {
+      "name": "biomesoplenty:log_3",
+      "meta": 2
+    },
+    "c": {
+      "name": "biomesoplenty:log_3",
+      "meta": 6
+    },
+    "d": {
+      "name": "biomesoplenty:log_3",
+      "meta": 10
+    },
+    "e": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 2
+    }
+  },
+  "shape": [
+    [
+      "      ",
+      " a    ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      "  a   ",
+      "aba   ",
+      "    a ",
+      "   a  ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      " aca  ",
+      " ac   ",
+      "  cdda",
+      "  cda ",
+      " ac   ",
+      "  c   ",
+      "  c   "
+    ],
+    [
+      "  a   ",
+      "      ",
+      "    a ",
+      "   a  ",
+      "eaa   ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      " e    ",
+      "      ",
+      "      "
+    ]
+  ]
+}

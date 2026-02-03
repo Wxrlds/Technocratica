@@ -12,7 +12,7 @@
     },
     "c": {
       "name": "ic2:rubber_wood",
-      "meta": 8
+      "meta": 7
     },
     "d": {
       "name": "ic2:leaves",
@@ -20,7 +20,7 @@
     },
     "e": {
       "name": "ic2:rubber_wood",
-      "meta": 7
+      "meta": 8
     }
   },
   "shape": [
@@ -56,9 +56,9 @@
       " aba ",
       "aabaa",
       "aabaa",
-      "  e  ",
+      "  c  ",
       "  b  ",
-      "  c  "
+      "  e  "
     ],
     [
       "     ",

@@ -4,63 +4,63 @@
   "ref": {
     "a": {
       "name": "minecraft:leaves",
-      "meta": 3
+      "meta": 11
     },
     "b": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "harvestcraft:pampomegranate",
-      "meta": 0
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "harvestcraft:pampomegranate",
+      "meta": 0
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "aaaa ",
+      "bbbb ",
+      " bbb ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
       " aaa ",
-      "     ",
-      "     ",
-      "     "
-    ],
-    [
-      "  d  ",
-      " ddd ",
-      "addda",
-      "addda",
-      " c   ",
+      "baaab",
+      "baaab",
+      " d   ",
       "     ",
       "     "
     ],
     [
-      " ddd ",
-      " dbd ",
-      "adbda",
-      "adbda",
-      "  bc ",
-      "  b  ",
-      "  b  "
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  cd ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  d  ",
-      " ddd ",
-      "addda",
-      "addda",
-      " c c ",
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
+      " d d ",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      "aaaa ",
-      "aaaa ",
+      "bbbb ",
+      "bbbb ",
       "     ",
       "     ",
       "     "

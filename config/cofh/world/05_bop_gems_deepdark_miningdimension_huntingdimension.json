@@ -1,151 +1,123 @@
 {
-	"populate": {
-		"ruby": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 1},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"peridot": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 2},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"topaz": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 3},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"tanzanite": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 4},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"malachite": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 5},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"sapphire": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 6},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		},
-		"amber": {
-			"distribution": "uniform",
-			"generator": {
-				"block": {"name": "biomesoplenty:gem_ore", "metadata": 7},
-				"material": "stone",
-				"cluster-size": 4
-			},
-			"cluster-count": 3,
-			"min-height": 0,
-			"max-height": 15,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-6,
-					-11325,
-					-9999
-				]
-			}
-		}	
-	}
+  "populate": {
+    "ruby": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 1 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "peridot": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 2 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "topaz": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 3 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "tanzanite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 4 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "malachite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 5 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "sapphire": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 6 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    },
+    "amber": {
+      "distribution": "uniform",
+      "generator": {
+        "block": { "name": "biomesoplenty:gem_ore", "metadata": 7 },
+        "material": "stone",
+        "cluster-size": 4
+      },
+      "cluster-count": 3,
+      "min-height": 0,
+      "max-height": 15,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-6, -11325, -9999]
+      }
+    }
+  }
 }

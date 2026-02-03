@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 1
     },
     "b": {
@@ -11,7 +11,7 @@
       "meta": 9
     },
     "c": {
-      "name": "minecraft:leaves",
+      "name": "minecraft:log",
       "meta": 1
     }
   },
@@ -24,7 +24,7 @@
       "       ",
       "       ",
       "       ",
-      " ccccc ",
+      " aaaaa ",
       "       "
     ],
     [
@@ -32,10 +32,10 @@
       "       ",
       "       ",
       "       ",
-      "  ccc  ",
+      "  aaa  ",
       "       ",
-      "  ccc  ",
-      "ccccccc",
+      "  aaa  ",
+      "aaaaaaa",
       "       "
     ],
     [
@@ -43,43 +43,32 @@
       "   b   ",
       "       ",
       "   b   ",
-      " cbbbc ",
+      " abbba ",
       "   b   ",
-      " cbbbc ",
-      "ccbbbcc",
+      " abbba ",
+      "aabbbaa",
       "       "
     ],
     [
       "   b   ",
-      "  bab  ",
-      "   a   ",
-      "  bab  ",
-      " cbabc ",
-      "  bab  ",
-      " cbabc ",
-      "ccbabcc",
-      "   a   "
+      "  bcb  ",
+      "   c   ",
+      "  bcb  ",
+      " abcba ",
+      "  bcb  ",
+      " abcba ",
+      "aabcbaa",
+      "   c   "
     ],
     [
       "       ",
       "   b   ",
       "       ",
       "   b   ",
-      " cbbbc ",
+      " abbba ",
       "   b   ",
-      " cbbbc ",
-      "ccbbbcc",
-      "       "
-    ],
-    [
-      "       ",
-      "       ",
-      "       ",
-      "       ",
-      "  ccc  ",
-      "       ",
-      "  ccc  ",
-      "ccccccc",
+      " abbba ",
+      "aabbbaa",
       "       "
     ],
     [
@@ -87,10 +76,21 @@
       "       ",
       "       ",
       "       ",
+      "  aaa  ",
+      "       ",
+      "  aaa  ",
+      "aaaaaaa",
+      "       "
+    ],
+    [
       "       ",
       "       ",
       "       ",
-      " ccccc ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      " aaaaa ",
       "       "
     ]
   ]

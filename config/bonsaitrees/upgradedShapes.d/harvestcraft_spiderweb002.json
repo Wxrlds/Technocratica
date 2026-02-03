@@ -7,12 +7,12 @@
       "meta": 0
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 0
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 8
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 0
     },
     "d": {
       "name": "minecraft:web",
@@ -30,28 +30,28 @@
       "     "
     ],
     [
-      "  c  ",
-      "  cc ",
-      "accca",
-      "accca",
+      "  b  ",
+      "  bb ",
+      "abbba",
+      "abbba",
       " d  d",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      " dbd ",
-      "  b  ",
-      "  b  "
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
+      " dcd ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      " cc  ",
-      "accca",
-      "accca",
+      "  b  ",
+      " bb  ",
+      "abbba",
+      "abbba",
       "     ",
       "     ",
       "     "

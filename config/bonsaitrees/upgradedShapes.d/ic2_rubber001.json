@@ -3,16 +3,16 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "ic2:rubber_wood",
-      "meta": 0
-    },
-    "b": {
       "name": "ic2:leaves",
       "meta": 12
     },
-    "c": {
+    "b": {
       "name": "ic2:leaves",
       "meta": 4
+    },
+    "c": {
+      "name": "ic2:rubber_wood",
+      "meta": 0
     },
     "d": {
       "name": "ic2:rubber_wood",
@@ -23,40 +23,40 @@
     [
       "     ",
       "     ",
-      "  b  ",
-      "  b  ",
-      " bcb ",
-      " bcb ",
+      "  a  ",
+      "  a  ",
+      " aba ",
+      " aba ",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      "bbcb ",
-      "bbbbc",
-      "bbbcc",
-      "bbbbb",
+      "aaba ",
+      "aaaab",
+      "aaabb",
+      "aaaaa",
       "     ",
       "     "
     ],
     [
-      "  b  ",
-      "  b  ",
-      " babb",
-      " bab ",
-      "bbabc",
-      "bbabb",
+      "  a  ",
+      "  a  ",
+      " acaa",
+      " aca ",
+      "aacab",
+      "aacaa",
       "  d  ",
       "  d  "
     ],
     [
       "     ",
       "     ",
-      " bcb ",
-      "bcbb ",
-      "bbbbb",
-      "bbcbb",
+      " aba ",
+      "abaa ",
+      "aaaaa",
+      "aabaa",
       "     ",
       "     "
     ],
@@ -64,9 +64,9 @@
       "     ",
       "     ",
       "     ",
-      "  b  ",
-      " bbb ",
-      " bbb ",
+      "  a  ",
+      " aaa ",
+      " aaa ",
       "     ",
       "     "
     ]

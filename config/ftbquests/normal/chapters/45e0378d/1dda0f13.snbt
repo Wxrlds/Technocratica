@@ -7,20 +7,45 @@
 		uid: "9e9bc183",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"xat:trinket": {
-					handler: 0,
-					mana: 0,
+			id: "xat:inertia_null_stone",
+			tag: {
+				"xat:Trinket": {
+					variant: 0,
+					Counters: {},
 					alt.ability: 0b,
-					player.status: -1,
-					slot: -1,
+					Elements: {
+						primary: "xat:neutral",
+						secondary: "xat:neutral"
+					},
 					exp: 0,
-					hitcount: 0,
-					target: -1,
-					main.ability: 0b
+					crafter.uuid: "",
+					crafter.name: "",
+					mana: 0.0f,
+					main.ability: 0b,
+					slot: -1,
+					handler: "None"
 				}
 			},
-			id: "xat:inertia_null_stone"
+			ForgeCaps: {
+				"xat:trinket": {
+					"xat:Trinket": {
+						variant: 0,
+						Counters: {},
+						alt.ability: 0b,
+						Elements: {
+							primary: "xat:neutral",
+							secondary: "xat:neutral"
+						},
+						exp: 0,
+						crafter.uuid: "",
+						crafter.name: "",
+						mana: 0.0f,
+						main.ability: 0b,
+						slot: -1,
+						handler: "None"
+					}
+				}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -1,0 +1,18 @@
+{
+  "path": "mod_contenttweaker/soils/diamond_block_soil.json",
+  "enabled": true,
+  "id": "diamond_block_soil",
+  "name": "Diamond Block",
+  "varients": [
+    {
+      "item": "minecraft:diamond_block",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

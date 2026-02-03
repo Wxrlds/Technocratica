@@ -7,12 +7,12 @@
       "meta": 3
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 3
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 11
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pampeppercorn",
@@ -30,28 +30,28 @@
       "     "
     ],
     [
-      "  c  ",
-      "  cc ",
-      "accca",
-      "accca",
+      "  b  ",
+      "  bb ",
+      "abbba",
+      "abbba",
       " d dd",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      "  b  ",
-      "  b  ",
-      "  b  "
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
+      "  c  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "accca",
-      "accca",
+      "  b  ",
+      "  b  ",
+      "abbba",
+      "abbba",
       "     ",
       "     ",
       "     "

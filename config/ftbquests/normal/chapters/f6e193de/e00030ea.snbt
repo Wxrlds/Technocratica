@@ -9,8 +9,8 @@
 		type: "item",
 		items: [{
 			id: "projecte:item.pe_klein_star",
-			tag: {},
-			Damage: 5s
+			Damage: 5s,
+			tag: {}
 		}],
 		ignore_nbt: 1b
 	}],

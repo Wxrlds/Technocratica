@@ -9,8 +9,11 @@
 		type: "item",
 		items: [{
 			id: "simplyjetpacks:itemjetpack",
-			tag: {},
-			Damage: 18s
+			Damage: 24s,
+			tag: {
+				Energy: 0,
+				JetpackParticle: 0
+			}
 		}],
 		ignore_nbt: 1b
 	}],

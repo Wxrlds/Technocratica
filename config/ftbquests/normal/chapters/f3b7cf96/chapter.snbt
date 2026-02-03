@@ -1,12 +1,13 @@
 {
 	title: "AE2",
 	icon: {
-		id: "extracells:storage.physical",
+		id: "aeadditions:storage.physical",
+		Damage: 3s,
 		tag: {
 			upgrades: {},
-			config: {}
-		},
-		Damage: 3s
+			config: {},
+			fuzzyMode: "IGNORE_ALL"
+		}
 	},
 	always_invisible: false,
 	group: 0,

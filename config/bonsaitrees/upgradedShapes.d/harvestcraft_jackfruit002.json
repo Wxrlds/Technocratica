@@ -1,0 +1,74 @@
+{
+  "type": "harvestcraft:jackfruit",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 11
+    },
+    "b": {
+      "name": "minecraft:leaves",
+      "meta": 3
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 3
+    },
+    "d": {
+      "name": "harvestcraft:pamjackfruit",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "bbbb ",
+      "bbbbb",
+      "  d  ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
+      " d   ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c  ",
+      "  c  ",
+      "  c  ",
+      "  c  "
+    ],
+    [
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
+      " d   ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " bbb ",
+      " bbbb",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "biomesoplenty:flowering_oak",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "minecraft:leaves",
+      "meta": 0
+    },
+    "b": {
+      "name": "biomesoplenty:leaves_3",
+      "meta": 1
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "abbb ",
+      " bbaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      " ab  ",
+      "baaaa",
+      "aaaab",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " baa ",
+      " aca ",
+      "aacba",
+      "abcba",
+      "  c  ",
+      "  c  ",
+      "  c  "
+    ],
+    [
+      "  a  ",
+      "  ba ",
+      "aaaab",
+      "aabaa",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " aba ",
+      " aaa ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -13,10 +13,10 @@
 		type: "item",
 		items: [{
 			id: "ic2:te",
+			Damage: 72s,
 			tag: {
 				energy: 40000.0d
-			},
-			Damage: 72s
+			}
 		}],
 		ignore_nbt: 1b
 	}],
@@ -25,10 +25,10 @@
 		type: "item",
 		item: {
 			id: "ic2:te",
+			Damage: 68s,
 			tag: {
 				energy: 40000.0d
-			},
-			Damage: 68s
+			}
 		}
 	}]
 }

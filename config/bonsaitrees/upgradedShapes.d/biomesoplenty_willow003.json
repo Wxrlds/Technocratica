@@ -1,0 +1,128 @@
+{
+  "type": "biomesoplenty:willow",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 1
+    },
+    "b": {
+      "name": "biomesoplenty:leaves_4",
+      "meta": 3
+    },
+    "c": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 4
+    },
+    "d": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 2
+    },
+    "e": {
+      "name": "biomesoplenty:willow_vine",
+      "meta": 8
+    },
+    "f": {
+      "name": "biomesoplenty:log_2",
+      "meta": 5
+    }
+  },
+  "shape": [
+    [
+      "   d     ",
+      "   d     ",
+      " dbbbbbd ",
+      "  bbbbbd ",
+      "       d ",
+      "       d ",
+      "       d ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "  dbbbc  ",
+      "  dbbbc  ",
+      " bbbbbbb ",
+      " bbbbbbbc",
+      "        c",
+      "        c",
+      "        c",
+      "        c",
+      "         ",
+      "         "
+    ],
+    [
+      "  bbbbbc ",
+      "  bbbbbc ",
+      " bbbbbbb ",
+      " bbbbbbbc",
+      "        c",
+      "        c",
+      "        c",
+      "        c",
+      "         ",
+      "         "
+    ],
+    [
+      "  bbbbb  ",
+      "  bbfbb  ",
+      " bbbfbbbc",
+      "abbbfbbbc",
+      "a   f   c",
+      "a   f   c",
+      "a   f   c",
+      "a   f    ",
+      "    f    ",
+      "    f    "
+    ],
+    [
+      " abbbbb  ",
+      " abbbbb  ",
+      " bbbbbbbc",
+      " bbbbbbbc",
+      "        c",
+      "        c",
+      "        c",
+      "        c",
+      "         ",
+      "         "
+    ],
+    [
+      "   bbb   ",
+      "  bbbb   ",
+      "abbbbbbb ",
+      "abbbbbbb ",
+      "a        ",
+      "a        ",
+      "a        ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "  e  e   ",
+      " ebbbbbb ",
+      " bbbbbbb ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "       e ",
+      "   ee ee ",
+      "   ee ee ",
+      "   ee ee ",
+      "   ee ee ",
+      "   ee e  ",
+      "         ",
+      "         "
+    ]
+  ]
+}

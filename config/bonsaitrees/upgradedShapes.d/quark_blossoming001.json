@@ -1,0 +1,74 @@
+{
+  "type": "quark:blossoming",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "quark:variant_leaves",
+      "meta": 5
+    },
+    "b": {
+      "name": "quark:variant_leaves",
+      "meta": 13
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " aaa ",
+      " aaa ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      " aaa ",
+      "aaaaa",
+      "aaaaa",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "aaaaa",
+      "aabba",
+      "aaaaa",
+      " aab ",
+      "     ",
+      "     "
+    ],
+    [
+      " aaa ",
+      "aabba",
+      "aacba",
+      "aacba",
+      "  c  ",
+      "  c  ",
+      "  c  "
+    ],
+    [
+      "  a  ",
+      "abaaa",
+      "aabaa",
+      " aaa ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      " aaa ",
+      " aaa ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

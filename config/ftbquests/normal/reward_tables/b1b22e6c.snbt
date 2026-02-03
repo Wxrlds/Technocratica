@@ -2,7 +2,7 @@
 	title: "Hunting Dimension",
 	icon: {
 		id: "huntingdim:frame",
-		Count: 2b,
+		Count: 2,
 		tag: {
 			BaseBlock: {
 				id: "minecraft:log",

@@ -3,16 +3,16 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
-      "meta": 3
+      "name": "minecraft:leaves",
+      "meta": 11
     },
     "b": {
       "name": "minecraft:leaves",
       "meta": 3
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 11
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pampecan",
@@ -30,28 +30,28 @@
       "     "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "bcccb",
-      "bcccb",
+      "  a  ",
+      "  a  ",
+      "baaab",
+      "baaab",
       " d   ",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cac ",
-      "bcacb",
-      "bcacb",
-      "  a  ",
-      "  a  ",
-      "  a  "
+      " aaa ",
+      " aca ",
+      "bacab",
+      "bacab",
+      "  c  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      " ccc ",
-      "bcccb",
-      "bcccb",
+      "  a  ",
+      " aaa ",
+      "baaab",
+      "baaab",
       "     ",
       "     ",
       "     "

@@ -1,0 +1,18 @@
+{
+  "path": "mod_contenttweaker/soils/diamond_ore_soil.json",
+  "enabled": true,
+  "id": "diamond_ore_soil",
+  "name": "Diamond Ore",
+  "varients": [
+    {
+      "item": "minecraft:diamond_ore",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

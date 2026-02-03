@@ -3,7 +3,7 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 3
     },
     "b": {
@@ -11,53 +11,53 @@
       "meta": 11
     },
     "c": {
-      "name": "minecraft:leaves",
-      "meta": 3
-    },
-    "d": {
       "name": "harvestcraft:pampersimmon",
       "meta": 0
+    },
+    "d": {
+      "name": "minecraft:log",
+      "meta": 3
     }
   },
   "shape": [
     [
       "     ",
       "     ",
-      "cccc ",
-      "dcccc",
+      "aaaa ",
+      "caaaa",
       "     ",
       "     "
     ],
     [
       "  b  ",
       "  bb ",
-      "cbbbc",
-      "cbbbc",
-      " dd  ",
+      "abbba",
+      "abbba",
+      " cc  ",
       "     "
     ],
     [
       " bbb ",
-      " bab ",
-      "cbabc",
-      "cbabc",
-      "  a  ",
-      "  a  "
+      " bdb ",
+      "abdba",
+      "abdba",
+      "  d  ",
+      "  d  "
     ],
     [
       "  b  ",
       " bbb ",
-      "cbbbc",
-      "cbbbc",
+      "abbba",
+      "abbba",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      "ccccc",
-      " ccc ",
-      "   d ",
+      "aaaaa",
+      " aaa ",
+      "   c ",
       "     "
     ]
   ]

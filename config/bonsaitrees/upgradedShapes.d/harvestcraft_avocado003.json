@@ -3,19 +3,19 @@
   "version": 2,
   "ref": {
     "a": {
-      "name": "minecraft:log",
+      "name": "minecraft:leaves",
       "meta": 0
     },
     "b": {
-      "name": "harvestcraft:pamavocado",
-      "meta": 0
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 8
     },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 0
+    },
     "d": {
-      "name": "minecraft:leaves",
+      "name": "harvestcraft:pamavocado",
       "meta": 0
     }
   },
@@ -23,44 +23,44 @@
     [
       "     ",
       "     ",
-      " ddd ",
-      " dddd",
-      "    b",
+      " aaa ",
+      " aaaa",
+      "    d",
       "     ",
       "     "
     ],
     [
+      "  b  ",
+      " bbb ",
+      "abbba",
+      "abbba",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
+      "d cd ",
       "  c  ",
-      " ccc ",
-      "dcccd",
-      "dcccd",
-      "     ",
-      "     ",
-      "     "
+      "  c  "
     ],
     [
-      " ccc ",
-      " cac ",
-      "dcacd",
-      "dcacd",
-      "b ab ",
-      "  a  ",
-      "  a  "
-    ],
-    [
-      "  c  ",
-      " cc  ",
-      "dcccd",
-      "dcccd",
-      " b b ",
+      "  b  ",
+      " bb  ",
+      "abbba",
+      "abbba",
+      " d d ",
       "     ",
       "     "
     ],
     [
       "     ",
       "     ",
-      "dddd ",
-      " dddd",
+      "aaaa ",
+      " aaaa",
       "     ",
       "     ",
       "     "

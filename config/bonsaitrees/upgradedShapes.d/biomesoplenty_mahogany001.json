@@ -1,0 +1,154 @@
+{
+  "type": "biomesoplenty:mahogany",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 9
+    },
+    "b": {
+      "name": "biomesoplenty:leaves_5",
+      "meta": 1
+    },
+    "c": {
+      "name": "biomesoplenty:log_3",
+      "meta": 5
+    },
+    "d": {
+      "name": "biomesoplenty:log_3",
+      "meta": 9
+    },
+    "e": {
+      "name": "biomesoplenty:log_3",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "         ",
+      "aaaabbaa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      " aaaaaaa ",
+      "aaadddaaa",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "   bbb   ",
+      " aabcaaa ",
+      "aaaacaaaa",
+      "    c    ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    b    ",
+      "  abaab  ",
+      " abbaaaa ",
+      "aeaaabbea",
+      "         ",
+      "         ",
+      "    e    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   aab   ",
+      "  bbaaa  ",
+      " acbaaca ",
+      "aecaaacea",
+      "  c   c  ",
+      "  c   c  ",
+      "   d d   ",
+      "    c    ",
+      "    c    ",
+      "    c    ",
+      "    c    ",
+      "    c    "
+    ],
+    [
+      "    a    ",
+      "  aabab  ",
+      " aaaaaaa ",
+      "aeaaaaaea",
+      "         ",
+      "         ",
+      "    e    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "   abba  ",
+      " aaacaaa ",
+      "aaaacaaaa",
+      "    c    ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "  abaaa  ",
+      "baadddaaa",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      "aaaaaaaa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

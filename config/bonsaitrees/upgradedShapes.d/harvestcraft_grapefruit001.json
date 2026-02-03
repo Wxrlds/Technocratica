@@ -7,12 +7,12 @@
       "meta": 3
     },
     "b": {
-      "name": "minecraft:log",
-      "meta": 3
-    },
-    "c": {
       "name": "minecraft:leaves",
       "meta": 11
+    },
+    "c": {
+      "name": "minecraft:log",
+      "meta": 3
     },
     "d": {
       "name": "harvestcraft:pamgrapefruit",
@@ -30,28 +30,28 @@
       "     "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "accca",
-      "accca",
+      "  b  ",
+      "  b  ",
+      "abbba",
+      "abbba",
       " d  d",
       "     ",
       "     "
     ],
     [
-      " ccc ",
-      " cbc ",
-      "acbca",
-      "acbca",
-      " db  ",
-      "  b  ",
-      "  b  "
+      " bbb ",
+      " bcb ",
+      "abcba",
+      "abcba",
+      " dc  ",
+      "  c  ",
+      "  c  "
     ],
     [
-      "  c  ",
-      "  c  ",
-      "accca",
-      "accca",
+      "  b  ",
+      "  b  ",
+      "abbba",
+      "abbba",
       "d    ",
       "     ",
       "     "
