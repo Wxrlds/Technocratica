@@ -1,6 +1,8 @@
 {
     "name": "Technocratica",
     "version": "3.1.0",
+    "description": "Technocratica - A progressive \"expert\" Modpack without Magic",
+    "author": "wxrlds_",
     "overrides": [
         "local",
         "scripts",
