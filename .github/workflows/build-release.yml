@@ -84,7 +84,7 @@ jobs:
             -e MAX_WORLD_SIZE=1 \
             -e ONLINE_MODE=FALSE \
             -e FORGE_VERSION: "14.23.5.2864"
-            itzg/minecraft-server
+            itzg/minecraft-server:java8
 
           # Realtime logs in GitHub actions
           (docker logs -f minecraft-server-test || true) &
