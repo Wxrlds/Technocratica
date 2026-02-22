@@ -1,5 +1,19 @@
 # Technocratica Mod Changelogs
 
+## v3.1.1
+
+### Projects
+
+#### Added
+
+- Default Options
+- Refitbench Maintains - AgriCraft
+
+#### Removed
+
+- AgriCraft
+- InfinityLib
+
 ## v3.1.0
 
 ### Loaders
