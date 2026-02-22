@@ -1,0 +1,191 @@
+name: "build-release"
+
+on:
+  push:
+    tags:
+      - "alpha/v**"
+      - "beta/v**"
+      - "release/v**"
+
+jobs:
+  release:
+    runs-on: "ubuntu-latest"
+
+    permissions:
+      contents: "write"
+
+    steps:
+      - name: "Checkout repository"
+        uses: "actions/checkout@v6"
+        with:
+          fetch-depth: 0
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: "17"
+          distribution: "temurin"
+
+      - name: "Setup pakku"
+        run: |
+          curl -sSL -o pakku.jar https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar
+
+      - name: "Get modpack info"
+        id: "info"
+        shell: bash
+        run: |
+          chmod +x .github/scripts/get_modpack_info.sh
+          .github/scripts/get_modpack_info.sh
+
+      # This makes sure that when there is a tag push, the version in pakku.json has been increased
+      - name: "Validate version bump on tag"
+        run: |
+          CUR_VER=${{ steps.info.outputs.modpack_version }}
+          PREV_VER=${{ steps.info.outputs.previous_modpack_version }}
+          if [ "$PREV_VER" != "none" ] && [ "$CUR_VER" == "$PREV_VER" ]; then
+            TAG_NAME=${GITHUB_REF#refs/tags/}
+            echo "::error::VERSION in pakku.json NOT UPDATED!"
+            echo "::error::Expected version bump in pakku.json but received $CUR_VER (same as in tag ${{ steps.info.outputs.previous_tag }})."
+            echo "::error::Deleting tag '$TAG_NAME' and failing build..."
+
+            # Delete the tag from the remote
+            git push origin ":refs/tags/$TAG_NAME"
+            exit 1
+          fi
+
+      - name: "Export modpack"
+        run: |
+          java -jar pakku.jar --debug export
+
+      - name: "Rename serverpack artifacts"
+        run: mv build/serverpack/*.zip "build/serverpack/${{ steps.info.outputs.modpack_name }}-Server-${{ steps.info.outputs.modpack_version }}.zip"
+
+      - name: "Upload serverpack artifacts to GitHub actions"
+        uses: "actions/upload-artifact@v6"
+        with:
+          name: "${{ steps.info.outputs.modpack_name }}-server-artifacts-${{ github.run_number }}"
+          path: "build/serverpack/*.zip"
+
+      - name: "Unzip serverpack"
+        run: |
+          serverpack_zip=$(find build/serverpack -type f -name '*.zip' | head -n1)
+          unzip -q "$serverpack_zip" -d server-files
+          chmod -R 755 server-files
+
+      - name: "Start Server"
+        timeout-minutes: 15
+        run: |
+          docker run --name minecraft-server-test -d -it \
+            -v ${{ github.workspace }}/server-files:/data \
+            -e EULA=TRUE \
+            -e TYPE=${{ steps.info.outputs.modpack_loader }} \
+            -e VERSION=${{ steps.info.outputs.minecraft_version }} \
+            -e MEMORY=4G \
+            -e MAX_WORLD_SIZE=1 \
+            -e ONLINE_MODE=FALSE \
+            itzg/minecraft-server
+
+          # Realtime logs in GitHub actions
+          (docker logs -f minecraft-server-test || true) &
+
+          echo "Waiting for server to start..."
+          # Wait for container to be healthy
+          until [ "$(docker inspect -f '{{.State.Health.Status}}' minecraft-server-test)" == "healthy" ]; do
+              if [ "$(docker inspect -f '{{.State.Running}}' minecraft-server-test)" == "false" ]; then
+                  EXIT_CODE=$(docker inspect minecraft-server-test --format='{{.State.ExitCode}}')
+                  echo "::error::Server crashed with exit code $EXIT_CODE"
+                  docker logs minecraft-server-test
+                  exit 1
+              fi
+              sleep 5
+          done
+
+      - name: "Print crashes"
+        if: failure()
+        run: |
+          if [ -d "./server-files/crash-reports" ] && [ "$(ls -A ./server-files/crash-reports)" ]; then
+            cat ./server-files/crash-reports/*.txt
+          fi
+          if [ -f "./server-files/logs/latest.log" ]; then
+            tail -n 50 ./server-files/logs/latest.log
+          fi
+
+      - name: "Upload crash logs"
+        if: failure()
+        uses: "actions/upload-artifact@v6"
+        with:
+          name: "${{ steps.info.outputs.modpack_name }}-crash-logs-${{ github.run_number }}"
+          path: |
+            server-files/logs/
+            server-files/crash-reports/
+          retention-days: 7
+
+      - name: "Stop Server"
+        if: always()
+        run: |
+          docker stop minecraft-server-test || true
+          docker rm minecraft-server-test || true
+
+      - name: "Update Modchangelog file"
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add modchangelog.md
+
+          git commit -m "docs: update modchangelog for ${{ steps.info.outputs.modpack_version }} [skip ci]"
+
+          # We are on a tag so pushing needs to be done so we need to find out where to push to
+          TARGET_BRANCH=${{ steps.info.outputs.current_branch }}
+          git push origin HEAD:$TARGET_BRANCH
+
+      - name: "Upload to Modrinth"
+        if: ${{ vars.MR_PROJECT_ID != '' }}
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: ${{ vars.MR_PROJECT_ID }}
+          modrinth-token: ${{ secrets.MR_PROJECT_API_TOKEN }}
+
+          name: ${{ steps.info.outputs.modpack_name }}-${{ steps.info.outputs.modpack_version }}
+          game-versions: |
+            ${{ steps.info.outputs.minecraft_version }}
+          loaders: |
+            ${{ steps.info.outputs.modpack_loader }}
+          version-type: ${{ steps.info.outputs.modpack_release_type }}
+          version: ${{ steps.info.outputs.modpack_version }}
+          modrinth-files: build/modrinth/*.mrpack
+
+          changelog: |
+            ${{ steps.info.outputs.modpack_version }}
+
+            [Need a server? Just click on the Picture, use the code WXRLDS for 25% off of your first month and play with your friends!](https://bisecthosting.com/Wxrlds)
+
+            [![Bisect Hosting](https://www.bisecthosting.com/images/CF/Technocratica/BH_T_PROMOCODE.png)](https://bisecthosting.com/Wxrlds)
+
+            [Changelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/changelog.md#${{ steps.info.outputs.version_anchor }})
+            [Modchangelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/modchangelog.md#${{ steps.info.outputs.version_anchor }})
+
+      - name: "Upload to CurseForge"
+        if: ${{ vars.CF_PROJECT_ID != '' }}
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          curseforge-id: ${{ vars.CF_PROJECT_ID }}
+          curseforge-token: ${{ secrets.CF_PROJECT_API_TOKEN }}
+
+          name: ${{ steps.info.outputs.modpack_name }}-${{ steps.info.outputs.modpack_version }}
+          game-versions: |
+            ${{ steps.info.outputs.minecraft_version }}
+          loaders: |
+            ${{ steps.info.outputs.modpack_loader }}
+          version-type: ${{ steps.info.outputs.modpack_release_type }}
+          version: ${{ steps.info.outputs.modpack_version }}
+          curseforge-files: build/curseforge/*.zip
+
+          changelog: |
+            ${{ steps.info.outputs.modpack_version }}
+
+            [Need a server? Just click on the Picture, use the code WXRLDS for 25% off of your first month and play with your friends!](https://bisecthosting.com/Wxrlds)
+
+            [![Bisect Hosting](https://www.bisecthosting.com/images/CF/Technocratica/BH_T_PROMOCODE.png)](https://bisecthosting.com/Wxrlds)
+
+            [Changelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/changelog.md#${{ steps.info.outputs.version_anchor }})
+            [Modchangelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/modchangelog.md#${{ steps.info.outputs.version_anchor }})

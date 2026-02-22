@@ -1,12 +1,27 @@
 # Technocratica Changelogs
 
+## v3.1.1
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/release/v3.1.0...release/v3.1.1)
+
+- Added Osmium Block -> 9 Basic Control Circuit recipe
+- Added JEI info text to PlusTiC materials
+- Fix Energy Acceptor recipe being broken
+- Add item tooltip to Chisels
+- Hidden all but one from AgriCraft Irrigation System items
+
 ## v3.1.0
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/release/v3.0.09...release/v3.1.0)
 
 This is a somewhat big update that replaces a lot of abandoned mods with maintained versions of them.
+
 Most things should run fine, but expect breakage with ExtraCells2 fluid and gas cells and SimplyJetpacks items changing into other items.
+
+Due to some change in AgriCraft, your AgriCraft crops will all get invalidated. You can resolve this by either downloading v3.0.09 and replacing the `config/agricraft/json/defaults` folder or (I would recommend this, as this is more future proof, but requires you to be OP) you break all of your planted crops, hold the seeds in your hand and execute `/nbt edit item` This will open a menu that allows you to edit the nbt of an item. In there you expand the `tag` tree and it reveals an `agri_seed` entry. This one you can edit with the edit button in the top left. You now need to insert the mod prefix of that seed in front of it. You can get the prefix by searching the crop in JEI and holding CTRL + Shift while hovering over the item. This shows the items NBT where you can find the mod prefix. This works with any item, not just the ones you find in JEI.
+
 New chunks might get cut off due to changes in terrain generation. Your existing chunks will not be impacted by this!
+
 Definitely make a backup before you update!
 
 - Disabled Update checkers for Actually Additions; OpenComputers; LunatriusCore

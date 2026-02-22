@@ -2,8 +2,8 @@
   "path": "mod_mysticalagriculture/plants/alumite_plant.json",
   "enabled": true,
   "id": "mysticalagriculture:alumite_plant",
-  "plant_name": "Alumite Crop",
-  "seed_name": "Alumite Seeds",
+  "plant_name": "alumite Crop",
+  "seed_name": "alumite Seeds",
   "seed_items": [
     {
       "item": "mysticalagriculture:alumite_seeds",
@@ -18,12 +18,12 @@
   ],
   "description": {
     "translations": {},
-    "default": "Alumite Seeds."
+    "default": "alumite Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
   "bonemeal": false,
-  "tier": 1,
+  "tier": 4,
   "weedable": false,
   "aggressive": false,
   "spread_chance": 0.1,

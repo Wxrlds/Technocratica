@@ -2,8 +2,8 @@
   "path": "mod_mysticalagriculture/plants/end_steel_plant.json",
   "enabled": true,
   "id": "mysticalagriculture:end_steel_plant",
-  "plant_name": "End Steel Crop",
-  "seed_name": "End Steel Seeds",
+  "plant_name": "end_steel Crop",
+  "seed_name": "end_steel Seeds",
   "seed_items": [
     {
       "item": "mysticalagriculture:end_steel_seeds",
@@ -18,12 +18,12 @@
   ],
   "description": {
     "translations": {},
-    "default": "End Steel Seeds."
+    "default": "end_steel Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
   "bonemeal": false,
-  "tier": 1,
+  "tier": 5,
   "weedable": false,
   "aggressive": false,
   "spread_chance": 0.1,

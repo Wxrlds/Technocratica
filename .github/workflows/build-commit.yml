@@ -1,0 +1,56 @@
+name: "build-commit"
+
+on:
+  push:
+    branches:
+      - "**" # All branches but not on tags
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout repository"
+        uses: "actions/checkout@v6"
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: "17"
+          distribution: "temurin"
+
+      - name: "Setup pakku"
+        run: |
+          curl -sSL -o pakku.jar https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar
+
+      - name: "Get modpack info"
+        id: "info"
+        shell: bash
+        run: |
+          chmod +x .github/scripts/get_modpack_info.sh
+          .github/scripts/get_modpack_info.sh
+
+      - name: "Export modpack"
+        run: |
+          java -jar pakku.jar --debug export
+
+      - name: "Upload CurseForge artifacts"
+        uses: "actions/upload-artifact@v6"
+        with:
+          name: "${{ steps.info.outputs.modpack_name }}-cf-artifacts-${{ github.run_number }}"
+          path: "build/curseforge/*.zip"
+
+      - name: "Upload Modrinth artifacts"
+        uses: "actions/upload-artifact@v6"
+        with:
+          name: "${{ steps.info.outputs.modpack_name }}-mr-artifacts-${{ github.run_number }}"
+          path: "build/modrinth/*.mrpack"
+
+      - name: "Rename serverpack artifacts"
+        run: mv build/serverpack/*.zip "build/serverpack/${{ steps.info.outputs.modpack_name }}-Server-${{ steps.info.outputs.modpack_version }}.zip"
+
+      - name: "Upload serverpack artifacts"
+        uses: "actions/upload-artifact@v6"
+        with:
+          name: "${{ steps.info.outputs.modpack_name }}-server-artifacts-${{ github.run_number }}"
+          path: "build/serverpack/*.zip"

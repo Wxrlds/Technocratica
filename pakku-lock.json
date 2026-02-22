@@ -677,44 +677,6 @@
             ]
         },
         {
-            "pakku_id": "5OTuCr6ZH8cytIYB",
-            "pakku_links": [
-                "xX02FDGileJBC9o8"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "agricraft"
-            },
-            "name": {
-                "curseforge": "AgriCraft"
-            },
-            "id": {
-                "curseforge": "225635"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "agricraft-2.12.0-1.12.2-b2.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/3317/747/agricraft-2.12.0-1.12.2-b2.jar",
-                    "id": "3317747",
-                    "parent_id": "225635",
-                    "hashes": {
-                        "sha1": "44988a77ab787a2f74d68af4fb011a2a3ed1e806",
-                        "md5": "c05da8a08533d1f8a162c4553e409c56"
-                    },
-                    "required_dependencies": [
-                        "251396"
-                    ],
-                    "size": 1457033,
-                    "date_published": "2021-05-21T10:19:29.383Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "770Ra1Afy9NmWhLF",
             "pakku_links": [
                 "7bWgpEiNX0azNxjc",
@@ -2613,6 +2575,39 @@
             ]
         },
         {
+            "pakku_id": "C1FZWpwk5WJLBaK6",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "default-options"
+            },
+            "name": {
+                "curseforge": "Default Options"
+            },
+            "id": {
+                "curseforge": "232131"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "DefaultOptions_1.12.2-9.2.8.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/2624/732/DefaultOptions_1.12.2-9.2.8.jar",
+                    "id": "2624732",
+                    "parent_id": "232131",
+                    "hashes": {
+                        "sha1": "e3197fc44aa2f59897713a8889a5a56c0f8ccbf3",
+                        "md5": "5510673c0fad1e3b6617b3d97d54b3d5"
+                    },
+                    "required_dependencies": [],
+                    "size": 15056,
+                    "date_published": "2018-10-05T21:44:14.440Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "C8UcUksRSxSBdx0T",
             "type": "MOD",
             "slug": {
@@ -4262,39 +4257,6 @@
                     "required_dependencies": [],
                     "size": 233380,
                     "date_published": "2020-02-09T18:42:59.340Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "xX02FDGileJBC9o8",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "infinitylib"
-            },
-            "name": {
-                "curseforge": "InfinityLib"
-            },
-            "id": {
-                "curseforge": "251396"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "infinitylib-1.12.1.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3317/119/infinitylib-1.12.1.jar",
-                    "id": "3317119",
-                    "parent_id": "251396",
-                    "hashes": {
-                        "sha1": "2937ac982c5896f58a4c9d647dcf055278c78898",
-                        "md5": "d48af7ab357e9fb477c87ea9da150d59"
-                    },
-                    "required_dependencies": [],
-                    "size": 907292,
-                    "date_published": "2021-05-20T20:55:35.823Z"
                 }
             ]
         },
@@ -7032,6 +6994,42 @@
                     "required_dependencies": [],
                     "size": 31802,
                     "date_published": "2020-04-03T23:52:41.640Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "hEhbCOyT26KEaWLJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "agricraft-refitted"
+            },
+            "name": {
+                "curseforge": "Refitbench Maintains - AgriCraft"
+            },
+            "id": {
+                "curseforge": "1459246"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "agricraft-2.17.0.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7636/878/agricraft-2.17.0.jar",
+                    "id": "7636878",
+                    "parent_id": "1459246",
+                    "hashes": {
+                        "sha1": "ae016e7575a4091bde4a97e1c41b9c7908c41434",
+                        "md5": "1f08c17a77c4b0796a70b48e514083c1"
+                    },
+                    "required_dependencies": [],
+                    "size": 2469196,
+                    "date_published": "2026-02-17T01:47:55.480Z"
                 }
             ]
         },

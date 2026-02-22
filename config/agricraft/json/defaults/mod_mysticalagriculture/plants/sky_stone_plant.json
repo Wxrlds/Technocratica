@@ -2,8 +2,8 @@
   "path": "mod_mysticalagriculture/plants/sky_stone_plant.json",
   "enabled": true,
   "id": "mysticalagriculture:sky_stone_plant",
-  "plant_name": "Sky Stone Crop",
-  "seed_name": "Sky Stone Seeds",
+  "plant_name": "sky_stone Crop",
+  "seed_name": "sky_stone Seeds",
   "seed_items": [
     {
       "item": "mysticalagriculture:sky_stone_seeds",
@@ -18,12 +18,12 @@
   ],
   "description": {
     "translations": {},
-    "default": "Sky Stone Seeds."
+    "default": "sky_stone Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
   "bonemeal": false,
-  "tier": 1,
+  "tier": 3,
   "weedable": false,
   "aggressive": false,
   "spread_chance": 0.1,

@@ -94,7 +94,7 @@ recipes.addShaped("ae2/crafting_table/crystal_growth_accelerator", <appliedenerg
 ]);
 
 recipes.addShaped("ae2/crafting_table/energy_acceptor", <appliedenergistics2:energy_acceptor>, [
-    [<ore:ingotiron>, <opencomputers:component>, <ore:ingotIron>],
+    [<ore:ingotIron>, <opencomputers:component>, <ore:ingotIron>],
     [<appliedenergistics2:quartz_glass>, <ore:crystalFluix>, <appliedenergistics2:quartz_glass>],
     [<ore:ingotIron>, <opencomputers:component:13>, <ore:ingotIron>]
 ]);

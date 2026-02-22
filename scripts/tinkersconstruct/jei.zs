@@ -10,6 +10,9 @@ for Categ in HideCategJEI {
 }
 
 val PartBuilder = [
+    <plustic:battery_cell>,
+    <plustic:laser_medium>,
+    <plustic:pipe_piece>,
     <tcomplement:chisel_head>,
     <tconstruct:arrow_head>,
     <tconstruct:arrow_shaft>,

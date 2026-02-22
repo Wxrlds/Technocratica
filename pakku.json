@@ -1,6 +1,6 @@
 {
     "name": "Technocratica",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "Technocratica - A progressive \"expert\" Modpack without Magic",
     "author": "wxrlds_",
     "overrides": [
@@ -9,6 +9,7 @@
         "structures",
         "config",
         "!config/AppliedEnergistics2/items.csv",
+        "!config/InvTweaks",
         "!config/MoreOverlays.cfg",
         "!config/betteradvancements",
         "!config/bhmenu.cfg",
@@ -21,6 +22,8 @@
         "!config/codechicken/supportes.json",
         "!config/codechicken/supportes.marker",
         "!config/ctm.cfg",
+        "!config/defaultoptions",
+        "!config/defaultoptions.cfg",
         "!config/ding.cfg",
         "!config/discord.cfg",
         "!config/enderio/recipes/*.pdf",
@@ -29,7 +32,6 @@
         "!config/fpsreducer",
         "!config/gnetum.json",
         "!config/googlyeyes.cfg",
-        "!config/InvTweaks",
         "!config/jei/bookmarks.ini",
         "!config/jei/worldSettings.cfg",
         "!config/jeiintegration.cfg",
@@ -62,6 +64,8 @@
         "config/classicbar.cfg",
         "config/clienttweaks.cfg",
         "config/ctm.cfg",
+        "config/defaultoptions",
+        "config/defaultoptions.cfg",
         "config/ding.cfg",
         "config/discord.cfg",
         "config/entityculling.json",
@@ -155,6 +159,9 @@
         },
         "jaopca": {
             "update_strategy": "NONE"
+        },
+        "default-options": {
+            "side": "CLIENT"
         }
     }
 }

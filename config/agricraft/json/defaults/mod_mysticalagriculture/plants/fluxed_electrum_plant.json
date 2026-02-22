@@ -2,8 +2,8 @@
   "path": "mod_mysticalagriculture/plants/fluxed_electrum_plant.json",
   "enabled": true,
   "id": "mysticalagriculture:fluxed_electrum_plant",
-  "plant_name": "Fluxed Electrum Crop",
-  "seed_name": "Fluxed Electrum Seeds",
+  "plant_name": "fluxed_electrum Crop",
+  "seed_name": "fluxed_electrum Seeds",
   "seed_items": [
     {
       "item": "mysticalagriculture:fluxed_electrum_seeds",
@@ -18,12 +18,12 @@
   ],
   "description": {
     "translations": {},
-    "default": "Fluxed Electrum Seeds."
+    "default": "fluxed_electrum Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
   "bonemeal": false,
-  "tier": 1,
+  "tier": 4,
   "weedable": false,
   "aggressive": false,
   "spread_chance": 0.1,

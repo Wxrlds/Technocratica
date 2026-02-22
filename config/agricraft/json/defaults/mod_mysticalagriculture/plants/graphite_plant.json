@@ -2,8 +2,8 @@
   "path": "mod_mysticalagriculture/plants/graphite_plant.json",
   "enabled": true,
   "id": "mysticalagriculture:graphite_plant",
-  "plant_name": "Graphite Crop",
-  "seed_name": "Graphite Seeds",
+  "plant_name": "graphite Crop",
+  "seed_name": "graphite Seeds",
   "seed_items": [
     {
       "item": "mysticalagriculture:graphite_seeds",
@@ -18,12 +18,12 @@
   ],
   "description": {
     "translations": {},
-    "default": "Graphite Seeds."
+    "default": "graphite Seeds."
   },
   "growth_chance": 0.9,
   "growth_bonus": 0.025,
   "bonemeal": false,
-  "tier": 1,
+  "tier": 3,
   "weedable": false,
   "aggressive": false,
   "spread_chance": 0.1,

@@ -1,6 +1,6 @@
-# Technocratica Mod Changelog
+# Technocratica Mod Changelogs
 
-## 3.1.0
+## v3.1.0
 
 ### Loaders
 
@@ -1665,7 +1665,7 @@
 - Foam​Fix
 - Gas Conduits
 - Genetics Reborn
-- GooglyEyes 
+- GooglyEyes
 - HammerLib
 - Hardcore Darkness
 - Hats
@@ -1674,7 +1674,7 @@
 - Industrial Craft
 - Industrial Foregoing
 - InfinityLib
-- Inventory Tweaks [1.12 only] 
+- Inventory Tweaks [1.12 only]
 - Iron Backpacks
 - Iron Chests
 - It's the little things
