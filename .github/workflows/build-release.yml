@@ -163,6 +163,7 @@ jobs:
             [![Bisect Hosting](https://www.bisecthosting.com/images/CF/Technocratica/BH_T_PROMOCODE.png)](https://bisecthosting.com/Wxrlds)
 
             [Changelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/changelog.md#${{ steps.info.outputs.version_anchor }})
+
             [Modchangelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/modchangelog.md#${{ steps.info.outputs.version_anchor }})
 
       - name: "Upload to CurseForge"
@@ -189,4 +190,5 @@ jobs:
             [![Bisect Hosting](https://www.bisecthosting.com/images/CF/Technocratica/BH_T_PROMOCODE.png)](https://bisecthosting.com/Wxrlds)
 
             [Changelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/changelog.md#${{ steps.info.outputs.version_anchor }})
+
             [Modchangelog](https://github.com/${{ github.repository }}/blob/${{ steps.info.outputs.current_branch }}/modchangelog.md#${{ steps.info.outputs.version_anchor }})
