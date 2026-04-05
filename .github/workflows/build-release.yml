@@ -61,7 +61,7 @@ jobs:
         run: mv build/serverpack/*.zip "build/serverpack/${{ steps.info.outputs.modpack_name }}-Server-${{ steps.info.outputs.modpack_version }}.zip"
 
       - name: "Upload serverpack artifacts to GitHub actions"
-        uses: "actions/upload-artifact@v6"
+        uses: "actions/upload-artifact@v7"
         with:
           name: "${{ steps.info.outputs.modpack_name }}-server-artifacts-${{ github.run_number }}"
           path: "build/serverpack/*.zip"
@@ -113,7 +113,7 @@ jobs:
 
       - name: "Upload crash logs"
         if: failure()
-        uses: "actions/upload-artifact@v6"
+        uses: "actions/upload-artifact@v7"
         with:
           name: "${{ steps.info.outputs.modpack_name }}-crash-logs-${{ github.run_number }}"
           path: |

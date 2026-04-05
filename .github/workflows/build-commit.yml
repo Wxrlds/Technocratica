@@ -35,13 +35,13 @@ jobs:
           java -jar pakku.jar --debug export
 
       - name: "Upload CurseForge artifacts"
-        uses: "actions/upload-artifact@v6"
+        uses: "actions/upload-artifact@v7"
         with:
           name: "${{ steps.info.outputs.modpack_name }}-cf-artifacts-${{ github.run_number }}"
           path: "build/curseforge/*.zip"
 
       - name: "Upload Modrinth artifacts"
-        uses: "actions/upload-artifact@v6"
+        uses: "actions/upload-artifact@v7"
         with:
           name: "${{ steps.info.outputs.modpack_name }}-mr-artifacts-${{ github.run_number }}"
           path: "build/modrinth/*.mrpack"
@@ -50,7 +50,7 @@ jobs:
         run: mv build/serverpack/*.zip "build/serverpack/${{ steps.info.outputs.modpack_name }}-Server-${{ steps.info.outputs.modpack_version }}.zip"
 
       - name: "Upload serverpack artifacts"
-        uses: "actions/upload-artifact@v6"
+        uses: "actions/upload-artifact@v7"
         with:
           name: "${{ steps.info.outputs.modpack_name }}-server-artifacts-${{ github.run_number }}"
           path: "build/serverpack/*.zip"
