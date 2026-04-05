@@ -1,5 +1,15 @@
 # Technocratica Changelogs
 
+## v3.1.2
+
+[Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/release/v3.1.1...release/v3.1.2)
+
+- Added more rewards to the ProjectE questline
+- Fix Wooden Irrigation Channels being not craftable
+- Added Fluxed Electrum Plate recipe in Metal Former and Block Cutting Machine
+- All Mekanism upgrades now stack to 64 in the inventory
+- Added JEI description to Modular Machinery Blueprints, how to obtain them
+
 ## v3.1.1
 
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/release/v3.1.0...release/v3.1.1)

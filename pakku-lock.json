@@ -677,6 +677,42 @@
             ]
         },
         {
+            "pakku_id": "hEhbCOyT26KEaWLJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "agricraft-refitted"
+            },
+            "name": {
+                "curseforge": "AgriCraft Refitted"
+            },
+            "id": {
+                "curseforge": "1459246"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "agricraft-2.17.2.jar",
+                    "mc_versions": [
+                        "1.12.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7856/540/agricraft-2.17.2.jar",
+                    "id": "7856540",
+                    "parent_id": "1459246",
+                    "hashes": {
+                        "sha1": "528c7a7a37353ba92df99e768fc8f802c53b90eb",
+                        "md5": "c50b831a21396f21e1203ef436eefbf7"
+                    },
+                    "required_dependencies": [],
+                    "size": 2469839,
+                    "date_published": "2026-04-01T15:08:35.930Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "770Ra1Afy9NmWhLF",
             "pakku_links": [
                 "7bWgpEiNX0azNxjc",
@@ -2577,6 +2613,7 @@
         {
             "pakku_id": "C1FZWpwk5WJLBaK6",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "default-options"
             },
@@ -3596,7 +3633,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fermiumasm-5.28.jar",
+                    "file_name": "fermiumasm-5.31.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3604,18 +3641,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6389/447/fermiumasm-5.28.jar",
-                    "id": "6389447",
+                    "url": "https://edge.forgecdn.net/files/7741/58/fermiumasm-5.31.jar",
+                    "id": "7741058",
                     "parent_id": "971247",
                     "hashes": {
-                        "sha1": "d3b4d15cebe24c822556de2c77e348f20afeb064",
-                        "md5": "30923aac32f4265dfb8428534f8d0458"
+                        "sha1": "382ed891484edc122f4d2d4e9e3bd5f2f2b15841",
+                        "md5": "ff5545ef56076ad97123324f456b9ede"
                     },
                     "required_dependencies": [
                         "968474"
                     ],
-                    "size": 526996,
-                    "date_published": "2025-04-05T23:54:21.410Z"
+                    "size": 530358,
+                    "date_published": "2026-03-11T01:39:16.070Z"
                 }
             ]
         },
@@ -3822,7 +3859,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gnetum-1.3.4.jar",
+                    "file_name": "gnetum-1.3.5.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -3830,18 +3867,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7386/673/gnetum-1.3.4.jar",
-                    "id": "7386673",
+                    "url": "https://edge.forgecdn.net/files/7603/565/gnetum-1.3.5.jar",
+                    "id": "7603565",
                     "parent_id": "1220460",
                     "hashes": {
-                        "sha1": "c8a9503165c33c925186d34fb705749ed8f0aa72",
-                        "md5": "8c022ad082a730a1c827293c88518d44"
+                        "sha1": "7587f73ed7066f09333acf2d349f3adfb11db87f",
+                        "md5": "c2478bad4b0580a2ef18fc253edcae82"
                     },
                     "required_dependencies": [
                         "419286"
                     ],
-                    "size": 116497,
-                    "date_published": "2025-12-28T01:55:06.560Z"
+                    "size": 117881,
+                    "date_published": "2026-02-10T10:23:30.530Z"
                 }
             ]
         },
@@ -4929,26 +4966,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "lemonskin-3.1.0.jar",
+                    "file_name": "lemonskin-4.0.0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7397/823/lemonskin-3.1.0.jar",
-                    "id": "7397823",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7763/338/lemonskin-4.0.0.jar",
+                    "id": "7763338",
                     "parent_id": "1337144",
                     "hashes": {
-                        "sha1": "c5b285c7e45077c8f002ae5c04520c8ae26ce263",
-                        "md5": "1fbb81d02d858e9c1d7276574168a4fa"
+                        "sha1": "a3445db181f0837da44d0434f4bef31ac34bd098",
+                        "md5": "63e0f17e79579fad14b3c4f6130d238b"
                     },
                     "required_dependencies": [
                         "419286"
                     ],
-                    "size": 63044,
-                    "date_published": "2025-12-30T21:15:41.533Z"
+                    "size": 98899,
+                    "date_published": "2026-03-15T19:56:55.287Z"
                 }
             ]
         },
@@ -5073,7 +5110,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LootTweaker-0.4.1+MC1.12.2.jar",
+                    "file_name": "LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -5081,18 +5118,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5420/240/LootTweaker-0.4.1+MC1.12.2.jar",
-                    "id": "5420240",
+                    "url": "https://edge.forgecdn.net/files/7684/381/LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
+                    "id": "7684381",
                     "parent_id": "255257",
                     "hashes": {
-                        "sha1": "dd4f2a890e7169fe7e740e326228829ff496e2cb",
-                        "md5": "0801c5eab2effa89f1ed89c649a2ebcf"
+                        "sha1": "f27456cc07d6ec327e0e3333203bcdc8f010c2d9",
+                        "md5": "d1d36165b42025101edae5f425e5f5c6"
                     },
                     "required_dependencies": [
-                        "357178"
+                        "239197"
                     ],
-                    "size": 136587,
-                    "date_published": "2024-06-12T06:27:36.913Z"
+                    "size": 148482,
+                    "date_published": "2026-02-27T02:54:30.553Z"
                 }
             ]
         },
@@ -6998,42 +7035,6 @@
             ]
         },
         {
-            "pakku_id": "hEhbCOyT26KEaWLJ",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "agricraft-refitted"
-            },
-            "name": {
-                "curseforge": "Refitbench Maintains - AgriCraft"
-            },
-            "id": {
-                "curseforge": "1459246"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "agricraft-2.17.0.jar",
-                    "mc_versions": [
-                        "1.12.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7636/878/agricraft-2.17.0.jar",
-                    "id": "7636878",
-                    "parent_id": "1459246",
-                    "hashes": {
-                        "sha1": "ae016e7575a4091bde4a97e1c41b9c7908c41434",
-                        "md5": "1f08c17a77c4b0796a70b48e514083c1"
-                    },
-                    "required_dependencies": [],
-                    "size": 2469196,
-                    "date_published": "2026-02-17T01:47:55.480Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "8NekUkKE9aKSFsU8",
             "type": "MOD",
             "slug": {
@@ -7582,7 +7583,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TheOneProbe-CE-1.12-1.3.6.jar",
+                    "file_name": "TheOneProbe-CE-1.12-1.3.7-fix1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -7590,16 +7591,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7129/885/TheOneProbe-CE-1.12-1.3.6.jar",
-                    "id": "7129885",
+                    "url": "https://edge.forgecdn.net/files/7718/301/TheOneProbe-CE-1.12-1.3.7-fix1.jar",
+                    "id": "7718301",
                     "parent_id": "885670",
                     "hashes": {
-                        "sha1": "45316dee06ab6bdb90280b871ec0525bb7d11550",
-                        "md5": "87fc5fc5a968ccbbb1008be419d1ab3e"
+                        "sha1": "0eef129a6e071fac4b625fda61dadf67b5daeefe",
+                        "md5": "9e6e678a7aa3ee72f7bd5e2a6ff79ca5"
                     },
                     "required_dependencies": [],
-                    "size": 328159,
-                    "date_published": "2025-10-20T15:29:43.700Z"
+                    "size": 332172,
+                    "date_published": "2026-03-06T08:13:34.043Z"
                 }
             ]
         },
@@ -8245,7 +8246,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "UniversalTweaks-1.12.2-1.18.0.jar",
+                    "file_name": "UniversalTweaks-1.12.2-1.19.1.jar",
                     "mc_versions": [
                         "1.12.2"
                     ],
@@ -8253,19 +8254,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7403/701/UniversalTweaks-1.12.2-1.18.0.jar",
-                    "id": "7403701",
+                    "url": "https://edge.forgecdn.net/files/7849/634/UniversalTweaks-1.12.2-1.19.1.jar",
+                    "id": "7849634",
                     "parent_id": "705000",
                     "hashes": {
-                        "sha1": "bb54c9dc58dac10549552e3cf84912ac5c95800f",
-                        "md5": "6134720dbe981564fc9b77e06ce90bb3"
+                        "sha1": "2c0b5d34bf6346990ba5a10b76ec3de159adeaa2",
+                        "md5": "3f3883f5125f1edac2e600a6882d7c77"
                     },
                     "required_dependencies": [
                         "870276",
                         "419286"
                     ],
-                    "size": 1808058,
-                    "date_published": "2026-01-01T11:48:33.120Z"
+                    "size": 1885737,
+                    "date_published": "2026-03-31T08:04:41.927Z"
                 }
             ]
         },

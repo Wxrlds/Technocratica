@@ -4,10 +4,12 @@
 	loot_size: 21,
 	rewards: [{
 		item: "contenttweaker:dark_alch",
+		random_bonus: 4,
 		weight: 45
 	},
 	{
 		item: "contenttweaker:dark_mob",
+		random_bonus: 4,
 		weight: 40
 	},
 	{
@@ -16,73 +18,91 @@
 	},
 	{
 		item: "projecte:item.pe_fuel",
+		random_bonus: 4,
 		weight: 32
 	},
 	{
 		item: "projecte:item.pe_fuel 1 1",
+		random_bonus: 4,
 		weight: 26
 	},
 	{
 		item: "projecte:item.pe_fuel 1 2",
+		random_bonus: 4,
 		weight: 24
 	},
 	{
 		item: "contenttweaker:blue_alch",
+		random_bonus: 4,
 		weight: 15
 	},
 	{
 		item: "contenttweaker:blue_mob",
+		random_bonus: 4,
 		weight: 14
 	},
 	{
 		item: "contenttweaker:blue_aeter",
+		random_bonus: 4,
 		weight: 13
 	},
 	{
 		item: "contenttweaker:green_alch",
+		random_bonus: 4,
 		weight: 12
 	},
 	{
 		item: "contenttweaker:green_mob",
+		random_bonus: 4,
 		weight: 11
 	},
 	{
 		item: "contenttweaker:green_aeter",
+		random_bonus: 4,
 		weight: 10
 	},
 	{
 		item: "contenttweaker:yellow_alch",
+		random_bonus: 4,
 		weight: 9
 	},
 	{
 		item: "contenttweaker:yellow_mob",
+		random_bonus: 4,
 		weight: 8
 	},
 	{
 		item: "contenttweaker:yellow_aeter",
+		random_bonus: 4,
 		weight: 7
 	},
 	{
 		item: "contenttweaker:orange_alch",
+		random_bonus: 4,
 		weight: 6
 	},
 	{
 		item: "contenttweaker:orange_mob",
+		random_bonus: 4,
 		weight: 5
 	},
 	{
 		item: "contenttweaker:orange_aeter",
+		random_bonus: 4,
 		weight: 4
 	},
 	{
 		item: "contenttweaker:rain_alch",
+		random_bonus: 4,
 		weight: 3
 	},
 	{
 		item: "contenttweaker:rain_mob",
+		random_bonus: 4,
 		weight: 2
 	},
 	{
-		item: "contenttweaker:rain_aeter"
+		item: "contenttweaker:rain_aeter",
+		random_bonus: 4
 	}]
 }

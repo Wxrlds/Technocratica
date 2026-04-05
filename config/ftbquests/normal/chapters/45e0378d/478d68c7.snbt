@@ -97,13 +97,13 @@
 			id: "exchangers:stellar_exchanger",
 			tag: {
 				Energy: 100000000,
-				forceDropItems: 0b,
 				range: 0,
+				forceDropItems: 0b,
 				exmode: 0,
-				directionalPlacement: 0b,
 				blockstate: {
 					Name: "minecraft:air"
-				}
+				},
+				directionalPlacement: 0b
 			}
 		}],
 		ignore_damage: true,
