@@ -1,5 +1,27 @@
 # Technocratica Mod Changelogs
 
+## v3.1.2
+
+### Projects
+
+#### Added
+
+- AgriCraft Refitted
+
+#### Removed
+
+- Refitbench Maintains - AgriCraft
+
+#### Updated
+
+- agricraft-2.17.0.jar              -> agricraft-2.17.2.jar
+- fermiumasm-5.28.jar               -> fermiumasm-5.31.jar
+- gnetum-1.3.4.jar                  -> gnetum-1.3.5.jar
+- lemonskin-3.1.0.jar               -> lemonskin-4.0.0.jar
+- LootTweaker-0.4.1+MC1.12.2.jar    -> LootTweaker-0.5.1+MC1.12.2-DLS0.jar
+- TheOneProbe-CE-1.12-1.3.6.jar     -> TheOneProbe-CE-1.12-1.3.7-fix1.jar
+- UniversalTweaks-1.12.2-1.18.0.jar -> UniversalTweaks-1.12.2-1.19.1.jar
+
 ## v3.1.1
 
 ### Projects
