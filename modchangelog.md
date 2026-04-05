@@ -4,14 +4,6 @@
 
 ### Projects
 
-#### Added
-
-- AgriCraft Refitted
-
-#### Removed
-
-- Refitbench Maintains - AgriCraft
-
 #### Updated
 
 - agricraft-2.17.0.jar              -> agricraft-2.17.2.jar
