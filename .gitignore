@@ -2,6 +2,7 @@ pakku.jar
 build/**
 
 config/AppliedEnergistics2/items.csv
+config/InvTweaks
 config/brandon3055/ProjectIntelligence
 config/brandon3055/ResourceCache
 config/brandon3055/contributors.json
@@ -16,5 +17,5 @@ config/konkrete
 config/mousetweaks.cfg
 config/normalasm
 config/splash.properties
+config/stellar*.dat
 config/tconstruct_oredictcache.dat
-config/InvTweaks
