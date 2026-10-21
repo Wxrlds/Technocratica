@@ -1,5 +1,49 @@
 # Technocratica Mod Changelogs
 
+## v3.1.3
+
+### Projects
+
+#### Added
+
+- Capn's Chisel Search
+- Chibi
+- JEI Utilities
+- Naughthirium
+- Nothirium
+- RenderLib
+- StellarCore
+- Uber Conduit Probe
+
+#### Removed
+
+- FermiumASM
+
+#### Updated
+
+- agricraft-2.17.2.jar                      -> agricraft-2.18.0.jar
+- BHMenu-Forge-1.12.2-2.4.6.jar             -> BHMenu-Forge-1.12.2-2.4.7.jar
+- CarbonConfig-1.12.2-1.2.4.jar             -> CarbonConfig-1.12.2-2.0.2.1.jar
+- Chunk-Pregenerator-1.12.2-4.4.9.1.jar     -> Chunk-Pregenerator-1.12.2-4.4.9.3.jar
+- CraftTweaker2-1.12-4.1.20.711.jar         -> CraftTweaker2-1.12-4.1.20.715.jar
+- `FermiumBooter-1.4.1.jar                  -> `FermiumBooter-1.6.0.jar
+- Fixeroo-2.3.6.jar                         -> Fixeroo-2.3.7.jar
+- GeneticsReborn-1.12-1.33.jar              -> GeneticsReborn-1.12-1.34.jar
+- gnetum-1.3.5.jar                          -> gnetum-1.4.3.jar
+- HadEnoughItems_1.12.2-4.29.15.jar         -> HadEnoughItems_1.12.2-4.36.1.jar
+- HammerLib-1.12.2-12.2.58.jar              -> HammerLib-1.12.2-12.2.66.jar
+- journeymap-1.12.2-5.7.1p3.jar             -> journeymap-forge-1.12.2-6.0.10.jar
+- !mixinbooter-10.7.jar                     -> !mixinbooter-11.18.jar
+- OpenBlocksReopened-1.12.2-1.8.3.1.jar     -> OpenBlocksReopened-1.12.2-1.8.4.jar
+- OpenComputers-MC1.12.2-1.8.9a+8ca336f.jar -> OpenComputers-MC1.12.2-1.8.10+258943363.jar
+- QuarkRotN-r1.6-191.jar                    -> QuarkRotN-r1.6-192.jar
+- RecurrentComplex-1.4.8.6.jar              -> RecurrentComplex-1.4.8.7.jar
+- TheOneProbe-CE-1.12-1.3.7-fix1.jar        -> TheOneProbe-CE-1.12-1.4.1.jar
+- TopAllDependents-1.4.jar                  -> TopAllDependents-1.6.jar
+- Trinkets and Baubles-0.32.5.jar           -> Trinkets and Baubles-Forge-1.12.2-0.33.4.jar
+- UniversalTweaks-1.12.2-1.19.1.jar         -> UniversalTweaks-1.12.2-1.21.0.jar
+- vintagefix-0.6.2.jar                      -> vintagefix-0.7.2.jar
+
 ## v3.1.2
 
 ### Projects
