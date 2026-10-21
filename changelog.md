@@ -5,6 +5,7 @@
 [Click here for a more detailed changelog](https://github.com/Wxrlds/Technocratica/compare/release/v3.1.2...release/v3.1.3)
 
 - Tome of Knowledge now requires Arcane Transmutation Tablet
+- Fix sleeping not working
 
 ## v3.1.2
 

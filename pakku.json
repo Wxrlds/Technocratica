@@ -165,6 +165,15 @@
         },
         "capns-chisel-search": {
             "side": "CLIENT"
+        },
+        "nothirium": {
+            "side": "CLIENT"
+        },
+        "renderlib": {
+            "side": "CLIENT"
+        },
+        "naughthirium": {
+            "side": "CLIENT"
         }
     }
 }
